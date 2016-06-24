@@ -120,6 +120,5 @@
   initHashScroll()
   initSidebar()
   initSidebarScroll()
-  initSubMenuClick()
   initArticleTable()
 })();
