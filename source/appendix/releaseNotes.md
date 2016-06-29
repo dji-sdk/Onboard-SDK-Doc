@@ -1,5 +1,5 @@
 ---
-title: Update Notes for Onboard SDK 3.1.5
+title: Release Notes for Onboard SDK 3.1.5
 date: 2016-06-24
 ---
 

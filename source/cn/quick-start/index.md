@@ -58,7 +58,7 @@ We provide C/C++ source APIs to make sending and receiving data over the serial 
 ### 1. Download the SDK and Required Tools
 
 - <a href="https://github.com/dji-sdk/Onboard-SDKDownload" target="_blank">Download</a> the onboard SDK repository from Github
-- <a href="https://www.dji.com/product/phantom-4/info#downloads" target="_blank">Download</a> the DJI PC Assistant 2 software for Windows
+- <a href="https://www.dji.com/product/matrice600/info#downloads" target="_blank">Download</a> the DJI PC Assistant 2 software for Windows
 - <a href="http://www.dji.com/product/goapp" target="_blank">Download</a> the DJI GO APP to your mobile device
      
 ### 2. Update Firmware
@@ -124,7 +124,7 @@ Also, take a look at our [FAQ](../appendix/FAQ.html) for some answers to common 
 
 ### Reference Documents
 
-- [Update Notes for Onboard SDK 3.1.5](../appendix/updateNotes.html)
+- [Release Notes for Onboard SDK 3.1.5](../appendix/releaseNotes.html)
 
 - [OPEN Protocol](../introduction/index.html) & [Appendix](../appendix/index.html) 
 
