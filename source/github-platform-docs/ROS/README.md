@@ -59,8 +59,10 @@ Tested Environment:
 
 * Operating System: Ubuntu 14.04, Manifold
 * ROS version: ROS Indigo
+> **Note:** OnboardSDK ROS Library has also been beta tested with Ubuntu Xenial 16.04LTS and ROS Kinetic Kame. We currently do not support `rosinstall` or `apt-get` for this configuration.   
+> **Note:** OnboardSDK ROS Library has also been beta tested with the DJI A3 Flight Controller. 
 
-Software Requirenments:
+Software Requirements:
 
 * Install C, C++ Compiler and Development Tools by installing ``build-essential``
 * Install CMake 2.8.3 or newer
