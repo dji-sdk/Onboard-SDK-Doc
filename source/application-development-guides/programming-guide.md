@@ -3,33 +3,33 @@ title: Programming Guide
 date: 2016-06-24
 ---
 
-All structures and functions are implemented in `DJI_Type.h`and`DJI_API.h`. For more details, please refer source code.
+All structures and functions are implemented in `DJI_Type.h`and`DJI_API.h`. For more details, please refer to the source code.
 
 ## System Configuration
 
-Before starting with the official library, developers should modify the `DJI_HardDriver` to inheritance the `HardDriver` class,  implement the lock and unlock functions, together with several other virtual functions. Then to create a new API sample with your inheritanced class working as the pointer of hardware interface. And creating two life-long threads(or one, at least) running sendPoll and readPoll functions repeatedly at last. (Note: the frequency should be lower 100Hz)
+Before starting with the official library, developers should create a serial device driver for their own platform by inheriting the `HardDriver` class,  implementing the lock and unlock functions, together with several other virtual functions, and then create a new API sample with their inherited class working as the pointer to the hardware interface. You will also need to create two life-long threads(or one, at least) running sendPoll and readPoll functions repeatedly. (Note: the frequency should be lower 100Hz)
 
-We provide the example program in Linux and Windows platform with QT and pure terminal running environment.
+We provide example programs in Linux and Windows platform with QT and terminal environment - these examples can help you get pointers on building your own framework to work with the DJI Onboard SDK library. We also provide a ROS interface and an STM32 embedded system example.  
 
 ## Callback Mechanism
 
-For all commands which has return value mentioned in OPEN Protocol, developers can get the return value by callback functions.
+For all commands which have return values mentioned in OPEN Protocol, developers can get the return value by callback functions.
 
 Activation function in QT sample code as an example:   
 
 1.Define the callback function.  
 
 ```c
-static void activationCallback(CoreAPI* This, Header* header, UserData userData);
+static void activationCallback(CoreAPI* api, Header* protocolHeader, UserData userData);
 ```
 
-2.Pass the name of callback function when you call to activate.
+2.Pass the name of callback function when you call activate.
 
 ```c
 api->activate(&data, DJIonboardSDK::activationCallback, this);
 ```
 
-3.The meaning of return values(result) is explained in each commands in [OPEN Protocol](../introduction/index.html#CMD-Val-ACK-Val).
+3.The meaning of return values(result) is explained for each command in the [OPEN Protocol](../introduction/index.html#CMD-Val-ACK-Val) document.
 
 ## Activation
 
@@ -42,7 +42,7 @@ api->activate(&data, DJIonboardSDK::activationCallback, this);
 Before obtaining Control Authorization, please ensure that: 
 
 * The 'enable API control' box is checked in the assistant software.
-* The mode selection bar of the remote controller is placed at the F position.
+* The mode selection switch of the remote controller is placed at the F position.
 
 ```c
 api->setControl(true, DJIonboardSDK::setControlCallback, this);
@@ -50,7 +50,7 @@ api->setControl(true, DJIonboardSDK::setControlCallback, this);
 
 ## Take off, Land and Return to home (RTH)
 
-The return value of this function please refer to [Request Switch Result](../introduction/index.html#CMD-ID-0x02-Request-Switch-Result)(Below codes do not use callback function).  
+For the return value of this function please refer to [Request Switch Result](../introduction/index.html#CMD-ID-0x02-Request-Switch-Result)(Below codes do not use callback function).  
 
 ```c
 flight->task(type);
@@ -59,13 +59,13 @@ flight->task(type);
 ## Movement Control
 
 
-We recommend developers to send yours Movement Control commands in 50Hz frequency. Developers can implement that by `usleep(20000)`、`ros::Duration(1/50)` or other ways which depend on the develop environment.
+We recommend developers to send their Movement Control commands at 50Hz frequency. Developers can implement that by `usleep(20000)`、`ros::Duration(1/50)` or other ways which depend on the development environment.
 
-In Movement Control, specific meanings of arguements are decided by control mode byte. For more info about Movement Control, please refer to [Control mode byte part in Appendix](../appendix/index.html#Control-Mode-Byte).
+For Movement Control, specific meanings of arguments are decided by the control mode byte. For more info about Movement Control, please refer to [Control mode byte part in Appendix](../appendix/index.html#Control-Mode-Byte).
 
-We recommend developers to use `HORI_POS` mode in horizontal movement. More details are shown in [Position-Control(HORI_POS)](#position-control-hori-pos) in this document. In this mode, speed and attitude are controlled by autopilot, thus developers do not concern about that.
+We recommend developers to use `HORI_POS` mode for horizontal movement. More details are shown in [Position-Control(HORI_POS)](#position-control-hori-pos) in this document. In this mode, speed and attitude are controlled by autopilot, thus developers do not need to worry about that.
     
-Please note that certain conditions are required for some control model to be functional:
+Please note that certain conditions are required for some control modes to be functional:
 
 * Only when the GPS signal is good (health\_flag >=3)，horizontal position control (HORI_POS) related control modes can be used.
 * Only when GPS signal is good (health\_flag >=3)，or when Gudiance system is working properly with Autopilot，horizontal velocity control(HORI_VEL)related control modes can be used.
@@ -82,9 +82,9 @@ flight->setFlight(&data);
 
 ## Receive Flight Data
 
-If developers want to get Flight Data, please check corresponding item in DJI assistant software. And examine the coordinate of part data.
+If developers want to get Flight Data, please check the available items on the SDK tab of DJI Assistant 2.
 
-Developers need to declare correct structure variables to save Flight Data.
+Developers need to declare correct structure variables to save Flight Data. The DJI_API.h and DJI_Type.h files contain sample structs for correctly accepting all kinds of broadcast data. 
 
 Get quaternion as an example:  
 
@@ -137,7 +137,7 @@ typedef struct BroadcastData
 ```
 
 ## GPS to North-East Coordinate
-Convert GPS to North-East Coordinate. (GPS in radian，North-East Coordinate in meter)
+Convert GPS to North-East-Down Coordinate. (GPS in radian，North-East Coordinate in meter)
 For example, `origin_longti` and `origin_lati` , as the longitude and latitude of original position，are decided by developers and the position of UAV taking off is recommended to be the original position. `longti` and `lati` are longitude and latitude of UAV's current posistion. `x` and `y` are offset to the original position in the North and the East directions. The unit of offset is meter.
 
 ~~~c
@@ -167,11 +167,11 @@ Convert quaternion to roll, pitch and yaw in radian in body coordinate.
 
 ## Position Control(HORI_POS)
 
-The input horizatal arguements is the offset between current position and target position, when `HORI_POS` as the mode of horizatal movement control. The unit of offset is meter.
+The input horizatal arguments are the offset between current position and target position, when `HORI_POS` is the mode of horizontal movement control. The unit of offset is meter.
 
-For example, in ground frame, `target` is target position and `current` is UAV's current position. The coordinates of these positions are caculated by GPS, Guidance or other sensors. In most cases, GPS is a correct way to do this work.
+For example, in ground frame, `target` is target position and `current` is UAV's current position. The coordinates of these positions are caculated by GPS, Guidance or other sensors. In most cases, GPS is the correct way to make this work.
 
-Because, to autopilot, the maximum frequency of receiving data is 50Hz, the frequency of caculating off set should be over 50Hz to ensure the controlling is vaild.  
+Because, for the autopilot, the maximum frequency of receiving data is 50Hz, the frequency of calculating offset should be over 50Hz to ensure the closed-loop control is vaild.  
 
 ~~~c
 void update_offset()

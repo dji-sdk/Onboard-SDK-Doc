@@ -20,7 +20,7 @@ Activation function in QT sample code as an example:
 1.Define the callback function.  
 
 ```c
-static void activationCallback(CoreAPI* This, Header* header, UserData userData);
+static void activationCallback(CoreAPI* api, Header* protocolHeader, UserData userData);
 ```
 
 2.Pass the name of callback function when you call to activate.
@@ -59,9 +59,9 @@ flight->task(type);
 ## Movement Control
 
 
-We recommend developers to send yours Movement Control commands in 50Hz frequency. Developers can implement that by `usleep(20000)`、`ros::Duration(1/50)` or other ways which depend on the develop environment.
+We recommend developers to send your Movement Control commands at 50Hz frequency. Developers can implement that by `usleep(20000)`、`ros::Duration(1/50)` or other ways which depend on the develop environment.
 
-In Movement Control, specific meanings of arguements are decided by control mode byte. For more info about Movement Control, please refer to [Control mode byte part in Appendix](../appendix/index.html#Control-Mode-Byte).
+In Movement Control, specific meanings of arguments are decided by control mode byte. For more info about Movement Control, please refer to [Control mode byte part in Appendix](../appendix/index.html#Control-Mode-Byte).
 
 We recommend developers to use `HORI_POS` mode in horizontal movement. More details are shown in [Position-Control(HORI_POS)](#position-control-hori-pos) in this document. In this mode, speed and attitude are controlled by autopilot, thus developers do not concern about that.
     
