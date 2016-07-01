@@ -1,13 +1,11 @@
 ---
 title: DJI Onboard SDK STM32 Example App
-version: v3.1 
-date: 2016-06-24
+version: v3.1.7
+date: 2016-07-01
 github: https://github.com/dji-sdk/Onboard-SDK/tree/3.1/sample/STM32
 ---
 
 ## Introduction
-
-> **Note: The STM32 example code is currently undergoing a major revamp. We expect to have a new version very soon which fixes many longstanding bugs and makes operation simpler and more reliable. Some of these instructions may not work with the current release and are meant for the newer version.** 
 
 This example onboard App is built upon the <a href="http://www.st.com/content/st_com/en/products/evaluation-tools/product-evaluation-tools/mcu-eval-tools/stm32-mcu-eval-tools/stm32-mcu-discovery-kits/stm32f4discovery.html" target="_blank">STM32F407 Discovery</a> development kit (referred to as "STM32" later) with <a href="http://www2.keil.com/mdk5/" target="_blank">MDK-ARM</a> (Keil uVision) toolchain. The purpose is to demonstrate how to use the APIs provided by the Onboard SDK in a "bare-metal" embedded system. 
 

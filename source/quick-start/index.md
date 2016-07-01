@@ -1,6 +1,6 @@
 ---
 title: Get Started 
-date: 2016-06-24
+date: 2016-07-01
 ---
 
 ## Getting Started with the Onboard SDK
@@ -124,7 +124,8 @@ Also, take a look at our [FAQ](../appendix/FAQ.html) for some answers to common 
 
 ### Reference Documents
 
-- [Release Notes for Onboard SDK 3.1.5](../appendix/releaseNotes.html)
+- [Release Notes for Onboard SDK 3.1.7](../appendix/releaseNotes.html)
+     >Note: v3.1.7 of the Onboard SDK was released on 07/01/16. It is a major bugfix and cleanup release. Give it a shot!
 
 - [OPEN Protocol](../introduction/index.html) & [Appendix](../appendix/index.html) 
 

@@ -1,6 +1,7 @@
 ---
 title: DJI Onboard SDK ROS Example
-date: 2016-06-24
+version: v3.1.7
+date: 2016-07-01
 github: https://github.com/dji-sdk/Onboard-SDK-ROS
 ---
 
@@ -106,11 +107,11 @@ Whenever you develop your own ROS package, include the ``dji_drone.h`` from ``dj
 
 This is a communication example involving Simulator as part of the Assistant software.
 
-    * Connect your aircraft to the PC running Assistant software via USB cable
-    * Start Simulator
-    * On Manifold, launch core node and the client node (in separate terminals)
+* Connect your aircraft to the PC running Assistant software via USB cable
+* Start Simulator
+* On Manifold, launch core node (``roslaunch dji_sdk sdk_manifold.launch``) and the client node (``rosrun dji_sdk_demo dji_sdk_client``) in separate terminals
 ![ROS Communication](../../images/ROS/ROSExample.png)
-    * Via client node, send flight commands to the aircraft (see result in the simulator)</br>
+* Via client node, send flight commands to the aircraft (see result in the simulator)</br>
 ![Simulator Take Off Mission](../../images/ROS/SimulatorTakeOff.png)
 
 </br></br>
