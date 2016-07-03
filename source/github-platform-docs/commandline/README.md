@@ -1,7 +1,7 @@
 ---
 title: DJI Onboard SDK Command Line Example
-version: v3.1 
-date: 2016-06-24
+version: v3.1.7 
+date: 2016-07-01
 github: https://github.com/dji-sdk/Onboard-SDK/tree/3.1/sample/commandline
 ---
 
@@ -25,7 +25,7 @@ With it you can run the following commands:
 * Hotpoint Task
 * Follow Me Task
 
- > Note: The Command line example is currently undergoing a major revamp. We expect to have a new version very soon which fixes many longstanding bugs and makes operation simpler and more reliable. Some of these instructions may not work with the current release and are meant for the newer version.
+ > The command line example has recently undergone a major functionality rewrite. Try it out!   
 
 ## Setup
 
@@ -45,18 +45,18 @@ To build the command line example, you need:
 
 All of these should be available with an installation of Ubuntu 14.04.
 
-**Newer versions of gcc/g++ generate compilation warnings which can safely be ignored. Future releases will correct this problem.*
+**Newer versions of gcc/g++ also work - they generate compilation warnings, but these can safely be ignored. Future releases will correct this problem.*
 
 **Compilation**
 
-1. Set your serial port and baud rate in main.cpp inside the `sample/Linux/conboardsdk` directory.
-2. Open up a terminal inside the `sample/Linux` directory and type `make` at the command prompt.
-3. To access the serial port, add your username to the dialout group by typing `sudo usermod -a -G dialout $USER`. Then logout and login again.
+1. Set your serial port, baud rate, and drone/SDK version in `User_Config.h` inside the `sample/commandline/Linux/inc` directory.
+2. Open up a terminal inside the `sample/commandline/Linux` directory and type `make` at the command prompt.
+3. To access the serial port, add your username to the dialout group by typing `sudo usermod -a -G dialout $USER` (you do not need to replace $USER with your username). **Then logout and login again.**
 
 **Using the Simulator**
 
-1. Connect your M100 to a PC through USB.
-2. Open up DJI Assistant 2. Click on the DJI M100 button. If this button doesn't show up, try disconnecting and reconnecting the USB.
+1. Connect your M100/A3 to a PC through USB.
+2. Open up DJI Assistant 2. Click on the DJI M100/A3 button. If this button doesn't show up, try disconnecting and reconnecting the USB.
 3. Click on the Simulator tab, and then click on the 'Open' button. A separate window should pop up in a few seconds.
 ![Sim1](../../images/cmdline/Simulator_Open.png)
 4. In the main window, click on 'Start Emulating'.
@@ -68,12 +68,16 @@ The first time a drone/OES combination is used, it needs to be activated. Activa
 ![ActivationSetup](../../images/common/activation_1.png)
 
 1. [Enable API control](../../quick-start/index.html#3-Enable-Flight-Controller-API-control) and [get an app ID and key](../../quick-start/index.html#5-Onboard-Application-Registration).
-2. Navigate to `sample/Linux/key.txt` and enter your App ID and Key in place of the defaults in that file.
-3. Navigate to the `sample/Linux/bin` folder and run the commandline example. 
+2. Navigate to `sample/commandline/Linux/key.txt` and enter your App ID and Key in place of the defaults in that file.
+3. Navigate to the `sample/commandline/Linux/bin` folder and run the commandline example by typing `./onboardSDK`. 
+    
+    *Note: At this point, the commandline example will automatically attempt to activate your setup. If everything is setup as explained, you will see an 'Automatic Activation Successful' message. If you do, skip steps 4 and 5. You are done with activation!*
+    ![Auto Activation](../../images/cmdline/Cmdline_autoActivate.png)
+
 4. Once the example is running, type `--SS load ../key.txt`. Your App ID and Key should be displayed on the terminal.
 ![SS_Load](../../images/cmdline/Cmdline_ActivationStep1.png)
 
-5. Next, type `--CA ac`. You should receive some feedback on the terminal. If the message says 'Activation Successfully' (sic), you are done. Else, follow the error message to debug.
+5. Next, type `--CA ac`. You should receive some feedback on the terminal. If the message says 'Activated Successfully', you are done. Else, follow the error message to debug.
 ![CA_Ac](../../images/cmdline/Cmdline_ActivationStep2.png)
 ![Activation_Successful](../../images/cmdline/Cmdline_ActivationSuccessful.png)
 
@@ -87,6 +91,7 @@ Operating the Commandline example is a lot like the activation process you just 
 
 
 Note that loading your key and performing the activation step is necessary each time. After the first time, the activation command merely performs a local activation check and you are not required to be connected to the internet.
+The sample will attempt automatic activation each time it is started.
 
 ## Examples
 
@@ -100,7 +105,7 @@ In general, for running any single task you are presented with a screen that loo
 
 #### 2. Activation
 
-Let us load the key and activate the device as in the activation section.
+For the purposes of this example, assume that the automatic activation did not go through. Let us load the key and activate the device as in the activation section.
 ![Activation_Successful](../../images/cmdline/Cmdline_ActivationSuccessful.png)
 
 #### 3. Obtain flight control.
@@ -134,4 +139,4 @@ Similar to takeoff, type `--FC tk 1` to return home. `--FC tk 6` executes landin
 
 The `--CA ct 0` command will now allow you to release control.
 
-> There are known bugs with some functions in the commandline example. We expect to have a fully functional commandline version very soon. 
+> A3 support is currently in beta. Please file issues on the github repo if you find any!

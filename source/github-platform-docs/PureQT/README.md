@@ -1,7 +1,7 @@
 ---
 title: DJI Onboard SDK Qt Example
-version: v3.1
-date: 2016-06-24
+version: v3.1.7
+date: 2016-07-01
 github: https://github.com/dji-sdk/Onboard-SDK/tree/3.1/sample/PureQT
 ---
 
@@ -23,6 +23,12 @@ This example, which can run on both Windows and Linux Onboard Embedded Systems (
 * Follow Me Mission Control
 
 Developers can operate flight with this example via the GUI interaction interface of QT.
+
+ > The Qt example has recently undergone a number of changes. Try it out! Here's an example:
+ > Old Waypoint interface:
+ > ![Old Waypoint](../../images/qt/Qt_waypointOld.png)
+ > New Waypoint interface: 
+ > ![New Waypoint](../../images/qt/Qt_waypointNew.png)
 
 ## Setup
 

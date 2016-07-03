@@ -37,7 +37,7 @@ date: 2016-06-24
 
 9.  Do M100 support third party video capturing devices? Can I use the M100 built-in ‘Lightbridge’ functionality?
 
-    Yes, M100 support third party video capturing device. If you want to use the M100 built-in ‘Lightbridge’ functionality, all you need is the ‘N1 Video Encoder’. http://store.dji.com/product/n1-video-encoder
+    Yes, M100 support third party video capturing device. If you want to use the M100 built-in ‘Lightbridge’ functionality, all you need is the [N1 Video Encoder](http://store.dji.com/product/n1-video-encoder).
 
 10.  What is the data output frequency of N1/A3?
 
