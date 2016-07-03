@@ -1,4 +1,4 @@
-title: DJI Developer Documentation
+title: DJI Mobile SDK Documentation
 description:
 author:
 language:
@@ -6,21 +6,13 @@ language:
   - cn
 i18n_dir: :lang
 timezone: UTC
-url: "//developer.dji.com/"
 root: /
-permalink: :title/
 default_layout: page
 highlight:
   enable: true
   line_number: false
   tab_replace: true
 
-host:
-  production: '//developer.dji.com'
-  staging: '//developer.dbeta.me'
-api_host:
-  production: '//dev.dji.com'
-  staging: '//api-developer.dbeta.me'
 sdk: "onboard-sdk"
 
 theme: dji-doc
