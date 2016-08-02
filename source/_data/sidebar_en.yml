@@ -82,6 +82,16 @@
       title: Commandline Linux (Old)
       path: /github-platform-docs/commandline/README.html
 -
+  title: Sensor Integration Guides
+  list:
+    -
+      title: Velodyne LiDAR
+      path: /sensor-integration-guides/velodyne/readme.html
+    -
+      title: Ping ADS-B
+      path: /sensor-integration-guides/ping/readme.html
+
+-
   title: APPENDIX
   list:
     -
