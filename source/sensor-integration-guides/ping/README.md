@@ -44,7 +44,7 @@ Configure your serial terminal software following the STM32 example documentatio
 The iOS App is located in a separate repo named `OnboardSDK-Ping-iOSApp`. Obtain the the source code of the using git:
 > git clone --recursive https://github.com/dji-sdk/OnboardSDK-Ping-iOSApp.git
 
-Then follow the documentation in the repo to build and load the mobile App to your iOS device. You should see a new App named `Ping Demo` on your iOS device.
+Then follow the documentation in the repo to build and sideload the mobile App to your iOS device. You should see a new App named `Ping Demo` on your iOS device.
 
 ## Activation
 
