@@ -1,0 +1,96 @@
+---
+title: Integration with Velodyne LiDAR
+version: v3.1.8
+date: 2016-08-05
+github: https://github.com/dji-sdk/Onboard-SDK/tree/3.1/sample/PureQT
+---
+
+## Introduction
+
+Advances in sensing capability and size and cost reduction of Light Detection and Ranging (LiDAR) have made it natural to consider a LiDAR for GN&C (Guidance, navigation and control) of commercial UAV applications, such mobile mapping, surveying, and inspection. A velydyne VLP16 puck lite is proposed to demonstrate the potential critical integration of onboard SDK with a LiDAR for an OES system. 
+
+In this release, a preliminary library and example have been developed to support logging real-time data into a standard pcap file.  The pcap log files can be post processed with Velodyne's "VeloView" or other third parties' LiDAR data processing and visualization software. 
+ 
+More comprehensive library and examples for futher higher level integration are under development for future releases.
+
+
+## Hardware Setup
+
+Matrice 100 drone is used for the demonstration. A DC-DC power supply is used to obtain the power from the battery and convert/regulate DC voltage for both i-5 based mini Linux computer and LiDAR, as shown in Figure 1 below.
+
+![Hardware Setup](../../images/velodyne/hw_setup.PNG)
+
+FIgure 1 Diagram of Hardware Setup
+
+Table 1 lists the power consuption of units and capacities of batteries.
+
+![Power Requirement](../../images/velodyne/units_power_consumptions_Batteries.PNG)
+
+DC-DC power suppler:
+
+	DROK DC Volt Converter Regulator is selected. It has the following specifications:
+	
+	Properties: non-isolated step-down power supply module 
+	Input voltage :8-35V 
+	Output voltage :1.5-24V adjustable 
+	Output current : 5A MAX, recommended:below 5V,4A long-term; 6-9V, 3A; 10V-15V,2.5A 
+ 
+	More information can be found in: https://www.amazon.com/DROK-Converter-Regulator-1-5-24V-Adjustable/dp/B00KL7I9XC
+	
+Mini Linux computer:
+
+	"Zini-1660" is the 6th Generation Intel Core i5 Processor based mini Linux computer with the following specifications:
+		Linux Version:  Ubuntu 16.04 LTS  
+		Processor: i5-6260U 1.8 GHz 2 core, 4 threads (Intel Iris Graphics 540)
+		Memory:  16 GB DDR4-2133     
+		Storage: 250GB Crucial M.2 SSD
+		Networking  Gigabit Ethernet (included)    
+		WiFi  Intel® Wireless AC Dual-Band (2.4/5ghz) (included)    
+
+	More information can be found in: https://zareason.com/shop/Zini-1660.html
+
+LiDAR:
+
+	Velodyne's VLP-16 PUCK LITE is the latest lighter weight/smaller version of the VLP-16 PUCK for applications with lower weight and small size requirements.  More information can be found in:
+	http://velodynelidar.com/vlp-16-lite.html
+	
+Figure 2 is the pitcture of the setup in M100 for test.
+
+![Hardware Setup](../../images/velodyne/hw_pic1.JPG)
+
+![Hardware Setup](../../images/velodyne/hw_pic2.JPG)
+
+FIgure 2 Hardware Setup
+	
+## Software Guide
+The demo software is located in:
+
+	".\onboardsdk\thirdparty" with two the following subfolders:
+	".\onboardsdk\thirdparty\velodyne_vlp16puck_lite_API_example\lidar_APIs_LIB"
+	".\onboardsdk\thirdparty\velodyne_vlp16puck_lite_API_example\QtConsoleExample"
+
+The library (".\onboardsdk\thirdparty\velodyne_vlp16puck_lite_API_example\lidar_APIs_LIB") provide a UDB driver (based on Boost.ASIO) and data logging with pcap files. This library can be integrated into OES.
+
+The example (".\onboardsdk\thirdparty\velodyne_vlp16puck_lite_API_example\QtConsoleExample") provide a Qt console application to use the lib to gather data and log data into pcap file.
+
+The data is logged into: 
+	
+	/home/(user)/Vlp16_logfiles/
+
+The file name is automatically named with the format starting with "vlp16_log_" plus Hour_Min_Seconds_Month_Date_Year, for example:
+
+	Vlp16_log_17_32_08_07_27_2016.pcap
+
+	
+
+
+
+
+ 
+
+
+
+
+
+
+
