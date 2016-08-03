@@ -56,8 +56,10 @@ The fireware activates the drone automatically after reset. Make sure the drone 
 
 Connect the iOS device to the remote controller, power on both the drone and the RC and reset the STM board. Open the `Ping Demo` App. If there is air traffic in your area, you should see red airplanes on the map.
 
+![PingMap](../../images/Ping/PingMap.png).
+
 ### 2. View the air traffic data on computer
 
 The onboard App also print the traffic data as well as the debug information to USART2 port, which can be viewed from the serial terminal from a computer.
-
+![PingTerminal](../../images/Ping/PingTerminal.jpg).
 
