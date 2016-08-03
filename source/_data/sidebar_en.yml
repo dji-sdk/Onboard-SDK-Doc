@@ -44,7 +44,9 @@
     -
       title: Ground Station Programming Guide
       path: /application-development-guides/ground-station-programming-guide.html
-
+    -
+      title: Mobile - Onboard SDK Communication
+      path: /application-development-guides/Mobile-OSDK.html
 -
   title: PLATFORM GUIDES
   list:
@@ -89,7 +91,7 @@
       path: /sensor-integration-guides/velodyne/readme.html
     -
       title: Ping ADS-B
-      path: /sensor-integration-guides/ping/readme.html
+      path: /sensor-integration-guides/ping/README.html
 
 -
   title: APPENDIX
