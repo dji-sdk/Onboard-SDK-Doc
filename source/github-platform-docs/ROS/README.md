@@ -99,7 +99,7 @@ Activation Process:
 
 Now, after completing activation process, you can start exploring our ROS examples or start working on your own application demo. 
 
-Additionally, ROS functions can now be initiated from an iOS Mobile app that runs on your mobile device connected to the RC. Read about it [here](../../application-development-guides/Mobile-OSDK.html)
+Additionally, ROS functions can also be initiated from an iOS Mobile app that runs on your mobile device connected to the RC. This enables users to test the functions easily in the field. You can read about it [here](../../application-development-guides/Mobile-OSDK.html)
 
 </br>
 

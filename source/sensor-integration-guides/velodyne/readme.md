@@ -54,13 +54,14 @@ LiDAR:
 	Velodyne's VLP-16 PUCK LITE is the latest lighter weight/smaller version of the VLP-16 PUCK for applications with lower weight and small size requirements.  More information can be found in:
 	http://velodynelidar.com/vlp-16-lite.html
 	
-Figure 2 is the pitcture of the setup in M100 for test.
+The figure below shows M100 with the Velodyne, Zini test setup. 
 
-![Hardware Setup](../../images/velodyne/hw_pic1.JPG)
+![Hardware Setup](../../images/velodyne/VeloM100.JPG)
 
-![Hardware Setup](../../images/velodyne/hw_pic2.JPG)
+The figure below shows M100 with the Velodyne, Zini test setup in-flight. 
 
-FIgure 2 Hardware Setup
+![Hardware Setup](../../images/velodyne/VeloFlying.JPG)
+
 	
 ## Software Guide
 The demo software is located in:
