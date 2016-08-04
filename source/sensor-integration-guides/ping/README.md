@@ -7,9 +7,11 @@ github: https://github.com/dji-sdk/Onboard-SDK/tree/3.1/thirdparty/ADSBExample
 
 ## Introduction
 
-This example demonstrates how to integrate a [pingRX](http://www.uavionix.com/products/pingrx/) ADS-B receiver with the DJI onboard SDK and mobile SDK. 
+This example demonstrates how to [integrate the Ping ADS-B receiver by uAvionix with the DJI onboard SDK and mobile SDK](http://www.dji.com/newsroom/news/dji-and-uavionix-to-release-ads-b-collision-avoidance-developer-kit.html). 
 
-This small ADS-B receiver allows the drone to receive realtime traffic information broadcasted by other manned or unmanned aircraft, as well as temporary flight restriction (TFR) information brocasted by the goverment. With this type of situation awareness, the onboard embedded system (OES) will be able to make some safety-critical decisions like collision avoidance or self separation.
+The small and light-weight [pingRX](http://www.midatlanticmultirotor.com/product/ping/) ADS-B receiver allows the drone to receive realtime traffic information broadcasted by other manned or unmanned aircraft, as well as temporary flight restriction (TFR) information brocasted by the goverment. With this type of situation awareness, the onboard embedded system (OES) will be able to make some safety-critical decisions like collision avoidance or self separation.
+
+![PingMap](../../images/Ping/PingMap.png)
 
 This example is based on the same hardware and toolchain as the STM32 example released previously, with the addition of a pingRX receiver and the optional (recommended) companion mobile App. The onboard App reads, parses and stores the real time air traffic messages from the ADS-B receiver, and sends the message to the mobile App, which displays the air traffic on a map. The onboard App also prints the air traffic information to a connected computer through UART.
 
@@ -56,7 +58,6 @@ The fireware activates the drone automatically after reset. Make sure the drone 
 
 Connect the iOS device to the remote controller, power on both the drone and the RC and reset the STM board. Open the `Ping Demo` App. If there is air traffic in your area, you should see red airplanes on the map.
 
-![PingMap](../../images/Ping/PingMap.png).
 
 ### 2. View the air traffic data on computer
 

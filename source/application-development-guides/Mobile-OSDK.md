@@ -83,7 +83,7 @@ ROS does not supports ACK returned from the Flight Controller. This will be supp
 
 ### STM32
 
-STM32 platform is in mobile commands mode by default. The supported commands are: 
+STM32 platform responds to mobile commands by default. **When not in simulator mode, sending mobile commands will cause the motor to spin and drone to fly. Use with care!** The supported commands are: 
 
 * Obtain Control
 * Release Control
