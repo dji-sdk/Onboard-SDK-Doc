@@ -23,17 +23,22 @@ The image below shows the ACK being returned to mobile.
 
 The iOS app can be side loaded to your phone using Xcode on a Macintosh system. Below are the list of instructions to side load the MOS app to your iOS device. 
 
-- Create Mobile app on the DJI developer website. You will need the Bundle ID and Key to be entered in the Xcode project. 
+- Create Mobile app on the DJI developer website. You will need the Bundle ID and Key to be entered in the Xcode project. An example Bundle ID is shown in the below image. 
 ![MOS app](../images/common/createApp.png)
 - Login using your Apple ID and download Xcode from the App store. 
 - Launch Xcode and setup your Apple ID in the Preferences - Account section. 
-- Download source for iOS app from ... 
+- Download source for iOS app from https://github.com/dji-sdk/onboardsdk-iosapp
 - Launch the MOS.xcodeproj 
-- In the project settings change bundle ID to the one registered on the DJI developer portal. 
+- Click on the 'MOS' project on Xcode to view the General settings. 
+- In the General settings change bundle ID to the one registered on the DJI developer portal. In the below image, the same example Bundle ID is being used. 
 ![MOS app](../images/common/bundleID.png)
 - Go to the MOSProductCommunicationManager.m and enter registration ID from the DJI developer portal. 
 - Hit Run and let Xcode fix any issues that show up. 
 - The app can now be launched on your iOS device. 
+- Below is a screenshot of the app after successful Take Off. 
+![MOS app](../images/common/MOSDKApp.jpg)
+
+
 
 ### Linux
 
@@ -82,6 +87,7 @@ STM32 platform is in mobile commands mode by default. The supported commands are
 
 * Obtain Control
 * Release Control
+* Activation
 * Take Off
 * Landing
 * Arm
