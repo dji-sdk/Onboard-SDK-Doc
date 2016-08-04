@@ -9,9 +9,13 @@ The Mobile Onboard SDK communication uses the Data Transparent Transmission prot
 
 This implementation provides an alternative way to run/test your OnboardSDK code with an aircraft in the real world. The commands are sent from the iOS app to the OES, data is parsed in the Onboard SDK code and the respective functions are executed accordingly. For example, clicking on the 'Take Off' button on the iOS app results in the command being sent to the OES, the parser on the Onboard SDK sample reads the command and calls the 'Take Off' function accordingly. After completion of 'Take Off', the returned Flight Controller ACK is sent to the iOS app (Returned ACK is only supported in Linux example for this release). 
 
-Basic architecture of the Mobile Onboard SDK communication is as shown below: 
+Basic architecture of the Mobile Onboard SDK communication is shown. The image below shows commands being sent from Mobile to Onboard SDK.  
 
-![MOS architecture](../images/common/MOSDK.png)
+![MOS architecture](../images/common/MOSDK1.png)
+
+The image below shows the ACK being returned to mobile. 
+
+![MOS architecture](../images/common/MOSDK2.png)
 
 ## Linux
 
