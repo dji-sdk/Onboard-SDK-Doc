@@ -5,17 +5,17 @@ date: 2016-06-24
 
 ## Introduction
 
-The Mobile Onboard SDK communication uses the Data Transparent Transmission protocol. As mentioned in the [Data Transparent Transmission](../introduction/data-transparent-transmission.html) section, the Data Transparent Transmission was developed to combine the benefits of Mobile and Onboard SDK APIs by establishing a connection between a Mobile Device and an OES. Via the Data Transparent Transmission, developers are able to send data from their Mobile Device to OES to control over the program while receiving computing results, log data, flight status and external sensor data etc. 
+The Mobile Onboard SDK communication uses the Data Transparent Transmission protocol. As mentioned in the [Data Transparent Transmission](../introduction/data-transparent-transmission.html) section, the Data Transparent Transmission was developed to combine the benefits of Mobile and Onboard SDK APIs by establishing a connection between a Mobile Device and an OES. Via the Data Transparent Transmission, developers are able to send any data from their Mobile Device to OES and vice versa. 
 
 This implementation provides an alternative way to run/test your OnboardSDK code with an aircraft in the real world. The commands are sent from the iOS app to the OES, data is parsed in the Onboard SDK code and the respective functions are executed accordingly. For example, clicking on the 'Take Off' button on the iOS app results in the command being sent to the OES, the parser on the Onboard SDK sample reads the command and calls the 'Take Off' function accordingly. After completion of 'Take Off', the returned Flight Controller ACK is sent to the iOS app (Returned ACK is only supported in Linux example for this release). 
 
 Basic architecture of the Mobile Onboard SDK communication is shown. The image below shows commands being sent from Mobile to Onboard SDK.  
 
-![MOS architecture](../images/common/MOSDK1.png)
+![MOS Mobile to OES](../images/common/MOSDK1.png)
 
 The image below shows the ACK being returned to mobile. 
 
-![MOS architecture](../images/common/MOSDK2.png)
+![MOS ACK return](../images/common/MOSDK2.png)
 
 
 ## Setup
@@ -24,13 +24,13 @@ The image below shows the ACK being returned to mobile.
 The iOS app can be side loaded to your phone using Xcode on a Macintosh system. Below are the list of instructions to side load the MOS app to your iOS device. 
 
 - Create Mobile app on the DJI developer website. You will need the Bundle ID and Key to be entered in the Xcode project. 
-![MOS architecture](../images/common/createApp.png)
+![MOS app](../images/common/createApp.png)
 - Login using your Apple ID and download Xcode from the App store. 
 - Launch Xcode and setup your Apple ID in the Preferences - Account section. 
 - Download source for iOS app from ... 
 - Launch the MOS.xcodeproj 
 - In the project settings change bundle ID to the one registered on the DJI developer portal. 
-![MOS architecture](../images/common/bundleID.png)
+![MOS app](../images/common/bundleID.png)
 - Go to the MOSProductCommunicationManager.m and enter registration ID from the DJI developer portal. 
 - Hit Run and let Xcode fix any issues that show up. 
 - The app can now be launched on your iOS device. 
