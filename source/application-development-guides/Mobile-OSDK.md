@@ -87,6 +87,7 @@ STM32 platform is in mobile commands mode by default. The supported commands are
 
 * Obtain Control
 * Release Control
+* Activation
 * Take Off
 * Landing
 * Arm
