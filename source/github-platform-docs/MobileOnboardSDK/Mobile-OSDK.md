@@ -40,6 +40,7 @@ The iOS app can be side loaded to your phone using Xcode on a Macintosh system. 
 ![MOS app](../../images/common/MOSDKApp.jpg)
 
 
+## Operation
 
 ### Linux
 
