@@ -12,7 +12,7 @@ This example onboard App is built upon the <a href="http://www.st.com/content/st
 The system has the following setup:
 ![system diagram](../../images/STM32/STM32_System_Structure.png) 
 
-The user sends commands to the USART2 port of the STM32 from a serial terminal. Based on the commands received, the App communicates with the M100 connected to the USART3 port through the Onboard SDK and prints feedback/debug information to the user. Since version 3.1.8, an [iPhone/iPad App](../../application-development-guides/Mobile-OSDK.html) named `Mobile OSDK` is created for the user to send some commands to the OES from a mobile device.
+The user sends commands to the USART2 port of the STM32 from a serial terminal. Based on the commands received, the App communicates with the M100 connected to the USART3 port through the Onboard SDK and prints feedback/debug information to the user. Since version 3.1.8, an [iPhone/iPad App](../MobileOnboardSDK/Mobile-OSDK.html) named `Mobile OSDK` is created for the user to send some commands to the OES from a mobile device.
 
 Before using this example App, make sure you have followed the [Quick Start](../../quick-start/index.html) and have valid APP KEY and APP ID.
 
