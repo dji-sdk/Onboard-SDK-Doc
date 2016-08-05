@@ -165,6 +165,9 @@ To try out the sample:
 * In mobile mode, first takeoff from the `Core Functions` tab. Then go to the `Custom Missions` tab and choose `Draw a Square`.  
 * In programmatic mode, call `drawSqrPosCtrlSample` after calling `monitoredTakeoff`. 
 
-The output looks like this:
+The output looks like this (takeoff - draw a square - landing):
+
+![DrawSqr_Simulator](../../images/Linux/Square.png)
+
 
 > A3 support is currently in beta. Please file issues on the github repo if you find any!
