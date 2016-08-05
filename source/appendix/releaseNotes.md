@@ -24,18 +24,18 @@ Click on the titles below to go to the full documentation for each feature.
 * Connects to the OSDK through Mobile SDK - Onboard SDK Transparent Transmission link
 * Perfect for real-world tests where you do not want to deal with wireless UART modules
 
-#### [PingRX: Air traffic sensing](../sensor-integration-guides/ping/README.html)
+#### [PingRX: Air traffic awareness](../sensor-integration-guides/ping/README.html)
 
 * With the ultra-lightweight PingRX integrated with Onboard SDK, you can now receive information about air traffic up to 100 miles from your drone
 * Great for deployments near commercial airspace - Ping data is available in OSDK for you to implement sense-and-avoid
-* Our iOS app with a map display of nearby air traffic makes it very easy to visualize your environment
+* We provide a companion iOS App to view air traffic data in your area on a map
 
 #### [Velodyne Puck Lite LiDAR: A new era in drone sensing](../sensor-integration-guides/velodyne/readme.html)
 
 * The Puck Lite LiDAR gives you a high-frequency, highly accurate 3D point cloud of its surroundings up to 100m
 * Revolutionize your mapping, inspection or survey application with the power of drones and LiDAR
 * Allows you to implement LiDAR SLAM or sophisticated sense-and-avoid when paired with the Onboard SDK
-* Integration with new, Core i5-based x86 OES for powerful processing 
+* Integration with new, Core i5-based x86 OES for powerful processing
 
 #### [New Programming Paradigm](../application-development-guides/programmming-guide.html)
 
@@ -72,10 +72,10 @@ New developers should start with the revamped [Getting Started Guide](../quick-s
 
 ##### Core Library
 
-* Code style updated to a more modern GNU-like style. Change affects indentations and new functions/variables/structs introduced in this release. Older functions, variables, structs and classes are untouched. 
+* Code style updated to a more modern GNU-like style. Change affects indentations and new functions/variables/structs introduced in this release. Older functions, variables, structs and classes are untouched.
 * Many elements of code have been identified as sub-optimal; we have started marking these structs/functions for deprecation in a future release. We are fully backwards compatible for this release - no old elements have been removed, but users are encouraged to move to the newer elements introduced as part of this release. Doxygen-style comments document the changes and planned replacements; users should look into the core library or go to `doc/doxygen-doc/html/index.html` to see doxygen code documentation.
 
-    Some examples (**This table is not exhaustive!**): 
+    Some examples (**This table is not exhaustive!**):
 
 |Old element|Planned New element|Description|File|
 |-------|------|---------|--------|
@@ -102,9 +102,9 @@ New developers should start with the revamped [Getting Started Guide](../quick-s
 |Button behavior|Arm, activation, hotpoint buttons are interactive/more informative|
 |Waypoint functionality|<ul><li>Intermittent crashes fixed</li><li>Lat/Lon input changed from radians to degrees</li>Revamped layout and added indications for the order of operations</ul>|
 |Hotpoint Functionality|Lat,Lon can now be entered in degrees|
-|UI| Unused buttons and tabs removed. UI looks a lot cleaner.| 
+|UI| Unused buttons and tabs removed. UI looks a lot cleaner.|
 
-* Build has been updated to work with the newest Qt release (5.6). DJI Script dependencies have been removed to streamline Qt build. 
+* Build has been updated to work with the newest Qt release (5.6). DJI Script dependencies have been removed to streamline Qt build.
 
 ##### Commandline Linux
 
@@ -121,7 +121,7 @@ New developers should start with the revamped [Getting Started Guide](../quick-s
 * Directory structure has changed to a more standard structure. ManifoldPlatform folder has been removed and the Linux example now consolidates all linux-based platforms.
 * Automatic activation sequence added
 * User Configuration file added
-* On-screen information at the interactive prompt updated to be more useful 
+* On-screen information at the interactive prompt updated to be more useful
 
 ##### ROS
 

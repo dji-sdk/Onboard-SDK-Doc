@@ -28,6 +28,8 @@ Supported commands and  actions:
 * Timestamp Synchonization
 * Native Waypoint
 * Hotpoint
+* Local Navigation (go to specified local position)
+* Global Navigation (go to specified global position)
 * Waypoint Navigation (fly through a series of GPS coordinates)
 * WebSocket With Baidu Map (for navigation)
 * MAVLink And QGroundStation
