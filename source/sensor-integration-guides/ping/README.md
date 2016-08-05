@@ -56,11 +56,15 @@ The fireware activates the drone automatically after reset. Make sure the drone 
 
 ### 1. View the air traffic on mobile App
 
-Connect the iOS device to the remote controller, power on both the drone and the RC and reset the STM board. Open the `Ping Demo` App. If there is air traffic in your area, you should see red airplanes on the map.
+Connect the iOS device to the remote controller, power on both the drone and the RC and reset the STM board. Open the `Ping Demo` App. If there is air traffic in your area, you should see red airplanes on the map. Tap on one red airplanes, you'll see detailed information: the ICAO which is the unique identifier, the altitude, the heading angle in degree, the horizontal speed and the vertical speed (negative is for descending).
 
 
 ### 2. View the air traffic data on computer
 
 The onboard App also print the traffic data as well as the debug information to USART2 port, which can be viewed from the serial terminal from a computer.
 ![PingTerminal](../../images/Ping/PingTerminal.jpg).
+
+### Under the hood
+
+The pingRX receiver transmit the received air traffic information using the opensource mavlink protocol. The onboard App stores the information in a list indexed by the [ICAO code](https://en.wikipedia.org/wiki/Aviation_transponder_interrogation_modes#ICAO_24-bit_address). When information of a new airplane is received, a new entry is added to the list (in function `Ping::processPin()`). The App tracks how many seconds have passed since last update for each airplane (in function `Ping::updateTrafficAge()`). The variable `PING_TRAFFIC_VALID_TIMEOUT` defines the how long a record will expire and can be overwritten if an update is note received.
 
