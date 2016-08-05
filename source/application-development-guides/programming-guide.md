@@ -1,14 +1,16 @@
 ---
 title: Programming Guide - Using the Onboard SDK APIs 
+version: v3.1.8
 date: 2016-08-05
 ---
-
-> This guide is for users who want to go beyond the functionality or interfaces offered by the samples. If you haven't seen the samples first, please do so now. Samples can be found under *Platform Guides* on your left.
+![Prog Guide Header](../images/common/ProgGuideHeader.png)
 
 ## Introduction
 This guide helps users understand Onboard SDK programming paradigms and correct usage of the APIs provided by the DJI Onboard SDK library. The guide walks through the two asynchronous programming paradigms that are supported by the SDK, and provides information about DJI Onboard SDK workflow. 
 
 All structures and functions are declared in `DJI_API.h`, `DJI_Type.h` and `DJICommonType.h`. For more details, please refer to the source code - Doxygen documentation for the API is also provided.
+
+For good example usage of the APIs and the onboard SDK in general, we encourage you to take a look at the sample programs ([Linux](../github-platform-docs/Linux/README.html), [ROS](../github-platform-docs/ROS/README.html), [STM32F4](../github-platform-docs/STM32/README.html) and [Windows (on Qt)](../github-platform-docs/PureQT/README.html)).
 
 ## Software Components
 
@@ -37,7 +39,7 @@ The Onboard SDK supports two ways of doing this, described below.
 
 For true asynchronous programming, the SDK needs to allow for a mechanism for the user to execute code upon receiving ACKs from the aircraft indepdendent of the main flow of execution. The Onboard SDK provides this through **callback functions**.
 
-Upon receiving the ACK from the aircraft, the SDK's `read` function calls the user-provided callback function. The user is also allowed to supply some data (`UserData`, implemented as a `void*`), which is passed as an argument to the user callback. The user callback has access to the ACK and can implement logic based on the ACK. With `UserData`, the user can also pass any additional information to the callback that the callback may act on depending on the ACK parsing logic.   
+Upon receiving the ACK from the aircraft, the SDK's `read` function calls the user-provided callback function. The user is also allowed to supply some data (`UserData`, implemented as a `void*`), which is passed as an argument to the user callback. The user callback has access to the ACK and can implement logic based on the ACK. `UserData` is meant for two purposes: (1) the user can also pass any additional information to the callback that the callback may act on depending on the ACK parsing logic (2) it is a mechanism for the callback to pass data back to user, if the user passes a reference to a variable that can be populated in the callback based on the ACK.   
 
 **Example:** Activation function in QT sample 
 
@@ -111,7 +113,9 @@ Blocking calls are great for maintaining a linear flow of execution. They are al
 
 When calling APIs, developers should make sure that the sequence of events follows this chart:
 
-![Workflow](../images/Linux/OSDK_Workflow.png)
+![Workflow](../images/common/Workflow.png)
+
+There are some exceptions to this workflow - Virtual RC and arming/disarming are not part of this flow, for example - but for most cases this workflow suffices.
 
 ## Receiving Flight Data
 
@@ -170,25 +174,27 @@ typedef struct BroadcastData
     q = flight->getQuaternion()
     ```
 
+## Controlling the Aircraft's Flight
 
+#### Movement Control
 
+Movement control is a mechanism through which users can command the drone to execute varied, complex maneouvers and custom missions.  
 
+We recommend developers send their movement control commands at 50Hz frequency. Developers can implement that by calling `usleep(20000)`, `ros::Duration(1/50)` or other ways which depend on the development environment.
 
+For Movement Control, specific meanings of arguments are decided by the control mode byte. For more info about Movement Control, please refer to the [Control mode byte](../appendix/index.html#Control-Mode-Byte) section in the Appendix.
 
-## Movement Control
+To execute horizontal movement, developers can use the `HORI_POS` mode (`0x91`) for horizontal movement. More details are shown in [Position Control(HORI_POS)](#position-control-hori-pos) in this document. In this mode, speed and attitude are controlled by autopilot, thus developers do not need to worry about that.
 
-
-We recommend developers to send their Movement Control commands at 50Hz frequency. Developers can implement that by `usleep(20000)`、`ros::Duration(1/50)` or other ways which depend on the development environment.
-
-For Movement Control, specific meanings of arguments are decided by the control mode byte. For more info about Movement Control, please refer to [Control mode byte part in Appendix](../appendix/index.html#Control-Mode-Byte).
-
-We recommend developers to use `HORI_POS` mode for horizontal movement. More details are shown in [Position-Control(HORI_POS)](#position-control-hori-pos) in this document. In this mode, speed and attitude are controlled by autopilot, thus developers do not need to worry about that.
+We provide higher-level APIs for common control modes - position control, attitude control and velocity control - through simple functions in the new Linux example. We recommend you try these functions out and view their implementations before calling API-level movement control functions.
     
 Please note that certain conditions are required for some control modes to be functional:
 
 * Only when the GPS signal is good (health\_flag >=3)，horizontal position control (HORI_POS) related control modes can be used.
-* Only when GPS signal is good (health\_flag >=3)，or when Gudiance system is working properly with Autopilot，horizontal velocity control(HORI_VEL)related control modes can be used.
+* Only when GPS signal is good (health\_flag >=3)，or when Gudiance system is working properly with Autopilot，horizontal velocity control(HORI_VEL) related control modes can be used.
 
+
+**Example**: Direct API call to `setFlightControl()`
 ```c
 FlightData data;
 data.flag = flightFlag;
@@ -196,47 +202,24 @@ data.x = flightx;
 data.y = flighty;
 data.z = flightz;
 data.yaw = flightyaw;
-flight->setFlight(&data);
+flight->setFlightControl(&data);
+```
+
+**Example**: Linux example call to move the aircraft by 10 m in the forward (x) direction:
+```c
+int positionControlStatus = moveByPositionOffset(api, flight, 10, 0, 0, 0);
 ```
 
 
-## GPS to North-East Coordinate
-Convert GPS to North-East-Down Coordinate. (GPS in radian，North-East Coordinate in meter)
-For example, `origin_longti` and `origin_lati` , as the longitude and latitude of original position，are decided by developers and the position of UAV taking off is recommended to be the original position. `longti` and `lati` are longitude and latitude of UAV's current posistion. `x` and `y` are offset to the original position in the North and the East directions. The unit of offset is meter.
+#### Position Control(HORI_POS)
 
-~~~c
-#define C_EARTH (double) 6378137.0
-/* From GPS to Ground */
-{
-    double dlati = lati-origin_lati;
-    double dlongti= longti-origin_longti;
-
-    double x = dlati * C_EARTH;
-    double y = dlongti * C_EARTH * cos(lati / 2.0 + origin_lati / 2.0);
-}
-~~~
-
-## Quaternion to RPY
-
-Convert quaternion to roll, pitch and yaw in radian in body coordinate.
-
-~~~c
-    api_quaternion_data_t q;
-    DJI_Pro_Get_Quaternion(&q);
-
-    float roll  = atan2(2.0 * (q.q3 * q.q2 + q.q0 * q.q1) , 1.0 - 2.0 * (q.q1 * q.q1 + q.q2 * q.q2));
-    float pitch = asin(2.0 * (q.q2 * q.q0 - q.q3 * q.q1));
-    float yaw   = atan2(2.0 * (q.q3 * q.q0 + q.q1 * q.q2) , - 1.0 + 2.0 * (q.q0 * q.q0 + q.q1 * q.q1));
-~~~
-
-## Position Control(HORI_POS)
-
-The input horizatal arguments are the offset between current position and target position, when `HORI_POS` is the mode of horizontal movement control. The unit of offset is meter.
+The HORI_POS control mode is a relative offset control mode; the input horizontal arguments are the offset between current position and target position. The unit of offset is meters.
 
 For example, in ground frame, `target` is target position and `current` is UAV's current position. The coordinates of these positions are caculated by GPS, Guidance or other sensors. In most cases, GPS is the correct way to make this work.
 
-Because, for the autopilot, the maximum frequency of receiving data is 50Hz, the frequency of calculating offset should be over 50Hz to ensure the closed-loop control is vaild.  
+Because, for the autopilot, the maximum frequency of receiving data is 50Hz, the frequency of calculating offset should be over 50Hz to ensure the closed-loop control is valid; you always want to have a new offset calculated before you send it to the flight controller to execute.
 
+**Example"**: Writing position control procedure:
 ~~~c
 void update_offset()
 {
@@ -256,9 +239,37 @@ flight->setFlight(&data);
 
 ~~~
 
+As mentioned before, we have implemented this checking procedure in the `moveByPositionOffset` Linux example call. 
 
-## Should I build my program from scratch?
+## Math Utilities
 
-In most cases, the answer is no. We provide sample programs for a wide variety of platforms - [Linux](../github-platform-docs/Linux/README.html), [ROS](../github-platform-docs/ROS/README.html), [Windows](../github-platform-docs/PureQT/README.html) and [STM32F4](../github-platform-docs/STM32/README.html). These samples effectively implement application-layer constructs on top of the Onboard SDK library in a platform-specific manner. The samples are a great starting point, and allow you to go straight to implementing your own functionality rather than spending time perfecting serial communciation, threading and asynchronocity.
+This information will help you go back and forth between the various coordinate-systems and methods of angle representation used in the code.
 
-Use this guide to build your own programs if you absolutely cannot work with the samples provided by DJI. The ROS and new Linux sample (3.1.8) in particular are designed to be extensible - you can put your own functionality directly into the framework of these samples.  
+#### GPS to North-East Coordinate
+Convert GPS to North-East-Down Coordinate. (GPS in radian，North-East Coordinate in meter)
+For example, `origin_longti` and `origin_lati` , as the longitude and latitude of original position, are decided by developers. The position of UAV takeoff is recommended to be set as the original position. `longti` and `lati` are longitude and latitude of UAV's current posistion. `x` and `y` are offsets to the original position in the local frame North and the East directions. The unit of offset is meter.
+
+~~~c
+#define C_EARTH (double) 6378137.0
+/* From GPS to Ground */
+{
+    double dlati = lati-origin_lati;
+    double dlongti= longti-origin_longti;
+
+    double x = dlati * C_EARTH;
+    double y = dlongti * C_EARTH * cos(lati / 2.0 + origin_lati / 2.0);
+}
+~~~
+
+#### Quaternion to RPY
+
+Convert quaternion to roll, pitch and yaw in radian in body coordinate. A fairly good introduction to quaternions can be found [here](http://www.chrobotics.com/library/understanding-quaternions).
+
+~~~c
+    api_quaternion_data_t q;
+    DJI_Pro_Get_Quaternion(&q);
+
+    float roll  = atan2(2.0 * (q.q3 * q.q2 + q.q0 * q.q1) , 1.0 - 2.0 * (q.q1 * q.q1 + q.q2 * q.q2));
+    float pitch = asin(2.0 * (q.q2 * q.q0 - q.q3 * q.q1));
+    float yaw   = atan2(2.0 * (q.q3 * q.q0 + q.q1 * q.q2) , - 1.0 + 2.0 * (q.q0 * q.q0 + q.q1 * q.q1));
+~~~
