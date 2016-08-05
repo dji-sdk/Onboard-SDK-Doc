@@ -44,6 +44,9 @@
     -
       title: Ground Station Programming Guide
       path: /application-development-guides/ground-station-programming-guide.html
+    -
+      title: Flight Mission ACK codes
+      path: /application-development-guides/flight-mission-ack-codes.html
 
 -
   title: SAMPLE APPLICATIONS
