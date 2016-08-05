@@ -30,10 +30,7 @@ Follow the [hardware installation documentation of the STM32 example](../../gith
 
 ### 2. Build the example APP
 
-First, clone the source code of the example app with its submodules using git:
-> git clone --recursive https://github.com/dji-sdk/Onboard-SDK.git
-
-Open the project located in `thirdparty/ADSBExample/Stm32PingExample/ProjectKeil/Stm32PingExample.uvprojx` in Keil uVision IDE. To build the code, developers need to replace the `APP_KEY` and `APP_ID` obtained from DJI Developer site in `thirdparty/ADSBExample/Stm32PingExample/inc/AppKey.h` file.
+After cloning the [onboard SDK repo from github](https://github.com/dji-sdk/Onboard-SDK), open the project located in `thirdparty/ADSBExample/Stm32PingExample/ProjectKeil/Stm32PingExample.uvprojx` in Keil uVision IDE. To build the code, developers need to replace the `APP_KEY` and `APP_ID` obtained from DJI Developer site in `thirdparty/ADSBExample/Stm32PingExample/inc/AppKey.h` file.
 
 Use the menu item `Project->Build Target` and `Flash->Download` to build the project and flash to the STM32 board.
 
