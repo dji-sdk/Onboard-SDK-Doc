@@ -28,10 +28,7 @@ Supported commands and  actions:
 * Timestamp Synchonization
 * Native Waypoint
 * Hotpoint
-* Follow-me
-* Local Navigation (fly into a certain (X,Y,Z))
-* GPS Navigation (fly into a certain GPS coordinate)
-* Naive Waypoint Navigation (fly through a series of GPS coordinates)
+* Waypoint Navigation (fly through a series of GPS coordinates)
 * WebSocket With Baidu Map (for navigation)
 * MAVLink And QGroundStation
 
@@ -100,7 +97,10 @@ Activation Process:
 
 ## How To Operate
 
-Now, after completing activation process, you can start exploring our ROS examples or start working on your own application demo.
+Now, after completing activation process, you can start exploring our ROS examples or start working on your own application demo. 
+
+Additionally, ROS functions can also be initiated from an iOS Mobile app that runs on your mobile device connected to the RC. This enables users to test the functions easily in the field. You can read about it [here](../../github-platform-docs/MobileOnboardSDK/Mobile-OSDK.html)
+
 </br>
 
 Whenever you develop your own ROS package, include the ``dji_drone.h`` from ``dji_sdk/include/dji_sdk`` into your package (there is also a python version ``dji_drone.py`` in ``dji_sdk/src``). Make sure to build and link your target package with DJI Onboard SDK library residing under ``dji_sdk_lib``.

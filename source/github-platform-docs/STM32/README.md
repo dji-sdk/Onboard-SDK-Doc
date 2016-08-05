@@ -12,7 +12,7 @@ This example onboard App is built upon the <a href="http://www.st.com/content/st
 The system has the following setup:
 ![system diagram](../../images/STM32/STM32_System_Structure.png) 
 
-The user sends commands to the USART2 port of the STM32 from a computer. Based on the commands received, the App communicates with the M100 connected to the USART3 port through the Onboard SDK and sends feedback information to the user. 
+The user sends commands to the USART2 port of the STM32 from a serial terminal. Based on the commands received, the App communicates with the M100 connected to the USART3 port through the Onboard SDK and prints feedback/debug information to the user. Since version 3.1.8, an [iPhone/iPad App](../MobileOnboardSDK/Mobile-OSDK.html) named `Mobile OSDK` is created for the user to send some commands to the OES from a mobile device.
 
 Before using this example App, make sure you have followed the [Quick Start](../../quick-start/index.html) and have valid APP KEY and APP ID.
 
@@ -79,29 +79,33 @@ When the STM32 receives a "0xFE" it will execute the command immediately.
 
 The following commands has been implemented in the App. Developers can add more commands as they need based on the open protocol.
 
-|Command          | Code for command             |
-|:----------------|:------------------|  
-|Get current version   | 0xFA 0xFB 0x00 0xFE |
-|Send activate information | 0xFA 0xFB 0x01 0xFE | 
-|Obtain control   		|0xFA 0xFB 0x02 0x01 0xFE|  
-|Release control   	 	|0xFA 0xFB 0x02 0x00 0xFE | 
-|Arm    		 	|0xFA 0xFB 0x03 0x01 0xFE|  
-|Disarm 		 	|0xFA 0xFB 0x03 0x00 0xFE|  
-|Movement Control   |0xFA 0xFB 0x04 0x01 Flag  x_H  x_L  y_H  y_L  z_H  z_L  yaw_H yaw_L 0xFE|
-|Movement Control (dry-run)   |0xFA 0xFB 0x04 0x02 Flag  x_H  x_L  y_H  y_L  z_H  z_L  yaw_H yaw_L 0xFE|
-|Return to home(RTH)|0xFA 0xFB 0x05 0x01 0xFE|  
-|Auto take off  	|0xFA 0xFB 0x05 0x02 0xFE|  
-|Auto landing  		|0xFA 0xFB 0x05 0x03 0xFE|  
-|Virtual RC on(mode A) |0xFA 0xFB 0x06 0x01 0xFE  |
-|Virtual RC on(mode F) |0xFA 0xFB 0x06 0x02 0xFE  |
-|Virtual Rc off 	 	|0xFA 0xFB 0x06 0x00 0xFE | 
-|Start HotPoint 	 	|0xFA 0xFB 0x07 0x00 Altitude Angular_Speed Radius 0xFE|
-|Stop HotPoint          |0xFA 0xFB 0x07 0x01 0xFE |
-|Get Broadcast Data     |0xFA 0xFB 0x08 0x00 0xFE |
+|Function          | Terminal Command Code             | Mobile OSDK App support |
+|:----------------|:------------------|:------------------|  
+|Get current version   | 0xFA 0xFB 0x00 0xFE | No |
+|Activate | 0xFA 0xFB 0x01 0xFE | Yes |
+|Obtain control   		|0xFA 0xFB 0x02 0x01 0xFE| Yes |
+|Release control   	 	|0xFA 0xFB 0x02 0x00 0xFE | Yes |
+|Arm    		 	|0xFA 0xFB 0x03 0x01 0xFE| Yes |
+|Disarm 		 	|0xFA 0xFB 0x03 0x00 0xFE| Yes |
+|Movement Control   |0xFA 0xFB 0x04 0x01 Flag x_H  x_L  y_H  y_L  z_H  z_L  yaw_H yaw_L 0xFE| No |
+|Movement Control (dry-run)   |0xFA 0xFB 0x04 0x02 Flag  x_H  x_L  y_H  y_L  z_H  z_L  yaw_H yaw_L 0xFE| No |
+|Return to home(RTH)|0xFA 0xFB 0x05 0x01 0xFE|   Yes |
+|Auto take off  	|0xFA 0xFB 0x05 0x02 0xFE|  Yes |
+|Auto landing  		|0xFA 0xFB 0x05 0x03 0xFE|  Yes |
+|Virtual RC on(mode A) |0xFA 0xFB 0x06 0x01 0xFE  | No |
+|Virtual RC on(mode F) |0xFA 0xFB 0x06 0x02 0xFE  | No |
+|Virtual Rc off 	 	|0xFA 0xFB 0x06 0x00 0xFE | No |
+|Start HotPoint 	 	|0xFA 0xFB 0x07 0x00 Altitude Angular_Speed Radius 0xFE| No |
+|Stop HotPoint          |0xFA 0xFB 0x07 0x01 0xFE | No |
+|Get Broadcast Data     |0xFA 0xFB 0x08 0x00 0xFE | No |
+|Start Local Nav Example|0xFA 0xFB 0x09 0x00 0xFE | Yes |
+|Stop Local Nav Example|0xFA 0xFB 0x09 0x01 0xFE | Yes |
 
 ## Examples
 
 ### Movement Control
+
+> This example is only meant to help the user understand how to use the movement control Api. **It should be tested only in the simulator, not on a real drone in the field.**
 
 The onboard SDK provides flexible ways to the developers to control the movement of the drone. Movement control command must not be sent before taking off. The movement control command in the above table requires the following data:
 + Control Mode Flag
@@ -126,11 +130,13 @@ Note that, as described in the [Onboard SDK Programming Guide](../../application
 
 To facilitate the debug and make sure the control value bytes (higher and lower) you send generates the expected value (e.g., the X velocity), the STM32 example app providese a "dry-run" mode. For example, the following command
 
-> 0xFA 0xFB 0x04 **0x02** 0x48 0x00 0x64 0x00 0xC8 0x00 0x01 0x00 0x05 0xFE
+> 0xFA 0xFB 0x04 **0x02** 0x48 0x00 0x64 0x00 0xC8 0x00 0x64 0x00 0x05 0xFE
 
 will print the assembled X, Y, Z, Yaw values without actually sending the data to the drone.
 
 ### Hot Point
+
+Try this function in the simualtor first. **To test it on a real drone in the field, make sure there is enough open space.**
 
 In Hot Point mode, the drone will start to orbit around the current position with specified altitude (m), angular speed (degree/s), and radius(m). For convenience, the example app takes the 3 1-byte parameters as integers. The following command set the drone to orbit with altitude 10m, angular speed 15 deg/s and radius 20m.
 
@@ -138,6 +144,19 @@ In Hot Point mode, the drone will start to orbit around the current position wit
 
 ![Hot Point](../../images/STM32/STM32_HotPoint.png)
 
+### Local Navigation
+
+Try this function in the simualtor first. **To test it on a real drone in the field, make sure there is enough open space.**
+
+While the position given by the GPS is in terms of latitude and longiture, it is more convenient and intuitive to do navigation in local Cartecian coordinate. We provide a local navigation example here. In this example, we create an north-east-up local frame and set the arm and take off position to be the origin. Under this frame, we command the drone to follow a 4-petal [rose shaped curve](https://en.wikipedia.org/wiki/Rose_(mathematics)) at an height of 25m with equation given by
+![RoseCurve](../../images/STM32/STM32_RoseCurveEquation.png)
+
+To run this example, the user need to **first activate, obtain control, take off**, and then start the local navigation example with terminal command
+> 0xFA 0xFB 0x09 0x01 0xFE
+
+or use the custom mission command `Local Navigation Test` (command ID 66) in the mobile-OSDK iOS App. The drone will stop and hover after a full rose curve. To stop the example during the execution using the mobile App, tap the `GO` button in `Local Navigation Test` interface again.
+
+![RoseCurve](../../images/STM32/STM32_RoseCurve_Result.png)
 ### Get Broadcastdata
 
 To get broadcastdata sent back from the UAV, send command
