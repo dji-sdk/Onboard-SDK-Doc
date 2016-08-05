@@ -1,6 +1,7 @@
 ---
-title: Mobile Onboard SDK communication using Data Transparent Transmission 
-date: 2016-06-24
+title: Mobile Onboard SDK communication using Data Transparent Transmission
+version: 3.1.8
+date: 2016-08-05
 ---
 
 ## Introduction
@@ -27,7 +28,7 @@ The iOS app can be side loaded to your phone using Xcode on a Macintosh system. 
 ![MOS app](../../images/common/createApp.png)
 - Login using your Apple ID and download Xcode from the App store. 
 - Launch Xcode and setup your Apple ID in the Preferences - Account section. 
-- Download source for iOS app from https://github.com/dji-sdk/onboardsdk-iosapp
+- Download source for iOS app from [here](https://github.com/dji-sdk/Mobile-OSDK-iOS-App)
 - Launch the MOS.xcodeproj 
 - Click on the 'MOS' project on Xcode to view the General settings. 
 - In the General settings change bundle ID to the one registered on the DJI developer portal. In the below image, the same example Bundle ID is being used. 
