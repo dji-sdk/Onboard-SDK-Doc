@@ -70,9 +70,9 @@ The demo software is located in:
 `.\onboardsdk\thirdparty\velodyne_vlp16puck_lite_API_example\lidar_APIs_LIB`
 `.\onboardsdk\thirdparty\velodyne_vlp16puck_lite_API_example\QtConsoleExample`
 
-The library (`.\onboardsdk\thirdparty\velodyne_vlp16puck_lite_API_example\lidar_APIs_LIB`) provide a UDP driver (based on Boost) and data logging with pcap files. This library can be integrated into OES.  Please note that: Boost needs to be version 1.50 or later; pcap needs to be version 1.40 or later.
+The library (`.\onboardsdk\thirdparty\velodyne_vlp16puck_lite_API_example\lidar_APIs_LIB`) provides a UDP driver (based on Boost) and data logging with pcap files. This library can be integrated into OES.  Please note that: Boost needs to be version 1.50 or later; pcap needs to be version 1.40 or later.
 
-The example (`.\onboardsdk\thirdparty\velodyne_vlp16puck_lite_API_example\QtConsoleExample`) provide a Qt console application to use the lib to gather and log data into a pcap file. Please note that Qt needs to be the latest version Qt5.7.
+The example (`.\onboardsdk\thirdparty\velodyne_vlp16puck_lite_API_example\QtConsoleExample`) provides a Qt console application to use the lib to gather and log data into a pcap file. Please note that Qt needs to be the latest version Qt5.7.
 
 The data is logged into: 
 	
