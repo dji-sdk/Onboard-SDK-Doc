@@ -7,15 +7,15 @@ github: https://github.com/dji-sdk/Onboard-SDK/tree/3.1/sample/PureQT
 
 ## Introduction
 
-Advances in sensing capability and size and cost reduction of Light Detection and Ranging (LiDAR) have made it natural to consider a LiDAR for GN&C (Guidance, navigation and control) of commercial UAV applications, such mobile mapping, surveying, and inspection. A velydyne VLP16 puck lite (as shown in FIgure 1 below) is proposed to demonstrate the potential critical integration of onboard SDK with a LiDAR for an OES system. 
+Advances in sensing capability and size and cost reduction of Light Detection and Ranging (LiDAR) have made it natural to consider a LiDAR for GN&C (Guidance, navigation and control) of commercial UAV applications, such mobile mapping, surveying, and inspection. Figure 1 shows a point cloud map of inside a building from Velodyne VLP-16 Puck Lite.  Velodyne VLP-16 Puck Lite is proposed to demonstrate the potential critical integration of onboard SDK with a LiDAR for an OES system. 
 
 In this release, a preliminary library and example have been developed to support logging real-time data into a standard pcap file.  The pcap log files can be post processed with Velodyne's "VeloView" or other third parties' LiDAR data processing and visualization software. 
  
 More comprehensive library and examples for futher higher level integration are under development for future releases.
 
-![VLP-16 puck lite](../../images/velodyne/Puck_LITE_Hand.png)
+![Poind Cloud Map from VLP-16 puck lite](../../images/velodyne/pointCloudInsideBuilding.png)
 
-Figure 1: Velodyne VLP-16 Puck Lite (http://velodynelidar.com/vlp-16-lite.html)
+Figure 1: Point cloud map of inside a building from Velodyne VLP-16 Puck Lite (http://velodynelidar.com/vlp-16-lite.html)
 
 ## Hardware Setup
 
