@@ -15,7 +15,7 @@ More comprehensive library and examples for further higher level integration are
 
 ![Point Cloud Map from VLP-16 puck lite](../../images/velodyne/pointCloudInsideBuilding.png)
 
-Figure 1 Point cloud map inside a building from Velodyne VLP-16 Puck Lite (http://velodynelidar.com/vlp-16-lite.html)
+Figure 1 Point cloud map inside a building from Velodyne VLP-16 Puck Lite (<http://velodynelidar.com/vlp-16-lite.html>)
 
 ## Hardware Setup
 
@@ -33,8 +33,7 @@ Table 1 lists the power consumption of the units and capacities of the batteries
 
 DROK DC Volt Converter Regulator is selected. It has the following specifications:
 	
-Properties: non-isolated step-down power supply module
-
+Properties: non-isolated step-down power supply module   
 Input voltage: 8-35V   
 Output voltage: 1.5-24V adjustable     
 Output current: 5A MAX, recommended: below 5V,4A long-term; 6-9V, 3A; 10V-15V,2.5A
@@ -76,17 +75,17 @@ The demo software is located in:
 
 The library (".\onboardsdk\thirdparty\velodyne_vlp16puck_lite_API_example\lidar_APIs_LIB") provide a UDP driver (based on Boost) and data logging with pcap files. This library can be integrated into OES.  Please note that: Boost needs to be version 1.50 or later; pcap needs to be version 1.40 or later.
 
-The example (".\onboardsdk\thirdparty\velodyne_vlp16puck_lite_API_example\QtConsoleExample") provide a Qt console application to use the lib to gather data and log data into pcap file. Please note that Qt needs to be the latest version Qt5.7.
+The example (".\onboardsdk\thirdparty\velodyne_vlp16puck_lite_API_example\QtConsoleExample") provide a Qt console application to use the lib to gather and log data into a pcap file. Please note that Qt needs to be the latest version Qt5.7.
 
 The data is logged into: 
 	
 /home/(user)/Vlp16_logfiles/
 
-The file is automatically named with the format starting with "vlp16_log_" plus Hour_Min_Seconds_Month_Date_Year, for example:
+The data file is automatically named with the format starting with "vlp16_log_" plus Hour_Min_Seconds_Month_Date_Year, for example:
 
 Vlp16_log_17_32_08_07_27_2016.pcap
 
-Velodyne's VeloView can be downloaded from http://www.paraview.org/Wiki/VeloView.  Figure 5 below is the point cloud map of a pcap log file in VeloView.
+Velodyne's VeloView can be downloaded from <http://www.paraview.org/Wiki/VeloView>.  Figure 5 below is the point cloud map of a pcap log file in VeloView.
 
 ![Point Cloud](../../images/velodyne/PointCloudInVeloView.png)
 
