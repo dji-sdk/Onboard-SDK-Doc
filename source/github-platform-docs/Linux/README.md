@@ -113,13 +113,13 @@ Once you have taken off, you may try some of the flight control functionality. A
 
 ##### Mobile Mode 
 
-The mobile mode is especially useful when you want to test out functionality on the Onboard SDK in a staged or interactive manner - simply make your code poll for commands from the companion mobile app and execute your mission/task/commands based on the mobile command sent. The mobile link is set up through DJI's Onboard SDk <--> Mobile SDK Data Transparent Transmission functionality. The mobile app is iOS only for now and can be downloaded [here](http://repo-not-yet-set-up).
+The mobile mode is especially useful when you want to test out functionality on the Onboard SDK in a staged or interactive manner - simply make your code poll for commands from the companion mobile app and execute your mission/task/commands based on the mobile command sent. The mobile link is set up with a companion iOS [app](../MobileOnboardSDK/Mobile-OSDK.html).  
 
 When you run the program in mobile mode, you can see a simple message after the standard initialization: 
 
 ![Mobile_1](../../images/Linux/Mobile_1.png)
 
-The mobile mode listens to mobile commands for 15 minutes before exiting.
+The mobile mode listens to mobile commands for ~150 minutes before exiting.
 
 ##### Programmatic Mode
 
@@ -156,7 +156,7 @@ The output looks like this (takeoff - waypoint test - landing):
 
 #### 2. Draw a Square : Position Control Example.
 
-The Position control example shows how to execute custom trajectories in local coordinates, useful for planning in a local space, executing complex trajectories and for use in GPS denied environments (with [DJI Guidance](https://store.dji.com/) or [Velodyne Puck](https://velodynelidar.com), for example) This example builds on the movement control functionality offered by the core API and adds a very simple receding setpoint algorithm to maintain constant speed. This sample will draw a square of side 10m and then proceed to draw two diagonals. First, the drone ascends 10 m from its current location. Then, it first moves right, then forward, then left, and backwards to its starting point. Then it will draw a diagonal at +45 degrees, go left along the side of the square, and draw the other diagonal at -45 degrees. **Leave a clearing of 10m around the drone before trying this example.**
+The Position control example shows how to execute custom trajectories in local coordinates, useful for planning in a local space, executing complex trajectories and for use in GPS denied environments (with [DJI Guidance](http://www.dji.com/product/guidance) or [Velodyne Puck](http://velodynelidar.com/vlp-16-lite.html), for example) This example builds on the movement control functionality offered by the core API and adds a very simple receding setpoint algorithm to maintain constant speed. This sample will draw a square of side 10m and then proceed to draw two diagonals. First, the drone ascends 10 m from its current location. Then, it first moves right, then forward, then left, and backwards to its starting point. Then it will draw a diagonal at +45 degrees, go left along the side of the square, and draw the other diagonal at -45 degrees. **Leave a clearing of 20m around the drone before trying this example.**
 
 The implementation of this example in `LinuxFlight.cpp` can serve as a great reference for any custom patterns you might want to draw.
 
