@@ -44,11 +44,9 @@
     -
       title: Ground Station Programming Guide
       path: /application-development-guides/ground-station-programming-guide.html
-    -
-      title: Mobile - Onboard SDK Communication
-      path: /application-development-guides/Mobile-OSDK.html
+
 -
-  title: PLATFORM GUIDES
+  title: SAMPLE APPLICATIONS
   list:
     -
       title: QT
@@ -83,6 +81,9 @@
     -
       title: Commandline Linux (Old)
       path: /github-platform-docs/commandline/README.html
+    -
+      title: Mobile - Onboard SDK
+      path: /github-platform-docs/MobileOnboardSDK/Mobile-OSDK.html
 -
   title: Sensor Integration Guides
   list:
