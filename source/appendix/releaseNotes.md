@@ -1,8 +1,60 @@
 ---
-title: Release Notes for Onboard SDK 3.1.7
-date: 2016-07-01
+title: Release Notes for Onboard SDK 3.1.8
+version: 3.1.8
+date: 2016-08-05
 ---
+
 ## Highlights
+
+* Onboard SDK 3.1.8 brings many brand new features and builds upon the stability of 3.1.7
+* Mobile-Onboard SDK: iOS app for controlling the OSDK functions through mobile device
+* Ping ADS-B Sense-and-Avoid sensor integration with iOS control app
+* Velodyne Puck Lite LiDAR sensor integration and tutorial
+* Support for synchronous programming paradigm and revamped programming guide
+* New C++ Linux example with Onboard SDK best practices
+* Many bugfixes and cleanup
+
+## New Feature Descriptions
+
+Click on the titles below to go to the full documentation for each feature.
+
+#### [Mobile-Onboard SDK(MOS) iOS App](../github-platform-docs/MobileOnboardSDK/Mobile-OSDK.html)
+
+* Call entire sequences, custom missions or simple Onboard SDK API calls through an iOS app
+* Connects to the OSDK through Mobile SDK - Onboard SDK Transparent Transmission link
+* Perfect for real-world tests where you do not want to deal with wireless UART modules
+
+#### [PingRX: Air traffic sensing](../sensor-integration-guides/ping/README.html)
+
+* With the ultra-lightweight PingRX integrated with Onboard SDK, you can now receive information about air traffic up to 100 miles from your drone
+* Great for deployments near commercial airspace - Ping data is available in OSDK for you to implement sense-and-avoid
+* Our iOS app with a map display of nearby air traffic makes it very easy to visualize your environment
+
+#### [Velodyne Puck Lite LiDAR: A new era in drone sensing](../sensor-integration-guides/velodyne/readme.html)
+
+* The Puck Lite LiDAR gives you a high-frequency, highly accurate 3D point cloud of its surroundings up to 100m
+* Revolutionize your mapping, inspection or survey application with the power of drones and LiDAR
+* Allows you to implement LiDAR SLAM or sophisticated sense-and-avoid when paired with the Onboard SDK
+* Integration with new, Core i5-based x86 OES for powerful processing 
+
+#### [New Programming Paradigm](../application-development-guides/programmming-guide.html)
+
+* The 3.1.8 release offers a complete set of synchronous API call overloads - now you can maintain a linear flow of execution with these blocking functions
+* A synchronous (blocking) function returns to the caller only after it has been executed and an acknowledgement from the aircraft has been received.
+* Synchronous functions return acknowledgements from the aircraft to user code for further processing and decision making
+
+#### [New C++ Linux Example](../github-platform-docs/Linux/README.html)
+
+* Built from the ground up as a reference best practice example program on Linux
+* Includes an efficient serial device driver, memory management, pthread-based threading and synchronous API calls
+* Supports three modes of operation - Interactive (like the old commandline sample), mobile commands from the MOS app and a new programamtic mdoe for users to execute entire complex sequences of code without interactivity. Perfect for deployment.
+
+
+---
+
+## Previous Release - 3.1.7
+
+### Highlights
 
 * This release is a major cleanup and bugfix release for Onboard SDK 3.1
 * Over a hundred bugs have been squashed
@@ -13,9 +65,9 @@ date: 2016-07-01
 
 New developers should start with the revamped [Getting Started Guide](../quick-start/index.html).
 
-## Major Fixes
+### Major Fixes
 
-#### Core Library
+##### Core Library
 
 * Code style updated to a more modern GNU-like style. Change affects indentations and new functions/variables/structs introduced in this release. Older functions, variables, structs and classes are untouched. 
 * Many elements of code have been identified as sub-optimal; we have started marking these structs/functions for deprecation in a future release. We are fully backwards compatible for this release - no old elements have been removed, but users are encouraged to move to the newer elements introduced as part of this release. Doxygen-style comments document the changes and planned replacements; users should look into the core library or go to `doc/doxygen-doc/html/index.html` to see doxygen code documentation.
@@ -36,7 +88,7 @@ New developers should start with the revamped [Getting Started Guide](../quick-s
 * Unit testing framework introduced
 * Setter/getter added for open protocol transmission session status
 
-#### Qt
+##### Qt
 
 * UI elements have been cleaned up and the behavior of a number of buttons has been changed. New button behavior is a lot more informative.
 
@@ -51,7 +103,7 @@ New developers should start with the revamped [Getting Started Guide](../quick-s
 
 * Build has been updated to work with the newest Qt release (5.6). DJI Script dependencies have been removed to streamline Qt build. 
 
-#### Commandline Linux
+##### Commandline Linux
 
 * The commandline linux sample has undergone a major revamp. Many functions have been fixed:
 
@@ -68,7 +120,7 @@ New developers should start with the revamped [Getting Started Guide](../quick-s
 * User Configuration file added
 * On-screen information at the interactive prompt updated to be more useful 
 
-#### ROS
+##### ROS
 
 * ROS repository will now follow the same version numbers as the core repo. The current release is tagged as 3.1.7.
 * ROS Onboard SDK is now based on the latest [Onboard SDK](https://github.com/dji-sdk/Onboard-SDK) library.
@@ -77,66 +129,9 @@ New developers should start with the revamped [Getting Started Guide](../quick-s
 * Tested with Ubuntu 16.04 LTS/ROS Kinetic Kame - to use this configuration, install the ROS Onboard SDK from source. APT and rosinstall are not supported for this configuration
 * DJI A3 Flight Controller has been tested with ROS Onboard SDK.
 
-#### STM32
+##### STM32
 
 * Fixed activation errors due to version not being set.
 * Fixed movement control commands - developers can now successfully execute all movement control commands through the STM32. Documentation has also been updated to reflect the same.
 * Added user parameters in hotpoint mode.
 * DJI A3 Flight Controller has been tested with the STM32.
-
----
-## Previous Release
-
-### Onboard SDK 3.1.5 Release Notes
-
-
-**Important**: Developers who update firmware from 2.3 to 3.1 should update their usage of onboard SDK to this version. This file summarizes what has been changed. For detailed usage and definations of new features, please refer to the reference documentation.
-
-New developers should start with the [Getting Started Guide](../quick-start/index.html)
-
-### Protocol Updates from firmware 2.3 to firmware 3.1
-
-#### New Commands
-
-|CMD SET|CMD ID|Description|
-|-------|------|-----------|
-|0x01|0x05|Arm/Disarm the Drone|
-|0x03||Gound Station Protocol|
-|0x04|0x00|Synchronize Timestamp|
-|0x05||Virtual RC Protocol|
-
-#### Changed Commands
-
-|CMD SET|CMD ID|Difference|2.3|3.1|
-|-------|------|---|---|---|
-|0x00|0x00|Version Query Result|2.3.10.0|3.1.10.0|
-|0x00|0x01|App Level Removed|`typedef struct{ `<br>&nbsp;&nbsp;`uint32_t app_id;`<br>&nbsp;&nbsp;`uint32_t app_level;`<br>&nbsp;&nbsp;`uint32_t app_version;`<br>&nbsp;&nbsp;`uint8_t app_bundle_id[32];`<br>`} sdk_activation_info_t;`|`typedef struct{ `<br>&nbsp;&nbsp;`uint32_t app_id;`<br>&nbsp;&nbsp;~~`uint32_t app_level;`~~<br>&nbsp;&nbsp;`uint32_t app_version;`<br>&nbsp;&nbsp;`uint8_t app_bundle_id[32];`<br>`} sdk_activation_info_t;`|
-|0x00|0x01|Activation SDK Version|0x02030a00|M100: 0x03010a00 <br>A3: 0x03016400|
-|0x01|0x03|Attitude Control Flag|`bit7&6: HORI_MODE`<br>`bit5&4: VERT_MODE`<br>`bit3: YAW_MODE`<br>`bit2&1: HORI_FRAME`<br>`bit0: YAW_FRAME`|`bit7&6: HORI_MODE`<br>`bit5&4: VERT_MODE`<br>`bit3: YAW_MODE`<br>`bit2&1: HORI_FRAME`<br>`bit0: STABLE_FLAG`|
-
-#### New Broadcast Data
-
-|CMD Set|CMD ID|Description|
-|-------|------|-----------|
-|0x02|0x03|Mission Status Push Info|
-|0x02|0x04|Mission Events Push Info|
-
-#### Changed Broadcast Data
-
-|Struct Changed|2.3|3.1|
-|--------------|---|---|
-|Time Stamp|`uint32_t`|`typedef struct`<br>`{`<br>&nbsp;&nbsp;`uint32_t time;`<br>&nbsp;&nbsp;`uint32_t asr_ts;`<br>&nbsp;&nbsp;`uint8_t sync_flag;`<br>`}sdk_time_stamp_t;`|
-|Velocity|`typedef struct`<br>`{`<br>&nbsp;&nbsp;`float32 x;`<br>&nbsp;&nbsp;`float32 y;`<br>&nbsp;&nbsp;`float z;`<br>&nbsp;&nbsp;`uint8_t health_flag:1;`<br>&nbsp;&nbsp;`uint8_t sensor_id:4;`<br>&nbsp;&nbsp;`uint8_t reserved:3;`<br>`} velocity_data_t;`|`typedef struct`<br>`{`<br>&nbsp;&nbsp;`float32 x;`<br>&nbsp;&nbsp;`float32 y;`<br>&nbsp;&nbsp;`float z;`<br>&nbsp;&nbsp;`uint8_t health_flag:1;`<br>&nbsp;&nbsp;`uint8_t reserved:7;`<br>`} velocity_data_t;`|
-|Ctrl Device|`typedef struct`<br>`{`<br>&nbsp;&nbsp;`uint8_t cur_ctrl_dev_in_navi_mode: 3;`<br>&nbsp;&nbsp;`uint8_t serial_req_status: 1;`<br>&nbsp;&nbsp;`uint8_t reserved: 4;`<br>`} ctrl_device_t;`|`typedef struct`<br>`{`<br>&nbsp;&nbsp;`uint8_t cur_api_ctrl_mode;`<br>&nbsp;&nbsp;`uint8_t cur_ctrl_dev_in_navi_mode: 3;`<br>&nbsp;&nbsp;`uint8_t serial_req_status: 1;`<br>&nbsp;&nbsp;`uint8_t vrc_enable_flag: 1;`<br>&nbsp;&nbsp;`uint8_t reserved: 3;`<br>`} ctrl_device_t;`|
-
-### Onboard SDK Library Updates
-
-- We have cleaned up data structures, core logic, and example usage.
-- This library is compatible with both 2.3 and 3.1 firmware.
-- The 2.3 branch and old library are archived for reference.
-
-### `F` Mode Updates [IMPORTANT]
-
-**Important:** With firmware 3.1, developers are now able to obtain onboard SDK control immediately when the drone is powered on with the remote controller's mode switch in the `F` position.  Previously, with firmware 2.3, develoeprs had to toggle the mode switch out of `F` mode and then return to `F` mode in order to obtain control.
-
-Please consider the user experience and design of your application to ensure that inadvertent SDK control of the vehicle is not allowed.

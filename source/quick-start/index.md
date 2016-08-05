@@ -116,7 +116,7 @@ Please comply with local regulations during the development of your application.
 
 ## Next Steps
 
-Now that you are setup and communicating with a DJI flight control system, we would encourage you to explore our platform guides and reference documentation to help jumpstart your development. We would recommend reading our [Architecture Guide](../introduction/architecture-guide.html) next.
+Now that you are setup and communicating with a DJI flight control system, we would encourage you to explore our platform guides and reference documentation to help jumpstart your development. We would recommend reading our [Architecture Guide](../introduction/architecture-guide.html) next. The revamped [Programming Guide](../application-development-guides/programming-guide) is a good place to visit once you have some familiarity with the examples and want to know more about the internals.
 
 
 Also, take a look at our [FAQ](../appendix/FAQ.html) for some answers to common questions. After that, feel free to contact us with any issues.
@@ -124,8 +124,8 @@ Also, take a look at our [FAQ](../appendix/FAQ.html) for some answers to common 
 
 ### Reference Documents
 
-- [Release Notes for Onboard SDK 3.1.7](../appendix/releaseNotes.html)
-     >Note: v3.1.7 of the Onboard SDK was released on 07/01/16. It is a major bugfix and cleanup release. Give it a shot!
+- [Release Notes for Onboard SDK 3.1.8](../appendix/releaseNotes.html)
+     >Note: v3.1.8 of the Onboard SDK was released on 08/05/16 and introduces many great new features.  Check it out!
 
 - [OPEN Protocol](../introduction/index.html) & [Appendix](../appendix/index.html) 
 
