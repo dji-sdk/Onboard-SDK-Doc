@@ -49,7 +49,10 @@ Click on the titles below to go to the full documentation for each feature.
 * Includes an efficient serial device driver, memory management, pthread-based threading and synchronous API calls
 * Supports three modes of operation - Interactive (like the old commandline sample), mobile commands from the MOS app and a new programamtic mdoe for users to execute entire complex sequences of code without interactivity. Perfect for deployment.
 
+## Backward Compatibility
 
+To make older applications work with the 3.1.8 Core API, developers will need to implement the `wait(int timeout)`, `notify()`, `lockACK()` and `freeACK()` functions in their HardDriver-inherited serial device driver. For example implementations of these functions we recommend reading through `platform/LinuxSerialDevice.h` and `platform/LinuxSerialDevice.cpp` on Github.
+   
 ---
 
 ## Previous Release - 3.1.7

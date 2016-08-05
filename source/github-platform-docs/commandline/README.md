@@ -25,7 +25,7 @@ With it you can run the following commands:
 * Hotpoint Task
 * Follow Me Task
 
- > The command line example has recently undergone a major functionality rewrite. Try it out!   
+ > The command line example will soon be replaced entirely with the [new Linux](../Linux/README.html) example.
 
 ## Setup
 
