@@ -7,9 +7,9 @@ github: https://github.com/dji-sdk/Onboard-SDK/tree/3.1/sample/PureQT
 
 ## Introduction
 
-Advances in sensing capability and size and cost reduction of Light Detection and Ranging (LiDAR) have made it natural to consider a LiDAR for GN&C (Guidance, navigation and control) of commercial UAV applications, such mobile mapping, surveying, and inspection. Figure 1 shows a point cloud map of inside a building from Velodyne VLP-16 Puck Lite.  Velodyne VLP-16 Puck Lite is proposed to demonstrate the potential critical integration of onboard SDK with a LiDAR for an OES system. 
+Advances in sensing capability and size and cost reduction of Light Detection and Ranging (LiDAR) have made it natural to consider a LiDAR for GN&C (Guidance, Navigation and Control) of commercial UAV applications such as mobile mapping, surveying, and inspection. Figure 1 shows a point cloud map inside a building using a Velodyne VLP-16 Puck Lite.  Velodyne VLP-16 Puck Lite is used to demonstrate the potential critical integration of onboard SDK with a LiDAR for an OES system. 
 
-In this release, a preliminary library and example have been developed to support logging real-time data into a standard pcap file.  The pcap log files can be post processed with Velodyne's "VeloView" or other third parties' LiDAR data processing and visualization software. 
+In this release, a preliminary library and example have been developed to support logging real-time data into a standard pcap file.  The pcap log files can be post processed with Velodyne's "VeloView" or other third party's LiDAR data processing and visualization software. 
  
 More comprehensive library and examples for futher higher level integration are under development for future releases.
 
@@ -38,8 +38,8 @@ Input voltage :8-35V
 Output voltage :1.5-24V adjustable 
 Output current : 5A MAX, recommended:below 5V,4A long-term; 6-9V, 3A; 10V-15V,2.5A 
 
-More information can be found in: https://www.amazon.com/DROK-Converter-Regulator-1-5-24V-Adjustable/dp/B00KL7I9XC
-	
+More information can be found in [Amazon](https://www.amazon.com/DROK-Converter-Regulator-1-5-24V-Adjustable/dp/B00KL7I9XC).
+
 Mini Linux computer:
 
 "Zini-1660" is the 6th Generation Intel Core i5 Processor based mini Linux computer with the following specifications:
@@ -50,7 +50,7 @@ Storage: 250GB Crucial M.2 SSD
 Networking  Gigabit Ethernet (included)    
 WiFi  Intel® Wireless AC Dual-Band (2.4/5ghz) (included)    
 
-More information can be found in: https://zareason.com/shop/Zini-1660.html
+More information can be found [here](https://zareason.com/shop/Zini-1660.html)
 
 LiDAR:
 
@@ -61,13 +61,9 @@ Figure 3 below shows M100 with the Velodyne, Zini test setup.
 
 ![Hardware Setup](../../images/velodyne/VeloM100.JPG)
 
-Figure 3: M100 with the Velodyne and Zini
-
 Figure 4 below shows M100 with the Velodyne, Zini test setup in-flight. 
 
 ![Hardware Setup](../../images/velodyne/VeloFlying.JPG)
-
-Figure 4: Flight Test
 	
 ## Software Guide
 The demo software is located in:
