@@ -23,26 +23,29 @@ Matrice 100 drone is used for the demonstration. A DC-DC power supply is used to
 
 ![Hardware Setup](../../images/velodyne/hw_setup.PNG)
 
-FIgure 2 Diagram of Hardware Setup
+Figure 2 Diagram of Hardware Setup
 
 Table 1 lists the power consumption of the units and capacities of batteries.
 
 ![Power Requirement](../../images/velodyne/units_power_consumptions_Batteries.PNG)
 
-DC-DC power suppler:
+(1) DC-DC power suppler
 
 DROK DC Volt Converter Regulator is selected. It has the following specifications:
 	
-Properties: non-isolated step-down power supply module 
-Input voltage :8-35V 
-Output voltage :1.5-24V adjustable 
-Output current : 5A MAX, recommended: below 5V,4A long-term; 6-9V, 3A; 10V-15V,2.5A 
+Properties: non-isolated step-down power supply module
+
+Input voltage: 8-35V
+
+Output voltage: 1.5-24V adjustable 
+
+Output current: 5A MAX, recommended: below 5V,4A long-term; 6-9V, 3A; 10V-15V,2.5A 
 
 More information can be found in [Amazon](https://www.amazon.com/DROK-Converter-Regulator-1-5-24V-Adjustable/dp/B00KL7I9XC).
 
-Mini Linux computer:
+(2) Linux mini computer
 
-"Zini-1660" is the 6th Generation Intel Core i5 Processor based mini Linux computer with the following specifications:
+"Zini-1660" is the 6th Generation Intel Core i5 Processor based Linux mini computer with the following specifications:
 Linux Version:  Ubuntu 16.04 LTS  
 Processor: i5-6260U 1.8 GHz 2 core, 4 threads (Intel Iris Graphics 540)
 Memory:  16 GB DDR4-2133     
@@ -52,7 +55,7 @@ WiFi  Intel® Wireless AC Dual-Band (2.4/5ghz) (included)
 
 More information can be found [here](https://zareason.com/shop/Zini-1660.html)
 
-LiDAR:
+(3) LiDAR
 
 Velodyne's VLP-16 PUCK LITE is the latest lighter weight/smaller version of the VLP-16 PUCK for applications with lower weight and small size requirements.  More information can be found in:
 http://velodynelidar.com/vlp-16-lite.html
