@@ -11,9 +11,9 @@ Advances in sensing capability and size and cost reduction of Light Detection an
 
 In this release, a preliminary library and example have been developed to support logging real-time data into a standard pcap file.  The pcap log files can be post processed with Velodyne's "VeloView" or other third party's LiDAR data processing and visualization software. 
  
-More comprehensive library and examples for futher higher level integration are under development for future releases.
+More comprehensive library and examples for further higher level integration are under development for future releases.
 
-![Poind Cloud Map from VLP-16 puck lite](../../images/velodyne/pointCloudInsideBuilding.png)
+![Point Cloud Map from VLP-16 puck lite](../../images/velodyne/pointCloudInsideBuilding.png)
 
 Figure 1: Point cloud map of inside a building from Velodyne VLP-16 Puck Lite (http://velodynelidar.com/vlp-16-lite.html)
 
@@ -25,7 +25,7 @@ Matrice 100 drone is used for the demonstration. A DC-DC power supply is used to
 
 FIgure 2 Diagram of Hardware Setup
 
-Table 1 lists the power consuption of units and capacities of batteries.
+Table 1 lists the power consumption of the units and capacities of batteries.
 
 ![Power Requirement](../../images/velodyne/units_power_consumptions_Batteries.PNG)
 
@@ -36,7 +36,7 @@ DROK DC Volt Converter Regulator is selected. It has the following specification
 Properties: non-isolated step-down power supply module 
 Input voltage :8-35V 
 Output voltage :1.5-24V adjustable 
-Output current : 5A MAX, recommended:below 5V,4A long-term; 6-9V, 3A; 10V-15V,2.5A 
+Output current : 5A MAX, recommended: below 5V,4A long-term; 6-9V, 3A; 10V-15V,2.5A 
 
 More information can be found in [Amazon](https://www.amazon.com/DROK-Converter-Regulator-1-5-24V-Adjustable/dp/B00KL7I9XC).
 
