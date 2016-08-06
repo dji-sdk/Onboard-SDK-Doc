@@ -44,9 +44,12 @@
     -
       title: Ground Station Programming Guide
       path: /application-development-guides/ground-station-programming-guide.html
+    -
+      title: Flight Mission ACK codes
+      path: /application-development-guides/flight-mission-ack-codes.html
 
 -
-  title: PLATFORM GUIDES
+  title: SAMPLE APPLICATIONS
   list:
     -
       title: QT
@@ -55,8 +58,8 @@
       title: STM32
       path: /github-platform-docs/STM32/README.html
     -
-      title: Commandline Linux
-      path: /github-platform-docs/commandline/README.html
+      title: Linux 
+      path: /github-platform-docs/Linux/README.html
     -
       title: ROS
       path: /github-platform-docs/ROS/README.html
@@ -78,6 +81,22 @@
         -
           title: ROS Video Decoding Package
           path: /github-platform-docs/ROS_Example/ros_video_decoding_package.html
+    -
+      title: Commandline Linux (Old)
+      path: /github-platform-docs/commandline/README.html
+    -
+      title: Mobile - Onboard SDK
+      path: /github-platform-docs/MobileOnboardSDK/Mobile-OSDK.html
+-
+  title: Sensor Integration Guides
+  list:
+    -
+      title: Velodyne LiDAR
+      path: /sensor-integration-guides/velodyne/readme.html
+    -
+      title: Ping ADS-B
+      path: /sensor-integration-guides/ping/README.html
+
 -
   title: APPENDIX
   list:
