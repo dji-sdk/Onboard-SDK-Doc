@@ -1142,7 +1142,7 @@ More info about Flight Data, please refer to [Flight Data part in Appendix](../a
 </tr>
 
 <tr>
-  <td rowspan="13">CMD Val</td>
+  <td rowspan="15">CMD Val</td>
   <td>2</td>
   <td>item presence byte, Bit with value 1 means this flight data contains corresponding data item<br>M100:<ul>
     <li>bit 0: flag of time stamp</li>
