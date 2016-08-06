@@ -6,9 +6,9 @@ date: 2016-08-05
 
 ## Highlights
 
-* Onboard SDK 3.1.8 brings many brand new features and builds upon the stability of 3.1.7
-* Mobile-Onboard SDK: iOS app for controlling the OSDK functions through mobile device
-* Ping ADS-B Sense-and-Avoid sensor integration with iOS control app
+* Onboard SDK 3.1.8 brings exciting new features and builds upon the stability of 3.1.7
+* Mobile-Onboard SDK: iOS sample app for controlling the OSDK functions through a mobile device
+* Ping ADS-B Sense-and-Avoid sensor integration with iOS sample app
 * Velodyne Puck Lite LiDAR sensor integration and tutorial
 * Support for synchronous programming paradigm and revamped programming guide
 * New C++ Linux example with Onboard SDK best practices
@@ -18,7 +18,7 @@ date: 2016-08-05
 
 Click on the titles below to go to the full documentation for each feature.
 
-#### [Mobile-Onboard SDK(MOS) iOS App](../github-platform-docs/MobileOnboardSDK/Mobile-OSDK.html)
+#### [Mobile-Onboard SDK (MOS) iOS App](../github-platform-docs/MobileOnboardSDK/Mobile-OSDK.html)
 
 * Call entire sequences, custom missions or simple Onboard SDK API calls through an iOS app
 * Connects to the OSDK through Mobile SDK - Onboard SDK Transparent Transmission link
@@ -26,14 +26,14 @@ Click on the titles below to go to the full documentation for each feature.
 
 #### [PingRX: Air traffic awareness](../sensor-integration-guides/ping/README.html)
 
-* With the ultra-lightweight PingRX integrated with Onboard SDK, you can now receive information about air traffic up to 100 miles from your drone
-* Great for deployments near commercial airspace - Ping data is available in OSDK for you to implement sense-and-avoid
-* We provide a companion iOS App to view air traffic data in your area on a map
+* With the PingRX ADS-B receiver integrated with Onboard SDK, you can now receive information about air traffic up to 100 miles from your drone
+* Great for deployments near commercial airspace - Ping data is available in OSDK for you to implement sense-and-avoid of aircraft that are transmitting ADS-B data
+* We provide a companion iOS App using the Onboard SDK Transparent Transmission link to view air traffic data on a map on your mobile device
 
 #### [Velodyne Puck Lite LiDAR: A new era in drone sensing](../sensor-integration-guides/velodyne/readme.html)
 
-* The Puck Lite LiDAR gives you a high-frequency, highly accurate 3D point cloud of its surroundings up to 100m
-* Revolutionize your mapping, inspection or survey application with the power of drones and LiDAR
+* The Puck Lite LiDAR gives you a dense 3D point cloud of its surroundings with up to 100m range
+* Revolutionize your mapping, inspection or survey application with the power of DJI drones and LiDAR
 * Allows you to implement LiDAR SLAM or sophisticated sense-and-avoid when paired with the Onboard SDK
 * Integration with new, Core i5-based x86 OES for powerful processing
 
@@ -47,7 +47,7 @@ Click on the titles below to go to the full documentation for each feature.
 
 * Built from the ground up as a reference best practice example program on Linux
 * Includes an efficient serial device driver, memory management, pthread-based threading and synchronous API calls
-* Supports three modes of operation - Interactive (like the old commandline sample), mobile commands from the MOS app and a new programamtic mdoe for users to execute entire complex sequences of code without interactivity. Perfect for deployment.
+* Supports three modes of operation - Interactive (like the old commandline sample), mobile commands from the MOS app and a new programamtic mode for users to execute entire complex sequences of code without interactivity
 
 ## Backward Compatibility
 
@@ -138,3 +138,4 @@ New developers should start with the revamped [Getting Started Guide](../quick-s
 * Fixed movement control commands - developers can now successfully execute all movement control commands through the STM32. Documentation has also been updated to reflect the same.
 * Added user parameters in hotpoint mode.
 * DJI A3 Flight Controller has been tested with the STM32.
+I
