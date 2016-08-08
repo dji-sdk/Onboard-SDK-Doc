@@ -1,12 +1,12 @@
 ---
 title: Get Started 
 date: 2016-07-01
+keywords: [get started, key features, hardware overview, registration, enable flight controller API control, safety]
 ---
 
 ## Getting Started with the Onboard SDK
 
 DJI's onboard SDK allows you to connect your own Onboard Embedded System (OES) to a supported DJI vehicle (<a href="http://www.dji.com/product/matrice100" target="_blank">Matrice 100</a> or <a href="http://www.dji.com/product/matrice600" target="_blank">Matrice 600</a>) or flight controller (<a href="http://www.dji.com/product/a3" target="_blank">A3</a>) using a common serial port (TTL UART). This setup opens up an exciting opportunity to integrate your own hardware with DJI's flying platforms.  New applications and commercial uses for aerial robotics awaits and we can't wait to see what you build, so lets get started!
-
 
 ### Prerequisites
 
@@ -19,11 +19,9 @@ This SDK is for developers with:
 - Windows PC to run the required software tools
 - an iOS or Android mobile device to run DJI Go
 
-
 ## Key Features
 
 The onboard SDK enables deep interaction between your OES and a DJI flight controller.  Using the APIs you can, for example, use a sensor connected to your embedded system to control the trajectory of the vehicle, collect telemetry data in real-time, trigger a camera to take photos, or send data through the vehicle's downlink to a mobile device. Your OES must have a TTL UART port available for the onboard SDK to use.
-
 
 ### Flight Control
 
@@ -33,14 +31,13 @@ The onboard SDK enables deep interaction between your OES and a DJI flight contr
 
   - A robust set of vehicle state information is available in real-time including inertial sensors, attitude, heading, velocity, position, battery info, and vehicle status.
   
-
 ### Data Transmission
 
   - A bidirectional data link between your embedded device and a mobile device (in conjunction with DJI's mobile SDK) can be established by using the M100 or M600 built-in lightbridge communication system or by using a <a href="http://www.dji.com/product/lightbridge-2" target="_blank">Lightbridge 2</a> with the A3.
 
 ### Camera and Gimbal Control
- - A supported DJI camera and gimbal can be controlled with commands to take pictures, videos, and adjust gimbal position.
 
+ - A supported DJI camera and gimbal can be controlled with commands to take pictures, videos, and adjust gimbal position.
 
 We provide C/C++ source APIs to make sending and receiving data over the serial port easy and encourage you to use them in your applications.  Alternatively, developers can use our protocol specification to write their own communication drivers.
 
@@ -101,7 +98,6 @@ Choose one of these examples to begin using the onboard SDK in a particular soft
 
 - [STM32 ARM Example](../github-platform-docs/STM32/README.html)
 
-
 ### 7. Flight Platform Activation
 
 - You should have completed activation using one of the examples above.
@@ -113,14 +109,12 @@ Choose one of these examples to begin using the onboard SDK in a particular soft
 
 Please comply with local regulations during the development of your application. Please refer to <a href="http://flysafe.dji.com/" target="_blank">http://flysafe.dji.com/</a> for more information.
 
-
 ## Next Steps
 
 Now that you are setup and communicating with a DJI flight control system, we would encourage you to explore our platform guides and reference documentation to help jumpstart your development. We would recommend reading our [Architecture Guide](../introduction/architecture-guide.html) next. The revamped [Programming Guide](../application-development-guides/programming-guide) is a good place to visit once you have some familiarity with the examples and want to know more about the internals.
 
 
 Also, take a look at our [FAQ](../appendix/FAQ.html) for some answers to common questions. After that, feel free to contact us with any issues.
-
 
 ### Reference Documents
 

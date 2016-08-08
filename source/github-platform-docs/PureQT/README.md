@@ -3,6 +3,7 @@ title: DJI Onboard SDK Qt Example
 version: v3.1.7
 date: 2016-07-01
 github: https://github.com/dji-sdk/Onboard-SDK/tree/3.1/sample/PureQT
+keywords: [qt]
 ---
 
 ## Introduction
@@ -156,6 +157,7 @@ At this point, the communication between the N1 flight controller of M100 and yo
 We stronly recommend you run this example in the simulator first, then carefully move to the real flight test.
 
 Overall, the following operations can be performed:
+
 * You can see the flight control simulations on screen if you are using the DJI PC simulator. Otherwise, real flight happens.
 * You can see the actual 'gimbal and camera' movement.
 * You can see the image/video you capture from you Mobile Device.

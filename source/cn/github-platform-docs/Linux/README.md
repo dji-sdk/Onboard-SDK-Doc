@@ -27,6 +27,8 @@ The following user-facing functionality is available in the new Linux sample:
 
 The example is extensible - if you want to build additional functionality, it is easy to do so within the framework of this example.  
 
+---
+
 ## Setup
 
 ##### 1. Hardware
@@ -56,15 +58,15 @@ All of these should be available with an installation of Ubuntu 14.04/16.04.
 * Connect your M100/A3 to a PC through USB.
 * Open up DJI Assistant 2. Click on the DJI M100/A3 button. If this button doesn't show up, try disconnecting and reconnecting the USB.
 * Click on the Simulator tab, and then click on the 'Open' button. A separate window should pop up in a few seconds.
-![Sim1](../../images/Linux/Simulator_Open.png)
+![Sim1](../../../images/Linux/Simulator_Open.png)
 * In the main window, click on 'Start Emulating'.
-![Sim2](../../images/Linux/Simulator_StartEmulating.png)
+![Sim2](../../../images/Linux/Simulator_StartEmulating.png)
 
 ---
 ## Activation
 
 The first time a drone/OES combination is used, it needs to be activated. Activation requires an App ID and a key got from the DJI website, and requires an internet connection and an RC connected to a mobile device running DJI GO. The image below shows the flow of information during activation:
-![ActivationSetup](../../images/common/activation_1.png)
+![ActivationSetup](../../../images/common/activation_1.png)
 
 1. [Enable API control](../../quick-start/index.html#3-Enable-Flight-Controller-API-control) and [get an app ID and key](../../quick-start/index.html#5-Onboard-Application-Registration).
 2. Navigate to `sample/Linux/UserConfig.txt` and enter your App ID and Key in place of the defaults in that file.
@@ -84,14 +86,14 @@ To run the Linux sample, follow these steps:
     * `-programmatic` : Use for automated execution. By default, the sample will first takeoff, then execute a waypoint mission, then automatically land and exit.
 * Proceed to run the sample in one of these modes. Before the sample enters one of the three modes, it will attempt to activate the drone and obtain control. If everything goes well, you should see the following information on the terminal:
 
-    ![Activate_TakeControl](../../images/Linux/AllGood.png)
+    ![Activate_TakeControl](../../../images/Linux/AllGood.png)
 
 > Note that the activation step is necessary each time. After the first time, the activation command merely performs a local activation check and you are not required to be connected to the internet.  
 The sample will attempt automatic activation each time it is started.
 
 #### Workflow
 
-![Workflow](../../images/Linux/OSDK_Workflow.png)
+![Workflow](../../../images/Linux/OSDK_Workflow.png)
 
 ## Modes of Operation  
 
@@ -99,15 +101,15 @@ The sample will attempt automatic activation each time it is started.
 
 The interactive mode is meant to give you a taste of the kinds of things you can do with the DJI Onboard SDK. The UI looks similar to the old [Commandline](../commandline/README.html) sample, but is easier to operate. The UI looks like this:
 
-![Interactive_1](../../images/Linux/Interactive_1.png)
+![Interactive_1](../../../images/Linux/Interactive_1.png)
 
 As the UI tells us, the sample has already activated and taken control on our behalf. Let's try the takeoff command - to do so, press `e` and then hit the enter key.
 
-![Interactive_2](../../images/Linux/Interactive_2.png)
+![Interactive_2](../../../images/Linux/Interactive_2.png)
 
 Once you have taken off, you may try some of the flight control functionality. After you have landed, type the exit letter - `j` - to let the sample clean up before exiting.
 
-![Interactive_3](../../images/Linux/Interactive_3.png)
+![Interactive_3](../../../images/Linux/Interactive_3.png)
 
 
 ##### Mobile Mode 
@@ -116,7 +118,7 @@ The mobile mode is especially useful when you want to test out functionality on 
 
 When you run the program in mobile mode, you can see a simple message after the standard initialization: 
 
-![Mobile_1](../../images/Linux/Mobile_1.png)
+![Mobile_1](../../../images/Linux/Mobile_1.png)
 
 The mobile mode listens to mobile commands for ~150 minutes before exiting.
 
@@ -126,13 +128,13 @@ This is the most powerful mode of the new Linux sample - you can implement a com
 
 By default, the programmatic mode starts with automated, monitored takeoff (checks to see if takeoff actually executed, as well as how stable the takeoff is). Users can enter their own core API calls or Linux-sample calls after the takeoff returns and before landing is called. Here is the relevant code in `main.cpp`:
 
-![Programmatic_code](../../images/Linux/programmatic-code.png)   
+![Programmatic_code](../../../images/Linux/programmatic-code.png)   
 
 Line `97` is an example of an application layer function called within the programmatic mode. 
 
 The result of this code is something like this:
 
-![Programmatic result](../../images/Linux/Programmatic_1.png)
+![Programmatic result](../../../images/Linux/Programmatic_1.png)
 
 
 
@@ -145,13 +147,14 @@ The new Linux Application comes with two examples you can call through Interacti
 This example takes your current position (lat, lon, alt) and traces out a square of side 20 m. It will go north, then east, then south, and then west; if you are unaware of where your aircraft is pointing then **make sure to leave a clearing of 20m in all directions** when you try this example.
 
 To try out the sample:   
+
 * In interactive mode, first takeoff with the `e` key and then try the waypoint sample with the `f` key.
 * In mobile mode, first takeoff from the `Core Functions` tab. Then go to the `Custom Missions` tab and choose `Waypoint Mission Test`.
 * In programmatic mode, call `wayPointMissionExample` after calling `monitoredTakeoff`. 
 
 The output looks like this (takeoff - waypoint test - landing):
 
-![Waypoint_Simulator](../../images/Linux/waypointGndView.png)
+![Waypoint_Simulator](../../../images/Linux/waypointGndView.png)
 
 #### 2. Draw a Square : Position Control Example.
 
@@ -160,13 +163,13 @@ The Position control example shows how to execute custom trajectories in local c
 The implementation of this example in `LinuxFlight.cpp` can serve as a great reference for any custom patterns you might want to draw.
 
 To try out the sample:
+
 * In interactive mode, first takeoff with the `e` key and then try the Draw a Square sample with the `g` key.
 * In mobile mode, first takeoff from the `Core Functions` tab. Then go to the `Custom Missions` tab and choose `Draw a Square`.  
 * In programmatic mode, call `drawSqrPosCtrlSample` after calling `monitoredTakeoff`. 
 
 The output looks like this (takeoff - draw a square - landing):
 
-![DrawSqr_Simulator](../../images/Linux/Square.png)
-
+![DrawSqr_Simulator](../../../images/Linux/Square.png)
 
 > A3 support is currently in beta. Please file issues on the github repo if you find any!

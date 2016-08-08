@@ -2,12 +2,12 @@
 title: Onboard SDK Architecture Guide 
 version: 3.1.8
 date: 2016-08-05
+keywords: [architecture guide]
 ---
 
 ## Introduction
 
 Onboard SDK offers many features for building powerful, robust applications on top of DJI drones. It can get a little overwhelming to explore all the features at once - this document guides you through the typical usage patterns for Onboard SDK and familiarizes you with some conventions.
-
 
 *Note: If you haven't read the [Quick Start](../quick-start/index.html) guide yet, please do so first.*
 

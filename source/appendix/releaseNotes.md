@@ -2,6 +2,7 @@
 title: Release Notes for Onboard SDK 3.1.8
 version: 3.1.8
 date: 2016-08-05
+keywords: [MOS, PingRX, Velodyne Puck Lite LiDAR]
 ---
 
 ## Highlights
@@ -53,8 +54,6 @@ Click on the titles below to go to the full documentation for each feature.
 
 To make older applications work with the 3.1.8 Core API, developers will need to implement the `wait(int timeout)`, `notify()`, `lockACK()` and `freeACK()` functions in their HardDriver-inherited serial device driver. For example implementations of these functions we recommend reading through `platform/LinuxSerialDevice.h` and `platform/LinuxSerialDevice.cpp` on Github.
    
----
-
 ## Previous Release - 3.1.7
 
 ### Highlights
@@ -138,4 +137,4 @@ New developers should start with the revamped [Getting Started Guide](../quick-s
 * Fixed movement control commands - developers can now successfully execute all movement control commands through the STM32. Documentation has also been updated to reflect the same.
 * Added user parameters in hotpoint mode.
 * DJI A3 Flight Controller has been tested with the STM32.
-I
+

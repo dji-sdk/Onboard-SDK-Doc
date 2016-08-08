@@ -17,8 +17,6 @@ The **remote controller always enjoys top priority** for control. The flight con
 
 To request control of the drone, your app must call the flight control request function exposed by the Onboard SDK library.
 
----
-
 ## Frames of Reference
 
 Description of aircraft movement is dependent on the location and orientation of coordinate axes that make up a coordinate system (or frame of reference). Many coordinate systems exist, but the two used in the DJI Onboard SDK are relative to the aircraft body (body frame), and relative to the ground (world frame).
@@ -46,8 +44,6 @@ A popular ground or world coordinate system used for aircraft aligns the positiv
 The origin for a NED coordinate system is usually a point in the world frame (like take-off location).
 
 > **Note:** *To alleviate this issue of the unnatural downward-pointing positive Z, we adjust the direction of vertical control in order to make the height or vertical velocity to be positive upwards. In other words, giving a positive velocity will make the UAV ascend. This adjustment does not affect the directions and the orders of the other two axis. We are not defining a left-handed co-ordinate system; the actual computations on the flight controller happen in an NED frame.*
-
----
 
 ## Quaternions  
 

@@ -13,11 +13,11 @@ This implementation provides an alternative way to run/test your OnboardSDK code
 
 Basic architecture of the Mobile Onboard SDK communication is shown. The image below shows commands being sent from Mobile to Onboard SDK.  
 
-![MOS Mobile to OES](../../images/common/MOSDK1.png)
+![MOS Mobile to OES](../../../images/common/MOSDK1.png)
 
 The image below shows the ACK being returned to mobile. 
 
-![MOS ACK return](../../images/common/MOSDK2.png)
+![MOS ACK return](../../../images/common/MOSDK2.png)
 
 ## Setup
 
@@ -26,19 +26,19 @@ The image below shows the ACK being returned to mobile.
 The iOS app can be side loaded to your phone using Xcode on a Macintosh system. Below are the list of instructions to side load the MOS app to your iOS device. 
 
 - Create Mobile app on the DJI developer website. You will need the Bundle ID and Key to be entered in the Xcode project. An example Bundle ID is shown in the below image. 
-![MOS app](../../images/common/createApp.png)
+![MOS app](../../../images/common/createApp.png)
 - Login using your Apple ID and download Xcode from the App store. 
 - Launch Xcode and setup your Apple ID in the Preferences - Account section. 
 - Download source for iOS app from [here](https://github.com/dji-sdk/Mobile-OSDK-iOS-App)
 - Launch the MOS.xcodeproj 
 - Click on the 'MOS' project on Xcode to view the General settings. 
 - In the General settings change bundle ID to the one registered on the DJI developer portal. In the below image, the same example Bundle ID is being used. 
-![MOS app](../../images/common/bundleID.png)
+![MOS app](../../../images/common/bundleID.png)
 - Go to the MOSProductCommunicationManager.m and enter registration ID from the DJI developer portal. 
 - Hit Run and let Xcode fix any issues that show up. 
 - The app can now be launched on your iOS device. 
 - Below is a screenshot of the app after successful Take Off. 
-![MOS app](../../images/common/MOSDKApp.jpg)
+![MOS app](../../../images/common/MOSDKApp.jpg)
 
 
 ## Operation

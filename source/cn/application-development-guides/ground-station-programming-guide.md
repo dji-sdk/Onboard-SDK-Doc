@@ -1,6 +1,7 @@
 ---
 title: Ground Station Programming Guide 
 date: 2016-06-24
+keywords: [waypoint task, hotpoint task, follow me task, status push, event push]
 ---
 
 This file is a simple roadmap of how to implement groudstation tasks, i.e. the waypoint task, the hotpoint task and the follow me task.

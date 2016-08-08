@@ -1,6 +1,7 @@
 ---
 title: Ground Station Protocol 
 date: 2016-06-24
+keywords: [ground station protocol, ACK code]
 ---
 
 This part is about Goundstation related functions(Waypoint, Hotpoint and Follow Me), which has been introduced briefly in the [OPEN Protocol](../introduction/index.html#CMD-Set-0x03-Ground-Station-CMD-Set).

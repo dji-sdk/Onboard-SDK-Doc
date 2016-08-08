@@ -3,6 +3,7 @@ title: DJI Onboard SDK STM32 Example App
 version: v3.1.7
 date: 2016-07-01
 github: https://github.com/dji-sdk/Onboard-SDK/tree/3.1/sample/STM32
+keywords: [stm32， local navigation]
 ---
 
 ## Introduction

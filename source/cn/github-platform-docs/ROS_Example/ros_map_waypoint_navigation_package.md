@@ -1,6 +1,9 @@
 ---
-title: DJI SDK ROS Map Waypoint Navigation Package 
-date: 2016-06-24
+title: DJI SDK ROS Map Waypoint Navigation Package
+version: v3.1.7
+date: 2016-07-01
+github: https://github.com/dji-sdk/Onboard-SDK-ROS/tree/3.1/dji_sdk_web_groundstation
+keywords: [ros map waypoint navigation package]
 ---
 
 ## Description
