@@ -3,6 +3,7 @@ title: DJI Onboard SDK ROS Video Decoding Package
 version: v3.1.7
 date: 2016-07-01
 github: https://github.com/dji-sdk/Onboard-SDK-ROS/tree/3.1/dji_sdk_read_cam
+keywords: [ros video decoding package]
 ---
 
 This video-decoding package is desiged for Manifold to read the X3 video stream.

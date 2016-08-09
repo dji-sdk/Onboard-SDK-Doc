@@ -45,6 +45,10 @@
       title: Ground Station Programming Guide
       path: /cn/application-development-guides/ground-station-programming-guide.html
 
+    -
+      title: Flight Mission ACK codes
+      path: /cn/application-development-guides/flight-mission-ack-codes.html
+
 -
   title: PLATFORM GUIDES
   list:
@@ -65,19 +69,35 @@
       list:
         -
           title: ROS Core Package
-          path: /cn/github-platform-docs/ROS_Example/ros_corePackage.html
+          path: /github-platform-docs/ROS_Example/ros_corePackage.html
         -
           title: ROS Demo Client Package
-          path: /cn/github-platform-docs/ROS_Example/ros_demo_client_package.html
+          path: /github-platform-docs/ROS_Example/ros_demo_client_package.html
         -
           title: ROS DJI2MAV Package
-          path: /cn/github-platform-docs/ROS_Example/ros_dji2mav_0.2.1_package.html
+          path: /github-platform-docs/ROS_Example/ros_dji2mav_0.2.1_package.html
         -
           title: ROS Map Waypoint Navigation Package
-          path: /cn/github-platform-docs/ROS_Example/ros_map_waypoint_navigation_package.html
+          path: /github-platform-docs/ROS_Example/ros_map_waypoint_navigation_package.html
         -
           title: ROS Video Decoding Package
-          path: /cn/github-platform-docs/ROS_Example/ros_video_decoding_package.html
+          path: /github-platform-docs/ROS_Example/ros_video_decoding_package.html
+    -
+      title: Commandline Linux (Old)
+      path: /github-platform-docs/commandline/README.html
+    -
+      title: Mobile - Onboard SDK
+      path: /github-platform-docs/MobileOnboardSDK/Mobile-OSDK.html
+
+-
+  title: Sensor Integration Guides
+  list:
+    -
+      title: Velodyne LiDAR
+      path: /sensor-integration-guides/velodyne/readme.html
+    -
+      title: Ping ADS-B
+      path: /sensor-integration-guides/ping/README.html
           
 -
   title: APPENDIX

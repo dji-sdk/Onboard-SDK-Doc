@@ -3,11 +3,12 @@ title: DJI Onboard SDK ROS Example
 version: v3.1.7
 date: 2016-07-01
 github: https://github.com/dji-sdk/Onboard-SDK-ROS
+keywords: [ros example]
 ---
 
 ## Introduction
 
-This ROS example implements functionality of the DJI Onboard-SDK. It consists of the core library and client packages demonstrating communication with Matrice 100 and A3 flight controllers. The flight controller type can be defined in the launch file of the core package at any time. Onboard SDK functionality offered in a wrapped header file called dji_drone.h which user can include and use directly for his/her own demo applications. We also provide a python version called dji_drone.py. To have our samples run as quickly as possible, we implemented a sample code for hardware driver that you can use as is to ensure safe serial communication between your flight controller and an Onboard Embedded System (OES) of your choice.
+This ROS example implements functionality of the DJI Onboard-SDK. It consists of the core library and client packages demonstrating communication with Matrice 100 and A3 flight controllers. The flight controller type can be defined in the launch file of the core package at any time. Onboard SDK functionality offered in a wrapped header file called dji\_drone.h which user can include and use directly for his/her own demo applications. We also provide a python version called dji\_drone.py. To have our samples run as quickly as possible, we implemented a sample code for hardware driver that you can use as is to ensure safe serial communication between your flight controller and an Onboard Embedded System (OES) of your choice.
 
 
 
@@ -28,20 +29,19 @@ Supported commands and  actions:
 * Timestamp Synchonization
 * Native Waypoint
 * Hotpoint
-* Follow-me
-* Local Navigation (fly into a certain (X,Y,Z))
-* GPS Navigation (fly into a certain GPS coordinate)
-* Naive Waypoint Navigation (fly through a series of GPS coordinates)
+* Local Navigation (go to specified local position)
+* Global Navigation (go to specified global position)
+* Waypoint Navigation (fly through a series of GPS coordinates)
 * WebSocket With Baidu Map (for navigation)
 * MAVLink And QGroundStation
 
 Software Functionality:
 
-* [dji_sdk](../ROS_Example/ros_corePackage.html): the core package handling the communication with Matrice 100, which provides a header file `dji_drone.h` for future use
-* [dji_sdk_demo](../ROS_Example/ros_demo_client_package.html): an example package of using `dji_drone.h` to control the Matrice 100
-* [dji_sdk_web_groundstation](../ROS_Example/ros_map_waypoint_navigation_package.html): a WebSocket example using ROS-bridge-suite, where a webpage groundstation is provided
-* [dji_sdk_read_cam](../ROS_Example/ros_video_decoding_package.html): a X3 video decoding package for Manifold, CATKIN_IGNOREd by defualt
-* [dji_sdk_dji2mav](../ROS_Example/ros_dji2mav_0.2.1_package.html): a protocol converter making M100 compatiable with all MAVLink-protocol-dependent softwares
+* [dji\_sdk](../ROS_Example/ros_corePackage.html): the core package handling the communication with Matrice 100, which provides a header file `dji_drone.h` for future use
+* [dji\_sdk\_demo](../ROS_Example/ros_demo_client_package.html): an example package of using `dji_drone.h` to control the Matrice 100
+* [dji\_sdk\_web_groundstation](../ROS_Example/ros_map_waypoint_navigation_package.html): a WebSocket example using ROS-bridge-suite, where a webpage groundstation is provided
+* [dji\_sdk\_read_cam](../ROS_Example/ros_video_decoding_package.html): a X3 video decoding package for Manifold, CATKIN_IGNOREd by defualt
+* [dji\_sdk\_dji2mav](../ROS_Example/ros_dji2mav_0.2.1_package.html): a protocol converter making M100 compatiable with all MAVLink-protocol-dependent softwares
 
 ![ROS Software Structure](../../images/ROS/ROSSoftwareStructure.jpg)
 [click to see fullsize image](../../images/ROS/ROSSoftwareStructure.jpg)
@@ -100,7 +100,10 @@ Activation Process:
 
 ## How To Operate
 
-Now, after completing activation process, you can start exploring our ROS examples or start working on your own application demo.
+Now, after completing activation process, you can start exploring our ROS examples or start working on your own application demo. 
+
+Additionally, ROS functions can also be initiated from an iOS Mobile app that runs on your mobile device connected to the RC. This enables users to test the functions easily in the field. You can read about it [here](../../github-platform-docs/MobileOnboardSDK/Mobile-OSDK.html)
+
 </br>
 
 Whenever you develop your own ROS package, include the ``dji_drone.h`` from ``dji_sdk/include/dji_sdk`` into your package (there is also a python version ``dji_drone.py`` in ``dji_sdk/src``). Make sure to build and link your target package with DJI Onboard SDK library residing under ``dji_sdk_lib``.

@@ -1,6 +1,7 @@
 ---
 title: Appendix 
 date: 2016-06-24
+keywords: [control mode, flight data, flight status, remote controller channel]
 ---
 
 ## Detailed Architecture

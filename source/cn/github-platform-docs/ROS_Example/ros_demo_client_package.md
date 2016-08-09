@@ -1,6 +1,9 @@
 ---
-title: DJI Onboard SDK ROS Demo Client Package 
-date: 2016-06-24
+title: DJI Onboard SDK ROS Demo Client Package
+version: v3.1.7
+date: 2016-07-01
+github: https://github.com/dji-sdk/Onboard-SDK-ROS/tree/3.1/dji_sdk_demo
+keywords: [ros demo client package]
 ---
 
 This package is a demonstration of how to use dji_sdk core package and its `dji_drone.h` class as a custom client. 
