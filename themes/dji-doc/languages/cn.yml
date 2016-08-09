@@ -23,7 +23,7 @@ nav:
   dji_store: "大疆官方商城"
   contact_us: "联系我们"
   contact_us_bd: "商务合作"
-  copyright: "Copyright © 2015 DJI 大疆创新 版权所有"
+  copyright: "Copyright © 2016 DJI 大疆创新 版权所有"
 
 sub_nav:
   overview: 概览
@@ -32,4 +32,13 @@ sub_nav:
   downloads: 下载
 
 doc:
-  search_holder: 'Search Documentation'
+  search_holder: '搜索文档'
+  search_title_mobile: '搜索 Mobile SDK 文档'
+  search_title_guidance: '搜索 Guidance SDK 文档'
+  search_title_onboard: '搜索 Onboard SDK 文档'
+  results: '搜索结果'
+  notfound: '未找到结果'
+  
+btn:
+  load_more: '加载更多'
+  loading: '加载中...'
