@@ -38,7 +38,7 @@ Click on the titles below to go to the full documentation for each feature.
 * Allows you to implement LiDAR SLAM or sophisticated sense-and-avoid when paired with the Onboard SDK
 * Integration with new, Core i5-based x86 OES for powerful processing
 
-#### [New Programming Paradigm](../application-development-guides/programmming-guide.html)
+#### [New Programming Paradigm](../application-development-guides/programming-guide.html)
 
 * The 3.1.8 release offers a complete set of synchronous API call overloads - now you can maintain a linear flow of execution with these blocking functions
 * A synchronous (blocking) function returns to the caller only after it has been executed and an acknowledgement from the aircraft has been received.
