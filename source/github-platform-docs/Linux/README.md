@@ -25,6 +25,15 @@ The following user-facing functionality is available in the Linux sample:
 * Sample Waypoint Mission implementation
 * Sample Position Control implementation
 
+This sample also implements an optional LiDAR Logging example that uses the LiDAR_APIs_LIB library documented [here](../../sensor-integration-guides/velodyne/readme.html). This example gives you the option to log LiDAR data from a Velodyne PUCK or a Simulator to log data in pcap format and LAS format. 
+
+The following user-facing functionality is available with the LiDAR logging sample: 
+
+* Start LiDAR Logging
+* Stop LiDAR Logging
+
+This functionality can be enabled by building the top-level cmake with -DLIDAR_LOGGING=ON argument. 
+
 Apart from the Blocking Linux sample, we also support a reduced feature set Non-Blocking sample for this release. This allows the callbacks to run on a different thread, allowing the send commands to run independent from the callbacks. 
 
 The following user-facing functionality is available in the new Non-Blocking Linux sample:
@@ -97,7 +106,7 @@ To run the Linux Blocking sample, follow these steps:
 
     ![Activate_TakeControl](../../images/Linux/AllGood.png)
 
-* You may follow the same instructions to run the Non-Blocking Linux sample. 
+* You may follow the same instructions to run the Non-Blocking Linux sample. The Non-Blocking Linux sample supports a reduced feature set for '-interactive' and '-mobile' modes and does not support '-programmatic' mode.
 
 > Note that the activation step is necessary each time. After the first time, the activation command merely performs a local activation check and you are not required to be connected to the internet.  
 The sample will attempt automatic activation each time it is started.
