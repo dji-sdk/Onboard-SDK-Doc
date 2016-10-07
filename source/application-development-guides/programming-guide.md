@@ -1,6 +1,6 @@
 ---
 title: Programming Guide - Using the Onboard SDK APIs 
-version: v3.1.8
+version: v3.1.9
 date: 2016-08-05
 ---
 ![Prog Guide Header](../images/common/ProgGuideHeader.png)
@@ -40,6 +40,51 @@ The Onboard SDK supports two ways of doing this, described below.
 For true asynchronous programming, the SDK needs to allow for a mechanism for the user to execute code upon receiving ACKs from the aircraft indepdendent of the main flow of execution. The Onboard SDK provides this through **callback functions**.
 
 Upon receiving the ACK from the aircraft, the SDK's `read` function calls the user-provided callback function. The user is also allowed to supply some data (`UserData`, implemented as a `void*`), which is passed as an argument to the user callback. The user callback has access to the ACK and can implement logic based on the ACK. `UserData` is meant for two purposes: (1) the user can also pass any additional information to the callback that the callback may act on depending on the ACK parsing logic (2) it is a mechanism for the callback to pass data back to user, if the user passes a reference to a variable that can be populated in the callback based on the ACK.   
+
+The Linux sample now incorporates Asychronous programming through the Non-Blocking sample. A separate callback thread runs all the callback functions.
+
+**Example:** Non-Blocking Take Control Linux function. 
+
+1. The Take Control command can be called from user code as follows
+
+```c
+takeControlNonBlocking(api);
+```
+
+2. A default callback is made available with CoreAPI, Protocol Header and UserData passed to the Callback function. Additionally, you can access the ACK for the command in the callback function.  
+
+```c
+void takeControlCallback(CoreAPI* api, Header *protHeader, DJI::UserData data) {
+
+  uint16_t simpAck = api->missionACKUnion.simpleACK;
+  switch (simpAck)
+  {
+    case ACK_SETCONTROL_NEED_MODE_F:
+      std::cout << "Failed to obtain control.\nYour RC mode switch is not in mode F. (Is the RC connected and paired?)" << std::endl;
+          break;
+    case ACK_SETCONTROL_OBTAIN_SUCCESS:
+      std::cout << "Obtained control successfully."<< std::endl;
+          break;
+    case ACK_SETCONTROL_OBTAIN_RUNNING:
+      std::cout << "Obtain control running.."<< std::endl;
+          takeControlNonBlocking(api);
+          break;
+    case ACK_SETCONTROL_IOC:
+      std::cout << "The aircraft is in IOC mode. Cannot obtain control.\nGo to DJI GO and stop all intelligent flight modes before trying this." << std::endl;
+          break;
+    default:
+    {
+      std::cout << "Error in setControl API function." << std::endl;
+    }
+          break;
+  }
+}
+```
+
+3. The meaning of ACK return values(result) is explained for each command in the [Flight ACK Codes](../introduction/index.html#CMD-Val-ACK-Val) document.
+
+>Note: Callbacks, in this implementation is executed in a separate callback thread, but blocks the 'read' thread with mutexes until the callback is complete. Do not execute large pieces of code in callbacks; reading the serial port is prevented until the callback finishes.
+
 
 **Example:** Activation function in QT sample 
 

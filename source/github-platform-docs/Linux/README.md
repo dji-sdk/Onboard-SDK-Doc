@@ -1,18 +1,18 @@
 ---
 title: DJI Onboard SDK C++ Linux Example
-version: v3.1.8 
+version: v3.1.9
 date: 2016-08-05
 github: https://github.com/dji-sdk/Onboard-SDK/tree/3.1/sample/Linux
 ---
 
-  > All-new example for DJI Onboard SDK v3.1.8!
+  > All-new Non-Blocking calls for DJI Onboard SDK v3.1.9!
 
 ## Introduction
 
 The new C++ Linux example is meant to showcase recommended application-layer usage of the DJI Onboard API. This example eases a new developer into the world of programming for drones - many API functions have been wrapped in easy-to-use implementations and a feedback mechanism is implemented so the developer always knows the result of his/her commands. Packaged with the new example is a new pthread-based threading implementation as well as an efficient serial device driver that implements many checks (on x86 systems) to ensure reliable communication between your OES and your drone.   
 
 
-The following user-facing functionality is available in the new Linux sample: 
+The following user-facing functionality is available in the Linux sample: 
 
 * Activation
 * Obtain/Release Flight Control 
@@ -21,11 +21,21 @@ The following user-facing functionality is available in the new Linux sample:
 * Go Home 
 * Movement Control - Position/Attitude/Velocity control modes
 * Waypoint Functionality
-* Compatible with brand new iOS Mobile OSDK App
+* Compatible with DJI iOS Mobile OSDK App
 * Sample Waypoint Mission implementation
 * Sample Position Control implementation
 
-The example is extensible - if you want to build additional functionality, it is easy to do so within the framework of this example.  
+Apart from the Blocking Linux sample, we also support a reduced feature set Non-Blocking sample for this release. This allows the callbacks to run on a different thread, allowing the send commands to run independent from the callbacks. 
+
+The following user-facing functionality is available in the new Non-Blocking Linux sample:
+
+* Activation
+* Obtain/Release Flight Control 
+* Take Off 
+* Landing 
+* Compatible with iOS DJI Mobile OSDK App
+
+The examples are extensible - if you want to build additional functionality, it is easy to do so within the framework of these examples. 
 
 ---
 ## Setup
@@ -48,7 +58,7 @@ All of these should be available with an installation of Ubuntu 14.04/16.04.
 
 **Compilation**
 
-* First, we need to create the directories `objs` and `bin` inside the `sample/Linux` directory. To do this, open up a terminal inside the `sample/Linux` directory and type `mkdir bin; mkdir objs` at the command line. 
+* First, we need to create the directories `objs` and `bin` inside the `sample/Linux/Blocking` or `sample/Linux/Non-Blocking` directory. To do this, open up a terminal inside the `sample/Linux/Blocking or ../Non-Blocking` directory and type `mkdir bin; mkdir objs` at the command line. 
 * Next, type `make` at the command prompt.
 * To access the serial port, add your username to the dialout group by typing `sudo usermod -a -G dialout $USER` (you do not need to replace $USER with your username). **Then logout and login again.**  
 
@@ -74,18 +84,20 @@ The first time a drone/OES combination is used, it needs to be activated. Activa
 ---
 ## Operation
 
-To run the Linux sample, follow these steps:
+To run the Linux Blocking sample, follow these steps:
 
-* Navigate to `sample/Linux/UserConfig.txt` and enter your serial port in the `DeviceName` and baud rate in the `BaudRate` field.  
+* Navigate to `sample/Linux/Blocking/UserConfig.txt` and enter your serial port in the `DeviceName` and baud rate in the `BaudRate` field.  
     * The default baudrate is `230400`. If you change this, remember to also change it in DJI Assistant 2.  
     * The default port is `/dev/ttyUSB0`. This should be correct if you are using a USB-Serial adapter. On Manifold, you will be using `/dev/ttyTHSx` (x = 0,1,2) - refer to the [Hardware Setup Guide](../../hardware-setup/index.html) for more information.   
-* In the `sample/Linux/` folder, assuming you have already executed `make`, run `bin/onboardSDK mode_of_operation` where `mode_of_operation` can be (more information about the modes [here](#modes-of-operation)):  
+* In the `sample/Linux/Blocking` folder, assuming you have already executed `make`, run `bin/onboardSDK mode_of_operation` where `mode_of_operation` can be (more information about the modes [here](#modes-of-operation)):  
     * `-interactive` : Recommended mode for new developers. Shows a basic terminal UI and users can execute single commands with key presses.  
     * `-mobile` : Use with the brand new Mobile OSDK App. Useful for mobile-based triggering of OSDK commands with keys on iOS device.  
     * `-programmatic` : Use for automated execution. By default, the sample will first takeoff, then execute a waypoint mission, then automatically land and exit.
 * Proceed to run the sample in one of these modes. Before the sample enters one of the three modes, it will attempt to activate the drone and obtain control. If everything goes well, you should see the following information on the terminal:
 
     ![Activate_TakeControl](../../images/Linux/AllGood.png)
+
+* You may follow the same instructions to run the Non-Blocking Linux sample. 
 
 > Note that the activation step is necessary each time. After the first time, the activation command merely performs a local activation check and you are not required to be connected to the internet.  
 The sample will attempt automatic activation each time it is started.
@@ -139,7 +151,7 @@ The result of this code is something like this:
 
 ## Examples
 
-The new Linux Application comes with two examples you can call through Interactive, Mobile or Programmatic mode:  
+The Linux Blocking Application comes with two examples you can call through Interactive, Mobile or Programmatic mode:  
 
 #### 1. Waypoint Mission Example
 
