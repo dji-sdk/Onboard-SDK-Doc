@@ -1,5 +1,5 @@
 ---
-title: Precision Trajectory Mission Planning
+title: Precision Trajectory Mission Planning [beta]
 version: 3.1.9
 date: 2016-10-14
 github: https://github.com/dji-sdk/Onboard-SDK/tree/3.1/modules/localMissionPlanning/
@@ -9,7 +9,9 @@ github: https://github.com/dji-sdk/Onboard-SDK/tree/3.1/modules/localMissionPlan
 
 ## Introduction
 
-For the first time, DJI developers can plan missions in terms of something other than waypoints. The new DJI Precision Trajectory Mission Planning library has the flexibility to deal with complicated trajectories, issues with GPS accuracy and cases when GPS is simply unavailable. For inspection applications like powerlines, towers and buildings, the ability to visualize and plan a smooth, precise trajectory can be the difference between actionable data and merely beautiful footage.
+With the Onboard SDK Precision Trajectory Mission Planning suite, DJI developers can now plan complex missions without having to use GPS waypoints. The new DJI Precision Trajectory Mission Planning library has the flexibility to deal with complicated trajectories, issues with GPS accuracy and cases when GPS is simply unavailable. 
+
+For inspection applications like powerlines, towers and buildings, the ability to visualize and plan a smooth, precise trajectory that fully covers the points of interest on your structure can be the difference between actionable data and merely beautiful footage.
 
 The precision trajectory mission planning interface opens up an exciting new paradigm for planning missions - think shapes and actions, not waypoints. Release 3.1.9 of the Onboard SDK provides a first version of this library that allows you to plan and execute geolocated spiral trajectories around infrastructure.
 
@@ -42,6 +44,7 @@ The precision trajectory mission planning interface opens up an exciting new par
  
 ## Usage
 
+* In simulation, set up the drone's home position close to the planned trajectory - as you would in real life.
 * To run the sample interactively, you can press `[z]` to run the trajectory following for the json supplied at command line. Note that the aircraft needs to have taken off first.
 ![Interactive trajectory](../../images/modules/missionplan/interactive_localmissionplan.png)
 * To run it on mobile, you can go to the `Custom Missions` tab and run the first option. Note that the aircraft needs to have taken off first.
@@ -62,7 +65,14 @@ On running the trajectory follower, you should see messages telling you about fe
 * You can optionally have the drone take pictures at predefined intervals of time. 
 * You can also optionally have the drone record video from the start of the spiral to the end. 
 
-## Warnings and Caveats
+## A Note on the *Beta* Tag
+
+The precision trajectory following suite is fully functional and has been tested in many simulation and real-world scenarios. However, in a complex suite with many variable factors, we cannot at this moment guarantee that it will work as desired in extreme conditions (unreasonable velocities, winds, data corruption, GPS dropout etc). 
+
+This first release is meant to give users an idea of the possibilities that a precision trajectory mission planner opens up. Try out the suite - in simulation before you take it out - and tell us what changes you would like to see!
+
+#### Warnings and Caveats
 
 * **There is no obstacle avoidance** integrated with the path planning. Make sure you plan spirals that stay clear of obstacles or the infrastructure itself. Importing 3D models of the object under inspection into Sketchup and planning around that is a good first-order measure.
-* The entry trajectory is planned in real time to provide the smoothest entry into the trajectory such that the entire spiral is executed at constant velocity. This means the entry curve might go wider that you expect in the area leading up to the spiral. **Leave plenty of open space in the area between your current location and the planned spiral.**
+* **Leave plenty of open space in all directions in the area between your current location and the planned spiral.** The entry trajectory is planned in real time to provide the smoothest entry into the trajectory such that the entire spiral is executed at constant velocity. This means the entry curve might go wider that you expect in the area leading up to the spiral. The farther you are from the planned spiral, the wider the entry curve - this is to ensure a smooth 'slingshot' maneuver to enter the spiral. This behavior might change in an upcoming release.
+* **Do not enter unreasonable values in the json file**. We safeguard against all the error cases we have encountered but that might not cover the full scope of things that can go wrong in this complex suite. Over time, bug fixes and improved algorithms will help harden the suite.
