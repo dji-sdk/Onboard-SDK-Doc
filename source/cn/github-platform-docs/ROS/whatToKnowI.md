@@ -1,3 +1,9 @@
+---
+title: DJI Onboard SDK ROS Example
+date: 2016-06-24
+keywords: [ros package]
+---
+
 # DJI SDK Challenge: Onboard SDK Part I
 
 ## Overview
@@ -25,7 +31,9 @@ For example, the dji\_sdk package implements all protocols as ROS elements, howe
 As for the SDK challenge details, there are several points developers need to pay attention.
 
 1. The drone is not controllable by SDK during the taking off procedure until its reaches the 1.2 meters high, and the landing procedure will bring you the same condition. Therefore, it is better to arm/disarm the drone by yourself, then doing attitude control in order to make it take off and land properly with SDK control ability and your control logic.
+
 2. There are three control modes in horizontal direction when doing attitude control (regardless the frame). The angle of pitch/roll, the velocity in x/y direction and the position offset in x/y direction. The position control needs a stable GPS signal (health flag \> 3), the velocity control needs a stable velocity feedback (from Guidance or GPS), the pitch/roll angle control is the only way to achieve attitude control when working in a weak GPS signal condition with no Guidance installed. 
+
 3. The video transmission in ROS network may suffer latency problem. It is better to read and process the video stream in the same node then publish the final result out.
 
 ## Appendix

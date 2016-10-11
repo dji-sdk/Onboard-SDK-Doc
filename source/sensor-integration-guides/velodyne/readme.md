@@ -3,6 +3,7 @@ title: Integration with Velodyne LiDAR
 version: v3.1.9
 date: 2016-10-07
 github: https://github.com/dji-sdk/Onboard-SDK/tree/3.1/thirdparty/velodyne_vlp16puck_lite_API_example
+keywords: [Light Detection and Ranging system, LiDAR]
 ---
 
 ## Introduction

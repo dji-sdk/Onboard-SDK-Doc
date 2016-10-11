@@ -1,6 +1,7 @@
 ---
 title: Virtual RC Protocol 
 date: 2016-06-24
+keywords: [virtual RC protocol]
 ---
 
 ## Introduction
@@ -11,11 +12,10 @@ Developers can use it directly without obtaining control ability. A list of chan
 
 ## Command Set and Command ID
 
-|API LEVLE|CMD SET|CMD ID|DESCRIPTION|
+|API LEVEL|CMD SET|CMD ID|DESCRIPTION|
 |---------|-------|------|-----------|
 |0|0x05|0x00|obtain of release virtual RC control|
 |0|0x05|0x01|virtual RC channel data|
-
 
 ## Data Structure
 

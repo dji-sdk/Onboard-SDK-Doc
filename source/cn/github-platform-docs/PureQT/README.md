@@ -1,92 +1,176 @@
 ---
-title: DJI Onboard SDK QT例程 
-date: 2016-06-24
+title: DJI Onboard SDK Qt Example
+version: v3.1.7
+date: 2016-07-01
+github: https://github.com/dji-sdk/Onboard-SDK/tree/3.1/sample/PureQT
+keywords: [qt]
 ---
 
-## 简介
+## Introduction
 
-QT 例程是我们基于 QT 平台实现的 SDK 例程，它可以运行在 Windows 或者 Linux 平台上并可以完成如下命令：
+This example, which can run on both Windows and Linux Onboard Embedded Systems (OES), is aimed at helping you understand and operate the basic flight procedures and segments which include:
 
-* 激活
-* 获取控制权
-* 释放控制权
-* 起飞
-* 降落
-* 自动返航
-* 姿态控制
-* 云台控制
-* 相机控制
-* 虚拟遥控
-* 航点指令
-* 热点环绕指令
-* 智能跟随指令
+* Activation
+* Obtain/Release Flight Control
+* Take Off 
+* Landing 
+* Go Home 
+* Movement Control
+* Gimbal Control
+* Camera Control
+* Virtual RC (VRC) Control
+* Waypoint Mission Control
+* Hotpoint Mission Control
+* Follow Me Mission Control
 
-开发者可以通过程序的图形界面来进行交互和测试。
+Developers can operate flight with this example via the GUI interaction interface of QT.
 
-## 调试与运行环境
+ > The Qt example has recently undergone a number of changes. Try it out! Here's an example:
+ > Old Waypoint interface:
+ > ![Old Waypoint](../../../images/qt/Qt_waypointOld.png)
+ > New Waypoint interface: 
+ > ![New Waypoint](../../../images/qt/Qt_waypointNew.png)
 
-我们成功测试了如下运行环境：
+## Setup
 
-* QT 版本： QT 5.4 或更新。
-* 编译器版本： MinGW 4.9.2 或更新；MSVC2012或更新。
+### 1. Hardware
 
-下面是在manifold内安装QT的步骤：
+The [Hardware Setup](../../hardware-setup/index.html) guide illustrates setting up your OES of choice. Make sure your setup matches that in the document before proceeding further. 
 
-* sudo apt-get update
-* sudo apt-get install qtcreator
+### 2. Software
 
-至此，已经安装了qt5.2.1，但是缺少webkit和串口驱动
+#### Toolchain:
 
-* sudo apt-get install libqt5webkit5
+**1. Windows:**
 
-至此就只剩下串口驱动了
+To build a Windows app, the following tools are needed:
 
-* sudo apt-get install libudev-dev
-* git clone git://code.qt.io/qt/qtserialport.git
-* cd qtserialport
-* git checkout origin/old/5.2
-* cd ..
-* mkdir qtserialport-build
-* cd qtserialport-build
-* qmake ../qtserialport/qtserialport.pro
-* make
-* sudo make install
+* Qt Ver: QT 5.6 or later
+* Compiler Ver: MinGW 4.9.2 or later; MSVC2013 or later
 
-现在有了5.2版本的串口驱动，但是这个驱动是不能正常使用的
+Qt can be downloaded and installed from <a href="https://www.qt.io/" target="_blank">Qt website</a>.
 
-* cd ../qtserialport/
-* git checkout origin/5.3
-* cd ../qtserialport-build/
-* make
+**2. Linux:**
 
-这次make会失败，不要理他，继续执行下面的步骤
+To build a Linux app, the following tools are needed:
 
-* sudo make install
-* make
+* Qt Ver: QT 5.2.1 or later
+* Compiler Ver: gcc/g++ 4.8.1
 
-这次make会成功
+If using Manifold, you can follow these steps to install Qt from the command line. The setup should be similar for any other ubuntu-based OES.
 
-* sudo make install
+```
+sudo apt-get update
+sudo apt-get install qtcreator 
+```
 
-完成安装。用sudo权限开启qtcreator。
+Now you have qt5.2.1 without webkit package and serialport driver package
 
-* sudo qtcreator
+` sudo apt-get install libqt5webkit5 `
 
-默认串口名称为ttyTHS1
+Now you only need a serialport driver
 
-## 硬件安装
+```
+sudo apt-get install libudev-dev
+git clone git://code.qt.io/qt/qtserialport.git
+cd qtserialport
+git checkout origin/old/5.2
+cd .. 
+mkdir qtserialport-build 
+cd qtserialport-build 
+qmake ../qtserialport/qtserialport.pro 
+make 
+sudo make install
+```
+Now you have a serialport driver from version 5.2. However we need some components from Qt 5.3 to make the sample work.
 
-* 为了能够与 M100 的 N1 主控进行通信，开发者需要自行购买 USB 转 TTL 的串口转接模块。
-* 为了更好的监控飞机状态，我们建议开发者在调试的时候运行 DJI GO 来实时查看飞机当前状态信息。
+Continue and build the 5.3 version's source code.
 
-## 配置和编译
+```
+ cd ../qtserialport/
+ git checkout origin/5.3
+ cd ../qtserialport-build/
+ make
+```
 
-1. 打开 `onboardSDK` 中`PureQT` 目录下的 `onboardSDK.pro` 载入 QT 例程。
-2. 选择合适的编译器并编译项目。
-3. 在程序中选择好正确的设备和波特率，以及配置好激活所需的 APP ID 与 key
+In this step the compile may fail. Ignore it and continue finishing the following steps.
 
-## 运行
+```
+sudo make install
+make
+```
 
-在 QT 中点击绿色三角来运行程序，你可以在模拟器中对其进行测试。
+At this time, the build will succeed.
 
+` sudo make install `
 
+Now you can use the PureQT example.
+
+` sudo qtcreator `
+
+Default serialport name is ttyTHS1
+
+#### Compilation
+
+1. Open `onboardSDK.pro` located under the directory `...\onboardsdk\sample\PureQT\onboardSDK\`.
+2. Select a proper compiler mentioned above and click the button *"Configure Project"* to proceed.
+3. Click the  hammer icon in the left corner on the bottom of the Qt creator IDE to compile the sample. 
+
+#### Using Debugging 
+
+Before "debugging" is able to start, there is a step "Setup Debugger" that needs to be done. 
+Please refer to the <a href="http://doc.qt.io/qtcreator/creator-debugging.html" target="_blank">Qt debugging technical document</a> for setting up debuggers and installing debugging tools.
+For example, if you configure MS Visual Studio C/C++ compiler for Qt, you may need to install <a href="https://developer.microsoft.com/en-us/windows/hardware/windows-driver-kit" target="_blank">Debugging Tools for Windows 10 (WinDbg)</a>.
+
+#### Using the Simulator
+
+1. Connect your M100 to a PC through USB.
+2. Open up DJI Assistant 2. Click on the DJI M100 button. If this button doesn't show up, try disconencting and reconnecting the USB.
+3. Click on the Simulator tab, and then click on the 'Open' button. A separate window should pop up in a few seconds.
+4. In the main window, click on 'Start Emulating'.
+
+## Activation
+
+Click the green triangle icon in the left corner on the bottom of the Qt creator IDE to run the sample.
+
+At this time, you need to power up M100 and RC unit /mobile device, and start to run "DJI Go" app.
+
+Before you can execute any flight commands, an initialization and activation process via the GUI ("Core API" Tab Panel under "Flight" page) needs to be done as follows:
+
+* Enter (can copy and paste) the APP ID in the the corresponing edit box
+* Enter (can copy and paste) the Key in the the corresponing edit box
+* Select COM port (e.g. COM1, COM2) in the pull-down edit box, which is connected to M100
+* Enter the baudrate (Note: the 'baudrate' needs to be consistent with the setting in the DJI Assistant2 software)
+* Click the button "COM* closed" and check the API status box in the far left message panel to see if the COM port is opened successully
+* Click the button "Activate"  
+
+Figure 1 below shows the UI.
+
+![Initialization and activation](../../../images/qt/Qt_Init_Activation.PNG)
+
+Figure 1 Initialization and activation
+
+At this point, the communication between the N1 flight controller of M100 and your OES (PC for this case) has been established.
+
+## Operation
+
+We stronly recommend you run this example in the simulator first, then carefully move to the real flight test.
+
+Overall, the following operations can be performed:
+
+* You can see the flight control simulations on screen if you are using the DJI PC simulator. Otherwise, real flight happens.
+* You can see the actual 'gimbal and camera' movement.
+* You can see the image/video you capture from you Mobile Device.
+* You can start a groundstation task.
+
+Figure 2 below shows the procedure of flight with the virtual RC.
+
+![Flight with VRC](../../../images/qt/qtDemo1.PNG)
+
+Figrue 2: Flight with VRC
+
+Figure 3 below shows the procedure of flight with different missions.
+
+![Flight with different Missions](../../../images/qt/QtDemo2.PNG)
+
+Figure 3: Flight with different Missions

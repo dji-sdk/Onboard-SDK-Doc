@@ -2,10 +2,12 @@
 title: Programming Guide - Using the Onboard SDK APIs 
 version: v3.1.9
 date: 2016-08-05
+keywords: [Serial Device Driver, Threading/Interrupts, Application-Layer API calls]
 ---
 ![Prog Guide Header](../images/common/ProgGuideHeader.png)
 
 ## Introduction
+
 This guide helps users understand Onboard SDK programming paradigms and correct usage of the APIs provided by the DJI Onboard SDK library. The guide walks through the two asynchronous programming paradigms that are supported by the SDK, and provides information about DJI Onboard SDK workflow. 
 
 All structures and functions are declared in `DJI_API.h`, `DJI_Type.h` and `DJICommonType.h`. For more details, please refer to the source code - Doxygen documentation for the API is also provided.
@@ -265,6 +267,7 @@ For example, in ground frame, `target` is target position and `current` is UAV's
 Because, for the autopilot, the maximum frequency of receiving data is 50Hz, the frequency of calculating offset should be over 50Hz to ensure the closed-loop control is valid; you always want to have a new offset calculated before you send it to the flight controller to execute.
 
 **Example"**: Writing position control procedure:
+
 ~~~c
 void update_offset()
 {
