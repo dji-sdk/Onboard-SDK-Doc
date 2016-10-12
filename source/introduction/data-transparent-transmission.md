@@ -1,11 +1,13 @@
 ---
 title: Data Transparent Transmission 
 date: 2016-06-24
+keywords: [data transparent transmission, downstream, upstream]
 ---
 
 ## Intro
 
 The purpose of this document is to give an overview of the 'Data Transparent Transmission' between an Onboard Embedded System (OES) and an Mobile Device. The rest of this document is organized as followed:
+
 * Problem Motivation
 * 2 Usage Scenarios (with sample code snippet)
 
@@ -107,4 +109,3 @@ The OES can receive the data sent from the Mobile Device by means of a CMD from 
 |---------|------|----|-----------|
 |CMD Val|0|1~100|User Data|
 |ACK Val|---|---|N/A|
-

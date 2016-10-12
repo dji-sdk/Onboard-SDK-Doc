@@ -1,6 +1,7 @@
 ---
 title: Onboard SDK OPEN Protocol 
 date: 2016-06-24
+keywords: [open protocol, protocol transmission mechanism, CMD frame data, ACK frame data, encryption, CMD set, CMD ID, CMD Val, ACK Val]
 ---
 
 ## Protocol Frame

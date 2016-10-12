@@ -1,6 +1,7 @@
 ---
 title: DJI Onboard SDK ROS Example
 date: 2016-06-24
+keywords: [ros package]
 ---
 
 # DJI SDK Challenge: Onboard SDK Part I

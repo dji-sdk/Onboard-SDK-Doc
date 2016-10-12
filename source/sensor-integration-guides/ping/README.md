@@ -3,6 +3,7 @@ title: Integrate uAvionix ADS-B receiver with DJI Onboard SDK
 version: v3.1.8
 date: 2016-08-05
 github: https://github.com/dji-sdk/Onboard-SDK/tree/3.1/thirdparty/ADSBExample
+keywords: [ADS-B receiver, pingRX]
 ---
 
 ## Introduction

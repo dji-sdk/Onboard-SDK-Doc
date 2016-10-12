@@ -1,6 +1,7 @@
 ---
 title: Hardware setup
 date: 2016-06-24
+keywords: [hardware setup，M100 UART Connector, A3 UART Connector]
 ---
 
 # Hardware Setup guide

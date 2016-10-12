@@ -1,136 +1,168 @@
 ---
-title: DJI Onboard SDK STM32 例程 
-date: 2016-06-24
+title: DJI Onboard SDK STM32 Example App
+version: v3.1.7
+date: 2016-07-01
+github: https://github.com/dji-sdk/Onboard-SDK/tree/3.1/sample/STM32
+keywords: [stm32， local navigation]
 ---
 
-## 简介
+## Introduction
 
-> **Note: The STM32 example code is currently undergoing a major revamp. We expect to have a new version very soon which fixes many longstanding bugs and makes operation simpler and more reliable. Some of these instructions may not work with the current release and are meant for the newer version.** 
+This example onboard App is built upon the <a href="http://www.st.com/content/st_com/en/products/evaluation-tools/product-evaluation-tools/mcu-eval-tools/stm32-mcu-eval-tools/stm32-mcu-discovery-kits/stm32f4discovery.html" target="_blank">STM32F407 Discovery</a> development kit (referred to as "STM32" later) with <a href="http://www2.keil.com/mdk5/" target="_blank">MDK-ARM</a> (Keil uVision) toolchain. The purpose is to demonstrate how to use the APIs provided by the Onboard SDK in a "bare-metal" embedded system.
 
-本示例程序使用[STM32F407 Discovery](http://www.st.com/content/st_com/en/products/evaluation-tools/product-evaluation-tools/mcu-eval-tools/stm32-mcu-eval-tools/stm32-mcu-discovery-kits/stm32f4discovery.html)开发板，使用MDK-ARM (Keil uVision)工具链开发和调试。本例程演示了如何使用Onboard SDK提供的API进行嵌入式程序开发。
+The system has the following setup:
+![system diagram](../../../images/STM32/STM32_System_Structure.png)
 
-整个系统的结构如下图所示
-![system diagram](../../../images/STM32/STM32_System_Structure.png) 
+The user sends commands to the USART2 port of the STM32 from a serial terminal. Based on the commands received, the App communicates with the M100 connected to the USART3 port through the Onboard SDK and prints feedback/debug information to the user. Since version 3.1.8, an [iPhone/iPad App](../MobileOnboardSDK/Mobile-OSDK.html) named `Mobile OSDK` is created for the user to send some commands to the OES from a mobile device.
 
-系统运行时，用户在PC上向STM32的USART2口发送命令。根据命令的内容，固件程序调用Onboard SDK通过USART3口于M100通讯，并把反馈信息发送给用户。
+Before using this example App, make sure you have followed the [Quick Start](../../quick-start/index.html) and have valid APP KEY and APP ID.
 
-在使用本例程前请确认你已经**仔细阅读过**有关OnboardSDK的**所有文档**。
+## Setup
 
-## 环境配置
-
-### 硬件接口
+### Hardware Installation
 
 ![hardware setup](../../../images/STM32/STM32_hardware_setup.jpg)
 
-首先使用USB-TTL转接线连接PC的USB口和STM32的USART2接口(`PA2`，`PA3`分别是STM32端发送和接收）。使用M100附带的串口线连接STM32的USART3口(`PB10`，`PB11`分别是发送和接收)和M100的`UART_CAN2`。使用[DJI Assistant 2](http://developer.dji.com/onboard-sdk/downloads/)软件将M100的`UART_CAN2`接口的波特率设为**230400**（因为固件程序中将USART3波特率配置为230400)。使用DJI Assistant 2时需要通过micro-USB连接PC和M100。STM32开发板通过mini-USB口烧写程序。
+Connect the USB-TTL cable to USART2 port of the STM32 (`PA2`，`PA3` are the TX and RX of the STM32 side, respectively). Connect USART3 port of the STM32 to the `UART_CAN2` port of the M100: the TX pin (`PB10`) of STM32 should be connected to the RX pin of M100, and the RX pin (`PB11`) of STM32 to the TX pin of M100. Refer to [Hardware Setup Guide](../../hardware-setup/index.html).
 
-### 编译环境
+You'll need to use the <a href="http://developer.dji.com/onboard-sdk/downloads/" target="_blank">DJI Assistant 2 software</a> to set the baud rate of the M100's `UART_CAN2` port to **230400**, which is the one we use to configure USART3 in the example App.
 
-本例程使用MDK-ARM (Keil uVision) 5.12版本开发。推荐使用更新版本的Keil进行。Keil5系列软件中没有包含芯片器件库，需要自行安装，否则会提示缺少芯片器件库。推荐使用Keil的`Pack Installer`安装最新的STM32F4xx_DFP.2.x.x包，如下图所示。开发者也可以自行下载STM32F4xx_DFP.2.x.x包，网址是http://www.keil.com/dd2/Pack/，然后使用`Pack Installer`手动安装。
+To download (flash) the App binary to the STM32 board, connect the PC to the STM32's "mini-USB" port. To set the baud rate of the M100 or to run the simulator, connect the PC to the M100's "micro-USB" port.
+
+### Toolchain Setup
+
+The example App is developed and tested with MDK-ARM Version 5.12 or later. In order for Keil to build code for the target board, you need to use Keil's `Pack Installer` to install the latest STM32F4xx_DFP.2.x.x pack, as shown below. (Alternatively, you can download manually from <a href="http://www.keil.com/dd2/Pack/" target="_blank">http://www.keil.com/dd2/Pack/</a> and import the downloaded file from Pack Installer.)
 
 ![Keil_PackInstall](../../../images/STM32/STM32_Keil_PackInstall.png)
 
-### 编译本例程
+### Build the example APP
 
-首先使用git来取得Onboard SDK和示例程序的源码:
+First, clone the source code of the example app with its submodules using git:
 > git clone --recursive https://github.com/dji-sdk/Onboard-SDK.git
 
-然后在Keil uVision中打开工程`samples
-/STM32/OnBoardSDK_STM32/Project/OnBoardSDK_STM23.uvprojx`。在编译之前，开发人员需要在`OnboardSDK_STM32/User/Activate.cpp`文件里输入正确的APP KEY和APP ID。
+Open the project located in `sample/OnBoardSDK_STM32/Project/OnBoardSDK_STM23.uvprojx` in Keil uVision IDE. To build the code, developers need to input the correct APP KEY and APP ID obtained from DJI Developer site in `OnboardSDK_STM32/User/Activate.cpp` file.
 
-使用菜单选项`Project->Build Target`编译程序，使用`Flash->Download`把输出的二进制固件烧写到STM开发板上。
+Use the menu item `Project->Build Target` and `Flash->Download` to build the project and flash to the STM32 board.
 
-### 配置串口调试程序
+### Configure the serial terminal software
 
-为了从PC和STM32开发板进行串口通讯，用户需要在串口终端程序(这里我们使用开源的[RealTerm](realterm.sourceforge.net))中将波特率设置为**115200**（与固件程序USART2的波特率一致），并设置为Ascii接收，Hex发送模式。
+Set the baud rate of your serial terminal software (here we use the open-source <a href="http://realterm.sourceforge.net" target="_blank"> RealTerm </a>) to be **115200**, which is the one we use to configure USART2 in the example App. Configure the serial terminal to display the received information in Ascii mode and send commands in Hex mode.
 
-![Realterm Setup](../../../images/STM32/STM32_Realterm.png) 
+![Realterm Setup](../../../images/STM32/STM32_Realterm.png)
 
-## 激活
+## Activation
 
-为了使STM32获得飞机的控制权，首先需要发送激活指令。激活的目的是向M100确认本程序有合法的APP ID和APP KEY。
+In order for the onboard App to obtain control of the drone, it needs to send an "Activation" command to the drone. Activation  tells the M100 that your onboard App is legitimate to control the drone. Make sure you have [Enabled API Control](../../quick-start/index.html#enable-api-control) using the DJI Assistant 2 software.
 
-通过串口终端发送如下二进制命令
+Send the activation command with serial terminal
+
 > 0xFA 0xFB 0x01 0xFE
 
 ![Activation Successfully](../../../images/STM32/STM32_Activation_Successfully.png)
 
-第一次激活需要互联网连接，即STM32 <==> M100 <==> 遥控器 <==> DJI GO APP <==> Internet，因为M100需要在连接官网验证APP ID和APP KEY。之后每次使用前仍需发送激活指令，但是不再需要Internet。
+Note that the first activation requires internet connection (STM32 <==> M100 <==> Remote Control <==> DJI GO APP <==> Internet), since it needs to verify that the APP ID and APP KEY used in the onboard APP are valid. After the first activation, internet connection is not mandatary.
 
-## 操作指南
+## Operation
 
-本例程实现了一个简单的命令协议。用户通过串口向STM32发送命令。下图是一次完整任务发送的命令序列。
-![Example Sequence](../../../images/STM32/STM32_Example_Sequence.png) 
+This example App defines a very simple command protocol. Users send commands to the STM32 from a serial terminal. An example command sequence is given below:
+![Example Sequence](../../../images/STM32/STM32_Example_Sequence.png)
 
-### 指令格式
+### Command Format
 
-每一帧命令由下面几部分组成。
-> 帧头(2字节: 0xFA, 0xFB), 指令码(2字节), 数据(可选), 帧尾(1字节: 0xFE)
+Each command frame consists of frame header, command code, data (optional) and frame footer.
 
-STM32收到帧尾"0xFE"会立即开始执行命令。已经支持的命令如下，需要更多指令请自行添加：
+```
+|<--Header->|<--Code-->|<--Data (Optional)-->|<-Footer->|
+| 0xFA 0xFB |  2 bytes |    variable size    |   0xFE   |
+```
 
-|指令内容            | 指令代码             |
-|:------------------|:------------------|  
-|获取当前版本信息      | 0xFA 0xFB 0x00 0xFE |
-|发送激活指令 		| 0xFA 0xFB 0x01 0xFE | 
-|请求控制权   		|0xFA 0xFB 0x02 0x01 0xFE|  
-|释放控制权   	 	|0xFA 0xFB 0x02 0x00 0xFE | 
-|解锁电机   		 	|0xFA 0xFB 0x03 0x01 0xFE|  
-|锁定电机  		 	|0xFA 0xFB 0x03 0x00 0xFE|  
-|运动控制            |0xFA 0xFB 0x04 0x01 Flag  x_H  x_L  y_H  y_L  z_H  z_L  yaw_H yaw_L 0xFE|
-|运动控制调试         |0xFA 0xFB 0x04 0x02 Flag  x_H  x_L  y_H  y_L  z_H  z_L  yaw_H yaw_L 0xFE|
-|一键返航  		 	|0xFA 0xFB 0x05 0x01 0xFE|  
-|一键起飞  		 	|0xFA 0xFB 0x05 0x02 0xFE|  
-|一键降落  		 	|0xFA 0xFB 0x05 0x03 0xFE|  
-|虚拟遥控开启（A档）     |0xFA 0xFB 0x06 0x01 0xFE  |
-|虚拟遥控开启（F档）     |0xFA 0xFB 0x06 0x02 0xFE  |
-|虚拟遥控关闭 	 	|0xFA 0xFB 0x06 0x00 0xFE | 
-|开始热点飞行 	    |0xFA 0xFB 0x07 0x00 Altitude Angular_Speed Radius 0xFE|
-|结束热点飞行         |0xFA 0xFB 0x07 0x01 0xFE |
-|获取广播信息         |0xFA 0xFB 0x08 0x00 0xFE |
+When the STM32 receives a "0xFE" it will execute the command immediately.  
 
-## 命令示例
+The following commands has been implemented in the App. Developers can add more commands as they need based on the open protocol.
 
-### 运动控制
+|Function          | Terminal Command Code             | Mobile OSDK App support |
+|:----------------|:------------------|:------------------|  
+|Get current version   | 0xFA 0xFB 0x00 0xFE | No |
+|Activate | 0xFA 0xFB 0x01 0xFE | Yes |
+|Obtain control   		|0xFA 0xFB 0x02 0x01 0xFE| Yes |
+|Release control   	 	|0xFA 0xFB 0x02 0x00 0xFE | Yes |
+|Arm    		 	|0xFA 0xFB 0x03 0x01 0xFE| Yes |
+|Disarm 		 	|0xFA 0xFB 0x03 0x00 0xFE| Yes |
+|Movement Control   |0xFA 0xFB 0x04 0x01 Flag x_H  x_L  y_H  y_L  z_H  z_L  yaw_H yaw_L 0xFE| No |
+|Movement Control (dry-run)   |0xFA 0xFB 0x04 0x02 Flag  x_H  x_L  y_H  y_L  z_H  z_L  yaw_H yaw_L 0xFE| No |
+|Return to home(RTH)|0xFA 0xFB 0x05 0x01 0xFE|   Yes |
+|Auto take off  	|0xFA 0xFB 0x05 0x02 0xFE|  Yes |
+|Auto landing  		|0xFA 0xFB 0x05 0x03 0xFE|  Yes |
+|Virtual RC on(mode A) |0xFA 0xFB 0x06 0x01 0xFE  | No |
+|Virtual RC on(mode F) |0xFA 0xFB 0x06 0x02 0xFE  | No |
+|Virtual Rc off 	 	|0xFA 0xFB 0x06 0x00 0xFE | No |
+|Start HotPoint 	 	|0xFA 0xFB 0x07 0x00 Altitude Angular_Speed Radius 0xFE| No |
+|Stop HotPoint          |0xFA 0xFB 0x07 0x01 0xFE | No |
+|Get Broadcast Data     |0xFA 0xFB 0x08 0x00 0xFE | No |
+|Start Local Nav Example|0xFA 0xFB 0x09 0x01 0xFE | Yes |
+|Stop Local Nav Example|0xFA 0xFB 0x09 0x00 0xFE | No |
 
-Onboard SDK为开发者提供了非常灵活的方式来控制飞机的运动。上表中的运动控制需要用户发送如下数据
-+ 控制模式
-+ X-轴控制量 (高位字节x_H和低位字节x_L)
-+ Y-轴控制量 (高位字节y_H和低位字节y_L)
-+ Z-轴控制量 (高位字节z_H和低位字节z_L)
-+ Yaw-轴控制量 (高位字节yaw_H和低位字节yaw_L)
+## Examples
 
-控制模式决定了每个轴(X, Y, Z, Yaw)控制量的物理意义，例如速度，位置，角度，角速度等。完整模式的列表请参考开放协议。
+### Movement Control
 
-下面是一个运动控制命令的例子
+> This example is only meant to help the user understand how to use the movement control Api. **It should be tested only in the simulator, not on a real drone in the field.**
+
+The onboard SDK provides flexible ways to the developers to control the movement of the drone. Movement control command must not be sent before taking off. The movement control command in the above table requires the following data:
++ Control Mode Flag
++ X-axis control value (higher and lower bytes)
++ Y-axis control value (higher and lower bytes)
++ Z-axis control value (higher and lower bytes)
++ Yaw control value (higher and lower bytes)
+
+The Control Model Flag determines how each component (X, Y, Z, Yaw) of the control data is interpreted by M100. A complete list of available control modes can be found in the [Open Protocol Documentation](../../appendix/index.html#control-mode-byte).
+
+Here is an example of Movement Control Command:
 > 0xFA 0xFB 0x04 0x01 **0x48 0x00 0x64 0x00 0xC8 0x00 0x64 0x00 0x05** 0xFE
 
-上例中，控制模式为 0x48 (0b 0100 1000)表示X, Y, Z速度控制和Yaw角速度控制，ground参考系。
+The Control Model Flag 0x48 (0b 0100 1000) sets the command values to be X, Y, Z velocities in ground frame and Yaw rate.
 
-STM接收到上面的命令后，会把每个轴控制量的高位字节和低位字节组成一个整数，然后除以100，作为发送给100的数据。在上面的命令中，X轴速度设为1米/秒, Y轴速度设为2米/秒，Z轴速度设为1米/秒，Yaw角速度设为0.05弧度/秒。
+The STM32 example app assembles the higher byte and lower byte of each channel to an integer, and *then divide it by 100*. So in the above example, the X (North) velocity is set to 1 m/s, the Y (East) velocity is set to 2 m/s, the Z velocity is set to 1 m/s and the Yaw rate is set to 0.05 rad/s.
 
-如果我们按照一键起飞==>上面的运动控制指令==>一键降落的顺序向飞机发送指令的话，将在模拟器中得到如下的结果
+The above command, with an auto taking-off before which and an auto landing after, will generate the following result in simulator:
 ![Movement Control](../../../images/STM32/STM32_Movement_Control.png)
 
-注意，在进行运动控制时，程序需要连续不断地（推荐频率为50赫兹）向飞机发送运动控制命令，而不是发送一次就停止。在STM32例程中，当用户向串口发送一次运动控制命令后，程序会开启一个50Hz的计时器，来连续向飞机发送相同指令。要停止自动发送，用户只要发送任何0x04 0x01开头的命令，飞机就会回到悬停状态。
+Note that, as described in the [Onboard SDK Programming Guide](../../application-development-guides/programming-guide.html#movement-control), movement control commands need to be sent to the drone continuously (recommended at 50Hz). In the STM32 example app, after users send one movement control command, a timer will be set to send the same command to the drone automatically at 50Hz frequency. To stop this automatic sending, users need to send any valid command in the above table other than the Movement Control Command, and the drone will stop and hover.
 
-为了方便用户确保发送正确的控制量高字节和低字节，我们提供了一个"运动控制调试"命令。例如下面的命令
+To facilitate the debug and make sure the control value bytes (higher and lower) you send generates the expected value (e.g., the X velocity), the STM32 example app provides a "dry-run" mode. For example, the following command
 
-> 0xFA 0xFB 0x04 **0x02** 0x48 0x00 0x64 0x00 0xC8 0x00 0x01 0x00 0x05 0xFE
+> 0xFA 0xFB 0x04 **0x02** 0x48 0x00 0x64 0x00 0xC8 0x00 0x64 0x00 0x05 0xFE
 
-会向串口终端打印换算后的X，Y，Z，Yaw的控制量，而不会真的向飞机发送命令。
+will print the assembled X, Y, Z, Yaw values without actually sending the data to the drone.
 
-### 热点飞行
+### Hot Point
 
-在热点模式下，飞机会绕着某个中心点，以用户给定的高度，角速度，和半径飞行。STM32例程中，中心点就是热点飞行开始时飞机的位置。下面的命令会让飞机在高度10米，角速度15度/秒，半径20米，绕圈飞行。
+Try this function in the simulator first. **To test it on a real drone in the field, make sure there is enough open space.**
 
-> 0xFA 0xFB 0x07 0x00 0x0a 0x0F 0x14 0xFE 
+In Hot Point mode, the drone will start to orbit around the current position with specified altitude (m), angular speed (degree/s), and radius(m). For convenience, the example app takes the 3 1-byte parameters as integers. The following command set the drone to orbit with altitude 10m, angular speed 15 deg/s and radius 20m.
+
+> 0xFA 0xFB 0x07 0x00 0x0a 0x0F 0x14 0xFE
 
 ![Hot Point](../../../images/STM32/STM32_HotPoint.png)
 
-### 获取广播数据
+### Local Navigation
 
-获取广播数据只要发送命令
+Try this function in the simulator first. **To test it on a real drone in the field, make sure there is enough open space.**
+
+While the position given by the GPS is in terms of latitude and longitude, it is more convenient and intuitive to do navigation in local Cartesian coordinate. We provide a local navigation example here. In this example, we create an north-east-up local frame and set the arm and take off position to be the origin. Under this frame, we command the drone to follow a 4-petal [rose shaped curve](https://en.wikipedia.org/wiki/Rose_(mathematics)) at an height of 25m with equation given by
+![RoseCurve](../../../images/STM32/STM32_RoseCurveEquation.png)
+
+To run this example, the user need to **first activate, obtain control, take off**, and then start the local navigation example with terminal command
+> 0xFA 0xFB 0x09 0x01 0xFE
+
+or use the custom mission command `Local Navigation Test` (command ID 66) in the mobile-OSDK iOS App. The drone will stop and hover after a full rose curve.
+
+![RoseCurve](../../../images/STM32/STM32_RoseCurve_Result.png)
+
+### Get Broadcastdata
+
+To get broadcast data sent back from the UAV, send command
+
 > 0xFA 0xFB 0x08 0x00 0xFE
 
-现在打印了当前的时间戳和剩余电量，需要更多数据请自行添加。
+The example App only prints timestamp and remaining battery capacity. For a complete list of fields of the broadcast data, see [Flight Data](../../appendix/index.html#flight-data).

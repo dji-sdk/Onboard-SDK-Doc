@@ -1,59 +1,142 @@
 ---
-title: DJI Onboard SDK固件与SDK接口更新（从2.3升级至3.1） 
-date: 2016-06-24
+title: Release Notes for Onboard SDK 3.1.8
+version: 3.1.8
+date: 2016-08-05
+keywords: [MOS, PingRX, Velodyne Puck Lite LiDAR]
 ---
 
-**注意：** 从2.3版本升级至3.1版本固件的开发者需要认真阅读此文档并按照接口的改动对自己的程序进行相应的改动，或直接使用最新的库文件替代2.3版本的库文件。
+## Highlights
 
-从3.1入手的开发者可以无视此文件直接阅读其他文档。
+* Onboard SDK 3.1.8 brings exciting new features and builds upon the stability of 3.1.7
+* Mobile-Onboard SDK: iOS sample app for controlling the OSDK functions through a mobile device
+* Ping ADS-B Sense-and-Avoid sensor integration with iOS sample app
+* Velodyne Puck Lite LiDAR sensor integration and tutorial
+* Support for synchronous programming paradigm and revamped programming guide
+* New C++ Linux example with Onboard SDK best practices
+* Many bugfixes and cleanup
 
-## 接口协议升级
+## New Feature Descriptions
 
-### 新增接口
+Click on the titles below to go to the full documentation for each feature.
 
-|命令集|命令码|描述|
-|-------|------|-----------|
-|0x01|0x05|锁定与解锁飞机|
-|0x03||地面站控制相关指令|
-|0x04|0x00|同步时间戳指令|
-|0x05||虚拟遥控指令接口|
+#### [Mobile-Onboard SDK (MOS) iOS App](../github-platform-docs/MobileOnboardSDK/Mobile-OSDK.html)
 
-### 修改接口
+* Call entire sequences, custom missions or simple Onboard SDK API calls through an iOS app
+* Connects to the OSDK through Mobile SDK - Onboard SDK Transparent Transmission link
+* Perfect for real-world tests where you do not want to deal with wireless UART modules
 
-|命令集|命令码|修改内容|2.3内容|3.1内容|
-|-------|------|---|---|---|
-|0x00|0x00|版本查询结果|2.3.10.0|3.1.10.0|
-|0x00|0x01|取消了key的等级|`typedef struct{ `<br>&nbsp;&nbsp;`uint32_t app_id;`<br>&nbsp;&nbsp;`uint32_t app_level;`<br>&nbsp;&nbsp;`uint32_t app_version;`<br>&nbsp;&nbsp;`uint8_t app_bundle_id[32];`<br>`} sdk_activation_info_t;`|`typedef struct{ `<br>&nbsp;&nbsp;`uint32_t app_id;`<br>&nbsp;&nbsp;~~`uint32_t app_level;`~~<br>&nbsp;&nbsp;`uint32_t app_version;`<br>&nbsp;&nbsp;`uint8_t app_bundle_id[32];`<br>`} sdk_activation_info_t;`|
-|0x00|0x01|激活时所填SDK版本|0x02030a00|M100: 0x03010a00<br>A3: 0x03016400|
-|0x01|0x03|姿态控制标志位|`bit7&6: HORI_MODE`<br>`bit5&4: VERT_MODE`<br>`bit3: YAW_MODE`<br>`bit2&1: HORI_FRMAE`<br>`bit0: YAW_FRAME`|`bit7&6: HORI_MODE`<br>`bit5&4: VERT_MODE`<br>`bit3: YAW_MODE`<br>`bit2&1: HORI_FRMAE`<br>`bit0: STABLE_FLAG`|
+#### [PingRX: Air traffic awareness](../sensor-integration-guides/ping/README.html)
 
-## 推送数据更新
+* With the PingRX ADS-B receiver integrated with Onboard SDK, you can now receive information about air traffic up to 100 miles from your drone
+* Great for deployments near commercial airspace - Ping data is available in OSDK for you to implement sense-and-avoid of aircraft that are transmitting ADS-B data
+* We provide a companion iOS App using the Onboard SDK Transparent Transmission link to view air traffic data on a map on your mobile device
 
-### 新增推送数据
+#### [Velodyne Puck Lite LiDAR: A new era in drone sensing](../sensor-integration-guides/velodyne/readme.html)
 
-|命令集|命令码|描述|
-|------|------|----|
-|0x02|0x03|地面站状态推送|
-|0x02|0x04|地面站事件推送|
+* The Puck Lite LiDAR gives you a dense 3D point cloud of its surroundings with up to 100m range
+* Revolutionize your mapping, inspection or survey application with the power of DJI drones and LiDAR
+* Allows you to implement LiDAR SLAM or sophisticated sense-and-avoid when paired with the Onboard SDK
+* Integration with new, Core i5-based x86 OES for powerful processing
 
-### 修改推送数据
+#### [New Programming Paradigm](../application-development-guides/programming-guide.html)
 
-|推送数据结构|2.3|3.1|
-|------------|---|---|
-|时间戳|`uint32_t`|`typedef struct`<br>`{`<br>&nbsp;&nbsp;`uint32_t time;`<br>&nbsp;&nbsp;`uint32_t asr_ts;`<br>&nbsp;&nbsp;`uint8_t sync_flag;`<br>`}sdk_time_stamp_t;`|
-|速度推送|`typedef struct`<br>`{`<br>&nbsp;&nbsp;`float32 x;`<br>&nbsp;&nbsp;`float32 y;`<br>&nbsp;&nbsp;`float z;`<br>&nbsp;&nbsp;`uint8_t health_flag:1;`<br>&nbsp;&nbsp;`uint8_t sensor_id:4;`<br>&nbsp;&nbsp;`uint8_t reserved:3;`<br>`} velocity_data_t;`|`typedef struct`<br>`{`<br>&nbsp;&nbsp;`float32 x;`<br>&nbsp;&nbsp;`float32 y;`<br>&nbsp;&nbsp;`float z;`<br>&nbsp;&nbsp;`uint8_t health_flag:1;`<br>&nbsp;&nbsp;`uint8_t reserved:7;`<br>`} velocity_data_t;`|
-|控制设备|`typedef struct`<br>`{`<br>&nbsp;&nbsp;`uint8_t cur_ctrl_dev_in_navi_mode: 3;`<br>&nbsp;&nbsp;`uint8_t serial_req_status: 1;`<br>&nbsp;&nbsp;`uint8_t reserved: 4;`<br>`} ctrl_device_t;`|`typedef struct`<br>`{`<br>&nbsp;&nbsp;`uint8_t cur_api_ctrl_mode;`<br>&nbsp;&nbsp;`uint8_t cur_ctrl_dev_in_navi_mode: 3;`<br>&nbsp;&nbsp;`uint8_t serial_req_status: 1;`<br>&nbsp;&nbsp;`uint8_t vrc_enable_flag: 1;`<br>&nbsp;&nbsp;`uint8_t reserved: 3;`<br>`} ctrl_device_t;`|
+* The 3.1.8 release offers a complete set of synchronous API call overloads - now you can maintain a linear flow of execution with these blocking functions
+* A synchronous (blocking) function returns to the caller only after it has been executed and an acknowledgement from the aircraft has been received.
+* Synchronous functions return acknowledgements from the aircraft to user code for further processing and decision making
 
-## 库文件升级
+#### [New C++ Linux Example](../github-platform-docs/Linux/README.html)
 
-我们使用了新的数据结构与层逻辑来升级 Onboard SDK 的库文件。
+* Built from the ground up as a reference best practice example program on Linux
+* Includes an efficient serial device driver, memory management, pthread-based threading and synchronous API calls
+* Supports three modes of operation - Interactive (like the old commandline sample), mobile commands from the MOS app and a new programamtic mode for users to execute entire complex sequences of code without interactivity
 
-出于技术支持与版本维护的方便性和可拓展性，我们决定新的 SDK 库不但支持最新的 3.1 固件，而且向下兼容 2.3 固件。
+## Backward Compatibility
 
-此外，我们仍然为之前的开发者们保留了原有的 2.3 分支（文档和库），供查阅与存档用。
+To make older applications work with the 3.1.8 Core API, developers will need to implement the `wait(int timeout)`, `notify()`, `lockACK()` and `freeACK()` functions in their HardDriver-inherited serial device driver. For example implementations of these functions we recommend reading through `platform/LinuxSerialDevice.h` and `platform/LinuxSerialDevice.cpp` on Github.
+   
+---
 
-## 档位模式升级 【重要】
+## Previous Release - 3.1.7
 
-**注意：** 在 3.1 固件中，若开机时模式开关被置于 `F` 档位，飞机将可以直接被 Onboard SDK 获取控制权。这不同于 2.3 中需要将 `F` 档位拨走再拨回来的设定。
+### Highlights
 
-开发者一定要注意此点，以防出现任何程序跑飞导致飞机暴走的危险。
+* This release is a major cleanup and bugfix release for Onboard SDK 3.1
+* Over a hundred bugs have been squashed
+* Code has much-improved comments and is easier to follow
+* Introduces an alpha version of a unit-testing suite for the core library
+* Provides the capability to build the core library independently of the samples for easier integration into larger projects
+* Introduces an alpha version of Doxygen-style code commenting and pre-generated html doxygen documentation
+
+New developers should start with the revamped [Getting Started Guide](../quick-start/index.html).
+
+### Major Fixes
+
+##### Core Library
+
+* Code style updated to a more modern GNU-like style. Change affects indentations and new functions/variables/structs introduced in this release. Older functions, variables, structs and classes are untouched.
+* Many elements of code have been identified as sub-optimal; we have started marking these structs/functions for deprecation in a future release. We are fully backwards compatible for this release - no old elements have been removed, but users are encouraged to move to the newer elements introduced as part of this release. Doxygen-style comments document the changes and planned replacements; users should look into the core library or go to `doc/doxygen-doc/html/index.html` to see doxygen code documentation.
+
+    Some examples (**This table is not exhaustive!**):
+
+|Old element|Planned New element|Description|File|
+|-------|------|---------|--------|
+|MagnetData|MagData|Name change|DJI_Type.h|
+|PositionData|PositionData|Struct member restructuring|DJI_Type.h|
+|toRadioData|toRCData|Function interface change|DJI_VirtualRC.h|
+|toEulerianAngle|toEulerAngle|Function interface change|DJI_Flight.h|
+
+>To re-iterate: these changes are **planned for a future release**. In this release, both old and new versions co-exist.    
+
+* Replaced all uses of `palstance` with `YawRate`
+* CMake support for Linux platforms added
+* Unit testing framework introduced
+* Setter/getter added for open protocol transmission session status
+
+##### Qt
+
+* UI elements have been cleaned up and the behavior of a number of buttons has been changed. New button behavior is a lot more informative.
+
+|Functionality|Fixed Issues|
+|---------|---------|
+|Display Scaling|Added support for Hi-res displays|
+|Qt function discovery|Changed many functions to allow Qt to automatically find them|
+|Button behavior|Arm, activation, hotpoint buttons are interactive/more informative|
+|Waypoint functionality|<ul><li>Intermittent crashes fixed</li><li>Lat/Lon input changed from radians to degrees</li>Revamped layout and added indications for the order of operations</ul>|
+|Hotpoint Functionality|Lat,Lon can now be entered in degrees|
+|UI| Unused buttons and tabs removed. UI looks a lot cleaner.|
+
+* Build has been updated to work with the newest Qt release (5.6). DJI Script dependencies have been removed to streamline Qt build.
+
+##### Commandline Linux
+
+* The commandline linux sample has undergone a major revamp. Many functions have been fixed:
+
+|Functionality|Fixed Issues|
+|-------|---------|
+|Activation|<ul><li>Version mismatch error fixed</li><li>Reliability improved</li><li>Feedback messages improved</li></ul>|
+|Waypoint|<ul><li>"Not enough waypoints" error fixed</li><li>Much clearer steps of operation </li><li>Bus error on Manifold fixed</li></ul>|
+|Hotpoint|<ul><li>No execution though success message appears - fixed</li><li>Bus error on Manifold fixed</li></ul>|
+|VirtualRC|Functionality has now been implemented|
+|Flight Control|<ul><li>No execution - fixed </li><li>Unbounded motion fixed</li><li>Bus error on Manifold fixed</li></ul>|
+
+* Directory structure has changed to a more standard structure. ManifoldPlatform folder has been removed and the Linux example now consolidates all linux-based platforms.
+* Automatic activation sequence added
+* User Configuration file added
+* On-screen information at the interactive prompt updated to be more useful
+
+##### ROS
+
+* ROS repository will now follow the same version numbers as the core repo. The current release is tagged as 3.1.7.
+* ROS Onboard SDK is now based on the latest [Onboard SDK](https://github.com/dji-sdk/Onboard-SDK) library.
+* 'Draw a Circle' example is revamped and implements the movement control fuctionality exposed by the open protocol. The example is now using closed-loop control.
+* Waypoint and Virtual RC exmaples have been improved.
+* Tested with Ubuntu 16.04 LTS/ROS Kinetic Kame - to use this configuration, install the ROS Onboard SDK from source. APT and rosinstall are not supported for this configuration
+* DJI A3 Flight Controller has been tested with ROS Onboard SDK.
+
+##### STM32
+
+* Fixed activation errors due to version not being set.
+* Fixed movement control commands - developers can now successfully execute all movement control commands through the STM32. Documentation has also been updated to reflect the same.
+* Added user parameters in hotpoint mode.
+* DJI A3 Flight Controller has been tested with the STM32.
+I

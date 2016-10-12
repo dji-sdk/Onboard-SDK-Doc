@@ -3,6 +3,7 @@ title: DJI Onboard SDK Command Line Example
 version: v3.1.7 
 date: 2016-07-01
 github: https://github.com/dji-sdk/Onboard-SDK/tree/3.1/sample/commandline
+keywords: [hotpoint mission]
 ---
 
 ## Introduction
@@ -45,7 +46,7 @@ To build the command line example, you need:
 
 All of these should be available with an installation of Ubuntu 14.04.
 
-**Newer versions of gcc/g++ also work - they generate compilation warnings, but these can safely be ignored. Future releases will correct this problem.*
+*Newer versions of gcc/g++ also work - they generate compilation warnings, but these can safely be ignored. Future releases will correct this problem.*
 
 **Compilation**
 
@@ -81,14 +82,11 @@ The first time a drone/OES combination is used, it needs to be activated. Activa
 ![CA_Ac](../../images/cmdline/Cmdline_ActivationStep2.png)
 ![Activation_Successful](../../images/cmdline/Cmdline_ActivationSuccessful.png)
 
-
 ## Operation
 
 Operating the Commandline example is a lot like the activation process you just went through. Here is a sample workflow for running some common tasks:
 
 ![Workflow](../../images/cmdline/Cmdline_Workflow.png)
-
-
 
 Note that loading your key and performing the activation step is necessary each time. After the first time, the activation command merely performs a local activation check and you are not required to be connected to the internet.
 The sample will attempt automatic activation each time it is started.

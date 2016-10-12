@@ -2,6 +2,7 @@
 title: Onboard SDK Architecture Guide 
 version: 3.1.8
 date: 2016-08-05
+keywords: [architecture guide]
 ---
 
 ## Introduction

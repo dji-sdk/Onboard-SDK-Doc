@@ -1,11 +1,11 @@
 ---
 title: DJI Onboard SDK C++ Linux Example
 version: v3.1.9
-date: 2016-08-05
+date: 2016-10-14
 github: https://github.com/dji-sdk/Onboard-SDK/tree/3.1/sample/Linux
 ---
 
-  > All-new Non-Blocking calls for DJI Onboard SDK v3.1.9!
+  > All-new Non-Blocking calls, LiDAR integration, Camera samples and Precision Trajectories for DJI Onboard SDK v3.1.9!
 
 ## Introduction
 
@@ -24,6 +24,8 @@ The following user-facing functionality is available in the Linux sample:
 * Compatible with DJI iOS Mobile OSDK App
 * Sample Waypoint Mission implementation
 * Sample Position Control implementation
+* Sample Gimbal and Camera Control implementation
+* Precision Trajectory Mission Plans
 
 This sample also implements an optional LiDAR Logging example that uses the LiDAR_APIs_LIB library documented [here](../../sensor-integration-guides/velodyne/readme.html). This example gives you the option to log LiDAR data from a Velodyne PUCK or a Simulator to log data in pcap format and LAS format. 
 
@@ -129,7 +131,7 @@ As the UI tells us, the sample has already activated and taken control on our be
 
 ![Interactive_2](../../images/Linux/Interactive_2.png)
 
-Once you have taken off, you may try some of the flight control functionality. After you have landed, type the exit letter - `j` - to let the sample clean up before exiting.
+Once you have taken off, you may try some of the flight control functionality. After you have landed, type the exit letter - `n` - to let the sample clean up before exiting.
 
 ![Interactive_3](../../images/Linux/Interactive_3.png)
 
@@ -152,7 +154,7 @@ By default, the programmatic mode starts with automated, monitored takeoff (chec
 
 ![Programmatic_code](../../images/Linux/programmatic-code.png)   
 
-Line `97` is an example of an application layer function called within the programmatic mode. 
+Line `108` is an example of an application layer function called within the programmatic mode. 
 
 The result of this code is something like this:
 
@@ -192,5 +194,3 @@ The output looks like this (takeoff - draw a square - landing):
 
 ![DrawSqr_Simulator](../../images/Linux/Square.png)
 
-
-> A3 support is currently in beta. Please file issues on the github repo if you find any!

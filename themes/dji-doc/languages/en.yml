@@ -32,6 +32,18 @@ sub_nav:
   downloads: Downloads
   support: Support
 
+policies:
+  privacy: Privacy
+  terms: Terms
+
 doc:
   search_holder: 'Search Documentation'
+  search_title_mobile: 'Search Mobile SDK Document'
+  search_title_guidance: 'Search Guidance SDK Document'
+  search_title_onboard: 'Search Onboard SDK Document'
+  results: 'Results'
+  notfound: 'Not Found'
   
+btn:
+  load_more: 'Load More'
+  loading: 'Loading...'
