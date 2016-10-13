@@ -34,8 +34,10 @@ The following user-facing functionality is available with the LiDAR logging samp
 * Start LiDAR Logging
 * Stop LiDAR Logging
 
-This functionality can be enabled by building the top-level cmake with -DLIDAR_LOGGING=ON argument. 
-
+This functionality can be enabled by building the top-level cmake with the argument. 
+```c
+-DLIDAR_LOGGING=ON
+```
 Apart from the Blocking Linux sample, we also support a reduced feature set Non-Blocking sample for this release. This allows the callbacks to run on a different thread, allowing the send commands to run independent from the callbacks. 
 
 The following user-facing functionality is available in the new Non-Blocking Linux sample:
