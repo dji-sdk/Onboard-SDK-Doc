@@ -13,7 +13,7 @@ With the Onboard SDK Precision Trajectory Mission Planning suite, DJI developers
 
 For inspection applications like powerlines, towers and buildings, the ability to visualize and plan a smooth, precise trajectory that fully covers the points of interest on your structure can be the difference between actionable data and merely beautiful footage.
 
-The precision trajectory mission planning interface opens up an exciting new paradigm for planning missions - think shapes and actions, not waypoints. Release 3.1.9 of the Onboard SDK provides a first version of this library that allows you to plan and execute geolocated spiral trajectories around infrastructure.
+The precision trajectory mission planning interface opens up an exciting new paradigm for planning missions - think shapes and actions, not waypoints. Release 3.1.9 of the Onboard SDK provides a beta version of this library that allows you to plan and execute geolocated spiral trajectories around infrastructure.
 
 ### Features
 
@@ -23,14 +23,9 @@ The precision trajectory mission planning interface opens up an exciting new par
 * Start your drone from anywhere - real-time path planning to get to the trajectory's GPS location 
 * Integration with DJI Assistant 2 to visualize simulations of the drone following the trajectory in the SketchUp scene
 
-
 ### Upcoming Features
 
-* Trajectory Record/Playback - fly manually once, get playback as many times as you want
-* Timescaling - Fly trajectories in hyper-timelapse or choose to get it done as fast as possible 
-* Camera FOV based-planning in SketchUp - see how much the camera can see to decide what your spiral's parameters should be
-* Relative trajectories - spirals starting from where you hit go
-* Other shapes - tell us what shapes you want to fly!
+* We have lots in store for future releases of this suite. As always, we look forward to your feedback.
 
 ## Software Setup
 
@@ -58,12 +53,12 @@ On running the trajectory follower, you should see messages telling you about fe
 
 ## Description of Functionality
 
-* This library uses fine-grained SE(3) trajectory following in local NED-frame coordinates. 
-* The parameters of the spiral are inspected for feasibility. If found to be infeasible, the library suggests a velocity for the radii being demanded.
-* A 50Hz-sampled spiral and its derivatives are generated at runtime from the parameters.
+* This library uses advanced vehicle control algorithms in local NED-frame coordinates. 
+* The parameters of the trajectories are inspected for feasibility. If found to be infeasible, the library suggests a velocity that will make the trajectory feasible. 
 * The library also plans an entry trajectory from where the drone is currently located to the start location of the spiral in real-time. This allows you to start the drone at any location close to the spiral.
 * You can optionally have the drone take pictures at predefined intervals of time. 
 * You can also optionally have the drone record video from the start of the spiral to the end. 
+
 
 ## A Note on the *Beta* Tag
 
