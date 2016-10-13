@@ -1,13 +1,13 @@
 ---
-title: Release Notes for Onboard SDK 3.1.8
-version: 3.1.8
-date: 2016-08-05
+title: Release Notes for Onboard SDK 3.1.9
+version: 3.1.9
+date: 2016-10-12
 keywords: [Precision Trajectory, Mission Planning, Velodyne Puck Lite LiDAR]
 ---
 
 ## Highlights
 
-* Onboard SDK 3.1.9 adds an exciting, major new component - Precision Trajectory Mission Planning
+* Onboard SDK 3.1.9 adds an exciting, major new component - Precision Trajectory Mission Planning (beta)
 * Velodyne Puck Lite: New features allow real-time logging in the popular ASPRS-approved LAS file format
 * Threaded Callbacks: The callback mechanism has been completely revamped for more efficient, robust code
 * CMake: Onboard SDK is now fully CMake-based, allowing easy integration with other projects
