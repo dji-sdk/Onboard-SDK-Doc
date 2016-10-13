@@ -17,6 +17,10 @@ Onboard SDK offers many features for building powerful, robust applications on t
 This diagram provides a high-level overview of the different components of the onboard SDK.
 [![Architecture](../images/common/ArchitectureDiagram.png)](../images/common/ArchitectureDiagram.png)
 
+## CMake library build structure
+
+[![CMake library build structure](../images/common/CMakeArch.png)](../images/common/CMakeArch.png)
+
 If you need more detail on the architecture of the various functions implemented in the onboard SDK, there is a [more detailed diagram](../appendix/index.html#Detailed-Architecture) available in the Appendix.  
 
 ## Choosing the Right Platform
