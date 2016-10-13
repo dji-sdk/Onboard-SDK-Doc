@@ -23,7 +23,6 @@ The precision trajectory mission planning interface opens up an exciting new par
 * Start your drone from anywhere - real-time path planning to get to the trajectory's GPS location 
 * Integration with DJI Assistant 2 to visualize simulations of the drone following the trajectory in the SketchUp scene
 
-
 ### Upcoming Features
 
 * We have lots in store for future releases of this suite. As always, we look forward to your feedback.
@@ -59,6 +58,7 @@ On running the trajectory follower, you should see messages telling you about fe
 * The library also plans an entry trajectory from where the drone is currently located to the start location of the spiral in real-time. This allows you to start the drone at any location close to the spiral.
 * You can optionally have the drone take pictures at predefined intervals of time. 
 * You can also optionally have the drone record video from the start of the spiral to the end. 
+
 
 ## A Note on the *Beta* Tag
 

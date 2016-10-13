@@ -43,54 +43,10 @@ Click on the titles below to go to the full documentation for each feature.
 
 * The synchronous Linux sample from 3.1.8 has been updated and now has interfaces to all features of the Onboard SDK - Wrapper API, LiDAR and Precision Trajectories
 * A new asynchronous Linux sample that uses the new threaded callbacks has been created. This sample has fewer features and is intended mostly as a reference for the new programming model.
-
-## Previous Release - 3.1.8
-
-## Highlights
-
-* Onboard SDK 3.1.8 brings exciting new features and builds upon the stability of 3.1.7
-* Mobile-Onboard SDK: iOS sample app for controlling the OSDK functions through a mobile device
-* Ping ADS-B Sense-and-Avoid sensor integration with iOS sample app
-* Velodyne Puck Lite LiDAR sensor integration and tutorial
-* Support for synchronous programming paradigm and revamped programming guide
-* New C++ Linux example with Onboard SDK best practices
-* Many bugfixes and cleanup
-
-## New Feature Descriptions
-
-Click on the titles below to go to the full documentation for each feature.
-
-#### [Mobile-Onboard SDK (MOS) iOS App](../github-platform-docs/MobileOnboardSDK/Mobile-OSDK.html)
-
-* Call entire sequences, custom missions or simple Onboard SDK API calls through an iOS app
-* Connects to the OSDK through Mobile SDK - Onboard SDK Transparent Transmission link
-* Perfect for real-world tests where you do not want to deal with wireless UART modules
-
-#### [PingRX: Air traffic awareness](../sensor-integration-guides/ping/README.html)
-
-* With the PingRX ADS-B receiver integrated with Onboard SDK, you can now receive information about air traffic up to 100 miles from your drone
-* Great for deployments near commercial airspace - Ping data is available in OSDK for you to implement sense-and-avoid of aircraft that are transmitting ADS-B data
-* We provide a companion iOS App using the Onboard SDK Transparent Transmission link to view air traffic data on a map on your mobile device
-
-#### [Velodyne Puck Lite LiDAR: A new era in drone sensing](../sensor-integration-guides/velodyne/readme.html)
-
-* The Puck Lite LiDAR gives you a dense 3D point cloud of its surroundings with up to 100m range
-* Revolutionize your mapping, inspection or survey application with the power of DJI drones and LiDAR
-* Allows you to implement LiDAR SLAM or sophisticated sense-and-avoid when paired with the Onboard SDK
-* Integration with new, Core i5-based x86 OES for powerful processing
-
-#### [New Programming Paradigm](../application-development-guides/programming-guide.html)
-
-* The 3.1.8 release offers a complete set of synchronous API call overloads - now you can maintain a linear flow of execution with these blocking functions
-* A synchronous (blocking) function returns to the caller only after it has been executed and an acknowledgement from the aircraft has been received.
-* Synchronous functions return acknowledgements from the aircraft to user code for further processing and decision making
-
-#### [New C++ Linux Example](../github-platform-docs/Linux/README.html)
-
-* Built from the ground up as a reference best practice example program on Linux
-* Includes an efficient serial device driver, memory management, pthread-based threading and synchronous API calls
-* Supports three modes of operation - Interactive (like the old commandline sample), mobile commands from the MOS app and a new programamtic mode for users to execute entire complex sequences of code without interactivity
+* The MOS iOS app now supports more features when used with the synchronous Linux sample.
 
 ## Backward Compatibility
 
-To make older applications work with the 3.1.8 Core API, developers will need to implement the `wait(int timeout)`, `notify()`, `lockACK()` and `freeACK()` functions in their HardDriver-inherited serial device driver. For example implementations of these functions we recommend reading through `platform/LinuxSerialDevice.h` and `platform/LinuxSerialDevice.cpp` on Github.
+The new CMake-based modularization makes it easy to link your code to individual Onboard SDK libraries. Link with djisodk-core, djiosdk-platform or djiosdk-wrapper as desired.  
+
+The coreAPI library has been renamed to djiosdk-core, but is functionally backward compatible with older samples. There are new virtual functions that might need implementation in your serial device drivers - or you can use linuxSerialDevice, which has been packaged up into djiosdk-platform.
