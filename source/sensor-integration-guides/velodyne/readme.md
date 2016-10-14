@@ -118,7 +118,7 @@ DestinationIP:   destination IP.
 
 packetTobeSent:  
 	0: the all the packets in the PCAP file will be sent.  
-	>=1: the index of the packet to be sent continuously. For example, if it is set to "1", the first packet will be sent continuously; if it is set to "2", the second packet will be sent out continuously.   
+	>=1: the index of the packet to be sent out continuously. For example, if it is set to "1", the first packet will be sent out continuously; if it is set to "2", the second packet will be sent out continuously.   
 
 #### API  
 The header files and source code files are located in:
@@ -126,7 +126,7 @@ The header files and source code files are located in:
 
 `./onboardsdk/thirdparty/velodyne_vlp16puck_lite_API_example/lidar_APIs_LIB/src`.
 
-Note that "wrapper.h" is only header file for the outside world for integration. The API provides a UDP driver and data logging with LAS/PCAP files for integration with OES for the drone.  
+Note that "wrapper.h" is only the header file for the outside world for integration. The API provides a UDP driver and data logging with LAS/PCAP files for integration with OES for the drone.  
 
 #### Example for LiDAR with M100
 The example software is located in:
