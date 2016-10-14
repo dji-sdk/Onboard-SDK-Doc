@@ -101,7 +101,20 @@
     -
       title: Ping ADS-B
       path: /sensor-integration-guides/ping/README.html
-          
+
+-
+  title: Modules
+  list:
+  -
+    title: Precision Trajectory Mission Planning
+    list:
+      -
+        title: Library
+        path: /modules/missionplan/README.html
+      -
+        title: SketchUp Extension
+        path: /modules/missionplan/sketchup.html
+
 -
   title: APPENDIX
   list:
