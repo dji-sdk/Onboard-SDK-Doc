@@ -114,7 +114,7 @@ the Onboard SDK and run the samples.  To start the machine first install the fol
 * [Vagrant](https://www.vagrantup.com/downloads.html)
 
 Next, in the same directory as the Vagrantfile in the Onboard SDK repository you previously cloned, just run `vagrant up`.  The 
-first time you do this it may take a while as the base image is downloaded and dependencies are installed and built.  Please 
+first time you do this it may take a while as the base image is downloaded and dependencies are installed.  Please 
 see the [Vagrant](https://www.vagrantup.com/) documentation for more details on how to work with Vagrant.
 
 ## Safety
