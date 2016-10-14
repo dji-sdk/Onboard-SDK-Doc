@@ -9,7 +9,7 @@ github: https://github.com/dji-sdk/Onboard-SDK/tree/3.1/sample/Linux
 
 ## Introduction
 
-The new C++ Linux example is meant to showcase recommended application-layer usage of the DJI Onboard API. This example eases a new developer into the world of programming for drones - many API functions have been wrapped in easy-to-use implementations and a feedback mechanism is implemented so the developer always knows the result of his/her commands. Packaged with the new example is a new pthread-based threading implementation as well as an efficient serial device driver that implements many checks (on x86 systems) to ensure reliable communication between your OES and your drone.   
+The new C++ Linux example is meant to showcase recommended application-layer usage of the DJI Onboard API. This example eases a new developer into the world of programming for drones - many API functions have been wrapped in easy-to-use implementations and a feedback mechanism is implemented so the developer always knows the result of his/her commands. Packaged with the new example is a new pthread-based threading implementation as well as an efficient serial device driver that implements many checks (on x86 systems) to ensure reliable communication between your Onboard Embeddeed System (OES) and your drone.   
 
 
 The following user-facing functionality is available in the Linux sample: 
@@ -222,6 +222,7 @@ To try out the sample in interactive mode:
 
 Sample output for setting Gimbal rotation angle:
 
+```
 Gimbal Angles Description [roll, pitch, yaw]:
 
 Roll angle: unit 0.1º, input range [-350,350]
@@ -245,6 +246,7 @@ New Gimbal rotation angle is [24 0 149 ], with precision error: [1 0 1 ]
 
 Setting new Gimbal rotation angle to [5,0,100] using incremental control:
 New Gimbal rotation angle is [29 0 -110 ], with precision error: [0 0 1 ]
+```
 
 
 NOTE: 
