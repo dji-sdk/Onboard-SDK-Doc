@@ -18,7 +18,10 @@ The following user-facing functionality is available in the Linux sample:
 * Obtain/Release Flight Control 
 * Take Off 
 * Landing 
-* Go Home 
+* Go Home
+* Still Image Capture
+* Video Capture
+* Gimbal Movement Control  
 * Movement Control - Position/Attitude/Velocity control modes
 * Waypoint Functionality
 * Compatible with DJI iOS Mobile OSDK App
@@ -27,7 +30,7 @@ The following user-facing functionality is available in the Linux sample:
 * Sample Gimbal and Camera Control implementation
 * Precision Trajectory Mission Plans
 
-This sample also implements an optional LiDAR Logging example that uses the LiDAR_APIs_LIB library documented [here](../../sensor-integration-guides/velodyne/readme.html). This example gives you the option to log LiDAR data from a Velodyne PUCK or a Simulator to log data in pcap format and LAS format. 
+This sample also implements an optional LiDAR Logging example that uses the vlp16lidar-driver library documented [here](../../sensor-integration-guides/velodyne/readme.html). This example gives you the option to log LiDAR data from a Velodyne PUCK or a Simulator to log data in pcap format and LAS format. 
 
 The following user-facing functionality is available with the LiDAR logging sample: 
 
@@ -194,3 +197,59 @@ The output looks like this (takeoff - draw a square - landing):
 
 ![DrawSqr_Simulator](../../images/Linux/Square.png)
 
+#### 3. Camera And Gimbal Controls
+
+X3 and X5 camera fixed to an aircraft will record images that pitch and roll with the aircraft as it moves. Multi rotor aircraft need to pitch and roll simply to move horizontally, and so getting a stable horizontal shot is not possible. A gimbal is used to keep a camera or sensor horizontal when its mount (e.g. aircraft) is moving. The gimbal has three motors controlling rotation in orthogonal axes. The gimbal feeds gyroscope information back to the motor controllers to compensate for rotational movement of the mount.
+
+In addition to stabilization, the three motors can be used to control the direction the camera is pointing, and can be used to smoothly track a target, or pan a shot. The three axes of rotation are referred to as Pitch, Roll and Yaw, and the gimbal orientation is referred to as its attitude. Explanations of these axes can be found in the [Flight Control Concepts](https://developer.dji.com/mobile-sdk/documentation/introduction/flightController_concepts.html).
+
+Gimbals have mechanical limits (or stops) to their rotation around each axis. When a sensor is mounted on a gimbal, many data and control lines are required to go from mount to sensor. These control lines are usually bundled in a cable assembly or flex circuit, both of which will limit the available rotation of the gimbal. Additionally, gimbals will also limit rotation so cameras cannot see landing gear or the product itself.
+
+##### Moving the Gimbal
+
+- Move to an angle over a duration
+- Move at a speed in a direction
+
+When using angle mode to rotate the gimbal's pitch, roll and yaw, the rotation angle of the gimbal can be defined as either Absolute(relative to the aircraft heading), or Relative (relative to its current angle). When using speed to rotate the gimbal's pitch, roll and yaw, the direction can either be set to clockwise or counter-clockwise. The gimbal can be reset by setting its pitch, roll and yaw to 0 degrees. The reset position is pointing horizontally and being in the same direction as product heading. Gimbals will be automatically calibrated on power up. During calibration, the product should be stationary (not flying, or being held) and horizontal. For gimbal with adjustable payloads, the payload should be present and balanced before doing a calibration. At the moment, there is no option to calibrate the Gimbal through Onboard SDK APIs.
+
+Implementation of this example is in `LinuxCamera.cpp` can be great reference for any Camera and Gimbal controls supported by DJI Onboard SDK.
+
+To try out the sample in interactive mode:
+* Press `j` to set Gimbal rotation angle (input range is 360 degrees)
+* Press `k` to set Gimbal rotation speed
+* Press `l` to perform still image capture
+* Press `m` to perform video capture (5 seconds of video recording)
+
+Sample output for setting Gimbal rotation angle:
+
+Gimbal Angles Description [roll, pitch, yaw]:
+
+Roll angle: unit 0.1º, input range [-350,350]
+Pitch angle: unit 0.1º, input range [-900,300]
+Yaw angle: unit 0.1º, input range [-3200,3200]
+
+(NOTE: Yaw output rotation angle represented in [-π, π] range (see simulator output))
+
+Waiting for Gimbal to sync rotation angle...
+
+Initial Gimbal rotation angle: [0, 0, -0.3]
+
+Setting new Gimbal rotation angle to [0,20,200] using incremental control:
+New Gimbal rotation angle is [0 19 -160 ], with precision error: [0 1 0 ]
+
+Setting new Gimbal rotation angle to [0,-50,-200] using absolute control:
+New Gimbal rotation angle is [0 -50 159 ], with precision error: [0 0 1 ]
+
+Setting new Gimbal rotation angle to [25,0,150] using absolute control:
+New Gimbal rotation angle is [24 0 149 ], with precision error: [1 0 1 ]
+
+Setting new Gimbal rotation angle to [5,0,100] using incremental control:
+New Gimbal rotation angle is [29 0 -110 ], with precision error: [0 0 1 ]
+
+
+NOTE: 
+1. Please make sure you have SD card inserted into the Gimbal
+
+Known Issues:
+1. If set Gimbal rotation angle without simulator, initial Yaw Axis will report 120 however, it will not affect accuracy. For questions please refer to our forum.
+ 
