@@ -33,7 +33,7 @@ The precision trajectory mission planning interface opens up an exciting new par
 2. Run the executable with `-interactive` or `-mobile` as the first argument.
 3. For the trajectory following function, you need to supply a second argument, which is the path to a json file containing trajectory parameters. This path is relative to the location from where you are running the program. E.g.
     ```
-    ./onboardsdk_sample_linux -interactive ../data/spiral.json
+    ./djiosdk-linux-sample -interactive ../data/spiral.json
     ```
 4. You can generate this json file using the SketchUp plugin as described [here]().
  

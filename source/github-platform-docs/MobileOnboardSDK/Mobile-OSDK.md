@@ -46,7 +46,7 @@ The iOS app can be side loaded to your phone using Xcode on a Macintosh system. 
 
 ### Linux
 
-You can enable mobile command input by running `./onboardsdk_sample_linux -mobile` (and optionally another argument `path_to_trajectory_json` if you want to execute a pre-planned precision spiral). 
+You can enable mobile command input by running `./djiosdk-linux-sample -mobile` (and optionally another argument `path_to_trajectory_json` if you want to execute a pre-planned precision spiral). 
 
 The supported commands are: 
 
