@@ -22,7 +22,7 @@ or other app.
 * Generation of template trajectories and export of their parameters for easy integration with Onboard SDK.
 
 ### Menu Items
-The extension drop down menu is located at ```Extensions->DJI Trajectories```.
+The extension drop down menu is located at *Extensions->DJI Trajectories*.
 
 * Helix - Opens a window for you to enter the helix parameters.  Once you hit enter or click the OK button, you will be 
 able to place the helix in your model.  Enabled when the simulator is not running.
@@ -57,11 +57,11 @@ When you enter the value use length units as SketchUp doesn't have velocity unit
 ## Software Setup
 
 1. Download [SketchUp](http://www.sketchup.com/) and install it on your computer
-2. Start SketchUp and then go to the ```Window``` drop down menu and select the ```Extension Warehouse``` item.  In the 
+2. Start SketchUp and then go to the *Window* drop down menu and select the *Extension Warehouse* item.  In the 
 Extension Warehouse window search for DJI and install the extension.
 3. Restart SketchUp to be sure plugin is activated and available to use.  Note that SketchUp may appear to freeze 
 for a few seconds either after step 2 or after this step while the extension does a one-time initialization.
-4. Verify in SketchUp an ```Extensions``` drop-down menu is visible with a ```DJI Trajectories``` sub-menu.
+4. Verify in SketchUp an *Extensions* drop-down menu is visible with a *DJI Trajectories* sub-menu.
  
 ## Usage
 
@@ -70,11 +70,11 @@ Connect the aircraft, go to the simulator tab on the left and then click the ope
 the SketchUp extension will start and stop the simulator as needed.
 
 1. Start SketchUp and create a new model.
-2. Optionally go to ```File->Geo-location->Add location``` to geo-reference your model and import ground satellite imagery
+2. Optionally go to *File->Geo-location->Add location* to geo-reference your model and import ground satellite imagery
 3. Import either your own 3D models or models from the SketchUp 3D Warehouse.
-4. Create a helix trajectory via ```Extensions->DJI Trajectories->Helix```, enter the helix parameters you want, then place
+4. Create a helix trajectory via *Extensions->DJI Trajectories->Helix*, enter the helix parameters you want, then place
 the helix in your model.
-5. Start the simulator via ```Extensions->DJI Trajectories->Start simulator```
+5. Start the simulator via *Extensions->DJI Trajectories->Start simulator*
 6. Takeoff and fly via the Onboard SDK, Mobile SDK, manually, or another app. 
 
 ### Aircraft Compatibility
