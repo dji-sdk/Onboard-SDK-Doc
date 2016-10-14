@@ -118,7 +118,7 @@ DestinationIP:   destination IP.
 
 packetTobeSent:  
 	0: the all the packets in the PCAP file will be sent.  
-	>=1: the index of the packet to be sent continuously. For example, if it is set to "1", the first packet will be sent continuously; if it is set to "2", the second packet will be sent out continuously.   
+	>=1: the index of the packet to be sent out continuously. For example, if it is set to "1", the first packet will be sent out continuously; if it is set to "2", the second packet will be sent out continuously.   
 
 #### API  
 The header files and source code files are located in:
@@ -126,7 +126,7 @@ The header files and source code files are located in:
 
 `./onboardsdk/thirdparty/velodyne_vlp16puck_lite_API_example/lidar_APIs_LIB/src`.
 
-Note that "wrapper.h" is only header file for the outside world for integration. The API provides a UDP driver and data logging with LAS/PCAP files for integration with OES for the drone.  
+Note that "wrapper.h" is only the header file for the outside world for integration. The API provides a UDP driver and data logging with LAS/PCAP files for integration with OES for the drone.  
 
 #### Example for LiDAR with M100
 The example software is located in:
@@ -152,7 +152,7 @@ logFileType:
 	0: PCAP file only.      
 	1: LAS file only.  
 	2: both PCAP and LAS files.
-Note that if it runs without any argument, both PCAP and LAS files are logged in real-time.  Logging can be terminated by pressing "CTRL+C",  or "q" ("Q") plus "Enter". 
+Note that if it runs without any argument, both PCAP and LAS files are logged in real-time.  Logging can be terminated by pressing "CTRL+C",  or "q" ("Q") plus "Enter". Please note that data logging should be terminated before turning off the LiDAR (terminating the LiDAR simulator if the LiDAR simulator is used).
 
 In addition, a xml file "VLP-16.xml" needs to be placed in the same directory of the executable. Currently, a user is not required to do any configuration, calibration, or other setup before VLP-16 LiDAR starts generating valid data after power-up. This file is provided by Velodyne with default values (no acutal corrections on the LiDAR data) for future use cases (for example, a user wants to do a specific calibration for the LiDAR).  
  
