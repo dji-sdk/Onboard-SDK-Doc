@@ -152,7 +152,7 @@ logFileType:
 	0: PCAP file only.      
 	1: LAS file only.  
 	2: both PCAP and LAS files.
-Note that if it runs without any argument, both PCAP and LAS files are logged in real-time.  Logging can be terminated by pressing "CTRL+C",  or "q" ("Q") plus "Enter". 
+Note that if it runs without any argument, both PCAP and LAS files are logged in real-time.  Logging can be terminated by pressing "CTRL+C",  or "q" ("Q") plus "Enter". Please note that data logging should be terminated before turning off the LiDAR (terminating the LiDAR simulator if the LiDAR simulator is used).
 
 In addition, a xml file "VLP-16.xml" needs to be placed in the same directory of the executable. Currently, a user is not required to do any configuration, calibration, or other setup before VLP-16 LiDAR starts generating valid data after power-up. This file is provided by Velodyne with default values (no acutal corrections on the LiDAR data) for future use cases (for example, a user wants to do a specific calibration for the LiDAR).  
  
