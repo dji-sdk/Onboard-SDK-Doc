@@ -105,6 +105,14 @@ Choose one of these examples to begin using the onboard SDK in a particular soft
 
 > Note: Each new vehicle or flight controller to be used must be activated once to enable communication with your application.
 
+
+## Vagrant
+We provide a Vagrantfile for an Ubuntu 16.04 desktop machine with all the dependencies and settings necessary to build 
+the Onboard SDK and run the samples.  To start the machine first install [Vagrant](https://www.vagrantup.com/downloads.html),
+then in the same directory as the Vagrantfile in the Onboard SDK repository you previously cloned just run `vagrant up`.  The 
+first time you do this it may takes a while as dependencies are installed and built.  Please see the [Vagrant](https://www.vagrantup.com/)
+documentation for more details on how to work with Vagrant.
+
 ## Safety
 
 Please comply with local regulations during the development of your application. Please refer to <a href="http://flysafe.dji.com/" target="_blank">http://flysafe.dji.com/</a> for more information.
