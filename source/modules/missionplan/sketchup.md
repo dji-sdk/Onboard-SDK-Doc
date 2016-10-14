@@ -54,8 +54,8 @@ model units.  Valid range is 1m to 100m.
 * No. of rotations - Number of rotations.  Valid range is greter than 0 and less than 100.
 * Horizontal speed - Speed traversing the trajectory.  Only used in json export.  Must be greater than 0m/s and less than 10m/s.
 When you enter the value use length units as SketchUp doesn't have velocity units.  If units are not entered, defaults to model units.
-* Segments per rotation - 
-* Take pictures - Whether to take video continuously along the trajectory.  Only used in json export.  Valid values are yes or no. 
+* Segments per rotation - Number of line segments used to draw each complete rotation.  Only used within SketchUp.
+* Take pictures - Whether to take pictures periodically along the trajectory.  Only used in json export.  Valid values are yes or no. 
 * Picture interval - Seconds between taking pictures.  Must be at least 1s. 
 * Take video - Whether to take video continuously along the trajectory.  Only used in json export.  Valid values are yes or no.
 
