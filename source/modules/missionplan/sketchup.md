@@ -4,7 +4,8 @@ version: sdk 3.1.9 - Extension 1.0.0
 date: 2016-10-14
 ---
 
-
+![Overview](../../images/modules/missionplan/sketchup/overview.png)
+![Tower](../../images/modules/missionplan/sketchup/tower.png)
 
 ## Introduction
 
@@ -37,6 +38,10 @@ the aircraft in the simulator.
     * Vertical FOV (deg) - Vertical field of view in degrees of the camera, 0 to 180.
     * FOV distance - Distance to extend the camera field of view, 0m to 100m
     * FOV Alpha - Alpha transparancy of the camera field of view, 0.0 to 1.0
+* Simulator Properties - Set the simulator properties.  Enabled when the simulator is not running.
+    * Trace enabled - Create a 3D trace of your flight. 
+    * Mode - Uses either a smooth or accurate simulation of the flight path.  This is just for the simulation within 
+     SketchUp.  The real flight will always be both smooth and accurate.
 
 ### Helix parameters
 
@@ -56,26 +61,25 @@ When you enter the value use length units as SketchUp doesn't have velocity unit
 
 ## Software Setup
 
-1. Download [SketchUp](http://www.sketchup.com/) and install it on your computer
-2. Start SketchUp and then go to the *Window* drop down menu and select the *Extension Warehouse* item.  In the 
+1. Download and install DJI Assistant 2 (tested with version 1.0.5; download from [here](http://www.dji.com/matrice100/info#downloads)).
+2. Download [SketchUp](http://www.sketchup.com/) and install it on your computer
+3. Start SketchUp and then go to the *Window* drop down menu and select the *Extension Warehouse* item.  In the 
 Extension Warehouse window search for DJI and install the extension.
-3. Restart SketchUp to be sure plugin is activated and available to use.  Note that SketchUp may appear to freeze 
+4. Restart SketchUp to be sure plugin is activated and available to use.  Note that SketchUp may appear to freeze 
 for a few seconds either after step 2 or after this step while the extension does a one-time initialization.
-4. Verify in SketchUp an *Extensions* drop-down menu is visible with a *DJI Trajectories* sub-menu.
+5. Verify in SketchUp an *Extensions* drop-down menu is visible with a *DJI Trajectories* sub-menu.
  
 ## Usage
 
-1. Start DJI Assistant 2 (tested with version 1.0.5; download from [here](http://www.dji.com/matrice100/info#downloads)).
-Connect the aircraft, go to the simulator tab on the left and then click the open button.  You do not need to start the simulator,
-the SketchUp extension will start and stop the simulator as needed.
-
-1. Start SketchUp and create a new model.
-2. Optionally go to *File->Geo-location->Add location* to geo-reference your model and import ground satellite imagery
-3. Import either your own 3D models or models from the SketchUp 3D Warehouse.
-4. Create a helix trajectory via *Extensions->DJI Trajectories->Helix*, enter the helix parameters you want, then place
+1. Start DJI Assistant 2, connect the aircraft, go to the simulator tab on the left and then click the open button.  
+You do not need to start the simulator, the SketchUp extension will start and stop the simulator as needed.
+2. Start SketchUp and create a new model.
+3. Optionally go to *File->Geo-location->Add location* to geo-reference your model and import ground satellite imagery
+4. Import either your own 3D models or models from the SketchUp 3D Warehouse.
+5. Create a helix trajectory via *Extensions->DJI Trajectories->Helix*, enter the helix parameters you want, then place
 the helix in your model.
-5. Start the simulator via *Extensions->DJI Trajectories->Start simulator*
-6. Takeoff and fly via the Onboard SDK, Mobile SDK, manually, or another app. 
+6. Start the simulator via *Extensions->DJI Trajectories->Start simulator*
+7. Takeoff and fly via the Onboard SDK, Mobile SDK, manually, or another app. 
 
 ### Aircraft Compatibility
 
@@ -84,13 +88,13 @@ the SketchUp plugin can also be used with any aircraft that works with DJI Assis
 
 ### Current Limitations
 
-1. There is only one shape in the trajectory template library, a left-handed Helix parallel to the ground with ending height
+* There is only one shape in the trajectory template library, a left-handed Helix parallel to the ground with ending height
 greater than or equal to starting height.
-2. If you modify the trajectory using the SketchUp tools, ie move, rotate, etc. only the helix center location and 
+* If you modify the trajectory using the SketchUp tools, ie move, rotate, etc. only the helix center location and 
 starting height will be reflected in the exported properties.  The trajectory library only supports a vertical helix, 
 so rotating it or stretching it will create a trajectory that will not be followed. 
 
 ### Known Issues
 
-1. When you have an aircraft following a trajectory, there may be small deviations with the desired trajectory due to issues 
+* When you have an aircraft following a trajectory, there may be small deviations with the desired trajectory due to issues 
 between the DJI Assistant Simulator and SketchUp.  We are working to solve this in a future update.  
