@@ -13,7 +13,7 @@ entire mission ahead of time, allowing for rapid iteration and enhanced confiden
 Leveraging the built-in functionality of SketchUp, you can create a geo-located model with 2D satellite ground imagery 
 corresponding to the location of your mission, import your own 3D models of buildings/infrastructure/etc. that you want 
 to inspect or avoid, and integrate with the DJI Assistant simulator to fully test your mission via Onboard SDK, Mobile SDK,
-or other App.
+or other app.
 
 ### Key Features
 
@@ -33,8 +33,8 @@ the aircraft in the simulator.
 * Stop Simulator - Stops the DJI assistant simulator.  The trace of the flight is not deleted in case you want to save it.
 * Toggle Field of View - Shows or hides the camera field of view during a simulation.
 * Camera Properties - Set the camera model field of view properties.  Enabled when the simulator is not running.
-    * Horizontal FOV (deg) - Horizontal field of view in degrees of the camera, 0&deg; to 180&deg; 
-    * Vertical FOV (deg) - Vertical field of view in degrees of the camera, 0&deg; to 180&deg;
+    * Horizontal FOV (deg) - Horizontal field of view in degrees of the camera, 0 to 180. 
+    * Vertical FOV (deg) - Vertical field of view in degrees of the camera, 0 to 180.
     * FOV distance - Distance to extend the camera field of view, 0m to 100m
     * FOV Alpha - Alpha transparancy of the camera field of view, 0.0 to 1.0
 
@@ -54,10 +54,6 @@ When you enter the value use length units as SketchUp doesn't have velocity unit
 * Picture interval - Seconds between taking pictures.  Must be at least 1s. 
 * Take video - Whether to take video continuously along the trajectory.  Only used in json export.  Valid values are yes or no.
 
-
-### Upcoming Features
-
-
 ## Software Setup
 
 1. Download [SketchUp](http://www.sketchup.com/) and install it on your computer
@@ -74,13 +70,12 @@ Connect the aircraft, go to the simulator tab on the left and then click the ope
 the SketchUp extension will start and stop the simulator as needed.
 
 1. Start SketchUp and create a new model.
-2. Go to ```File->Geo-location->Add location``` to geo-reference your model and import ground satellite imagery.
+2. Optionally go to ```File->Geo-location->Add location``` to geo-reference your model and import ground satellite imagery
 3. Import either your own 3D models or models from the SketchUp 3D Warehouse.
-4. 
-
-
-## Description of Functionality
-
+4. Create a helix trajectory via ```Extensions->DJI Trajectories->Helix```, enter the helix parameters you want, then place
+the helix in your model.
+5. Start the simulator via ```Extensions->DJI Trajectories->Start simulator```
+6. Takeoff and fly via the Onboard SDK, Mobile SDK, manually, or another app. 
 
 ### Aircraft Compatibility
 
