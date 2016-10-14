@@ -108,10 +108,14 @@ Choose one of these examples to begin using the onboard SDK in a particular soft
 
 ## Vagrant
 We provide a Vagrantfile for an Ubuntu 16.04 desktop machine with all the dependencies and settings necessary to build 
-the Onboard SDK and run the samples.  To start the machine first install [Vagrant](https://www.vagrantup.com/downloads.html),
-then in the same directory as the Vagrantfile in the Onboard SDK repository you previously cloned just run `vagrant up`.  The 
-first time you do this it may takes a while as dependencies are installed and built.  Please see the [Vagrant](https://www.vagrantup.com/)
-documentation for more details on how to work with Vagrant.
+the Onboard SDK and run the samples.  To start the machine first install the following:
+* [Virtualbox](https://www.virtualbox.org/wiki/Downloads)
+* [Virtualbox Extension Pack](https://www.virtualbox.org/wiki/Downloads)
+* [Vagrant](https://www.vagrantup.com/downloads.html)
+
+Next, in the same directory as the Vagrantfile in the Onboard SDK repository you previously cloned, just run `vagrant up`.  The 
+first time you do this it may take a while as the base image is downloaded and dependencies are installed and built.  Please 
+see the [Vagrant](https://www.vagrantup.com/) documentation for more details on how to work with Vagrant.
 
 ## Safety
 
