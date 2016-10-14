@@ -35,10 +35,22 @@ The precision trajectory mission planning interface opens up an exciting new par
     ```
     ./onboardsdk_sample_linux -interactive ../data/spiral.json
     ```
-4. You can generate this json file using the SketchUp plugin as described [here]().
+4. You can generate this json file using the SketchUp plugin as described in the next section.
  
-## Usage
+## Workflow
 
+The workflow for using this suite consists of two parts - planning a mission using the DJI Trajectory SketchUp plugin, and supplying the planned mission to the library for execution.
+
+#### 1. Planning a Mission
+
+* Head to the documentation on the [DJI Trajectory SketchUp Plugin](./sketchup.html) to learn how to plan a mission.
+* Once you have satisfactorily geolocated and planned a spiral mission, export the json file with the encoded parameters.
+* Copy the json to your OES.
+
+#### 2. Simulate the Mission 
+
+* Supply the json you exported above as an argument to the synchronous Linux sample and run the trajectory in simulation. 
+* Make sure Assistant 2 is running on the same machine as SketchUp. Using the plugin's `Simulator Connect` feature, you can match up the simulation to ther planned trajectory. 
 * In simulation, set up the drone's home position close to the planned trajectory - as you would in real life.
 * To run the sample interactively, you can press `[z]` to run the trajectory following for the json supplied at command line. Note that the aircraft needs to have taken off first.
 ![Interactive trajectory](../../images/modules/missionplan/interactive_localmissionplan.png)
@@ -50,6 +62,11 @@ The precision trajectory mission planning interface opens up an exciting new par
 
 On running the trajectory follower, you should see messages telling you about feasibility and rampup times:
 ![trajectory info](../../images/modules/missionplan/trajectory_info.png)
+
+#### 3. Fly the mission
+
+* The simulation should give you an idea of the ramp-up curve the drone will execute to reach the spiral, depending on where the take-off point is. Plan to leave that space, and the space around it, empty during your real flight
+* You are ready to fly your mission! Take a look at the warnings, caveats and known behavior before you fly outdoors.
 
 ## Description of Functionality
 
@@ -70,4 +87,14 @@ This first release is meant to give users an idea of the possibilities that a pr
 
 * **There is no obstacle avoidance** integrated with the path planning. Make sure you plan spirals that stay clear of obstacles or the infrastructure itself. Importing 3D models of the object under inspection into Sketchup and planning around that is a good first-order measure.
 * **Leave plenty of open space in all directions in the area between your current location and the planned spiral.** The entry trajectory is planned in real time to provide the smoothest entry into the trajectory such that the entire spiral is executed at constant velocity. This means the entry curve might go wider that you expect in the area leading up to the spiral. The farther you are from the planned spiral, the wider the entry curve - this is to ensure a smooth 'slingshot' maneuver to enter the spiral. This behavior might change in an upcoming release.
-* **Do not enter unreasonable values in the json file**. We safeguard against all the error cases we have encountered but that might not cover the full scope of things that can go wrong in this complex suite. Over time, bug fixes and improved algorithms will help harden the suite.
+* **Do not enter very aggressive parameters in the mission plan**. We safeguard against all the error cases we have encountered but that might not cover the full scope of things that can go wrong in this complex suite. Over time, bug fixes and improved algorithms will help harden the suite.
+* **Do not modify the json file by hand.** We take no responsibility for any unwanted behavior caused by editing the json file outside of SketchUp. 
+
+#### Some Notes on Behavior
+
+* Upon starting a ramp-up trajectory, the drone will immediately change its heading to north. This behavior is expected and will be changed in a future release.
+* The drone will not execute missions that start below 2m AGL. If you request a lower height, it will automatically change it to 2m.
+* MSL altitude is not supported through the mission planning interface and has not been adequately tested. The suite is designed to prefer MSL heights over AGL heights, which will be enabled once we add MSL heights to the planning software; we ask that you do not change the MSL value (-9999) in the json file and instead only plan missions using height above takeoff point.
+* Plan to start your drone less than 200m away from the planned spiral. If you start far away, the droe might not execute missions that have too small a starting radius or are too close to the ground because of the way the ramp-up attempts to maintain smoothness.
+* If the trajectory at any point gets less than 0.5 m from the ground, the mission is aborted.
+* The start angle parameter does not rotate the spiral to the desired angle; it merely enters the first loop of a 0-degree spiral at the position corresponding to the specified start angle.

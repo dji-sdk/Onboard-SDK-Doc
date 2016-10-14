@@ -1,8 +1,9 @@
 ---
 title: Get Started 
-date: 2016-07-01
+date: 2016-10-14
 keywords: [get started, key features, hardware overview, registration, enable flight controller API control, safety]
 ---
+> New! Onboard SDK 3.1.9 was released on 10/14. See [release notes](../appendix/releaseNotes.html) for more!
 
 ## Getting Started with the Onboard SDK
 
@@ -39,6 +40,11 @@ The onboard SDK enables deep interaction between your OES and a DJI flight contr
 
  - A supported DJI camera and gimbal can be controlled with commands to take pictures, videos, and adjust gimbal position.
 
+### Advanced Sensing and Flight Algorithms
+
+ - Velodyne LiDAR real-time logging and precision trajectory mission planning expand the capabilities of DJI's platforms.
+ 
+ 
 We provide C/C++ source APIs to make sending and receiving data over the serial port easy and encourage you to use them in your applications.  Alternatively, developers can use our protocol specification to write their own communication drivers.
 
 ## Hardware Overview
@@ -114,12 +120,14 @@ Please comply with local regulations during the development of your application.
 Now that you are setup and communicating with a DJI flight control system, we would encourage you to explore our platform guides and reference documentation to help jumpstart your development. We would recommend reading our [Architecture Guide](../introduction/architecture-guide.html) next. The revamped [Programming Guide](../application-development-guides/programming-guide) is a good place to visit once you have some familiarity with the examples and want to know more about the internals.
 
 
-Also, take a look at our [FAQ](../appendix/FAQ.html) for some answers to common questions. After that, feel free to contact us with any issues.
+Also, take a look at our revamped [FAQ](../appendix/FAQ.html) for some answers to common questions. After that, feel free to contact us with any issues.
 
 ### Reference Documents
 
-- [Release Notes for Onboard SDK 3.1.8](../appendix/releaseNotes.html)
-     >Note: v3.1.8 of the Onboard SDK was released on 08/05/16 and introduces many great new features.  Check it out!
+- [Release Notes for Onboard SDK 3.1.9](../appendix/releaseNotes.html)
+     >Note: v3.1.9 of the Onboard SDK was released on 10/14/16 and introduces many great new features.  Check it out!
+
+- Revamped [FAQ](../appendix/FAQ.html) since Onboard SDK 3.1.9
 
 - [OPEN Protocol](../introduction/index.html) & [Appendix](../appendix/index.html) 
 
@@ -133,4 +141,4 @@ Also, take a look at our [FAQ](../appendix/FAQ.html) for some answers to common 
  
 - [Ground Station Programming Guide](../application-development-guides/ground-station-programming-guide.html)
 
-- [FAQ](../appendix/FAQ.html)
+
