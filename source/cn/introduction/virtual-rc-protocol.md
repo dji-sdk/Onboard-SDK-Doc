@@ -1,6 +1,7 @@
 ---
 title: Virtual RC Protocol 
 date: 2016-06-24
+keywords: [virtual RC protocol]
 ---
 
 ## Introduction
@@ -11,7 +12,7 @@ Developers can use it directly without obtaining control ability. A list of chan
 
 ## Command Set and Command ID
 
-|API LEVLE|CMD SET|CMD ID|DESCRIPTION|
+|API LEVEL|CMD SET|CMD ID|DESCRIPTION|
 |---------|-------|------|-----------|
 |0|0x05|0x00|obtain of release virtual RC control|
 |0|0x05|0x01|virtual RC channel data|
@@ -33,6 +34,7 @@ typedef struct
     uint32_t rc_raw_data[16]; //developer designed channel value
 }virtual_rc_data
 ```
+
 ## Note
 
 1. The drone will exit the *virtual RC* logic if there has been a whole second with no `virtual_rc_data` sent. After exiting the *virtual RC* logic, the drone will switch back to the real RC if `if_switch_back_to_real_RC` is `1`; otherwise, the drone will run into the *RC lost* logic directly, which is same as the one when you lost your **real RC** connection.

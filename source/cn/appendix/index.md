@@ -6,13 +6,13 @@ keywords: [control mode, flight data, flight status, remote controller channel]
 
 ## Detailed Architecture
 
-![Detailed Arch Diagram](../../images/common/ArchitectureDetail.jpg)
+![Detailed Arch Diagram](../images/common/ArchitectureDetail.jpg)
 
 ## Control mode byte
 
 ### Control mode byte
 
-3 parts of control inputs can be used to control the movement of the UAV including horizontal control, vertical control and yaw control. Each part has several sub modules.
+The control mode byte is an important bitmask - depending on the mask, you can execute horizontal control, vertical control and yaw control by giving position or rate. Each part has several sub modules.
 
 <table>
 <tr>
@@ -40,12 +40,12 @@ keywords: [control mode, flight data, flight status, remote controller channel]
 
 ### Control mode  
 
-We suggest developers do not use VERT_POS control mode indoor when your UAV does not have Guidance installed or the flight height is larger than 3 meters. Since in indoor environment, barometer can be inaccurate, the vertical controller may fail to keep the height of the UAV. 
+We suggest developers do not use VERT_POS control mode indoor when your UAV does not have Guidance installed or the flight height is larger than 3 meters. This is because in indoor environments, barometer can be inaccurate, and the vertical controller may fail to keep the height of the UAV. 
 
-> Please note that if the following conditions are met that the control mode is functional:
+> Please note that if the following conditions are met, the control mode is functional:
 > 
 * Only when the GPS signal is good (health\_flag >=3)，horizontal position control (HORI_POS) related control modes can be used.
-* Only when GPS signal is good (health\_flag >=3)，or when Gudiance system is working properly with Autopilot，horizontal velocity control（HORI_VEL）related control modes can be used.
+* Only when GPS signal is good (health\_flag >=3)，or when Guidance system is working properly with Autopilot，horizontal velocity control（HORI_VEL）related control modes can be used.
 
 
 <table>
@@ -94,7 +94,7 @@ We suggest developers do not use VERT_POS control mode indoor when your UAV does
 </table>
 
 <div align="center">
-<img src="../../images/common/HORI_ATTI_TILT_ANG.jpg" alt="HORI_ATTI_TILT_ANG" width="540">
+<img src="../images/common/HORI_ATTI_TILT_ANG.jpg" alt="HORI_ATTI_TILT_ANG" width="540">
 </div>
 
 *The input of HORI_POS is a position offset instead of an actual position. This design aims to take both GPS flight and vision-based flight into consideration. If the developer wants to use GPS navigation, the GPS information sent by the UAV can be used to calculate position offset. While in vision-based flight application, developers should have their own positioning device (along with Gudiance or GPS to provide velocity measurement) to do position control.*
@@ -608,7 +608,7 @@ Because raw data is generated from actual sensor on UAV, this kind of data will 
 </tr>
 </table>
 
->If the flight plantform has no ultrasonic sensor, or its distance to the ground is higher than 3 meters, the height is supported by barometer and IMU only. Since the barometer is inaccurate being used indoor, height is unreliable in this case.
+>If the flight plantform has no ultrasonic sensor, or its distance to the ground is higher than 3 meters, the height is supported by barometer and IMU only. Since the barometer is inaccurate when used indoor, height is unreliable in this case.
 
 ### Flight status
 

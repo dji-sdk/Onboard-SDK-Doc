@@ -1,10 +1,11 @@
 ---
 title: Mobile Onboard SDK communication using Data Transparent Transmission
-version: 3.1.8
-date: 2016-08-05
+version: 3.1.9
+date: 2016-10-14
 keywords: [iOS Mobile Onboard SDK app]
 ---
 
+> New for 3.1.9: Gimbal sample and Precision Trajectory support!
 ## Introduction
 
 The Mobile Onboard SDK communication uses the Data Transparent Transmission protocol. As mentioned in the [Data Transparent Transmission](../../introduction/data-transparent-transmission.html) section, the Data Transparent Transmission was developed to combine the benefits of Mobile and Onboard SDK APIs by establishing a connection between a Mobile Device and an OES. Via the Data Transparent Transmission, developers are able to send any data from their Mobile Device to OES and vice versa. 
@@ -19,9 +20,9 @@ The image below shows the ACK being returned to mobile.
 
 ![MOS ACK return](../../images/common/MOSDK2.png)
 
-## Setup
 
-### iOS Mobile Onboard SDK app 
+## Setup
+# iOS Mobile Onboard SDK app 
 
 The iOS app can be side loaded to your phone using Xcode on a Macintosh system. Below are the list of instructions to side load the MOS app to your iOS device. 
 
@@ -45,7 +46,9 @@ The iOS app can be side loaded to your phone using Xcode on a Macintosh system. 
 
 ### Linux
 
-You can enable mobile command input by running './onboardsdk -mobile'. The support commands are: 
+You can enable mobile command input by running `./djiosdk-linux-sample -mobile` (and optionally another argument `path_to_trajectory_json` if you want to execute a pre-planned precision spiral). 
+
+The supported commands are: 
 
 * Obtain Control
 * Release Control 
@@ -54,8 +57,10 @@ You can enable mobile command input by running './onboardsdk -mobile'. The suppo
 * Arm
 * Disarm 
 * Go Home
+* Gimbal Control Demo
 * Draw Square Demo 
-* Waypoint Test 
+* Waypoint Mission Demo
+* Precision Trajectory Execution
 
 Linux supports ACK returned from the Flight Controller. ACK returned will be displayed on the Mobile app. 
 
@@ -99,7 +104,3 @@ STM32 platform responds to mobile commands by default. **When not in simulator m
 * Local Navigation Test
 
 STM32 supports ACK returned from the Flight Controller. ACK returned will be displayed on the Mobile app. 
-
-
-
-

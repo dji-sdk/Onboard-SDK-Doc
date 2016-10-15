@@ -48,8 +48,8 @@ This video-decoding package is desiged for Manifold to read the X3 video stream.
 2. The RC controller must be connected to Matrice 100 in order to get the video stream.
 3. The DJI Go has a power-saving strategy, which may prevent X3 from reading video. To avoid, developers should either enter the camera view in DJI Go or keep DJI GO closed from beginning. The video will be frozen if users stay in the main menu of DJI Go. 
 
-![image](../../../images/ROS/readcam_nv.png)
+![image](../../images/ROS/readcam_nv.png)
 
-![image](../../../images/ROS/readcam.png)
+![image](../../images/ROS/readcam.png)
 
 >Note: the frame size is 640x480, no matter RGB or Grayscale

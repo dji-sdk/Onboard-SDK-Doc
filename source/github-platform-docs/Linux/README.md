@@ -1,32 +1,65 @@
 ---
 title: DJI Onboard SDK C++ Linux Example
-version: v3.1.8 
-date: 2016-08-05
-github: https://github.com/dji-sdk/Onboard-SDK/tree/3.1/sample/Linux
-keywords: [interactive mode, mobile mode, programmatic mode, waypoint mission example, position control example, draw a square]
+version: v3.1.9
+date: 2016-10-14
+github: https://github.com/dji-sdk/Onboard-SDK/tree/3.1/sample/Linux/
 ---
 
-> All-new example for DJI Onboard SDK v3.1.8!
+  > All-new Non-Blocking calls, LiDAR integration, Camera samples and Precision Trajectories for DJI Onboard SDK v3.1.9!
 
 ## Introduction
 
-The new C++ Linux example is meant to showcase recommended application-layer usage of the DJI Onboard API. This example eases a new developer into the world of programming for drones - many API functions have been wrapped in easy-to-use implementations and a feedback mechanism is implemented so the developer always knows the result of his/her commands. Packaged with the new example is a new pthread-based threading implementation as well as an efficient serial device driver that implements many checks (on x86 systems) to ensure reliable communication between your OES and your drone.   
+The C++ Linux example is meant to showcase recommended application-layer usage of the DJI Onboard API.
 
-The following user-facing functionality is available in the new Linux sample: 
+This example eases a new developer into the world of programming for drones - many API functions have been wrapped in easy-to-use implementations and a feedback mechanism is implemented so the developer always knows the result of his/her commands. Packaged with the new example is a new pthread-based threading implementation as well as an efficient serial device driver that implements many checks (on x86 systems) to ensure reliable communication between your Onboard Embeddeed System (OES) and your drone.   
+
+With 3.1.9, the Linux example app comes in two flavors - synchronous (Blocking) and asynchronous (Nonblocking).
+
+#### Synchronous Linux Example App
+The following user-facing functionality is available in the Linux sample: 
 
 * Activation
 * Obtain/Release Flight Control 
 * Take Off 
 * Landing 
-* Go Home 
+* Go Home
+* Still Image Capture
+* Video Capture
+* Gimbal Movement Control  
 * Movement Control - Position/Attitude/Velocity control modes
 * Waypoint Functionality
-* Compatible with brand new iOS Mobile OSDK App
+* Compatible with DJI iOS Mobile OSDK App
 * Sample Waypoint Mission implementation
 * Sample Position Control implementation
+* Sample Gimbal and Camera Control implementation
+* Precision Trajectory Mission Plans
 
-The example is extensible - if you want to build additional functionality, it is easy to do so within the framework of this example.  
+This sample also implements an optional LiDAR Logging example that uses the vlp16lidar-driver library documented [here](../../sensor-integration-guides/velodyne/readme.html). This example gives you the option to log LiDAR data from a Velodyne PUCK or a Simulator to log data in pcap format and LAS format. 
 
+The following user-facing functionality is available with the LiDAR logging sample: 
+
+* Start LiDAR Logging
+* Stop LiDAR Logging
+
+This functionality can be enabled by building the top-level cmake with the argument. 
+```c
+-DLIDAR_LOGGING=ON
+```
+
+#### Asynchronous Linux Example App
+Apart from the Blocking Linux sample, we also support a reduced feature set Non-Blocking sample for this release. This allows the callbacks to run on a different thread, allowing the send commands to run independent from the callbacks. 
+
+The following user-facing functionality is available in the new Non-Blocking Linux sample:
+
+* Activation
+* Obtain/Release Flight Control 
+* Take Off 
+* Landing 
+* Compatible with iOS DJI Mobile OSDK App
+
+The examples are extensible - if you want to build additional functionality, it is easy to do so within the framework of these examples. 
+
+---
 ## Setup
 
 ##### 1. Hardware
@@ -37,19 +70,20 @@ The [Hardware Setup](../../hardware-setup/index.html) guide talks about setting 
 
 **Toolchain**
 
-To build the command line example, you need:
+To build either Linux example, you need:
 
 * A supported C++ compiler (Tested with gcc 4.8.1/5.3.1)
 * A bash shell
-* GNU Make
-
-All of these should be available with an installation of Ubuntu 14.04/16.04.
+* CMake
+* Ubuntu 16.04 on x86_64 OR Ubuntu 14.04 on ARM (DJI Manifold)
 
 **Compilation**
 
-* First, we need to create the directories `objs` and `bin` inside the `sample/Linux` directory. To do this, open up a terminal inside the `sample/Linux` directory and type `mkdir bin; mkdir objs` at the command line. 
-* Next, type `make` at the command prompt.
-* To access the serial port, add your username to the dialout group by typing `sudo usermod -a -G dialout $USER` (you do not need to replace $USER with your username). **Then logout and login again.**  
+* From Onboard SDK 3.1.9, CMake is the default build system. To build all the libraries and sample apps, we provide a simple build script.
+* At the top level, run the build script with the syntax `./scripts/build —-build-type Debug -—clean true --lidar-logging OFF`. This should download dependencies and build all libraries and executables.
+* Set the `lidar-logging` option to `ON` if you want to build with LiDAR Logging features in the Blocking Linux app.
+
+To access the serial port, add your username to the dialout group by typing `sudo usermod -a -G dialout $USER` (you do not need to replace $USER with your username). **Then logout and login again.**  
 
 **Using the Simulator**
 
@@ -73,18 +107,22 @@ The first time a drone/OES combination is used, it needs to be activated. Activa
 ---
 ## Operation
 
-To run the Linux sample, follow these steps:
+To run the Linux Blocking sample, follow these steps:
 
-* Navigate to `sample/Linux/UserConfig.txt` and enter your serial port in the `DeviceName` and baud rate in the `BaudRate` field.  
+* Navigate to `build/bin/` and copy the `UserConfig.txt` file from `onboardsdk/onboardsdk/sample/Linux/Blocking`. In this file, enter your serial port in the `DeviceName` and baud rate in the `BaudRate` field.  
     * The default baudrate is `230400`. If you change this, remember to also change it in DJI Assistant 2.  
     * The default port is `/dev/ttyUSB0`. This should be correct if you are using a USB-Serial adapter. On Manifold, you will be using `/dev/ttyTHSx` (x = 0,1,2) - refer to the [Hardware Setup Guide](../../hardware-setup/index.html) for more information.   
-* In the `sample/Linux/` folder, assuming you have already executed `make`, run `bin/onboardSDK mode_of_operation` where `mode_of_operation` can be (more information about the modes [here](#modes-of-operation)):  
-    * `-interactive` : Recommended mode for new developers. Shows a basic terminal UI and users can execute single commands with key presses.  
-    * `-mobile` : Use with the brand new Mobile OSDK App. Useful for mobile-based triggering of OSDK commands with keys on iOS device.  
-    * `-programmatic` : Use for automated execution. By default, the sample will first takeoff, then execute a waypoint mission, then automatically land and exit.
+* In the `build/bin` folder, assuming you have already run the build script, run `djiosdk-linux-sample mode_of_operation [optional]path_to_spiral` where 
+    * `mode_of_operation` can be (more information about the modes [here](#modes-of-operation)):  
+        * `-interactive` : Recommended mode for new developers. Shows a basic terminal UI and users can execute single commands with key presses.  
+        * `-mobile` : Use with the brand new Mobile OSDK App. Useful for mobile-based triggering of OSDK commands with keys on iOS device.  
+        * `-programmatic` : Use for automated execution. By default, the sample will first takeoff, then execute a waypoint mission, then automatically land and exit.
+    * `[optional]path_to_spiral` is the file path of a pre-planend json file for precision trajectory planning. For more information, look at [Precision Trajectory Mission Planning](../../modules/missionplan/README.html)
 * Proceed to run the sample in one of these modes. Before the sample enters one of the three modes, it will attempt to activate the drone and obtain control. If everything goes well, you should see the following information on the terminal:
 
     ![Activate_TakeControl](../../images/Linux/AllGood.png)
+
+* You may follow the same instructions to run the Non-Blocking Linux sample. The Non-Blocking Linux sample supports a reduced feature set for '-interactive' and '-mobile' modes and does not support '-programmatic' mode. It also does not support 
 
 > Note that the activation step is necessary each time. After the first time, the activation command merely performs a local activation check and you are not required to be connected to the internet.  
 The sample will attempt automatic activation each time it is started.
@@ -105,7 +143,7 @@ As the UI tells us, the sample has already activated and taken control on our be
 
 ![Interactive_2](../../images/Linux/Interactive_2.png)
 
-Once you have taken off, you may try some of the flight control functionality. After you have landed, type the exit letter - `j` - to let the sample clean up before exiting.
+Once you have taken off, you may try some of the flight control functionality. After you have landed, type the exit letter - `n` - to let the sample clean up before exiting.
 
 ![Interactive_3](../../images/Linux/Interactive_3.png)
 
@@ -128,7 +166,7 @@ By default, the programmatic mode starts with automated, monitored takeoff (chec
 
 ![Programmatic_code](../../images/Linux/programmatic-code.png)   
 
-Line `97` is an example of an application layer function called within the programmatic mode. 
+Line `108` is an example of an application layer function called within the programmatic mode. 
 
 The result of this code is something like this:
 
@@ -138,7 +176,7 @@ The result of this code is something like this:
 
 ## Examples
 
-The new Linux Application comes with two examples you can call through Interactive, Mobile or Programmatic mode:  
+The Linux Blocking Application comes with two examples you can call through Interactive, Mobile or Programmatic mode:  
 
 #### 1. Waypoint Mission Example
 
@@ -168,5 +206,61 @@ The output looks like this (takeoff - draw a square - landing):
 
 ![DrawSqr_Simulator](../../images/Linux/Square.png)
 
+#### 3. Camera And Gimbal Controls
 
-> A3 support is currently in beta. Please file issues on the github repo if you find any!
+X3 and X5 camera fixed to an aircraft will record images that pitch and roll with the aircraft as it moves. Multi rotor aircraft need to pitch and roll simply to move horizontally, and so getting a stable horizontal shot is not possible. A gimbal is used to keep a camera or sensor horizontal when its mount (e.g. aircraft) is moving. The gimbal has three motors controlling rotation in orthogonal axes. The gimbal feeds gyroscope information back to the motor controllers to compensate for rotational movement of the mount.
+
+In addition to stabilization, the three motors can be used to control the direction the camera is pointing, and can be used to smoothly track a target, or pan a shot. The three axes of rotation are referred to as Pitch, Roll and Yaw, and the gimbal orientation is referred to as its attitude. Explanations of these axes can be found in the [Flight Control Concepts](https://developer.dji.com/mobile-sdk/documentation/introduction/flightController_concepts.html) section of the Mobile SDK.
+
+Gimbals have mechanical limits (or stops) to their rotation around each axis. When a sensor is mounted on a gimbal, many data and control lines are required to go from mount to sensor. These control lines are usually bundled in a cable assembly or flex circuit, both of which will limit the available rotation of the gimbal. Additionally, gimbals will also limit rotation so cameras cannot see landing gear or the product itself.
+
+##### Moving the Gimbal
+
+- Move to an angle over a duration
+- Move at a speed in a direction
+
+When using angle mode to rotate the gimbal's pitch, roll and yaw, the rotation angle of the gimbal can be defined as either Absolute(relative to the aircraft heading), or Relative (relative to its current angle). When using speed to rotate the gimbal's pitch, roll and yaw, the direction can either be set to clockwise or counter-clockwise. The gimbal can be reset by setting its pitch, roll and yaw to 0 degrees. The reset position is pointing horizontally and being in the same direction as product heading. Gimbals will be automatically calibrated on power up. During calibration, the product should be stationary (not flying, or being held) and horizontal. For gimbal with adjustable payloads, the payload should be present and balanced before doing a calibration. At the moment, there is no option to calibrate the Gimbal through Onboard SDK APIs.
+
+Implementation of this example is in `LinuxCamera.cpp` can be great reference for any Camera and Gimbal controls supported by DJI Onboard SDK.
+
+To try out the sample in interactive mode:
+* Press `j` to set Gimbal rotation angle (input range is 360 degrees)
+* Press `k` to set Gimbal rotation speed
+* Press `l` to perform still image capture
+* Press `m` to perform video capture (5 seconds of video recording)
+
+Sample output for setting Gimbal rotation angle:
+
+```
+Gimbal Angles Description [roll, pitch, yaw]:
+
+Roll angle: unit 0.1º, input range [-350,350]
+Pitch angle: unit 0.1º, input range [-900,300]
+Yaw angle: unit 0.1º, input range [-3200,3200]
+
+(NOTE: Yaw output rotation angle represented in [-π, π] range (see simulator output))
+
+Waiting for Gimbal to sync rotation angle...
+
+Initial Gimbal rotation angle: [0, 0, -0.3]
+
+Setting new Gimbal rotation angle to [0,20,200] using incremental control:
+New Gimbal rotation angle is [0 19 -160 ], with precision error: [0 1 0 ]
+
+Setting new Gimbal rotation angle to [0,-50,-200] using absolute control:
+New Gimbal rotation angle is [0 -50 159 ], with precision error: [0 0 1 ]
+
+Setting new Gimbal rotation angle to [25,0,150] using absolute control:
+New Gimbal rotation angle is [24 0 149 ], with precision error: [1 0 1 ]
+
+Setting new Gimbal rotation angle to [5,0,100] using incremental control:
+New Gimbal rotation angle is [29 0 -110 ], with precision error: [0 0 1 ]
+```
+
+
+NOTE: 
+1. Please make sure you have SD card inserted into the Gimbal
+
+Known Issues:
+1. If set Gimbal rotation angle without simulator, initial Yaw Axis will report 120 however, it will not affect accuracy. For questions please refer to our forum.
+ 

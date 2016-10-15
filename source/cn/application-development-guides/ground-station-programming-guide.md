@@ -1,5 +1,5 @@
 ---
-title: Ground Station Programming Guide 
+title: Ground Station Programming Guide
 date: 2016-06-24
 keywords: [waypoint task, hotpoint task, follow me task, status push, event push]
 ---
@@ -167,7 +167,7 @@ Hotpoint is a functionality that allows the drone to circle around a given point
 
   Note: Developers should select the `Ground Station Status` checkbox in DJI Assistant in order to receive the pushed info.
 
-  ![](../../images/common/groundstation.png)
+  ![](../images/common/groundstation.png)
   
 1. Status Push Information
 

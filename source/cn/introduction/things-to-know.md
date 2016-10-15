@@ -1,6 +1,7 @@
 ---
 title: Things to Know 
 date: 2016-06-24
+keywords: [control precedence, body frame, ground frame, quaternions]
 ---
 
 This page outlines a few things you should know about Onboard SDK and drones in general before you start programming.
@@ -17,13 +18,16 @@ The **remote controller always enjoys top priority** for control. The flight con
 
 To request control of the drone, your app must call the flight control request function exposed by the Onboard SDK library.
 
+Note that this **does not mean** the user will always be able to use RC sticks to control the aircraft; for example, in F mode the sticks are unavailable when the SDK is executing movement control. The correct way to assert the RC's control precedence is to make sure the above conditions for API control are unmet - usually the easiest way to do so is to switch the RC out of F mode into P or A mode.
+
+
 ## Frames of Reference
 
 Description of aircraft movement is dependent on the location and orientation of coordinate axes that make up a coordinate system (or frame of reference). Many coordinate systems exist, but the two used in the DJI Onboard SDK are relative to the aircraft body (body frame), and relative to the ground (world frame).
 
 ### 1. Body Frame
 
-  ![bFrame](../../images/common/axis.png)
+  ![bFrame](../images/common/axis.png)
 
 Aircraft translation in positive X, Y and Z is therefore defined in the Body Coordinate System as forward, right and downward translation respectively.
 
@@ -33,7 +37,7 @@ If the aircraft rotates around the Pitch axis (Y axis) it will move in the X axi
 
 ### 2. Ground Frame
   
-![gFrame](../../images/common/CoordinateSystemNED.png)
+![gFrame](../images/common/CoordinateSystemNED.png)
 
   + North - x axis
   + East - y axis
@@ -44,6 +48,7 @@ A popular ground or world coordinate system used for aircraft aligns the positiv
 The origin for a NED coordinate system is usually a point in the world frame (like take-off location).
 
 > **Note:** *To alleviate this issue of the unnatural downward-pointing positive Z, we adjust the direction of vertical control in order to make the height or vertical velocity to be positive upwards. In other words, giving a positive velocity will make the UAV ascend. This adjustment does not affect the directions and the orders of the other two axis. We are not defining a left-handed co-ordinate system; the actual computations on the flight controller happen in an NED frame.*
+
 
 ## Quaternions  
 

@@ -1,142 +1,54 @@
 ---
-title: Release Notes for Onboard SDK 3.1.8
-version: 3.1.8
-date: 2016-08-05
-keywords: [MOS, PingRX, Velodyne Puck Lite LiDAR]
+title: Release Notes for Onboard SDK 3.1.9
+version: 3.1.9
+date: 2016-10-14
+keywords: [Precision Trajectory, Mission Planning, Velodyne Puck Lite LiDAR]
 ---
 
 ## Highlights
 
-* Onboard SDK 3.1.8 brings exciting new features and builds upon the stability of 3.1.7
-* Mobile-Onboard SDK: iOS sample app for controlling the OSDK functions through a mobile device
-* Ping ADS-B Sense-and-Avoid sensor integration with iOS sample app
-* Velodyne Puck Lite LiDAR sensor integration and tutorial
-* Support for synchronous programming paradigm and revamped programming guide
-* New C++ Linux example with Onboard SDK best practices
-* Many bugfixes and cleanup
+* Onboard SDK 3.1.9 adds an exciting, major new component - Precision Trajectory Mission Planning (beta)
+* Velodyne Puck Lite: New features allow real-time logging in the popular ASPRS-approved LAS file format
+* Threaded Callbacks: The callback mechanism has been completely revamped for more efficient, robust code
+* CMake: Onboard SDK is now fully CMake-based, allowing easy integration with other projects
+* Wrapper API: New higher-level API allows easy usage of common OSDK functions
+* Linux Sample: Support added for Camera and Gimbal control samples, LiDAR LAS logging and Precision Trajectory execution
+
+> The 3.1.9 release has a noticeable increase in total file size - don't be alarmed if it takes longer to clone!
 
 ## New Feature Descriptions
 
 Click on the titles below to go to the full documentation for each feature.
 
-#### [Mobile-Onboard SDK (MOS) iOS App](../github-platform-docs/MobileOnboardSDK/Mobile-OSDK.html)
+#### [Precision Trajectory Mission Planning](../modules/missionplan/README.html)
 
-* Call entire sequences, custom missions or simple Onboard SDK API calls through an iOS app
-* Connects to the OSDK through Mobile SDK - Onboard SDK Transparent Transmission link
-* Perfect for real-world tests where you do not want to deal with wireless UART modules
+* Plan, visualize and fly complex trajectories with unmatched flexibility
+* Use the DJI SketchUp plugin to import 3D models and geolocate trajectories around infrastructure
+* Execute spiral trajectories at desired speeds around objects of interest while automatically taking pictures and video
+* Get repeatable and precise trajectories that do not depend on the waypoint interface
+* Many more features coming up in the near future!
 
-#### [PingRX: Air traffic awareness](../sensor-integration-guides/ping/README.html)
+#### [Velodyne Puck Lite LiDAR: New features](../sensor-integration-guides/velodyne/readme.html)
+* Record real-time LiDAR data into the industry-standard LAS file format
+* Import our LAS recordings into top commercial software such as Autodesk AutoCAD(r) Map3D, Merrick's MARS and open-source tools like CloudCompare
+* Standalone recorder allows you to have a lean tool for collecting LiDAR scans for analysis
+* Integration with Onboard SDK Linux interactive sample for easy LiDAR logging from within Onboard SDK
 
-* With the PingRX ADS-B receiver integrated with Onboard SDK, you can now receive information about air traffic up to 100 miles from your drone
-* Great for deployments near commercial airspace - Ping data is available in OSDK for you to implement sense-and-avoid of aircraft that are transmitting ADS-B data
-* We provide a companion iOS App using the Onboard SDK Transparent Transmission link to view air traffic data on a map on your mobile device
 
-#### [Velodyne Puck Lite LiDAR: A new era in drone sensing](../sensor-integration-guides/velodyne/readme.html)
+#### SDK Improvements
 
-* The Puck Lite LiDAR gives you a dense 3D point cloud of its surroundings with up to 100m range
-* Revolutionize your mapping, inspection or survey application with the power of DJI drones and LiDAR
-* Allows you to implement LiDAR SLAM or sophisticated sense-and-avoid when paired with the Onboard SDK
-* Integration with new, Core i5-based x86 OES for powerful processing
+* 3.1.9 brings with it a move to native CMake builds - all libraries  and executables in the SDK can now be build with a [single cmake call]() at the top level
+* A new, higher-level OSDK [Wrapper API]() allows users to call better encapsulated, more intuitive functions for accomplishing common larger tasks rather than using multiple lower-level CoreAPI calls for accomplishing the same thing
+* A new threading model for asynchrononous programming allows callbacks to be run on a [separate thread](), freeing up the read thread for its primary purpose
 
-#### [New Programming Paradigm](../application-development-guides/programming-guide.html)
+#### [Updated C++ Linux Examples](../github-platform-docs/Linux/README.html)
 
-* The 3.1.8 release offers a complete set of synchronous API call overloads - now you can maintain a linear flow of execution with these blocking functions
-* A synchronous (blocking) function returns to the caller only after it has been executed and an acknowledgement from the aircraft has been received.
-* Synchronous functions return acknowledgements from the aircraft to user code for further processing and decision making
-
-#### [New C++ Linux Example](../github-platform-docs/Linux/README.html)
-
-* Built from the ground up as a reference best practice example program on Linux
-* Includes an efficient serial device driver, memory management, pthread-based threading and synchronous API calls
-* Supports three modes of operation - Interactive (like the old commandline sample), mobile commands from the MOS app and a new programamtic mode for users to execute entire complex sequences of code without interactivity
+* The synchronous Linux sample from 3.1.8 has been updated and now has interfaces to all features of the Onboard SDK - Wrapper API, LiDAR and Precision Trajectories
+* A new asynchronous Linux sample that uses the new threaded callbacks has been created. This sample has fewer features and is intended mostly as a reference for the new programming model.
+* The MOS iOS app now supports more features when used with the synchronous Linux sample.
 
 ## Backward Compatibility
 
-To make older applications work with the 3.1.8 Core API, developers will need to implement the `wait(int timeout)`, `notify()`, `lockACK()` and `freeACK()` functions in their HardDriver-inherited serial device driver. For example implementations of these functions we recommend reading through `platform/LinuxSerialDevice.h` and `platform/LinuxSerialDevice.cpp` on Github.
-   
----
+The new CMake-based modularization makes it easy to link your code to individual Onboard SDK libraries. Link with djisodk-core, djiosdk-platform or djiosdk-wrapper as desired.  
 
-## Previous Release - 3.1.7
-
-### Highlights
-
-* This release is a major cleanup and bugfix release for Onboard SDK 3.1
-* Over a hundred bugs have been squashed
-* Code has much-improved comments and is easier to follow
-* Introduces an alpha version of a unit-testing suite for the core library
-* Provides the capability to build the core library independently of the samples for easier integration into larger projects
-* Introduces an alpha version of Doxygen-style code commenting and pre-generated html doxygen documentation
-
-New developers should start with the revamped [Getting Started Guide](../quick-start/index.html).
-
-### Major Fixes
-
-##### Core Library
-
-* Code style updated to a more modern GNU-like style. Change affects indentations and new functions/variables/structs introduced in this release. Older functions, variables, structs and classes are untouched.
-* Many elements of code have been identified as sub-optimal; we have started marking these structs/functions for deprecation in a future release. We are fully backwards compatible for this release - no old elements have been removed, but users are encouraged to move to the newer elements introduced as part of this release. Doxygen-style comments document the changes and planned replacements; users should look into the core library or go to `doc/doxygen-doc/html/index.html` to see doxygen code documentation.
-
-    Some examples (**This table is not exhaustive!**):
-
-|Old element|Planned New element|Description|File|
-|-------|------|---------|--------|
-|MagnetData|MagData|Name change|DJI_Type.h|
-|PositionData|PositionData|Struct member restructuring|DJI_Type.h|
-|toRadioData|toRCData|Function interface change|DJI_VirtualRC.h|
-|toEulerianAngle|toEulerAngle|Function interface change|DJI_Flight.h|
-
->To re-iterate: these changes are **planned for a future release**. In this release, both old and new versions co-exist.    
-
-* Replaced all uses of `palstance` with `YawRate`
-* CMake support for Linux platforms added
-* Unit testing framework introduced
-* Setter/getter added for open protocol transmission session status
-
-##### Qt
-
-* UI elements have been cleaned up and the behavior of a number of buttons has been changed. New button behavior is a lot more informative.
-
-|Functionality|Fixed Issues|
-|---------|---------|
-|Display Scaling|Added support for Hi-res displays|
-|Qt function discovery|Changed many functions to allow Qt to automatically find them|
-|Button behavior|Arm, activation, hotpoint buttons are interactive/more informative|
-|Waypoint functionality|<ul><li>Intermittent crashes fixed</li><li>Lat/Lon input changed from radians to degrees</li>Revamped layout and added indications for the order of operations</ul>|
-|Hotpoint Functionality|Lat,Lon can now be entered in degrees|
-|UI| Unused buttons and tabs removed. UI looks a lot cleaner.|
-
-* Build has been updated to work with the newest Qt release (5.6). DJI Script dependencies have been removed to streamline Qt build.
-
-##### Commandline Linux
-
-* The commandline linux sample has undergone a major revamp. Many functions have been fixed:
-
-|Functionality|Fixed Issues|
-|-------|---------|
-|Activation|<ul><li>Version mismatch error fixed</li><li>Reliability improved</li><li>Feedback messages improved</li></ul>|
-|Waypoint|<ul><li>"Not enough waypoints" error fixed</li><li>Much clearer steps of operation </li><li>Bus error on Manifold fixed</li></ul>|
-|Hotpoint|<ul><li>No execution though success message appears - fixed</li><li>Bus error on Manifold fixed</li></ul>|
-|VirtualRC|Functionality has now been implemented|
-|Flight Control|<ul><li>No execution - fixed </li><li>Unbounded motion fixed</li><li>Bus error on Manifold fixed</li></ul>|
-
-* Directory structure has changed to a more standard structure. ManifoldPlatform folder has been removed and the Linux example now consolidates all linux-based platforms.
-* Automatic activation sequence added
-* User Configuration file added
-* On-screen information at the interactive prompt updated to be more useful
-
-##### ROS
-
-* ROS repository will now follow the same version numbers as the core repo. The current release is tagged as 3.1.7.
-* ROS Onboard SDK is now based on the latest [Onboard SDK](https://github.com/dji-sdk/Onboard-SDK) library.
-* 'Draw a Circle' example is revamped and implements the movement control fuctionality exposed by the open protocol. The example is now using closed-loop control.
-* Waypoint and Virtual RC exmaples have been improved.
-* Tested with Ubuntu 16.04 LTS/ROS Kinetic Kame - to use this configuration, install the ROS Onboard SDK from source. APT and rosinstall are not supported for this configuration
-* DJI A3 Flight Controller has been tested with ROS Onboard SDK.
-
-##### STM32
-
-* Fixed activation errors due to version not being set.
-* Fixed movement control commands - developers can now successfully execute all movement control commands through the STM32. Documentation has also been updated to reflect the same.
-* Added user parameters in hotpoint mode.
-* DJI A3 Flight Controller has been tested with the STM32.
-I
+The coreAPI library has been renamed to djiosdk-core, but is functionally backward compatible with older samples. There are new virtual functions that might need implementation in your serial device drivers - or you can use linuxSerialDevice, which has been packaged up into djiosdk-platform.

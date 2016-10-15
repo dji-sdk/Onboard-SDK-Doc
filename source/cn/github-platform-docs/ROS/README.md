@@ -10,6 +10,8 @@ keywords: [ros example]
 
 This ROS example implements functionality of the DJI Onboard-SDK. It consists of the core library and client packages demonstrating communication with Matrice 100 and A3 flight controllers. The flight controller type can be defined in the launch file of the core package at any time. Onboard SDK functionality offered in a wrapped header file called dji\_drone.h which user can include and use directly for his/her own demo applications. We also provide a python version called dji\_drone.py. To have our samples run as quickly as possible, we implemented a sample code for hardware driver that you can use as is to ensure safe serial communication between your flight controller and an Onboard Embedded System (OES) of your choice.
 
+
+
 Supported commands and  actions:
 
 * Activation
@@ -41,14 +43,15 @@ Software Functionality:
 * [dji\_sdk\_read_cam](../ROS_Example/ros_video_decoding_package.html): a X3 video decoding package for Manifold, CATKIN_IGNOREd by defualt
 * [dji\_sdk\_dji2mav](../ROS_Example/ros_dji2mav_0.2.1_package.html): a protocol converter making M100 compatiable with all MAVLink-protocol-dependent softwares
 
-![ROS Software Structure](../../../images/ROS/ROSSoftwareStructure.jpg)
-[click to see fullsize image](../../../images/ROS/ROSSoftwareStructure.jpg)
+![ROS Software Structure](../../images/ROS/ROSSoftwareStructure.jpg)
+[click to see fullsize image](../../images/ROS/ROSSoftwareStructure.jpg)
 
 ## Setup 
 
 ### 1. Hardware
 
 The [Hardware Setup](../../hardware-setup/index.html) guide talks about setting up your platform of choice. Make sure your setup matches that in the document before proceeding further. 
+
 
 ### 2. Software
 
@@ -71,6 +74,7 @@ Compilation:
 <br>OR</br>
 2. Refer to our .travis.yml build script to install and configure ROS from scratch and then follow with running ``catkin_make`` from catkin workspace
 
+
 ## Activation
 
 Before you start exploring DJI Onboard SDK functionality via our ROS examples, you will need to go through the "Activation" process.
@@ -89,15 +93,18 @@ Activation Process:
     * Download the latest DJI GO application on your mobile device and sign in to your DJI developer account you created earlier
     * Run "roslaunch dji_sdk sdk_manifold.launch" to initiate activation command
     * Here is how your activation environment will look like:
-![Activation Setup](../../../images/common/activation_1.png)
+![Activation Setup](../../images/common/activation_1.png)
     * Here is successful activation example:
-![Activation Successful](../../../images/ROS/ROSActivationSuccessful_1.png)
+![Activation Successful](../../images/ROS/ROSActivationSuccessful_1.png)
+
 
 ## How To Operate
 
 Now, after completing activation process, you can start exploring our ROS examples or start working on your own application demo. 
 
 Additionally, ROS functions can also be initiated from an iOS Mobile app that runs on your mobile device connected to the RC. This enables users to test the functions easily in the field. You can read about it [here](../../github-platform-docs/MobileOnboardSDK/Mobile-OSDK.html)
+
+</br>
 
 Whenever you develop your own ROS package, include the ``dji_drone.h`` from ``dji_sdk/include/dji_sdk`` into your package (there is also a python version ``dji_drone.py`` in ``dji_sdk/src``). Make sure to build and link your target package with DJI Onboard SDK library residing under ``dji_sdk_lib``.
 
@@ -108,9 +115,9 @@ This is a communication example involving Simulator as part of the Assistant sof
 * Connect your aircraft to the PC running Assistant software via USB cable
 * Start Simulator
 * On Manifold, launch core node (``roslaunch dji_sdk sdk_manifold.launch``) and the client node (``rosrun dji_sdk_demo dji_sdk_client``) in separate terminals
-![ROS Communication](../../../images/ROS/ROSExample.png)
+![ROS Communication](../../images/ROS/ROSExample.png)
 * Via client node, send flight commands to the aircraft (see result in the simulator)</br>
-![Simulator Take Off Mission](../../../images/ROS/SimulatorTakeOff.png)
+![Simulator Take Off Mission](../../images/ROS/SimulatorTakeOff.png)
 
 </br></br>
 For further reading about Onboard SDK, please refer to [DJI SDK Challenge: Onboard SDK Part I](./whatToKnowI.html)

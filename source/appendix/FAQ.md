@@ -1,81 +1,166 @@
 ---
 title: FAQ 
-date: 2016-06-24
-keywords: [OES, N1/A3]
+date: 2016-10-14
+keywords: [OES, N1/A3, FAQ, stackOverFlow, Github Issues, activation fail, M100, video, lightbridge, flight control, data transparent transmission, open protocol, frequency, commands]
 ---
 
-1.  Are there any no-fly zones for M100?
+## Table of Contents
 
-    Yes, please comply with local regulations. For more, please refer to http://flysafe.dji.com/
+**Getting Started**
 
-2.  Can M100 be used for aerial photography?
+* [How can I become a DJI Onboard SDK Developer?](#how-can-i-become-a-dji-onboard-sdk-developer)
+* [Where are the DJI Onboard SDK Resources?](#where-are-the-dji-onboard-sdk-resources)
+* [How do I set up hardware for running the Onboard SDK?](#how-do-i-set-up-hardware-for-running-the-onboard-sdk)
+* [Where can I get the DJI Open Protocol Documentation?](#where-can-i-get-the-dji-onboard-sdk-protocol-documentation)
+* [If I have questions, where can I get help?](#if-i-have-questions-where-can-i-get-help)
+* [Why does activation fail?](#why-does-activation-fail)
 
-    Yes. M100 is compatible with third party ‘Gimbal and Camera’ and the DJI Zenmuse X series.
+**Product/Hardware Related**
 
-3.  What does Onboard Embedded System (OES) mean?
+* [Which DJI products are supported by the Onboard SDK?](#which-dji-products-are-supported-by-the-onboard-sdk)
+* [What does Onboard Embedded System (OES) mean?](#what-does-onboard-embedded-system-oes-mean)
+* [Which OES and Operating Systems are supported by Onboard SDK?](#which-oes-and-operating-systems-are-supported-by-onboard-sdk)
+* [Is an OES with an OS running needed in the development of Onboard SDK?](#is-an-oes-with-an-os-running-needed-in-the-development-of-onboard-sdk)
+* [What are the communication ports between an OES and an N1 or A3 flight controller?](#what-are-the-communication-ports-between-an-oes-and-an-n1-or-a3-flight-controller)
+* [Does M100 support third party video capturing devices? Can I use the M100's built-in ‘Lightbridge’ functionality?](#does-m100-support-third-party-video-capturing-devices-can-i-use-the-m100-s-built-in-lightbridge-functionality)
 
-    In the context of DJI SDK documentation, Onboard Embedded System (OES) refers to any devices that can communicate with N1/A3 flight controller and supported by Onboard SDK.
 
-4.  Which flight platforms are supported by the Onboard SDK?
-   
-    For now, only M100 (with N1 flight controller). The M600 and the dedicated A3 flight controller are in beta support.
+**General SDK**
 
-5.  Which Onboard Embedded System (OES) are supported by M100?
+* [What flight data of M100/M600/A3 can I get via the Onboard SDK?](#what-flight-data-of-m100-m600-a3-can-i-get-via-the-onboard-sdk)
+* [With the Open Protocol on UART port, what is the data output frequency of N1/A3?](#with-the-open-protocol-on-uart-port-what-is-the-data-output-frequency-of-n1-a3)
+* [Can I encrypt data on the UART line?](#can-i-encrypt-data-on-the-uart-line)
+* [Suppose some data onboard the drone needs to be transmitted to a mobile device. Can this functionality be supported by Onboard SDK?](#suppose-some-data-onboard-the-drone-needs-to-be-transmitted-to-a-mobile-device-can-this-functionality-be-supported-by-onboard-sdk)
+* [For the development of Onboard SDK, can I use some bandwidth from the remote controller to get my own data back to a ground station?](#for-the-development-of-onboard-sdk-can-i-use-some-bandwidth-from-the-remote-controller-to-get-my-own-data-back-to-a-ground-station)
+* [Are there any simulators provided for the development of Onboard SDK with M100/M600/A3?](#are-there-any-simulators-provided-for-the-development-of-onboard-sdk-with-m100-m600-a3)
+* [Can I set the initial height of the ‘take off’ function manually?](#can-i-set-the-initial-height-of-the-take-off-function-manually)
+* [What is the recommended transmission rate for N1/A3 flight controller to receive external commands?](#what-is-the-recommended-transmission-rate-for-n1-a3-flight-controller-to-receive-external-commands)
+* [If I choose 'Raw data' in DJI Assistant 2, Flight Data is incorrectly reported when using simulator. Is this a bug?](#if-i-choose-raw-data-in-dji-assistant-2-flight-data-is-incorrectly-reported-when-using-simulator-is-this-a-bug)
+* [How do I send commands to the drone when it is flying? Wireless keyboards or Wireless Serial Ports are impractical and unsafe.](#how-do-i-send-commands-to-the-drone-when-it-is-flying-wireless-keyboards-or-wireless-serial-ports-are-impractical-and-unsafe)
 
-    Refer to [Architecture Guide](../introduction/architecture-guide.html) for supported hardware and OS platform.
 
-6.  Is an OES with an OS running needed in the development of Onboard SDK?
+## Getting Started
 
-    Not necessarily but preferred. We recommend the combination with Ubuntu and ROS but even a simple STM32 MCU without an OS running on it works.
+### How can I become a DJI Onboard SDK Developer?
 
-7.  What flight control data of M100 can I get via the Onboard SDK?
+Becoming a DJI Onboard SDK developer is easy. Please see [this](../quick-start/index.html#onboard-application-registration) section in the Quick Start guide for details.
 
-    Timestamp of the flight controller, Quaternion and Acceleration etc. Please refer to our Onboard SDK Github Page
+### Where are the DJI Onboard SDK Resources?
 
-8.  What are the communication ports between an OES and an N1 or A3 flight controller?
+All [documentation](http://developer.dji.com/onboard-sdk/documentation) can be found on the DJI developer website.
 
-    For now, OES can only communicate with N1/A3 flight controller via the UART port.
+The Onboard SDK can be cloned from GitHub - [Linux/Qt/STM32](https://github.com/dji-sdk/onboard-sdk) and [ROS](https://github.com/dji-sdk/onboard-sdk-ros). 
 
-9.  Does M100 support third party video capturing devices? Can I use the M100's built-in ‘Lightbridge’ functionality?
+### How do I set up hardware for running the Onboard SDK?
 
-    Yes, M100 supports third party video capturing device. If you want to use the M100's built-in ‘Lightbridge’ functionality, all you need is the [N1 Video Encoder](http://store.dji.com/product/n1-video-encoder).
+The [Hardware Setup Guide](../hardware-setup/index.html) has detailed instructions for setting up the various parts of the system.
 
-10. What is the data output frequency of N1/A3?
+### Where can I get the DJI Onboard SDK Protocol Documentation?
 
-    The data output frequency of N1 can be set via the N1 assistant software with a range [0, 100Hz].
+The Open Protocol is documented [here](../introduction/index.html).
 
-11. Suppose a sensor needs to transmit its sensing data back to the mobile device at a constant frequency. Can this functionality be supported by Onboard SDK?
+### If I have questions, where can I get help?
 
-    Yes. Refer to [Data Transparent Transmission](../introduction/data-transparent-transmission.html).
+You can use the following methods to get help:
 
-12. Are there any simulators provided for the development of M100?
+- StackOverFlow 
 
-    Yes. The [DJI Assistant 2](http://developer.dji.com/onboard-sdk/downloads/) has a built-in simulator that can be used.
+  Post questions in StackOverFlow with DJI SDK tag: <a href="http://stackoverflow.com/questions/tagged/dji-sdk" target="_blank">dji-sdk</a>
 
-13. Can I set the initial height of the ‘take off’ function manually?
+- DJI Onboard SDK Forum
 
-    For now, no. The initial height is set to be about 1.2 meters.
+  <a href="http://forum.dev.dji.com/forum-91-1.html" target="_blank">http://forum.dev.dji.com/forum-91-1.html</a>
 
-14. What is the recommended transmission rate for N1 flight controller to receive external commands?
+- Github Issues
+  
+  <a href="https://github.com/dji-sdk/onboard-sdk/issues" target="_blank">Onboard SDK Issues</a>
 
-    50Hz.
+  <a href="https://github.com/dji-sdk/onboard-sdk-ros/issues" target="_blank">Onboard SDK ROS Issues</a>
+  
+- Gitter Chat 
 
-15. For the development of Onboard SDK, can I use some bandwidth from the remote controller to control my own OES?
+  [Onboard SDK Gitter Room](gitter.im/dji-sdk/Onboard-SDK)
+  
+- Send Email
 
-    Yes, developers can get the remote control value.
+  If you prefer email, please send to <dev@dji.com> for help.
 
-16. How many flight status are included via the Onboard SDK?
 
-    For detail flight status and flight life cycle, please refer to [Open Protocol](../../appendix/index.html)
+### Why does activation fail?
 
-17. Raw data included in Flight Data is wrong in case of using simulator?
+The first time the application communicates with the drone/flight controller, it connects to a DJI Server to verify it's authorized to use the DJI Onboard SDK by sending the Application ID and Key. This process is called activation. Reasons for why it might fail include:
 
-    Because raw data is generated by actual sensors on UAV, raw data will not be available in simulator. Please choose fusion data when you use DJI simulator.
+* DJI GO needs to be running on the mobile device, and needs internet connectivity the first time it is run after installation (successful activation is locally cached, so internet connectivity is not required after the first initialization).
+* App ID/key is incorrect. Check in the <a href="https://developer.dji.com/user/apps/#all" target="_blank"> User Center </a> to confirm the application key.
+* The serial port is not connected/opened correctly. This might happen on ARM architectures since the Onboard SDK's serial driver does not implement sophisticated checks on this platform.
 
-18. Data will be lost when using wireless serial communication？
+## Product/Hardware Related
 
-    Since most wireless serial model is half-duplex, data loss and obstruction happen when the autopilot and Onboard Embedded System (OES) send data to each other simultaneously. We recommend other means for communication, or dual wireless serial module are used to transmit and receive data.
+### Which DJI products are supported by the Onboard SDK?
 
-19. Is encryption enforced?
+The Matrice 100, Matrice 600 and the A3 flight controller are supported by the Onboard SDK.
 
-    No, Encryption is optional. For more info, please refer to [Encryption part](../introduction/index.html#open-protocol-encryption) in the Open Protocol.
+### What does Onboard Embedded System (OES) mean?
+
+In the context of DJI Onboard SDK documentation, Onboard Embedded System (OES) refers to any devices that can communicate with N1/A3 flight controller and supported by Onboard SDK.
+
+### Which OES and Operating Systems are supported by Onboard SDK?
+  
+The [Hardware Setup Guide](../hardware-setup/index.html) talks about all supported combinations of OES and aircraft. Refer to the [Architecture Guide](../introduction/architecture-guide.html) for supported OS platforms.
+
+### Is an OES with an OS running needed in the development of Onboard SDK?
+
+Not necessarily, but preferred. We recommend a setup with Ubuntu and ROS but even a simple STM32 MCU without an OS running on it works.
+
+### What are the communication ports between an OES and an N1 or A3 flight controller?
+    
+An OES can only communicate with N1/A3 flight controller via a UART port.
+
+### Does M100 support third party video capturing devices? Can I use the M100's built-in ‘Lightbridge’ functionality?
+
+Yes, M100 supports third party video capturing device. If you want to use the M100's built-in ‘Lightbridge’ functionality, all you need is the [N1 Video Encoder](http://store.dji.com/product/n1-video-encoder).
+
+
+## General SDK
+
+### What flight data of M100/M600/A3 can I get via the Onboard SDK?
+     
+You can get the full state estimate, timestamp and a lot of other information like gimbal data, state machine value etc. Refer to the [Receiving Flight Data](../application-development-guides/programming-guide.html#receiving-flight-data) section in the [Programming Guide](../application-development-guides/programming-guide.html). 
+
+Bit-level protocol information about the state broadcast data can also be found in the [Open Protocol](../../appendix/index.html) Documentation 
+
+### With the Open Protocol on UART port, what is the data output frequency of N1/A3?
+
+The data output frequency for various kinds of state broadcast data (Position, Attitude, Timestamp etc.) can be set via DJI Assistant 2 in the [0, 100Hz] range.
+
+### Can I encrypt data on the UART line?
+
+Yes, AES encryption is available as a option. For more info, please refer to [Encryption](../introduction/index.html#open-protocol-encryption) in the Open Protocol.
+
+### Suppose some data onboard the drone needs to be transmitted to a mobile device. Can this functionality be supported by Onboard SDK?
+
+Yes. Refer to [Data Transparent Transmission](../introduction/data-transparent-transmission.html).
+
+### For the development of Onboard SDK, can I use some bandwidth from the remote controller to get my own data back to a ground station?
+    
+Unfortunately, the LightBridge 2 channel does now support transmitting arbitrary forms of data. If you have data in the form of a video stream, use N1 Video Encoder (M100) or HDMI (M600/A3) to stream it back to the RC. If you have some low-bandwidth data, consider using [Data Transparent Transmission](../introduction/data-transparent-transmission.html).
+
+### Are there any simulators provided for the development of Onboard SDK with M100/M600/A3?
+    
+Yes. The [DJI Assistant 2](http://developer.dji.com/onboard-sdk/downloads/) has a built-in simulator that can be used with Onboard SDK.
+
+### Can I set the initial height of the ‘take off’ function manually?
+
+For now, no. The initial height is set to be about 1.2 meters.
+
+### What is the recommended transmission rate for N1/A3 flight controller to receive external commands?
+    
+50Hz.
+ 
+### If I choose 'Raw data' in DJI Assistant 2, Flight Data is incorrectly reported when using simulator. Is this a bug?
+    
+Because raw data is generated by actual sensors on UAV, raw data will not be available in simulator. Please choose fusion data when you use DJI simulator.
+
+### How do I send commands to the drone when it is flying? Wireless keyboards or Wireless Serial Ports are impractical and unsafe.
+
+We agree completely - so since Onboard SDK 3.1.8, we offer a [Mobile-Onboard SDK iOS app](../github-platform-docs/MobileOnboardSDK/Mobile-OSDK.html) that has triggers for all functionality available in the Linux Samples. You can look at the implementation and make triggers for your own commands as well.

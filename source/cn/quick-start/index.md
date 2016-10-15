@@ -1,8 +1,9 @@
 ---
 title: Get Started 
-date: 2016-07-01
+date: 2016-10-14
 keywords: [get started, key features, hardware overview, registration, enable flight controller API control, safety]
 ---
+> New! Onboard SDK 3.1.9 was released on 10/14. See [release notes](../appendix/releaseNotes.html) for more!
 
 ## Getting Started with the Onboard SDK
 
@@ -39,13 +40,18 @@ The onboard SDK enables deep interaction between your OES and a DJI flight contr
 
  - A supported DJI camera and gimbal can be controlled with commands to take pictures, videos, and adjust gimbal position.
 
+### Advanced Sensing and Flight Algorithms
+
+ - Velodyne LiDAR real-time logging and precision trajectory mission planning expand the capabilities of DJI's platforms.
+ 
+ 
 We provide C/C++ source APIs to make sending and receiving data over the serial port easy and encourage you to use them in your applications.  Alternatively, developers can use our protocol specification to write their own communication drivers.
 
 ## Hardware Overview
 - If you are using an M100 or M600 vehicle, you should assemble and familiarize yourself with flying the vehicle before attempting to proceed with onboard SDK development.
 - If you are using an A3 flight controller with Lightbridge 2 and your own vehicle, then you should familiarize yourself with flying your vehicle before attempting to proceed with onboard SDK development.
 - Generically, you will be working with one of the setups in the following diagram:
-![Hardware Setup](../../images/common/GenericHWSetup.png)
+![Hardware Setup](../images/common/GenericHWSetup.png)
 
 > Note that to accomplish the setup steps below, you will need to use the vehicle remote controller connected to a mobile device running the DJI Go app and your mobile device must have a connection to the internet.
 
@@ -67,7 +73,7 @@ We provide C/C++ source APIs to make sending and receiving data over the serial 
 
 - With your M100/M600 or A3 connected to your computer, launch DJI PC Assistant 2 and check the box "Enable API Control”.
 
-![Enable API Control](../../images/common/N1UI.png)
+![Enable API Control](../images/common/N1UI.png)
 
 ### 4. Connect Your Onboard Embedded System (OES)
 
@@ -105,6 +111,18 @@ Choose one of these examples to begin using the onboard SDK in a particular soft
 
 > Note: Each new vehicle or flight controller to be used must be activated once to enable communication with your application.
 
+
+## Vagrant
+We provide a Vagrantfile for an Ubuntu 16.04 desktop machine with all the dependencies and settings necessary to build 
+the Onboard SDK and run the samples.  To start the machine first install the following:
+* [Virtualbox](https://www.virtualbox.org/wiki/Downloads)
+* [Virtualbox Extension Pack](https://www.virtualbox.org/wiki/Downloads)
+* [Vagrant](https://www.vagrantup.com/downloads.html)
+
+Next, in the same directory as the Vagrantfile in the Onboard SDK repository you previously cloned, just run `vagrant up`.  The 
+first time you do this it may take a while as the base image is downloaded and dependencies are installed.  Please 
+see the [Vagrant](https://www.vagrantup.com/) documentation for more details on how to work with Vagrant.
+
 ## Safety
 
 Please comply with local regulations during the development of your application. Please refer to <a href="http://flysafe.dji.com/" target="_blank">http://flysafe.dji.com/</a> for more information.
@@ -114,12 +132,14 @@ Please comply with local regulations during the development of your application.
 Now that you are setup and communicating with a DJI flight control system, we would encourage you to explore our platform guides and reference documentation to help jumpstart your development. We would recommend reading our [Architecture Guide](../introduction/architecture-guide.html) next. The revamped [Programming Guide](../application-development-guides/programming-guide) is a good place to visit once you have some familiarity with the examples and want to know more about the internals.
 
 
-Also, take a look at our [FAQ](../appendix/FAQ.html) for some answers to common questions. After that, feel free to contact us with any issues.
+Also, take a look at our revamped [FAQ](../appendix/FAQ.html) for some answers to common questions. After that, feel free to contact us with any issues.
 
 ### Reference Documents
 
-- [Release Notes for Onboard SDK 3.1.8](../appendix/releaseNotes.html)
-     >Note: v3.1.8 of the Onboard SDK was released on 08/05/16 and introduces many great new features.  Check it out!
+- [Release Notes for Onboard SDK 3.1.9](../appendix/releaseNotes.html)
+     >Note: v3.1.9 of the Onboard SDK was released on 10/14/16 and introduces many great new features.  Check it out!
+
+- Revamped [FAQ](../appendix/FAQ.html) since Onboard SDK 3.1.9
 
 - [OPEN Protocol](../introduction/index.html) & [Appendix](../appendix/index.html) 
 
@@ -133,4 +153,4 @@ Also, take a look at our [FAQ](../appendix/FAQ.html) for some answers to common 
  
 - [Ground Station Programming Guide](../application-development-guides/ground-station-programming-guide.html)
 
-- [FAQ](../appendix/FAQ.html)
+
