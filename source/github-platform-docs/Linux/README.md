@@ -9,9 +9,13 @@ github: https://github.com/dji-sdk/Onboard-SDK/tree/3.1/sample/Linux
 
 ## Introduction
 
-The new C++ Linux example is meant to showcase recommended application-layer usage of the DJI Onboard API. This example eases a new developer into the world of programming for drones - many API functions have been wrapped in easy-to-use implementations and a feedback mechanism is implemented so the developer always knows the result of his/her commands. Packaged with the new example is a new pthread-based threading implementation as well as an efficient serial device driver that implements many checks (on x86 systems) to ensure reliable communication between your Onboard Embeddeed System (OES) and your drone.   
+The C++ Linux example is meant to showcase recommended application-layer usage of the DJI Onboard API.
 
+This example eases a new developer into the world of programming for drones - many API functions have been wrapped in easy-to-use implementations and a feedback mechanism is implemented so the developer always knows the result of his/her commands. Packaged with the new example is a new pthread-based threading implementation as well as an efficient serial device driver that implements many checks (on x86 systems) to ensure reliable communication between your Onboard Embeddeed System (OES) and your drone.   
 
+With 3.1.9, the Linux example app comes in two flavors - synchronous (Blocking) and asynchronous (Nonblocking).
+
+#### Synchronous Linux Example App
 The following user-facing functionality is available in the Linux sample: 
 
 * Activation
@@ -41,6 +45,8 @@ This functionality can be enabled by building the top-level cmake with the argum
 ```c
 -DLIDAR_LOGGING=ON
 ```
+
+#### Asynchronous Linux Example App
 Apart from the Blocking Linux sample, we also support a reduced feature set Non-Blocking sample for this release. This allows the callbacks to run on a different thread, allowing the send commands to run independent from the callbacks. 
 
 The following user-facing functionality is available in the new Non-Blocking Linux sample:
@@ -64,19 +70,20 @@ The [Hardware Setup](../../hardware-setup/index.html) guide talks about setting 
 
 **Toolchain**
 
-To build the command line example, you need:
+To build either Linux example, you need:
 
 * A supported C++ compiler (Tested with gcc 4.8.1/5.3.1)
 * A bash shell
-* GNU Make
-
-All of these should be available with an installation of Ubuntu 14.04/16.04.
+* CMake
+* Ubuntu 16.04 on x86_64 OR Ubuntu 14.04 on ARM (DJI Manifold)
 
 **Compilation**
 
-* First, we need to create the directories `objs` and `bin` inside the `sample/Linux/Blocking` or `sample/Linux/Non-Blocking` directory. To do this, open up a terminal inside the `sample/Linux/Blocking or ../Non-Blocking` directory and type `mkdir bin; mkdir objs` at the command line. 
-* Next, type `make` at the command prompt.
-* To access the serial port, add your username to the dialout group by typing `sudo usermod -a -G dialout $USER` (you do not need to replace $USER with your username). **Then logout and login again.**  
+* From Onboard SDK 3.1.9, CMake is the default build system. To build all the libraries and sample apps, we provide a simple build script.
+* At the top level, run the build script with the syntax `./scripts/build —build-type Debug —clean true`. This should download dependencies and build all libraries and executables.
+* To run the example app, go to `./build/bin` and run `djiosdk-linux-sample` or `djiosdk-linux-sample-nonblock` with options described elsewhere in this document.
+
+To access the serial port, add your username to the dialout group by typing `sudo usermod -a -G dialout $USER` (you do not need to replace $USER with your username). **Then logout and login again.**  
 
 **Using the Simulator**
 
@@ -201,7 +208,7 @@ The output looks like this (takeoff - draw a square - landing):
 
 X3 and X5 camera fixed to an aircraft will record images that pitch and roll with the aircraft as it moves. Multi rotor aircraft need to pitch and roll simply to move horizontally, and so getting a stable horizontal shot is not possible. A gimbal is used to keep a camera or sensor horizontal when its mount (e.g. aircraft) is moving. The gimbal has three motors controlling rotation in orthogonal axes. The gimbal feeds gyroscope information back to the motor controllers to compensate for rotational movement of the mount.
 
-In addition to stabilization, the three motors can be used to control the direction the camera is pointing, and can be used to smoothly track a target, or pan a shot. The three axes of rotation are referred to as Pitch, Roll and Yaw, and the gimbal orientation is referred to as its attitude. Explanations of these axes can be found in the [Flight Control Concepts](https://developer.dji.com/mobile-sdk/documentation/introduction/flightController_concepts.html).
+In addition to stabilization, the three motors can be used to control the direction the camera is pointing, and can be used to smoothly track a target, or pan a shot. The three axes of rotation are referred to as Pitch, Roll and Yaw, and the gimbal orientation is referred to as its attitude. Explanations of these axes can be found in the [Flight Control Concepts](https://developer.dji.com/mobile-sdk/documentation/introduction/flightController_concepts.html) section of the Mobile SDK.
 
 Gimbals have mechanical limits (or stops) to their rotation around each axis. When a sensor is mounted on a gimbal, many data and control lines are required to go from mount to sensor. These control lines are usually bundled in a cable assembly or flex circuit, both of which will limit the available rotation of the gimbal. Additionally, gimbals will also limit rotation so cameras cannot see landing gear or the product itself.
 
