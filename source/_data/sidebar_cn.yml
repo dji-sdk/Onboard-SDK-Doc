@@ -59,8 +59,8 @@
       title: STM32
       path: /cn/github-platform-docs/STM32/README.html
     -
-      title: Commandline Linux
-      path: /cn/github-platform-docs/commandline/README.html
+      title: Linux
+      path: /cn/github-platform-docs/Linux/README.html
     -
       title: ROS
       path: /cn/github-platform-docs/ROS/README.html
@@ -82,9 +82,6 @@
         -
           title: ROS Video Decoding Package
           path: /github-platform-docs/ROS_Example/ros_video_decoding_package.html
-    -
-      title: Commandline Linux (Old)
-      path: /github-platform-docs/commandline/README.html
     -
       title: Mobile - Onboard SDK
       path: /github-platform-docs/MobileOnboardSDK/Mobile-OSDK.html

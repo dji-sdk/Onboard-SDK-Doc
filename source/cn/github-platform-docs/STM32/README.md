@@ -11,7 +11,7 @@ keywords: [stm32， local navigation]
 This example onboard App is built upon the <a href="http://www.st.com/content/st_com/en/products/evaluation-tools/product-evaluation-tools/mcu-eval-tools/stm32-mcu-eval-tools/stm32-mcu-discovery-kits/stm32f4discovery.html" target="_blank">STM32F407 Discovery</a> development kit (referred to as "STM32" later) with <a href="http://www2.keil.com/mdk5/" target="_blank">MDK-ARM</a> (Keil uVision) toolchain. The purpose is to demonstrate how to use the APIs provided by the Onboard SDK in a "bare-metal" embedded system.
 
 The system has the following setup:
-![system diagram](../../../images/STM32/STM32_System_Structure.png)
+![system diagram](../../images/STM32/STM32_System_Structure.png)
 
 The user sends commands to the USART2 port of the STM32 from a serial terminal. Based on the commands received, the App communicates with the M100 connected to the USART3 port through the Onboard SDK and prints feedback/debug information to the user. Since version 3.1.8, an [iPhone/iPad App](../MobileOnboardSDK/Mobile-OSDK.html) named `Mobile OSDK` is created for the user to send some commands to the OES from a mobile device.
 
@@ -21,7 +21,7 @@ Before using this example App, make sure you have followed the [Quick Start](../
 
 ### Hardware Installation
 
-![hardware setup](../../../images/STM32/STM32_hardware_setup.jpg)
+![hardware setup](../../images/STM32/STM32_hardware_setup.jpg)
 
 Connect the USB-TTL cable to USART2 port of the STM32 (`PA2`，`PA3` are the TX and RX of the STM32 side, respectively). Connect USART3 port of the STM32 to the `UART_CAN2` port of the M100: the TX pin (`PB10`) of STM32 should be connected to the RX pin of M100, and the RX pin (`PB11`) of STM32 to the TX pin of M100. Refer to [Hardware Setup Guide](../../hardware-setup/index.html).
 
@@ -33,7 +33,7 @@ To download (flash) the App binary to the STM32 board, connect the PC to the STM
 
 The example App is developed and tested with MDK-ARM Version 5.12 or later. In order for Keil to build code for the target board, you need to use Keil's `Pack Installer` to install the latest STM32F4xx_DFP.2.x.x pack, as shown below. (Alternatively, you can download manually from <a href="http://www.keil.com/dd2/Pack/" target="_blank">http://www.keil.com/dd2/Pack/</a> and import the downloaded file from Pack Installer.)
 
-![Keil_PackInstall](../../../images/STM32/STM32_Keil_PackInstall.png)
+![Keil_PackInstall](../../images/STM32/STM32_Keil_PackInstall.png)
 
 ### Build the example APP
 
@@ -48,7 +48,7 @@ Use the menu item `Project->Build Target` and `Flash->Download` to build the pro
 
 Set the baud rate of your serial terminal software (here we use the open-source <a href="http://realterm.sourceforge.net" target="_blank"> RealTerm </a>) to be **115200**, which is the one we use to configure USART2 in the example App. Configure the serial terminal to display the received information in Ascii mode and send commands in Hex mode.
 
-![Realterm Setup](../../../images/STM32/STM32_Realterm.png)
+![Realterm Setup](../../images/STM32/STM32_Realterm.png)
 
 ## Activation
 
@@ -58,14 +58,14 @@ Send the activation command with serial terminal
 
 > 0xFA 0xFB 0x01 0xFE
 
-![Activation Successfully](../../../images/STM32/STM32_Activation_Successfully.png)
+![Activation Successfully](../../images/STM32/STM32_Activation_Successfully.png)
 
 Note that the first activation requires internet connection (STM32 <==> M100 <==> Remote Control <==> DJI GO APP <==> Internet), since it needs to verify that the APP ID and APP KEY used in the onboard APP are valid. After the first activation, internet connection is not mandatary.
 
 ## Operation
 
 This example App defines a very simple command protocol. Users send commands to the STM32 from a serial terminal. An example command sequence is given below:
-![Example Sequence](../../../images/STM32/STM32_Example_Sequence.png)
+![Example Sequence](../../images/STM32/STM32_Example_Sequence.png)
 
 ### Command Format
 
@@ -125,7 +125,7 @@ The Control Model Flag 0x48 (0b 0100 1000) sets the command values to be X, Y, Z
 The STM32 example app assembles the higher byte and lower byte of each channel to an integer, and *then divide it by 100*. So in the above example, the X (North) velocity is set to 1 m/s, the Y (East) velocity is set to 2 m/s, the Z velocity is set to 1 m/s and the Yaw rate is set to 0.05 rad/s.
 
 The above command, with an auto taking-off before which and an auto landing after, will generate the following result in simulator:
-![Movement Control](../../../images/STM32/STM32_Movement_Control.png)
+![Movement Control](../../images/STM32/STM32_Movement_Control.png)
 
 Note that, as described in the [Onboard SDK Programming Guide](../../application-development-guides/programming-guide.html#movement-control), movement control commands need to be sent to the drone continuously (recommended at 50Hz). In the STM32 example app, after users send one movement control command, a timer will be set to send the same command to the drone automatically at 50Hz frequency. To stop this automatic sending, users need to send any valid command in the above table other than the Movement Control Command, and the drone will stop and hover.
 
@@ -143,21 +143,21 @@ In Hot Point mode, the drone will start to orbit around the current position wit
 
 > 0xFA 0xFB 0x07 0x00 0x0a 0x0F 0x14 0xFE
 
-![Hot Point](../../../images/STM32/STM32_HotPoint.png)
+![Hot Point](../../images/STM32/STM32_HotPoint.png)
 
 ### Local Navigation
 
 Try this function in the simulator first. **To test it on a real drone in the field, make sure there is enough open space.**
 
 While the position given by the GPS is in terms of latitude and longitude, it is more convenient and intuitive to do navigation in local Cartesian coordinate. We provide a local navigation example here. In this example, we create an north-east-up local frame and set the arm and take off position to be the origin. Under this frame, we command the drone to follow a 4-petal [rose shaped curve](https://en.wikipedia.org/wiki/Rose_(mathematics)) at an height of 25m with equation given by
-![RoseCurve](../../../images/STM32/STM32_RoseCurveEquation.png)
+![RoseCurve](../../images/STM32/STM32_RoseCurveEquation.png)
 
 To run this example, the user need to **first activate, obtain control, take off**, and then start the local navigation example with terminal command
 > 0xFA 0xFB 0x09 0x01 0xFE
 
 or use the custom mission command `Local Navigation Test` (command ID 66) in the mobile-OSDK iOS App. The drone will stop and hover after a full rose curve.
 
-![RoseCurve](../../../images/STM32/STM32_RoseCurve_Result.png)
+![RoseCurve](../../images/STM32/STM32_RoseCurve_Result.png)
 
 ### Get Broadcastdata
 

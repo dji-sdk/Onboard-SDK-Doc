@@ -1,11 +1,13 @@
 ---
 title: Data Transparent Transmission 
 date: 2016-06-24
+keywords: [data transparent transmission, downstream, upstream]
 ---
 
-## Introduction
+## Intro
 
 The purpose of this document is to give an overview of the 'Data Transparent Transmission' between an Onboard Embedded System (OES) and an Mobile Device. The rest of this document is organized as followed:
+
 * Problem Motivation
 * 2 Usage Scenarios (with sample code snippet)
 
@@ -23,7 +25,7 @@ Onboard API is implemented through the OES which is mounted on the UAV. Communic
 
 In short, Data Transparent Transmission serves as a linkage between Mobile API and Onboard API, granting developers a better flexibility in creating their own flight APPs.
 
-![streamFrame](../../images/common/streamFrame.png)
+![streamFrame](../images/common/streamFrame.png)
 
 ## Usage Scenario 1 - downstream from OES to Mobile Device
 
@@ -107,4 +109,3 @@ The OES can receive the data sent from the Mobile Device by means of a CMD from 
 |---------|------|----|-----------|
 |CMD Val|0|1~100|User Data|
 |ACK Val|---|---|N/A|
-

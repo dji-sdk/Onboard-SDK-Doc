@@ -1,6 +1,7 @@
 ---
 title: Ground Station Protocol 
 date: 2016-06-24
+keywords: [ground station protocol, ACK code]
 ---
 
 This part is about Goundstation related functions(Waypoint, Hotpoint and Follow Me), which has been introduced briefly in the [OPEN Protocol](../introduction/index.html#CMD-Set-0x03-Ground-Station-CMD-Set).
@@ -492,7 +493,7 @@ The following CMD SET/ID are not API but broadcast data protocol, by which devel
 
 Note: Developers should select the `Ground Station Status` checkbox in DJI Assistant.
 
-![](../../images/common/groundstation.png)
+![](../images/common/groundstation.png)
 
 ### 0x02, 0x03 Current Mission Status Push Information 
 

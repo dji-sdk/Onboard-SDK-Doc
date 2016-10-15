@@ -1,6 +1,7 @@
 ---
-title: Hardware setup 
+title: Hardware setup
 date: 2016-06-24
+keywords: [hardware setup，M100 UART Connector, A3 UART Connector]
 ---
 
 # Hardware Setup guide
@@ -9,11 +10,11 @@ This guide will help you connect your onboard embedded system (OES) with the M10
 
 ## M100 UART Connector
 
-![M100UARTConnector](../../images/hardwaresetup/Connecter.jpg) 
+![M100UARTConnector](../images/hardwaresetup/Connecter.jpg) 
 
 ## A3 UART Connector  
 
-![A3UARTConnector](../../images/hardwaresetup/A3UARTPort.png) 
+![A3UARTConnector](../images/hardwaresetup/A3UARTPort.png) 
 
 ## M100 + Manifold
 
@@ -23,7 +24,7 @@ The diagram below shows the hardware connection between an M100 and Manifold. No
 - With DJI Assistant you can enable API, set baudrate and/or run the Simulator.
 
 
-![M100Manifold](../../images/hardwaresetup/M100Manifold.png)
+![M100Manifold](../images/hardwaresetup/M100Manifold.png)
 
 ## M100 + PC/Linux machine
 
@@ -35,7 +36,7 @@ The diagram below shows the hardware connection between an M100 and a PC or Linu
 - With DJI Assistant you can enable API, set baudrate and/or run the Simulator.
 
 
-![M100PCLinux](../../images/hardwaresetup/M100PCLinux.png)
+![M100PCLinux](../images/hardwaresetup/M100PCLinux.png)
 
 
 ## M100 + STM32
@@ -49,7 +50,7 @@ The diagram below shows the hardware connection between an M100 and STM32. Note 
 - In the STM32 sample App, users can send commands and receive feedback on a Computer. 
 
 
-![M100STM32](../../images/hardwaresetup/M100STM32.png)
+![M100STM32](../images/hardwaresetup/M100STM32.png)
 
 
 ## A3 + Manifold
@@ -62,7 +63,7 @@ The diagram below shows the hardware connection between an A3 and Manifold. Note
 - A3 to PC connection is used to run DJI Assistant 2. 
 - With DJI Assistant you can enable API, set baudrate and/or run the Simulator.
 
-![A3Manifold](../../images/hardwaresetup/A3Manifold.png)
+![A3Manifold](../images/hardwaresetup/A3Manifold.png)
 
 
 ## A3 + PC/Linux machine
@@ -72,7 +73,7 @@ The diagram below shows the hardware connection between an A3 and a PC or Linux 
 - A3 to PC connection is used to run DJI Assistant 2. 
 - With DJI Assistant you can enable API, set baudrate and/or run the Simulator. 
 
-![A3PCLinux](../../images/hardwaresetup/A3PCLinux.png)
+![A3PCLinux](../images/hardwaresetup/A3PCLinux.png)
 
 
 ## A3 + STM32
@@ -86,4 +87,4 @@ The diagram below shows the hardware connection between an A3 and STM32. Note th
 - In the STM32 sample App, users can send commands and receive feedback on a Computer.
 
 
-![A3STM32](../../images/hardwaresetup/A3STM32.png)
+![A3STM32](../images/hardwaresetup/A3STM32.png)

@@ -1,7 +1,7 @@
 ---
 title: Programming Guide - Using the Onboard SDK APIs 
 version: v3.1.9
-date: 2016-08-05
+date: 2016-10-14
 keywords: [Serial Device Driver, Threading/Interrupts, Application-Layer API calls]
 ---
 ![Prog Guide Header](../images/common/ProgGuideHeader.png)

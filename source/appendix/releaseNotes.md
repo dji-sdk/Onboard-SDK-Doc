@@ -1,7 +1,7 @@
 ---
 title: Release Notes for Onboard SDK 3.1.9
 version: 3.1.9
-date: 2016-10-12
+date: 2016-10-14
 keywords: [Precision Trajectory, Mission Planning, Velodyne Puck Lite LiDAR]
 ---
 

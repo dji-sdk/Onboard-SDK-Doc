@@ -2,7 +2,7 @@
 title: DJI Onboard SDK C++ Linux Example
 version: v3.1.9
 date: 2016-10-14
-github: https://github.com/dji-sdk/Onboard-SDK/tree/3.1/sample/Linux
+github: https://github.com/dji-sdk/Onboard-SDK/tree/3.1/sample/Linux/
 ---
 
   > All-new Non-Blocking calls, LiDAR integration, Camera samples and Precision Trajectories for DJI Onboard SDK v3.1.9!
@@ -80,8 +80,8 @@ To build either Linux example, you need:
 **Compilation**
 
 * From Onboard SDK 3.1.9, CMake is the default build system. To build all the libraries and sample apps, we provide a simple build script.
-* At the top level, run the build script with the syntax `./scripts/build —build-type Debug —clean true`. This should download dependencies and build all libraries and executables.
-* To run the example app, go to `./build/bin` and run `djiosdk-linux-sample` or `djiosdk-linux-sample-nonblock` with options described elsewhere in this document.
+* At the top level, run the build script with the syntax `./scripts/build —-build-type Debug -—clean true --lidar-logging OFF`. This should download dependencies and build all libraries and executables.
+* Set the `lidar-logging` option to `ON` if you want to build with LiDAR Logging features in the Blocking Linux app.
 
 To access the serial port, add your username to the dialout group by typing `sudo usermod -a -G dialout $USER` (you do not need to replace $USER with your username). **Then logout and login again.**  
 
@@ -109,18 +109,20 @@ The first time a drone/OES combination is used, it needs to be activated. Activa
 
 To run the Linux Blocking sample, follow these steps:
 
-* Navigate to `sample/Linux/Blocking/UserConfig.txt` and enter your serial port in the `DeviceName` and baud rate in the `BaudRate` field.  
+* Navigate to `build/bin/` and copy the `UserConfig.txt` file from `onboardsdk/onboardsdk/sample/Linux/Blocking`. In this file, enter your serial port in the `DeviceName` and baud rate in the `BaudRate` field.  
     * The default baudrate is `230400`. If you change this, remember to also change it in DJI Assistant 2.  
     * The default port is `/dev/ttyUSB0`. This should be correct if you are using a USB-Serial adapter. On Manifold, you will be using `/dev/ttyTHSx` (x = 0,1,2) - refer to the [Hardware Setup Guide](../../hardware-setup/index.html) for more information.   
-* In the `sample/Linux/Blocking` folder, assuming you have already executed `make`, run `bin/onboardSDK mode_of_operation` where `mode_of_operation` can be (more information about the modes [here](#modes-of-operation)):  
-    * `-interactive` : Recommended mode for new developers. Shows a basic terminal UI and users can execute single commands with key presses.  
-    * `-mobile` : Use with the brand new Mobile OSDK App. Useful for mobile-based triggering of OSDK commands with keys on iOS device.  
-    * `-programmatic` : Use for automated execution. By default, the sample will first takeoff, then execute a waypoint mission, then automatically land and exit.
+* In the `build/bin` folder, assuming you have already run the build script, run `djiosdk-linux-sample mode_of_operation [optional]path_to_spiral` where 
+    * `mode_of_operation` can be (more information about the modes [here](#modes-of-operation)):  
+        * `-interactive` : Recommended mode for new developers. Shows a basic terminal UI and users can execute single commands with key presses.  
+        * `-mobile` : Use with the brand new Mobile OSDK App. Useful for mobile-based triggering of OSDK commands with keys on iOS device.  
+        * `-programmatic` : Use for automated execution. By default, the sample will first takeoff, then execute a waypoint mission, then automatically land and exit.
+    * `[optional]path_to_spiral` is the file path of a pre-planend json file for precision trajectory planning. For more information, look at [Precision Trajectory Mission Planning](../../modules/missionplan/README.html)
 * Proceed to run the sample in one of these modes. Before the sample enters one of the three modes, it will attempt to activate the drone and obtain control. If everything goes well, you should see the following information on the terminal:
 
     ![Activate_TakeControl](../../images/Linux/AllGood.png)
 
-* You may follow the same instructions to run the Non-Blocking Linux sample. The Non-Blocking Linux sample supports a reduced feature set for '-interactive' and '-mobile' modes and does not support '-programmatic' mode.
+* You may follow the same instructions to run the Non-Blocking Linux sample. The Non-Blocking Linux sample supports a reduced feature set for '-interactive' and '-mobile' modes and does not support '-programmatic' mode. It also does not support 
 
 > Note that the activation step is necessary each time. After the first time, the activation command merely performs a local activation check and you are not required to be connected to the internet.  
 The sample will attempt automatic activation each time it is started.
