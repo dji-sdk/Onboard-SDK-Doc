@@ -9,3 +9,5 @@ dist/
 dist-bak/
 public/
 *.sh
+
+.idea/
