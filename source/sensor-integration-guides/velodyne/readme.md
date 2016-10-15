@@ -2,7 +2,7 @@
 title: Integration with Velodyne LiDAR
 version: v3.1.9
 date: 2016-10-07
-github: https://github.com/dji-sdk/Onboard-SDK/tree/3.1/thirdparty/velodyne_vlp16puck_lite_API_example
+github: https://github.com/dji-sdk/Onboard-SDK/tree/3.1/sensor-integration/velodyne_vlp16puck_lite_API_example
 keywords: [Light Detection and Ranging system, LiDAR]
 ---
 
@@ -102,7 +102,7 @@ The instructions for building and installing VTK can be found in <a href="http:/
 #### LiDAR Simulator
 
 The LiDAR simulator is located in:   
-`./onboardsdk/thirdparty/velodyne_vlp16puck_lite_API_example/sim`.
+`./onboardsdk/sensor-integration/velodyne_vlp16puck_lite_API_example/sim`.
 
 The source code does not use any Qt classes. The Qt project file "velodyne_lidar_sim.pro" for compiling with Qt as IDE and "CMakeLists.txt" file for compiling with cmake are provided for building a console application.    
 
@@ -122,16 +122,16 @@ packetTobeSent:
 
 #### API  
 The header files and source code files are located in:
-`./onboardsdk/thirdparty/velodyne_vlp16puck_lite_API_example/lidar_APIs_LIB/inc`. 
+`./onboardsdk/sensor-integration/velodyne_vlp16puck_lite_API_example/vlp16lidar-driver/inc`. 
 
-`./onboardsdk/thirdparty/velodyne_vlp16puck_lite_API_example/lidar_APIs_LIB/src`.
+`./onboardsdk/sensor-integration/velodyne_vlp16puck_lite_API_example/vlp16lidar-driver/src`.
 
 Note that "wrapper.h" is only the header file for the outside world for integration. The API provides a UDP driver and data logging with LAS/PCAP files for integration with OES for the drone.  
 
 #### Example for LiDAR with M100
 The example software is located in:
 
-`./onboardsdk/thirdparty/velodyne_vlp16puck_lite_API_example/pointcloud_grabber`.
+`./onboardsdk/sensor-integration/velodyne_vlp16puck_lite_API_example/pointcloud_grabber`.
 
 The source code does not use any Qt classes. The Qt project file "pointcloud_grabber.pro" for compiling with Qt as IDE and "CMakeLists.txt" file for compiling with cmake are provided for building a console application.
 

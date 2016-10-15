@@ -14,6 +14,8 @@ keywords: [Precision Trajectory, Mission Planning, Velodyne Puck Lite LiDAR]
 * Wrapper API: New higher-level API allows easy usage of common OSDK functions
 * Linux Sample: Support added for Camera and Gimbal control samples, LiDAR LAS logging and Precision Trajectory execution
 
+> The 3.1.9 release has a noticeable increase in total file size - don't be alarmed if it takes longer to clone!
+
 ## New Feature Descriptions
 
 Click on the titles below to go to the full documentation for each feature.
