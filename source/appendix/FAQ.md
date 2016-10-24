@@ -3,6 +3,7 @@ title: FAQ
 date: 2016-10-14
 keywords: [OES, N1/A3, FAQ, stackOverFlow, Github Issues, activation fail, M100, video, lightbridge, flight control, data transparent transmission, open protocol, frequency, commands]
 ---
+> New! Updated with questions on the DJI forums and Github
 
 ## Table of Contents
 
@@ -35,7 +36,7 @@ keywords: [OES, N1/A3, FAQ, stackOverFlow, Github Issues, activation fail, M100,
 * [What flight data of M100/M600/A3 can I get via the Onboard SDK?](#what-flight-data-of-m100-m600-a3-can-i-get-via-the-onboard-sdk)
 * [With the Open Protocol on UART port, what is the data output frequency of N1/A3?](#with-the-open-protocol-on-uart-port-what-is-the-data-output-frequency-of-n1-a3)
 * [Can I encrypt data on the UART line?](#can-i-encrypt-data-on-the-uart-line)
-* [How do I get the camera's video feed on the OES?](how-do-i-get-the-camera-s-video-feed-on-the-oes)
+* [How do I get the camera's video feed on the OES?](#how-do-i-get-the-camera-s-video-feed-on-the-oes)
 * [Suppose some data onboard the drone needs to be transmitted to a mobile device. Can this functionality be supported by Onboard SDK?](#suppose-some-data-onboard-the-drone-needs-to-be-transmitted-to-a-mobile-device-can-this-functionality-be-supported-by-onboard-sdk)
 * [For the development of Onboard SDK, can I use some bandwidth from the remote controller to get my own data back to a ground station?](#for-the-development-of-onboard-sdk-can-i-use-some-bandwidth-from-the-remote-controller-to-get-my-own-data-back-to-a-ground-station)
 * [Are there any simulators provided for the development of Onboard SDK with M100/M600/A3?](#are-there-any-simulators-provided-for-the-development-of-onboard-sdk-with-m100-m600-a3)
