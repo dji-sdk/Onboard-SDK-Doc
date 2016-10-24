@@ -15,7 +15,7 @@ keywords: [OES, N1/A3, FAQ, stackOverFlow, Github Issues, activation fail, M100,
 * [If I have questions, where can I get help?](#if-i-have-questions-where-can-i-get-help)
 * [Why does activation fail?](#why-does-activation-fail)
 
-**Product/Hardware Related**
+**Product Related**
 
 * [Which DJI products are supported by the Onboard SDK?](#which-dji-products-are-supported-by-the-onboard-sdk)
 * [What does Onboard Embedded System (OES) mean?](#what-does-onboard-embedded-system-oes-mean)
@@ -24,12 +24,18 @@ keywords: [OES, N1/A3, FAQ, stackOverFlow, Github Issues, activation fail, M100,
 * [What are the communication ports between an OES and an N1 or A3 flight controller?](#what-are-the-communication-ports-between-an-oes-and-an-n1-or-a3-flight-controller)
 * [Does M100 support third party video capturing devices? Can I use the M100's built-in ‘Lightbridge’ functionality?](#does-m100-support-third-party-video-capturing-devices-can-i-use-the-m100-s-built-in-lightbridge-functionality)
 
+**Platform Related**
+* [Manifold - Why does restoring system image cause issues?](#manifold-why-does-restoring-system-image-cause-issues)
+* [Manifold - How do I purchase a Manifold?](#manifold-how-do-i-purchase-a-manifold)
+* [A3 - Do I need a LightBridge 2 RC to use Onboard SDK?](#a3-do-i-need-a-lightbridge-2-rc-to-use-onboard-sdk)
+* [STM32 - Do all parts of the SDK work with low-power embedded systems?](#stm32-do-all-parts-of-the-sdk-work-with-low-power-embedded-systems)
 
 **General SDK**
 
 * [What flight data of M100/M600/A3 can I get via the Onboard SDK?](#what-flight-data-of-m100-m600-a3-can-i-get-via-the-onboard-sdk)
 * [With the Open Protocol on UART port, what is the data output frequency of N1/A3?](#with-the-open-protocol-on-uart-port-what-is-the-data-output-frequency-of-n1-a3)
 * [Can I encrypt data on the UART line?](#can-i-encrypt-data-on-the-uart-line)
+* [How do I get the camera's video feed on the OES?](how-do-i-get-the-camera-s-video-feed-on-the-oes)
 * [Suppose some data onboard the drone needs to be transmitted to a mobile device. Can this functionality be supported by Onboard SDK?](#suppose-some-data-onboard-the-drone-needs-to-be-transmitted-to-a-mobile-device-can-this-functionality-be-supported-by-onboard-sdk)
 * [For the development of Onboard SDK, can I use some bandwidth from the remote controller to get my own data back to a ground station?](#for-the-development-of-onboard-sdk-can-i-use-some-bandwidth-from-the-remote-controller-to-get-my-own-data-back-to-a-ground-station)
 * [Are there any simulators provided for the development of Onboard SDK with M100/M600/A3?](#are-there-any-simulators-provided-for-the-development-of-onboard-sdk-with-m100-m600-a3)
@@ -88,11 +94,16 @@ You can use the following methods to get help:
 
 ### Why does activation fail?
 
-The first time the application communicates with the drone/flight controller, it connects to a DJI Server to verify it's authorized to use the DJI Onboard SDK by sending the Application ID and Key. This process is called activation. Reasons for why it might fail include:
+The first time the application communicates with the drone/flight controller, it connects to a DJI Server to verify it's authorized to use the DJI Onboard SDK by sending the Application ID and Key. This process is called activation. 
+
+Reasons for why it might fail include:
 
 * DJI GO needs to be running on the mobile device, and needs internet connectivity the first time it is run after installation (successful activation is locally cached, so internet connectivity is not required after the first initialization).
 * App ID/key is incorrect. Check in the <a href="https://developer.dji.com/user/apps/#all" target="_blank"> User Center </a> to confirm the application key.
-* The serial port is not connected/opened correctly. This might happen on ARM architectures since the Onboard SDK's serial driver does not implement sophisticated checks on this platform.
+* The serial port is not connected/opened correctly (baud rate, incorrect hardware connections etc). This might happen on ARM architectures since the Onboard SDK's serial driver does not implement sophisticated checks on this platform.
+* The voltages on the UART line are incorrect. The electrical interface is 3.3V TTL.
+* RC is not in Mode F. Activation can only happen in mode F.
+* API Control is not enabled using DJI Assistant 2. Go to the SDK page on Assistant 2 and check the box marked Enable API Control.
 
 ## Product/Hardware Related
 
@@ -120,6 +131,23 @@ An OES can only communicate with N1/A3 flight controller via a UART port.
 
 Yes, M100 supports third party video capturing device. If you want to use the M100's built-in ‘Lightbridge’ functionality, all you need is the [N1 Video Encoder](http://store.dji.com/product/n1-video-encoder).
 
+## Platform Related
+
+### Manifold - Why does restoring system image cause issues?
+
+If you're seeing blinking mouse cursors, changing text size or general issues with the display, please re-do the restore using Ubuntu 14.04 as the host computer.
+
+### Manifold - How do I purchase a Manifold?
+
+The Manifold is sold for university projects or for other research. Please send email to dev@dji.com stating the purpose of use.
+
+### A3 - Do I need a LightBridge 2 RC to use Onboard SDK?
+
+Currently, you do need a LightBridge 2 RC for first use (specifically, activation). This requirement will be removed in future A3 firmware.
+
+### STM32 - Do all parts of the SDK work with low-power embedded systems?
+
+We support low-power embedded systems for core SDK functionality - all funcitons in the osdk-core library are available with the STM32 (and potentially other low-power OESs). However, more complex functionality such as LiDAR logging and precision trajectory missions are unavailable on bare-metal systems due to insufficient compute power.
 
 ## General SDK
 
@@ -136,6 +164,10 @@ The data output frequency for various kinds of state broadcast data (Position, A
 ### Can I encrypt data on the UART line?
 
 Yes, AES encryption is available as a option. For more info, please refer to [Encryption](../introduction/index.html#open-protocol-encryption) in the Open Protocol.
+
+### How do I get the camera's video feed on the OES?
+
+You need to use the Manifold as your OES. There is no official support for using other OESs with the X3/X5 camera.
 
 ### Suppose some data onboard the drone needs to be transmitted to a mobile device. Can this functionality be supported by Onboard SDK?
 
