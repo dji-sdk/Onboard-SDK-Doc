@@ -16,6 +16,8 @@ This guide will help you connect your onboard embedded system (OES) with the M10
 
 ![A3UARTConnector](../images/hardwaresetup/A3UARTPort.png) 
 
+**Note: Do NOT use the Vcc pin to power your own devices. You might damage your OES, A3 or both.**
+
 ## M100 + Manifold
 
 The diagram below shows the hardware connection between an M100 and Manifold. Note that: 

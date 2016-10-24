@@ -37,9 +37,9 @@ Click on the titles below to go to the full documentation for each feature.
 
 #### SDK Improvements
 
-* 3.1.9 brings with it a move to native CMake builds - all libraries  and executables in the SDK can now be build with a [single cmake call]() at the top level
-* A new, higher-level OSDK [Wrapper API]() allows users to call better encapsulated, more intuitive functions for accomplishing common larger tasks rather than using multiple lower-level CoreAPI calls for accomplishing the same thing
-* A new threading model for asynchrononous programming allows callbacks to be run on a [separate thread](), freeing up the read thread for its primary purpose
+* 3.1.9 brings with it a move to native CMake builds - all libraries  and executables in the SDK can now be build with a [single cmake call](../introduction/architecture-guide.html#cmake-library-build-structure) at the top level
+* A new, higher-level OSDK [Wrapper API](../introduction/architecture-guide.html#levels-of-abstraction) allows users to call better encapsulated, more intuitive functions for accomplishing common larger tasks rather than using multiple lower-level CoreAPI calls for accomplishing the same thing
+* A new threading model for asynchrononous programming allows callbacks to be run on a [separate thread](../application-development-guides/programming-guide.html#asynchronous-programming-callback-mechanism), freeing up the read thread for its primary purpose
 
 #### [Updated C++ Linux Examples](../github-platform-docs/Linux/README.html)
 
@@ -52,3 +52,5 @@ Click on the titles below to go to the full documentation for each feature.
 The new CMake-based modularization makes it easy to link your code to individual Onboard SDK libraries. Link with djisodk-core, djiosdk-platform or djiosdk-wrapper as desired.  
 
 The coreAPI library has been renamed to djiosdk-core, but is functionally backward compatible with older samples. There are new virtual functions that might need implementation in your serial device drivers - or you can use linuxSerialDevice, which has been packaged up into djiosdk-platform.
+
+Note that you will be unable to build the Linux samples on platforms other than Ubuntu 16.04/14.04 on x86_64 or Ubuntu 14.04 on ARM. This is due to new feature dependencies; this behavior will change in a future release.
