@@ -4,9 +4,9 @@ date: 2016-06-24
 keywords: [ground station protocol, ACK code]
 ---
 
-This part is about Goundstation related functions(Waypoint, Hotpoint and Follow Me), which has been introduced briefly in the [OPEN Protocol](../introduction/index.html#CMD-Set-0x03-Ground-Station-CMD-Set).
+This part is about Groundstation related functions(Waypoint, Hotpoint and Follow Me), which has been introduced briefly in the [OPEN Protocol](../introduction/index.html#CMD-Set-0x03-Ground-Station-CMD-Set).
 
-For the detialed function logic, please refer to the [Ground Station Programming Guide](../application-development-guides/ground-station-programming-guide.html).
+For the detailed function logic, please refer to the [Ground Station Programming Guide](../application-development-guides/ground-station-programming-guide.html).
 
 ## Command Set and Command Id
 
@@ -298,7 +298,7 @@ ACK:
 ```c
 struct waypoint_set_vel_ack{
     uint8_t ack;
-    float idle_velcity;
+    float idle_velocity;
 };
 ```
 
@@ -313,7 +313,7 @@ ACK:
 ```c
 struct waypoint_read_vel_ack{
     uint8_t ack;
-    float idle_velcity;
+    float idle_velocity;
 };
 ```
 
@@ -409,7 +409,7 @@ ACK: `uint8_t`
 
 Request:
 
-`uint8_t` with arbitary value
+`uint8_t` with arbitrary value
 
 ACK:
 
@@ -420,14 +420,14 @@ struct hotpoint_download_ack {
 };
 ```
 
-### 0x03, 0x27：enable auto-radiu mode
+### 0x03, 0x27：enable auto-radius mode
 
 Request:
 
 ```c
-struct hotpoint_auto_radiu {
+struct hotpoint_auto_radius {
     uint8_t on_off; //1->enable, 0->disable
-    int8_t rate;//radiu change rate
+    int8_t rate;//radius change rate
 };
 ```
 
@@ -457,7 +457,7 @@ ACK: `uint8_t`
 
 Request:
 
-`uint8_t` with arbitary value
+`uint8_t` with arbitrary value
 
 ACK: `uint8_t`
 
@@ -501,7 +501,7 @@ There are four kinds of mission status with the same struct size.
 
 Developers can separate them by their first bytes, i.e. `mission_type`.
 
-The 'mission_tpye' is defined with the following enum.
+The 'mission_type' is defined with the following enum.
 
 ~~~c
 typedef enum
@@ -639,19 +639,19 @@ typedef struct{
         <td>0xD3</td>
         <td>mission not init</td>
         <td>0xD4</td>
-        <td>missino not running</td>
+        <td>mission not running</td>
     </tr>
     <tr>
         <td>0xD5</td>
         <td>mission running</td>
         <td>0xD6</td>
-        <td>flight duration not satisfy</td>
+        <td>flight duration not satisfied</td>
     </tr>
     <tr>
         <td>0xD7</td>
-        <td>mission witd higher priority is running</td>
+        <td>mission with higher priority is running</td>
         <td>0xD8</td>
-        <td>GPS healtd not satisfied</td>
+        <td>GPS health not satisfied</td>
     </tr>
     <tr>
         <td>0xD9</td>
@@ -661,13 +661,13 @@ typedef struct{
     </tr>
     <tr>
         <td>0xDB</td>
-        <td>invalid missino parameter</td>
+        <td>invalid mission parameter</td>
         <td>0xDC</td>
         <td>execution condition not satisfied</td>
     </tr>
     <tr>
         <td>0xDD</td>
-        <td>mission will fly tdrough no-fly zone</td>
+        <td>mission will fly through no-fly zone</td>
         <td>0xDE</td>
         <td>HOME point not recorded</td>
     </tr>
@@ -675,19 +675,19 @@ typedef struct{
         <td>0xDF</td>
         <td>drone in no-fly zone</td>
         <td>0xC0</td>
-        <td>altitude higher tdan max</td>
+        <td>altitude higher than max</td>
     </tr>
     <tr>
         <td>0xC1</td>
-        <td>altitude lower tdan min</td>
+        <td>altitude lower than min</td>
         <td>0xC7</td>
         <td>too far</td>
     </tr>
     <tr>
         <td>0xC8</td>
-        <td>drone not support groundstation functions</td>
+        <td>drone does not support groundstation functions</td>
         <td>0xC9</td>
-        <td>too far from tde hotpoint/first waypoint</td>
+        <td>too far from the hotpoint/first waypoint</td>
     </tr>
     <tr>
         <td>0xCA</td>
@@ -699,7 +699,7 @@ typedef struct{
         <td>0xF1</td>
         <td>drone is landing</td>
         <td>0xF2</td>
-        <td>drone is backing to home</td>
+        <td>drone is coming back to home</td>
     </tr>
     <tr>
         <td>0xF3</td>
@@ -741,13 +741,13 @@ typedef struct{
     </tr>
     <tr>
         <td>0xC6</td>
-        <td>too far to back to route</td>
+        <td>too far to go back to route</td>
         <td>0xA2</td>
         <td>invalid float number</td>
     </tr>
     <tr>
         <td>0xA3</td>
-        <td>invalid laittude/longitude</td>
+        <td>invalid latitude/longitude</td>
         <td>0xA6</td>
         <td>invalid direction</td>
     </tr>
@@ -774,13 +774,13 @@ typedef struct{
     </tr>
     <tr>
         <td>0xE4</td>
-        <td>index larger tdan max number</td>
+        <td>index larger than max number</td>
         <td>0xE5</td>
-        <td>neighbor waypoints too close</td>
+        <td>neighboring waypoints too close</td>
     </tr>
     <tr>
         <td>0xE6</td>
-        <td>neighbor waypoints too far</td>
+        <td>neighboring waypoints too far</td>
         <td>0xE7</td>
         <td>damping checking failed</td>
     </tr>
@@ -800,7 +800,7 @@ typedef struct{
         <td>0xEC</td>
         <td>request is running</td>
         <td>0xED</td>
-        <td>cannot pause cause not running</td>
+        <td>cannot pause because not running</td>
     </tr>
     <tr>
         <th colspan="4">IOC ACK</th>
