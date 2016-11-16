@@ -67,7 +67,7 @@ We provide C/C++ source APIs to make sending and receiving data over the serial 
 ### 2. Update Firmware
 
 - Connect your computer to the Micro-USB port on the M100/600 or A3
-- Update your <a href="http://www.dji.com/product/matrice100/info#downloads" target="_blank">M100</a>, <a href="http://www.dji.com/product/matrice600/info#downloads" target="_blank">M600</a> or <a href="http://www.dji.com/product/a3/info#downloads" target="_blank">A3</a> with the latest released firmware
+- Update your <a href="http://www.dji.com/product/matrice100/info#downloads" target="_blank">M100</a>, <a href="http://www.dji.com/product/matrice600/info#downloads" target="_blank">M600</a> or <a href="http://www.dji.com/product/a3/info#downloads" target="_blank">A3</a> with the latest released firmware. If using A3 FW 1.5.0.0, please see [this](../appendix/releaseNotes.html#Notes-for-using-Onboard-SDK-with-the-new-a3-v1-5-0-0-fw).
 
 ### 3. Enable Flight Controller API control
 
@@ -98,11 +98,11 @@ Choose one of these examples to begin using the onboard SDK in a particular soft
 
 - [QT GUI Environment in Windows and Linux Example](../github-platform-docs/PureQT/README.html)
 
-- [Command Line Environment in Windows and Linux Example](../github-platform-docs/commandline/README.html)
+- [New Commandline Linux Example](../github-platform-docs/Linux/README.html)
 
 - [ROS on Linux Example](../github-platform-docs/ROS/README.html)
 
-- [STM32 ARM Example](../github-platform-docs/STM32/README.html)
+- [STM32 Bare-Metal Example](../github-platform-docs/STM32/README.html)
 
 ### 7. Flight Platform Activation
 
