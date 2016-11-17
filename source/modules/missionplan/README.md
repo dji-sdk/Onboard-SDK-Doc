@@ -98,4 +98,4 @@ This first release is meant to give users an idea of the possibilities that a pr
 * Plan to start your drone less than 200m away from the planned spiral. If you start far away, the droe might not execute missions that have too small a starting radius or are too close to the ground because of the way the ramp-up attempts to maintain smoothness.
 * If the trajectory at any point gets less than 0.5 m from the ground, the mission is aborted.
 * The start angle parameter does not rotate the spiral to the desired angle; it merely enters the first loop of a 0&deg; spiral at the position corresponding to the specified start angle.
-* Always, if there are any suspicions that the drone mmight crash, switch out of F mode ([P mode for A3 FW > 1.5.0.0](../appendix/releaseNotes.html#Notes-for-using-Onboard-SDK-with-the-new-a3-v1-5-0-0-fw)) and the drone will stop following.
+* Always, if there are any suspicions that the drone mmight crash, switch out of F mode ([P mode for A3 FW > 1.5.0.0](../../appendix/releaseNotes.html#Notes-for-using-Onboard-SDK-with-the-new-a3-v1-5-0-0-fw)) and the drone will stop following.
