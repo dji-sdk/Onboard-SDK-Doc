@@ -182,6 +182,8 @@ Due to encryption process, data need to be aligned into blocks and each one cont
 
 On the other hand, there is no need to encrypt data, when developers use a serial cable to connect OES and autopilot. In this case, just set 'ENC' to '0'.
 
+> Note: By default, encryption is turned OFF in the SDK. Enable it by going to DJI_Config.h and uncommenting the USE_ENCRYPT macro.
+
 ---
 
 ## CMD Set & CMD ID

@@ -5,9 +5,9 @@ date: 2016-11-18
 keywords: [Precision Trajectory, Mission Planning, Velodyne Puck Lite LiDAR]
 ---
 
-## Highlights - Bugfix Release (v3.1.9.1)
+## Highlights - Hotfix Release (v3.1.9.1)
 
-* Bugfix release for A3 FW 1.5.0.0 (users on M100 or older versions of A3 (< 1.3.0.0) will have the same functionality as before)
+* Hotfix release for A3 FW 1.5.0.0 (users on M100 or older versions of A3 (< 1.3.0.0) will have the same functionality as before)
 * Fixes activation, version checks, obtain/release control that might have broken for some users on the latest A3 firmware.
 * Introduces a new version macro - versionA3_32 - that users with the 1.5.0.0 FW should enter into their UserConfig file (or in the GUI for Qt)
 * A non-A3 specific bug has been fixed related to Qt sample compilation issues. 
