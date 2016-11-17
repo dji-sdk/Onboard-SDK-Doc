@@ -7,10 +7,10 @@ keywords: [Precision Trajectory, Mission Planning, Velodyne Puck Lite LiDAR]
 
 ## Highlights - Hotfix Release (v3.1.9.1)
 
-* Hotfix release for A3 FW 1.5.0.0 (users on M100 or older versions of A3 (< 1.3.0.0) will have the same functionality as before)
+* Hotfix release for A3 FW 1.5.0.0.  
 * Fixes activation, version checks, obtain/release control that might have broken for some users on the latest A3 firmware.
 * Introduces a new version macro - versionA3_32 - that users with the 1.5.0.0 FW should enter into their UserConfig file (or in the GUI for Qt)
-* A non-A3 specific bug has been fixed related to Qt sample compilation issues. 
+* A non-A3-specific bug has been fixed related to Qt sample compilation issues. Apart from this change, there are no other changes for users on M100 or older versions of A3 (< 1.3.0.0).
 
 #### Notes for using Onboard SDK with the new A3 v1.5.0.0 FW
 * Starting with this firmware, A3 units will respond differently to flight mode switch positions. The default switch positions of (P,A,F) have been replaced by (P,S,A) respectively.  
