@@ -182,6 +182,8 @@ Due to encryption process, data need to be aligned into blocks and each one cont
 
 On the other hand, there is no need to encrypt data, when developers use a serial cable to connect OES and autopilot. In this case, just set 'ENC' to '0'.
 
+> Note: By default, encryption is turned OFF in the SDK. Enable it by going to DJI_Config.h and uncommenting the USE_ENCRYPT macro.
+
 ---
 
 ## CMD Set & CMD ID
@@ -691,7 +693,6 @@ Please make sure the following conditions have been met:
 
 Due to the consideration of safety, all requests of obtain control and release control need to be sent **twice** and the first ACK will be fail. In our official library, we have already implemented this feature.
 
-**IMPORTANT! After the release of firmware 3.0, the drone will enter F mode logic directly if the mode bar is placed at F when power on. Developers do not need to switch away then back to F mode logic as the way in firmware 2.3. Please pay attention to this change if you are upgrading from 2.3.**  
 
 <table>
 <tr>
@@ -716,7 +717,7 @@ Due to the consideration of safety, all requests of obtain control and release c
   <td>0</td>
   <td>2</td>
   <td>Return Code <ul>
-    <li>0x0000: the mode selection bar of the remote controller is not placed at the F position</li>
+    <li>0x0000: the mode selection bar of the remote controller is not placed at the F mode position (<a href="../appendix/releaseNotes.html#Notes-for-using-Onboard-SDK-with-the-new-a3-v1-5-0-0-fw">P mode for A3 FW > 1.5.0.0</a>)</li>
     <li>0x0001: successfully released control authorization</li>
     <li>0x0002: successfully obtained control authorization</li>
     <li>0x0003: failed obtained control authorization</li>

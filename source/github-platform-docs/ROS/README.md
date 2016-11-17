@@ -11,7 +11,6 @@ keywords: [ros example]
 This ROS example implements functionality of the DJI Onboard-SDK. It consists of the core library and client packages demonstrating communication with Matrice 100 and A3 flight controllers. The flight controller type can be defined in the launch file of the core package at any time. Onboard SDK functionality offered in a wrapped header file called dji\_drone.h which user can include and use directly for his/her own demo applications. We also provide a python version called dji\_drone.py. To have our samples run as quickly as possible, we implemented a sample code for hardware driver that you can use as is to ensure safe serial communication between your flight controller and an Onboard Embedded System (OES) of your choice.
 
 
-
 Supported commands and  actions:
 
 * Activation
@@ -59,8 +58,8 @@ Tested Environment:
 
 * Operating System: Ubuntu 14.04, Manifold
 * ROS version: ROS Indigo
-> **Note:** OnboardSDK ROS Library has also been beta tested with Ubuntu Xenial 16.04LTS and ROS Kinetic Kame. We currently do not support `rosinstall` or `apt-get` for this configuration.   
-> **Note:** OnboardSDK ROS Library has also been beta tested with the DJI A3 Flight Controller. 
+> **Note:** Onboard SDK ROS has also been beta tested with Ubuntu Xenial 16.04LTS and ROS Kinetic Kame. We currently do not support `rosinstall` or `apt-get` for this configuration.   
+> **Note:** Onboard SDK ROS does not currently support A3 FW 1.5.0.0.
 
 Software Requirements:
 

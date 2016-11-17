@@ -17,6 +17,8 @@ The user sends commands to the USART2 port of the STM32 from a serial terminal. 
 
 Before using this example App, make sure you have followed the [Quick Start](../../quick-start/index.html) and have valid APP KEY and APP ID.
 
+> Note: The STM32 sample app does not currently support A3 FW 1.5.0.0.
+
 ## Setup
 
 ### Hardware Installation
