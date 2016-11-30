@@ -21,11 +21,11 @@ For the detailed function logic, please refer to the [Ground Station Programming
         <td rowspan="20">0x03</td>
         <td rowspan="8">Waypoint</td>
         <td>0x10</td>
-        <td>upload waypoint task data</td>
+        <td>upload waypoint mission settings</td>
     </tr>
     <tr>
         <td>0x11</td>
-        <td>upload tde waypoint data witd certain index</td>
+        <td>upload waypoint data</td>
     </tr>
     <tr>
         <td>0x12</td>
@@ -37,11 +37,11 @@ For the detailed function logic, please refer to the [Ground Station Programming
     </tr>
     <tr>
         <td>0x14</td>
-        <td>download waypoint task data</td>
+        <td>read waypoint init status (available in 3.2 release)</td>
     </tr>
     <tr>
         <td>0x15</td>
-        <td>download certain waypoint data witd given index</td>
+        <td>read single waypoint status (available in 3.2 release)</td>
     </tr>
     <tr>
         <td>0x16</td>
@@ -49,12 +49,12 @@ For the detailed function logic, please refer to the [Ground Station Programming
     </tr>
     <tr>
         <td>0x17</td>
-        <td>read waypoint mission idle velocity</td>
+        <td>get waypoint mission idle velocity</td>
     </tr>
     <tr>
         <td rowspan="8">Hotpoint</td>
         <td>0x20 </td>
-        <td>upload hotpoint data and start hotpoint mission</td>
+        <td>upload hotpoint data and start the mission</td>
     </tr>
     <tr>
         <td>0x21</td>
@@ -78,16 +78,16 @@ For the detailed function logic, please refer to the [Ground Station Programming
     </tr>
     <tr>
         <td>0x26</td>
-        <td>download hotpoint mission data</td>
+        <td>read hotpoint info from flight controller</td>
     </tr>
     <tr>
         <td>0x27</td>
-        <td>enable auto-radius mode</td>
+        <td>enable auto-radius mode (not available)</td>
     </tr>
     <tr>
         <td rowspan="4">Follow me</td>
         <td>0x30</td>
-        <td>upload follow me data and start</td>
+        <td>upload follow me data and start the mission</td>
     </tr>
     <tr>
         <td>0x31</td>
@@ -99,7 +99,7 @@ For the detailed function logic, please refer to the [Ground Station Programming
     </tr>
     <tr>
         <td>0x33</td>
-        <td>upload tde target data of follow me</td>
+        <td>update target position</td>
     </tr>
     <tr>
         <td>0x02</td>
@@ -122,102 +122,95 @@ For the detailed function logic, please refer to the [Ground Station Programming
 
 ---
 
-### 0x03, 0x10: upload waypoint task data
+### 0x03, 0x10: Upload Waypoint Mission Settings
 
 Request:
 
 ```c
 typedef struct {
 
-    uint8_t length;//count of waypoints
-    float vel_cmd_range;//Maximum speed joystick input(2~15m)
-    float idle_vel;//Cruising Speed (without joystick input, no more than vel_cmd_range)
-    uint8_t action_on_finish;//Action on finish
+    uint8_t indexNumber;    //Total number of waypoints
+    float32_t maxVelocity;  //Maximum speed joystick input(2~15m)
+    float32_t idleVelocity; //Cruising Speed (without joystick input, no more than vel_cmd_range)
+    uint8_t finishAction;   //Action on finish
                             //0: no action
                             //1: return to home
                             //2: auto landing
                             //3: return to point 0
                             //4: infinite mode， no exit
-    uint8_t mission_exec_num;//Function execution times
+    uint8_t executiveTimes;//Function execution times
                             //1: once
                             //2: twice
-    uint8_t yaw_mode;//Yaw mode
-                    //0: auto mode(point to next waypoint)
-                    //1: Lock as an initial value
-                    //2: controlled by RC
-                    //3: use waypoint's yaw(tgt_yaw)
-    uint8_t trace_mode;//Trace mode
-                    //0: point to point, after reaching the target waypoint hover, complete waypoints action (if any), then fly to the next waypoint
-                    //1: Coordinated turn mode, smooth transition between waypoints, no waypoints task
-    uint8_t action_on_rc_lost;//Action on rc lost
+    uint8_t yawMode;        //Yaw mode
+                            //0: auto mode(point to next waypoint)
+                            //1: lock as an initial value
+                            //2: controlled by RC
+                            //3: use waypoint's yaw(tgt_yaw)
+    uint8_t traceMode;      //Trace mode
+                            //0: point to point, after reaching the target waypoint hover, complete waypoints 
+                            //action (if any), then fly to the next waypoint
+                            //1: Coordinated turn mode, smooth transition between waypoints, no waypoints task
+    uint8_t RCLostAction;   //Action on rc lost
                             //0: exit waypoint and failsafe
                             //1: continue the waypoint
-    uint8_t gimbal_pitch_mode;//Gimbal pitch mode
-                            //0: Free mode, no control on gimbal
-                            //1: Auto mode, Smooth transition between waypoints
-    double hp_lati;//Focus latitude (radian)
-    double hp_longti;//Focus longitude (radian)
-    float hp_alti;//Focus altitude (relative takeoff point height)
-    uint8_t resv[16];//reserved, must be set as 0
+    uint8_t gimbalPitch;    //Gimbal pitch mode
+                            //0: free mode, no control on gimbal
+                            //1: auto mode, Smooth transition between waypoints
+    float64_t latitude;     //Focus latitude (radian)
+    float64_t longtitude;   //Focus longitude (radian)
+    float32_t altitude;     //Focus altitude (relative takeoff point height)
+    uint8_t reserved[16];   //Reserved, must be set to 0
     
-}waypoint_mission_info_comm_t;
+} WayPointInitData;
 ```
 
 ACK: `uint8_t`
 
 **Note:** The ACK of task upload is always 0. Developers should check the task parameter by themselves, otherwise error code 0xEA will appear when trying to upload waypoints' data.
 
-### 0x03, 0x11: upload the waypoint data with certain index
+### 0x03, 0x11: Upload Waypoint Data
 
 Request:
 
 ```c
 typedef struct {
-    double latitude;//waypoint latitude (radian)
-    double longitude;//waypoint longitude (radian)
-    float altitude;//waypoint altitude (relative altitude from takeoff point)
-    float damping_dis;//bend length (effective coordinated turn mode only)
-    int16_t tgt_yaw;//waypoint yaw (degree)
-    int16_t tgt_gimbal_pitch;//waypoint gimbal pitch
-    uint8_t turn_mode;//turn mode
-                    //0: clockwise
-                    //1: counter-clockwise
-    uint8_t resv[8];//reserved
-    
-    uint8_t has_action;//waypoint action flag
-                    //0: no action
-                    //1: has action
-    uint16_t action_time_limit;//waypoint action time limit unit:s
-    waypoint_action_comm_t action;//waypoint action
 
-} waypoint_comm_t
+    uint8_t index;                //Index to be uploaded
+    float64_t latitude;           //Latitude (radian)
+    float64_t longitude;          //Longitude (radian)
+    float32_t altitude;           //Altitude (relative altitude from takeoff point)
+    float32_t damping;            //Bend length (effective coordinated turn mode only)
+    int16_t yaw;                  //Yaw (degree)
+    int16_t gimbalPitch;          //Gimbal pitch
+    uint8_t turnMode;             //Turn mode
+                                  //0: clockwise
+                                  //1: counter-clockwise
+    uint8_t reserved[8];          //Reserved
+    uint8_t hasAction;            //Action flag
+                                  //0: no action
+                                  //1: has action
+    uint16_t actionTimeLimit;     //Action time limit
+    uint8_t actionNumber : 4;     //Total number of actions
+    uint8_t actionReapeat : 4;    //Total running times
+    uint8_t commandList[16];      //Command list
+    uint16_t commandParameter[16];//Command parameters
 
+} WayPointData;
 ```
 
 ACK:
 
 ```c
-struct waypoint_upload_ack{
+typedef struct{
+
     uint8_t ack;
     uint8_t index;
-};
-```
-    
+    WayPointData data;
 
-For the waypoint action:
-
-```c
-typedef struct {
-    uint8_t action_num :4;//total number of actions
-    uint8_t action_rpt :4;//total running times
-    
-    uint8_t command_list[15];//command list, 15 at most
-    int16_t command_param[15];//command param, 15 at most
-
-}waypoint_action_comm_t
+} WayPointDataACK;
 ```
 
-There are totally six kinds of actions as follows, which should be set in `command_list`.
+There are totally six kinds of actions as follows, which should be set in `commandList`.
 
 
 |Commands|Commands value|Command param|Description|
@@ -231,7 +224,7 @@ There are totally six kinds of actions as follows, which should be set in `comma
 
 **Note:** The controller will valid all waypoints' data together after the last one uploaded, which means if there exist at least one invalid waypoint information, the waypoint upload ACK of the last one will be with a error code. 
 
-### 0x03, 0x12: start/stop waypoint mission
+### 0x03, 0x12: Start/Stop Waypoint Mission
 
 Request:
 
@@ -241,7 +234,7 @@ uint8_t start;//0-> start, 1-> cancel
 
 ACK: `uint8_t`
 
-### 0x03, 0x13: pause/resume waypoint mission
+### 0x03, 0x13: Pause/Resume Waypoint Mission
 
 Request:
 
@@ -252,7 +245,7 @@ uint8_t pause;//0-> pause, 1-> resume
 ACK: `uint8_t`
 
 
-### 0x03, 0x14: download waypoint task
+### 0x03, 0x14: Read Waypoint Init Status (Available in 3.2 Release)
 
 Request:
 
@@ -261,13 +254,15 @@ Request:
 ACK:
 
 ```c
-struct waypoint_task_download_ack{
+typedef struct{
+
     uint8_t ack;
-    waypoint_mission_info_comm_t wp_task;//defined in previous part
-};
+    WayPointInitData data;
+
+} WayPointInitACK;
 ```
 
-### 0x03, 0x15: download a certain waypoint
+### 0x03, 0x15: Read Single Waypoint Status (Available in 3.2 Release)
 
 Request:
 
@@ -278,31 +273,35 @@ uint8_t index;
 ACK:
 
 ```c
-struct waypoint_download_ack{
+typedef struct{
+
     uint8_t ack;
     uint8_t index;
-    waypoint_comm_t wp_data;//defined in previous
-};
+    WayPointData data;
+
+} WayPointDataACK;
 ```
 
-### 0x03, 0x16: set idle velocity
+### 0x03, 0x16: Set Idle Velocity
 
 Request:
 
 ```c
-float idle_veloctity;
+float32_t idleVeloctity;
 ```
 
 ACK:
 
 ```c
-struct waypoint_set_vel_ack{
+typedef struct{
+
     uint8_t ack;
-    float idle_velocity;
-};
+    float32_t idleVelocity;
+
+} WayPointVelocityACK;
 ```
 
-### 0x03, 0x17: read idle velocity
+### 0x03, 0x17: Get Idle Velocity
 
 Request:
 
@@ -311,54 +310,59 @@ Request:
 ACK:
 
 ```c
-struct waypoint_read_vel_ack{
+typedef struct{
+
     uint8_t ack;
-    float idle_velocity;
-};
+    float32_t idleVelocity;
+
+} WayPointVelocityACK;
+
 ```
 
 
-### 0x03, 0x20: upload and start hotpoint task
+### 0x03, 0x20: Upload And Start Hotpoint Mission
 
 Request:
 
 ```c
 typedef struct{
-    uint8_t version;//reserved, kept as 0
-    double hp_latitude;//Hotpoint latitude (radian)
-    double hp_longitude;//Hotpoint longitude (radian)
-    double hp_altitude;//Hotpoint altitude (relative altitude from takeoff point
-    double hp_radius;//Hotpoint radius (5m~500m)
-    float angle_rate;//Angle rate (0~30°/s)
-    uint8_t is_clockwise;// 0->fly in counter-clockwise direction, 1->clockwise direction
-    uint8_t start_point_position;//start point position
-                                //0: north to the hot point
-                                //1: south to the hot point
-                                //2: west to the hot point
-                                //3: east to the hot point
-                                //4: from current position to nearest point on the hot point
-    uint8_t yaw_mode;//yaw mode
-                    //0: point to velocity direction
-                    //1: face inside
-                    //2: face ouside
-                    //3: controlled by RC
-                    //4: same as the starting yaw
-    
-    uint8_t reserved[11];//reserved
 
-} hotpoint_mission_setting_t;
+    uint8_t version;     //Reserved, kept as 0
+    float64_t latitude;  //Latitude (radian)
+    float64_t longitude; //Longitude (radian)
+    float64_t altitude;  //Altitude (relative altitude from takeoff point
+    float64_t radius;    //Radius (5m~500m)
+    float32_t yawRate;   //Angle rate (0~30°/s)
+    uint8_t clockwise;   // 0->fly in counter-clockwise direction, 1->clockwise direction
+    uint8_t startPoint;  //Start point position
+                         //0: north to the hot point
+                         //1: south to the hot point
+                         //2: west to the hot point
+                         //3: east to the hot point
+                         //4: from current position to nearest point on the hot point
+    uint8_t yawMode;     //Yaw mode
+                         //0: point to velocity direction
+                         //1: face inside
+                         //2: face ouside
+                         //3: controlled by RC
+                         //4: same as the starting yaw
+    uint8_t reserved[11];//Reserved
+
+} HotPointData;
 ```
 
 ACK:
 
 ```c
-struct hotpoint_upload_ack{
+typedef struct{
+
     uint8_t ack;
-    float max_radius;
-};
+    float32_t maxRadius;
+
+} HotPointStartACK;
 ```
 
-### 0x03, 0x21: stop hotpoint mission
+### 0x03, 0x21: Stop Hotpoint Mission
 
 Request:
 
@@ -366,7 +370,7 @@ Request:
 
 ACK: `uint8_t`
 
-### 0x03, 0x22: pause hotpoint mission
+### 0x03, 0x22: Pause Hotpoint Mission
 
 Request:
 
@@ -376,28 +380,31 @@ uint8_t pause; //0->pause, 1->resume
 
 ACK: `uint8_t`
 
-### 0x03, 0x23: set hotpoint idle velocity
+### 0x03, 0x23: Set Hotpoint Idle Velocity
+
 
 ```c
 typedef struct{
-    uint8_t is_clockwise;
-    float idle_velocity;
-}hotpoint_set_vel_t;
+
+   uint8_t clockwise;
+   float32_t yawRate;
+
+} YawRate;
 ```
 
 ACK: `uint8_t`
 
-### 0x03, 0x24: set hotpoint radius
+### 0x03, 0x24: Set Hotpoint Radius
 
 Request:
 
 ```c
-float radius;
+float32_t radius;
 ```
 
 ACK: `uint8_t`
 
-### 0x03, 0x25: reset hotpoint yaw
+### 0x03, 0x25: Reset Hotpoint Yaw
 
 Requset:
 
@@ -405,7 +412,7 @@ Requset:
 
 ACK: `uint8_t`
 
-### 0x03, 0x26: download hotpoint task
+### 0x03, 0x26: Read Hotpoint Task Info From Flight Controller
 
 Request:
 
@@ -414,13 +421,15 @@ Request:
 ACK:
 
 ```c
-struct hotpoint_download_ack {
+typedef struct{
+
     uint8_t ack;
-    hotpoint_mission_setting_t hotpoint_task;
-};
+    HotPointData data;
+
+} HotPointReadACK;
 ```
 
-### 0x03, 0x27：enable auto-radius mode
+### 0x03, 0x27：Enable Auto-Radius Mode (Not Available)
 
 Request:
 
@@ -433,27 +442,37 @@ struct hotpoint_auto_radius {
 
 ACK: `uint8_t`
 
-### 0x03, 0x30: upload and start follow me task
+### 0x03, 0x30: Upload And Start Follow Me Mission
 
 Request:
 
 ```c
 typedef struct{
-    uint8_t follow_mode;// follow mode(reserved), set as 0
-    uint8_t yaw_mode;//yaw mode
-                    //1: point to target
-                    //0: controlled by RC
-    double init_latitude;//initial position latitude (radian)
-    double init_longitude;//initial position longitude (radian)
-    uint16_t init_alti;//initial position altitude
-    uint16_t init_mag_angle;//reserved
-    uint8_t follow_sensitivity;//reserved, set as 0
-}follow_me_mission_setting_t;
+
+    uint8_t mode;       //Follow mode(reserved), set as 0
+    uint8_t yaw;        //Yaw mode
+                        //1: point to target
+                        //0: controlled by RC
+    TargetData target;  //Target
+    uint8_t sensitivity;//reserved, set as 0
+
+} FollowData;
+```
+
+```c
+typedef struct TargetData{
+
+    float64_t latitude; //Initial position latitude (radian)
+    float64_t longitude;//Initial position longitude (radian)
+    uint16_t height;    //Initial position altitude
+    uint16_t angle;     //Reserved
+
+} TargetData;
 ```
 
 ACK: `uint8_t`
 
-### 0x03, 0x31: stop follow me task
+### 0x03, 0x31: Stop Follow Me Mission
 
 Request:
 
@@ -461,7 +480,7 @@ Request:
 
 ACK: `uint8_t`
 
-### 0x03, 0x32: pause/resume follow me task
+### 0x03, 0x32: Pause/Resume Follow Me Mission
 
 Request:
 
@@ -471,18 +490,19 @@ uint8_t pause; //0->pause, 1->resume
 
 ACK: `uint8_t`
 
-### 0x03, 0x33: update target position
+### 0x03, 0x33: Update Target Position
 
 Request:
  
 ```c
-typedef struct{
-    double latitude; //Target latitude (radian)
-    double longitude;//Target longitude (radian)
-    uint16_t altitude;//Target altitude
-    uint16_t mag_angle;//reserved
+typedef struct TargetData{
 
-}cmd_mission_follow_target_info;
+    float64_t latitude; //Initial position latitude (radian)
+    float64_t longitude;//Initial position longitude (radian)
+    uint16_t height;    //Initial position altitude
+    uint16_t angle;     //Reserved
+
+} TargetData;
 ```
 
 NO ACK
