@@ -1354,8 +1354,8 @@ For more info about Ground Station, please refer to [Ground Station Protocol](..
 <tr>
   <td >CMD Val</td>
   <td>0</td>
-  <td>*</td>
-  <td>waypoint_mission_info_comm_t</td>
+  <td>51</td>
+  <td>WayPointInitData</td>
   <td>waypoint mission information</td>
 </tr>
 <tr>
@@ -1393,8 +1393,8 @@ For more info about Ground Station, please refer to [Ground Station Protocol](..
 </tr>
 <tr>
   <td>1</td>
-  <td>*</td>
-  <td>waypoint_comm_t</td>
+  <td>90</td>
+  <td>WayPointData</td>
   <td>waypoint information</td>
 </tr>
 <tr>
@@ -1494,7 +1494,7 @@ For more info about Ground Station, please refer to [Ground Station Protocol](..
 </tr>
 </table>
 
-#### CMD ID 0x14 Download waypoint info
+#### CMD ID 0x14 Read Waypoint Init Status (Available in 3.2 Release)
 
 <table>
 <tr>
@@ -1524,13 +1524,13 @@ For more info about Ground Station, please refer to [Ground Station Protocol](..
 </tr>
 <tr>
   <td>1</td>
-  <td>*</td>
-  <td>waypoint_mission_info_comm_t</td>
-  <td>waypoint mission information</td>
+  <td>51</td>
+  <td>WayPointInitData</td>
+  <td>waypoint initialized mission information</td>
 </tr>
 </table>
 
-#### CMD ID 0x15 Download index waypoint
+#### CMD ID 0x15 Read Single Waypoint Status (Available in 3.2 Release)
 
 <table>
 <tr>
@@ -1566,9 +1566,9 @@ For more info about Ground Station, please refer to [Ground Station Protocol](..
 </tr>
 <tr>
   <td>3</td>
-  <td>*</td>
-  <td>waypoint_commt_t</td>
-  <td>waypoint information</td>
+  <td>90</td>
+  <td>WayPointData</td>
+  <td>waypoint index information</td>
 </tr>
 </table>
 
