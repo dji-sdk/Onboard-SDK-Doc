@@ -1933,8 +1933,8 @@ For more info about Ground Station, please refer to [Ground Station Protocol](..
 <tr>
   <td>CMD Val</td>
   <td>0</td>
-  <td>*</td>
-  <td>follow_me_mission_setting_t</td>
+  <td>23</td>
+  <td>FollowData</td>
   <td>follow me settings</td>
 </tr>
 
@@ -2045,8 +2045,8 @@ For more info about Ground Station, please refer to [Ground Station Protocol](..
 <tr>
   <td>ACK Val</td>
   <td>0</td>
-  <td>*</td>
-  <td>cmd_mission_follow_target_info</td>
+  <td>20</td>
+  <td>FollowTarget</td>
   <td>target information</td>
 </tr>
 </table>
