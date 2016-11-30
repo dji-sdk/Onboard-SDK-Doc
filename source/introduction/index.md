@@ -353,7 +353,7 @@ Each CMD Set contains some CMD IDs for different operations.
 </tr>
 <tr>
   <td>0x26</td>
-  <td>Download hotpoint info</td>
+  <td>Read HotPoint info from flight controller</td>
 </tr>
 <tr>
    <td>0x27</td>
@@ -1655,9 +1655,9 @@ For more info about Ground Station, please refer to [Ground Station Protocol](..
 <tr>
   <td >CMD Val</td>
   <td>0</td>
-  <td>*</td>
-  <td>hotpoint_mission_setting_t</td>
-  <td>hotpoint settings</td>
+  <td>51</td>
+  <td>HotPointData</td>
+  <td>hotpoint mission settings</td>
 </tr>
 <tr>
   <td>ACK Val</td>
@@ -1845,7 +1845,7 @@ For more info about Ground Station, please refer to [Ground Station Protocol](..
 </tr>
 </table>
 
-#### CMD ID 0x26 Download hotpoint task info
+#### CMD ID 0x26 Read Hotpoint Task Info From Flight Controller
 
 <table>
 <tr>
@@ -1876,9 +1876,9 @@ For more info about Ground Station, please refer to [Ground Station Protocol](..
 </tr>
 <tr>
   <td>1</td>
-  <td>*</td>
-  <td>hotpoint_mission_setting_t</td>
-  <td>hotpoint settings</td>
+  <td>51</td>
+  <td>HotPointData</td>
+  <td>hotpoint mission settings</td>
 </tr>
 </table>
 
