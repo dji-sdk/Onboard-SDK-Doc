@@ -37,11 +37,11 @@ For the detailed function logic, please refer to the [Ground Station Programming
     </tr>
     <tr>
         <td>0x14</td>
-        <td>read waypoint init status (available in 3.2 release)</td>
+        <td>read waypoint init status (available in upcoming 3.2 release)</td>
     </tr>
     <tr>
         <td>0x15</td>
-        <td>read single waypoint status (available in 3.2 release)</td>
+        <td>read single waypoint status (available in upcoming 3.2 release)</td>
     </tr>
     <tr>
         <td>0x16</td>
@@ -245,7 +245,7 @@ uint8_t pause;//0-> pause, 1-> resume
 ACK: `uint8_t`
 
 
-### 0x03, 0x14: Read Waypoint Init Status (Available in 3.2 Release)
+### 0x03, 0x14: Read Waypoint Init Status (Available in upcoming 3.2 Release)
 
 Request:
 
@@ -262,7 +262,7 @@ typedef struct{
 } WayPointInitACK;
 ```
 
-### 0x03, 0x15: Read Single Waypoint Status (Available in 3.2 Release)
+### 0x03, 0x15: Read Single Waypoint Status (Available in upcoming 3.2 Release)
 
 Request:
 
@@ -429,7 +429,7 @@ typedef struct{
 } HotPointReadACK;
 ```
 
-### 0x03, 0x27：Enable Auto-Radius Mode (Not Available)
+### 0x03, 0x27：Enable Auto-Radius Mode
 
 Request:
 
