@@ -10,7 +10,7 @@ keywords: [ADS-B receiver, pingRX]
 
 This example demonstrates how to [integrate the Ping ADS-B receiver by uAvionix with the DJI onboard SDK and mobile SDK](http://www.dji.com/newsroom/news/dji-and-uavionix-to-release-ads-b-collision-avoidance-developer-kit.html). 
 
-The small and light-weight [pingRX](http://www.midatlanticmultirotor.com/product/ping/) ADS-B receiver allows the drone to receive realtime traffic information broadcasted by other manned or unmanned aircraft, as well as temporary flight restriction (TFR) information brocasted by the goverment. With this type of situation awareness, the onboard embedded system (OES) will be able to make some safety-critical decisions like collision avoidance or self separation.
+The small and light-weight [pingRX](http://www.uavionix.com/products/pingrx/) ADS-B receiver allows the drone to receive realtime traffic information broadcasted by other manned or unmanned aircraft, as well as temporary flight restriction (TFR) information brocasted by the goverment. With this type of situation awareness, the onboard embedded system (OES) will be able to make some safety-critical decisions like collision avoidance or self separation.
 
 ![PingMap](../../images/Ping/PingMap.png)
 
