@@ -296,11 +296,11 @@ Each CMD Set contains some CMD IDs for different operations.
 <tr>
   <td rowspan="8">0x03<br>Ground Station CMD Set<br>Waypoint</td>
   <td>0x10</td>
-  <td>Upload waypoint info</td>
+  <td>Upload Waypoint Mission Settings</td>
 </tr>
 <tr>
   <td>0x11</td>
-  <td>Upload waypoint</td>
+  <td>Upload Waypoint Data</td>
 </tr>
 <tr>
   <td>0x12</td>
@@ -312,11 +312,11 @@ Each CMD Set contains some CMD IDs for different operations.
 </tr>
 <tr>
   <td>0x14</td>
-  <td>Download waypoint info</td>
+  <td>Read Waypoint Init Status (Available In 3.2 Release)</td>
 </tr>
 <tr>
   <td>0x15</td>
-  <td>Download index waypoint</td>
+  <td>Read Single Waypoint Status (Available In 3.2 Release)</td>
 </tr>
 <tr>
   <td>0x16</td>
@@ -353,7 +353,7 @@ Each CMD Set contains some CMD IDs for different operations.
 </tr>
 <tr>
   <td>0x26</td>
-  <td>Download hotpoint info</td>
+  <td>Read HotPoint info from flight controller</td>
 </tr>
 <tr>
    <td>0x27</td>
@@ -1340,7 +1340,7 @@ For more info about Ground Station, please refer to [Ground Station Protocol](..
 
 For more info about Ground Station, please refer to [Ground Station Protocol](../introduction/ground-station-protocol.html).  
 
-#### CMD ID 0x10 Upload waypoint info
+#### CMD ID 0x10 Upload Waypoint Mission Settings
 
 <table>
 <tr>
@@ -1354,8 +1354,8 @@ For more info about Ground Station, please refer to [Ground Station Protocol](..
 <tr>
   <td >CMD Val</td>
   <td>0</td>
-  <td>*</td>
-  <td>waypoint_mission_info_comm_t</td>
+  <td>51</td>
+  <td>WayPointInitData</td>
   <td>waypoint mission information</td>
 </tr>
 <tr>
@@ -1393,12 +1393,12 @@ For more info about Ground Station, please refer to [Ground Station Protocol](..
 </tr>
 <tr>
   <td>1</td>
-  <td>*</td>
-  <td>waypoint_comm_t</td>
+  <td>90</td>
+  <td>WayPointData</td>
   <td>waypoint information</td>
 </tr>
 <tr>
-  <td>ACK Val</td>
+  <td rowspan="3">ACK Val</td>
   <td>0</td>
   <td>1</td>
   <td>uint8_t</td>
@@ -1415,8 +1415,19 @@ For more info about Ground Station, please refer to [Ground Station Protocol](..
     <li>0xE8: waypoint action data invaild</li>
     <li>0xE9: missing remaining waypoint</li>
     <li>0xEA: waypoint info not upload </li>
-  </ul></td>
-  
+    </ul></td>
+</tr>
+<tr>
+  <td>0</td>
+  <td>1</td>
+  <td>uint8_t</td>
+  <td>waypoint index</td>
+</tr>
+<tr>
+  <td>3</td>
+  <td>90</td>
+  <td>WayPointData</td>
+  <td>waypoint index information</td>
 </tr>
 </table>
 
@@ -1494,7 +1505,7 @@ For more info about Ground Station, please refer to [Ground Station Protocol](..
 </tr>
 </table>
 
-#### CMD ID 0x14 Download waypoint info
+#### CMD ID 0x14 Read Waypoint Init Status (Available in 3.2 Release)
 
 <table>
 <tr>
@@ -1524,13 +1535,13 @@ For more info about Ground Station, please refer to [Ground Station Protocol](..
 </tr>
 <tr>
   <td>1</td>
-  <td>*</td>
-  <td>waypoint_mission_info_comm_t</td>
-  <td>waypoint mission information</td>
+  <td>51</td>
+  <td>WayPointInitData</td>
+  <td>waypoint initialized mission information</td>
 </tr>
 </table>
 
-#### CMD ID 0x15 Download index waypoint
+#### CMD ID 0x15 Read Single Waypoint Status (Available in 3.2 Release)
 
 <table>
 <tr>
@@ -1566,9 +1577,9 @@ For more info about Ground Station, please refer to [Ground Station Protocol](..
 </tr>
 <tr>
   <td>3</td>
-  <td>*</td>
-  <td>waypoint_commt_t</td>
-  <td>waypoint information</td>
+  <td>90</td>
+  <td>WayPointData</td>
+  <td>waypoint index information</td>
 </tr>
 </table>
 
@@ -1655,9 +1666,9 @@ For more info about Ground Station, please refer to [Ground Station Protocol](..
 <tr>
   <td >CMD Val</td>
   <td>0</td>
-  <td>*</td>
-  <td>hotpoint_mission_setting_t</td>
-  <td>hotpoint settings</td>
+  <td>51</td>
+  <td>HotPointData</td>
+  <td>hotpoint mission settings</td>
 </tr>
 <tr>
   <td>ACK Val</td>
@@ -1845,7 +1856,7 @@ For more info about Ground Station, please refer to [Ground Station Protocol](..
 </tr>
 </table>
 
-#### CMD ID 0x26 Download hotpoint task info
+#### CMD ID 0x26 Read Hotpoint Task Info From Flight Controller
 
 <table>
 <tr>
@@ -1876,9 +1887,9 @@ For more info about Ground Station, please refer to [Ground Station Protocol](..
 </tr>
 <tr>
   <td>1</td>
-  <td>*</td>
-  <td>hotpoint_mission_setting_t</td>
-  <td>hotpoint settings</td>
+  <td>51</td>
+  <td>HotPointData</td>
+  <td>hotpoint mission settings</td>
 </tr>
 </table>
 
@@ -1933,8 +1944,8 @@ For more info about Ground Station, please refer to [Ground Station Protocol](..
 <tr>
   <td>CMD Val</td>
   <td>0</td>
-  <td>*</td>
-  <td>follow_me_mission_setting_t</td>
+  <td>23</td>
+  <td>FollowData</td>
   <td>follow me settings</td>
 </tr>
 
@@ -2045,8 +2056,8 @@ For more info about Ground Station, please refer to [Ground Station Protocol](..
 <tr>
   <td>ACK Val</td>
   <td>0</td>
-  <td>*</td>
-  <td>cmd_mission_follow_target_info</td>
+  <td>20</td>
+  <td>FollowTarget</td>
   <td>target information</td>
 </tr>
 </table>
