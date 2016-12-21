@@ -94,10 +94,10 @@
       title: Ping ADS-B
       path: /sensor-integration-guides/ping/README.html
 -
-  title: Modules
+  title: Advanced Features
   list:
   -
-    title: Precision Trajectory Mission Planning
+    title: Precision Missions
     list:
       -
         title: Library
@@ -105,6 +105,12 @@
       -
         title: SketchUp Extension
         path: /modules/missionplan/sketchup.html
+  -
+    title: Collision Avoidance
+    path: /modules/collision-avoidance/collision-avoidance.html
+  -
+    title: LiDAR Mapping
+    path: /modules/lidar-mapping/lidar-mapping.html
 -
   title: APPENDIX
   list:
