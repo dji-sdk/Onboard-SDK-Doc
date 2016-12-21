@@ -9,19 +9,27 @@ github: https://github.com/dji-sdk/Onboard-SDK/tree/3.1/tools/localMissionPlanni
 
 ## Introduction
 
-With the Onboard SDK Precision Trajectory Mission Planning suite, DJI developers can now plan complex missions without having to use GPS waypoints. The new DJI Precision Trajectory Mission Planning library has the flexibility to deal with complicated trajectories, issues with GPS accuracy and cases when GPS is simply unavailable. 
+With the Onboard SDK Precision Missions suite, DJI developers can now plan complex missions without having to chain together waypoint and hotpoint missions that were not meant for precise, complex maneuvers.
+ 
+The new DJI Precision Missions library has the flexibility to deal with complicated trajectories, issues with GPS accuracy and cases when GPS is simply unavailable. 
 
 For inspection applications like powerlines, towers and buildings, the ability to visualize and plan a smooth, precise trajectory that fully covers the points of interest on your structure can be the difference between actionable data and merely beautiful footage.
 
-The precision trajectory mission planning interface opens up an exciting new paradigm for planning missions - think shapes and actions, not waypoints. Release 3.1.9 of the Onboard SDK provides a beta version of this library that allows you to plan and execute geolocated spiral trajectories around infrastructure.
+The precision missions planning interface opens up an exciting new paradigm for planning missions - think shapes and sensor actions, not waypoints. Release 3.2 of the Onboard SDK provides an improved version of this library that allows you to plan and execute geolocated spiral trajectories around infrastructure. A number of bugs have been ironed out and the suite has been made robust. 
+
 
 ### Features
 
 * Trajectory following library that can autonomously execute preplanned smooth spiral trajectories
 * SketchUp plugin to visualize trajectories, import 3D CAD models and geolocate the scene
 * Configurable speed, start/end radii and pitch for the spiral
+* Configurable GPS location for the spiral - plan one spiral for multiple similar structures 
 * Start your drone from anywhere - real-time path planning to get to the trajectory's GPS location 
 * Integration with DJI Assistant 2 to visualize simulations of the drone following the trajectory in the SketchUp scene
+* **New for OSDK 3.2**: Progress bar for the trajectory
+* **New for OSDK 3.2**: Full M600 support, and custom vehicle configuration support - tune the controller gains for your aircraft with our JSON interface.
+* **New for OSDK 3.2**: If you have LiDAR on your system, simply check a box on the MOS app to enable 360\deg FOV collision avoidance, pause and real-time replanning for the mission!
+* **New for OSDK 3.2**: If you have LiDAR on your system, simply check a box on the MOS app to enable 3D Mapping of the infrastructure under inspection!
 
 ### Upcoming Features
 
