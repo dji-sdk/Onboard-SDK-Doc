@@ -105,6 +105,13 @@
       -
         title: SketchUp Extension
         path: /modules/missionplan/sketchup.html
+
+  -
+    title: LiDAR Mapping
+    list:
+      -
+        title: Library
+        path: /modules/lidarmapping/lidar-mapping.html
 -
   title: APPENDIX
   list:
