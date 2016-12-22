@@ -48,9 +48,17 @@ Release 3.2 of the Onboard SDK provides an improved, more robust version (v1.0.2
       
 #### Real-world Usage Examples
 
+These use cases show a few of the many combinations of build/run you can do as per your needs.
+
 1. Compile with precision trajectories
    <pre>
    <b>user@user-pc:~/Onboard-SDK/build$</b> cmake .. -DUSE_PRECISION_MISSIONS=ON
+   <b>user@user-pc:~/Onboard-SDK/build$</b> make djiosdk-linux-sample
+   </pre>
+
+1. Compile with precision trajectories, LiDAR Mapping (See [here](../lidarmapping/lidar-mapping.html) for more steps you need to do to make it work) and Collision Avoidance
+   <pre>
+   <b>user@user-pc:~/Onboard-SDK/build$</b> cmake .. -DUSE_PRECISION_MISSIONS=ON -DUSE_POINTCLOUD2LAS=ON -DUSE_COLLISION_AVOIDANCE=ON
    <b>user@user-pc:~/Onboard-SDK/build$</b> make djiosdk-linux-sample
    </pre>
     
@@ -88,8 +96,8 @@ The workflow for using this suite consists of two parts - planning a mission usi
 * In simulation, set up the drone's home position close to the planned trajectory - as you would in real life.
 * To run the sample interactively, you can press `[z]` to run the trajectory following for the json supplied at command line. It is recommended to execute a takeoff command prior to executing a mission. If the aircraft is not in the air, it will takeoff now. 
 ![Interactive trajectory](../../images/modules/missionplan/PM101.png)
-* To run it on mobile, you can go to the `Custom Missions` tab and run the first option. Note that the aircraft needs to have taken off first.
-![mobile trajectory](../../images/modules/missionplan/mobile.png)
+* To run it on mobile, you can go to the new `Advanced` tab and choose what components you want enabled in the lower part of the screen. It is recommended to execute a takeoff command prior to executing a mission. If the aircraft is not in the air, it will takeoff now.
+![mobile vanilla trajectory](../../images/modules/missionplan/mobile_advanced.png) 
 
 * To integrate this functionality into your own code, take a look at the includes and the linking in the `CMakeLists.txt` in the `sample/Linux/Blocking` directory as well as the `osdk-wrapper` directory.  
     The calls you will need to make can be seen in the `LinuxInteractive.cpp` or the `LinuxMobile.cpp` files; these include initialization of various variables at the start of the sample and a few function calls inside of the interactive/mobile spin.
