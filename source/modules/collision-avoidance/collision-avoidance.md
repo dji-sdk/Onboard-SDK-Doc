@@ -7,7 +7,7 @@ date: 2016-12-24
 
 ## Introduction
 
-The objective of the LiDAR-based collision avoidance package (beta) is to help enhance the safety during both autonomous mission and manual flying. Previously we have used LiDAR as a sensor for data collection. This package uses LiDAR as a sensor for perception.
+The objective of the LiDAR-based collision avoidance package (beta) is to help enhance the safety during both precision mission and manual flying. Previously we have used LiDAR as a sensor for data collection. This module uses LiDAR as a sensor for perception.
 
 
 ## Hardware and Software Setup
@@ -50,7 +50,7 @@ Next, build the `velodyne` ROS package:
        3. cd ..
        4. catkin_make -DCOLLISION_AVOIDANCE=ON
        5. source devel/setup.bash
-       6. source dji_ros_packet/dji_collision_avoidance/setup.bash
+       6. source dji_ros_package/dji_collision_avoidance/setup.bash
 
 
 In step 4, the `-DCOLLISION_AVOIDANCE=ON` flag downloads the `dji_collision_avoidance` binary and put it under `path-to-catkin-workspace`, which is why the `setup.bash` needs to be sourced.
