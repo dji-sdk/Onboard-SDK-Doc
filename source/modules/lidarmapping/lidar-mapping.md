@@ -81,7 +81,14 @@ at the end of the spiral by enabling this feature in the mobile app.
     
   ## Hardware setup
   
-  ![Lidar hardware 1](../../images/modules/lidarmapping/hardware_lidar1.png) ![Lidar hardware 2](../../images/modules/lidarmapping/hardware_lidar2.jpg)
+  The figure below shows the LiDAR mount used for our test system on board the Matrice 600. Our hardware is powered by an [x86 system](https://zareason.com/shop/Zini-1660.html), 
+  and a [Velodyne PUCK Lite](http://velodynelidar.com/vlp-16-lite.html)   
+  
+  ![Lidar hardware 1](../../images/modules/lidarmapping/hardware_lidar1.png)
+    
+  The figure below shows the setup in-flight.   
+  
+  ![Lidar hardware 2](../../images/modules/lidarmapping/hardware_lidar2.jpg)
 
   
       

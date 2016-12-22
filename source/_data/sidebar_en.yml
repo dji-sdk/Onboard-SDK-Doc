@@ -109,10 +109,8 @@
 
   -
     title: LiDAR Mapping
-    list:
-      -
-        title: Library
-        path: /modules/lidarmapping/lidar-mapping.html
+    path: /modules/lidarmapping/lidar-mapping.html
+      -        
 
   -
     title: Collision Avoidance
