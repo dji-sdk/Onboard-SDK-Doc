@@ -97,7 +97,7 @@ at the end of the spiral by enabling this feature in the mobile app.
   ![Lidar hardware 2](../../images/modules/lidarmapping/hardware_lidar2.jpg)
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*The figure shows the setup in-flight.* 
   
-  If you would like to use a similar setup, please [contact us](http://enterprise.dji.com/contact-us)
+  If you have interest in aquiring a ready-to-fly customized Lidar mapping solution, please [contact us](http://enterprise.dji.com/contact-us).
 
 
   

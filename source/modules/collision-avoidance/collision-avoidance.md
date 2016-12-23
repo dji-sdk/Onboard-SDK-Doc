@@ -1,5 +1,5 @@
 ---
-title: LiDAR-based Collision Avoidance
+title: LiDAR-based Collision Avoidance [beta]
 version: 3.2
 date: 2016-12-24
 
@@ -7,7 +7,7 @@ date: 2016-12-24
 
 ## Introduction
 
-The objective of the LiDAR-based collision avoidance package (beta) is to help enhance the safety during both precision mission and manual flying. Previously we have used LiDAR as a sensor for data collection. This module uses LiDAR as a sensor for perception.
+The objective of the LiDAR-based collision avoidance package [beta] is to help enhance the safety during both precision mission and manual flying. Previously we have used LiDAR as a sensor for data collection. This module uses LiDAR as a sensor for perception. This is the first beta release of this module and we are seeking your feedback and suggestions for improvements.  The operator must maintain sole responsibility for the safe operation of the vehicle.
 
 
 ## Hardware and Software Setup
@@ -116,11 +116,15 @@ Advanced developers can look at `from_Linux_sample.launch` and `from_DJI_ros_cli
 
 ### Limitations
 
-- Currently the collision avoidance module only stop and hover when moving towards obstacles. It will not move away from an approaching dynamic obstacle.
+- This is a beta release and may contain bugs.
+
+- Currently the collision avoidance module will only stop and hover when moving towards obstacles. It will not move away from an approaching dynamic obstacle.
 
 - It is not a simultaneous localization and mapping (SLAM) solution. It only usese the instantaneous point cloud information from the LiDAR to build an occupancy grid and tries to avoid the collision in that short term grid.
 
 - It requires good velocity information to work. In the M600 setup, this means that good GPS reception is required.
 
 - Plan the mission with conservative velocity, e.g., `5 m/s` and be prepared to switch to `P` mode to take over.
+
+- This module is not designed to detect hanging wires or other small objects reliably. 
 
