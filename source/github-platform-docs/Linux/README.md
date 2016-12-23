@@ -1,50 +1,31 @@
 ---
 title: DJI Onboard SDK C++ Linux Example
-version: v3.1.9
-date: 2016-10-14
+version: v3.2.0
+date: 2016-12-23
 github: https://github.com/dji-sdk/Onboard-SDK/tree/3.1/sample/Linux/
 ---
 
-  > All-new Non-Blocking calls, LiDAR integration, Camera samples and Precision Trajectories for DJI Onboard SDK v3.1.9!
+> Onboard SDK 3.2.0 adds optional LiDAR Collision Avoidance, LiDAR Mapping and improved Precision Missions support for the Linux sample!
 
 ## Introduction
 
 The C++ Linux example is meant to showcase recommended application-layer usage of the DJI Onboard API.
 
-This example eases a new developer into the world of programming for drones - many API functions have been wrapped in easy-to-use implementations and a feedback mechanism is implemented so the developer always knows the result of his/her commands. Packaged with the new example is a new pthread-based threading implementation as well as an efficient serial device driver that implements many checks (on x86 systems) to ensure reliable communication between your Onboard Embeddeed System (OES) and your drone.   
+This example eases a new developer into the world of programming for drones - the sample makes heavy use of the well-abstracted [osdk-wrapper](https://github.com/dji-sdk/Onboard-SDK/tree/3.2/osdk-wrapper) library. Packaged with the Linux sample is a pthread-based threading implementation as well as an efficient serial device driver that implements many checks (on x86 systems) to ensure reliable communication between your Onboard Embeddeed System (OES) and your drone.   
 
-With 3.1.9, the Linux example app comes in two flavors - synchronous (Blocking) and asynchronous (Nonblocking).
+Since OSDK 3.1.9, the Linux example app comes in two flavors - synchronous (Blocking) and asynchronous (Nonblocking).
+
+Version 3.2.0 adds support for [LiDAR Collision Avoidance](../../modules/collision-avoidance/collision-avoidance.html), [LiDAR Mapping](../../modules/lidarmapping/lidar-mapping.html) and the updated and improved [Precision Missions](../../modules/missionplan/README.md) suite. Unlike the previous version, the sample is [configurable]() and can run with or without any of these modules.
 
 #### Synchronous Linux Example App
-The following user-facing functionality is available in the Linux sample: 
+APIs for the following user-facing functionality are implemented in the Linux sample: 
 
-* Activation
-* Obtain/Release Flight Control 
-* Take Off 
-* Landing 
-* Go Home
-* Still Image Capture
-* Video Capture
-* Gimbal Movement Control  
-* Movement Control - Position/Attitude/Velocity control modes
-* Waypoint Functionality
-* Compatible with DJI iOS Mobile OSDK App
-* Sample Waypoint Mission implementation
-* Sample Position Control implementation
-* Sample Gimbal and Camera Control implementation
-* Precision Trajectory Mission Plans
-
-This sample also implements an optional LiDAR Logging example that uses the vlp16lidar-driver library documented [here](../../sensor-integration-guides/velodyne/readme.html). This example gives you the option to log LiDAR data from a Velodyne PUCK or a Simulator to log data in pcap format and LAS format. 
-
-The following user-facing functionality is available with the LiDAR logging sample: 
-
-* Start LiDAR Logging
-* Stop LiDAR Logging
-
-This functionality can be enabled by building the top-level cmake with the argument. 
-```c
--DLIDAR_LOGGING=ON
-```
+| Setup/Teardown         | Camera Control       | Flight Control & GPS Missions      | New! Advanced Features |
+|------------------------|----------------------|------------------------------------|----------------------------|
+| Activation             | Still Image Capture  | Takeoff/Landing                    | Precision Missions         |
+| Obtain/Release Control | Video Capture        | Return to Home                     | LiDAR Collision Avoidance  |
+|                        | Gimbal Control       | Position/Velocity/Attitude Control | LiDAR Mapping              |
+|                        |                      | Waypoint Missions                  | LiDAR Logging              |
 
 #### Asynchronous Linux Example App
 Apart from the Blocking Linux sample, we also support a reduced feature set Non-Blocking sample for this release. This allows the callbacks to run on a different thread, allowing the send commands to run independent from the callbacks. 

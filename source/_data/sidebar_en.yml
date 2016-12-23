@@ -110,7 +110,6 @@
   -
     title: LiDAR Mapping
     path: /modules/lidarmapping/lidar-mapping.html
-      -        
 
   -
     title: Collision Avoidance
