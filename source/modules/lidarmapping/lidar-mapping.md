@@ -8,7 +8,7 @@ date: 2016-10-14
 
 The LiDAR Mapping integration of the Onboard SDK enables users to build a 3-D map of the environment by making use of the pre-existing open source [LOAM package](http://wiki.ros.org/loam_velodyne)
 and the [Velodyne PUCK Lite](http://velodynelidar.com/vlp-16-lite.html) LiDAR sensor. The [LOAM package](http://wiki.ros.org/loam_velodyne) makes use of a scan matching algorithm to 
-build the map. We do not use the IMU input option to build maps. 
+build the map. We make use of the LOAM package without IMU sensor data. 
  
 In addition to this, a **pointcloud2las** library has been developed to enable users to generate maps in an industry standard **LAS** file format. The LAS logger 
  
