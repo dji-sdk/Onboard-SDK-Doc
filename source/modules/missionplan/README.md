@@ -1,8 +1,8 @@
 ---
 title: Precision Missions
-version: 3.2
-date: 2016-12-24
-github: https://github.com/dji-sdk/Onboard-SDK/tree/3.1/tools/localMissionPlanning
+version: SDK 3.2 + Library 1.0.2
+date: 2016-12-23
+github: https://github.com/dji-sdk/Onboard-SDK-Resources/tree/precision-missions-1.0.2/precision-missions-1.0.2
 ---
 ![Assistant-Spiral](../../images/modules/missionplan/spiral.png)
 
@@ -30,19 +30,23 @@ Release 3.2 of the Onboard SDK provides an improved, more robust version (v1.0.2
 
 ## Software Setup
 
+Starting with OSDK 3.2.0, Precision Missions is offered as a standalone component that lives in its own repo; this adds flexibility for users who may or may not choose to use this feature. You do not need to download it separately - follow step 1 below.  
+
 1. Follow the out-of-source build steps in the Linux sample, passing `-DUSE_PRECISION_MISSIONS=ON` at the command line to get CMake to link the sample against the library. No additional configuration is required.
 2. Run the executable with `-interactive` or `-mobile` as the first argument. Read through the next few steps for available options, and see [example usage](#real-world-usage-examples).
 3. For the trajectory following function, you need to supply a second argument, which is the path to a json file containing trajectory parameters. This path is relative to the location from where you are running the program. By default, the CMake scripts will download the example spiral JSON to
     ```
-    Onboard-SDK/build/PrecisionMissions-prefix/src/PrecisionMissions/precision-missions-1.0.2/data/spiral.json
+    Onboard-SDK/build/PrecisionMissions-prefix/src/PrecisionMissions/precision-missions-1.0.2/data/params/spiral.json
     ```
+   
+   If using the simulator, you need to start the simulation *before* you start the Linux sample; make sure the GPS location in simulation is close to the co-ordinates in your JSON.
    
 4. You can generate this json file using the SketchUp plugin as described in the next section.
 5. **New for OSDK 3.2**: You can optionally supply a JSON file that contains position controller gains. Use this if your weight distribution and propulsion setup differs dramatically from the provided pre-tuned gain files (M100, M600, M600 + Velodyne Puck LITE + 500gm x86 Computer). 
 
     To use this feature, simply pass in the filepath to your JSON file as a third command-line argument. Example files are provided in 
     ```
-    Onboard-SDK/build/PrecisionMissions-prefix/src/PrecisionMissions/precision-missions-1.0.2/data/
+    Onboard-SDK/build/PrecisionMissions-prefix/src/PrecisionMissions/precision-missions-1.0.2/data/tuning
     ```
    **Use this feature with *extreme* caution**; incorrect gains can crash your aircraft. Do not deviate much from the provided gains as far as possible. If you do not supply a file, M600 gains will automatically be applied to A3-based systems and M100 gains will be applied for M100 systems.
       
@@ -67,15 +71,15 @@ These use cases show a few of the many combinations of build/run you can do as p
    <b>user@user-pc:~/Onboard-SDK/build$</b> cd bin
    <b>user@user-pc:~/Onboard-SDK/build/bin$</b> ./djiosdk-linux-sample 
                                          -interactive 
-                                         ../PrecisionMissions-prefix/src/PrecisionMissions/precision-missions-1.0.2/data/spiral.json
+                                         ../PrecisionMissions-prefix/src/PrecisionMissions/precision-missions-1.0.2/data/params/spiral.json
    </pre>
 3. Run the example spiral with M600/Velodyne gains
    <pre>
    <b>user@user-pc:~/Onboard-SDK/build$</b> cd bin
    <b>user@user-pc:~/Onboard-SDK/build/bin$</b> ./djiosdk-linux-sample 
                                          -interactive 
-                                         ../PrecisionMissions-prefix/src/PrecisionMissions/precision-missions-1.0.2/data/spiral.json 
-                                         ../PrecisionMissions-prefix/src/PrecisionMissions/precision-missions-1.0.2/data/M600_LiDAR_tuning.json
+                                         ../PrecisionMissions-prefix/src/PrecisionMissions/precision-missions-1.0.2/data/params/spiral.json 
+                                         ../PrecisionMissions-prefix/src/PrecisionMissions/precision-missions-1.0.2/data/tuning/M600_LiDAR_tuning.json
        
    </pre>
 
@@ -92,7 +96,7 @@ The workflow for using this suite consists of two parts - planning a mission usi
 #### 2. Simulate the Mission 
 
 * Supply the json you exported above as an argument to the synchronous Linux sample and run the trajectory in simulation. 
-* Make sure Assistant 2 is running on the same machine as SketchUp. Using the plugin's `Simulator Connect` feature, you can match up the simulation to ther planned trajectory. 
+* You can view the drone simulation as part of SketchUp too - Make sure Assistant 2 is running on the same machine as SketchUp. Using the plugin's `Simulator Connect` feature, you can match up the simulation to the planned trajectory. 
 * In simulation, set up the drone's home position close to the planned trajectory - as you would in real life.
 * To run the sample interactively, you can press `[z]` to run the trajectory following for the json supplied at command line. It is recommended to execute a takeoff command prior to executing a mission. If the aircraft is not in the air, it will takeoff now. 
 ![Interactive trajectory](../../images/modules/missionplan/PM101.png)
@@ -125,13 +129,14 @@ The workflow for using this suite consists of two parts - planning a mission usi
 #### Warnings and Caveats
 
 * **Leave plenty of open space in all directions in the area between your current location and the planned spiral.** The entry trajectory is planned in real time to provide the smoothest entry into the trajectory such that the entire spiral is executed at constant velocity. This means the entry curve might go wider that you expect in the area leading up to the spiral. The farther you are from the planned spiral, the wider the entry curve - this is to ensure a smooth 'slingshot' maneuver to enter the spiral. This behavior might change in an upcoming release. 
-* **Use the gain tuning with caution - in particular, do NOT modify the thrust scaling for M100/M100 based setups.** We assume no responsibilities for crashes due to bad gain selection.
+* **Use the gain tuning with caution - in particular, do NOT modify the *thrust scaling* for M100/M600 based setups.** The operator must assume sole responsibility for the safe operation of the vehicle.
+* **Collision Avoidance with Precision Missions is in beta**. See the [limitations](../collision-avoidance/collision-avoidance.html) of the collision avoidance features for more. The operator must assume sole responsibility for the safe operation of the vehicle.
 
 #### Some Notes on Behavior
 
 * The drone will not execute missions that start below 2m AGL. If you request a lower height, it will automatically change it to 2m.
 * MSL altitude is not supported through the mission planning interface and has not been adequately tested. The suite is designed to prefer MSL heights over AGL heights, which will be enabled once we add MSL heights to the planning software; we ask that you do not change the MSL value (-9999) in the json file and instead only plan missions using height above takeoff point.
-* Staying within the new velocity limits might still lead to infeasible trajectories depending on how far away the spiral is from the current location. Tweak the spiral velocity and radii to make it feasible.
+* Staying within the velocity limits might still lead to infeasible trajectories depending on how far away the spiral is from the current location. Tweak the spiral velocity and radii to make it feasible.
 * The start angle parameter does not rotate the spiral to the desired angle; it merely enters the first loop of a 0&deg; spiral at the position corresponding to the specified start angle.
 * Always, if there are any suspicions that the drone might crash, switch out of F mode ([P mode for A3 FW > 1.5.0.0](../../appendix/releaseNotes.html#Notes-for-using-Onboard-SDK-with-the-new-a3-v1-5-0-0-fw)) and the drone will stop following.
 
