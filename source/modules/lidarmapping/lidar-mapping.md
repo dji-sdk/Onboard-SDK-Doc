@@ -6,13 +6,13 @@ date: 2016-10-14
 
 ## Introduction
 
-The LiDAR Mapping integration of the Onboard SDK enables users to build a 3-D map of the environment by making use of the pre-existing open source [LOAM package](http://wiki.ros.org/loam_velodyne)
+The LiDAR Mapping package of the Onboard SDK enables users to build a 3-D map of the environment by making use of the pre-existing open source [LOAM package](http://wiki.ros.org/loam_velodyne)
 and the [Velodyne PUCK Lite](http://velodynelidar.com/vlp-16-lite.html) LiDAR sensor. The [LOAM package](http://wiki.ros.org/loam_velodyne) makes use of a scan matching algorithm to 
 build the map. We make use of the LOAM package without IMU sensor data. 
  
-In addition to this, a **pointcloud2las** library has been developed to enable users to generate maps in an industry standard **LAS** file format. The LAS logger 
+In addition to this, a **pointcloud2las** library has been developed to enable users to generate maps in an industry standard **LAS** file format. 
  
-Mapping can be enabled as a part of the Precision Trajectory or can be run independently. The [Mobile OnboardSDK iOS app](https://github.com/dji-sdk/Mobile-OSDK-iOS-App) enables users to start or stop Mapping via Precision Trajectory or independently.
+Mapping can be enabled as a part of a Precision Trajectory mission or can be run independently. The [Mobile OnboardSDK iOS app](https://github.com/dji-sdk/Mobile-OSDK-iOS-App) enables users to start or stop Mapping via Precision Trajectory or independently.
   
 We are excited to see the different ways the LiDAR Mapping package will be put to use by our users! 
 
@@ -31,10 +31,9 @@ at the end of the spiral by enabling this feature in the mobile app.
 ### Limitations
 
 * Maps generated are not georeferenced. 
-* In our tests, we noticed: 
-  1. Large roll/pith/yaw inputs or translations resulted in scan registration failure and map distortions. 
-  2. Lack of rich features also resulted in scan registration failure and map distortions.
-* For the limitations of LOAM Mapping algorithm, please refer to the LOAM [source code](https://github.com/laboshinl/loam_velodyne). 
+* Large angular velocity or linear acceleration may result in scan registration failures and map distortions. 
+* Lack of rich features in the environemnt being scanned may also result in scan registration failures and map distortions.
+* For additional limitations of the LOAM Mapping algorithm, please refer to the [LOAM project](https://github.com/laboshinl/loam_velodyne). 
 
 ## Software setup
 
@@ -63,7 +62,7 @@ at the end of the spiral by enabling this feature in the mobile app.
    
  You can run the LiDAR Mapping package manually via the **OnboardSDK-Linux** sample or the **OnboardSDK-ROS** package. 
    
-  **via OnboardSDK-Linux**
+  **Running LiDAR Mapping via OnboardSDK-Linux**
   
   1. LiDAR Mapping can be manually started by first following steps 1, 2,3 and 4 under **LiDAR Mapping enabled from Precision Missions**. 
   
@@ -71,7 +70,7 @@ at the end of the spiral by enabling this feature in the mobile app.
   
    ![Mobile App manual](../../images/modules/lidarmapping/lidarmapping_manual.PNG)
    
-  **via OnboardSDK-ROS**
+  **Running LiDAR Mapping via OnboardSDK-ROS**
   
   1. Download the source code for the [LOAM package](https://github.com/laboshinl/loam_velodyne) and the [Velodyne package](https://github.com/dji-sdk/velodyne.git)
   
@@ -92,12 +91,12 @@ at the end of the spiral by enabling this feature in the mobile app.
   ## Hardware setup
   
  Our hardware is powered by an [x86 system](https://zareason.com/shop/Zini-1660.html), 
-  and a [Velodyne PUCK Lite](http://velodynelidar.com/vlp-16-lite.html). We make use of a Matrice 600 hardware mount that has been designed in-house.     
+  and a [Velodyne PUCK Lite](http://velodynelidar.com/vlp-16-lite.html). We make use of a custom designed mounting system for the Matrice 600.   
      
   ![Lidar hardware 2](../../images/modules/lidarmapping/hardware_lidar2.jpg)
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*The figure shows the setup in-flight.* 
   
-  If you have interest in aquiring a ready-to-fly customized Lidar mapping solution, please [contact us](http://enterprise.dji.com/contact-us).
+  ***If you have interest in acquiring a ready-to-fly customized Lidar mapping solution, please [contact us](http://enterprise.dji.com/contact-us).***
 
 
   
