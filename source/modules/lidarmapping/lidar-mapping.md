@@ -7,15 +7,17 @@ date: 2016-10-14
 ## Introduction
 
 The LiDAR Mapping integration of the Onboard SDK enables users to build a 3-D map of the environment by making use of the pre-existing open source [LOAM package](http://wiki.ros.org/loam_velodyne)
-and the [Velodyne PUCK Lite](http://velodynelidar.com/vlp-16-lite.html) LiDAR sensor. 
+and the [Velodyne PUCK Lite](http://velodynelidar.com/vlp-16-lite.html) LiDAR sensor. The [LOAM package](http://wiki.ros.org/loam_velodyne) makes use of a scan matching algorithm to 
+build the map. We do not use the IMU input option to build maps. 
  
-In addition to this, a **pointcloud_las** library enables users to generate maps in an industry standard **LAS** file format. 
+In addition to this, a **pointcloud2las** library has been developed to enable users to generate maps in an industry standard **LAS** file format. The LAS logger 
  
-Mapping can be enabled as a part of the Precision Trajectory or can be run independently. The Mobile OnboardSDK (MOS) iOS app enables users to start or stop Mapping via Precision Trajectory or independently.  
+Mapping can be enabled as a part of the Precision Trajectory or can be run independently. The [Mobile OnboardSDK iOS app](https://github.com/dji-sdk/Mobile-OSDK-iOS-App) enables users to start or stop Mapping via Precision Trajectory or independently.
+  
+We are excited to see the different ways the LiDAR Mapping package will be put to use by our users! 
 
 ![3-D Map](../../images/modules/lidarmapping/pointcloudimage.png)
-
-   Aerial Map generated with DJI Matrice 600, Velodyne PUCK Lite running LOAM package and pointcloud_las library. 
+*Aerial Map generated with DJI Matrice 600, Velodyne PUCK Lite running LOAM package and pointcloud2las library.* 
 
 ### Features
 
@@ -23,34 +25,38 @@ Mapping can be enabled as a part of the Precision Trajectory or can be run indep
 at the end of the spiral by enabling this feature in the mobile app. 
 * 3-D mapping can be started and stopped independently during manual fly with the press of a button through the MOS mobile app.
 * Automatically logs data in LAS file format by initializing the pointcloud_las library. 
-* Can be used in conjunction with [Collision avoidance]. 
+* Can be used in conjunction with [Collision avoidance].
 * Tested with the DJI Matrice 600. 
 
 ### Limitations
 
 * Maps generated are not georeferenced. 
-* For the limitations of LOAM Mapping algorithm, please refer to the LOAM [source code](https://github.com/laboshinl/loam_velodyne). 
 * In our tests, we noticed: 
   1. Large roll/pith/yaw inputs or translations resulted in scan registration failure and map distortions. 
-  2. Lack of rich features also resulted in scan registration failure and map distortions. 
+  2. Lack of rich features also resulted in scan registration failure and map distortions.
+* For the limitations of LOAM Mapping algorithm, please refer to the LOAM [source code](https://github.com/laboshinl/loam_velodyne). 
 
 ## Software setup
 
 ### LiDAR Mapping enabled from Precision Missions.
  
  In order to use the LiDAR Mapping package with Precision Missions:
+ 
+  1. Download the source code for the [LOAM package](https://github.com/laboshinl/loam_velodyne) and the [Velodyne package](https://github.com/dji-sdk/velodyne.git)
   
-  1. The Linux sample must be compiled with the options
+  2. Source the packages using the *--extend* option. 
+  
+  3. After downloading the [DJI OnboardSDK package](https://github.com/dji-sdk/Onboard-SDK.git), the Linux sample must be compiled with the options
      ```
       -DUSE_PRECISION_MISSIONS=ON -DUSE_POINTCLOUD2LAS=ON
      ```
-  2. Source the pointcloud2las setup.bash file
+  4. Source the pointcloud2las setup.bash file
     
      ```
      source build/bin/dji-ros-pointcloud2las/setup.bash --extend
      ```
-  3. Lidar Mapping can be enabled in Precision Missions using the tab below in the MOS app.     
-    
+  5. Lidar Mapping can be enabled in Precision Missions using the tab below in the OSDK-Mobile iOS app.     
+   
    ![Mobile App](../../images/modules/lidarmapping/lidarmapping_mobile.PNG) 
    
    ### LiDAR Mapping enabled Manually
@@ -59,7 +65,7 @@ at the end of the spiral by enabling this feature in the mobile app.
    
   **via OnboardSDK-Linux**
   
-  1. LiDAR Mapping can be manually started by first following steps 1 and 2 under **LiDAR Mapping enabled from Precision Missions**. 
+  1. LiDAR Mapping can be manually started by first following steps 1, 2,3 and 4 under **LiDAR Mapping enabled from Precision Missions**. 
   
   2. Use the button below in the MOS app to enable and disable LiDAR mapping. 
   
@@ -67,28 +73,32 @@ at the end of the spiral by enabling this feature in the mobile app.
    
   **via OnboardSDK-ROS**
   
-  1. **catkin_make** using the option 
+  1. Download the source code for the [LOAM package](https://github.com/laboshinl/loam_velodyne) and the [Velodyne package](https://github.com/dji-sdk/velodyne.git)
+  
+  2. Download and build the [OnboardSDK-ROS package](https://github.com/dji-sdk/Onboard-SDK-ROS.git)
+  
+  3. **catkin_make** using the option 
      ```
      -DUSE_POINTCLOUD2LAS=ON
      ```
-  2. Source pointcloud2las setup.bash file 
+  4. Source pointcloud2las setup.bash file 
       ```
       source catkin_ws/dji-ros-pointcloud2las/setup.bash --extend
       ```
-  3. Use the button below in the MOS app to enable and disable LiDAR mapping. 
+  5. Use the button below in the OSDK-Mobile iOS app to enable and disable LiDAR mapping. 
     ![Mobile App manual](../../images/modules/lidarmapping/lidarmapping_manual.PNG)    
     
     
   ## Hardware setup
   
-  The figure below shows the LiDAR mount used for our test system on board the Matrice 600. Our hardware is powered by an [x86 system](https://zareason.com/shop/Zini-1660.html), 
-  and a [Velodyne PUCK Lite](http://velodynelidar.com/vlp-16-lite.html)   
-  
-  ![Lidar hardware 1](../../images/modules/lidarmapping/hardware_lidar1.png)
-    
-  The figure below shows the setup in-flight.   
-  
+ Our hardware is powered by an [x86 system](https://zareason.com/shop/Zini-1660.html), 
+  and a [Velodyne PUCK Lite](http://velodynelidar.com/vlp-16-lite.html). We make use of a Matrice 600 hardware mount that has been designed in-house.     
+     
   ![Lidar hardware 2](../../images/modules/lidarmapping/hardware_lidar2.jpg)
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*The figure shows the setup in-flight.* 
+  
+  If you would like to use a similar setup, please [contact us](http://enterprise.dji.com/contact-us)
+
 
   
       
