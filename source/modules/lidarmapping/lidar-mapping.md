@@ -10,7 +10,7 @@ The LiDAR Mapping integration of the Onboard SDK enables users to build a 3-D ma
 and the [Velodyne PUCK Lite](http://velodynelidar.com/vlp-16-lite.html) LiDAR sensor. The [LOAM package](http://wiki.ros.org/loam_velodyne) makes use of a scan matching algorithm to 
 build the map. We make use of the LOAM package without IMU sensor data. 
  
-In addition to this, a **pointcloud2las** library has been developed to enable users to generate maps in an industry standard **LAS** file format. The LAS logger 
+In addition to this, a **pointcloud2https://github.com/dji-sdk/Onboard-SDK-ROS.gitlas** library has been developed to enable users to generate maps in an industry standard **LAS** file format. The LAS logger 
  
 Mapping can be enabled as a part of the Precision Trajectory or can be run independently. The [Mobile OnboardSDK iOS app](https://github.com/dji-sdk/Mobile-OSDK-iOS-App) enables users to start or stop Mapping via Precision Trajectory or independently.
   
@@ -81,11 +81,12 @@ at the end of the spiral by enabling this feature in the mobile app.
      ```
      -DUSE_POINTCLOUD2LAS=ON
      ```
-  4. Source pointcloud2las setup.bash file 
+  4. Source pointcloud2las setup.bash file in the terminal that runs the client. 
       ```
       source catkin_ws/dji-ros-pointcloud2las/setup.bash --extend
       ```
-  5. Use the button below in the OSDK-Mobile iOS app to enable and disable LiDAR mapping. 
+  5. Run the ROS package by following instructions [here](../../github-platform-docs/ROS/README.html#Examples)
+  6. Use the button below in the OSDK-Mobile iOS app to enable and disable LiDAR mapping. 
     ![Mobile App manual](../../images/modules/lidarmapping/lidarmapping_manual.PNG)    
     
     
