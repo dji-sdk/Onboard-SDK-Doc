@@ -1,11 +1,11 @@
 ---
 title: Mobile Onboard SDK communication using Data Transparent Transmission
-version: 3.1.9
-date: 2016-10-14
+version: 3.2.0
+date: 2016-12-23
 keywords: [iOS Mobile Onboard SDK app]
 ---
 
-> New for 3.1.9: Gimbal sample and Precision Trajectory support!
+> New for 3.2.0: Advanced Features Tab with support for LiDAR Mapping, LiDAR Collision Avoidance and Precision Missions!
 ## Introduction
 
 The Mobile Onboard SDK communication uses the Data Transparent Transmission protocol. As mentioned in the [Data Transparent Transmission](../../introduction/data-transparent-transmission.html) section, the Data Transparent Transmission was developed to combine the benefits of Mobile and Onboard SDK APIs by establishing a connection between a Mobile Device and an OES. Via the Data Transparent Transmission, developers are able to send any data from their Mobile Device to OES and vice versa. 

@@ -20,6 +20,42 @@
       title: Hardware Setup Guide
       path: /hardware-setup/index.html
 -
+  title: SAMPLE APPLICATIONS
+  list:
+    -
+      title: Linux
+      path: /github-platform-docs/Linux/README.html
+    -
+      title: ROS
+      path: /github-platform-docs/ROS/README.html
+    -
+      title: ROS Packages
+      list:
+        -
+          title: ROS Core Package
+          path: /github-platform-docs/ROS_Example/ros_corePackage.html
+        -
+          title: ROS Demo Client Package
+          path: /github-platform-docs/ROS_Example/ros_demo_client_package.html
+        -
+          title: ROS DJI2MAV Package
+          path: /github-platform-docs/ROS_Example/ros_dji2mav_0.2.1_package.html
+        -
+          title: ROS Map Waypoint Navigation Package
+          path: /github-platform-docs/ROS_Example/ros_map_waypoint_navigation_package.html
+        -
+          title: ROS Video Decoding Package
+          path: /github-platform-docs/ROS_Example/ros_video_decoding_package.html
+    -
+      title: QT
+      path: /github-platform-docs/PureQT/README.html
+    -
+      title: STM32
+      path: /github-platform-docs/STM32/README.html
+    -
+      title: Mobile - Onboard SDK
+      path: /github-platform-docs/MobileOnboardSDK/Mobile-OSDK.html
+-
   title: PROTOCOL DOCUMENTS
   list:
     -
@@ -47,43 +83,6 @@
     -
       title: Flight Mission ACK codes
       path: /application-development-guides/flight-mission-ack-codes.html
-
--
-  title: SAMPLE APPLICATIONS
-  list:
-    -
-      title: QT
-      path: /github-platform-docs/PureQT/README.html
-    -
-      title: STM32
-      path: /github-platform-docs/STM32/README.html
-    -
-      title: Linux 
-      path: /github-platform-docs/Linux/README.html
-    -
-      title: ROS
-      path: /github-platform-docs/ROS/README.html
-    - 
-      title: ROS Packages
-      list:
-        -
-          title: ROS Core Package
-          path: /github-platform-docs/ROS_Example/ros_corePackage.html
-        -
-          title: ROS Demo Client Package
-          path: /github-platform-docs/ROS_Example/ros_demo_client_package.html
-        -
-          title: ROS DJI2MAV Package
-          path: /github-platform-docs/ROS_Example/ros_dji2mav_0.2.1_package.html
-        -
-          title: ROS Map Waypoint Navigation Package
-          path: /github-platform-docs/ROS_Example/ros_map_waypoint_navigation_package.html
-        -
-          title: ROS Video Decoding Package
-          path: /github-platform-docs/ROS_Example/ros_video_decoding_package.html
-    -
-      title: Mobile - Onboard SDK
-      path: /github-platform-docs/MobileOnboardSDK/Mobile-OSDK.html
 -
   title: Sensor Integration Guides
   list:
@@ -94,10 +93,10 @@
       title: Ping ADS-B
       path: /sensor-integration-guides/ping/README.html
 -
-  title: Modules
+  title: Advanced Features
   list:
   -
-    title: Precision Trajectory Mission Planning
+    title: Precision Missions
     list:
       -
         title: Library
@@ -105,6 +104,14 @@
       -
         title: SketchUp Extension
         path: /modules/missionplan/sketchup.html
+  -
+    title: LiDAR Mapping
+    path: /modules/lidarmapping/lidar-mapping.html
+
+  -
+    title: Collision Avoidance
+    path: /modules/collision-avoidance/collision-avoidance.html
+
 -
   title: APPENDIX
   list:

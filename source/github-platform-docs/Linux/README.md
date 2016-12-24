@@ -1,61 +1,41 @@
 ---
 title: DJI Onboard SDK C++ Linux Example
-version: v3.1.9
-date: 2016-10-14
+version: v3.2.0
+date: 2016-12-23
 github: https://github.com/dji-sdk/Onboard-SDK/tree/3.1/sample/Linux/
 ---
 
-  > All-new Non-Blocking calls, LiDAR integration, Camera samples and Precision Trajectories for DJI Onboard SDK v3.1.9!
+> Onboard SDK 3.2.0 adds optional LiDAR Collision Avoidance, LiDAR Mapping and improved Precision Missions support for the Linux sample!
 
 ## Introduction
 
 The C++ Linux example is meant to showcase recommended application-layer usage of the DJI Onboard API.
 
-This example eases a new developer into the world of programming for drones - many API functions have been wrapped in easy-to-use implementations and a feedback mechanism is implemented so the developer always knows the result of his/her commands. Packaged with the new example is a new pthread-based threading implementation as well as an efficient serial device driver that implements many checks (on x86 systems) to ensure reliable communication between your Onboard Embeddeed System (OES) and your drone.   
+This example eases a new developer into the world of programming for drones - the sample makes heavy use of the well-abstracted [osdk-wrapper](https://github.com/dji-sdk/Onboard-SDK/tree/3.2/osdk-wrapper) library. Packaged with the Linux sample is a pthread-based threading implementation as well as an efficient serial device driver that implements many checks (on x86 systems) to ensure reliable communication between your Onboard Embeddeed System (OES) and your drone.   
 
-With 3.1.9, the Linux example app comes in two flavors - synchronous (Blocking) and asynchronous (Nonblocking).
+Since OSDK 3.1.9, the Linux example app comes in two flavors - synchronous (Blocking) and asynchronous (Nonblocking).
+
+Version 3.2.0 adds support for [LiDAR Collision Avoidance](../../modules/collision-avoidance/collision-avoidance.html), [LiDAR Mapping](../../modules/lidarmapping/lidar-mapping.html) and the updated and improved [Precision Missions](../../modules/missionplan/README.html) suite. Unlike the previous version, the sample is [configurable]() and can run with or without any of these modules.
 
 #### Synchronous Linux Example App
-The following user-facing functionality is available in the Linux sample: 
+APIs for the following user-facing functionality are implemented in the Linux sample: 
 
-* Activation
-* Obtain/Release Flight Control 
-* Take Off 
-* Landing 
-* Go Home
-* Still Image Capture
-* Video Capture
-* Gimbal Movement Control  
-* Movement Control - Position/Attitude/Velocity control modes
-* Waypoint Functionality
-* Compatible with DJI iOS Mobile OSDK App
-* Sample Waypoint Mission implementation
-* Sample Position Control implementation
-* Sample Gimbal and Camera Control implementation
-* Precision Trajectory Mission Plans
-
-This sample also implements an optional LiDAR Logging example that uses the vlp16lidar-driver library documented [here](../../sensor-integration-guides/velodyne/readme.html). This example gives you the option to log LiDAR data from a Velodyne PUCK or a Simulator to log data in pcap format and LAS format. 
-
-The following user-facing functionality is available with the LiDAR logging sample: 
-
-* Start LiDAR Logging
-* Stop LiDAR Logging
-
-This functionality can be enabled by building the top-level cmake with the argument. 
-```c
--DLIDAR_LOGGING=ON
-```
+| Setup/Teardown         | Camera Control       | Flight Control & GPS Missions      | New! Advanced Features |
+|------------------------|----------------------|------------------------------------|----------------------------|
+| Activation             | Still Image Capture  | Takeoff/Landing                    | [Precision Missions](../../modules/missionplan/README.html)        |
+| Obtain/Release Control | Video Capture        | Return to Home                     | [LiDAR Collision Avoidance](../../modules/collision-avoidance/collision-avoidance.html)  |
+|                        | Gimbal Control       | Position/Velocity/Attitude Control | [LiDAR Mapping](../../modules/lidarmapping/lidar-mapping.html)              |
+|                        |                      | Waypoint Missions                  | [LiDAR Logging](../../sensor-iontegration-guides/velodyne/readme.html#software-guide)              |
 
 #### Asynchronous Linux Example App
-Apart from the Blocking Linux sample, we also support a reduced feature set Non-Blocking sample for this release. This allows the callbacks to run on a different thread, allowing the send commands to run independent from the callbacks. 
+Apart from the Blocking Linux sample, we also support a reduced feature set Non-Blocking (callback-based) sample for this release. This allows the callbacks to run on a different thread, allowing the send commands to run independent from the callbacks. 
 
 The following user-facing functionality is available in the new Non-Blocking Linux sample:
 
-* Activation
-* Obtain/Release Flight Control 
-* Take Off 
-* Landing 
-* Compatible with iOS DJI Mobile OSDK App
+| Setup/Teardown         |  Flight Control |
+|------------------------|-----------------|
+| Activation             | Takeoff/Landing |
+| Obtain/Release Control | | 
 
 The examples are extensible - if you want to build additional functionality, it is easy to do so within the framework of these examples. 
 
@@ -66,29 +46,46 @@ The examples are extensible - if you want to build additional functionality, it 
 
 The [Hardware Setup](../../hardware-setup/index.html) guide talks about setting up your OES of choice. Make sure your setup matches that in the document before proceeding further. 
 
-##### 2. Software
+##### 2. Software  
 
-**Toolchain**
+The following instructions are valid for both Blocking and Non-blocking Linux samples. Advanced features are only available on the Blocking sample.  
+
+ 
+##### 2.1 Toolchain
 
 To build either Linux example, you need:
 
 * A supported C++ compiler (Tested with gcc 4.8.1/5.3.1)
 * A bash shell
 * CMake
-* Ubuntu 16.04 on x86_64 OR Ubuntu 14.04 on ARM (DJI Manifold)
+* A modern Linux distribution
 
-**Compilation**
+##### 2.2 Compilation
 
-* From Onboard SDK 3.1.9, CMake is the default build system. To build all the libraries and sample apps, we provide a simple build script.
-* At the top level, run the build script with the syntax `./scripts/build —-build-type Debug -—clean true --lidar-logging OFF`. This should download dependencies and build all libraries and executables.
-* Set the `lidar-logging` option to `ON` if you want to build with LiDAR Logging features in the Blocking Linux app.
+| OSDK Version | Build system | How to build                       | Compatibility                                                             |
+|--------------|--------------|------------------------------------|---------------------------------------------------------------------------|
+| 3.1.8        | makefile     | In `sample/Linux`, type `make`     | Builds on all Linux systems                                               |
+| 3.1.9        | CMake        | See [here](#2-3-cmake-build-steps) | Only builds on Ubuntu 16.04/14.04 (x86_64) or Ubuntu 14.04 (ARM 32-bit)   |
+| 3.2.0        | CMake        | See [here](#2-3-cmake-build-steps)  | Builds on all platforms, advanced features limited to Ubuntu 16.04 x86_64 |
 
 To access the serial port, add your username to the dialout group by typing `sudo usermod -a -G dialout $USER` (you do not need to replace $USER with your username). **Then logout and login again.**  
+    
+##### 2.3 CMake Build Steps  
 
-**Using the Simulator**
+For **3.1.9**:
 
-* Connect your M100/A3 to a PC through USB.
-* Open up DJI Assistant 2. Click on the DJI M100/A3 button. If this button doesn't show up, try disconnecting and reconnecting the USB.
+* In `sample/Linux/Blocking`, create a `build` directory and `cd` into it.
+* Type `cmake .. -DLIDAR_LOGGING=[ON|OFF]`. If you want LiDAR logging, choose -DLIDAR_LOGGING=ON. Logging is OFF by default. Do not use the `[]` braces while specifying your option.
+ 
+For **3.2.0**:
+
+* In `sample/Linux/Blocking`, create a `build` directory and `cd` into it.
+* Type `cmake .. -DUSE_PRECISION_MISSIONS=[ON|OFF] -DUSE_COLLISION_AVOIDANCE=[ON|OFF] -DUSE_POINTCLOUD2LAS=[ON|OFF]`. All the options are off by default. Do not use the `[]` braces while specifying your option.
+
+##### 2.4 Using the Simulator
+
+* Connect your M100/M600/A3 to a PC through USB.
+* Open up DJI Assistant 2. Click on the DJI M100/M600/A3 button. If this button doesn't show up, try disconnecting and reconnecting the USB.
 * Click on the Simulator tab, and then click on the 'Open' button. A separate window should pop up in a few seconds.
 ![Sim1](../../images/Linux/Simulator_Open.png)
 * In the main window, click on 'Start Emulating'.
@@ -108,22 +105,23 @@ The first time a drone/OES combination is used, it needs to be activated. Activa
 ---
 ## Operation
 
-To run the Linux Blocking sample, follow these steps:
+To run the Linux Blocking sample for Onboard SDK 3.2.0, follow these steps:
 
 * Navigate to `build/bin/` and copy the `UserConfig.txt` file from `onboardsdk/onboardsdk/sample/Linux/Blocking`. In this file, enter your serial port in the `DeviceName` and baud rate in the `BaudRate` field.  
     * The default baudrate is `230400`. If you change this, remember to also change it in DJI Assistant 2.  
     * The default port is `/dev/ttyUSB0`. This should be correct if you are using a USB-Serial adapter. On Manifold, you will be using `/dev/ttyTHSx` (x = 0,1,2) - refer to the [Hardware Setup Guide](../../hardware-setup/index.html) for more information.   
-* In the `build/bin` folder, assuming you have already run the build script, run `djiosdk-linux-sample mode_of_operation [optional]path_to_spiral` where 
+* In the `build/bin` folder, run `djiosdk-linux-sample [mode_of_operation] [(optional)path_to_spiral] [(optional)path_to_tuning]` where 
     * `mode_of_operation` can be (more information about the modes [here](#modes-of-operation)):  
         * `-interactive` : Recommended mode for new developers. Shows a basic terminal UI and users can execute single commands with key presses.  
         * `-mobile` : Use with the brand new Mobile OSDK App. Useful for mobile-based triggering of OSDK commands with keys on iOS device.  
         * `-programmatic` : Use for automated execution. By default, the sample will first takeoff, then execute a waypoint mission, then automatically land and exit.
-    * `[optional]path_to_spiral` is the file path of a pre-planend json file for precision trajectory planning. For more information, look at [Precision Trajectory Mission Planning](../../modules/missionplan/README.html)
+    * `(optional)path_to_spiral` is the file path of a pre-planned spiral (json file) for precision trajectory planning. For more information, look at [Precision Missions](../../modules/missionplan/README.html#software-setup)
+    * `(optional)path_to_tuning` is the file path of a controller tuning (json file) for precision trajectory planning. For more information, look at [Precision Missions](../../modules/missionplan/README.html#software-setup)
 * Proceed to run the sample in one of these modes. Before the sample enters one of the three modes, it will attempt to activate the drone and obtain control. If everything goes well, you should see the following information on the terminal:
 
     ![Activate_TakeControl](../../images/Linux/AllGood.png)
 
-* You may follow the same instructions to run the Non-Blocking Linux sample. The Non-Blocking Linux sample supports a reduced feature set for '-interactive' and '-mobile' modes and does not support '-programmatic' mode. It also does not support 
+* You may follow the same instructions to run the Non-Blocking Linux sample. The Non-Blocking Linux sample supports a reduced feature set for '-interactive' and '-mobile' modes and does not support '-programmatic' mode. It also does not support any of the advanced features.
 
 > Note that the activation step is necessary each time. After the first time, the activation command merely performs a local activation check and you are not required to be connected to the internet.  
 The sample will attempt automatic activation each time it is started.

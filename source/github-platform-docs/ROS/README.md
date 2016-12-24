@@ -1,7 +1,7 @@
 ---
 title: DJI Onboard SDK ROS Example
-version: v3.1.7
-date: 2016-07-01
+version: v3.2.0
+date: 2016-12-23
 github: https://github.com/dji-sdk/Onboard-SDK-ROS
 keywords: [ros example]
 ---
@@ -34,6 +34,11 @@ Supported commands and  actions:
 * WebSocket With Baidu Map (for navigation)
 * MAVLink And QGroundStation
 
+**New with OSDK 3.2.0** Advanced Features:
+
+* [LiDAR Collision Avoidance](../../modules/collision-avoidance/collision-avoidance.html) in manual flight mode
+* [LiDAR Mapping](../../modules/lidarmapping/lidar-mapping.html)
+
 Software Functionality:
 
 * [dji\_sdk](../ROS_Example/ros_corePackage.html): the core package handling the communication with Matrice 100, which provides a header file `dji_drone.h` for future use
@@ -59,7 +64,7 @@ Tested Environment:
 * Operating System: Ubuntu 14.04, Manifold
 * ROS version: ROS Indigo
 > **Note:** Onboard SDK ROS has also been beta tested with Ubuntu Xenial 16.04LTS and ROS Kinetic Kame. We currently do not support `rosinstall` or `apt-get` for this configuration.   
-> **Note:** Onboard SDK ROS does not currently support A3 FW 1.5.0.0.
+> **Note:** Onboard SDK ROS also supports A3 FW 1.5.0.0 and newer with OSDK 3.2.0. See [Notes](../../appendix/releaseNotes.html#notes-for-using-onboard-sdk-with-the-new-a3-v1-5-0-0-fw).
 
 Software Requirements:
 
@@ -71,7 +76,8 @@ Compilation:
 
 1. Assuming you have ROS environment installed and configured, cd into your catkin workspace and run ``catkin_make``. Make sure the source code is in the `src` directory of your catkin workspace.
 <br>OR</br>
-2. Refer to our .travis.yml build script to install and configure ROS from scratch and then follow with running ``catkin_make`` from catkin workspace
+2. Refer to our .travis.yml build script to install and configure ROS from scratch and then follow with running ``catkin_make`` from catkin workspace.
+3. You can pass `-DUSE_COLLISION_AVOIDANCE=ON` for compiling with [LiDAR Collision Avoidance](../../modules/collision-avoidance/collision-avoidance.html) and `-DUSE_POINTCLOUD2LAS=ON` for building with [LiDAR Mapping](../../modules/lidarmapping/lidar-mapping.html).
 
 
 ## Activation
@@ -82,7 +88,7 @@ Activation Process:
 
 1. Follow steps (3) and (5) in the [Setup](../../quick-start/index.html#Setup) section of the Quick Start guide
 2. Update core launch file dji_sdk/launch/sdk_manifold.launch with information below:
-    * drone_version: "M100" or "A3"
+    * drone_version: "M100" or "A3_31" (A3 FW < 1.5.0.0) or "A3_32" (A3 FW >= 1.5.0.0)
     * app_id: registered APP ID
     * enc_key: registered App Key 
     * serial_name: /dev/ttyTHS1 (default on Manifold)
