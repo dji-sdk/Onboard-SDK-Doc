@@ -1,6 +1,6 @@
 ---
 title: Precision Missions
-version: SDK 3.2 + Library 1.0.2
+version: 3.2.0
 date: 2016-12-23
 github: https://github.com/dji-sdk/Onboard-SDK-Resources/tree/precision-missions-1.0.2/precision-missions-1.0.2
 ---

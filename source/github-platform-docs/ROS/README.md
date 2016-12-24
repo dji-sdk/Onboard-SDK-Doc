@@ -1,7 +1,7 @@
 ---
 title: DJI Onboard SDK ROS Example
-version: v3.1.7
-date: 2016-07-01
+version: v3.2.0
+date: 2016-12-23
 github: https://github.com/dji-sdk/Onboard-SDK-ROS
 keywords: [ros example]
 ---

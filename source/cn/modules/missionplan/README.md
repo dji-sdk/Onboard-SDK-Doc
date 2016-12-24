@@ -1,42 +1,88 @@
 ---
-title: Precision Trajectory Mission Planning [beta]
-version: 3.1.9
-date: 2016-10-14
-github: https://github.com/dji-sdk/Onboard-SDK/tree/3.1/tools/localMissionPlanning
+title: Precision Missions
+version: 3.2.0
+date: 2016-12-23
+github: https://github.com/dji-sdk/Onboard-SDK-Resources/tree/precision-missions-1.0.2/precision-missions-1.0.2
 ---
 ![Assistant-Spiral](../../images/modules/missionplan/spiral.png)
 
 
 ## Introduction
 
-With the Onboard SDK Precision Trajectory Mission Planning suite, DJI developers can now plan complex missions without having to use GPS waypoints. The new DJI Precision Trajectory Mission Planning library has the flexibility to deal with complicated trajectories, issues with GPS accuracy and cases when GPS is simply unavailable. 
+With the Onboard SDK Precision Missions suite, DJI developers can now fly complex, precise missions with intriguing shapes such as spirals tailor-made for infrastructure inspection, residential surveying and construction monitoring.   
 
 For inspection applications like powerlines, towers and buildings, the ability to visualize and plan a smooth, precise trajectory that fully covers the points of interest on your structure can be the difference between actionable data and merely beautiful footage.
 
-The precision trajectory mission planning interface opens up an exciting new paradigm for planning missions - think shapes and actions, not waypoints. Release 3.1.9 of the Onboard SDK provides a beta version of this library that allows you to plan and execute geolocated spiral trajectories around infrastructure.
+Release 3.2 of the Onboard SDK provides an improved, more robust version (v1.0.2) of this library that now supports plug-and-play LiDAR integration for collision avoidance and mapping.
 
 ### Features
 
 * Trajectory following library that can autonomously execute preplanned smooth spiral trajectories
 * SketchUp plugin to visualize trajectories, import 3D CAD models and geolocate the scene
 * Configurable speed, start/end radii and pitch for the spiral
+* Configurable GPS location for the spiral - plan one spiral for multiple similar structures 
 * Start your drone from anywhere - real-time path planning to get to the trajectory's GPS location 
 * Integration with DJI Assistant 2 to visualize simulations of the drone following the trajectory in the SketchUp scene
-
-### Upcoming Features
-
-* We have lots in store for future releases of this suite. As always, we look forward to your feedback.
+* **New for OSDK 3.2**: Progress bar for the trajectory
+* **New for OSDK 3.2**: Full M600 support, and custom vehicle configuration support - tune the controller gains for your aircraft with our JSON interface.
+* **New for OSDK 3.2**: If you have LiDAR on your system, simply check a box on the MOS app to enable 360&deg; FOV collision avoidance, pause and real-time replanning for the mission!
+* **New for OSDK 3.2**: If you have LiDAR on your system, simply check a box on the MOS app to enable 3D Mapping of the infrastructure under inspection!
 
 ## Software Setup
 
-1. Follow the build steps in the Linux sample to get CMake to link the sample against the library. No additional configuration is required.
-2. Run the executable with `-interactive` or `-mobile` as the first argument.
-3. For the trajectory following function, you need to supply a second argument, which is the path to a json file containing trajectory parameters. This path is relative to the location from where you are running the program. E.g.
+Starting with OSDK 3.2.0, Precision Missions is offered as a standalone component that lives in its own repo; this adds flexibility for users who may or may not choose to use this feature. You do not need to download it separately - follow step 1 below.  
+
+1. Follow the out-of-source build steps in the Linux sample, passing `-DUSE_PRECISION_MISSIONS=ON` at the command line to get CMake to link the sample against the library. No additional configuration is required.
+2. Run the executable with `-interactive` or `-mobile` as the first argument. Read through the next few steps for available options, and see [example usage](#real-world-usage-examples).
+3. For the trajectory following function, you need to supply a second argument, which is the path to a json file containing trajectory parameters. This path is relative to the location from where you are running the program. By default, the CMake scripts will download the example spiral JSON to
     ```
-    ./djiosdk-linux-sample -interactive ../data/spiral.json
+    Onboard-SDK/build/PrecisionMissions-prefix/src/PrecisionMissions/precision-missions-1.0.2/data/params/spiral.json
     ```
+   
+   If using the simulator, you need to start the simulation *before* you start the Linux sample; make sure the GPS location in simulation is close to the co-ordinates in your JSON.
+   
 4. You can generate this json file using the SketchUp plugin as described in the next section.
- 
+5. **New for OSDK 3.2**: You can optionally supply a JSON file that contains position controller gains. Use this if your weight distribution and propulsion setup differs dramatically from the provided pre-tuned gain files (M100, M600, M600 + Velodyne Puck LITE + 500gm x86 Computer). 
+
+    To use this feature, simply pass in the filepath to your JSON file as a third command-line argument. Example files are provided in 
+    ```
+    Onboard-SDK/build/PrecisionMissions-prefix/src/PrecisionMissions/precision-missions-1.0.2/data/tuning
+    ```
+   **Use this feature with *extreme* caution**; incorrect gains can crash your aircraft. Do not deviate much from the provided gains as far as possible. If you do not supply a file, M600 gains will automatically be applied to A3-based systems and M100 gains will be applied for M100 systems.
+      
+#### Real-world Usage Examples
+
+These use cases show a few of the many combinations of build/run you can do as per your needs.
+
+1. Compile with precision trajectories
+   <pre>
+   <b>user@user-pc:~/Onboard-SDK/build$</b> cmake .. -DUSE_PRECISION_MISSIONS=ON
+   <b>user@user-pc:~/Onboard-SDK/build$</b> make djiosdk-linux-sample
+   </pre>
+
+1. Compile with precision trajectories, LiDAR Mapping (See [here](../lidarmapping/lidar-mapping.html#lidar-mapping-enabled-from-precision-missions) for more steps you need to do to make it work) and Collision Avoidance ((See [here](../collision-avoidance/collision-avoidance.html#collision-avoidance-with-precision-missions)  for more steps you need to do to make it work)
+   <pre>
+   <b>user@user-pc:~/Onboard-SDK/build$</b> cmake .. -DUSE_PRECISION_MISSIONS=ON -DUSE_POINTCLOUD2LAS=ON -DUSE_COLLISION_AVOIDANCE=ON
+   <b>user@user-pc:~/Onboard-SDK/build$</b> make djiosdk-linux-sample
+   </pre>
+    
+2. Run the example spiral
+   <pre>
+   <b>user@user-pc:~/Onboard-SDK/build$</b> cd bin
+   <b>user@user-pc:~/Onboard-SDK/build/bin$</b> ./djiosdk-linux-sample 
+                                         -interactive 
+                                         ../PrecisionMissions-prefix/src/PrecisionMissions/precision-missions-1.0.2/data/params/spiral.json
+   </pre>
+3. Run the example spiral with M600/Velodyne gains
+   <pre>
+   <b>user@user-pc:~/Onboard-SDK/build$</b> cd bin
+   <b>user@user-pc:~/Onboard-SDK/build/bin$</b> ./djiosdk-linux-sample 
+                                         -interactive 
+                                         ../PrecisionMissions-prefix/src/PrecisionMissions/precision-missions-1.0.2/data/params/spiral.json 
+                                         ../PrecisionMissions-prefix/src/PrecisionMissions/precision-missions-1.0.2/data/tuning/M600_LiDAR_tuning.json
+       
+   </pre>
+
 ## Workflow
 
 The workflow for using this suite consists of two parts - planning a mission using the DJI Trajectory SketchUp plugin, and supplying the planned mission to the library for execution.
@@ -50,18 +96,20 @@ The workflow for using this suite consists of two parts - planning a mission usi
 #### 2. Simulate the Mission 
 
 * Supply the json you exported above as an argument to the synchronous Linux sample and run the trajectory in simulation. 
-* Make sure Assistant 2 is running on the same machine as SketchUp. Using the plugin's `Simulator Connect` feature, you can match up the simulation to ther planned trajectory. 
+* You can view the drone simulation as part of SketchUp too - Make sure Assistant 2 is running on the same machine as SketchUp. Using the plugin's `Simulator Connect` feature, you can match up the simulation to the planned trajectory. 
 * In simulation, set up the drone's home position close to the planned trajectory - as you would in real life.
-* To run the sample interactively, you can press `[z]` to run the trajectory following for the json supplied at command line. Note that the aircraft needs to have taken off first.
-![Interactive trajectory](../../images/modules/missionplan/interactive_localmissionplan.png)
-* To run it on mobile, you can go to the `Custom Missions` tab and run the first option. Note that the aircraft needs to have taken off first.
-![mobile trajectory](../../images/modules/missionplan/mobile.png)
-* To run it programmatically, make a call to `startStateBroadcast` and `executeFromParams` in the body of the main function near line 104.
-![automated calls](../../images/modules/missionplan/callsAutomated.png)
-* To integrate this functionality into your own code, take a look at the includes and the linking in the `CMakeLists.txt` in the `./Linux/Blocking` directory. 
+* To run the sample interactively, you can press `[z]` to run the trajectory following for the json supplied at command line. It is recommended to execute a takeoff command prior to executing a mission. If the aircraft is not in the air, it will takeoff now. 
+![Interactive trajectory](../../images/modules/missionplan/PM101.png)
+* To run it on mobile, you can go to the new `Advanced` tab and choose what components you want enabled in the lower part of the screen. It is recommended to execute a takeoff command prior to executing a mission. If the aircraft is not in the air, it will takeoff now.
+![mobile vanilla trajectory](../../images/modules/missionplan/mobile_advanced.png) 
 
-On running the trajectory follower, you should see messages telling you about feasibility and rampup times:
-![trajectory info](../../images/modules/missionplan/trajectory_info.png)
+* To integrate this functionality into your own code, take a look at the includes and the linking in the `CMakeLists.txt` in the `sample/Linux/Blocking` directory as well as the `osdk-wrapper` directory.  
+    The calls you will need to make can be seen in the `LinuxInteractive.cpp` or the `LinuxMobile.cpp` files; these include initialization of various variables at the start of the sample and a few function calls inside of the interactive/mobile spin.
+
+  On running the trajectory follower, you should see feedback about the library's current state/intent:
+  ![trajectory info](../../images/modules/missionplan/trajectory_info_101.png)
+
+   You will also see the percentage progress indicator on the last line as the aircraft traverses the trajectory.
 
 #### 3. Fly the mission
 
@@ -71,31 +119,33 @@ On running the trajectory follower, you should see messages telling you about fe
 ## Description of Functionality
 
 * This library uses advanced vehicle control algorithms in local NED-frame coordinates. 
-* The parameters of the trajectories are inspected for feasibility. If found to be infeasible, the library suggests a velocity that will make the trajectory feasible. 
+* The parameters of the trajectories are inspected for feasibility. If found to be infeasible, the library suggests a velocity that will make the trajectory feasible. Based on feedback from the beta, we have set maximum spiral velocity at 3m/s and maximum entry curve velocity at 5m/s.
 * The library also plans an entry trajectory from where the drone is currently located to the start location of the spiral in real-time. This allows you to start the drone at any location close to the spiral.
 * You can optionally have the drone take pictures at predefined intervals of time. 
 * You can also optionally have the drone record video from the start of the spiral to the end. 
-
-
-## A Note on the *Beta* Tag
-
-The precision trajectory following suite is fully functional and has been tested in many simulation and real-world scenarios. However, in a complex suite with many variable factors, we cannot at this moment guarantee that it will work as desired in extreme conditions (unreasonable velocities, winds, data corruption, GPS dropout etc). 
-
-This first release is meant to give users an idea of the possibilities that a precision trajectory mission planner opens up. Try out the suite - in simulation before you take it out - and tell us what changes you would like to see!
+* With OSDK 3.2, you can have the drone enable LiDAR collision avoidance for the full mission. Collision avoidance will cause the trajectory to pause when a collision is detected in the path of the trajectory, and a new path to re-join the trajectory will be computed once the obstacle is removed.
+* With OSDK 3.2, you can also have the drone create a 3D LiDAR map from the start of the spiral to the end.
 
 #### Warnings and Caveats
 
-* **There is no obstacle avoidance** integrated with the path planning. Make sure you plan spirals that stay clear of obstacles or the infrastructure itself. Importing 3D models of the object under inspection into Sketchup and planning around that is a good first-order measure.
-* **Leave plenty of open space in all directions in the area between your current location and the planned spiral.** The entry trajectory is planned in real time to provide the smoothest entry into the trajectory such that the entire spiral is executed at constant velocity. This means the entry curve might go wider that you expect in the area leading up to the spiral. The farther you are from the planned spiral, the wider the entry curve - this is to ensure a smooth 'slingshot' maneuver to enter the spiral. This behavior might change in an upcoming release.
-* **Do not enter very aggressive parameters in the mission plan**. We safeguard against all the error cases we have encountered but that might not cover the full scope of things that can go wrong in this complex suite. Over time, bug fixes and improved algorithms will help harden the suite.
-* **Do not modify the json file by hand.** We take no responsibility for any unwanted behavior caused by editing the json file outside of SketchUp. 
+* **Leave plenty of open space in all directions in the area between your current location and the planned spiral.** The entry trajectory is planned in real time to provide the smoothest entry into the trajectory such that the entire spiral is executed at constant velocity. This means the entry curve might go wider that you expect in the area leading up to the spiral. The farther you are from the planned spiral, the wider the entry curve - this is to ensure a smooth 'slingshot' maneuver to enter the spiral. This behavior might change in an upcoming release. 
+* **Use the gain tuning with caution - in particular, do NOT modify the *thrust scaling* for M100/M600 based setups.** The operator must assume sole responsibility for the safe operation of the vehicle.
+* **Collision Avoidance with Precision Missions is in beta**. See the [limitations](../collision-avoidance/collision-avoidance.html) of the collision avoidance features for more. The operator must assume sole responsibility for the safe operation of the vehicle.
 
 #### Some Notes on Behavior
 
-* Upon starting a ramp-up trajectory, the drone will immediately change its heading to north. This behavior is expected and will be changed in a future release.
 * The drone will not execute missions that start below 2m AGL. If you request a lower height, it will automatically change it to 2m.
 * MSL altitude is not supported through the mission planning interface and has not been adequately tested. The suite is designed to prefer MSL heights over AGL heights, which will be enabled once we add MSL heights to the planning software; we ask that you do not change the MSL value (-9999) in the json file and instead only plan missions using height above takeoff point.
-* Plan to start your drone less than 200m away from the planned spiral. If you start far away, the droe might not execute missions that have too small a starting radius or are too close to the ground because of the way the ramp-up attempts to maintain smoothness.
-* If the trajectory at any point gets less than 0.5 m from the ground, the mission is aborted.
+* Staying within the velocity limits might still lead to infeasible trajectories depending on how far away the spiral is from the current location. Tweak the spiral velocity and radii to make it feasible.
 * The start angle parameter does not rotate the spiral to the desired angle; it merely enters the first loop of a 0&deg; spiral at the position corresponding to the specified start angle.
-* Always, if there are any suspicions that the drone mmight crash, switch out of F mode ([P mode for A3 FW > 1.5.0.0](../appendix/releaseNotes.html#Notes-for-using-Onboard-SDK-with-the-new-a3-v1-5-0-0-fw)) and the drone will stop following.
+* Always, if there are any suspicions that the drone might crash, switch out of F mode ([P mode for A3 FW > 1.5.0.0](../../appendix/releaseNotes.html#Notes-for-using-Onboard-SDK-with-the-new-a3-v1-5-0-0-fw)) and the drone will stop following.
+
+### Safety Cases Handled
+
+* If the requested z-trajectory goes below 0.5m at any point in the ramp-up, the drone will stop executing the trajectory.
+* If the actual drone z-position goes below 0.5m at any point in the ramp-up, the drone will stop executing the trajectory.
+* If the commanded attitude is greater than 50&deg; in roll/pitch, the drone will stop executing the trajectory
+* If the commanded attitude is greater than 35&deg; in roll/pitch for an extended period of time, the drone will stop executing the trajectory.
+
+
+*If you have interest in acquiring a ready-to-fly customized Precision Missions solution, please [contact us](http://enterprise.dji.com/contact-us).*

@@ -104,8 +104,6 @@
       -
         title: SketchUp Extension
         path: /modules/missionplan/sketchup.html
-
-
   -
     title: LiDAR Mapping
     path: /modules/lidarmapping/lidar-mapping.html

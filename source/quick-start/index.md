@@ -3,7 +3,7 @@ title: Get Started
 date: 2016-10-14
 keywords: [get started, key features, hardware overview, registration, enable flight controller API control, safety]
 ---
-> New! Onboard SDK 3.1.9 was released on 10/14. See [release notes](../appendix/releaseNotes.html) for more!
+> New Major Release! Onboard SDK 3.2.0 was released on 12/23. See [release notes](../appendix/releaseNotes.html) for more!
 
 ## Getting Started with the Onboard SDK
 
@@ -24,26 +24,25 @@ This SDK is for developers with:
 
 The onboard SDK enables deep interaction between your OES and a DJI flight controller.  Using the APIs you can, for example, use a sensor connected to your embedded system to control the trajectory of the vehicle, collect telemetry data in real-time, trigger a camera to take photos, or send data through the vehicle's downlink to a mobile device. Your OES must have a TTL UART port available for the onboard SDK to use.
 
-### Flight Control
+##### Flight Control
 
   - A variety of control modes are available including real-time attitude control, velocity control, position control, and complete waypoint mission planning. 
   
-### Vehicle Telemetry
+##### Vehicle Telemetry
 
   - A robust set of vehicle state information is available in real-time including inertial sensors, attitude, heading, velocity, position, battery info, and vehicle status.
   
-### Data Transmission
+##### Data Transmission
 
   - A bidirectional data link between your embedded device and a mobile device (in conjunction with DJI's mobile SDK) can be established by using the M100 or M600 built-in lightbridge communication system or by using a <a href="http://www.dji.com/product/lightbridge-2" target="_blank">Lightbridge 2</a> with the A3.
 
-### Camera and Gimbal Control
+##### Camera and Gimbal Control
 
  - A supported DJI camera and gimbal can be controlled with commands to take pictures, videos, and adjust gimbal position.
 
-### Advanced Sensing and Flight Algorithms
+## Advanced Sensing and Flight Algorithms
 
- - Velodyne LiDAR real-time logging and precision trajectory mission planning expand the capabilities of DJI's platforms.
- 
+ - LiDAR Mapping, LiDAR Collision Avoidance and Precision Missions expand the capabilities of DJI's platforms.
  
 We provide C/C++ source APIs to make sending and receiving data over the serial port easy and encourage you to use them in your applications.  Alternatively, developers can use our protocol specification to write their own communication drivers.
 
@@ -136,10 +135,10 @@ Also, take a look at our revamped [FAQ](../appendix/FAQ.html) for some answers t
 
 ### Reference Documents
 
-- [Release Notes for Onboard SDK 3.1.9](../appendix/releaseNotes.html)
-     >Note: v3.1.9 of the Onboard SDK was released on 10/14/16 and introduces many great new features.  Check it out!
+- [Release Notes for Onboard SDK 3.2.0](../appendix/releaseNotes.html)
+     >Note: v3.2.0 of the Onboard SDK was released on 23 Dec 16 and introduces many great new features.  Check it out!
 
-- Revamped [FAQ](../appendix/FAQ.html) since Onboard SDK 3.1.9
+- Revamped [FAQ](../appendix/FAQ.html)
 
 - [OPEN Protocol](../introduction/index.html) & [Appendix](../appendix/index.html) 
 
@@ -153,4 +152,4 @@ Also, take a look at our revamped [FAQ](../appendix/FAQ.html) for some answers t
  
 - [Ground Station Programming Guide](../application-development-guides/ground-station-programming-guide.html)
 
-
+- [EULA](http://developer.dji.com/policies/eula/)
