@@ -60,7 +60,7 @@ These use cases show a few of the many combinations of build/run you can do as p
    <b>user@user-pc:~/Onboard-SDK/build$</b> make djiosdk-linux-sample
    </pre>
 
-1. Compile with precision trajectories, LiDAR Mapping (See [here](../lidarmapping/lidar-mapping.html) for more steps you need to do to make it work) and Collision Avoidance
+1. Compile with precision trajectories, LiDAR Mapping (See [here](../lidarmapping/lidar-mapping.html#lidar-mapping-enabled-from-precision-missions) for more steps you need to do to make it work) and Collision Avoidance ((See [here](../collision-avoidance/collision-avoidance.html#collision-avoidance-with-precision-missions)  for more steps you need to do to make it work)
    <pre>
    <b>user@user-pc:~/Onboard-SDK/build$</b> cmake .. -DUSE_PRECISION_MISSIONS=ON -DUSE_POINTCLOUD2LAS=ON -DUSE_COLLISION_AVOIDANCE=ON
    <b>user@user-pc:~/Onboard-SDK/build$</b> make djiosdk-linux-sample
@@ -146,3 +146,6 @@ The workflow for using this suite consists of two parts - planning a mission usi
 * If the actual drone z-position goes below 0.5m at any point in the ramp-up, the drone will stop executing the trajectory.
 * If the commanded attitude is greater than 50&deg; in roll/pitch, the drone will stop executing the trajectory
 * If the commanded attitude is greater than 35&deg; in roll/pitch for an extended period of time, the drone will stop executing the trajectory.
+
+
+*If you have interest in acquiring a ready-to-fly customized Precision Missions solution, please [contact us](http://enterprise.dji.com/contact-us).*

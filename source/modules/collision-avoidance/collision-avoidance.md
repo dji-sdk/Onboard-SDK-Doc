@@ -39,22 +39,37 @@ The collision avoidance software is developed and tested on the following softwa
 4. DJI Onboard SDK ROS package
 5. DJI collision avoidance package (binary)
 
-The collosion avoidance module can be used in conjunction with precision mission planning or used during manual piloted flying. The software setup procedures differ for these two cases as outlined in the workflow section below.
+The collision avoidance module can be used in conjunction with precision mission planning or used during manual piloted flying. The software setup procedures differ for these two cases as outlined in the workflow section below.
 
-First follow software setup instructions in [Precision Mission](../../modules/missionplan/README.html#setup) and [ROS](../../github-platform-docs/ROS/README.html#setup) to build the linux sample with precision mission support and the `DJI_OnboardSDK_ROS` package. 
+##### Collision Avoidance with Precision Missions
+
+First follow software setup instructions in [Precision Mission](../../modules/missionplan/README.html#setup) to get the sample built with trajectory and collision avoidance support.
+
+Passing the `-DUSE_COLLISION_AVOIDANCE=ON` parameter to CMake while building the Linux sample will place collision avoidance binaries in the `build/bin/dji-ros-collision-avoidance` directory.
 
 Next, build the `velodyne` ROS package:
 
        1. cd path-to-catkin-workspace/src
        2. git clone https://github.com/dji-sdk/velodyne.git
        3. cd ..
-       4. catkin_make -DCOLLISION_AVOIDANCE=ON
+       4. catkin_make
        5. source devel/setup.bash
-       6. source dji_ros_package/dji_collision_avoidance/setup.bash
 
+Finally, source the collision avoidance install-space: 
 
-In step 4, the `-DCOLLISION_AVOIDANCE=ON` flag downloads the `dji_collision_avoidance` binary and put it under `path-to-catkin-workspace`, which is why the `setup.bash` needs to be sourced.
+       6. cd path-to-Linux-sample-build-directory
+       7. cd bin/
+       8. source dji-ros-collision-avoidance/install-1604/setup.bash --extend
 
+Don't forget the `--extend` option - if you do not use it, the source command will override your previously sourced ROS workspace.
+
+##### Collision Avoidance with Manual Flight in Onboard-SDK-ROS
+
+Follow the steps at the [ROS](../../github-platform-docs/ROS/README.html#setup) page to build the `DJI_OnboardSDK_ROS` package with the `-DUSE_COLLISION_AVOIDANCE=ON` parameter. This will place the collision avoidance binary in `path_to_catkin_workspace/dji-ros-collision-avoidance`
+
+Next, build the `velodyne` ROS package as above and add the `--extend` flag while sourcing `devel/setup.bash` if you had the velodyne package in a different catkin workspace than the one with Onboard SDK ROS.
+
+Finally, source the collision avoidance install-space as above (make sure you `cd` to `path_to_catkin_workspace/dji-ros-collision-avoidance` in step 1).
 
 ## Workflow
 

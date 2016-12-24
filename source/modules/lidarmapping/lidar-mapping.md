@@ -37,13 +37,13 @@ at the end of the spiral by enabling this feature in the mobile app.
 
 ## Software setup
 
-### LiDAR Mapping enabled from Precision Missions.
+### LiDAR Mapping enabled from Precision Missions
  
  In order to use the LiDAR Mapping package with Precision Missions:
  
   1. Download the source code for the [LOAM package](https://github.com/laboshinl/loam_velodyne) and the [Velodyne package](https://github.com/dji-sdk/velodyne.git)
   
-  2. Source the packages using the *--extend* option. 
+  2. Source the packages using the `--extend` option. 
   
   3. After downloading the [DJI OnboardSDK package](https://github.com/dji-sdk/Onboard-SDK.git), the Linux sample must be compiled with the options
      ```
