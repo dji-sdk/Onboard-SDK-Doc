@@ -79,8 +79,9 @@ For **3.1.9**:
  
 For **3.2.0**:
 
-* In `sample/Linux/Blocking`, create a `build` directory and `cd` into it.
+* In top level `Onboard-SDK`, create a `build` directory and `cd` into it.
 * Type `cmake .. -DUSE_PRECISION_MISSIONS=[ON|OFF] -DUSE_COLLISION_AVOIDANCE=[ON|OFF] -DUSE_POINTCLOUD2LAS=[ON|OFF]`. All the options are off by default. Do not use the `[]` braces while specifying your option.
+* The resulting executable is `Onboard-SDK/build/bin/djiosdk-linux-sample`
 
 ##### 2.4 Using the Simulator
 
