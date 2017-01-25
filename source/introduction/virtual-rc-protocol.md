@@ -10,6 +10,8 @@ Virtual RC (Remote Controller), is an API designed for developers to control the
 
 Developers can use it directly without obtaining control ability. A list of channel data should be sent to the drone from serial port within every second, or the drone will exit from the virtual RC logic.
 
+**NOTE: Virtual RC has been deprecated and is unavailable for A3 FW > 1.6.0.0 and for N3.**
+
 ## Command Set and Command ID
 
 |API LEVEL|CMD SET|CMD ID|DESCRIPTION|

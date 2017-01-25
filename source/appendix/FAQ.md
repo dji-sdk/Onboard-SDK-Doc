@@ -1,7 +1,7 @@
 ---
 title: FAQ 
 date: 2016-10-14
-keywords: [OES, N1/A3, FAQ, stackOverFlow, Github Issues, activation fail, M100, video, lightbridge, flight control, data transparent transmission, open protocol, frequency, commands]
+keywords: [OES, N1/A3, N3, FAQ, stackOverFlow, Github Issues, activation fail, M100, video, lightbridge, flight control, data transparent transmission, open protocol, frequency, commands]
 ---
 > New! Updated with questions on the DJI forums and Github
 
@@ -22,26 +22,26 @@ keywords: [OES, N1/A3, FAQ, stackOverFlow, Github Issues, activation fail, M100,
 * [What does Onboard Embedded System (OES) mean?](#what-does-onboard-embedded-system-oes-mean)
 * [Which OES and Operating Systems are supported by Onboard SDK?](#which-oes-and-operating-systems-are-supported-by-onboard-sdk)
 * [Is an OES with an OS running needed in the development of Onboard SDK?](#is-an-oes-with-an-os-running-needed-in-the-development-of-onboard-sdk)
-* [What are the communication ports between an OES and an N1 or A3 flight controller?](#what-are-the-communication-ports-between-an-oes-and-an-n1-or-a3-flight-controller)
+* [What are the communication ports between an OES and an N1,A3 or N3 flight controller?](#what-are-the-communication-ports-between-an-oes-and-an-n1-a3-or-n3-flight-controller)
 * [Does M100 support third party video capturing devices? Can I use the M100's built-in ‘Lightbridge’ functionality?](#does-m100-support-third-party-video-capturing-devices-can-i-use-the-m100-s-built-in-lightbridge-functionality)
 
 **Platform Related**
 * [Manifold - Why does restoring system image cause issues?](#manifold-why-does-restoring-system-image-cause-issues)
 * [Manifold - How do I purchase a Manifold?](#manifold-how-do-i-purchase-a-manifold)
-* [A3 - Do I need a LightBridge 2 RC to use Onboard SDK?](#a3-do-i-need-a-lightbridge-2-rc-to-use-onboard-sdk)
+* [A3/N3 - Do I need a LightBridge 2 RC to use Onboard SDK?](#a3-n3-do-i-need-a-lightbridge-2-rc-to-use-onboard-sdk)
 * [STM32 - Do all parts of the SDK work with low-power embedded systems?](#stm32-do-all-parts-of-the-sdk-work-with-low-power-embedded-systems)
 
 **General SDK**
 
-* [What flight data of M100/M600/A3 can I get via the Onboard SDK?](#what-flight-data-of-m100-m600-a3-can-i-get-via-the-onboard-sdk)
-* [With the Open Protocol on UART port, what is the data output frequency of N1/A3?](#with-the-open-protocol-on-uart-port-what-is-the-data-output-frequency-of-n1-a3)
+* [What flight data of M100/M600/A3/N3 can I get via the Onboard SDK?](#what-flight-data-of-m100-m600-a3-n3-can-i-get-via-the-onboard-sdk)
+* [With the Open Protocol on UART port, what is the data output frequency of N1/A3/N3?](#with-the-open-protocol-on-uart-port-what-is-the-data-output-frequency-of-n1-a3-n3)
 * [Can I encrypt data on the UART line?](#can-i-encrypt-data-on-the-uart-line)
 * [How do I get the camera's video feed on the OES?](#how-do-i-get-the-camera-s-video-feed-on-the-oes)
 * [Suppose some data onboard the drone needs to be transmitted to a mobile device. Can this functionality be supported by Onboard SDK?](#suppose-some-data-onboard-the-drone-needs-to-be-transmitted-to-a-mobile-device-can-this-functionality-be-supported-by-onboard-sdk)
 * [For the development of Onboard SDK, can I use some bandwidth from the remote controller to get my own data back to a ground station?](#for-the-development-of-onboard-sdk-can-i-use-some-bandwidth-from-the-remote-controller-to-get-my-own-data-back-to-a-ground-station)
-* [Are there any simulators provided for the development of Onboard SDK with M100/M600/A3?](#are-there-any-simulators-provided-for-the-development-of-onboard-sdk-with-m100-m600-a3)
+* [Are there any simulators provided for the development of Onboard SDK with M100/M600/A3/N3?](#are-there-any-simulators-provided-for-the-development-of-onboard-sdk-with-m100-m600-a3-n3)
 * [Can I set the initial height of the ‘take off’ function manually?](#can-i-set-the-initial-height-of-the-take-off-function-manually)
-* [What is the recommended transmission rate for N1/A3 flight controller to receive external commands?](#what-is-the-recommended-transmission-rate-for-n1-a3-flight-controller-to-receive-external-commands)
+* [What is the recommended transmission rate for N1/A3/N3 flight controller to receive external commands?](#what-is-the-recommended-transmission-rate-for-n1-a3-n3-flight-controller-to-receive-external-commands)
 * [If I choose 'Raw data' in DJI Assistant 2, Flight Data is incorrectly reported when using simulator. Is this a bug?](#if-i-choose-raw-data-in-dji-assistant-2-flight-data-is-incorrectly-reported-when-using-simulator-is-this-a-bug)
 * [How do I send commands to the drone when it is flying? Wireless keyboards or Wireless Serial Ports are impractical and unsafe.](#how-do-i-send-commands-to-the-drone-when-it-is-flying-wireless-keyboards-or-wireless-serial-ports-are-impractical-and-unsafe)
 
@@ -103,18 +103,17 @@ Reasons for why it might fail include:
 * App ID/key is incorrect. Check in the <a href="https://developer.dji.com/user/apps/#all" target="_blank"> User Center </a> to confirm the application key.
 * The serial port is not connected/opened correctly (baud rate, incorrect hardware connections etc). This might happen on ARM architectures since the Onboard SDK's serial driver does not implement sophisticated checks on this platform.
 * The voltages on the UART line are incorrect. The electrical interface is 3.3V TTL.
-* RC is not in Mode F. Activation can only happen in mode F.
 * API Control is not enabled using DJI Assistant 2. Go to the SDK page on Assistant 2 and check the box marked Enable API Control.
 
 ## Product/Hardware Related
 
 ### Which DJI products are supported by the Onboard SDK?
 
-The Matrice 100, Matrice 600 and the A3 flight controller are supported by the Onboard SDK.
+The Matrice 100 (N1 flight controller), Matrice 600 the A3 flight controller and the N3 flight controller are supported by the Onboard SDK.
 
 ### What does Onboard Embedded System (OES) mean?
 
-In the context of DJI Onboard SDK documentation, Onboard Embedded System (OES) refers to any devices that can communicate with N1/A3 flight controller and supported by Onboard SDK.
+In the context of DJI Onboard SDK documentation, Onboard Embedded System (OES) refers to any devices that can communicate with N1/A3/N3 flight controller and supported by Onboard SDK.
 
 ### Which OES and Operating Systems are supported by Onboard SDK?
   
@@ -124,9 +123,9 @@ The [Hardware Setup Guide](../hardware-setup/index.html) talks about all support
 
 Not necessarily, but preferred. We recommend a setup with Ubuntu and ROS but even a simple STM32 MCU without an OS running on it works.
 
-### What are the communication ports between an OES and an N1 or A3 flight controller?
+### What are the communication ports between an OES and an N1, A3 or N3 flight controller?
     
-An OES can only communicate with N1/A3 flight controller via a UART port.
+An OES can only communicate with N1/A3/N3 flight controller via a UART port.
 
 ### Does M100 support third party video capturing devices? Can I use the M100's built-in ‘Lightbridge’ functionality?
 
@@ -142,7 +141,7 @@ If you're seeing blinking mouse cursors, changing text size or general issues wi
 
 The Manifold is sold for university projects or for other research. Please send email to dev@dji.com stating the purpose of use.
 
-### A3 - Do I need a LightBridge 2 RC to use Onboard SDK?
+### A3/N3 - Do I need a LightBridge 2 RC to use Onboard SDK?
 
 Currently, you do need a LightBridge 2 RC for first use (specifically, activation). This requirement will be removed in future A3 firmware.
 
@@ -152,13 +151,13 @@ We support low-power embedded systems for core SDK functionality - all funcitons
 
 ## General SDK
 
-### What flight data of M100/M600/A3 can I get via the Onboard SDK?
+### What flight data of M100/M600/A3/N3 can I get via the Onboard SDK?
      
 You can get the full state estimate, timestamp and a lot of other information like gimbal data, state machine value etc. Refer to the [Receiving Flight Data](../application-development-guides/programming-guide.html#receiving-flight-data) section in the [Programming Guide](../application-development-guides/programming-guide.html). 
 
 Bit-level protocol information about the state broadcast data can also be found in the [Open Protocol](../../appendix/index.html) Documentation 
 
-### With the Open Protocol on UART port, what is the data output frequency of N1/A3?
+### With the Open Protocol on UART port, what is the data output frequency of N1/A3/N3?
 
 The data output frequency for various kinds of state broadcast data (Position, Attitude, Timestamp etc.) can be set via DJI Assistant 2 in the [0, 100Hz] range.
 
@@ -176,9 +175,9 @@ Yes. Refer to [Data Transparent Transmission](../introduction/data-transparent-t
 
 ### For the development of Onboard SDK, can I use some bandwidth from the remote controller to get my own data back to a ground station?
     
-Unfortunately, the LightBridge 2 channel does now support transmitting arbitrary forms of data. If you have data in the form of a video stream, use N1 Video Encoder (M100) or HDMI (M600/A3) to stream it back to the RC. If you have some low-bandwidth data, consider using [Data Transparent Transmission](../introduction/data-transparent-transmission.html).
+Unfortunately, the LightBridge 2 channel does now support transmitting arbitrary forms of data. If you have data in the form of a video stream, use N1 Video Encoder (M100) or HDMI (M600/A3/N3) to stream it back to the RC. If you have some low-bandwidth data, consider using [Data Transparent Transmission](../introduction/data-transparent-transmission.html).
 
-### Are there any simulators provided for the development of Onboard SDK with M100/M600/A3?
+### Are there any simulators provided for the development of Onboard SDK with M100/M600/A3/N3?
     
 Yes. The [DJI Assistant 2](http://developer.dji.com/onboard-sdk/downloads/) has a built-in simulator that can be used with Onboard SDK.
 
@@ -186,7 +185,7 @@ Yes. The [DJI Assistant 2](http://developer.dji.com/onboard-sdk/downloads/) has 
 
 For now, no. The initial height is set to be about 1.2 meters.
 
-### What is the recommended transmission rate for N1/A3 flight controller to receive external commands?
+### What is the recommended transmission rate for N1/A3/N3 flight controller to receive external commands?
     
 50Hz.
  

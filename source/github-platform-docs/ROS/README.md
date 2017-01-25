@@ -8,7 +8,7 @@ keywords: [ros example]
 
 ## Introduction
 
-This ROS example implements functionality of the DJI Onboard-SDK. It consists of the core library and client packages demonstrating communication with Matrice 100 and A3 flight controllers. The flight controller type can be defined in the launch file of the core package at any time. Onboard SDK functionality offered in a wrapped header file called dji\_drone.h which user can include and use directly for his/her own demo applications. We also provide a python version called dji\_drone.py. To have our samples run as quickly as possible, we implemented a sample code for hardware driver that you can use as is to ensure safe serial communication between your flight controller and an Onboard Embedded System (OES) of your choice.
+This ROS example implements functionality of the DJI Onboard-SDK. It consists of the core library and client packages demonstrating communication with Matrice 100 and A3/N3 flight controllers. The flight controller type can be defined in the launch file of the core package at any time. Onboard SDK functionality offered in a wrapped header file called dji\_drone.h which user can include and use directly for his/her own demo applications. We also provide a python version called dji\_drone.py. To have our samples run as quickly as possible, we implemented a sample code for hardware driver that you can use as is to ensure safe serial communication between your flight controller and an Onboard Embedded System (OES) of your choice.
 
 
 Supported commands and  actions:
@@ -41,8 +41,8 @@ Supported commands and  actions:
 
 Software Functionality:
 
-* [dji\_sdk](../ROS_Example/ros_corePackage.html): the core package handling the communication with Matrice 100, which provides a header file `dji_drone.h` for future use
-* [dji\_sdk\_demo](../ROS_Example/ros_demo_client_package.html): an example package of using `dji_drone.h` to control the Matrice 100
+* [dji\_sdk](../ROS_Example/ros_corePackage.html): the core package handling the communication with Matrice 100/A3/N3, which provides a header file `dji_drone.h` for future use
+* [dji\_sdk\_demo](../ROS_Example/ros_demo_client_package.html): an example package of using `dji_drone.h` to control the Matrice 100/A3/N3
 * [dji\_sdk\_web_groundstation](../ROS_Example/ros_map_waypoint_navigation_package.html): a WebSocket example using ROS-bridge-suite, where a webpage groundstation is provided
 * [dji\_sdk\_read_cam](../ROS_Example/ros_video_decoding_package.html): a X3 video decoding package for Manifold, CATKIN_IGNOREd by defualt
 * [dji\_sdk\_dji2mav](../ROS_Example/ros_dji2mav_0.2.1_package.html): a protocol converter making M100 compatiable with all MAVLink-protocol-dependent softwares
@@ -64,7 +64,7 @@ Tested Environment:
 * Operating System: Ubuntu 14.04, Manifold
 * ROS version: ROS Indigo
 > **Note:** Onboard SDK ROS has also been beta tested with Ubuntu Xenial 16.04LTS and ROS Kinetic Kame. We currently do not support `rosinstall` or `apt-get` for this configuration.   
-> **Note:** Onboard SDK ROS also supports A3 FW 1.5.0.0 and newer with OSDK 3.2.0. See [Notes](../../appendix/releaseNotes.html#notes-for-using-onboard-sdk-with-the-new-a3-v1-5-0-0-fw).
+> **Note:** Onboard SDK ROS also supports N3 and A3 FW 1.5.0.0 and newer with OSDK 3.2.0. See [Notes](../../appendix/releaseNotes.html#notes-for-using-onboard-sdk-with-the-new-a3-v1-5-0-0-fw).
 
 Software Requirements:
 
@@ -88,7 +88,7 @@ Activation Process:
 
 1. Follow steps (3) and (5) in the [Setup](../../quick-start/index.html#Setup) section of the Quick Start guide
 2. Update core launch file dji_sdk/launch/sdk_manifold.launch with information below:
-    * drone_version: "M100" or "A3_31" (A3 FW < 1.5.0.0) or "A3_32" (A3 FW >= 1.5.0.0)
+    * drone_version: "M100" or "A3_31" (A3 FW < 1.5.0.0) or "A3_32" (A3 FW >= 1.5.0.0, N3)
     * app_id: registered APP ID
     * enc_key: registered App Key 
     * serial_name: /dev/ttyTHS1 (default on Manifold)
@@ -125,4 +125,4 @@ This is a communication example involving Simulator as part of the Assistant sof
 ![Simulator Take Off Mission](../../images/ROS/SimulatorTakeOff.png)
 
 </br></br>
-For further reading about Onboard SDK, please refer to [DJI SDK Challenge: Onboard SDK Part I](./whatToKnowI.html)
+For further reading about Onboard SDK ROS, please refer to [ROS OSDK Additional Info](./whatToKnowI.html)
