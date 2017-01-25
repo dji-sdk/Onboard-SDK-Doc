@@ -85,7 +85,7 @@ For **3.2.0**:
 
 ##### 2.4 Using the Simulator
 
-* Connect your M100/M600/A3 to a PC through USB.
+* Connect your M100/M600/A3/N3 to a PC through USB.
 * Open up DJI Assistant 2. Click on the DJI M100/M600/A3 button. If this button doesn't show up, try disconnecting and reconnecting the USB.
 * Click on the Simulator tab, and then click on the 'Open' button. A separate window should pop up in a few seconds.
 ![Sim1](../../images/Linux/Simulator_Open.png)
@@ -100,7 +100,7 @@ The first time a drone/OES combination is used, it needs to be activated. Activa
 
 1. [Enable API control](../../quick-start/index.html#3-Enable-Flight-Controller-API-control) and [get an app ID and key](../../quick-start/index.html#5-Onboard-Application-Registration).
 2. Navigate to `sample/Linux/UserConfig.txt` and enter your App ID and Key in place of the defaults in that file.
-3. Make sure the drone version in the file matches your setup. For M100, use `versionM100_31`. For A3 FW 1.3.0.0 and below, use `versionA3_31`. For A3 FW 1.5.0.0 and above, use `versionA3_32`.
+3. Make sure the drone version in the file matches your setup. For M100, use `versionM100_31`. For A3 FW 1.3.0.0 and below, use `versionA3_31`. For A3 FW 1.5.0.0 and above, use `versionA3_32`. For N3, use `versionA3_32`.
 4. Proceed to the instructions under [Operation](#Operation)
 
 ---

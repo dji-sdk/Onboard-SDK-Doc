@@ -7,7 +7,7 @@ keywords: [get started, key features, hardware overview, registration, enable fl
 
 ## Getting Started with the Onboard SDK
 
-DJI's onboard SDK allows you to connect your own Onboard Embedded System (OES) to a supported DJI vehicle (<a href="http://www.dji.com/product/matrice100" target="_blank">Matrice 100</a> or <a href="http://www.dji.com/product/matrice600" target="_blank">Matrice 600</a>) or flight controller (<a href="http://www.dji.com/product/a3" target="_blank">A3</a>) using a common serial port (TTL UART). This setup opens up an exciting opportunity to integrate your own hardware with DJI's flying platforms.  New applications and commercial uses for aerial robotics awaits and we can't wait to see what you build, so lets get started!
+DJI's onboard SDK allows you to connect your own Onboard Embedded System (OES) to a supported DJI vehicle (<a href="http://www.dji.com/product/matrice100" target="_blank">Matrice 100</a> or <a href="http://www.dji.com/product/matrice600" target="_blank">Matrice 600</a>) or flight controller (<a href="http://www.dji.com/product/a3" target="_blank">A3</a> or <a href="http://www.dji.com/product/n3" target="_blank">N3</a>) using a common serial port (TTL UART). This setup opens up an exciting opportunity to integrate your own hardware with DJI's flying platforms.  New applications and commercial uses for aerial robotics awaits and we can't wait to see what you build, so lets get started!
 
 ### Prerequisites
 
@@ -15,7 +15,7 @@ This SDK is for developers with:
 
 - programming experience in C and C++
 - embedded systems knowledge
-- a DJI <a href="http://www.dji.com/product/matrice100" target="_blank">Matrice 100</a> vehicle, a DJI <a href="http://www.dji.com/product/matrice600" target="_blank">Matrice 600</a> vehicle, or DJI <a href="http://www.dji.com/product/a3" target="_blank">A3</a> flight controller integrated into your own vehicle
+- a DJI <a href="http://www.dji.com/product/matrice100" target="_blank">Matrice 100</a> vehicle, a DJI <a href="http://www.dji.com/product/matrice600" target="_blank">Matrice 600</a> vehicle, or a DJI <a href="http://www.dji.com/product/a3" target="_blank">A3</a> or <a href="http://www.dji.com/product/n3" target="_blank">N3</a> flight controller integrated into your own vehicle
 - your own Onboard Embedded System (OES) with an available com port (TTL UART)
 - Windows PC to run the required software tools
 - an iOS or Android mobile device to run DJI Go
@@ -34,13 +34,13 @@ The onboard SDK enables deep interaction between your OES and a DJI flight contr
   
 ##### Data Transmission
 
-  - A bidirectional data link between your embedded device and a mobile device (in conjunction with DJI's mobile SDK) can be established by using the M100 or M600 built-in lightbridge communication system or by using a <a href="http://www.dji.com/product/lightbridge-2" target="_blank">Lightbridge 2</a> with the A3.
+  - A bidirectional data link between your embedded device and a mobile device (in conjunction with DJI's mobile SDK) can be established by using the M100 or M600 built-in lightbridge communication system or by using a <a href="http://www.dji.com/product/lightbridge-2" target="_blank">Lightbridge 2</a> with the A3/N3.
 
 ##### Camera and Gimbal Control
 
  - A supported DJI camera and gimbal can be controlled with commands to take pictures, videos, and adjust gimbal position.
 
-## Advanced Sensing and Flight Algorithms
+##### Advanced Sensing and Flight Algorithms
 
  - LiDAR Mapping, LiDAR Collision Avoidance and Precision Missions expand the capabilities of DJI's platforms.
  
@@ -48,7 +48,7 @@ We provide C/C++ source APIs to make sending and receiving data over the serial 
 
 ## Hardware Overview
 - If you are using an M100 or M600 vehicle, you should assemble and familiarize yourself with flying the vehicle before attempting to proceed with onboard SDK development.
-- If you are using an A3 flight controller with Lightbridge 2 and your own vehicle, then you should familiarize yourself with flying your vehicle before attempting to proceed with onboard SDK development.
+- If you are using an A3/N3 flight controller with Lightbridge 2 and your own vehicle, then you should familiarize yourself with flying your vehicle before attempting to proceed with onboard SDK development.
 - Generically, you will be working with one of the setups in the following diagram:
 ![Hardware Setup](../images/common/GenericHWSetup.png)
 
@@ -65,12 +65,12 @@ We provide C/C++ source APIs to make sending and receiving data over the serial 
      
 ### 2. Update Firmware
 
-- Connect your computer to the Micro-USB port on the M100/600 or A3
-- Update your <a href="http://www.dji.com/product/matrice100/info#downloads" target="_blank">M100</a>, <a href="http://www.dji.com/product/matrice600/info#downloads" target="_blank">M600</a> or <a href="http://www.dji.com/product/a3/info#downloads" target="_blank">A3</a> with the latest released firmware. If using A3 FW 1.5.0.0, please see [this](../appendix/releaseNotes.html#Notes-for-using-Onboard-SDK-with-the-new-a3-v1-5-0-0-fw).
+- Connect your computer to the Micro-USB port on the M100/600 or A3/N3
+- Update your <a href="http://www.dji.com/product/matrice100/info#downloads" target="_blank">M100</a>, <a href="http://www.dji.com/product/matrice600/info#downloads" target="_blank">M600</a>, <a href="http://www.dji.com/product/a3/info#downloads" target="_blank">A3</a> or <a href="http://www.dji.com/product/n3/info#downloads" target="_blank">N3</a> with the latest released firmware. If using A3/N3 FW > 1.5.0.0, please see [this](../appendix/releaseNotes.html#Notes-for-using-Onboard-SDK-with-the-new-a3-v1-5-0-0-fw).
 
 ### 3. Enable Flight Controller API control
 
-- With your M100/M600 or A3 connected to your computer, launch DJI PC Assistant 2 and check the box "Enable API Control”.
+- With your M100/M600/A3/N3 connected to your PC/Mac, launch DJI Assistant 2 and check the box "Enable API Control”.
 
 ![Enable API Control](../images/common/N1UI.png)
 

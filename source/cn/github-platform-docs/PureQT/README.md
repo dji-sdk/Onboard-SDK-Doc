@@ -124,8 +124,8 @@ For example, if you configure MS Visual Studio C/C++ compiler for Qt, you may ne
 
 #### Using the Simulator
 
-1. Connect your M100/A3 to a PC through USB.
-2. Open up DJI Assistant 2. Click on the DJI M100 (or A3) button. If this button doesn't show up, try disconnecting and reconnecting the USB.
+1. Connect your M100/A3/N3 to a PC through USB.
+2. Open up DJI Assistant 2. Click on the DJI M100 (or A3/N3) button. If this button doesn't show up, try disconnecting and reconnecting the USB.
 3. Click on the Simulator tab, and then click on the 'Open' button. A separate window should pop up in a few seconds.
 4. In the main window, click on 'Start Emulating'.
 
@@ -133,14 +133,14 @@ For example, if you configure MS Visual Studio C/C++ compiler for Qt, you may ne
 
 Click the green triangle icon in the left corner on the bottom of the Qt creator IDE to run the sample.
 
-At this time, you need to power up M100/A3 and RC unit /mobile device, and start to run "DJI Go" app.
+At this time, you need to power up M100/A3/N3 and RC unit /mobile device, and start to run "DJI Go" app.
 
 Before you can execute any flight commands, an initialization and activation process via the GUI ("Core API" Tab Panel under "Flight" page) needs to be done as follows:
 
-* Choose your drone/FC in the first drop-down box. For A3 version 1.5.0.0, choose A3_3.2. For older A3 firmware, choose A3_3.1. 
+* Choose your drone/FC in the first drop-down box. For A3 version 1.5.0.0 and N3, choose A3_3.2. For older A3 firmware, choose A3_3.1.
 * Enter (can copy and paste) the APP ID in the the corresponding edit box
 * Enter (can copy and paste) the Key in the the corresponding edit box
-* Select COM port (e.g. COM1, COM2) in the pull-down edit box, which is connected to M100/A3
+* Select COM port (e.g. COM1, COM2) in the pull-down edit box, which is connected to M100/A3/N3
 * Enter the baudrate (Note: the 'baudrate' needs to be consistent with the setting in the DJI Assistant2 software)
 * Click the button "COM* closed" and check the API status box in the far left message panel to see if the COM port is opened successully
 * Click the button "Activate"  
@@ -151,7 +151,7 @@ Figure 1 below shows the UI.
 
 Figure 1 Initialization and activation
 
-At this point, the communication between the N1 flight controller of M100 (or A3 flight controller) and your OES (PC for this case) has been established.
+At this point, the communication between the N1 flight controller of M100 (or A3/N3 flight controller) and your OES (PC for this case) has been established.
 
 ## Operation
 

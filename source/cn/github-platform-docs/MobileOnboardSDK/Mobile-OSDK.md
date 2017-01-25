@@ -14,11 +14,11 @@ This implementation provides an alternative way to run/test your OnboardSDK code
 
 Basic architecture of the Mobile Onboard SDK communication is shown. The image below shows commands being sent from Mobile to Onboard SDK.  
 
-![MOS Mobile to OES](../../images/common/MOSDK1.png)
+![MOS Mobile to OES](../../images/common/MOSDK_A3N3_1.png)
 
 The image below shows the ACK being returned to mobile. 
 
-![MOS ACK return](../../images/common/MOSDK2.png)
+![MOS ACK return](../../images/common/MOSDK_A3N3_2.png)
 
 
 ## Setup

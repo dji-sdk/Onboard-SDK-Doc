@@ -48,7 +48,7 @@ Starting with OSDK 3.2.0, Precision Missions is offered as a standalone componen
     ```
     Onboard-SDK/build/PrecisionMissions-prefix/src/PrecisionMissions/precision-missions-1.0.2/data/tuning
     ```
-   **Use this feature with *extreme* caution**; incorrect gains can crash your aircraft. Do not deviate much from the provided gains as far as possible. If you do not supply a file, M600 gains will automatically be applied to A3-based systems and M100 gains will be applied for M100 systems.
+   **Use this feature with *extreme* caution**; incorrect gains can crash your aircraft. Do not deviate much from the provided gains as far as possible. If you do not supply a file, M600 gains will automatically be applied to A3/N3-based systems and M100 gains will be applied for M100 systems.
       
 #### Real-world Usage Examples
 
@@ -138,7 +138,7 @@ The workflow for using this suite consists of two parts - planning a mission usi
 * MSL altitude is not supported through the mission planning interface and has not been adequately tested. The suite is designed to prefer MSL heights over AGL heights, which will be enabled once we add MSL heights to the planning software; we ask that you do not change the MSL value (-9999) in the json file and instead only plan missions using height above takeoff point.
 * Staying within the velocity limits might still lead to infeasible trajectories depending on how far away the spiral is from the current location. Tweak the spiral velocity and radii to make it feasible.
 * The start angle parameter does not rotate the spiral to the desired angle; it merely enters the first loop of a 0&deg; spiral at the position corresponding to the specified start angle.
-* Always, if there are any suspicions that the drone might crash, switch out of F mode ([P mode for A3 FW > 1.5.0.0](../../appendix/releaseNotes.html#Notes-for-using-Onboard-SDK-with-the-new-a3-v1-5-0-0-fw)) and the drone will stop following.
+* Always, if there are any suspicions that the drone might crash, switch out of F mode ([P mode for A3 FW > 1.5.0.0, N3](../../appendix/releaseNotes.html#Notes-for-using-Onboard-SDK-with-the-new-a3-v1-5-0-0-fw)) and the drone will stop following.
 
 ### Safety Cases Handled
 

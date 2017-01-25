@@ -24,6 +24,8 @@ Developers are also encouraged to view the [EULA](http://developer.dji.com/polic
 
 ### Previous Release
 ###### Notes for using Onboard SDK with the new A3 v1.5.0.0 FW
+
+**Note: These notes also apply to N3 Flight controllers.**
 * Starting with this firmware, A3 units will respond differently to flight mode switch positions. The default switch positions of (P,A,F) have been replaced by (P,S,A) respectively.  
 * Previously, Onboard SDK was available in F mode - with this release, the Onboard SDK is available in P mode. 
 * If you desire a manual override (a switch position that disables the Onboard SDK), you can go to DJI Assistant 2 ->Basic Settings -> Remote Controller Settings and check the box that says Multiple Flight Modes.

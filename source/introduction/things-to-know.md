@@ -18,7 +18,7 @@ The **remote controller always enjoys top priority** for control. The flight con
 
 To request control of the drone, your app must call the flight control request function exposed by the Onboard SDK library.
 
-Note that this **does not mean** the user will always be able to use RC sticks to control the aircraft; for example, in F mode ([P mode for A3 FW > 1.5.0.0](../appendix/releaseNotes.html#Notes-for-using-Onboard-SDK-with-the-new-a3-v1-5-0-0-fw)) the sticks are unavailable when the SDK is executing movement control. The correct way to assert the RC's control precedence is to make sure the above conditions for API control are unmet - usually the easiest way to do so is to switch the RC out of F mode into P or A mode. For A3 FW > 1.5.0.0, please see [mode switch changes](../appendix/releaseNotes.html#Notes-for-using-Onboard-SDK-with-the-new-a3-v1-5-0-0-fw).
+Note that this **does not mean** the user will always be able to use RC sticks to control the aircraft; for example, in F mode ([P mode for A3/N3 FW > 1.5.0.0](../appendix/releaseNotes.html#Notes-for-using-Onboard-SDK-with-the-new-a3-v1-5-0-0-fw)) the sticks are unavailable when the SDK is executing movement control. The correct way to assert the RC's control precedence is to make sure the above conditions for API control are unmet - usually the easiest way to do so is to switch the RC out of F mode into P or A mode. For A3/N3 FW > 1.5.0.0, please see [mode switch changes](../appendix/releaseNotes.html#Notes-for-using-Onboard-SDK-with-the-new-a3-v1-5-0-0-fw).
 
 
 ## Frames of Reference
