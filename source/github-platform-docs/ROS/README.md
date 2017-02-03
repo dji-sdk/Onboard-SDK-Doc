@@ -88,7 +88,7 @@ Activation Process:
 
 1. Follow steps (3) and (5) in the [Setup](../../quick-start/index.html#Setup) section of the Quick Start guide
 2. Update core launch file dji_sdk/launch/sdk_manifold.launch with information below:
-    * drone_version: "M100" or "A3_31" (A3 FW < 1.5.0.0) or "A3_32" (A3 FW >= 1.5.0.0, N3)
+    * Starting from OSDK 3.2.1, you no longer need to enter your drone version.
     * app_id: registered APP ID
     * enc_key: registered App Key 
     * serial_name: /dev/ttyTHS1 (default on Manifold)

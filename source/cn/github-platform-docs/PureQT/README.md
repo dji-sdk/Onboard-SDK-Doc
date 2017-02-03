@@ -137,13 +137,14 @@ At this time, you need to power up M100/A3/N3 and RC unit /mobile device, and st
 
 Before you can execute any flight commands, an initialization and activation process via the GUI ("Core API" Tab Panel under "Flight" page) needs to be done as follows:
 
-* Choose your drone/FC in the first drop-down box. For A3 version 1.5.0.0 and N3, choose A3_3.2. For older A3 firmware, choose A3_3.1.
+* Starting from OSDK 3.2.1, you no longer need to choose your drone version through a drop-down box. The 'Version' button queries the drone and automatically sets the correct version.
 * Enter (can copy and paste) the APP ID in the the corresponding edit box
 * Enter (can copy and paste) the Key in the the corresponding edit box
 * Select COM port (e.g. COM1, COM2) in the pull-down edit box, which is connected to M100/A3/N3
 * Enter the baudrate (Note: the 'baudrate' needs to be consistent with the setting in the DJI Assistant2 software)
 * Click the button "COM* closed" and check the API status box in the far left message panel to see if the COM port is opened successully
-* Click the button "Activate"  
+* Click the button "Version" (Starting from OSDK 3.2.1)
+* Click the button "Activate"
 
 Figure 1 below shows the UI.
 
