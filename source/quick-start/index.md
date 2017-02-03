@@ -1,9 +1,10 @@
 ---
 title: Get Started 
-date: 2016-10-14
+date: 2017-02-02
+version: 3.2.1
 keywords: [get started, key features, hardware overview, registration, enable flight controller API control, safety]
 ---
-> New Major Release! Onboard SDK 3.2.0 was released on 12/23. See [release notes](../appendix/releaseNotes.html) for more!
+> New Release! Onboard SDK 3.2.1 was released on 02/02. See [release notes](../appendix/releaseNotes.html) for more!
 
 ## Getting Started with the Onboard SDK
 
@@ -135,8 +136,8 @@ Also, take a look at our revamped [FAQ](../appendix/FAQ.html) for some answers t
 
 ### Reference Documents
 
-- [Release Notes for Onboard SDK 3.2.0](../appendix/releaseNotes.html)
-     >Note: v3.2.0 of the Onboard SDK was released on 23 Dec 16 and introduces many great new features.  Check it out!
+- [Release Notes for Onboard SDK 3.2.1](../appendix/releaseNotes.html)
+     >Note: v3.2.1 of the Onboard SDK was released on 02 Feb 17 and overhauls the drone versioning system.  Check it out!
 
 - Revamped [FAQ](../appendix/FAQ.html)
 

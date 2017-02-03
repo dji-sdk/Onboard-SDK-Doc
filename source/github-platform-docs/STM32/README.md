@@ -17,7 +17,7 @@ The user sends commands to the USART2 port of the STM32 from a serial terminal. 
 
 Before using this example App, make sure you have followed the [Quick Start](../../quick-start/index.html) and have valid APP KEY and APP ID.
 
-> Note: The STM32 sample app does not currently fully support A3 FW > 1.5.0.0 or N3. Please use a different OES platform for these.
+> Note: The STM32 sample app has limited support for A3 FW > 1.5.0.0 or N3.
 
 ## Setup
 
@@ -56,13 +56,19 @@ Set the baud rate of your serial terminal software (here we use the open-source 
 
 In order for the onboard App to obtain control of the drone, it needs to send an "Activation" command to the drone. Activation  tells the M100 that your onboard App is legitimate to control the drone. Make sure you have [Enabled API Control](../../quick-start/index.html#enable-api-control) using the DJI Assistant 2 software.
 
-Send the activation command with serial terminal
+Starting from OSDK 3.2.1, the following two-step process is used for activation.
+
+First, send the getDroneVersion command with the serial terminal.
+
+> 0xFA 0xFB 0x00 0xFE
+
+Next, send the activation command with serial terminal
 
 > 0xFA 0xFB 0x01 0xFE
 
 ![Activation Successfully](../../images/STM32/STM32_Activation_Successfully.png)
 
-Note that the first activation requires internet connection (STM32 <==> M100 <==> Remote Control <==> DJI GO APP <==> Internet), since it needs to verify that the APP ID and APP KEY used in the onboard APP are valid. After the first activation, internet connection is not mandatary.
+Note that the first activation requires internet connection (STM32 <==> M100 <==> Remote Control <==> DJI GO APP <==> Internet), since it needs to verify that the APP ID and APP KEY used in the onboard APP are valid. After the first activation, internet connection is not mandatory.
 
 ## Operation
 

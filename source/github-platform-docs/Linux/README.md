@@ -100,7 +100,7 @@ The first time a drone/OES combination is used, it needs to be activated. Activa
 
 1. [Enable API control](../../quick-start/index.html#3-Enable-Flight-Controller-API-control) and [get an app ID and key](../../quick-start/index.html#5-Onboard-Application-Registration).
 2. Navigate to `sample/Linux/UserConfig.txt` and enter your App ID and Key in place of the defaults in that file.
-3. Make sure the drone version in the file matches your setup. For M100, use `versionM100_31`. For A3 FW 1.3.0.0 and below, use `versionA3_31`. For A3 FW 1.5.0.0 and above, use `versionA3_32`. For N3, use `versionA3_32`.
+3. Starting from OSDK 3.2.1, you do not need to enter your drone version. The SDK queries the drone and activates accordingly.
 4. Proceed to the instructions under [Operation](#Operation)
 
 ---
