@@ -1,8 +1,8 @@
 ---
 title: DJI Onboard SDK STM32 Example App
-version: v3.1.7
-date: 2016-07-01
-github: https://github.com/dji-sdk/Onboard-SDK/tree/3.1/sample/STM32
+version: v3.2.1
+date: 2017-03-01
+github: https://github.com/dji-sdk/Onboard-SDK/tree/3.2/sample/STM32
 keywords: [stm32， local navigation]
 ---
 
@@ -17,7 +17,7 @@ The user sends commands to the USART2 port of the STM32 from a serial terminal. 
 
 Before using this example App, make sure you have followed the [Quick Start](../../quick-start/index.html) and have valid APP KEY and APP ID.
 
-> Note: The STM32 sample app has limited support for A3 FW > 1.5.0.0 or N3.
+> Update 01 Mar 17: Please update your Keil MDK compiler to the latest version (> 5.22) to successfully build the app.
 
 ## Setup
 
@@ -33,7 +33,7 @@ To download (flash) the App binary to the STM32 board, connect the PC to the STM
 
 ### Toolchain Setup
 
-The example App is developed and tested with MDK-ARM Version 5.12 or later. In order for Keil to build code for the target board, you need to use Keil's `Pack Installer` to install the latest STM32F4xx_DFP.2.x.x pack, as shown below. (Alternatively, you can download manually from <a href="http://www.keil.com/dd2/Pack/" target="_blank">http://www.keil.com/dd2/Pack/</a> and import the downloaded file from Pack Installer.)
+The example App is developed and tested with MDK-ARM Version 5.22 or later. In order for Keil to build code for the target board, you need to use Keil's `Pack Installer` to install the latest STM32F4xx_DFP.2.x.x pack, as shown below. (Alternatively, you can download manually from <a href="http://www.keil.com/dd2/Pack/" target="_blank">http://www.keil.com/dd2/Pack/</a> and import the downloaded file from Pack Installer.)
 
 ![Keil_PackInstall](../../images/STM32/STM32_Keil_PackInstall.png)
 
