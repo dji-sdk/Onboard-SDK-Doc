@@ -2124,7 +2124,7 @@ For more info about virual RC, please refer to [Virtual RC Protocol](../introduc
 </tr>
 </table>
 
-#### CMD ID 0x01 Virual RC data
+#### CMD ID 0x01 Virtual RC data
 
 <table>
 <tr>
