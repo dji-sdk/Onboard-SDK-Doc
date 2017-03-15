@@ -1,9 +1,17 @@
 ---
-title: Release Notes for Onboard SDK 3.2.0
-version: 3.2.1
-date: 2017-02-02
+title: Release Notes for Onboard SDK 3.2.2
+version: 3.2.2
+date: 2017-03-14
 keywords: [Precision Missions, Mission Planning, Velodyne Puck Lite LiDAR, Collision Avoidance, LiDAR, 3.2, Mapping, Point Clouds]
 ---
+
+## OSDK 3.2.2 Highlights
+
+This hotfix release is specifically targeted at users with A3/N3/M600 who take advantage of the movement control APIs offered by the Onboard SDK.
+
+In A3/N3 FW 1.7.0.0 and M600 FW 1.0.0.80, when movement control is executed in VERT_POS mode, the drone inexplicably descends or ascends. This is documented on OSDK github [issue #105](https://github.com/dji-sdk/Onboard-SDK/issues/105) and OSDK-ROS github [issue #69](https://github.com/dji-sdk/Onboard-SDK-ROS/issues/69). This OSDK hotfix implements a workaround to revert the behavior back to the expected results. The issue is caused by a change in how the flight controller handles altitude requests, and the workaround attempts to leverage this new handling.
+
+Please upgrade to this hotfix ASAP if you are an affected customer. After you upgrade to the hotfix, your old code for movement control should work without any changes.
 
 ## OSDK 3.2.1 Highlights
 

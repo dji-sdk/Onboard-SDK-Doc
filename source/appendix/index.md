@@ -1,8 +1,10 @@
 ---
 title: Appendix 
-date: 2016-06-24
+date: 2017-03-14
 keywords: [control mode, flight data, flight status, remote controller channel]
 ---
+
+> Updated with new flight status struct for newer A3/N3/M600 FW
 
 ## Detailed Architecture
 
@@ -612,6 +614,19 @@ Because raw data is generated from actual sensor on UAV, this kind of data will 
 
 ### Flight status
 
+In late 2016, the Flight status enums were updated to better reflect the internal state of the FC. Please refer to the compatibility table to figure out which struct you need to work with:
+
+| Aircraft/FC | Firmware Package | Old/New Enum |
+|-------------|------------------|--------------|
+| M100        | All              | Old          |
+| A3          | < 1.5.0.0        | Old          |
+| M600        | < 1.0.0.80       | Old          |
+| A3          | >= 1.5.0.0       | New          |
+| M600        | >= 1.0.0.80      | New          |
+| N3          | All              | New          |
+
+#### Old Flight Status Enum
+
 |Flight status val|status name| 
 |-------|-------|
 |1|standby|
@@ -622,6 +637,16 @@ Because raw data is generated from actual sensor on UAV, this kind of data will 
 
 >flight status will enter the 'standby' state after 2s in 'finish_landing state'.   
 >flight status will immediately enter 'in_air' state when UAV leave the ground.
+
+#### New Flight Status Enum
+
+|Flight status val|status name|
+|-------|-------|
+|0|motor_off|
+|1|on_ground_motor_on|
+|2|in_air_motor_on|
+
+>On takeoff, status transitions from 0-->1-->2. On landing, it is the exact opposite transition.
 
 ### Remote controller channel
 
