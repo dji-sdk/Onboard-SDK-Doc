@@ -9,24 +9,39 @@ keywords: [architecture guide]
 
 DJI Onboard SDK is an open source communication software library designed to provide developers access to the capabilities of DJI's aircraft, handled camera and sensor products. The software library provides low level control communication between aircraft and computer companion platform mounted directly on aircraft's chasis. This comunication allows for onborad, real time procesing and can be used to program your aircraft to perform complex missions and tasks.
 
-The SDK includes:
-
-a library/framework that will be situated on the computer companion platform to communicate with DJI aircraft
-an aircraft simulator and visualization tool
-sample code and tutorials
-this developer guide and API documentation
-This introduction will describe how the SDK connects to the products, what functionality the SDK provides, and an introductory architecture of the SDK.
-
 *Note: If you haven't read the [Quick Start](../quick-start/index.html) guide yet, please do so first.*
 
-## Software Design
+## Software Architecture
 
-This diagram provides a high-level overview of the different components of the onboard SDK.
-[![Architecture](../images/common/ArchitectureDiagram.png)](../images/common/ArchitectureDiagram.png)
+[![Software Architecture](../images/common/djiosdk_3_3.png)](..images/common/djiosdk_3_3.png)
 
-## CMake library build structure
+### API Layer
 
-[![CMake library build structure](../images/common/CMakeArch.png)](../images/common/CMakeArch.png)
+* **Vehicle**: Manages activation, encapsulation of hardware and software components. This class holds basic product properties and contains the main product components.
+* **Control**: Component class providing flight controller features.
+* **Mission Manager**: Missions are controlled through the mission manager. It provides control of mission preparation, execution, termination, pausing and resumption as well as provides access to the currently executing mission.
+* **HotPoint**: Class providing HotPoint mission features.
+* **WayPoint**: Class providing WayPoint mission features.
+* **Subscriber**: Telemetry software component class providing telemetry to collect data from flight controller. 
+* **Broadcast**: Telemetry software component class providing telemetry to collect data from flight controller.
+* **Camera**: Software component class providing handled camera features.
+* **Gimbal**: Software component class providing handled gimbal features.
+* **MFIO**: Software component class providing handled MFIO features.
+
+### Protocol Layer
+
+* **Protocol Layer**: Software component class implementing transportation layer for DJI OPEN Protocol.
+
+### Driver Layer
+
+* **USART Driver**: Software component class implementing USART protocol communication.
+
+### Hardware Layer
+
+* **Flight** Controller: Hardware component situated on aircraft.
+* **Camera**: Hardware component situated on aircraft.
+* **Gimbal**: Hardware component situated on aircraft.
+* **MFIO**: Hardware I/O component situated on aircraft.
 
 If you need more detail on the architecture of the various functions implemented in the onboard SDK, there is a [more detailed diagram](../appendix/index.html#detailed-architecture) available in the Appendix.  
 
