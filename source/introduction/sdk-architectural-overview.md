@@ -1,18 +1,25 @@
 ---
-title: Onboard SDK Architecture Guide 
-version: 3.1.9
-date: 2016-08-05
+title: Onboard SDK Architectural Overview 
+version: 3.3
+date: 2017-05-20
 keywords: [architecture guide]
 ---
 
 ## Introduction
 
-Onboard SDK offers many features for building powerful, robust applications on top of DJI drones. It can get a little overwhelming to explore all the features at once - this document guides you through the typical usage patterns for Onboard SDK and familiarizes you with some conventions.
+DJI Onboard SDK is an open source communication software library designed to provide developers access to the capabilities of DJI's aircraft, handled camera and sensor products. The software library provides low level control communication between aircraft and computer companion platform mounted directly on aircraft's chasis. This comunication allows for onborad, real time procesing and can be used to program your aircraft to perform complex missions and tasks.
 
+The SDK includes:
+
+a library/framework that will be situated on the computer companion platform to communicate with DJI aircraft
+an aircraft simulator and visualization tool
+sample code and tutorials
+this developer guide and API documentation
+This introduction will describe how the SDK connects to the products, what functionality the SDK provides, and an introductory architecture of the SDK.
 
 *Note: If you haven't read the [Quick Start](../quick-start/index.html) guide yet, please do so first.*
 
-## What are the parts of the Onboard SDK? 
+## Software Design
 
 This diagram provides a high-level overview of the different components of the onboard SDK.
 [![Architecture](../images/common/ArchitectureDiagram.png)](../images/common/ArchitectureDiagram.png)
