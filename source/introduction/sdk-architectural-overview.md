@@ -11,9 +11,11 @@ DJI Onboard SDK is an open source communication software library designed to pro
 
 *Note: If you haven't read the [Quick Start](../quick-start/index.html) guide yet, please do so first.*
 
-## Software Architecture UML
+## Hierarchy
 
-[![Software Architecture](../images/common/djiosdk_3_3.png)](..images/common/djiosdk_3_3.png)
+User application accesses the DJI Onboard SDK through several main classes illustrated in the diagram below.
+
+[![Software Architecture](../images/common/djiosdk-3.3-Vehicle-High-Level.png)](..images/common/djiosdk-3.3-Vehicle-High-Level.png)
 
 ### API Layer
 
