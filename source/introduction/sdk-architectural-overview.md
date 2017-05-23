@@ -32,7 +32,7 @@ A more detailed description of the Vehicle class and its components demonstratin
 [![Software Architecture](../images/common/djiosdk-3.3-Vehicle-Low-Level.png)](..images/common/djiosdk-3.3-Vehicle-Low-Level.png)
 
 * **Vehicle**: Main class providing entrance to the SDK. It manages activation and encapsulation of hardware and software components.
-* **Control**: Second main component providing low level control API.
+* **Control**: Second main component providing low level flight control API.
 * **Camera**:  Software component class providing handled camera features.
 * **Gimbal**:  Software component class providing handled gimbal features.
 * **MFIO**:  Software component class providing handled MFIO features.
@@ -47,18 +47,14 @@ A more detailed description of the Vehicle class and its components demonstratin
 
 ## Communication Pipeline
 
-### Protocol Layer
+Top-down description of communication pipeline between SDK and DJI aircraft components showing the breakdown of a system to its lowest manageable levels.
 
+[![Software Architecture](../images/common/djiosdk-3.3-Communication-Pipeline.png)](..images/common/djiosdk-3.3-Communication-Pipeline.png)
+
+* **User Application**: User implemented application situated on computer companion platform of your choice.
 * **Protocol Layer**: Software component class implementing transportation layer for DJI OPEN Protocol.
-
-### Driver Layer
-
 * **USART Driver**: Software component class implementing USART protocol communication.
-
-### Hardware Layer
-
 * **Flight Controller**: Hardware component situated on aircraft.
 * **Camera**: Hardware component situated on aircraft.
 * **Gimbal**: Hardware component situated on aircraft.
 * **MFIO**: Hardware I/O component situated on aircraft.
-
