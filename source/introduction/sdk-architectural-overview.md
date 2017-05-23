@@ -17,16 +17,21 @@ User application accesses the DJI Onboard SDK through several main classes illus
 
 [![Software Architecture](../images/common/djiosdk-3.3-Vehicle-High-Level.png)](..images/common/djiosdk-3.3-Vehicle-High-Level.png)
 
-### API Layer
-
-* **Vehicle**: Manages activation, encapsulation of hardware and software components. This class holds basic product properties and contains the main product components.
-* **Control**: Component class providing flight controller features.
+* **Vehicle**: Main software component class providing entrance to the SDK. It manages activation and encapsulation of hardware and software components.
+* **Product Manager**: Software function responsible for component support for various Firmware versions.
+* **Flight Control**: Software component providing flight controller features.
+* **Hardware Components**: Component classes that describe gimbal, camera, MFIO and flight controller and provide component control.
 * **Mission Manager**: Missions are controlled through the mission manager. It provides control of mission preparation, execution, termination, pausing and resumption as well as provides access to the currently executing mission.
-* **HotPoint**: Class providing HotPoint mission features.
-* **WayPoint**: Class providing WayPoint mission features.
-* **Subscriber**: Telemetry software component class providing telemetry to collect data from flight controller. 
-* **Broadcast**: Telemetry software component class providing telemetry to collect data from flight controller.
-* **Camera**: Software component class providing handled camera features.
+* **Mission**: Software Classes that describe different missions such as WayPoint, HotPoint and hold their setup and mission execution properties.
+* **Telemetry Communication**: Telemetry software component class providing a way to collect real time data from flight controller.
+
+## Vehicle
+
+A more detailed description of the Vehicle class and its components demonstrating communication API below. The Vehicle holds a number of components which are accessible upon aircraft activation.
+
+[![Software Architecture](../images/common/djiosdk-3.3-Vehicle-Low-Level.png)](..images/common/djiosdk-3.3-Vehicle-Low-Level.png)
+
+Software component class providing handled camera features.
 * **Gimbal**: Software component class providing handled gimbal features.
 * **MFIO**: Software component class providing handled MFIO features.
 
