@@ -42,7 +42,7 @@ A more detailed description of the Vehicle class and its components demonstratin
 * **HardwareSync** : Software functionality to synchronize DJI aircraft hardware clock.
 * **Mission Manager**: Missions are controlled through the mission manager. It provides control of mission preparation, execution, termination, pausing and resumption as well as provides access to the currently executing mission.
 * **HotPoint**: Software class providing HotPoint mission API. 
-* **WayPoint**: Software class providing HotPoint mission API.
+* **WayPoint**: Software class providing WayPoint mission API.
 
 
 ## Communication Pipeline
