@@ -27,13 +27,25 @@ User application accesses the DJI Onboard SDK through several main classes illus
 
 ## Vehicle
 
-A more detailed description of the Vehicle class and its components demonstrating communication API below. The Vehicle holds a number of components which are accessible upon aircraft activation.
+A more detailed description of the Vehicle class and its components demonstrating communication API below. The Vehicle holds a number of components which are accessible upon aircraft activation. Relationship between Vehicle and software classes via Association.
 
 [![Software Architecture](../images/common/djiosdk-3.3-Vehicle-Low-Level.png)](..images/common/djiosdk-3.3-Vehicle-Low-Level.png)
 
-Software component class providing handled camera features.
-* **Gimbal**: Software component class providing handled gimbal features.
-* **MFIO**: Software component class providing handled MFIO features.
+* **Vehicle**: Main class providing entrance to the SDK. It manages activation and encapsulation of hardware and software components.
+* **Control**: Second main component providing low level control API.
+* **Camera**:  Software component class providing handled camera features.
+* **Gimbal**:  Software component class providing handled gimbal features.
+* **MFIO**:  Software component class providing handled MFIO features.
+* **Subscribe** : Telemetry software component class providing a way to collect real time data from flight controller.
+* **Broadcast** : Telemetry software component class providing a way to collect real time data from flight controller.
+* **MobileCommunication** : Software class providing communication via mobile App.
+* **HardwareSync** : Software functionality to synchronize DJI aircraft hardware clock.
+* **Mission Manager**: Missions are controlled through the mission manager. It provides control of mission preparation, execution, termination, pausing and resumption as well as provides access to the currently executing mission.
+* **HotPoint**: Software class providing HotPoint mission API. 
+* **WayPoint**: Software class providing HotPoint mission API.
+
+
+## Communication Pipeline
 
 ### Protocol Layer
 
@@ -50,8 +62,3 @@ Software component class providing handled camera features.
 * **Gimbal**: Hardware component situated on aircraft.
 * **MFIO**: Hardware I/O component situated on aircraft.
 
-## Vehicle
-
-## Hardware Components
-
-## Mission
