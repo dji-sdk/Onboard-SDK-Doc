@@ -1,12 +1,14 @@
 ---
-title: Data Transparent Transmission 
+title: MOC
 date: 2016-06-24
-keywords: [data transparent transmission, downstream, upstream]
+keywords: [MOC,data transparent transmission, downstream, upstream]
 ---
 
-## Intro
+## Introduction
 
-The purpose of this document is to give an overview of the 'Data Transparent Transmission' between an Onboard Embedded System (OES) and an Mobile Device. The rest of this document is organized as followed:
+**the old naming of 'Data Transparent Transmission' is change to MOC**
+
+The purpose of this document is to give an overview of the MOC between an Onboard Embedded System (OES) and an Mobile Device. The rest of this document is organized as followed:
 
 * Problem Motivation
 * 2 Usage Scenarios (with sample code snippet)
@@ -21,11 +23,15 @@ Mobile API can be used without any other devices and allows developers to monito
 
 Onboard API is implemented through the OES which is mounted on the UAV. Communication with the UAV is done directly through the serial port. It provides sufficient computing power and stability for developers to run complex and demanding applications. Since the OES is mounted directly on the UAV, developers are not able to monitor the flight status from their programs easily. If program crashes, developers will have to manually control the UAV with the remote controller and the valuable debugging log data during the run is hard to retrive.
 
-'Data Transparent Transmission' is developed to combine the benefits of these two APIs by establishing a connection between an Mobile Device and an OES. Via the 'Data Transparent Transmission', developers are able to send data from their Mobile Device to OES to control over the program while receiving computing results, log data, flight status and external sensor data etc.
+MOC is developed to combine the benefits of these two APIs by establishing a connection between an Mobile Device and an OES. Via the 'Data Transparent Transmission', developers are able to send data from their Mobile Device to OES to control over the program while receiving computing results, log data, flight status and external sensor data etc.
 
 In short, Data Transparent Transmission serves as a linkage between Mobile API and Onboard API, granting developers a better flexibility in creating their own flight APPs.
 
 ![streamFrame](../images/common/streamFrame.png)
+
+### Related code base
+all APIs for MOC feature are annouced in file dji_mobile_communication.hpp.
+You could check more details through the [doxygen doc](../../doxygen/index.html)
 
 ## Usage Scenario 1 - downstream from OES to Mobile Device
 
