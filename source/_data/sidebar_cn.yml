@@ -1,130 +1,100 @@
-- 
-  title: QUICK START
-  list:
-    -
-      title: Get Started
-      path: /cn/quick-start/index.html
 -
   title: INTRODUCTION
   list:
     -
-      title: Architecture Guide
+      title: Documentation Home
+      path: /cn/introduction/index.html
+    -
+      title: Onboard SDK Introduction
+      path: /cn/introduction/onboard-sdk-introduction.html
+    -
+      title: Hardware Introduction
+      path: /cn/introduction/osdk-hardware-introduction.html
+    -
+      title: SDK Architectural Overview
       path: /cn/introduction/architecture-guide.html
-    -
-      title: Things to Know
-      path: /cn/introduction/things-to-know.html
--
-  title: HARDWARE SETUP
-  list:
-    -
-      title: Hardware Setup Guide
-      path: /cn/hardware-setup/index.html
--
-  title: PLATFORM GUIDES
-  list:
-    -
-      title: Linux
-      path: /cn/github-platform-docs/Linux/README.html
-    -
-      title: ROS
-      path: /cn/github-platform-docs/ROS/README.html
-    -
-      title: ROS Packages
-      list:
-        -
-          title: ROS Core Package
-          path: /cn/github-platform-docs/ROS_Example/ros_corePackage.html
-        -
-          title: ROS Demo Client Package
-          path: /cn/github-platform-docs/ROS_Example/ros_demo_client_package.html
-        -
-          title: ROS DJI2MAV Package
-          path: /cn/github-platform-docs/ROS_Example/ros_dji2mav_0.2.1_package.html
-        -
-          title: ROS Map Waypoint Navigation Package
-          path: /cn/github-platform-docs/ROS_Example/ros_map_waypoint_navigation_package.html
-        -
-          title: ROS Video Decoding Package
-          path: /cn/github-platform-docs/ROS_Example/ros_video_decoding_package.html
-    -
-      title: QT
-      path: /cn/github-platform-docs/PureQT/README.html
-    -
-      title: STM32
-      path: /cn/github-platform-docs/STM32/README.html
 
+-
+  title: GET STARTED IMMEDIATELY
+  list:
     -
-      title: Mobile - Onboard SDK
-      path: /cn/github-platform-docs/MobileOnboardSDK/Mobile-OSDK.html
+      title: Run Sample Application
+      path: /cn/quick-start/quick-start.html
+
+-
+  title: CONCEPTS TO UNDERSTAND
+  list:
+    -
+      title: Flight Control
+      path: /cn/introduction/things-to-know.html
+
+-
+  title: DEVELOPMENT WORKFLOW
+  list:
+    -
+      title: Prerequisites
+      path: /cn/development-workflow/workflow-prereq.html
+    -
+      title: Hardware Setup
+      path: /cn/development-workflow/hardware-setup.html
+    -
+      title: Environment Setup
+      path: /cn/development-workflow/environment-setup.html
+    -
+      title: Integrate SDK into Application
+      path: /cn/development-workflow/integrate-sdk.html
+    -
+      title: Run Application
+      path: /cn/development-workflow/run-application.html
+
+-
+  title: SAMPLE APPLICATIONS
+  list:
+    -
+      title: Telemetry
+      path: /cn/sample-doc/telemetry.html
+    -
+      title: Flight Control
+      path: /cn/sample-doc/flight-control.html
+    -
+      title: Camera + Gimbal Control
+      path: /cn/sample-doc/camera-gimbal-control.html
+    -
+      title: Missions
+      path: /cn/sample-doc/missions.html
+    -
+      title: Mobile SDK Communication
+      path: /cn/sample-doc/msdk-comm.html
+    -
+      title: Multi-Function IO
+      path: /cn/sample-doc/mfio.html
 -
   title: PROTOCOL DOCUMENTS
   list:
     -
       title: Onboard SDK OPEN Protocol
-      path: /cn/introduction/index.html
+      path: /cn/protocol-doc/index.html
     -
       title: Data Transparent Transmission
-      path: /cn/introduction/data-transparent-transmission.html
+      path: /cn/protocol-doc/data-transparent-transmission.html
     -
       title: Ground Station Protocol
-      path: /cn/introduction/ground-station-protocol.html
-    -
-      title: Virtual RC Protocol
-      path: /cn/introduction/virtual-rc-protocol.html
--
-  title: APPLICATION DEVELOPMENT GUIDES
-  list:
-    -
-      title: Programming Guide
-      path: /cn/application-development-guides/programming-guide.html
-
-    -
-      title: Ground Station Programming Guide
-      path: /cn/application-development-guides/ground-station-programming-guide.html
-
-    -
-      title: Flight Mission ACK codes
-      path: /cn/application-development-guides/flight-mission-ack-codes.html
--
-  title: Sensor Integration Guides
-  list:
-    -
-      title: Velodyne LiDAR
-      path: /cn/sensor-integration-guides/velodyne/readme.html
-    -
-      title: Ping ADS-B
-      path: /cn/sensor-integration-guides/ping/README.html
-
--
-  title: Advanced Features
-  list:
-  -
-    title: Precision Trajectory Mission Planning
-    list:
-      -
-        title: Library
-        path: /cn/modules/missionplan/README.html
-      -
-        title: SketchUp Extension
-        path: /cn/modules/missionplan/sketchup.html
-  -
-    title: LiDAR Mapping
-    path: /cn/modules/lidarmapping/lidar-mapping.html
-
-  -
-    title: Collision Avoidance
-    path: /cn/modules/collision-avoidance/collision-avoidance.html
+      path: /cn/protocol-doc/ground-station-protocol.html
 
 -
   title: APPENDIX
   list:
+    -
+      title: OSDK 3.3 Porting Guide
+      path: /cn/appendix/porting-guide.html
+
     -
       title: Appendix
       path: /cn/appendix/index.html
     -
       title: FAQ
       path: /cn/appendix/FAQ.html
-    - 
+    -
       title: Release Notes
       path: /cn/appendix/releaseNotes.html
-      
+

@@ -5,121 +5,89 @@
       title: Documentation Home
       path: /introduction/index.html
     -
-      title: Architecture Guide
-      path: /introduction/architecture-guide.html
+      title: Onboard SDK Introduction
+      path: /introduction/onboard-sdk-introduction.html
     -
-      title: Things to Know
-      path: /introduction/things-to-know.html
+      title: Hardware Introduction
+      path: /introduction/osdk-hardware-introduction.html
+    -
+      title: SDK Architectural Overview
+      path: /introduction/architecture-guide.html
 
 -
-  title: QUICK START
+  title: GET STARTED IMMEDIATELY
   list:
     -
-      title: Get Started
+      title: Run Sample Application
       path: /quick-start/quick-start.html
 
 -
-  title: HARDWARE SETUP
+  title: CONCEPTS TO UNDERSTAND
   list:
     -
-      title: Hardware Setup Guide
-      path: /hardware-setup/index.html
+      title: Flight Control
+      path: /introduction/things-to-know.html
+
+-
+  title: DEVELOPMENT WORKFLOW
+  list:
+    -
+      title: Prerequisites
+      path: /development-workflow/workflow-prereq.html
+    -
+      title: Hardware Setup
+      path: /development-workflow/hardware-setup.html
+    -
+      title: Environment Setup
+      path: /development-workflow/environment-setup.html
+    -
+      title: Integrate SDK into Application
+      path: /development-workflow/integrate-sdk.html
+    -
+      title: Run Application
+      path: /development-workflow/run-application.html
+
 -
   title: SAMPLE APPLICATIONS
   list:
     -
-      title: Linux
-      path: /github-platform-docs/Linux/README.html
+      title: Telemetry
+      path: /sample-doc/telemetry.html
     -
-      title: ROS
-      path: /github-platform-docs/ROS/README.html
+      title: Flight Control
+      path: /sample-doc/flight-control.html
     -
-      title: ROS Packages
-      list:
-        -
-          title: ROS Core Package
-          path: /github-platform-docs/ROS_Example/ros_corePackage.html
-        -
-          title: ROS Demo Client Package
-          path: /github-platform-docs/ROS_Example/ros_demo_client_package.html
-        -
-          title: ROS DJI2MAV Package
-          path: /github-platform-docs/ROS_Example/ros_dji2mav_0.2.1_package.html
-        -
-          title: ROS Map Waypoint Navigation Package
-          path: /github-platform-docs/ROS_Example/ros_map_waypoint_navigation_package.html
-        -
-          title: ROS Video Decoding Package
-          path: /github-platform-docs/ROS_Example/ros_video_decoding_package.html
+      title: Camera + Gimbal Control
+      path: /sample-doc/camera-gimbal-control.html
     -
-      title: QT
-      path: /github-platform-docs/PureQT/README.html
+      title: Missions
+      path: /sample-doc/missions.html
     -
-      title: STM32
-      path: /github-platform-docs/STM32/README.html
+      title: Mobile SDK Communication
+      path: /sample-doc/msdk-comm.html
     -
-      title: Mobile - Onboard SDK
-      path: /github-platform-docs/MobileOnboardSDK/Mobile-OSDK.html
+      title: Multi-Function IO
+      path: /sample-doc/mfio.html
 -
   title: PROTOCOL DOCUMENTS
   list:
     -
       title: Onboard SDK OPEN Protocol
-      path: /introduction/index.html
+      path: /protocol-doc/index.html
     -
       title: Data Transparent Transmission
-      path: /introduction/data-transparent-transmission.html
+      path: /protocol-doc/data-transparent-transmission.html
     -
       title: Ground Station Protocol
-      path: /introduction/ground-station-protocol.html
-    -
-      title: Virtual RC Protocol
-      path: /introduction/virtual-rc-protocol.html
--
-  title: APPLICATION DEVELOPMENT GUIDES
-  list:
-    -
-      title: Programming Guide
-      path: /application-development-guides/programming-guide.html
-
-    -
-      title: Ground Station Programming Guide
-      path: /application-development-guides/ground-station-programming-guide.html
-    -
-      title: Flight Mission ACK codes
-      path: /application-development-guides/flight-mission-ack-codes.html
--
-  title: Sensor Integration Guides
-  list:
-    -
-      title: Velodyne LiDAR
-      path: /sensor-integration-guides/velodyne/readme.html
-    -
-      title: Ping ADS-B
-      path: /sensor-integration-guides/ping/README.html
--
-  title: Advanced Features
-  list:
-  -
-    title: Precision Missions
-    list:
-      -
-        title: Library
-        path: /modules/missionplan/README.html
-      -
-        title: SketchUp Extension
-        path: /modules/missionplan/sketchup.html
-  -
-    title: LiDAR Mapping
-    path: /modules/lidarmapping/lidar-mapping.html
-
-  -
-    title: Collision Avoidance
-    path: /modules/collision-avoidance/collision-avoidance.html
+      path: /protocol-doc/ground-station-protocol.html
 
 -
   title: APPENDIX
   list:
+    -
+      title: OSDK 3.3 Porting Guide
+      path: /appendix/porting-guide.html
+
     -
       title: Appendix
       path: /appendix/index.html
