@@ -46,11 +46,36 @@ If you are unfamiliar with quaternions, this [CH Robotics page](http://www.chrob
 
 ## ACCELERATION GROUND
 
+unit is m/s<sup>2
+
+this acceleration is fusioned in ground frame without ground gravity
+
 ## ACCELERATION BODY
+
+unit is m/s<sup>2
+
+this acceleration is fusioned in body frame without ground gravity
+
 
 ## ACCELERATION RAW
 
+unit is G
+
+this is the raw data measured by the acceleration sensor, it followed:
+
+F + G = ma
+
+where F is the measured force vector, G is gravity, m is mass of the object, a is acceleration.
+
+because the MEMS sensor measured value is in unit G, so it has been divided the mass arleady.
+
 ## VELOCITY
+
+unit is m/s
+
+in ground frame
+
+the health bit is to show wheather current Flight controller have the velocity observation or not.
 
 ## PALSTANCE FUSIONED
 
@@ -68,7 +93,13 @@ If you are unfamiliar with quaternions, this [CH Robotics page](http://www.chrob
 
 ## GPS DATE
 
+a integer indicating a GMT+8 date(yyyymmdd.E.g.20150205 = February 5th,2015)	day	uint32_t
+
+
 ## GPS TIME
+
+a integer indicating a GMT+8 time in a 24-hour clock(hhmmss.E.g.90209 = 09:02:09)	second	uint32_t
+
 
 ## GPS POSITION
 

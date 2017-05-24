@@ -17,9 +17,9 @@
 
 * [MSDK and OSDK Communication](moc.html)
 
-* Mission
+* [Mission](mission.html)
 
-	- Way Point
-	- Hotpoint
+	- [Way Point](waypoint.html)
+	- [Hotpoint](hotpoint.html)
 
 
