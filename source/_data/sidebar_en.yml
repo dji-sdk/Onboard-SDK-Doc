@@ -1,18 +1,23 @@
-- 
-  title: QUICK START
-  list:
-    -
-      title: Get Started
-      path: /quick-start/index.html
 -
   title: INTRODUCTION
   list:
+    -
+      title: Documentation Home
+      path: /introduction/index.html
     -
       title: Architecture Guide
       path: /introduction/architecture-guide.html
     -
       title: Things to Know
       path: /introduction/things-to-know.html
+
+-
+  title: QUICK START
+  list:
+    -
+      title: Get Started
+      path: /quick-start/quick-start.html
+
 -
   title: HARDWARE SETUP
   list:
@@ -121,7 +126,6 @@
     -
       title: FAQ
       path: /appendix/FAQ.html
-
     - 
       title: Release Notes
       path: /appendix/releaseNotes.html
