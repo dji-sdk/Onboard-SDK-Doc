@@ -11,10 +11,10 @@ While designing this software library, we created distinct list of features deve
 
 The SDK includes:
 
-* **Communication library**: Supports Linux, ARM, STM32.
-* **Aircraft simulator and visualization tool**: Used for initial (User App) activation, aircraft configuration and flight tests.
-* **Sample code and developer guides**: Check out our sample code demonstrating core workflow of flight control, camera and gimbal control, telemetry, missions, and mobile communication. 
-* **API documentation**: Detailed reference to Onboard SDK API.
+* **Communication library**: Supports Linux, ARM, STM32. (TODO: add link to GitHub)
+* **Aircraft simulator and visualization tool**: Used for initial (User App) activation, aircraft configuration and flight tests. (TODO: add link to download page)
+* **Sample code and developer guides**: Check out our sample code demonstrating core workflow of flight control, camera and gimbal control, telemetry, missions, and mobile communication.(TODO: add link to sampel code)
+* **API documentation**: Detailed reference to Onboard SDK API.(TODO: add link to API reference)
 
 ## Feature Overview
 
@@ -24,10 +24,10 @@ Many of DJI's product features and capabilities are accessible to developers thr
 
 The DJI Onboard SDK allows variety of powerful, high-frequency (up to 200 Hz) control modes and missions to control flight:
 
-* **Attitude Control**
-* **Velocity Control**
-* **Position Control**
-* **Missions**
+* **Attitude Control**: controlling the orientation of an aircraft with respect to its center of mass, relative to the horizon. 
+* **Velocity Control**: controlling an aircraft using velocity.
+* **Position Control**: controlling an aircraft by explicitly setting target position.
+* **Missions**: controlling an aircraft via pre-programmed mission API.
 
 ##### Camera and Gimbal Control
 
@@ -70,7 +70,4 @@ Aircraft Status Data
 ##### Mobile Communication
 
 While your aircraft can be completely programmed, we also support mobile communication control. It is bidirectional data link between your OES (Onboard Embedded System) and a mobile device developed in conjunction with DJI's Mobile SDK. This link can be established by using the Matrix 100 or Matrix 600 built-in lightbridge communication system or by using a <a href="http://www.dji.com/product/lightbridge-2" target="_blank">Lightbridge 2</a> with the A3/N3.
-
-
-We provide C++ source APIs to make sending and receiving data over the serial port easy and encourage you to use them in your applications.
 
