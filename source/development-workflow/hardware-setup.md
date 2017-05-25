@@ -1,12 +1,28 @@
 ---
-title: Hardware setup
-date: 2016-06-24
+title: Hardware Setup Guide
+date: 2017-06-01
+version: 3.3
 keywords: [hardware setup，M100 UART Connector, A3 UART Connector, N3 UART]
 ---
 
-# Hardware Setup guide
 This guide will help you connect your onboard embedded system (OES) with the M100 vehicle, M600 vehicle, A3 or N3 flight controller. You may need to build or buy your own cable to connect your OES to a DJI product. Reference the M100 or A3/N3 UART connector diagrams below to build a cable to interface with your OES UART port. The M600 uses an A3 flight controller, which is accessable through the top cover.  See the M600 user manual for details.
 > The M100/600/A3/N3 UART electrical interface is 3.3 volt TTL. You must ensure that your OES UART port is compatible to avoid damaging the flight controller.
+
+## General Setup Instructions
+- If you are using an M100, M210 or M600 vehicle, you should assemble and familiarize yourself with flying the vehicle before attempting to proceed with OSDK development.
+- If you are using an A3/N3 flight controller with Lightbridge 2 and your own vehicle, then you should familiarize yourself with flying your vehicle before attempting to proceed with OSDK development.
+- Generically, you will be working with one of the setups in the following diagram:
+
+![Hardware Setup](../images/common/GenericHWSetup.png)
+
+## Connecting Your Onboard Embedded System (OES)
+
+- If you are using one of our supported platforms, we provide detailed instructions in our [Hardware Setup Guide](../hardware-setup/index.html).
+- The [Hardware Setup Guide](../hardware-setup/index.html) also lists the pin diagram for the API port on the [M100](../hardware-setup/index.html#M100-UART-Connector), the [A3/N3/M600](../hardware-setup/index.html#A3-UART-Connector) and the [M210](@todo) so that you may build your own cable compatible with your OES.
+- A3 flight controller can be accessed on the M600 (or M600 Pro) by pulling off the top-cover.
+- You can power your OES from your own battery or if you are using an M100/M600/M210, you can pull power from the vehicle bus. See your aircraft manual for details.
+- Secure your OES to the vehicle near the center of mass. Ensure that the total vehicle weight is within the maximum takeoff weight specificed for your vehicle.
+
 
 ## M100 UART Connector
 
@@ -24,7 +40,6 @@ The diagram below shows the hardware connection between an M100 and Manifold. No
 - UART cable is provided with the Manifold. 
 - M100 to PC connection can be used to run DJI Assistant 2. 
 - With DJI Assistant you can enable API, set baudrate and/or run the Simulator.
-
 
 ![M100Manifold](../images/hardwaresetup/M100Manifold.png)
 
