@@ -71,3 +71,9 @@ Aircraft Status Data
 
 While your aircraft can be completely programmed, we also support mobile communication control. It is bidirectional data link between your OES (Onboard Embedded System) and a mobile device developed in conjunction with DJI's Mobile SDK. This link can be established by using the Matrix 100 or Matrix 600 built-in lightbridge communication system or by using a <a href="http://www.dji.com/product/lightbridge-2" target="_blank">Lightbridge 2</a> with the A3/N3.
 
+## Connection to User Application and Aircraft
+
+The following diagram illustrates how the DJI Onboard SDK fits into user application, and how it is connected to a DJI aircraft.
+
+[![Software Architecture](../images/common/connection_to_application_and_product.png)](..images/common/connection_to_application_and_product.png)
+
