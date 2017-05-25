@@ -36,7 +36,7 @@ Handled DJI camera and gimbal can be programmed to take following actions:
 * **Take Picture**: in-motion and still image capture.
 * **Take Video**: in-motion and still video capture.
 * **Gimbal Position Control**: in-motion and still position control.
-* **Gimbal Velocitry Control**: in-motion and still velocitry control.
+* **Gimbal Velocitry Control**: in-motion and still velocity control.
 
 ##### Hardware Synchronization Control
 
