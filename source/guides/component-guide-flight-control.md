@@ -101,7 +101,7 @@ The system requires both a base station and mobile station receiver, which are c
 
 The mobile station comes with two antennas which can be deployed on opposite sides of the aircraft. As the position of both antennas can be combined into a heading vector that can often be more accurate than compass heading in the environments with high magnetic field interference (like near large metal structures, or high voltage lines).
 
-## Vision System and Intelligent Flight Assistant
+## Vision System and Telemetry Assistance
 
 Cameras can be used to detect obstacles and accurately determine relative position and velocity. These cameras are typically mounted on the product facing downward for positioning and forward for obstacle detection. They are separate from the main camera used to capture photos and videos.
 
