@@ -52,6 +52,7 @@ Top-down description of communication pipeline between SDK and DJI aircraft comp
 [![Software Architecture](../images/common/djiosdk-3.3-Communication-Pipeline.png)](..images/common/djiosdk-3.3-Communication-Pipeline.png)
 
 * **User Application**: User implemented application situated on computer companion platform of your choice.
+* **Vehicle**: Main DJI Onboard SDK software component providing user level API. 
 * **Protocol Layer**: Software component class implementing transportation layer for DJI OPEN Protocol.
 * **USART Driver**: Software component class implementing USART protocol communication.
 * **Flight Controller**: Hardware component situated on aircraft.
