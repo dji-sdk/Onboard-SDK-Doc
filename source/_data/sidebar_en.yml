@@ -31,6 +31,31 @@
       path: /introduction/things-to-know.html
 
 -
+  title: GUIDES
+  list:
+    -
+      title: Flight Control
+      path: /introduction/things-to-know.html
+    -
+      title: Camera
+      path: /introduction/things-to-know.html
+    -
+      title: Gimbal
+      path: /introduction/things-to-know.html
+    -
+      title: Missions
+      path: /introduction/things-to-know.html
+    -
+      title: Telemetry
+      path: /introduction/things-to-know.html
+    -  
+      title: Hardware Synchronization
+      path: /introduction/things-to-know.html
+    -
+      title: MSDK and OSDK Communication
+      path: /introduction/things-to-know.html
+
+-
   title: DEVELOPMENT WORKFLOW
   list:
     -
