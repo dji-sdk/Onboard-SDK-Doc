@@ -10,8 +10,8 @@ The flight controller is an onboard computer that combines control information f
 
 The flight controller is responsible for:
 
-* Flight control, motor control, manual flight modes as well as pre-programmed
-* Aircraft state information such as attitude, position, speed
+* Flight control, motor control, manual as well as pre-programmed flight
+* Aircraft telemetry assistance for attitude, position, velocity and sensor data
 * Sensor sub components such as compasses, IMUs, and positioning systems
 * Aircraft sub components such as the landing gear
 * Flight limitation systems such as No Fly Zones and the GEO System
@@ -19,17 +19,17 @@ The flight controller is responsible for:
 
 A general description of fundamental flight control concepts can be found [here](./flightController_concepts.html).
 
-## State
+## Telemetry Assistance
 
-The flight controller provides detailed state information at up to 10 Hz including:
+The flight controller provides detailed real-time state information at up to 200 Hz including:
  
 * Aircraft position, velocity and altitude
-* Remaining Battery and Flight time information
-* Home location
-* Sensor information (compass, IMU, Satellite positioning)
-* Return home status
-* Whether motors are on and aircraft is flying or not
-* Flight limitation and GEO system information
+* Remaining battery capacity information
+* Home location **Verify for OSDK**
+* Sensor information (Compass, IMU, Satellite positioning)
+* Return home status **Verify for OSDK**
+* Motors status
+* Flight limitation and GEO system information **Verify for OSDK**
 
 ## Flying
 
