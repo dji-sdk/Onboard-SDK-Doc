@@ -33,25 +33,25 @@
   list:
     -
       title: Flight Control
-      path: /introduction/things-to-know.html
+      path: /guides/component-guide-flight-control.html
     -
       title: Camera
-      path: /introduction/things-to-know.html
+      path: /guides/component-guide-camera.html
     -
       title: Gimbal
-      path: /introduction/things-to-know.html
+      path: /guides/component-guide-gimbal.html
     -
       title: Missions
-      path: /introduction/things-to-know.html
+      path: /guides/component-guide-missions.html
     -
       title: Telemetry
-      path: /introduction/things-to-know.html
+      path: /guides/component-guide-telemetry.html
     -  
       title: Hardware Synchronization
-      path: /introduction/things-to-know.html
+      path: /guides/component-guide-hardware-sync.html
     -
       title: MSDK and OSDK Communication
-      path: /introduction/things-to-know.html
+      path: /guides/component-guide-mobile-communication.html
 
 -
   title: DEVELOPMENT WORKFLOW
