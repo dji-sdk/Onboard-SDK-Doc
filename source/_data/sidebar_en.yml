@@ -1,17 +1,15 @@
 -
   title: INTRODUCTION
   list:
-    - title: SDK Architectural Overview
-      path: /introduction/sdk-architectural-overview.html
     -
       title: Documentation Home
       path: /introduction/homepage.html
     -
-      title: Onboard SDK Introduction
-      path: /introduction/onboard-sdk-introduction.html
-    -
       title: Hardware Introduction
       path: /introduction/osdk-hardware-introduction.html
+    -
+      title: Onboard SDK Introduction
+      path: /introduction/onboard-sdk-introduction.html
     -
       title: SDK Architectural Overview
       path: /introduction/sdk-architectural-overview.html

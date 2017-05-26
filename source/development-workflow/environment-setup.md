@@ -70,10 +70,10 @@ Set the baud rate of your serial terminal software (here we use the open-source 
 
 ##### Tested Environment:
 
-* Operating System: Ubuntu 14.04, Manifold
-* ROS version: ROS Indigo
-> **Note:** Onboard SDK ROS has also been beta tested with Ubuntu Xenial 16.04LTS and ROS Kinetic Kame. We currently do not support `rosinstall` or `apt-get` for this configuration.
-> **Note:** Onboard SDK ROS also supports N3 and A3 FW 1.5.0.0 and newer with OSDK 3.2.0. See [Notes](../../appendix/releaseNotes.html#notes-for-using-onboard-sdk-with-the-new-a3-v1-5-0-0-fw).
+* Operating System: Ubuntu 16.04 (x86/ARM)
+* ROS version: ROS Kinetic
+
+Onboard SDK ROS should also work on Ubuntu 14.04/ROS Indigo, though it is not officially tested on that combination.
 
 ##### Software Requirements:
 
