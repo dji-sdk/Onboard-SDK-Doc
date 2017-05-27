@@ -6,7 +6,12 @@ keywords: [hardware setup，M100 UART Connector, A3 UART Connector, N3 UART]
 ---
 
 This guide will help you connect your onboard embedded system (OES) with the M100 vehicle, M600 vehicle, A3 or N3 flight controller. You may need to build or buy your own cable to connect your OES to a DJI product. Reference the M100 or A3/N3 UART connector diagrams below to build a cable to interface with your OES UART port. The M600 uses an A3 flight controller, which is accessable through the top cover.  See the M600 user manual for details.
-> The M100/600/A3/N3 UART electrical interface is 3.3 volt TTL. You must ensure that your OES UART port is compatible to avoid damaging the flight controller.
+
+## Interface Details
+- The M100/600/A3/N3 UART electrical interface is 3.3 volt TTL.
+- You must ensure that your OES UART port is compatible to avoid damaging the flight controller. For example, RS-232 ports will need a level-shifting circuit.
+- The UART interface does not require power from the OES
+
 
 ## General Setup Instructions
 - If you are using an M100, M210 or M600 vehicle, you should assemble and familiarize yourself with flying the vehicle before attempting to proceed with OSDK development.
@@ -24,17 +29,21 @@ This guide will help you connect your onboard embedded system (OES) with the M10
 - Secure your OES to the vehicle near the center of mass. Ensure that the total vehicle weight is within the maximum takeoff weight specificed for your vehicle.
 
 
-## M100 UART Connector
+## UART Connectors
+
+#### M100
 
 ![M100UARTConnector](../images/hardwaresetup/Connecter.jpg) 
 
-## A3/N3 UART Connector
+#### A3/N3/M600 UART Connector
 
 ![A3UARTConnector](../images/hardwaresetup/A3UARTPort.png) 
 
 **Note: Do NOT use the Vcc pin to power your own devices. You might damage your OES, A3/N3 or both.**
 
-## M100 + Manifold
+## Connecting to your OES
+
+#### M100 + Manifold
 
 The diagram below shows the hardware connection between an M100 and Manifold. Note that: 
 - UART cable is provided with the Manifold. 
@@ -43,7 +52,7 @@ The diagram below shows the hardware connection between an M100 and Manifold. No
 
 ![M100Manifold](../images/hardwaresetup/M100Manifold.png)
 
-## M100 + PC/Linux machine
+#### M100 + PC/Linux machine
 
 The diagram below shows the hardware connection between an M100 and a PC or Linux machine. Note that: 
 - M100 UART cable is provided in the box and is also [sold](http://store.dji.com/product/matrice-100-uart-cable) separately. 
@@ -56,7 +65,7 @@ The diagram below shows the hardware connection between an M100 and a PC or Linu
 ![M100PCLinux](../images/hardwaresetup/M100PCLinux.png)
 
 
-## M100 + STM32
+#### M100 + STM32
 
 The diagram below shows the hardware connection between an M100 and STM32. Note that: 
 - M100 UART cable is provided in the box and is also [sold](http://store.dji.com/product/matrice-100-uart-cable) separately. 
@@ -70,7 +79,7 @@ The diagram below shows the hardware connection between an M100 and STM32. Note 
 ![M100STM32](../images/hardwaresetup/M100STM32.png)
 
 
-## A3/N3 + Manifold
+#### A3/N3/M600 + Manifold
 
 The diagram below shows the hardware connection between an A3/N3 and Manifold. Note that:
 - UART cable referenced in the image is a cable with 0.1 inch female headers on both sides going from Tx port on A3/N3 to Rx port on Manifold and vice-versa.
@@ -83,7 +92,7 @@ The diagram below shows the hardware connection between an A3/N3 and Manifold. N
 ![A3Manifold](../images/hardwaresetup/A3N3_1.png)
 
 
-## A3/N3 + PC/Linux machine
+#### A3/N3/M600 + PC/Linux machine
 
 The diagram below shows the hardware connection between an A3/N3 and a PC or Linux machine. Note that:
 - USB to TTL cable can be purchased on [Amazon](https://www.amazon.com/ADAFRUIT-INDUSTRIES-954-SERIAL-RASPBERRY/dp/B00DJUHGHI/ref=sr_1_5?s=electronics&ie=UTF8&qid=1466208644&sr=1-5&keywords=usb+to+ttl).
@@ -93,7 +102,7 @@ The diagram below shows the hardware connection between an A3/N3 and a PC or Lin
 ![A3PCLinux](../images/hardwaresetup/A3N3_2.png)
 
 
-## A3/N3 + STM32
+#### A3/N3/M600 + STM32
 
 The diagram below shows the hardware connection between an A3/N3 and STM32. Note that:
 - UART cable referenced in the image is a cable with 0.1 inch female headers on both sides going from Tx port on A3/N3 to Rx port on the STM32 and vice-versa.

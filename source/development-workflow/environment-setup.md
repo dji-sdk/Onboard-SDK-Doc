@@ -41,37 +41,30 @@ Each new vehicle or flight controller must be activated with the DJI server on f
 
 To build standalone Linux applications based on the OSDK, you need:
 
-* A supported C++ compiler (Tested with gcc 4.8.1/5.3.1)
+* A supported C++ compiler - currently only GCC (Tested with gcc 4.8.1/5.3.1)
 * A bash shell
 * CMake >= 2.8
 * A modern Linux distribution
 
 ## STM32 OES: Software Setup
 
-
-You'll need to use the <a href="http://developer.dji.com/onboard-sdk/downloads/" target="_blank">DJI Assistant 2 software</a> to set the baud rate of the M100's `UART_CAN2` port to **230400**, which is the one we use to configure USART3 in the example App.
-
-To download (flash) the App binary to the STM32 board, connect the PC to the STM32's "mini-USB" port. To set the baud rate of the M100 or to run the simulator, connect the PC to the M100's "micro-USB" port.
+##### Toolchain Requirements
+- Keil MDK > 5.22 (armcc 5.06)
+- Windows PC to run Keil
 
 ##### Toolchain Setup
 
-The example App is developed and tested with MDK-ARM Version 5.22 or later. In order for Keil to build code for the target board, you need to use Keil's `Pack Installer` to install the latest STM32F4xx_DFP.2.x.x pack, as shown below. (Alternatively, you can download manually from <a href="http://www.keil.com/dd2/Pack/" target="_blank">http://www.keil.com/dd2/Pack/</a> and import the downloaded file from Pack Installer.)
+- Configure the USART3 port to a baudrate of 230400 in your sample app
+- To download (flash) the App binary to the STM32 board, connect the PC to the STM32's "mini-USB" port.
+- In order for Keil to build code for the target board, you need to use Keil's `Pack Installer` to install the latest STM32F4xx_DFP.2.x.x pack, as shown below.
+- Alternatively, you can download manually from <a href="http://www.keil.com/dd2/Pack/" target="_blank">http://www.keil.com/dd2/Pack/</a> and import the downloaded file from Pack Installer.)
 
 ![Keil_PackInstall](../../images/STM32/STM32_Keil_PackInstall.png)
-
-
-##### Serial Terminal Debugging
-
-Set the baud rate of your serial terminal software (here we use the open-source <a href="http://realterm.sourceforge.net" target="_blank"> RealTerm </a>) to be **115200**, which is the one we use to configure USART2 in the example App. Configure the serial terminal to display the received information in Ascii mode and send commands in Hex mode.
-
-![Realterm Setup](../../images/STM32/STM32_Realterm.png)
 
 ## Linux OES with ROS: Software Setup
 
 ##### Tested Environment:
 
-* Operating System: Ubuntu 16.04 (x86/ARM)
-* ROS version: ROS Kinetic
 
 Onboard SDK ROS should also work on Ubuntu 14.04/ROS Indigo, though it is not officially tested on that combination.
 
@@ -80,6 +73,8 @@ Onboard SDK ROS should also work on Ubuntu 14.04/ROS Indigo, though it is not of
 * Install C, C++ Compiler and Development Tools by installing ``build-essential``
 * Install CMake 2.8.3 or newer
 * <a href="http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment">Install ROS and its dependencies</a>
+* Operating System: Ubuntu 16.04 (x86/ARM)
+* ROS version: ROS Kinetic
 
 ##### Compilation:
 
