@@ -35,11 +35,8 @@
       title: Flight Control
       path: /guides/component-guide-flight-control.html
     -
-      title: Camera
-      path: /guides/component-guide-camera.html
-    -
-      title: Gimbal
-      path: /guides/component-guide-gimbal.html
+      title: Camera And Gimbal
+      path: /guides/component-guide-camera-and-gimbal.html
     -
       title: Missions
       path: /guides/component-guide-missions.html
