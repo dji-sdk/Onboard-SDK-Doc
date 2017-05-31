@@ -5,20 +5,43 @@ version: 3.3
 keywords: [get started, key features, hardware overview, registration, enable flight controller API control, safety]
 ---
 
-The DJI Onboard SDK is an open source communication software library designed to provide developers access to the capabilities of DJI's aircraft, handled camera and sensor products. The software library provides low level control communication between aircraft and computer companion platform (of your choice) mounted directly on aircraft's chasis. This communication allows for onborad, real time processing and can be used to program your aircraft to perform complex missions and tasks.
-
-While designing this software library, we created distinct list of features developer can implement. At the same time,  to maintain simple to use and understand SDK, we hide complex, low level components like flight stabilization, battery management, rotor configuration, etc. These components managed by the flight controller itself.
+The DJI Onboard SDK is an open source software library that enables computers to communicate directly with a selection of DJI aircraft and flight controllers over a serial interface. The SDK gives access to aircraft telemetry, flight control and other aircraft functions, meaning a developer can use the SDK to load their own compute onboard an aircraft and use it to control flight. 
 
 The SDK includes:
 
-* **Communication library**: Supports Linux, ARM, STM32. (TODO: add link to GitHub)
-* **Aircraft simulator and visualization tool**: Used for initial (User App) activation, aircraft configuration and flight tests. (TODO: add link to download page)
-* **Sample code and developer guides**: Check out our sample code demonstrating core workflow of flight control, camera and gimbal control, telemetry, missions, and mobile communication.(TODO: add link to sampel code)
-* **API documentation**: Detailed reference to Onboard SDK API.(TODO: add link to API reference)
+* an open source C++ library that can be used to access DJI aircraft over a serial interface - with support for Linux, ARM and STM32
+* TODO ROS?
+* closed source library for precision trajectories and collision avoidance
+* an aircraft simulator and visualization tool
+* sample code and tutorials
+* this developer guide and API documentation
+
+## Comparison with Mobile SDK
+
+DJI offers both a Mobile SDK (for Android and iOS) as well as this Onboard SDK (for embedded compute systems). A comparison of the SDKs is below:
+
+Onboard SDK: 
+Advantages: 
+
+* High frequency telemetry information and attitude control
+* Compute is on the aircraft, not requiring RC
+
+Use:
+
+* Interface with a 
+
+
+<html>
+<table>
+<tr>
+<td></td>
+</tr>
+</table>
+</html>
 
 ## Feature Overview
 
-Many of DJI's product features and capabilities are accessible to developers through the SDK. Developers can automate flight and missions, control the camera and gimbal, receive real time video and sensor data, download saved media from the product, receive real-time feedback, and even more. Our SDK designed for you to invent and experiment. We offer a number of modules that integrate with core SDK to provide for precision missions, trajectories, collision avoidance and LiDAR mapping <link here>.
+Many of DJI's product features and capabilities are accessible to developers through the SDK. Developers can automate flight and missions, control the camera and gimbal, and receive real time sensor data. Our SDK designed for you to invent and experiment. We offer a number of modules that integrate with core SDK to provide for precision missions, trajectories, collision avoidance and LiDAR mapping <link here>.
 
 ##### Flight Control
 
