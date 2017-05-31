@@ -73,6 +73,9 @@
   title: SAMPLE APPLICATIONS
   list:
     -
+      title: Sample Setup
+      path: /sample-doc/sample-setup.html
+    -
       title: Telemetry
       path: /sample-doc/telemetry.html
     -
@@ -106,10 +109,6 @@
 -
   title: APPENDIX
   list:
-    -
-      title: OSDK 3.3 Porting Guide
-      path: /appendix/porting-guide.html
-
     -
       title: Appendix
       path: /appendix/index.html
