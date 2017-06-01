@@ -145,6 +145,36 @@ th {
   }
 }
 
+.table-osdk-msdk-comparison {
+  font-size: 85%;
+  border: 0px solid $table-border-color;
+  border-bottom: 1px solid $table-border-color;
+  border-right: 1px solid $table-border-color;
+  border-left: 1px solid $table-border-color;
+  > thead > tr > th {
+        font-size: 120%;
+  }
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        border: 0px solid $table-border-color;
+      }
+    }
+  }
+  > thead >tr > th{
+    background-color: rgb(237,237,237);
+  }
+  > thead > tr {
+    > th,
+    > td {
+      border-bottom-width: 0px;
+    }
+  }
+  
+}
 
 .table-product-comparison {
   font-size: 85%;
