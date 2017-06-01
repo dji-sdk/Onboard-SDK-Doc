@@ -12,18 +12,22 @@ The Telemetry sample outputs real-time sensor data from the aircraft. Telemetry 
 
 The goal of the Telemetry sample is to show users a few examples for the subscription mechanism that will allow users to access real-time sensor data from the aircraft. The sample subscribes to the following sensor data: 
  
-Flight Status at 1 Hz
-Fused Lat/Lon at 10Hz
-Fused Altitude at 10Hz
-RC Channels at 50 Hz
-Velocity at 50 Hz
-Quaternion at 200 Hz
+1. Flight Status at 1 Hz
+2. Fused Lat/Lon at 10Hz
+3. Fused Altitude at 10Hz
+4. RC Channels at 50 Hz
+5. Velocity at 50 Hz
+6. Quaternion at 200 Hz
 
 ## Code work flow 
 
 [![Telemetry code workflow](../images/samples/telemetry_flowchart.jpg)](../images/samples/telemetry_flowchart.jpg)
 
 ## Output 
+
+The output of the telemetry sample is as shown below. 
+
+[![Telemetry output](../images/samples/telemetry_output.png)](../images/samples/telemetry_output.png)
 
 
 
