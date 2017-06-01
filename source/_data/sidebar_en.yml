@@ -43,7 +43,7 @@
     -
       title: Telemetry
       path: /guides/component-guide-telemetry.html
-    -  
+    -
       title: Hardware Synchronization
       path: /guides/component-guide-hardware-sync.html
     -
@@ -93,6 +93,7 @@
     -
       title: Multi-Function IO
       path: /sample-doc/mfio.html
+
 -
   title: PROTOCOL DOCUMENTS
   list:
@@ -115,7 +116,6 @@
     -
       title: FAQ
       path: /appendix/FAQ.html
-    - 
+    -
       title: Release Notes
       path: /appendix/releaseNotes.html
-    

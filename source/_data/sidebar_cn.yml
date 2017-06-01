@@ -3,13 +3,13 @@
   list:
     -
       title: Documentation Home
-      path: /cn/introduction/index.html
-    -
-      title: Onboard SDK Introduction
-      path: /cn/introduction/onboard-sdk-introduction.html
+      path: /cn/introduction/homepage.html
     -
       title: Hardware Introduction
       path: /cn/introduction/osdk-hardware-introduction.html
+    -
+      title: Onboard SDK Introduction
+      path: /cn/introduction/onboard-sdk-introduction.html
     -
       title: SDK Architectural Overview
       path: /cn/introduction/sdk-architectural-overview.html
@@ -27,6 +27,28 @@
     -
       title: Flight Control
       path: /cn/introduction/things-to-know.html
+
+-
+  title: GUIDES
+  list:
+    -
+      title: Flight Control
+      path: /cn/guides/component-guide-flight-control.html
+    -
+      title: Camera And Gimbal
+      path: /cn/guides/component-guide-camera-and-gimbal.html
+    -
+      title: Missions
+      path: /cn/guides/component-guide-missions.html
+    -
+      title: Telemetry
+      path: /cn/guides/component-guide-telemetry.html
+    -
+      title: Hardware Synchronization
+      path: /cn/guides/component-guide-hardware-sync.html
+    -
+      title: MSDK and OSDK Communication
+      path: /cn/guides/component-guide-mobile-communication.html
 
 -
   title: DEVELOPMENT WORKFLOW
@@ -50,6 +72,9 @@
 -
   title: SAMPLE APPLICATIONS
   list:
+    -
+      title: Sample Setup
+      path: /cn/sample-doc/sample-setup.html
     -
       title: Telemetry
       path: /cn/sample-doc/telemetry.html
@@ -85,10 +110,6 @@
   title: APPENDIX
   list:
     -
-      title: OSDK 3.3 Porting Guide
-      path: /cn/appendix/porting-guide.html
-
-    -
       title: Appendix
       path: /cn/appendix/index.html
     -
@@ -97,4 +118,3 @@
     -
       title: Release Notes
       path: /cn/appendix/releaseNotes.html
-
