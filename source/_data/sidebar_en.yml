@@ -93,6 +93,7 @@
     -
       title: Multi-Function IO
       path: /sample-doc/mfio.html
+
 -
   title: PROTOCOL DOCUMENTS
   list:
@@ -105,6 +106,7 @@
     -
       title: Ground Station Protocol
       path: /protocol-doc/ground-station-protocol.html
+
 -
   title: APPENDIX
   list:
@@ -117,5 +119,4 @@
     -
       title: Release Notes
       path: /appendix/releaseNotes.html
-
 
