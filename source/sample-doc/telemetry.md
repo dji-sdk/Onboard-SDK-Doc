@@ -19,6 +19,8 @@ The goal of the Telemetry sample is to show users a few examples for the subscri
 5. Velocity at 50 Hz
 6. Quaternion at 200 Hz
 
+The Telemetry sample is available on Linux and STM32. 
+
 ## Code work flow 
 
 [![Telemetry code workflow](../images/samples/telemetry_flowchart.jpg)](../images/samples/telemetry_flowchart.jpg)
