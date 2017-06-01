@@ -1,7 +1,7 @@
 ---
-title: Telemetry sample
+title: Flight Control sample
 date: 2017-03-07
-keywords: [sample, samples, telemetry]
+keywords: [sample, samples, Flight control, flightcontrol, position, positioncontrol, control]
 ---
 
 ## Introduction 
