@@ -6,20 +6,21 @@ keywords: [sample, samples, Flight control, flightcontrol, position, positioncon
 
 ## Introduction 
 
-The Telemetry sample outputs real-time sensor data from the aircraft. Telemetry data may be used for monitoring or logging purposes, sensor data based conditional actions or in control loops.  
+The flight control sample demonstrates sending control commands to the aircraft using the Position control command. The sample allows you to run two operations: 
+
+a. Take off and Land aircraft
+b. Take off, flight motion using position control and land aircraft. 
 
 ## Goals 
 
-The goal of the Telemetry sample is to show users a few examples for the subscription mechanism that will allow users to access real-time sensor data from the aircraft. The sample subscribes to the following sensor data: 
+The sample demonstrates a closed loop controller with position commands sent to the aircraft. It subscribes to the following topics: 
  
-1. Flight Status at 1 Hz
-2. Fused Lat/Lon at 10Hz
-3. Fused Altitude at 10Hz
-4. RC Channels at 50 Hz
-5. Velocity at 50 Hz
-6. Quaternion at 200 Hz
+1. TOPIC_STATUS_FLIGHT at 10Hz
+2. TOPIC_STATUS_DISPLAYMODE at 10Hz
+3. TOPIC_QUATERNION at 50Hz
+4. TOPIC_GPS_FUSED at 50 Hz
 
-The Telemetry sample is available on Linux and STM32. 
+The flight control sample is available on Linux, ROS and STM32. 
 
 ## Code work flow 
 
