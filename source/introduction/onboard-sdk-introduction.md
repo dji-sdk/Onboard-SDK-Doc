@@ -10,8 +10,7 @@ The DJI Onboard SDK is an open source software library that enables computers to
 The SDK includes:
 
 * an open source C++ library that can be used to control DJI aircraft over a serial interface - with support for Linux, ARM and STM32
-* TODO ROS?
-* closed source library for precision trajectories and collision avoidance
+* fully featured ROS wrapper compatible with ROS standards
 * an aircraft simulator and visualization tool
 * sample code and tutorials
 * this developer guide and API documentation
@@ -57,7 +56,7 @@ The table below compares the two SDKs.
     <td>Wireless<p style="line-height:90%"><font color="#BBBBBB" size=1 style="font-weight:normal">Mobile Device <-> USB <-> Remote Controller <-> Wireless <-> Aircraft</p></td>
   </tr>
   <tr>
-    <td>Flight Control - Attitude</td>
+    <td>Flight Control - Low Level</td>
     <td>200 Hz</td>
     <td>10 Hz</td>
   </tr>
@@ -163,7 +162,7 @@ Aircraft Status Data
 * **Battery Status**<br>
 * **Quaternion**<br>
 * **Linear Acceleration**<br>
-* **Angular Rotation**<br>
+* **Angular Rate**<br>
 
 ## Connection to User Application and Aircraft
 
