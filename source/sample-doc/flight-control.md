@@ -8,12 +8,12 @@ keywords: [sample, samples, Flight control, flightcontrol, position, positioncon
 
 The flight control sample demonstrates sending control commands to the aircraft using the Position control command. The sample allows you to run two operations: 
 
-a. Take off and Land aircraft
-b. Take off, flight motion using position control and land aircraft. 
+* Take off and Land aircraft
+* Take off, flight motion using Position Control and Land aircraft. 
 
 ## Goals 
 
-The sample demonstrates a closed loop controller with position commands sent to the aircraft. It subscribes to the following topics: 
+The sample demonstrates a closed loop controller with position commands sent to the aircraft using the positionAndYawCtrl API. It subscribes to the following topics: 
  
 1. TOPIC_STATUS_FLIGHT at 10Hz
 2. TOPIC_STATUS_DISPLAYMODE at 10Hz
@@ -24,7 +24,7 @@ The flight control sample is available on Linux, ROS and STM32.
 
 ## Code work flow 
 
-[![Telemetry code workflow](../images/samples/telemetry_flowchart.jpg)](../images/samples/telemetry_flowchart.jpg)
+[![Telemetry code workflow](../images/samples/flightcontrol_flowchart.jpg)](../images/samples/flightcontrol_flowchart.jpg)
 
 ## Output 
 
