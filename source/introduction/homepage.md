@@ -33,6 +33,7 @@ The features available through the OSDK are detailed in our Feature Guides. Thes
 
 Be sure to read through all the guides available on the Feature Overview page before you start writing OSDK Applications!
 
+//TODO - remove this
 - [Feature Overview](../features/overview.html)
 
 
@@ -62,6 +63,8 @@ We provide a number of samples designed to showcase example end-to-end implement
 Detailed reference for OSDK APIs can be found in the [API Reference](@todo) section.
 
 ## Appendix
+
+TODO - should EULA, Release Notes and Porting Guide be removed?
 
 - [FAQ](../appendix/FAQ.html)
 - [EULA](http://developer.dji.com/policies/eula/)
