@@ -14,5 +14,3 @@ An application accesses the DJI product's capabilities through the main Vehicle 
 ![Software Architecture](../images/common/OnboardSDKArchitecture.png)
 
 The Vehicle class is used to administer the SDK (e.g. SDK activation), and also provides the objects to control and receive state information from the product.
-
-## SDK Library
