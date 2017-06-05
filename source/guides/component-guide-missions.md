@@ -22,7 +22,7 @@ A Waypoint Mission is uploaded to and executed by the aircraft, but is limited b
 
 ### Hot Point Mission
 
-In a Hot Point Mission, the aircraft will repeatedly fly circles of a constant radius around a specified point called a Hot Point. Altitude, velocity, the Hot Point location, aircraft heading and flight direction can all be defined as part of the mission.
+In a Hot Point Mission, the aircraft will repeatedly fly circles of a constant radius around a specified point called a Hot Point (also known as Point of Interest). Altitude, velocity, the Hot Point location, aircraft heading and flight direction can all be defined as part of the mission.
 
 Altitude, heading and radius can also be adjusted manually using the remote controller control sticks during the mission.
 
