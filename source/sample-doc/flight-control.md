@@ -24,10 +24,10 @@ The flight control sample is available on Linux, ROS and STM32.
 
 ## Code work flow 
 
-[![Telemetry code workflow](../images/samples/flightcontrol_flowchart.jpg)](../images/samples/flightcontrol_flowchart.jpg)
+[![Flight Control code workflow](../images/samples/flightcontrol_flowchart.jpg)](../images/samples/flightcontrol_flowchart.jpg)
 
 ## Output 
 
-The output of the telemetry sample is as shown below. 
+The output of the flight control sample in simulation is as shown below. 
 
-[![Telemetry output](../images/samples/telemetry_output.png)](../images/samples/telemetry_output.png)
+[![Flight Control sample simulation](../images/samples/flight_control_loop.gif)](../images/samples/flight_control_loop.gif)
