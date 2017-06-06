@@ -23,7 +23,6 @@ There are many DJI aircraft to choose from that provide a range of features, per
 * Maximum service ceiling
 * Available accessories
 * Remote controller features
-* Price
 
 ### Stand Alone Components
 
@@ -37,9 +36,9 @@ DJI aircraft are compatible with a number of DJI accessories. Some of these acce
 
 Before doing a detailed product comparison it is useful to understand the components of a product and their function.
 
-All products comprise component modules that provide an important feature or function. An introduction to typical components is below with more details in the [Component Guide](./component-guide-flightController.html).
+All products comprise component modules that provide an important feature or function. An introduction to typical components is below with more details in the [Component Guide](../guides/component-guide-flight-control.html).
 
-![ComponentsAircraft](../images/product-introduction/ComponentsAircraft.png)
+![ComponentsAircraft](../images/common/hardware_introduction.png)
 
 #### Propulsion
 
