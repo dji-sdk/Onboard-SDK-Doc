@@ -1,6 +1,6 @@
 ---
-title: Hardware Introduction
-date: 2017-05-22
+title: OSDK Hardware Introduction
+date: 2017-06-06
 keywords: [component, propellor, sensor, product comparison]
 ---
 
@@ -8,7 +8,7 @@ DJI produces small, highly capable, remotely controlled aircraft as well as hand
 
 ### Aircraft
 
-DJI has a range of multi-rotor aircraft that can be automated with the Mobile SDK including the Mavic Pro, Phantom series, Inspire series, Matrice 100 and Matrice 600.
+DJI has a range of multi-rotor aircraft that can be automated with the Onboard SDK including Matrice 600 Pro, Matrice 600, Matrice 100 as well as A3 and N3 Flight controllers.
 
 One of the key features of DJI aircraft is the camera's ability to stay horizontal no matter how the aircraft is flying. The camera is mounted on a gimbal, which actively compensates for any aircraft rotation, producing clear, beautiful images and videos.
 
@@ -25,17 +25,13 @@ There are many DJI aircraft to choose from that provide a range of features, per
 * Remote controller features
 * Price
 
-### Handheld Camera
-
-DJI's handheld camera Osmo series allows users to take smooth, professional videos when the user is moving by integrating DJI's aircraft camera stabilization gimbal technology onto an easy to carry handle.
-
 ### Stand Alone Components
 
-Two components of the aircraft (flight controller, wireless link) can be used on DJI or third party airframes. Some of these components are supported to a limited degree in the DJI Mobile SDK.
+A3 and N3 flight controllers are two components of the aircraft (flight controller, wireless link) that can be used on DJI or third party airframes. These components are fully supported in DJI Onboard SDK and offer limited support in DJI Mobile SDK.
 
 ### Accessories
 
-DJI aircraft and handheld cameras are compatible with a number of DJI accessories. Some of these accessories are also supported by the DJI Mobile SDK, meaning the mobile device will be able to interact with the accessory to some degree.
+DJI aircraft are compatible with a number of DJI accessories. Some of these accessories are also supported by the DJI Onboard SDK, meaning the onboard computer will be able to interact with the accessory to some degree.
 
 ## Components
 
