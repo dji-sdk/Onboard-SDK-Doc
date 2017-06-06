@@ -50,19 +50,15 @@ DJI aircraft have a large number of sensors including accelerometers, gyroscopes
 
 #### Flight Controller
 
-The Flight Controller is an onboard computer that couples control information from the pilot with sensor information to adjust the thrust at each propellor and fly the aircraft as desired.
+The Flight Controller is an aircraft's main micro controller that couples control information from the pilot with sensor information to adjust the thrust at each propellor and fly the aircraft as desired.
 
 #### Camera
 
-The camera can record image and video data locally or transfer it wirelessly to an Android or iOS mobile device. Wireless transfer includes the option of a live video stream from the camera. Camera exposure and settings are highly customizable allowing capture of the perfect shot.
+The camera can record image and video data locally.
 
 #### Gimbal
 
-The gimbal holds the camera and can rotate it around three axes. The rotation can be used to both control the direction the camera points, and provide rotational stabilization when the aircraft is not horizontal. The gimbal is mounted on a damped plate, meaning the camera is both stabilized from lateral vibrations and rotational movement.
-
-#### Vision Obstacle Avoidance & Positioning
-
-Advanced sensors help the aircraft perceive the world around it. Stereo cameras are used to detect obstacles near the product. Downward facing cameras and ultrasonic sensors are used to determine relative ground position providing accurate velocity estimates and stable hover position in GPS denied environments (like indoors).
+The gimbal holds the camera and can rotate it around three axes. The rotation can be used to both control the direction the camera points, and provide rotational stabilization when the aircraft is not horizontal. The gimbal is mounted on a damped plate for Matrice 100 and on a specialized gimbal mount for Matrice 600 and Matrice 600 Pro to stabilize lateral vibrations and rotational movement.
 
 #### Smart Battery
 
@@ -70,13 +66,46 @@ Smart batteries provide the energy required to run the system. Together with the
 
 #### Remote Controller
 
-The remote controller provides control sticks, buttons, and wheels that give control of the aircraft flight, camera and gimbal. The remote controller maintains a wireless link with the aircraft with some products having up to a 5km range in ideal environments. The **Flight Mode Switch** on the remote controller can be used to switch between manual and automated flight.
+The remote controller provides control sticks, buttons, and wheels that give control of the aircraft flight, camera and gimbal. The remote controller maintains a wireless link with the aircraft with some products having up to a 5km range in ideal environments. The **Flight Mode Switch** on the remote controller can be used to switch between manual and automated flight. See Precedence Control table below to learn about control precedence while using DJI Onboard SDK.
 
-![ComponentsRemoteController](../images/product-introduction/ComponentsRemoteController.png)
+<html><table class="table-product-accessories">
+  <thead>
+    <tr>
+      <th colspan="3">Precedence Control Table</th>
+    </tr>
+    <tr>
+      <th>Product</th>
+      <th>Flight Option</th>
+      <th>Control Precedence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Matrice 600 Pro</br>(Using A3 Pro Flight Controller)</td>
+      <td>Movement Control</br>WayPoint Mission</br>HotPoint Mission</td>
+      <td>DJI Onboard SDK</br>Remote Controller: speed, yaw, height</br>Remote Controller: speed, direction, radius, yaw</td>
+    </tr>
+    <tr>
+      <td>Matrice 600</br>(Using A3 Flight Controller)</td>
+      <td>Movement Control</br>WayPoint Mission</br>HotPoint Mission</td>
+      <td>DJI Onboard SDK</br>Remote Controller: speed, yaw, height</br>Remote Controller: speed, direction, radius, yaw</td>
+    </tr>
+    <tr>
+      <td>Matrice 100</br>(Using N1 Flight Controller)</td>
+      <td>Movement Control</br>WayPoint Mission</br>HotPoint Mission</td>
+      <td>DJI Onboard SDK</br>Remote Controller: speed, yaw, height</br>Remote Controller: speed, direction, radius, yaw</td>
+    </tr>
+    <tr>
+      <td>N3 Flight Controller</td>
+      <td>Movement Control</br>WayPoint Mission</br>HotPoint Mission</td>
+      <td>DJI Onboard SDK</br>Remote Controller: speed, yaw, height</br>Remote Controller: speed, direction, radius, yaw</td>
+    </tr>
+  </tbody>
+</html>
 
 #### Mobile Device
 
-An Android or iOS device can be connected to the remote controller through either USB or WiFi to give an augmented flight experience showing the live camera feed, and showing aircraft state information. Using the Mobile SDK, the mobile device can also be used to control the aircraft.
+An Android or iOS device can be connected to the remote controller through either USB or WiFi to give an augmented flight experience showing the live camera feed, and showing aircraft state information. Using the DJI Onboard SDK along with DJI Mobile SDK, the mobile device can also be used to control the aircraft.
 
 #### Handheld Controller
 
@@ -91,119 +120,72 @@ Below is a table listing the aircraft, handheld cameras and stand alone componen
 <html><table class="table-product-accessories">
   <thead>
     <tr>
-      <th colspan="4">Products and Accessories</th>
+      <th colspan="7">Product Comparison</th>
     </tr>
     <tr>
-      <th>Category</th>
       <th>Product</th>
-      <th>Cameras</th>
-      <th>SDK Supported Accessories</th>
+      <th>Cameras/Gimbals</th>
+      <th>MAX Flight Time</th>
+      <th>MAX Payload</th>
+      <th>MAX Ascent Speed</th>
+      <th>MAX Descent Speed</th>
+      <th>MAX Speed</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td rowspan="14">Aircraft</th>
-      <td>Mavic Pro</td>
-      <td>Fixed</td>        
-      <td> — </td>
-    </tr>
-    <tr>
-      <td>Phantom 4</td>
-      <td>Fixed</td>        
-      <td> — </td>
-    </tr>
-    <tr>
-      <td>Phantom 4 Advanced</td>
-      <td>Fixed</td>        
-      <td> — </td>
-    </tr>
-     <tr>
-      <td>Phantom 4 Professional</td>
-      <td>Fixed</td>        
-      <td> — </td>
-    </tr>
-    <tr>
-      <td>Phantom 3 Professional</td>
-      <td>Fixed</td>        
-      <td> — </td>
-    </tr>
-    <tr>
-      <td>Phantom 3 4K</td>
-      <td>Fixed</td>        
-      <td> — </td>
-    </tr>
-    <tr>
-      <td>Phantom 3 Advanced</td>
-      <td>Fixed</td>        
-      <td> — </td>
-    </tr>
-    <tr>
-      <td>Phantom 3 Standard</td>
-      <td>Fixed</td>        
-      <td> — </td>
-    </tr>
-    <tr>
-      <td>Inspire 1</td>
-      <td>X3, X5, X5R, XT, Z3</td>        
-      <td> Focus* </td>
-    </tr>
-    <tr>
-      <td>Inspire 2</td>
-      <td>X4S, X5S</td>        
-      <td> CineSSD, Focus* </td>
-    </tr>
-    <tr>
-      <td>Matrice 100</td>
-      <td>X3, X5, X5R, XT, Z3, Z30</td>        
-      <td> N1 Video Encoder, Focus* </td>
-    </tr>
-    <tr>
-      <td>Matrice 200</td>
-      <td>X4S, X5S, XT, Z30</td>        
-      <td> Focus </td>
+      <td>Matrice 600 Pro</td>
+      <td>Ronin-MX</br>
+          Zenmuse Z30</br>
+          Zenmuse X5/X5R</br>
+          Zenmuse X3</br>
+          Zenmuse XT</br>
+          Zenmuse Z15 Series HD Gimbal: Z15-A7</br>
+          Z15-BMPCC</br>
+          Z15-5D III</br>
+          Z15-GH4
+      </td>
+      <td>38 minutes with B48S batteries</td>
+      <td>6kg</td> 
+      <td>5 m/s</td>
+      <td>3 m/s</td>
+      <td>40mp/65kph (no wind)</td>
     </tr>
     <tr>
       <td>Matrice 600</td>
-      <td>X3, X5, X5R, XT, Z3, Z30</td>        
-      <td> DRTK, Ronin MX, Focus* </td>
+      <td>Zenmuse X3</br>
+          Zenmuse X5 series</br>
+          Zenmuse XT</br>
+          Ronin-MX</br>
+          Zenmuse Z15 series HD gimbals: Z15-A7</br>
+          Z15-BMPCC</br>
+          Z15-5D III</br>
+          Z15-GH4
+      </td>
+      <td>40 minutes with TB48S batteries</td> 
+      <td>6kg</td>
+      <td>5 m/s</td>
+      <td>3 m/s</td>
+      <td>18 m/s(no wind)</td> max speed
     </tr>
     <tr>
-      <td>Matrice 600 Pro</td>
-      <td>X3, X5, X5R, XT, Z3, Z30</td>        
-      <td> DRTK, Ronin MX, Focus* </td>
+      <td>Matrice 100</td>
+      <td>Zenmuse X3</td>
+      <td>40 minutes with TB48D battery</td>        
+      <td>1kg</td>
+      <td>5 m/s</td>
+      <td>4 m/s</td>
+      <td>22 m/s</br>(ATTI mode, no payload, no wind)</br>17 m/s</br>(GPS mode, no payload, no wind)</td>
     </tr>
-    <tr>
-      <td rowspan="3">Handheld Device</th>
-      <td>Osmo</td>
-      <td>X3, X5, X5R, Z3</td>        
-      <td> — </td>
-    </tr>
-    <tr>
-      <td>Osmo Pro</td>
+     <tr>
+      <td>N3 Flight Controller</td>
       <td>Fixed</td>        
       <td> — </td>
     </tr>
     <tr>
-       <td>Osmo Mobile</td>
-      <td> — </td>        
+      <td>A3 Flight Controller</td>
+      <td>Fixed</td>        
       <td> — </td>
-    </tr>
-    <tr>
-      <td rowspan="3">Components</th>
-      <td>Lightbridge 2 with A2</td>
-      <td> — </td>        
-      <td> — </td>
-    </tr>
-      <tr>
-      <td>Lightbridge 2 with A3</td>
-      <td> X3, X5, X5R, XT, Z3, Z30 </td>        
-      <td> DRTK, Ronin MX, Focus* </td>
-    </tr>
-    </tr>
-      <tr>
-      <td>Lightbridge 2 with N3</td>
-      <td> X3, X5, X5R, XT, Z3, Z30 </td>        
-      <td> DRTK, Ronin MX, Focus* </td>
     </tr>
   </tbody>
 </table></html>
