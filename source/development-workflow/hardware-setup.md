@@ -26,7 +26,7 @@ If using a stand alone flight controller product, or if power is needed not just
 
 ## UART 
 
-###Interface Details
+### Interface Details
 - The UART electrical interface for all OSDK compatible DJI aircraft and flight controllers is 3.3 volt TTL.
 - You must ensure that your onboard computer UART port operates at the same voltage to avoid damaging the flight controller. For example, RS-232 ports will need a level-shifting circuit.
 - The UART interface does not require power from the onboard computer.
