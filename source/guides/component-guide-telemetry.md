@@ -18,8 +18,8 @@ In data broadcast mechanism, the flight controller publishes the telemetry data 
 
 ## Subscription
 
-Data subscription is a new and improved paradigm to retrieve telemetry data from the flight controller introduced in Onboard SDK 3.3. User subscribes to telemetry data as data packets by providing a specified frequency and a list of telemetry topics. Below are some advantages of using subscription over broadcast:
+Data subscription is a new and improved paradigm, introduced in Onboard SDK 3.3, to retrieve telemetry data from the flight controller. User subscribes to telemetry data as data packets by specifying a frequency and a list of telemetry topics. Below are some advantages of using subscription over broadcast:
 * A more robust hand-shake mechanism
 * Additional telemetry data available
 * Supports higher frequency
-* Supports Hardware sync feature
+* Supports hardware sync feature
