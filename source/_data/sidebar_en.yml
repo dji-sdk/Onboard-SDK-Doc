@@ -49,6 +49,9 @@
     -
       title: MSDK and OSDK Communication
       path: /guides/component-guide-mobile-communication.html
+    -
+      title: Multi-Function IO
+      path: /guides/component-guide-multi-function-io.html
 
 -
   title: DEVELOPMENT WORKFLOW
@@ -100,9 +103,6 @@
     -
       title: Onboard SDK OPEN Protocol
       path: /protocol-doc/index.html
-    -
-      title: Data Transparent Transmission
-      path: /protocol-doc/data-transparent-transmission.html
     -
       title: Ground Station Protocol
       path: /protocol-doc/ground-station-protocol.html
