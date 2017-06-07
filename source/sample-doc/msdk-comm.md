@@ -51,31 +51,20 @@ ACK returned will be displayed on the Mobile app.
 
 ### ROS
 
-The supported commands are:  
-
-* Obtain Control
-* Release Control 
-* Take Off 
-* Landing 
-* Get SDK Version
-* Arm
-* Disarm 
-* Go Home
-* Take Photo 
-* Start Video
-* Stop Video 
-* Draw Circle Demo 
-* Draw Square Demo 
-* Gimbal Control Demo 
-* Attitude Control Demo 
-* Virtual RC Test 
+The supported demos are:  
+ 
+* Position Control Demo 
+* Camera - Gimbal Demo  
+* Missions Demo 
+* Mobile - SDK Communication Demo
+* MFIO Demo
 
 ACK returned will be displayed on the Mobile app.
 
 
 ### STM32
 
-STM32 platform responds to mobile commands by default. **When not in simulator mode, sending mobile commands will cause the motor to spin and drone to fly. Use with care!** The supported commands are: 
+STM32 platform responds to mobile commands by default. The supported commands are: 
 
 * Obtain Control
 * Release Control
