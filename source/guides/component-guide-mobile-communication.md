@@ -1,7 +1,7 @@
 ---
-title: Mobile Onboard SDK communication using Data Transparent Transmission
-version: 3.2.0
-date: 2016-12-23
+title: Mobile- Onboard SDK communication
+version: 3.3.0
+date: 2017-06-07
 keywords: [iOS Mobile Onboard SDK app]
 ---
 
@@ -10,7 +10,8 @@ keywords: [iOS Mobile Onboard SDK app]
 
 Mobile API allows developers to monitor and control the UAV from a mobile device running iOS or Android with the remote controller connected. Onboard API allows developers to monitor and control the UAV from any system directly connected to the UAV through a serial(UART) port interface.
 
-The Mobile - Onboard SDK communication pipeline was developed to combine the benefits of Mobile and Onboard SDK APIs. By establishing a connection between a Mobile Device and the Onboard Computer, developers are able to send any data from their Mobile Device to the Onboard Computer and vice versa. 
+
+The Mobile - Onboard SDK communication pipeline was developed to combine the ease of use and flexibility of the Mobile SDK along with the real time nature and computing power of the Onboard SDK. By establishing a connection between a Mobile Device and the Onboard Computer, developers are able to send any data from their Mobile Device to the Onboard Computer and vice versa. 
 
 This implementation provides an alternative way to run/test your OnboardSDK code with an aircraft in the real world. For example - Commands can be sent from the iOS app to the Onboard Computer, data is read from the Onboard SDK code and respective functions can be executed accordingly.
 The current upstream(Mobile to Onboard Computer) bandwidth is around _1KB/s_ while the downstream (Onboard to Mobile Device) bandwidth is around _8KB/s_
