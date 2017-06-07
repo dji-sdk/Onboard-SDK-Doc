@@ -5,12 +5,17 @@ version: 3.3
 keywords: [write apps, developemtn, SDK, integrate, DJI]
 ---
 
-## Project Structure
+## Application Structure
 
-This diagram shows the structure of the SDK in the context of writing apps:
+The diagram below demonstrates what would typically be included in an application that uses the Onboard SDK.
 
 ![integrate-sdk](../images/workflow/djiosdk_integrate_into_app.png)
 
+In addition to the OSDK Core Library, and any application specific third party libraries, the application will also need to include a platform specific threading library. OSDK uses threading to handle reading from the 
+
+As threading is platform specific, the OSDK core requires the application pass it a reference to a threading library.
+
+The application needs to pass the OSDK Core a reference to this threading library, so the OSDK can then use it.
 
 ## Including DJI OSDK Headers in Your Code
 
