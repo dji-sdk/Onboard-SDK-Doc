@@ -20,7 +20,7 @@ The current upstream (Mobile to Onboard Computer) bandwidth is around _1KB/s_ wh
 
 This implementation provides an alternative way to run/test your OnboardSDK code with an aircraft in the real world that makes use of the Mobile - Onboard SDK communication. Commands are sent from the iOS app to the Onboard Computer, data is read from the Onboard SDK code, respective functions are executed and an ACK is returned back to the mobile device. You can read more about the sample [here](./../sample-doc/msdk-comm.html)
 
-## Communication
+## Sample Communication
 
 The image below shows commands being sent from Mobile to Onboard SDK.  
 
