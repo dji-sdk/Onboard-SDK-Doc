@@ -8,11 +8,13 @@ keywords: [Mobile, communication]
 
 As mentioned in the guide, the Mobile - Onboard SDK communication was developed to combine the benefits of Mobile and Onboard SDK APIs by establishing a connection between a Mobile Device and an Onboard Computer. Developers are able to send any data from their Mobile Device to OES and vice versa.
 
-This implementation provides an alternative way to run/test your OnboardSDK code with an aircraft in the real world. The commands are sent from the iOS app to the Onboard Computer, data is parsed in the Onboard SDK code and the respective functions are executed accordingly. For example, clicking on the 'Take Off' button on the iOS app results in the command being sent to the OES, the parser on the Onboard SDK sample reads the command and calls the 'Take Off' function accordingly. After completion of 'Take Off', the returned Flight Controller ACK is sent to the iOS app.
+This sample implementation provides an alternative way to run/test your OnboardSDK code with an aircraft in the real world. The commands are sent from the iOS app to the Onboard Computer, data is parsed in the Onboard SDK code and the respective functions are executed accordingly. For example, clicking on the 'Take Off' button on the iOS app results in the command being sent to the OES, the parser on the Onboard SDK sample reads the command and calls the 'Take Off' function accordingly. After completion of 'Take Off', the returned Flight Controller ACK is sent to the iOS app.
 
 ## Setup
 
-# iOS Mobile Onboard SDK app 
+# iOS Mobile Onboard SDK app
+ 
+The iOS app is available [here](https://github.com/dji-sdk/Mobile-OSDK-iOS-App).
 
 The iOS app can be side loaded to your phone using Xcode on a Macintosh system. Below are the list of instructions to side load the MOS app to your iOS device. 
 
@@ -30,6 +32,69 @@ The iOS app can be side loaded to your phone using Xcode on a Macintosh system. 
 - The app can now be launched on your iOS device. 
 - Below is a screenshot of the app after successful Take Off. 
 ![MOS app](../../images/common/MOSDKApp.jpg)
+
+# Onboard computer to Mobile Device (Mobile APIs)
+
+The following code snippet shows you how to receive the data on different mobile platforms including iOS and Android.
+
+- iOS
+
+Please implement the following delegate method of DJIFlightControllerDelegate:
+
+~~~objc
+- (void)flightController:(DJIFlightController *)fc didReceiveDataFromExternalDevice:(NSData *)data;
+~~~
+
+For more details, please check **DJIFlightController.h** file in the iOS SDK.
+
+- Android
+
+Please implement the `FlightControllerReceivedDataFromExternalDeviceCallback` callback function as shown below:
+
+~~~java
+DJIAircraft mAircraft = (DJIAircraft)DJISDKManager.getInstance().getDJIProduct();
+DJIFlightController mFlightController = mAircraft.getFlightController();
+
+mFlightController.setReceiveExternalDeviceDataCallback(new FlightControllerReceivedDataFromExternalDeviceCallback() {         
+          @Override
+          public void onResult(byte[] data) {
+          }
+        });
+~~~
+
+For more details, please check the **FlightController** class in the Android SDK.
+
+# Mobile Device to Onboard computer (Mobile APIs)
+
+The following SDK interface can help you understand how to communicate with Onboard SDK Device on different mobile platforms including iOS and Android.
+
+- iOS
+
+Please use the following method of DJIFlightController:
+
+~~~objc
+- (void)sendDataToOnboardSDKDevice:(NSData *)data withCompletion:(DJICompletionBlock)completion;
+~~~
+
+For more details, please check **DJIFlightController.h** file in the iOS SDK.
+
+- Android
+
+Please implement the `sendDataToOnboardSDKDevice` method of DJIFlightController as shown below:
+
+~~~java
+DJIAircraft mAircraft = (DJIAircraft)DJISDKManager.getInstance().getDJIProduct();
+DJIFlightController mFlightController = mAircraft.getFlightController();
+
+mFlightController.sendDataToOnboardSDKDevice(data,
+                new DJICompletionCallback() {
+                    @Override
+                    public void onResult(DJIError pError) {
+                    }
+                });
+~~~
+
+For more details, please check the **FlightController** class in the Android SDK. 
 
 ## Code work flow
 
