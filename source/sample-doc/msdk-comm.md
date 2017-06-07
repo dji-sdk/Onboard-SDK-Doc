@@ -13,8 +13,6 @@ This sample implementation provides an alternative way to run/test your OnboardS
 ## Setup
 
 # iOS Mobile Onboard SDK app
- 
-The iOS app is available [here](https://github.com/dji-sdk/Mobile-OSDK-iOS-App).
 
 The iOS app can be side loaded to your phone using Xcode on a Macintosh system. Below are the list of instructions to side load the MOS app to your iOS device. 
 
@@ -35,7 +33,7 @@ The iOS app can be side loaded to your phone using Xcode on a Macintosh system. 
 
 ## Code work flow
 
-
+[![MOC code workflow](../images/samples/moc_sample_flowchart.jpg)](../images/samples/moc_sample_flowchart.jpg)
 
 ## Feature Support
 
