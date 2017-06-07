@@ -115,121 +115,9 @@ The handheld controller provides a joystick and buttons for that give control of
 
 ## Supported Products
 
-Below is a table listing the aircraft, handheld cameras and stand alone components supported by the DJI Mobile SDK.
+Drones and flight controller systems that support DJI Onboard SDK are: Matrice 600 Pro, Matrice 600, Matrice 100 as well as A3 Pro, A3, N3 flight controller systems.
 
-<html><table class="table-product-accessories">
-  <thead>
-    <tr>
-      <th colspan="7">Product Comparison</th>
-    </tr>
-    <tr>
-      <th>Product</th>
-      <th>Cameras/Gimbals</th>
-      <th>MAX Flight Time</th>
-      <th>MAX Payload</th>
-      <th>MAX Ascent Speed</th>
-      <th>MAX Descent Speed</th>
-      <th>MAX Speed</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Matrice 600 Pro</td>
-      <td>Ronin-MX</br>
-          Zenmuse Z30</br>
-          Zenmuse X5/X5R</br>
-          Zenmuse X3</br>
-          Zenmuse XT</br>
-          Zenmuse Z15 Series HD Gimbal: Z15-A7</br>
-          Z15-BMPCC</br>
-          Z15-5D III</br>
-          Z15-GH4
-      </td>
-      <td>38 minutes with B48S batteries</td>
-      <td>6kg</td> 
-      <td>5 m/s</td>
-      <td>3 m/s</td>
-      <td>40mp/65kph (no wind)</td>
-    </tr>
-    <tr>
-      <td>Matrice 600</td>
-      <td>Zenmuse X3</br>
-          Zenmuse X5 series</br>
-          Zenmuse XT</br>
-          Ronin-MX</br>
-          Zenmuse Z15 series HD gimbals: Z15-A7</br>
-          Z15-BMPCC</br>
-          Z15-5D III</br>
-          Z15-GH4
-      </td>
-      <td>40 minutes with TB48S batteries</td> 
-      <td>6kg</td>
-      <td>5 m/s</td>
-      <td>3 m/s</td>
-      <td>18 m/s(no wind)</td> max speed
-    </tr>
-    <tr>
-      <td>Matrice 100</td>
-      <td>Zenmuse X3</td>
-      <td>40 minutes with TB48D battery</td>        
-      <td>1kg</td>
-      <td>5 m/s</td>
-      <td>4 m/s</td>
-      <td>22 m/s</br>(ATTI mode, no payload, no wind)</br>17 m/s</br>(GPS mode, no payload, no wind)</td>
-    </tr>
-     <tr>
-      <td>N3 Flight Controller</td>
-      <td>Fixed</td>        
-      <td> — </td>
-    </tr>
-    <tr>
-      <td>A3 Flight Controller</td>
-      <td>Fixed</td>        
-      <td> — </td>
-    </tr>
-  </tbody>
-</table></html>
-
-> Note: DJI Focus is only compatible with DJI cameras.
-
-Detailed specifications are listed on each product's webpage **specs** section at <a href="http://www.dji.com" target="_blank">www.dji.com</a>.
-
-## Product Comparison
-
-### Aircraft Comparison
-
-Some defining product features that distinguish aircraft series are:
-
-
-### Phantom and Mavic Pro
-
-* Small and portable
-* Easiest to use
-* Phantom 4 and Mavic Pro includes:
-    * Built in obstacle avoidance
-    * Advanced vision features like being able to track a moving target selected by the user.
-    * A **sport flight mode** for a more dynamic flying experience
-* Mavic Pro also:
-    * Can either be controlled with a remote controller, or directly from a mobile device.
-    * Has a small and portable remote controller.
-
-### Inspire
-
-* Swappable cameras
-* Cameras with larger sensors, aperture and focus control
-* Thermal camera available
-* Gimbal can rotate camera completely through the horizontal (640&deg;)
-* Landing gear can raise out of the camera's field of view
- ![InspireRaised](../images/product-introduction/inspire_landingGearRaised.gif)
-* Remote controller has embedded GPS
-* Inspire 2 also:
-    * Optional onboard SSD storage
-    * Optional Remote Controller GPS Accessory
-    * Upward facing obstacle avoidance
-    * Additional in first person view (FPV) camera
-
-
-### Matrice
+### Matricie Series: Aircraft Description
 
 * Industrial and developer platform
 * Highly customizable, with up to 6 kg payloads supported
@@ -259,12 +147,6 @@ Aircraft comparison can be difficult due to the large selection of products, fea
 <th width = 15%><p>Max dimension</br><font color="#BBBBBB" size=1.7 style="font-weight:normal">Without propellors</br><font color="#BBBBBB" size=1 style="font-weight:bold">mm</p></th>
 </tr>
 <tr>
-<td>Inspire 1</td><td>18</td><td>22</td><td>5</td><td>4</td><td>4500</td><td>4</td><td>2935</br><p style="line-height:90%"><font color="#BBBBBB" size=1 style="font-weight:normal">With X3 Camera</p></td><td>581</td></tr>
-<tr>
-<td>Inspire 1 Pro/Raw</td><td>15</td><td>18</td><td>5</td><td>4</td><td>4500</td><td>4</td><td>3396</br><p style="line-height:90%"><font color="#BBBBBB" size=1 style="font-weight:normal">With X5 Camera</p></td><td>581</td></tr>
-<tr>
-<td>Inspire 2</td><td>27</td><td>30</td><td>6</td><td>9</td><td>2500</br><p style="line-height:90%"><font color="#BBBBBB" size=1 style="font-weight:normal">5000 with special propellors</p></td><td>4</td><td>3543</br><p style="line-height:90%"><font color="#BBBBBB" size=1 style="font-weight:normal">With 2x batteries, X4S Camera</p></td><td>605</td></tr>
-<tr>
 <td>Matrice 100</td><td>16-40*</td><td>18</td><td>5</td><td>4</td><td>4500</td><td>4</td><td>2355</br><p style="line-height:90%"><font color="#BBBBBB" size=1 style="font-weight:normal">With TB47 Battery</p></td><td>650</td></tr>
 <tr>
 <td>Matrice 200</td><td>13-38*</td><td>23</td><td>5</td><td>3</td><td>3000</td><td>4</td><td>3800</br><p style="line-height:90%"><font color="#BBBBBB" size=1 style="font-weight:normal">With 2x TB50 batteries</p></td><td>716</td></tr>
@@ -273,39 +155,44 @@ Aircraft comparison can be difficult due to the large selection of products, fea
 <tr>
 <td>Matrice 600 Professional</td><td>18-40*</td><td>18</td><td>5</td><td>3</td><td>2500</td><td>6</td><td>9500</br><p style="line-height:90%"><font color="#BBBBBB" size=1 style="font-weight:normal">With 6x TB47S Batteries</p></td><td>1133</td></tr>
 <tr>
-<td>Mavic Pro</td><td>27</td><td>18</td><td>5</td><td>3</td><td>5000</td><td>4</td><td>743</br><p style="line-height:90%"><font color="#BBBBBB" size=1 style="font-weight:normal">With gimbal cover</p></td><td>335</td></tr>
-<tr>
-<td>Phantom 3 4K</td><td>25</td><td>16</td><td>5</td><td>3</td><td>6000</td><td>4</td><td>1280</td><td>350</td></tr>
-<tr>
-<td>Phantom 3 Advanced</td><td>23</td><td>16</td><td>5</td><td>3</td><td>6000</td><td>4</td><td>1280</td><td>350</td></tr>
-<tr>
-<td>Phantom 3 Professional</td><td>23</td><td>16</td><td>5</td><td>3</td><td>6000</td><td>4</td><td>1280</td><td>350</td></tr>
-<tr>
-<td>Phantom 3 Standard</td><td>25</td><td>16</td><td>5</td><td>3</td><td>6000</td><td>4</td><td>1216</td><td>350</td></tr>
-<tr>
-<td>Phantom 4</td><td>28</td><td>20</td><td>6</td><td>4</td><td>6000</td><td>4</td><td>1380</td><td>350</td></tr>
-<tr>
-<td>Phantom 4 Advanced</td><td>30</td><td>20</td><td>6</td><td>4</td><td>6000</td><td>4</td><td>1368</td><td>350</td></tr>
-<tr>
-<td>Phantom 4 Professional</td><td>30</td><td>20</td><td>6</td><td>4</td><td>6000</td><td>4</td><td>1388</td><td>350</td></tr>
 </tbody></table></html>
 
-
-> Note:
->
-> 1. See **Payload & Flight Time** table for more information
-> 2. Difference between Inspire vs Inspire Pro:
->  - Inspire 1 Pro has more powerful propulsion making it able to lift heavier loads
->  - Inspire 1 Pro comes with a gimbal mounting bracket able to support the X5 and X5R
->  - Inspire 1 Pro comes with the X5 as default configuration
->
+<html><table class="table-aircraft-comparison">
+<thead><tr><th colspan="9">Flight Controller Comparison: <b>Flight Controller System</th></tr></thead>
+<tbody>
+<tr>
+<th width = 20%><p>Product</p></th>
+<th><p>Supported Multi-rotor</p></th>
+<th><p>DJI Products Supported</p></th>
+<th><p>Battery</p></th>
+<th><p>Supported ESC</p></th>
+<th><p>Supported SDK</p></th>
+<th><p>SDK Port</p></th>
+<th><p>Components</p></th>
+</tr>
+<tr>
+<td>A3 Pro</td><td>Quadcopter: I4，X4</br>Hexacopter: I6，X6，Y6，IY6</br>Octocopter: X8，I8，V8 Ronin-MX</br></td>
+<td>Z15</br>Ronin-MX</br>S900</br>S1000</br>S1000+</br>iOSD</br>D-RTK</br>DATALINK PRO</td>
+<td>3S to 12S LiPo</td><td>400Hz Frequency</td><td>Mobile SDK</br>Onboard SDK</td><td>API/CAN2</td>
+<td>Main controller unit</br>(integrated with IMU)</br>IMU PRO module x 2 PMU</br>GPS-Compass PRO module</br>X3 RGB LED</td></tr>
+<tr>
+<td>A3</td><td>Quadcopter: I4，X4</br>Hexacopter: I6，X6，Y6，IY6</br>Octocopter: X8，I8，V8</br></td>
+<td>Z15</br>Ronin-MX</br>S900</br>S1000</br>S1000+</br>iOSD</br>D-RTK</br>DATALINK PRO</td>
+<td>3S to 12S LiPo</td><td>400Hz Frequency</td><td>Mobile SDK</br>Onboard SDK</td><td>API/CAN2</td>
+<td>Main controller unit</br>integrated with IMU PMU</br>GPS-Compass PRO moduleRGB LED</td></tr>
+<tr>
+<td>N3</td><td>Quadcopter: I4，X4</br>Hexacopter: I6，X6，Y6，IY6</br>Octocopter: X8，I8，V8</td>
+<td>DJI GO</br>iOSD</br>Zenmuse Z15-A7</br>5D III</br>GH4</br>BMPCC</br>Ronin-MX</br>X3</br>X5</br>X5R</br>Z15</br>DJI propulsion systems</br>S900</br>S1000</br>S1000+</td>
+<td>3S to 12S LiPo</td><td>400Hz Frequency,</br>DJI Intelligent ESC</td><td>Mobile SDK</br>Onboard SDK</td><td>API/CAN2</td><td>With A3 upgrade kit (IMU Pro and GPS-Compass Pro modules)</td></tr>
+<tr>
+</tbody></table></html>
 
 <html><table class="table-aircraft-comparison">
 <thead><tr><th colspan="9">Aircraft Comparison: <b>Features</th></tr></thead>
 <tbody>
 <tr>
 <th width = 20%><p>Product</p></th>
-<th><p>Camera</p></th>
+<th><p>Camera And Gimbal</p></th>
 <th><p>FPV Camera</p></th>
 <th><p>Wireless Range</br><font color="#BBBBBB" size=1.7 style="font-weight:normal">US / EU</br><font color="#BBBBBB" size=1 style="font-weight:bold">km</p></th>
 <th><p>Batteries</p></th>
@@ -314,36 +201,19 @@ Aircraft comparison can be difficult due to the large selection of products, fea
 <th><p>Compatible Accessories</p></th>
 </tr>
 <tr>
-<td>Inspire 1</td><td>X3, Z3, XT</td><td>-</td><td>5 / 3.1</td><td>1</td><td>Moveable</td><td>-</td><td>Focus</td></tr>
-<tr>
-<td>Inspire 1 Pro/Raw</td><td>X3, Z3, XT, X5, X5R</td><td>-</td><td>5 / 3.1</td><td>1</td><td>Moveable</td><td>-</td><td>-</td></tr>
-<tr>
-<td>Inspire 2</td><td>X4S, X5S</td><td>Yes</td><td>7 / 3.5</td><td>2</td><td>Moveable</td><td>-</td><td>Focus, CineSSD</td></tr>
-<tr>
 <td>Matrice 100</td><td>X3, Z3, X5, X5R, XT, Z30</td><td>-</td><td>5 / 3.1</td><td>1-2</td><td>Fixed</td><td>1000</td><td>Guidance, Manifold, Focus</td></tr>
 <tr>
 <td>Matrice 200</td><td>X4S, X5S, Z30, XT</td><td>Yes</td><td>7 / 3.5</td><td>2</td><td>Fixed</td><td>1601-2340</br><p style="line-height:90%"><font color="#BBBBBB" size=1 style="font-weight:normal">Battery Dependant</p></td><td>Focus</td></tr>
 <tr>
-<td>Matrice 600</td><td>X3, Z3, X5, X5R, XT, Custom with Ronin MX</td><td>-</td><td>5 / 3.1</td><td>6</td><td>Moveable</td><td>6000</td><td>Guidance, Manifold, DRTK, Ronin MX, Focus</td></tr>
+<td>Matrice 600</td><td>X3, Z3, X5, X5R, XT, Custom with Ronin MX, Z15-A7, Z15-BMPCC, Z15-5D III, Z15-GH4</td><td>-</td><td>5 / 3.1</td><td>6</td><td>Moveable</td><td>6000</td><td>Guidance, Manifold, DRTK, Ronin MX, Focus</td></tr>
 <tr>
-<td>Matrice 600 Professional</td><td>X3, Z3, X5, X5R, XT, Custom with Ronin MX, Z30</td><td>-</td><td>5 / 3.1</td><td>6</td><td>Moveable</td><td>6000</td><td>Guidance, Manifold, DRTK, Ronin MX, Focus</td></tr>
-<tr>
-<td>Mavic Pro</td><td>Fixed</td><td>-</td><td>7 / 4</td><td>1</td><td>Fixed</td><td>-</td><td>-</td></tr>
-<tr>
-<td>Phantom 3 4K</td><td>Fixed</td><td>-</td><td>1.2 / 0.5</td><td>1</td><td>Fixed</td><td>-</td><td>-</td></tr>
-<tr>
-<td>Phantom 3 Advanced</td><td>Fixed</td><td>-</td><td>5 / 3.1</td><td>1</td><td>Fixed</td><td>-</td><td>-</td></tr>
-<tr>
-<td>Phantom 3 Professional</td><td>Fixed</td><td>-</td><td>1 / 0.5</td><td>1</td><td>Fixed</td><td>-</td><td>-</td></tr>
-<tr>
-<td>Phantom 3 Standard</td><td>Fixed</td><td>-</td><td>1 / 0.5</td><td>1</td><td>Fixed</td><td>-</td><td>-</td></tr>
-<tr>
-<td>Phantom 4</td><td>Fixed</td><td>-</td><td>5 / 3.1</td><td>1</td><td>Fixed</td><td>-</td><td>-</td></tr>
-<tr>
-<td>Phantom 4 Advanced</td><td>Fixed</td><td>-</td><td>7 / 3.5</td><td>1</td><td>Fixed</td><td>-</td><td>-</td></tr>
-<tr>
-<td>Phantom 4 Professional</td><td>Fixed</td><td>-</td><td>7 / 3.5</td><td>1</td><td>Fixed</td><td>-</td><td>-</td></tr>
+<td>Matrice 600 Professional</td><td>X3, Z3, X5, X5R, XT, Custom with Ronin MX, Z30, Z15-A7, Z15-BMPCC, Z15-5D III, Z15-GH4</td><td>-</td><td>5 / 3.1</td><td>6</td><td>Moveable</td><td>6000</td><td>Guidance, Manifold, DRTK, Ronin MX, Focus</td></tr>
 </tbody></table></html>
+
+
+> Note: DJI Focus is only compatible with DJI cameras.
+
+Detailed specifications are listed on each product's webpage **specs** section at <a href="http://www.dji.com" target="_blank">www.dji.com</a>.
 
 
 <html><table class="table-aircraft-comparison">
@@ -361,12 +231,6 @@ Aircraft comparison can be difficult due to the large selection of products, fea
 <th><p>Tap Fly</p></th>
 </tr>
 <tr>
-<td>Inspire 1</td><td>-</td><td>-</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>-</td><td>-</td></tr>
-<tr>
-<td>Inspire 1 Pro/Raw</td><td>-</td><td>-</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>-</td><td>-</td></tr>
-<tr>
-<td>Inspire 2</td><td>Front</br><p style="line-height:90%"><font color="#BBBBBB" size=1 style="font-weight:normal">0.7-30m</p></td><td>Top</br><p style="line-height:90%"><font color="#BBBBBB" size=1 style="font-weight:normal">0-5m</p></td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
-<tr>
 <td>Matrice 100</td><td>With Guidance</td><td>-</td><td>With Guidance</td><td>Yes</td><td>Yes</td><td>Yes</td><td>-</td><td>-</td></tr>
 <tr>
 <td>Matrice 200</td><td>Front</br><p style="line-height:90%"><font color="#BBBBBB" size=1 style="font-weight:normal">0.7-30m</p></td><td>Top</br><p style="line-height:90%"><font color="#BBBBBB" size=1 style="font-weight:normal">0-5m</p></td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
@@ -374,22 +238,6 @@ Aircraft comparison can be difficult due to the large selection of products, fea
 <td>Matrice 600</td><td>With Guidance</td><td>-</td><td>With Guidance</td><td>Yes</td><td>Yes</td><td>Yes</td><td>-</td><td>-</td></tr>
 <tr>
 <td>Matrice 600 Professional</td><td>With Guidance</td><td>-</td><td>With Guidance</td><td>Yes</td><td>Yes</td><td>Yes</td><td>-</td><td>-</td></tr>
-<tr>
-<td>Mavic Pro</td><td>Front</br><p style="line-height:90%"><font color="#BBBBBB" size=1 style="font-weight:normal">0.7-30m</p></td><td>-</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
-<tr>
-<td>Phantom 3 4K</td><td>-</td><td>-</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>-</td><td>-</td></tr>
-<tr>
-<td>Phantom 3 Advanced</td><td>-</td><td>-</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>-</td><td>-</td></tr>
-<tr>
-<td>Phantom 3 Professional</td><td>-</td><td>-</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>-</td><td>-</td></tr>
-<tr>
-<td>Phantom 3 Standard</td><td>-</td><td>-</td><td>-</td><td>Yes</td><td>Yes</td><td>Yes</td><td>-</td><td>-</td></tr>
-<tr>
-<td>Phantom 4</td><td>Front</br><p style="line-height:90%"><font color="#BBBBBB" size=1 style="font-weight:normal">0.7-15m</p></td><td>-</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
-<tr>
-<td>Phantom 4 Advanced</td><td>Front, Bottom</br><p style="line-height:90%"><font color="#BBBBBB" size=1 style="font-weight:normal">0.7-30 m</p></td><td>-</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
-<tr>
-<td>Phantom 4 Professional</td><td>Front, Rear, Bottom</br><p style="line-height:90%"><font color="#BBBBBB" size=1 style="font-weight:normal">0.7-30 m</p></td><td>Left, Right</br><p style="line-height:90%"><font color="#BBBBBB" size=1 style="font-weight:normal">0.2-7 m</p></td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
 </tbody></table></html>
 
 
@@ -449,84 +297,6 @@ To help understand the potential functionality and flight time of different airc
   </tr>
  </thead>
  <tbody>
-  <tr>
-    <td rowspan="3">
-    Inspire 1
-    <p><font size="1">Max Take-off Mass: 3000g </br>Compatible with XT, X3</p>
-    </td>
-    <td >X3</td>
-    <td>TB47</td>        
-    <td>2118</td>        
-    <td>570</td>        
-    <td>247</td>        
-    <td>0</td>        
-    <td>2935</td>        
-    <td>18</td>        
-  </tr>
-  <tr>
-    <td>X3</td>        
-    <td>TB48</td>        
-    <td>2118</td>        
-    <td>670</td>        
-    <td>247</td>        
-    <td>0</td>        
-    <td>3035</td>        
-    <td>21</td>            
-  </tr>
-  <tr>
-    <td>XT</td>
-    <td>TB48</td>        
-    <td>2118</td>        
-    <td>670</td>        
-    <td>270</td>        
-    <td>0</td>        
-    <td>3058</td>        
-    <td>21</td>            
-  </tr>
-  <tr>
-    <td rowspan="4">
-    Inspire 1 Pro/Raw
-    <p><font size="1">Max Take-off Mass: 3500g</br>Compatible with XT, X3, X5, X5R</p>
-    </td>
-    <td>X5</td>
-    <td>TB47</td>        
-    <td>2300</td>        
-    <td>570</td>        
-    <td>526</td>        
-    <td>0</td>        
-    <td>3396</td>        
-    <td>15</td>        
-  </tr>
-  <tr>
-    <td>X5</td>
-    <td>TB48</td>        
-    <td>2300</td>        
-    <td>670</td>        
-    <td>526</td>        
-    <td>0</td>        
-    <td>3496</td>        
-    <td>18</td>        
-  </tr>
-  <tr>
-    <td>X5R</td>
-    <td>TB48</td>        
-    <td>2300</td>        
-    <td>670</td>        
-    <td>583</td>        
-    <td>0</td>        
-    <td>3553</td>        
-    <td>18</td>        
-  </tr>
-  <tr>
-    <td>XT</td>
-    <td>TB48</td>        
-    <td>2300</td>        
-    <td>670</td>        
-    <td>270</td>        
-    <td>0</td>        
-    <td>3240</td>        
-    <td>20</td>        
-  </tr>
   <tr>
     <td rowspan="11">
     Matrice 100
@@ -752,26 +522,6 @@ The Zenmuse XT is a thermal camera. It's specifications are difficult to compare
 <th><p>Shutter Speed</br><font color="#BBBBBB" size=1 style="font-weight:bold">s</p></th>
 </tr>
 <tr>
-<td>Mavic Pro</td><td>1/2.3"</td><td>12</td><td>4K</td><td>100-1600</td><td>-</td><td>8-1/8000</td></tr>
-<tr>
-<td>Osmo</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr>
-<td>Osmo +</td><td>1/2.3"</td><td>12</td><td>4K</td><td>100-1600</td><td>-</td><td>8-1/8000</td></tr>
-<tr>
-<td>Phantom 3 4K</td><td>1/2.3"</td><td>12</td><td>4K</td><td>100-1600</td><td>-</td><td>8-1/8000</td></tr>
-<tr>
-<td>Phantom 3 Advanced</td><td>1/2.3"</td><td>12</td><td>2.7K</td><td>100-1600</td><td>-</td><td>8-1/8000</td></tr>
-<tr>
-<td>Phantom 3 Professional</td><td>1/2.3"</td><td>12</td><td>4K</td><td>100-1600</td><td>-</td><td>8-1/8000</td></tr>
-<tr>
-<td>Phantom 3 Standard</td><td>1/2.3"</td><td>12</td><td>2.7K</td><td>100-1600</td><td>-</td><td>8-1/8000</td></tr>
-<tr>
-<td>Phantom 4</td><td>1/2.3"</td><td>12</td><td>4K</td><td>100-1600</td><td>-</td><td>8-1/8000</td></tr>
-<tr>
-<td>Phantom 4 Advanced</td><td>1"</td><td>20</td><td>4K</td><td>100-12800</td><td>Yes</td><td>Mechanical 8-1/2000<br>Electronic 1/2000-1/8000</td></tr>
-<tr>
-<td>Phantom 4 Professional</td><td>1"</td><td>20</td><td>4K</td><td>100-12800</td><td>Yes</td><td>Mechanical 8-1/2000<br>Electronic 1/2000-1/8000</td></tr>
-<tr>
 <td>Zenmuse X3</td><td>1/2.3"</td><td>12</td><td>4K</td><td>100-1600</td><td>-</td><td>8-1/8000</td></tr>
 <tr>
 <td>Zenmuse X4S</td><td>1"</td><td>20</td><td>4K</td><td>100-12800</td><td>Yes</td><td>Mechanical 8-1/2000<br>Electronic 1/2000-1/8000</td></tr>
@@ -802,26 +552,6 @@ The Zenmuse XT is a thermal camera. It's specifications are difficult to compare
 <th><p>Focus</br><font color="#BBBBBB" size=1 style="font-weight:bold">m</p></th>
 </tr>
 <tr>
-<td>Mavic Pro</td><td>-</td><td>78.8</td><td>28</td><td>f/2.2</td><td>0.5 - &#8734</td></tr>
-<tr>
-<td>Osmo</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr>
-<td>Osmo +</td><td>-</td><td>92-35</td><td>22-77</td><td>f/2.8 - f/5.2</td><td>0.5 - &#8734</td></tr>
-<tr>
-<td>Phantom 3 4K</td><td>-</td><td>94</td><td>20</td><td>f/2.8</td><td>&#8734</td></tr>
-<tr>
-<td>Phantom 3 Advanced</td><td>-</td><td>94</td><td>20</td><td>f/2.8</td><td>&#8734</td></tr>
-<tr>
-<td>Phantom 3 Professional</td><td>-</td><td>94</td><td>20</td><td>f/2.8</td><td>&#8734</td></tr>
-<tr>
-<td>Phantom 3 Standard</td><td>-</td><td>94</td><td>20</td><td>f/2.8</td><td>&#8734</td></tr>
-<tr>
-<td>Phantom 4</td><td>-</td><td>94</td><td>20</td><td>f/2.8</td><td>&#8734</td></tr>
-<tr>
-<td>Phantom 4 Advanced</td><td>-</td><td>84</td><td>24</td><td>f/2.8 - f/11</td><td>1 - &#8734</td></tr>
-<tr>
-<td>Phantom 4 Professional</td><td>-</td><td>84</td><td>24</td><td>f/2.8 - f/11</td><td>1 - &#8734</td></tr>
-<tr>
 <td>Zenmuse X3</td><td>-</td><td>94</td><td>20</td><td>f/2.8</td><td>&#8734</td></tr>
 <tr>
 <td>Zenmuse X4S</td><td>-</td><td>84</td><td>24</td><td>f/2.8-f/11</td><td>1-&#8734</td></tr>
@@ -851,26 +581,6 @@ The Zenmuse XT is a thermal camera. It's specifications are difficult to compare
 <th><p>Storage Media</p></th>
 <th><p>Mass</br><font color="#BBBBBB" size=1.7 style="font-weight:normal">With Gimbal</br><font color="#BBBBBB" size=1 style="font-weight:bold">g</p></th>
 </tr>
-<tr>
-<td>Mavic Pro</td><td>-</td><td>roll, pitch, yaw</td><td>-90 to 30</td><td>Micro SD</td><td>-</td></tr>
-<tr>
-<td>Osmo</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-<tr>
-<td>Osmo +</td><td>+/- 320</td><td>roll, pitch, yaw</td><td>-90 to 30</td><td>Micro SD</td><td>262</td></tr>
-<tr>
-<td>Phantom 3 4K</td><td>-</td><td>roll, pitch, yaw</td><td>-90 to 30</td><td>Micro SD</td><td>-</td></tr>
-<tr>
-<td>Phantom 3 Advanced</td><td>-</td><td>roll, pitch, yaw</td><td>-90 to 30</td><td>Micro SD</td><td>-</td></tr>
-<tr>
-<td>Phantom 3 Professional</td><td>-</td><td>roll, pitch, yaw</td><td>-90 to 30</td><td>Micro SD</td><td>-</td></tr>
-<tr>
-<td>Phantom 3 Standard</td><td>-</td><td>roll, pitch, yaw</td><td>-90 to 30</td><td>Micro SD</td><td>-</td></tr>
-<tr>
-<td>Phantom 4</td><td>+/- 15</td><td>roll, pitch, yaw</td><td>-90 to 30</td><td>Micro SD</td><td>-</td></tr>
-<tr>
-<td>Phantom 4 Advanced</td><td>+/- 15</td><td>roll, pitch, yaw</td><td>-90 to 30</td><td>Micro SD</td><td>-</td></tr>
-<tr>
-<td>Phantom 4 Professional</td><td>+/- 15</td><td>roll, pitch, yaw</td><td>-90 to 30</td><td>Micro SD</td><td>-</td></tr>
 <tr>
 <td>Zenmuse X3</td><td>+/- 320</td><td>roll, pitch, yaw</td><td>-90 to 30</td><td>Micro SD</td><td>247</td></tr>
 <tr>
@@ -917,12 +627,6 @@ Remote Controllers that use WiFi to connect to the mobile device will act as a W
 <th><p>Flight Mode Switch</br><font color="#BBBBBB" size=1.7 style="font-weight:normal">To use SDK</p></th>
 </tr>
 <tr>
-<td>Inspire 1</td><td>Required</td><td>USB</td><td>Lightbridge</td><td>Yes</td><td>Yes</td><td>Mini HDMI</td><td>F</td></tr>
-<tr>
-<td>Inspire 1 Pro/Raw</td><td>Required</td><td>USB</td><td>Lightbridge</td><td>Yes</td><td>Yes</td><td>Mini HDMI</td><td>F</td></tr>
-<tr>
-<td>Inspire 2</td><td>Required</td><td>USB</td><td>Lightbridge</td><td>Yes</td><td>-</td><td>Mini HDMI</td><td>P</td></tr>
-<tr>
 <td>Matrice 100</td><td>Required</td><td>USB</td><td>Lightbridge</td><td>Yes</td><td>Yes</td><td>Mini HDMI</td><td>F</td></tr>
 <tr>
 <td>Matrice 200</td><td>Required</td><td>USB</td><td>Lightbridge</td><td>Yes</td><td>-</td><td>Mini HDMI</td><td>P</td></tr>
@@ -930,21 +634,5 @@ Remote Controllers that use WiFi to connect to the mobile device will act as a W
 <td>Matrice 600</td><td>Required</td><td>USB</td><td>Lightbridge</td><td>Yes</td><td>Yes</td><td>Mini HDMI, SDI</td><td>F</td></tr>
 <tr>
 <td>Matrice 600 Professional</td><td>Required</td><td>USB</td><td>Lightbridge</td><td>Yes</td><td>Yes</td><td>Mini HDMI, SDI</td><td>F</td></tr>
-<tr>
-<td>Mavic Pro</td><td>Optional</td><td>USB</td><td>OcuSync</td><td>-</td><td>-</td><td>-</td><td>P</td></tr>
-<tr>
-<td>Phantom 3 4K</td><td>Required</td><td>WiFi</td><td>WiFi, Aux</td><td>-</td><td>-</td><td>-</td><td>F</td></tr>
-<tr>
-<td>Phantom 3 Advanced</td><td>Required</td><td>USB</td><td>Lightbridge</td><td>-</td><td>-</td><td>-</td><td>F</td></tr>
-<tr>
-<td>Phantom 3 Professional</td><td>Required</td><td>USB</td><td>Lightbridge</td><td>-</td><td>-</td><td>-</td><td>F</td></tr>
-<tr>
-<td>Phantom 3 Standard</td><td>Required</td><td>WiFi</td><td>WiFi, Aux</td><td>-</td><td>-</td><td>-</td><td>F</td></tr>
-<tr>
-<td>Phantom 4</td><td>Required</td><td>USB</td><td>Lightbridge</td><td>-</td><td>-</td><td>-</td><td>P</td></tr>
-<tr>
-<td>Phantom 4 Advanced</td><td>Required</td><td>USB</td><td>Lightbridge</td><td>-</td><td>-</td><td>-</td><td>P</td></tr>
-<tr>
-<td>Phantom 4 Professional</td><td>Required</td><td>USB</td><td>Lightbridge</td><td>-</td><td>-</td><td>-</td><td>P</td></tr>
 </tbody></table></html>
 
