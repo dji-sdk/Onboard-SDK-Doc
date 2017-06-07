@@ -37,30 +37,21 @@ The iOS app can be side loaded to your phone using Xcode on a Macintosh system. 
 
 ## Support
 
-### Linux
-
-You can enable mobile command input by running `./djiosdk-linux-sample -mobile` (and optionally another argument `path_to_trajectory_json` if you want to execute a pre-planned precision spiral). 
+### Linux 
 
 The supported commands are: 
 
 * Obtain Control
-* Release Control 
-* Take Off 
-* Landing 
+* Release Control  
 * Arm
 * Disarm 
-* Go Home
-* Gimbal Control Demo
-* Draw Square Demo 
-* Waypoint Mission Demo
-* Precision Trajectory Execution
 
-Linux supports ACK returned from the Flight Controller. ACK returned will be displayed on the Mobile app. 
+ACK returned will be displayed on the Mobile app. 
 
 
 ### ROS
 
-You can enable mobile command input by choosing number 37 on the list. This will allow you to send commands from the Mobile device. The supported commands are: 
+The supported commands are:  
 
 * Obtain Control
 * Release Control 
@@ -79,7 +70,7 @@ You can enable mobile command input by choosing number 37 on the list. This will
 * Attitude Control Demo 
 * Virtual RC Test 
 
-ROS does not supports ACK returned from the Flight Controller. This will be supported in a future release. 
+ACK returned will be displayed on the Mobile app.
 
 
 ### STM32
@@ -88,12 +79,7 @@ STM32 platform responds to mobile commands by default. **When not in simulator m
 
 * Obtain Control
 * Release Control
-* Activation
-* Take Off
-* Landing
 * Arm
 * Disarm
-* Go Home
-* Local Navigation Test
 
-STM32 supports ACK returned from the Flight Controller. ACK returned will be displayed on the Mobile app. 
+ACK returned will be displayed on the Mobile app.
