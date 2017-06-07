@@ -31,6 +31,8 @@ The iOS app can be side loaded to your phone using Xcode on a Macintosh system. 
 - Below is a screenshot of the app after successful Take Off. 
 ![MOS app](../../images/common/MOSDKApp.jpg)
 
+The Mobile APIs being used are listed in the [Appendix](./../appendix/mobile-onboard-APIs.html)
+
 ## Code work flow
 
 [![MOC code workflow](../images/samples/moc_sample_flowchart.jpg)](../images/samples/moc_sample_flowchart.jpg)
