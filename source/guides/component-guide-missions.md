@@ -16,7 +16,7 @@ A waypoint mission is a series of pre-defined locations (waypoints) the aircraft
 
 During the mission, the mission can be manually adjusted using the remote controller control sticks. The mission speed can be sped up, slowed down or even executed in reverse. 
 
-![](../images/component-guide/waypoints.gif)
+![](../images/waypoints.gif)
 
 A Waypoint Mission is uploaded to and executed by the aircraft, but is limited by the amount of storage in the flight controller. Accordingly only 99 waypoints can be executed per mission. Custom Mission can be used to easily queue waypoint missions, in applications that require more than 99 points.
 
@@ -26,6 +26,5 @@ In a Hot Point Mission, the aircraft will repeatedly fly circles of a constant r
 
 Altitude, heading and radius can also be adjusted manually using the remote controller control sticks during the mission.
 
-![](../images/component-guide/hotPoint.gif)
-
+![](../images/hotPoint.gif)
 
