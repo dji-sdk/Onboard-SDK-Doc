@@ -3,6 +3,9 @@ title: Matrice 100
 date: 2017-06-01
 keywords: [M100, linux, ros, qt, stm32, mobile sdk, protocol]
 ---
+
+Note. OSDK 3.3 does not support Matrice 100, please refer to this page for previous documentation.
+
 ## Application Development Guides
 
 [Programming Guide](application-development-guides/programming-guide.html)
