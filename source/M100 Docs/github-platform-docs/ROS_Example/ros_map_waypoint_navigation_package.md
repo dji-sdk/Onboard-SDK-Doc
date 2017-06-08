@@ -62,4 +62,4 @@ Next, click "Upload Mission" to upload the mission to onboard server.
 Finally, click"Start Mission" to execute.
 During the execution, if you want to abort the mission, click "Abort Mission" and stop the quadcopter.
 
-![WebpageClient](../../images/ROS/webpage_client.png)
+![WebpageClient](../../../images/ROS/webpage_client.png)

@@ -7,7 +7,7 @@ keywords: [M100, linux, ros, qt, stm32, mobile sdk, protocol]
 
 [Onboard SDK OPEN Protocol](../protocol-doc/open-protocol.html)
 
-[Data Transparent Transmission]
+[Data Transparent Transmission](application-development-guides/data-transparent-transmission.html)
 
 [Ground Station Protocol](../protocol-doc/ground-station-protocol.html)
 
@@ -18,8 +18,6 @@ keywords: [M100, linux, ros, qt, stm32, mobile sdk, protocol]
 [Linux](github-platform-docs/Linux/README.html)
 
 [ROS](github-platform-docs/ROS/README.html)
-
-ROS Packages
 
 &nbsp;&nbsp;&nbsp;&nbsp;[ROS Core Package](github-platform-docs/ROS_Example/ros_corePackage.html)
 

@@ -96,15 +96,6 @@
     -
       title: Multi-Function IO
       path: /sample-doc/mfio.html
--
-  title: PROTOCOL DOCUMENTS
-  list:
-    -
-      title: Onboard SDK OPEN Protocol
-      path: /protocol-doc/index.html
-    -
-      title: Ground Station Protocol
-      path: /protocol-doc/ground-station-protocol.html
 
 -
   title: APPENDIX
