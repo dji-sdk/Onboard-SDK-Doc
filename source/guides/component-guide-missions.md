@@ -20,7 +20,7 @@ During the mission, the mission can be manually adjusted using the remote contro
 
 A Waypoint Mission is uploaded to and executed by the aircraft, but is limited by the amount of storage in the flight controller. Accordingly only 99 waypoints can be executed per mission. Custom Mission can be used to easily queue waypoint missions, in applications that require more than 99 points.
 
-### Hot Point Mission
+## Hot Point Mission
 
 In a Hot Point Mission, the aircraft will repeatedly fly circles of a constant radius around a specified point called a Hot Point (also known as Point of Interest). Altitude, velocity, the Hot Point location, aircraft heading and flight direction can all be defined as part of the mission.
 
