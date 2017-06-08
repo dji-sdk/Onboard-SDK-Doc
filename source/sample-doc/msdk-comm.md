@@ -6,34 +6,46 @@ keywords: [Mobile, communication]
 
 ## Introduction
 
-As mentioned in the guide, the Mobile - Onboard SDK communication was developed to combine the benefits of Mobile and Onboard SDK APIs by establishing a connection between a Mobile Device and an Onboard Computer. Developers are able to send any data from their Mobile Device to OES and vice versa.
+This sample shows how custom data can be sent between a DJI Mobile SDK based application on a mobile device and a DJI Onboard SDK based application on an onboard computer. The data is sent over the Lightbridge wireless communication link between the remote controller and aircraft.
 
-This sample implementation provides an alternative way to run/test your OnboardSDK code with an aircraft in the real world. The commands are sent from the iOS app to the Onboard Computer, data is parsed in the Onboard SDK code and the respective functions are executed accordingly. For example, clicking on the 'Take Off' button on the iOS app results in the command being sent to the OES, the parser on the Onboard SDK sample reads the command and calls the 'Take Off' function accordingly. After completion of 'Take Off', the returned Flight Controller ACK is sent to the iOS app.
+Specifically, this sample sends commands from the mobile device, to the onboard computer and the onboard computer sends acknowledgements back to the mobile device. An example of this data flow is below.
 
-## Setup
+![OSDK-MOC-Comms.png](../images/samples/OSDK-MOC-Comms.png)
 
-# iOS Mobile Onboard SDK app
+While such a simple example would not be used in a final application (the Mobile SDK can send the take-off command directly to the aircraft already), it is however quite useful during development and testing of an Onboard SDK based application.
 
-The iOS app can be side loaded to your phone using Xcode on a Macintosh system. Below are the list of instructions to side load the MOS app to your iOS device. 
+The sample can be re-purposed for the developer to interact with the onboard computer through a mobile device while the aircraft is flying. State information can be transferred back to the developer, and the developer can use a modified sample to send different actions to the aircraft which might initiate actions or complicated maneuvers that are being developed.
 
-- Create Mobile app on the DJI developer website. You will need the Bundle ID and Key to be entered in the Xcode project. An example Bundle ID is shown in the below image. 
-![MOS app](../../images/common/createApp.png)
-- Login using your Apple ID and download Xcode from the App store. 
+
+### iOS Mobile Onboard SDK app
+
+The iOS app can be loaded to a iOS device using Xcode on a Mac OS X system. Below are the list of instructions to load the mobile app to your iOS device. 
+
+- Download Xcode from the App store. 
 - Launch Xcode and setup your Apple ID in the Preferences - Account section. 
-- Download source for iOS app from [here](https://github.com/dji-sdk/Mobile-OSDK-iOS-App)
+- Download source for the iOS sample app (MOS) from [here](https://github.com/dji-sdk/Mobile-OSDK-iOS-App)
 - Launch the MOS.xcodeproj 
-- Click on the 'MOS' project on Xcode to view the General settings. 
-- In the General settings change bundle ID to the one registered on the DJI developer portal. In the below image, the same example Bundle ID is being used. 
+- Click on the 'MOS' project in Xcode to view the General settings. 
+- Choose and set a Bundle Identifier for the application
+
 ![MOS app](../../images/common/bundleID.png)
-- Go to the info.plist and add an entry with "DJIAppKey" for key and the registration ID as value. 
+
+- Use this Bundle Identifier to generate an app key in the DJI developer portal.
+![MOS app](../../images/common/createApp.png)
+
+- Go to the info.plist of the MOS project and add the entry:
+   - _key_: "DJIAppKey"
+   - _value_: The app key you received from the DJI developer portal
 - Hit Run and let Xcode fix any issues that show up. 
 - The app can now be launched on your iOS device. 
-- Below is a screenshot of the app after successful Take Off. 
+- Below is a screenshot of the app after a successful take-off command has been completed. 
 ![MOS app](../../images/common/MOSDKApp.jpg)
 
 The Mobile APIs being used are listed in the [Appendix](./../appendix/mobile-onboard-APIs.html)
 
 ## Code work flow
+
+The general execution flow of the sample code is below:
 
 [![MOC code workflow](../images/samples/moc_sample_flowchart.jpg)](../images/samples/moc_sample_flowchart.jpg)
 
@@ -50,7 +62,6 @@ The supported commands are:
 
 ACK returned will be displayed on the Mobile app. 
 
-
 ### ROS
 
 The supported commands are:  
@@ -58,7 +69,7 @@ The supported commands are:
 * Obtain Control
 * Release Control 
 * Take Off 
-* Landing 
+* Land
 * Get SDK Version
 * Arm
 * Disarm 
@@ -69,10 +80,9 @@ The supported commands are:
 
 ACK returned will be displayed on the Mobile app.
 
-
 ### STM32
 
-STM32 platform responds to mobile commands by default. **When not in simulator mode, sending mobile commands will cause the motor to spin and drone to fly. Use with care!** The supported commands are: 
+The supported commands are:
 
 * Obtain Control
 * Release Control
