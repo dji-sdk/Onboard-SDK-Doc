@@ -46,8 +46,6 @@ Broadcast data arives in a package containing state information for components l
 * **10 Hz**
 * **50 Hz**
 * **100 Hz**
-* **200 Hz**
-* **400 Hz**
 
 #### NOTE:
 
