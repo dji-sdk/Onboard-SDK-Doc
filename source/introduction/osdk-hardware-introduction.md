@@ -87,52 +87,15 @@ Smart batteries provide the energy required to run the system. Together with the
 
 #### Remote Controller
 
-The remote controller provides control sticks, buttons, and wheels that give control of the aircraft flight, camera and gimbal. The remote controller maintains a wireless link with the aircraft with some products having up to a 5km range in ideal environments. The **Flight Mode Switch** on the remote controller can be used to switch between manual and automated flight. See Precedence Control table below to learn about control precedence while using DJI Onboard SDK.
+The remote controller provides control sticks, buttons, and wheels that give control of the aircraft flight, camera and gimbal. The remote controller maintains a wireless link with the aircraft with some products having up to a 7km range in ideal environments. 
 
-<html><table class="table-product-accessories">
-  <thead>
-    <tr>
-      <th colspan="3">Precedence Control Table</th>
-    </tr>
-    <tr>
-      <th>Product</th>
-      <th>Flight Option</th>
-      <th>Control Precedence</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Matrice 600 Pro</br>(Using A3 Pro Flight Controller)</td>
-      <td>Movement Control</br>WayPoint Mission</br>HotPoint Mission</td>
-      <td>DJI Onboard SDK</br>Remote Controller: speed, yaw, height</br>Remote Controller: speed, direction, radius, yaw</td>
-    </tr>
-    <tr>
-      <td>Matrice 600</br>(Using A3 Flight Controller)</td>
-      <td>Movement Control</br>WayPoint Mission</br>HotPoint Mission</td>
-      <td>DJI Onboard SDK</br>Remote Controller: speed, yaw, height</br>Remote Controller: speed, direction, radius, yaw</td>
-    </tr>
-    <tr>
-      <td>Matrice 100</br>(Using N1 Flight Controller)</td>
-      <td>Movement Control</br>WayPoint Mission</br>HotPoint Mission</td>
-      <td>DJI Onboard SDK</br>Remote Controller: speed, yaw, height</br>Remote Controller: speed, direction, radius, yaw</td>
-    </tr>
-    <tr>
-      <td>N3 Flight Controller</td>
-      <td>Movement Control</br>WayPoint Mission</br>HotPoint Mission</td>
-      <td>DJI Onboard SDK</br>Remote Controller: speed, yaw, height</br>Remote Controller: speed, direction, radius, yaw</td>
-    </tr>
-  </tbody>
-</html>
+#### Onboard Computer
+
+An external onboard computer can be mounted on the aircraft, and using the Onboard SDK and a direct serial (UART) connection to the flight controller, provide automation of flight.
 
 #### Mobile Device
 
 An Android or iOS device can be connected to the remote controller through either USB or WiFi to give an augmented flight experience showing the live camera feed, and showing aircraft state information. Using the DJI Onboard SDK along with DJI Mobile SDK, the mobile device can also be used to control the aircraft.
-
-#### Handheld Controller
-
-The handheld controller provides a joystick and buttons for that give control of the camera and gimbal. The handheld controller connects to the mobile device through a WiFi access point inside the handle.
-
-![ComponentsHandheld](../images/product-introduction/ComponentsHandheld.png)
 
 ## Supported Products
 
@@ -152,6 +115,8 @@ Drones and flight controller systems that support DJI Onboard SDK are: Matrice 6
     * <a href="http://www.dji.com/product/ronin-mx" target="_blank"> Ronin MX </a> - Gimbal that can support custom payloads up to 4.5 kg
 
 Aircraft comparison can be difficult due to the large selection of products, features and functionality. Three summarized aircraft comparison tables are below to introduce the differences in aircraft and features.
+
+<<Doc_Product_Intro_Table_Aircraft_Aircraft>>
 
 <html><table class="table-aircraft-comparison">
 <thead><tr><th colspan="9">Aircraft Comparison: <b>Aircraft</th></tr></thead>
