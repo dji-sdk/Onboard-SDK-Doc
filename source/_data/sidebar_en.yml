@@ -88,12 +88,16 @@
     -
       title: Multi-Function IO
       path: /sample-doc/mfio.html
+
 -
   title: APPENDIX
   list:
     -
       title: Appendix
       path: /appendix/index.html
+    -
+      title: Matrice 100
+      path: /M100%20Docs/main.html
     -
       title: FAQ
       path: /appendix/FAQ.html

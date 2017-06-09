@@ -47,14 +47,15 @@ Software Functionality:
 * [dji\_sdk\_read_cam](../ROS_Example/ros_video_decoding_package.html): a X3 video decoding package for Manifold, CATKIN_IGNOREd by defualt
 * [dji\_sdk\_dji2mav](../ROS_Example/ros_dji2mav_0.2.1_package.html): a protocol converter making M100 compatiable with all MAVLink-protocol-dependent softwares
 
-![ROS Software Structure](../../images/ROS/ROSSoftwareStructure.jpg)
-[click to see fullsize image](../../images/ROS/ROSSoftwareStructure.jpg)
+ROS Software Structure
+
+[click to see fullsize image](../../../images/ROS/ROSSoftwareStructure.jpg)
 
 ## Setup 
 
 ### 1. Hardware
 
-The [Hardware Setup](../../hardware-setup/index.html) guide talks about setting up your platform of choice. Make sure your setup matches that in the document before proceeding further. 
+The [Hardware Setup](../../../development-workflow/hardware-setup.html) guide talks about setting up your platform of choice. Make sure your setup matches that in the document before proceeding further. 
 
 
 ### 2. Software
@@ -64,7 +65,7 @@ Tested Environment:
 * Operating System: Ubuntu 14.04, Manifold
 * ROS version: ROS Indigo
 > **Note:** Onboard SDK ROS has also been beta tested with Ubuntu Xenial 16.04LTS and ROS Kinetic Kame. We currently do not support `rosinstall` or `apt-get` for this configuration.   
-> **Note:** Onboard SDK ROS also supports N3 and A3 FW 1.5.0.0 and newer with OSDK 3.2.0. See [Notes](../../appendix/releaseNotes.html#notes-for-using-onboard-sdk-with-the-new-a3-v1-5-0-0-fw).
+> **Note:** Onboard SDK ROS also supports N3 and A3 FW 1.5.0.0 and newer with OSDK 3.2.0. See [Notes](../../../appendix/releaseNotes.html#notes-for-using-onboard-sdk-with-the-new-a3-v1-5-0-0-fw).
 
 Software Requirements:
 
@@ -86,7 +87,7 @@ Before you start exploring DJI Onboard SDK functionality via our ROS examples, y
 
 Activation Process:
 
-1. Follow steps (3) and (5) in the [Setup](../../quick-start/index.html#Setup) section of the Quick Start guide
+1. [Enable API control](../../../development-workflow/environment-setup.html#Enable-Flight-Controller-API-control) and [get an app ID and key](https://developer.dji.com/register/).
 2. Update core launch file dji_sdk/launch/sdk_manifold.launch with information below:
     * Starting from OSDK 3.2.1, you no longer need to enter your drone version.
     * app_id: registered APP ID
@@ -98,9 +99,9 @@ Activation Process:
     * Download the latest DJI GO application on your mobile device and sign in to your DJI developer account you created earlier
     * Run "roslaunch dji_sdk sdk_manifold.launch" to initiate activation command
     * Here is how your activation environment will look like:
-![Activation Setup](../../images/common/activation_1.png)
+![Activation Setup](../../../images/common/activation_1.png)
     * Here is successful activation example:
-![Activation Successful](../../images/ROS/ROSActivationSuccessful_1.png)
+![Activation Successful](../../../images/ROS/ROSActivationSuccessful_1.png)
 
 
 ## How To Operate
