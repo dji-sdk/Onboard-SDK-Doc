@@ -4,11 +4,11 @@ date: 2017-06-06
 keywords: [component, propellor, sensor, product comparison]
 ---
 
-DJI produces small, highly capable, remotely controlled aircraft as well as hand held cameras and stabilizers perfect for both consumer and commercial applications. The products are very accessible being easy to use and affordable, and have a quality and feature set unmatched in the industry.
+DJI produces small, highly capable, remotely controlled aircraft perfect for both consumer and commercial applications. The products are very accessible being easy to use and affordable, and have a quality and feature set unmatched in the industry.
 
 ### Aircraft
 
-DJI has a range of multi-rotor aircraft that can be automated with the Onboard SDK including Matrice 600 Pro, Matrice 600, Matrice 100 as well as A3 and N3 Flight controllers.
+DJI has a range of multi-rotor aircraft that can be automated with the Onboard SDK including Matrice 600 Pro, Matrice 600, Matrice 100 as well as A3 and N3 Flight Controller Systems.
 
 One of the key features of DJI aircraft is the camera's ability to stay horizontal no matter how the aircraft is flying. The camera is mounted on a gimbal, which actively compensates for any aircraft rotation, producing clear, beautiful images and videos.
 
@@ -26,7 +26,7 @@ There are many DJI aircraft to choose from that provide a range of features, per
 
 ### Stand Alone Components
 
-A3 and N3 flight controllers are two components of the aircraft (flight controller, wireless link) that can be used on DJI or third party airframes. These components are fully supported in DJI Onboard SDK and offer limited support in DJI Mobile SDK.
+A3 and N3 flight controllers (along with LightBridge 2) are two components of the aircraft (flight controller, wireless link) that can be used on DJI or third party airframes. These components are fully supported in DJI Onboard SDK and offer limited support in DJI Mobile SDK.
 
 ### Accessories
 
@@ -105,19 +105,13 @@ The remote controller provides control sticks, buttons, and wheels that give con
 
 #### Mobile Device
 
-An Android or iOS device can be connected to the remote controller through either USB or WiFi to give an augmented flight experience showing the live camera feed, and showing aircraft state information. Using the DJI Onboard SDK along with DJI Mobile SDK, the mobile device can also be used to control the aircraft.
-
-#### Handheld Controller
-
-The handheld controller provides a joystick and buttons for that give control of the camera and gimbal. The handheld controller connects to the mobile device through a WiFi access point inside the handle.
-
-![ComponentsHandheld](../images/product-introduction/ComponentsHandheld.png)
+An Android or iOS device can be connected to the remote controller through USB link to give an augmented flight experience showing the live camera feed, and showing aircraft state information. Using the DJI Onboard SDK along with DJI Mobile SDK, the mobile device can also be used to control the aircraft.
 
 ## Supported Products
 
 Drones and flight controller systems that support DJI Onboard SDK are: Matrice 600 Pro, Matrice 600, Matrice 100 as well as A3 Pro, A3, N3 flight controller systems.
 
-### Matricie Series: Aircraft Description
+### Matrice Series: Aircraft Description
 
 * Industrial and developer platform
 * Highly customizable, with up to 6 kg payloads supported
@@ -235,9 +229,9 @@ Detailed specifications are listed on each product's webpage **specs** section a
 <tr>
 <td>Matrice 200</td><td>Front</br><p style="line-height:90%"><font color="#BBBBBB" size=1 style="font-weight:normal">0.7-30m</p></td><td>Top</br><p style="line-height:90%"><font color="#BBBBBB" size=1 style="font-weight:normal">0-5m</p></td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
 <tr>
-<td>Matrice 600</td><td>With Guidance</td><td>-</td><td>With Guidance</td><td>Yes</td><td>Yes</td><td>Yes</td><td>-</td><td>-</td></tr>
+<td>Matrice 600</td><td>-</td><td>-</td><td>-</td><td>Yes</td><td>Yes</td><td>Yes</td><td>-</td><td>-</td></tr>
 <tr>
-<td>Matrice 600 Professional</td><td>With Guidance</td><td>-</td><td>With Guidance</td><td>Yes</td><td>Yes</td><td>Yes</td><td>-</td><td>-</td></tr>
+<td>Matrice 600 Professional</td><td>-</td><td>-</td><td>-</td><td>Yes</td><td>Yes</td><td>Yes</td><td>-</td><td>-</td></tr>
 </tbody></table></html>
 
 
@@ -611,8 +605,6 @@ Remote controllers will differ in:
 * If they can output secondary video
 * If they can be used in a dual configuration (one flys the aircraft while the other controls the gimbal and camera)
 
-Remote Controllers that use WiFi to connect to the mobile device will act as a WiFi access point and will need to be joined.
-
 <html><table class="table-aircraft-comparison">
 <thead><tr><th colspan="9"><b>Remote Controller Comparison</th></tr></thead>
 <tbody>
@@ -627,12 +619,18 @@ Remote Controllers that use WiFi to connect to the mobile device will act as a W
 <th><p>Flight Mode Switch</br><font color="#BBBBBB" size=1.7 style="font-weight:normal">To use SDK</p></th>
 </tr>
 <tr>
-<td>Matrice 100</td><td>Required</td><td>USB</td><td>Lightbridge</td><td>Yes</td><td>Yes</td><td>Mini HDMI</td><td>F</td></tr>
+<td>Matrice 100</td><td>Required</td><td>USB</td><td>Lightbridge</td><td>Yes</td><td>-</td><td>Mini HDMI</td><td>F</td></tr>
 <tr>
 <td>Matrice 200</td><td>Required</td><td>USB</td><td>Lightbridge</td><td>Yes</td><td>-</td><td>Mini HDMI</td><td>P</td></tr>
 <tr>
-<td>Matrice 600</td><td>Required</td><td>USB</td><td>Lightbridge</td><td>Yes</td><td>Yes</td><td>Mini HDMI, SDI</td><td>F</td></tr>
+<td>Matrice 600</td><td>Required</td><td>USB</td><td>Lightbridge</td><td>Yes</td><td>-</td><td>Mini HDMI, SDI</td><td>P</td></tr>
 <tr>
-<td>Matrice 600 Professional</td><td>Required</td><td>USB</td><td>Lightbridge</td><td>Yes</td><td>Yes</td><td>Mini HDMI, SDI</td><td>F</td></tr>
+<td>Matrice 600 Professional</td><td>Required</td><td>USB</td><td>Lightbridge</td><td>Yes</td><td>-</td><td>Mini HDMI, SDI</td><td>P</td></tr>
+<tr>
+<td>A3 Professional</td><td>Optional</td><td>USB</td><td>Lightbridge</td><td>Yes</td><td>-</td><td>Mini HDMI, SDI</td><td>P</td></tr>
+<tr>
+<td>A3</td><td>Optional</td><td>USB</td><td>Lightbridge</td><td>Yes</td><td>-</td><td>Mini HDMI, SDI</td><td>P</td></tr>
+<tr>
+<td>N3</td><td>Optional</td><td>USB</td><td>Lightbridge</td><td>Yes</td><td>-</td><td>Mini HDMI, SDI</td><td>P</td></tr>
 </tbody></table></html>
 
