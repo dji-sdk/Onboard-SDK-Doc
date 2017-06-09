@@ -1,16 +1,16 @@
 ---
-title: OSDK Hardware Introduction
+title: Hardware Introduction
 date: 2017-06-06
 keywords: [component, propellor, sensor, product comparison]
 ---
 
-DJI produces small, highly capable, remotely controlled aircraft as well as hand held cameras and stabilizers perfect for both consumer and commercial applications. The products are very accessible being easy to use and affordable, and have a quality and feature set unmatched in the industry.
+DJI produces small, highly capable, remotely controlled aircraft, cameras and stabilizers perfect for both consumer and commercial applications. The products are very accessible being easy to use and affordable, and have a quality and feature set unmatched in the industry.
+
+This introduction summarizes the products that are compatible with the Onboard SDK. A high level description of the products main components, as well as detailed comparisons between products are provided to help the developer choose which product is best for the application they are developing.
 
 ### Aircraft
 
-DJI has a range of multi-rotor aircraft that can be automated with the Onboard SDK including Matrice 600 Pro, Matrice 600, Matrice 100 as well as A3 and N3 Flight controllers.
-
-There are many DJI aircraft to choose from that provide a range of features, performance, size and price. Specific metrics developers and users should be aware of when they consider an aircraft include:
+DJI has a range of multi-rotor aircraft that can be automated with the Onboard SDK including Matrice 600 Pro, Matrice 600, Matrice 100. The aircraft provide a range of features, performance, size and price. Specific metrics developers and users should be aware of when they consider an aircraft include:
 
 * Flight time
 * Size and weight
@@ -23,15 +23,33 @@ There are many DJI aircraft to choose from that provide a range of features, per
 * Remote controller features
 * Support for Onboard SDK
 
-### Stand Alone Components
+### Stand Alone Flight Controllers
 
-A3 and N3 flight controllers are two components of the aircraft (flight controller) that can be used on DJI or third party airframes. These components are fully supported in DJI Onboard SDK and offer limited support in DJI Mobile SDK.
+A3 and N3 flight control modules are stand alone components that can be automated with the Onboard SDK. A3/N3 includes:
 
-### Accessories
+* Flight computer
+* Inertial measurement unit (IMU) including compass, gyroscope, barometer, accelerometer
+* GPS
 
-DJI aircraft are compatible with a number of DJI accessories. Some of these accessories are also supported by the DJI Onboard SDK, meaning the onboard computer will be able to interact with the accessory to some degree.
+These flight control modules allow developers to build fully custom aircraft that have DJI's stable and reliable flight control systems. 
 
-TODO - what is supported on OSDK?
+To create an aircraft, these flight controllers can be combined with:
+
+* DJI (Flamewheel series, S series) or third party airframes
+* DJI (Lightbridge 2) or third party wireless communication links
+The flight controllers can be used with and DJI or third part airframe to create an aircraft. 
+* DJI Cameras (X3, X5, X5R - when using Lightbridge 2), and/or third party cameras
+* Third party batteries
+
+
+### Cameras
+
+DJI provides a number of gimbal mounted cameras that can be swapped between aircraft or used in conjunction with DJI's flight controllers and wireless links. Cameras that are compatible with M100, M600, M600 Pro, A3 and N3 include 
+
+* Zenmuse X3
+* Zenmuse X5
+* Zenmuse X5R
+
 
 ## Components
 
