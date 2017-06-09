@@ -24,20 +24,17 @@ This section introduces and compares the products compatible with the DJI OSDK, 
 - [Onboard SDK Introduction](onboard-sdk-introduction.html)
 - [OSDK Architectural Overview](architecture-guide.html)
 
-## Concepts to Understand
-
-DJI Products use technologies that might not be fully familiar to software developers. See the concepts page to understand more about the technologies to take full advantage of the capablities of DJI aircraft or flight controllers.
-- [Flight Control Concepts](things-to-know.html)
-
 ## Guides
 
-The features available through the OSDK are detailed in our Feature Guides. These guides provide useful information about various aspects of interacting with specific modules offered through the Onboard SDK.
+The features available through the OSDK are detailed in our Feature Guides. These guides provide useful information about various aspects of modules present on DJI vehicles. The guides also help users understand the interaction of the Onboard SDK with the feature set.
 
-Be sure to read through all the guides available on the Feature Overview page before you start writing OSDK Applications!
-
-//TODO - remove this
-- [Feature Overview](../features/overview.html)
-
+- [Telemetry Guide](../guides/component-guide-telemetry.html)
+- [Flight Control Guide](../guides/component-guide-flight-control.html)
+- [GPS Missions Guide](../guides/component-guide-missions.html)
+- [Camera/Gimbal Guide](../guides/component-guide-camera-and-gimbal.html)
+- [Multi-Function IO Guide](../guides/component-guide-multi-function-io.html)
+- [Mobile SDK Commmunication Guide](../guides/component-guide-mobile-communication.html)
+- [Hardware Synchronization Guide](../guides/component-guide-hardware-sync.html)
 
 ## Development Workflow
 
@@ -62,16 +59,13 @@ We provide a number of samples designed to showcase example end-to-end implement
 
 ## API Reference
 
-Detailed reference for OSDK APIs can be found in the [API Reference](@todo) section.
+Detailed reference for OSDK APIs can be found in the [API Reference](https://developer.dji.com/onboard-api-reference/index.html) section.
 
 ## Appendix
 
-TODO - should EULA, Release Notes and Porting Guide be removed?
-
-- [FAQ](../appendix/FAQ.html)
-- [EULA](http://developer.dji.com/policies/eula/)
 - [Release Notes](../appendix/releaseNotes.html)
-- [Porting Guide for OSDK 3.3](../appendix/porting-guide.html)
+- [FAQ](../appendix/FAQ.html)
+- [Abbreviations](../appendix/Abbreviations.html)
 
 ## Safety
 
