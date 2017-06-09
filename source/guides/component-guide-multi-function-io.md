@@ -18,15 +18,25 @@ Pulse Width Modulation allows the control of power supplied to electrical device
 ### Analog to Digital Converter 
 
 An Analog to Digital Converter allows conversion of analog signal such as voltage or current to a digital number proportional to the input. 
-The A3 and N3 Flight controller supports reading Analog signals and converting to Digital data.  
+The A3 and N3 Flight Controller supports reading Analog signals and converting to Digital data.  
 
 ### GPIO 
 
-A General Purpose Input Output pin are digital lines to read and write data. 
+General Purpose Input Output pins are digital control lines to read and write data. 
+The A3 and N3 Flight Controller supports configuring a user defined pin to GPIO. 
 
 ## Onboard SDK MFIO 
 
-[![A3 MFIO](../images/common/A3MFIO.jpg)](../images/common/A3MFIO.jpg) 
+The image below shows the pins that are available for MFIO functionality.
+ 
+* Pins F1-F8 can be configured for MFIO functionality. 
+* Pin with red box around it is Voltage. 
+* Pin with blue box around it is Signal. 
+* Pin with gray box around it is Ground. 
+* F1-F4 can be configured to be Input pins
+* F5-F8 can be configured to be Input or Output pins
+
+[![A3 MFIO](../images/common/A3MFIO.png)](../images/common/A3MFIO.png) 
 
 
 
