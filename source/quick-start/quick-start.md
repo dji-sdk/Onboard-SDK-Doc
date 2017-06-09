@@ -9,23 +9,23 @@ This document takes you through a quick set of steps to see the DJI Onboard SDK 
 
 ## Register as a DJI Developer
 
-Follow the steps [here](@todo) to register as a DJI Onboard SDK developer, and generate an app ID and key.
+Follow the steps [here](../development-workflow/environment-setup/sample-setup.html#onboard-sdk-application-registration) to register as a DJI Onboard SDK developer, and generate an app ID and key.
 
 ## Setup
 
 For this tutorial, you will need :
 
-1. A [compatible](@todo) DJI vehicle/flight controller
+1. A [compatible](../appendix/versioning.html) DJI vehicle/flight controller
 2. An Ubuntu 16.04 PC (virtual machine works as well) to act as your Onboard Embedded System (OES)
 3. A Windows/Mac machine to run DJI Assistant 2, required for simulation.
 
 #### 1. Hardware Setup
 
-Follow the steps in the [Hardware Setup Guide](../hardware-setup/index.html) to connect your DJI device to your Ubuntu PC.
+Follow the steps in the [Hardware Setup Guide](../development-workflow/hardware-setup.html) to connect your DJI device to your Ubuntu PC.
 
 #### 2. Software Setup
 
-Navigate to the [Linux software setup](../software-setup/linux.html) page to get your software environment ready.
+Navigate to the [Linux software setup](../development-workflow/environment-setup.html) page to get your software environment ready.
 
 ## Build the Flight Control Linux Sample
 

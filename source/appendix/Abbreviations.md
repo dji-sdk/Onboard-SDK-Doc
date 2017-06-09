@@ -2,6 +2,7 @@
 
 | Abbreviation   | Meaning                             	|
 |:--------------:|:------------------------------------:|
-| OSDK           | onboard software development kit    	|
-| MSDK   	 | mobile software development kit     	|
-| MOC		 | mobile onboard communication	 	|
+| OSDK           | Onboard Software Development Kit    	|
+| MSDK   	     | Mobile Software Development kit     	|
+| MOC		     | Mobile Onboard Communication	 	    |
+| OC		     | Onboard Computer                     |

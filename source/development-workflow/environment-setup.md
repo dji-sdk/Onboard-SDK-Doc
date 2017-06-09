@@ -15,8 +15,8 @@ keywords: [hardware setup，M100 UART Connector, A3 UART Connector, N3 UART]
 
 #### Update Firmware
 
-- Connect your computer to the Micro-USB port on the M100/600 or A3/N3. For the M210, use the USB-A to USB-A cable provided with the aircraft.
-- Update your aircraft/flight controller with the latest released firmware. Please visit the [Compatibility Matrix](@todo) to find out which SDK version your firmware supports.
+- Connect your computer to the Micro-USB port on the M100/600 or A3/N3. For the M210 (support coming soon!), use the USB-A to USB-A cable provided with the aircraft.
+- Update your aircraft/flight controller with the latest released firmware. Please visit the [Compatibility Matrix](../appendix/versioning.html) to find out which SDK version your firmware supports.
 
 #### Enable Flight Controller API control
 
