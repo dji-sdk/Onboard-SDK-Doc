@@ -13,16 +13,23 @@ The Multi Function IO feature of the A3 and N3 Flight Controller supports readin
 
 Pulse Width Modulation allows the control of power supplied to electrical devices such as motors or LEDs. Pulse Width Modulation allows us to vary how much time the signal is high in an analog fashion. 
  
- The A3 and N3 Flight Controller supports writing and reading PWM signals. PWM signals can be written to a user defined pin to control the brightness of an LED, the speed of a motor etc. PWM signals can also be read from an 
-  external sensor or microcontroller. 
+ The A3 and N3 Flight Controller supports sending PWM signals. PWM signals can be written to a user defined pin to control the brightness of an LED, the speed of a motor etc. 
 
 ### Analog to Digital Converter 
 
-
+An Analog to Digital Converter allows conversion of analog signal such as voltage or current to a digital number proportional to the input. 
+The A3 and N3 Flight controller supports reading Analog signals and converting to Digital data.  
 
 ### GPIO 
 
+A General Purpose Input Output pin are digital lines to read and write data. 
+
 ## Onboard SDK MFIO 
+
+[![A3 MFIO](../images/common/A3MFIO.jpg)](../images/common/A3MFIO.jpg) 
+
+
+
 
 
 
