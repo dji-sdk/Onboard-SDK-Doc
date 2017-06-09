@@ -46,7 +46,7 @@ To trigger the hardware sync, we use the Hardware Sync Start API
 
 This API takes in a hardware sync signal frequency and a tag - this tag will be attached to each software packet that corresponds to a hardware pulse.
 
-Users can subscribe to `TOPIC_HARD_SYNC` using the Subscription telemetry to receive softare packets corresponding to the hardware pulses; the incoming data looks like this:
+Users can subscribe to `TOPIC_HARD_SYNC` using the Subscription telemetry to receive software packets corresponding to the hardware pulses; the incoming data looks like this:
 
 ![Sync Data](../images/guides/syncSubscription.png)
 
