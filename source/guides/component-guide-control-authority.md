@@ -20,14 +20,30 @@ The remote controller has the highest priority for control authority, and can re
 
 This is always done by switching the Flight Mode Switch on the remote controller. 
 
-For all DJI products except A3/N3 and M600/M600 Pro, there will be at least one switch position that allows SDK control, and another that disables it. 
+The Flight Mode Switch can represent 6 possible modes:
 
-A3 and N3 stand alone flight controllers have two possibilities, based around if **Multiple Flight Modes** is enabled or disabled (this is enabled/disabled in DJI Assistant).
+* **P** - Positioning mode. GNSS and Vision Positioning Systems are used for positioning if they are available. For products without F mode, intelligent functions such as SDK control can be performed in P-mode.
+* **F** - Function mode. Performs the same as Positioning mode with intelligent functions such as SDK control.
+* **A** - Attitude mode. The GNSS and Vision Positioning Systems are not used for positioning. The aircraft only uses the barometer to maintain altitude. If receiving a GNSS signal, the aircraft can automatically return home if the Remote Controller signal is lost and if the Home Point has been recorded successfully.
+* **S** - Sport mode. The maximum flight speed and responsiveness of the aircraft is increased in this mode.
+* **G** - Gentle mode. The sensitivity and speed of aircraft will be substantially decreased in gentle mode.
+* **M** - Manual mode. The aircraft will not stabilize its altitude nor attitude in manual mode. This mode is for advanced pilots only, and should only be used when the pilot understands the risk of operating in this mode. Any damage to the product when operating in this mode will not be covered under warranty. It is supported by stand-alone A3 and N3 and can be enabled in DJI Assistant 2.
 
-* **Enabled**: Similar to all other products - a particular position will disable SDK automation and another will enable it
-* **Disabled**: In this case, all switch positions will allow Onboard SDK automation - simply changing the switch position will give the remote controller control authority.
+On all products, SDK control is possible in either P or F mode. Other modes can be used to regain control for the remote controller.
 
-M600 and M600 Pro behave like A3/N3 with Multiple Flight Modes disabled.
+#### A3, N3
+A3 and N3 stand alone flight controllers can be setup in DJI assistant to either have various combinations of flight modes map to the remote controller flight mode switch position, or have all positions map to P mode. This selection is done with the **Multiple Flight Modes** option:
+
+* **Enabled**: Flight mode switch on the remote controller represents a selection of 3 modes including P, A, S, G and/or M modes. All modes other than P are used to regain control for the remote controller.
+* **Disabled**: All flight mode switch positions on the remote controller represent P mode. The flight mode switch just needs to be changed for the remote controller to regain control. Control is only temporarily regained, and logic in the onboard computer should monitor the remote controller flight mode switch and stop sending commands to the flight controller if the user needs to use the switch to permanently regain control.
+
+#### M600, M600 Pro
+
+When a remote controller is used with M600 or M600 Pro, all flight mode switch positions are P mode. Similar to Multiple Flight Modes disabled for A3/N3, the switch position only needs to be changed to regain control with the remote controller. Control is only temporarily regained, and logic in the onboard computer should monitor the remote controller flight mode switch and stop sending commands to the aircraft if the user needs to use the switch to permanently regain control.
+
+#### M100
+
+M100 has P, A and F modes on the remote controller flight mode switch. Only F mode enables SDK control, while P and A disable it.
 
 ## Mobile SDK
 
@@ -41,25 +57,19 @@ Whenever the Mobile SDK is not executing a flight maneuver, the remote controlle
 ## Onboard SDK
 
 Several prerequisites are required to enable control authority for the Onboard SDK:
-* Flight mode switch must be in correct position (unless using A3/N3 with Multiple Flight Modes disabled, or using M600/M600 Pro)
+
+* Flight mode switch must be in correct position (P mode for A3, N3, M600, M600 Pro and F mode for M100)
 * Onboard computer application must have activated the Onboard SDK
 * Onboard computer application must request and receive control authority
 
-Talk about ASG modes somewhere
+Control authority simply means the onboard computer can command the aircraft to move either through movement commands or missions. If all prerequisites are not met, the onboard computer can still receive state information, read from and write to the MFIO pins (if available) and perform some actions such as taking off and landing.
 
-
-In a typical Onboard SDK setup, the drone can be controlled by (1) the Remote Controller (2) the Mobile Device and/or (3) the Onboard Computer. The priority is generally set as (1) > (2) > (3). However 
-
-This is to prevent the dangerous situation of code failing and the user not being able to take control of the drone to shut it down.
-
-The remote controller always enjoys top priority for control. The flight controller can enter API Control Mode (Programmable Mode) if the following conditions are met:
-
-
-Your RC is conencted and powered on.
-The 'enable API control' box is checked in the assistant software.
-The mode selection bar of the remote controller is placed at the F position.
-To request control of the drone, your app must call the flight control request function exposed by the Onboard SDK library.
-
-Note that this does not mean the user will always be able to use RC sticks to control the aircraft; for example, in F mode (P mode for A3/N3 FW > 1.5.0.0) the sticks are unavailable when the SDK is executing movement control. The correct way to assert the RC's control precedence is to make sure the above conditions for API control are unmet - usually the easiest way to do so is to switch the RC out of F mode into P or A mode. For A3/N3 FW > 1.5.0.0, please see mode switch changes.
+The state diagram below shows what is available to the onboard computer and when during the various stages of running an Onboard SDK application. In addition, the authority of the remote controller and Mobile SDK is also shown for each onboard SDK application state.
 
 ![Control-Authority-State-Diagram](../images/common/Control-Authority-State-Diagram.png)
+
+The remote controller sticks can manually control aircraft flight for all states except for when the movement control commands are being sent from the onboard computer, or a mission has started. If missions are executing, the sticks will change the mission behavior:
+
+* Waypoint Mission: Sticks will control mission speed and aircraft yaw
+* Hotpoint Mission: Sticks will control hotpoint radius, direction of travel and aircraft yaw
+
