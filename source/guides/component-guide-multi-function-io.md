@@ -6,7 +6,7 @@ keywords: []
 
 ## Introduction
 
-The Multi Function IO feature of the A3 and N3 Flight Controller supports reading and writing PWM signals, Analog to Digital Conversion and General Purpose Input Output. These new feature are being introduced
+The Multi Function IO feature of the A3 and N3 Flight Controller supports reading and writing PWM signals, Analog to Digital Conversion and General Purpose Input Output. These new features are being introduced
   in order to avoid having to arrange additional circuitry or microcontrollers for the mentioned low level functionalities. 
  
 ### PWM
@@ -23,16 +23,16 @@ The A3 and N3 Flight Controller supports reading Analog signals and converting t
 ### GPIO 
 
 General Purpose Input Output pins are digital control lines to read and write data. 
-The A3 and N3 Flight Controller supports configuring a user defined pin to GPIO. 
+The A3 and N3 Flight Controller supports configuring multiple pins to have GPIO functionality. 
 
 ## Onboard SDK MFIO 
 
 The image below shows the pins that are available for MFIO functionality.
  
-* Pins F1-F8 can be configured for MFIO functionality. 
-* Pin with red box around it is Voltage. 
-* Pin with blue box around it is Signal. 
-* Pin with gray box around it is Ground. 
+* Pins F1-F8 (vertical colomns from left to right) can be configured for MFIO functionality. 
+* Pin with red box around are Voltage pins. 
+* Pin with blue box around it are Signal pins. 
+* Pin with gray box around it are Ground pins. 
 * F1-F4 can be configured to be Input pins
 * F5-F8 can be configured to be Input or Output pins
 
