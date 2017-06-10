@@ -29,7 +29,7 @@ The A3 and N3 Flight Controller supports configuring multiple pins to have GPIO 
 
 The image below shows the pins that are available for MFIO functionality.
  
-* Pins F1-F8 (vertical colomns from left to right) can be configured for MFIO functionality. 
+* Pins F1-F8 (vertical columns from left to right) can be configured for MFIO functionality. 
 * Pin with red box around are Voltage pins. 
 * Pin with blue box around it are Signal pins. 
 * Pin with gray box around it are Ground pins. 
