@@ -52,7 +52,10 @@ The Mobile SDK will have control authority whenever:
 * Remote controller flight mode switch is in the position that enables SDK automation
 * The Mobile SDK is sending a command to execute a flight maneuver (e.g. executing a mission, or using virtual sticks).
 
-Whenever the Mobile SDK is not executing a flight maneuver, the remote controller will have control authority.
+Whenever the Mobile SDK is not executing a flight maneuver, the remote controller will have control authority. 
+
+> **Note**: If the Onboard SDK is executing a movement command, and the Mobile SDK sends virtual stick or mission commands, then the Mobile SDK will get control priority and the flight controller will ignore further Onboard SDK commands.
+
 
 ## Onboard SDK
 
@@ -67,6 +70,8 @@ Control authority simply means the onboard computer can command the aircraft to 
 The state diagram below shows what is available to the onboard computer and when during the various stages of running an Onboard SDK application. In addition, the authority of the remote controller and Mobile SDK is also shown for each onboard SDK application state.
 
 ![Control-Authority-State-Diagram](../images/common/Control-Authority-State-Diagram.png)
+
+>**Note**: While the Mobile SDK is sending virtual stick commands, or a mission is executing, then movement commands from the Onboard SDK will be ignored. Once the Mobile SDK commands complete, then the Onboard SDK will be in the same state as it was before the Mobile SDK commands started.
 
 The remote controller sticks can manually control aircraft flight for all states except for when the movement control commands are being sent from the onboard computer, or a mission has started. If missions are executing, the sticks will change the mission behavior:
 
