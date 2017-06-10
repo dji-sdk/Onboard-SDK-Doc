@@ -141,7 +141,11 @@ TODO ...
 
 ##### MFIO Control
 
-TODO ...
+The Onboard SDK allows configuring user defined pins for Multi-Function IO functionality. Multi-Function IO supports
+
+* PWM write
+* Analog to Digital Conversion
+* GPIO
 
 ##### Aircraft Telemetry
 
