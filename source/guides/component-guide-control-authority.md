@@ -39,7 +39,7 @@ A3 and N3 stand alone flight controllers can be setup in DJI assistant to either
 
 #### M600, M600 Pro
 
-When a remote controller is used with M600 or M600 Pro, all flight mode switch positions are P mode. Similar to Multiple Flight Modes disabled for A3/N3, the switch position only needs to be changed to regain control with the remote controller. Control is only temporarily regained, and logic in the onboard computer should monitor the remote controller flight mode switch and stop sending commands to the aircraft if the user needs to use the switch to permanently regain control.
+When a remote controller is used with M600 or M600 Pro, all flight mode switch positions are P mode always. Similar to Multiple Flight Modes disabled for A3/N3, the switch position only needs to be changed to regain control with the remote controller. Control is only temporarily regained, and logic in the onboard computer should monitor the remote controller flight mode switch and stop sending commands to the aircraft if the user needs to use the switch to permanently regain control.
 
 #### M100
 
@@ -54,7 +54,12 @@ The Mobile SDK will have control authority whenever:
 
 Whenever the Mobile SDK is not executing a flight maneuver, the remote controller will have control authority. 
 
-> **Note**: If the Onboard SDK is executing a movement command, and the Mobile SDK sends virtual stick or mission commands, then the Mobile SDK will get control priority and the flight controller will ignore further Onboard SDK commands.
+> **Note 1**: If the flight mode switch is in the wrong position for control authority, the Mobile SDK will still be able to receive state information, and perform some actions like take-off, land and controlling the camera and gimbal.
+> 
+> **Note 2**: If the Onboard SDK is executing a movement command, and the Mobile SDK sends virtual stick or mission commands, then the Mobile SDK will get control priority and the flight controller will ignore further Onboard SDK commands.
+
+
+
 
 
 ## Onboard SDK
@@ -76,5 +81,5 @@ The state diagram below shows what is available to the onboard computer and when
 The remote controller sticks can manually control aircraft flight for all states except for when the movement control commands are being sent from the onboard computer, or a mission has started. If missions are executing, the sticks will change the mission behavior:
 
 * Waypoint Mission: Sticks will control mission speed and aircraft yaw
-* Hotpoint Mission: Sticks will control hotpoint radius, direction of travel and aircraft yaw
+* Hotpoint Mission: Sticks will control mission speed, hotpoint radius, direction of travel and aircraft yaw
 
