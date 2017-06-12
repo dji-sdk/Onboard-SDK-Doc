@@ -20,10 +20,6 @@ Camera and Gimbal modes and features available through DJI Onboard SDK:
 
 The camera can only operate in one mode at any one time. For example, media download cannot happen during image capture.
 
-## Gimbal Lock
-
-TODO ...
-
 ## Image Quality, Resolution and Frame Rate
 
 ##### Video Resolution and Frame Rate
