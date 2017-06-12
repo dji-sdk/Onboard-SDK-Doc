@@ -20,9 +20,9 @@ Developers can get started immediately by following the steps to [run a sample a
 
 This section introduces and compares the products compatible with the DJI OSDK, and outlines the SDK itself.
 
-- [Hardware Support](../hardware-setup/index.html)
+- [Hardware Support](osdk-hardware-introduction.html)
 - [Onboard SDK Introduction](onboard-sdk-introduction.html)
-- [OSDK Architectural Overview](architecture-guide.html)
+- [OSDK Architectural Overview](sdk-architectural-overview.html)
 
 ## Guides
 
