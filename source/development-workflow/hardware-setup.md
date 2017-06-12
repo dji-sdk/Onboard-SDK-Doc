@@ -22,8 +22,7 @@ This guide will help you connect your onboard embedded system (OES) with the M10
 
 ## Connecting Your Onboard Embedded System (OES)
 
-- If you are using one of our supported platforms, we provide detailed instructions in our [Hardware Setup Guide](../hardware-setup/index.html).
-- The [Hardware Setup Guide](../hardware-setup/index.html) also lists the pin diagram for the API port on the [M100](../hardware-setup/index.html#M100-UART-Connector), the [A3/N3/M600](../hardware-setup/index.html#A3-UART-Connector) and the [M210](@todo) so that you may build your own cable compatible with your OES.
+- This Hardware Setup Guide lists the pin diagram for the API port on the M100, the A3/N3/M600 and the M210 so that you may build your own cable compatible with your OES.
 - A3 flight controller can be accessed on the M600 (or M600 Pro) by pulling off the top-cover.
 - You can power your OES from your own battery or if you are using an M100/M600/M210, you can pull power from the vehicle bus. See your aircraft manual for details.
 - Secure your OES to the vehicle near the center of mass. Ensure that the total vehicle weight is within the maximum takeoff weight specificed for your vehicle.
