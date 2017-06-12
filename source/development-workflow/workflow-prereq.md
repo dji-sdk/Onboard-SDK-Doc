@@ -9,7 +9,7 @@ This SDK is for developers with:
 
 - programming experience in C++
 - embedded systems knowledge
-- a [compatible](../introduction/hardware-introduction.html) DJI vehicle/flight controller
+- a [compatible](../introduction/osdk-hardware-introduction.html#Supported-Products) DJI vehicle/flight controller
 - your own Onboard Embedded System (OES) with an available TTL UART port.
     - For x86 platforms, we recommend small-form-factor PCs that can be powered from the aircraft's bus
     - The [DJI Manifold](https://store.dji.com/product/manifold) is an excellent OES meant to harness the full potential of DJI OSDK
