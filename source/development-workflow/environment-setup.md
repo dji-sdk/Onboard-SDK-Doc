@@ -50,6 +50,9 @@ To build standalone Linux applications based on the OSDK, you need:
 * CMake >= 2.8
 * A modern Linux distribution
 
+To make sure your Linux environment is ready to run OSDK applications, follow the [Linux Platform Guide](../sample-doc/sample-setup.html#linux-oes) on the Sample Setup page and run a sample app.
+
+
 ## STM32
 
 ##### Toolchain Requirements
@@ -65,12 +68,9 @@ To build standalone Linux applications based on the OSDK, you need:
 
 ![Keil_PackInstall](../../images/STM32/STM32_Keil_PackInstall.png)
 
+To make sure your STM32 environment is ready to run OSDK applications, follow the [STM32 Platform Guide](../sample-doc/sample-setup.html#stm32-oes) on the Sample Setup page and run a sample app.
+
 ## Linux with ROS
-
-##### Tested Environment:
-
-
-Onboard SDK ROS should also work on Ubuntu 14.04/ROS Indigo, though it is not officially tested on that combination.
 
 ##### Software Requirements:
 
@@ -80,11 +80,15 @@ Onboard SDK ROS should also work on Ubuntu 14.04/ROS Indigo, though it is not of
 * Operating System: Ubuntu 16.04 (x86/ARM)
 * ROS version: ROS Kinetic
 
-TODO is this still the case?
+##### Toolchain Setup
 
-##### Compilation:
+* If you don't have a catkin workspace, create one as follows:
+```
+mkdir catkin_ws
+cd catkin_ws
+mkdir src
+cd src
+catkin_init_workspace
+```
 
-1. Assuming you have a ROS environment installed and configured, `cd` into your catkin workspace and run `catkin_make`. Make sure the source code is in the `src` directory of your catkin workspace.
-<br>OR</br>
-2. Refer to our .travis.yml build script to install and configure ROS from scratch and then follow with running ``catkin_make`` from catkin workspace.
-
+To make sure your ROS environment is ready to run OSDK applications, follow the [ROS Platform Guide](../sample-doc/sample-setup.html#ros-oes) on the Sample Setup page and run a sample app.
