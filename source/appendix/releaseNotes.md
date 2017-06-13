@@ -28,7 +28,7 @@ If you have an A3, A3 Pro, M600, M600 Pro or an N3, upgrade to this release to r
 ## Known Issues
 
 - When an RC loses connection mid-flight or is turned off, the telemetry values in the OSDK receive persistent values from the last known stick position.
-- If you start the A3/N3 flight controller in A/S/G mode (with the Multiple Flight Modes feature enabled throughh DJI Assistant 2), the onboard SDK will be able to obtain control, thus overriding the `P` mode requirement. Switching out of the non-P mode and switching back to that mode will restore the expected behavior.
+- If you start the A3/N3 flight controller in A/S/G mode (with the Multiple Flight Modes feature enabled through DJI Assistant 2), the onboard SDK will be able to obtain control, thus overriding the `P` mode requirement. This happends because the flight controller upon boot-up assert P-mode. Switching out of the non-P mode and switching back to that mode will restore the expected behavior.
 
 #### Old Releases
 
