@@ -34,6 +34,8 @@ On all products, SDK control is possible in either P or F mode. Other modes can 
 #### A3, N3
 A3 and N3 stand alone flight controllers can be setup in DJI assistant to either have various combinations of flight modes map to the remote controller flight mode switch position, or have all positions map to P mode. This selection is done with the **Multiple Flight Modes** option:
 
+![Multi-flight-mode](../images/guides/multi-flight-mode.png)
+
 * **Enabled**: Flight mode switch on the remote controller represents a selection of 3 modes including P, A, S, G and/or M modes. All modes other than P are used to regain control for the remote controller.
 * **Disabled**: All flight mode switch positions on the remote controller represent P mode. The flight mode switch just needs to be changed for the remote controller to regain control. Control is only temporarily regained, and logic in the onboard computer should monitor the remote controller flight mode switch and stop sending commands to the flight controller if the user needs to use the switch to permanently regain control.
 
