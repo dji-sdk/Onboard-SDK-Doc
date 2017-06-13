@@ -11,11 +11,11 @@ The diagram below demonstrates what would typically be included in an applicatio
 
 ![integrate-sdk](../images/workflow/djiosdk_integrate_into_app.png)
 
-In addition to the OSDK Core Library, and any application specific third party libraries, the application will also need to include a platform specific threading library. OSDK uses threading to handle reading from the 
+In addition to the OSDK Core Library, and any application specific third party libraries, the application will also need to include a platform specific threading library. OSDK uses threading handle user requests, callbacks and UART communication simultaneously. 
 
-As threading is platform specific, the OSDK core requires the application pass it a reference to a threading library.
+The application links to OSDK Core and the platform threading library at run-time.
 
-The application needs to pass the OSDK Core a reference to this threading library, so the OSDK can then use it.
+
 
 ## Including DJI OSDK Headers in Your Code
 
