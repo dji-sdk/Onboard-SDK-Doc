@@ -8,6 +8,8 @@ DJI produces small, highly capable, remotely controlled aircraft, cameras and st
 
 This introduction summarizes the products that are compatible with the Onboard SDK. A high level description of the products main components, as well as detailed comparisons between products are provided to help the developer choose which product is best for the application they are developing.
 
+## Product Categories
+
 ### Aircraft
 
 DJI has a range of multi-rotor aircraft that can be automated with the Onboard SDK including Matrice 600 Pro, Matrice 600, Matrice 100. The aircraft provide a range of features, performance, size and price. Specific metrics developers and users should be aware of when they consider an aircraft include:
@@ -37,18 +39,14 @@ To create an aircraft, these flight controllers can be combined with:
 
 * DJI (Flamewheel series, S series) or third party airframes
 * DJI (Lightbridge 2) or third party wireless communication links
-The flight controllers can be used with and DJI or third part airframe to create an aircraft. 
-* DJI Cameras (X3, X5, X5R - when using Lightbridge 2), and/or third party cameras
+* DJI Cameras (see [table](#supported_products) below), and/or third party cameras
 * Third party batteries
 
 
 ### Cameras
 
-DJI provides a number of gimbal mounted cameras that can be swapped between aircraft or used in conjunction with DJI's flight controllers and wireless links. Cameras that are compatible with M100, M600, M600 Pro, A3 and N3 include 
+DJI provides a number of gimbal mounted cameras that can be swapped between aircraft or used in conjunction with DJI's flight controllers and wireless links. Cameras that are compatible with M100, M600, M600 Pro, A3 and N3 are detailed in this [table](#supported_products)
 
-* Zenmuse X3
-* Zenmuse X5
-* Zenmuse X5R
 
 
 ## Components
@@ -100,7 +98,7 @@ An Android or iOS device can be connected to the remote controller through eithe
 ## Supported Products
 
 Below is a table listing the aircraft, handheld cameras and stand alone components supported by the DJI Onboard SDK.
-
+<a id="supported_products"></a>
 <html><table class="table-product-accessories">
   <thead>
     <tr>
@@ -476,7 +474,7 @@ To help understand the potential functionality and flight time of different airc
 
 ## Camera Comparison
 
-DJI provides several camera configurations. For the Phantom and Mavic lines of products, the cameras are fixed to the product. For the Inspire and Matrice lines of products, cameras can be interchanged (Zenmuse X3, X5, X5R, Z3, XT, Z30, X4S, X5S) however not all cameras are compatible with all Inspire and Matrice aircraft. The [Products and Accessories](#supported-products) table at the top of the page details the combinations of camera and aircraft compatibility.
+DJI provides several camera configurations. For the Inspire and Matrice lines of products, cameras can be interchanged (Zenmuse X3, X5, X5R, Z3, XT, Z30, X4S, X5S)  The [Products and Accessories](#supported-products) table at the top of the page details the combinations of camera and aircraft compatibility.
 
 The Zenmuse XT is a thermal camera. It's specifications are difficult to compare directly to other cameras, however it is included in the comparison for it's mass for payload calculation. More details on the specifications of the Zenmuse XT can be found <a href="http://www.dji.com/product/zenmuse-xt/info#specs" target="_blank"> here </a>.
 
@@ -587,30 +585,6 @@ Remote Controllers that use WiFi to connect to the mobile device will act as a W
 </tr>
 <tr>
 <td>Matrice 100</td><td>Required</td><td>USB</td><td>Lightbridge</td><td>Yes</td><td>Yes</td><td>Mini HDMI</td><td>F</td></tr>
-<tr>
-<td>Matrice 600</td><td>Required</td><td>USB</td><td>Lightbridge</td><td>Yes</td><td>Yes</td><td>Mini HDMI, SDI</td><td>F</td></tr>
-<tr>
-<td>Matrice 600 Professional</td><td>Required</td><td>USB</td><td>Lightbridge</td><td>Yes</td><td>Yes</td><td>Mini HDMI, SDI</td><td>F</td></tr>
-</tbody></table></html>
-
-
-<html><table class="table-aircraft-comparison">
-<thead><tr><th colspan="9"><b>Remote Controller Comparison</th></tr></thead>
-<tbody>
-<tr>
-<th width = 20%><p>Product</p></th>
-<th><p>Remote Controller</p></th>
-<th><p>Connectivity to Mobile Device</p></th>
-<th><p>Connectivity to Aircraft</p></th>
-<th><p>Supports Dual RC</p></th>
-<th><p>Built-in GPS</p></th>
-<th><p>Secondary Video Output</p></th>
-<th><p>Flight Mode Switch</br><font color="#BBBBBB" size=1.7 style="font-weight:normal">To use SDK</p></th>
-</tr>
-<tr>
-<td>Matrice 100</td><td>Required</td><td>USB</td><td>Lightbridge</td><td>Yes</td><td>Yes</td><td>Mini HDMI</td><td>F</td></tr>
-<tr>
-<td>Matrice 200</td><td>Required</td><td>USB</td><td>Lightbridge</td><td>Yes</td><td>-</td><td>Mini HDMI</td><td>P</td></tr>
 <tr>
 <td>Matrice 600</td><td>Required</td><td>USB</td><td>Lightbridge</td><td>Yes</td><td>Yes</td><td>Mini HDMI, SDI</td><td>F</td></tr>
 <tr>
