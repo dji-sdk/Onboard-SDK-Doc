@@ -99,20 +99,53 @@ An Android or iOS device can be connected to the remote controller through eithe
 
 ## Supported Products
 
-Drones and flight controller systems that support DJI Onboard SDK are: Matrice 600 Pro, Matrice 600, Matrice 100 as well as A3 Pro, A3, N3 flight controller systems.
+Below is a table listing the aircraft, handheld cameras and stand alone components supported by the DJI Onboard SDK.
 
-### Matricie Series: Aircraft Description
+<html><table class="table-product-accessories">
+  <thead>
+    <tr>
+      <th colspan="4">Products and Accessories</th>
+    </tr>
+    <tr>
+      <th>Category</th>
+      <th>Product</th>
+      <th>Cameras</th>
+      <th>SDK Supported Accessories</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">Aircraft</th>
+      <td>Matrice 100</td>
+      <td>X3, X5, X5R, XT, Z3, Z30</td>        
+      <td> N1 Video Encoder </td>
+    </tr>
+    <tr>
+      <td>Matrice 600</td>
+      <td>X3, X5, X5R, XT, Z3, Z30</td>        
+      <td> DRTK, Ronin MX </td>
+    </tr>
+    <tr>
+      <td>Matrice 600 Pro</td>
+      <td>X3, X5, X5R, XT, Z3, Z30</td>        
+      <td> DRTK, Ronin MX </td>
+    </tr>
+    <tr>
+      <td rowspan="2">Components</th>
+      <td>A3 (with Lightbridge 2)</td>
+      <td> X3, X5, X5R, XT, Z3, Z30 </td>        
+      <td> DRTK, Ronin MX </td>
+    </tr>
+    </tr>
+      <tr>
+      <td>N3 (with Lightbridge 2)</td>
+      <td> X3, X5, X5R, XT, Z3, Z30 </td>        
+      <td> DRTK, Ronin MX </td>
+    </tr>
+  </tbody>
+</table></html>
 
-* Industrial and developer platform
-* Highly customizable, with up to 6 kg payloads supported
-* Payloads can communicate with the flight controller directly through a serial port and the DJI Onboard SDK
-* Mechanical mounting features
-* Can use same cameras as Inspire series
-* Additional accessories including
-
-    * <a href="http://www.dji.com/product/matrice600" target="_blank"> DRTK </a> - cm precision positioning
-    * <a href="http://www.dji.com/product/guidance" target="_blank"> Guidance </a> - 5 direction stereo camera and ultrasonic sensor module
-    * <a href="http://www.dji.com/product/ronin-mx" target="_blank"> Ronin MX </a> - Gimbal that can support custom payloads up to 4.5 kg
+## Aircraft Comparison
 
 Aircraft comparison can be difficult due to the large selection of products, features and functionality. Three summarized aircraft comparison tables are below to introduce the differences in aircraft and features.
 
@@ -139,69 +172,12 @@ Aircraft comparison can be difficult due to the large selection of products, fea
 </tbody></table></html>
 
 
-This is a test
-
-<html><table class="table-aircraft-comparison">
-<thead><tr><th colspan="9">Aircraft Comparison: <b>Aircraft</th></tr></thead>
-<tbody>
-<tr>
-<th width = 20%><p>Product</p></th>
-<th width = 10%><p>Max Flight Time</br><font color="#BBBBBB" size=1 style="font-weight:bold">min</p></th>
-<th><p>Max Speed</br><font color="#BBBBBB" size=1 style="font-weight:bold">m/s</p></th>
-<th><p>Max Ascent Speed</br><font color="#BBBBBB" size=1 style="font-weight:bold">m/s</p></th>
-<th><p>Max Descent Speed</br><font color="#BBBBBB" size=1 style="font-weight:bold">m/s</p></th>
-<th><p>Max Service Ceiling</br><font color="#BBBBBB" size=1 style="font-weight:bold">m</p></th>
-<th><p>Propellors</p></th>
-<th width = 10%><p>Mass</br><font color="#BBBBBB" size=1 style="font-weight:bold">g</p></th>
-<th width = 15%><p>Max dimension</br><font color="#BBBBBB" size=1.7 style="font-weight:normal">Without propellors</br><font color="#BBBBBB" size=1 style="font-weight:bold">mm</p></th>
-</tr>
-<tr>
-<td>Matrice 100</td><td>16-40*</td><td>18</td><td>5</td><td>4</td><td>4500</td><td>4</td><td>2355</br><p style="line-height:90%"><font color="#BBBBBB" size=1 style="font-weight:normal">With TB47 Battery</p></td><td>650</td></tr>
-<tr>
-<td>Matrice 200</td><td>13-38*</td><td>23</td><td>5</td><td>3</td><td>3000</td><td>4</td><td>3800</br><p style="line-height:90%"><font color="#BBBBBB" size=1 style="font-weight:normal">With 2x TB50 batteries</p></td><td>716</td></tr>
-<tr>
-<td>Matrice 600</td><td>18-40*</td><td>18</td><td>5</td><td>3</td><td>2500</td><td>6</td><td>9100</br><p style="line-height:90%"><font color="#BBBBBB" size=1 style="font-weight:normal">With 6x TB47 Batteries</p></td><td>1133</td></tr>
-<tr>
-<td>Matrice 600 Professional</td><td>18-40*</td><td>18</td><td>5</td><td>3</td><td>2500</td><td>6</td><td>9500</br><p style="line-height:90%"><font color="#BBBBBB" size=1 style="font-weight:normal">With 6x TB47S Batteries</p></td><td>1133</td></tr>
-<tr>
-</tbody></table></html>
-
-<html><table class="table-aircraft-comparison">
-<thead><tr><th colspan="9">Flight Controller Comparison: <b>Flight Controller System</th></tr></thead>
-<tbody>
-<tr>
-<th width = 20%><p>Product</p></th>
-<th><p>Supported Multi-rotor</p></th>
-<th><p>DJI Products Supported</p></th>
-<th><p>Battery</p></th>
-<th><p>Supported ESC</p></th>
-<th><p>Supported SDK</p></th>
-<th><p>SDK Port</p></th>
-<th><p>Components</p></th>
-</tr>
-<tr>
-<td>A3 Pro</td><td>Quadcopter: I4，X4</br>Hexacopter: I6，X6，Y6，IY6</br>Octocopter: X8，I8，V8 Ronin-MX</br></td>
-<td>Z15</br>Ronin-MX</br>S900</br>S1000</br>S1000+</br>iOSD</br>D-RTK</br>DATALINK PRO</td>
-<td>3S to 12S LiPo</td><td>400Hz Frequency</td><td>Mobile SDK</br>Onboard SDK</td><td>API/CAN2</td>
-<td>Main controller unit</br>(integrated with IMU)</br>IMU PRO module x 2 PMU</br>GPS-Compass PRO module</br>X3 RGB LED</td></tr>
-<tr>
-<td>A3</td><td>Quadcopter: I4，X4</br>Hexacopter: I6，X6，Y6，IY6</br>Octocopter: X8，I8，V8</br></td>
-<td>Z15</br>Ronin-MX</br>S900</br>S1000</br>S1000+</br>iOSD</br>D-RTK</br>DATALINK PRO</td>
-<td>3S to 12S LiPo</td><td>400Hz Frequency</td><td>Mobile SDK</br>Onboard SDK</td><td>API/CAN2</td>
-<td>Main controller unit</br>integrated with IMU PMU</br>GPS-Compass PRO moduleRGB LED</td></tr>
-<tr>
-<td>N3</td><td>Quadcopter: I4，X4</br>Hexacopter: I6，X6，Y6，IY6</br>Octocopter: X8，I8，V8</td>
-<td>DJI GO</br>iOSD</br>Zenmuse Z15-A7</br>5D III</br>GH4</br>BMPCC</br>Ronin-MX</br>X3</br>X5</br>X5R</br>Z15</br>DJI propulsion systems</br>S900</br>S1000</br>S1000+</td>
-<td>3S to 12S LiPo</td><td>400Hz Frequency,</br>DJI Intelligent ESC</td><td>Mobile SDK</br>Onboard SDK</td><td>API/CAN2</td><td>With A3 upgrade kit (IMU Pro and GPS-Compass Pro modules)</td></tr>
-<tr>
-</tbody></table></html>
-
 <html><table class="table-aircraft-comparison">
 <thead><tr><th colspan="9">Aircraft Comparison: <b>Features</th></tr></thead>
 <tbody>
 <tr>
 <th width = 20%><p>Product</p></th>
-<th><p>Camera And Gimbal</p></th>
+<th><p>Camera</p></th>
 <th><p>FPV Camera</p></th>
 <th><p>Wireless Range</br><font color="#BBBBBB" size=1.7 style="font-weight:normal">US / EU</br><font color="#BBBBBB" size=1 style="font-weight:bold">km</p></th>
 <th><p>Batteries</p></th>
@@ -212,15 +188,11 @@ This is a test
 <tr>
 <td>Matrice 100</td><td>X3, Z3, X5, X5R, XT, Z30</td><td>-</td><td>5 / 3.1</td><td>1-2</td><td>Fixed</td><td>1000</td><td>Guidance, Manifold, Focus</td></tr>
 <tr>
-<td>Matrice 200</td><td>X4S, X5S, Z30, XT</td><td>Yes</td><td>7 / 3.5</td><td>2</td><td>Fixed</td><td>1601-2340</br><p style="line-height:90%"><font color="#BBBBBB" size=1 style="font-weight:normal">Battery Dependant</p></td><td>Focus</td></tr>
+<td>Matrice 600</td><td>X3, Z3, X5, X5R, XT, Custom with Ronin MX</td><td>-</td><td>5 / 3.1</td><td>6</td><td>Moveable</td><td>6000</td><td>Manifold, DRTK, Ronin MX</td></tr>
 <tr>
-<td>Matrice 600</td><td>X3, Z3, X5, X5R, XT, Custom with Ronin MX, Z15-A7, Z15-BMPCC, Z15-5D III, Z15-GH4</td><td>-</td><td>5 / 3.1</td><td>6</td><td>Moveable</td><td>6000</td><td>Guidance, Manifold, DRTK, Ronin MX, Focus</td></tr>
-<tr>
-<td>Matrice 600 Professional</td><td>X3, Z3, X5, X5R, XT, Custom with Ronin MX, Z30, Z15-A7, Z15-BMPCC, Z15-5D III, Z15-GH4</td><td>-</td><td>5 / 3.1</td><td>6</td><td>Moveable</td><td>6000</td><td>Guidance, Manifold, DRTK, Ronin MX, Focus</td></tr>
+<td>Matrice 600 Professional</td><td>X3, Z3, X5, X5R, XT, Custom with Ronin MX, Z30</td><td>-</td><td>5 / 3.1</td><td>6</td><td>Moveable</td><td>6000</td><td>Manifold, DRTK, Ronin MX</td></tr>
 </tbody></table></html>
 
-
-> Note: DJI Focus is only compatible with DJI cameras.
 
 Detailed specifications are listed on each product's webpage **specs** section at <a href="http://www.dji.com" target="_blank">www.dji.com</a>.
 
@@ -242,17 +214,14 @@ Detailed specifications are listed on each product's webpage **specs** section a
 <tr>
 <td>Matrice 100</td><td>With Guidance</td><td>-</td><td>With Guidance</td><td>Yes</td><td>Yes</td><td>Yes</td><td>-</td><td>-</td></tr>
 <tr>
-<td>Matrice 200</td><td>Front</br><p style="line-height:90%"><font color="#BBBBBB" size=1 style="font-weight:normal">0.7-30m</p></td><td>Top</br><p style="line-height:90%"><font color="#BBBBBB" size=1 style="font-weight:normal">0-5m</p></td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+<td>Matrice 600</td><td>-</td><td>-</td><td>-</td><td>Yes</td><td>Yes</td><td>Yes</td><td>-</td><td>-</td></tr>
 <tr>
-<td>Matrice 600</td><td>With Guidance</td><td>-</td><td>With Guidance</td><td>Yes</td><td>Yes</td><td>Yes</td><td>-</td><td>-</td></tr>
-<tr>
-<td>Matrice 600 Professional</td><td>With Guidance</td><td>-</td><td>With Guidance</td><td>Yes</td><td>Yes</td><td>Yes</td><td>-</td><td>-</td></tr>
+<td>Matrice 600 Professional</td><td>-</td><td>-</td><td>-</td><td>Yes</td><td>Yes</td><td>Yes</td><td>-</td><td>-</td></tr>
 </tbody></table></html>
 
 
 > Note: For mission descriptions, see [Missions](./component-guide-missions.html) in **Guides**.
 > 
-
 
 ### Flight Time
 
@@ -420,50 +389,7 @@ To help understand the potential functionality and flight time of different airc
     <td>3514</td>        
     <td>33</td>
   </tr>
-  <tr>
-    <td rowspan="4">
-    Matrice 200
-    <p><font size="1">Max Take-off Mass: 6140g</br>Compatible with XT, X4S, X5S, Z3</p>
-    </td>
-    <td align= "center">-</td>
-    <td>2x TB50</td>        
-    <td>2760</td>        
-    <td>1040</td>        
-    <td>0</td>        
-    <td>0</td>        
-    <td>3800</td>        
-    <td>27</td>        
-  </tr>
-    <tr>
-    <td align= "center">-</td>
-    <td>2x TB50</td>        
-    <td>2760</td>        
-    <td>2040</td>        
-    <td>0</td>        
-    <td>2340</td>        
-    <td>6140</td>        
-    <td>13</td>
-  </tr>
-    <tr>
-    <td align= "center">-</td>
-    <td>2x TB55</td>        
-    <td>2760</td>        
-    <td>1770</td>        
-    <td>0</td>        
-    <td>0</td>        
-    <td>4530</td>        
-    <td>38</td>
-  </tr>
-    <tr>
-    <td align= "center">-</td>
-    <td>2x TB55</td>        
-    <td>2760</td>        
-    <td>1770</td>        
-    <td>0</td>        
-    <td>1610</td>        
-    <td>6140</td>        
-    <td>24</td>
-  </tr>
+
 
   <tr>
     <td rowspan="4">
@@ -512,7 +438,43 @@ To help understand the potential functionality and flight time of different airc
  </tbody>
 </table></html>
 
-### Camera
+
+## Flight Controller Comparison
+
+<html><table class="table-aircraft-comparison">
+<thead><tr><th colspan="9">Flight Controller Comparison: <b>Flight Controller System</th></tr></thead>
+<tbody>
+<tr>
+<th width = 20%><p>Product</p></th>
+<th><p>Supported Multi-rotor</p></th>
+<th><p>DJI Products Supported</p></th>
+<th><p>Battery</p></th>
+<th><p>Supported ESC</p></th>
+<th><p>Supported SDK</p></th>
+<th><p>SDK Port</p></th>
+<th><p>Components</p></th>
+</tr>
+<tr>
+<td>A3 Pro</td><td>Quadcopter: I4，X4</br>Hexacopter: I6，X6，Y6，IY6</br>Octocopter: X8，I8，V8 Ronin-MX</br></td>
+<td>Z15</br>Ronin-MX</br>S900</br>S1000</br>S1000+</br>iOSD</br>D-RTK</br>DATALINK PRO</td>
+<td>3S to 12S LiPo</td><td>400Hz Frequency</td><td>Mobile SDK</br>Onboard SDK</td><td>API/CAN2</td>
+<td>Main controller unit</br>(integrated with IMU)</br>IMU PRO module x 2 PMU</br>GPS-Compass PRO module</br>X3 RGB LED</td></tr>
+<tr>
+<td>A3</td><td>Quadcopter: I4，X4</br>Hexacopter: I6，X6，Y6，IY6</br>Octocopter: X8，I8，V8</br></td>
+<td>Z15</br>Ronin-MX</br>S900</br>S1000</br>S1000+</br>iOSD</br>D-RTK</br>DATALINK PRO</td>
+<td>3S to 12S LiPo</td><td>400Hz Frequency</td><td>Mobile SDK</br>Onboard SDK</td><td>API/CAN2</td>
+<td>Main controller unit</br>integrated with IMU PMU</br>GPS-Compass PRO moduleRGB LED</td></tr>
+<tr>
+<td>N3</td><td>Quadcopter: I4，X4</br>Hexacopter: I6，X6，Y6，IY6</br>Octocopter: X8，I8，V8</td>
+<td>DJI GO</br>iOSD</br>Zenmuse Z15-A7</br>5D III</br>GH4</br>BMPCC</br>Ronin-MX</br>X3</br>X5</br>X5R</br>Z15</br>DJI propulsion systems</br>S900</br>S1000</br>S1000+</td>
+<td>3S to 12S LiPo</td><td>400Hz Frequency,</br>DJI Intelligent ESC</td><td>Mobile SDK</br>Onboard SDK</td><td>API/CAN2</td><td>With A3 upgrade kit (IMU Pro and GPS-Compass Pro modules)</td></tr>
+<tr>
+</tbody></table></html>
+
+
+
+
+## Camera Comparison
 
 DJI provides several camera configurations. For the Phantom and Mavic lines of products, the cameras are fixed to the product. For the Inspire and Matrice lines of products, cameras can be interchanged (Zenmuse X3, X5, X5R, Z3, XT, Z30, X4S, X5S) however not all cameras are compatible with all Inspire and Matrice aircraft. The [Products and Accessories](#supported-products) table at the top of the page details the combinations of camera and aircraft compatibility.
 
@@ -610,7 +572,7 @@ The Zenmuse XT is a thermal camera. It's specifications are difficult to compare
 
 
 
-### Remote Controller
+## Remote Controller Comparison
 
 Remote controllers will differ in:
 
