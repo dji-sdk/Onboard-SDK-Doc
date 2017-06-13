@@ -1,0 +1,48 @@
+var classDJI_1_1OSDK_1_1HotpointMission =
+[
+    [ "View", "classDJI_1_1OSDK_1_1HotpointMission.html#af758f3e80f7558696d342e3be66b9132", [
+      [ "VIEW_NORTH", "classDJI_1_1OSDK_1_1HotpointMission.html#af758f3e80f7558696d342e3be66b9132aa3150eb60dffa2245a3b48233bd965c3", null ],
+      [ "VIEW_SOUTH", "classDJI_1_1OSDK_1_1HotpointMission.html#af758f3e80f7558696d342e3be66b9132ad7e827a7aacdac3c972e5b8f323d624e", null ],
+      [ "VIEW_WEST", "classDJI_1_1OSDK_1_1HotpointMission.html#af758f3e80f7558696d342e3be66b9132a70e14e62338fbf8aa22433734c8b4e23", null ],
+      [ "VIEW_EAST", "classDJI_1_1OSDK_1_1HotpointMission.html#af758f3e80f7558696d342e3be66b9132af559b9990729848a98f2cc5a8de312ac", null ],
+      [ "VIEW_NEARBY", "classDJI_1_1OSDK_1_1HotpointMission.html#af758f3e80f7558696d342e3be66b9132a657e08147cc7210e79dbbce1c28e0454", null ]
+    ] ],
+    [ "YawMode", "classDJI_1_1OSDK_1_1HotpointMission.html#a1ae0588ac6c5a525dc929fa498bf8bdd", [
+      [ "YAW_AUTO", "classDJI_1_1OSDK_1_1HotpointMission.html#a1ae0588ac6c5a525dc929fa498bf8bdda2b57dc3e6544e7e07d164bdb61ced13b", null ],
+      [ "YAW_INSIDE", "classDJI_1_1OSDK_1_1HotpointMission.html#a1ae0588ac6c5a525dc929fa498bf8bddaab0a77aa762e319e822e2ddcf8e8eb7a", null ],
+      [ "YAW_OUTSIDE", "classDJI_1_1OSDK_1_1HotpointMission.html#a1ae0588ac6c5a525dc929fa498bf8bdda4e90f18cf85eb5066e98329434d4de37", null ],
+      [ "YAW_CUSTOM", "classDJI_1_1OSDK_1_1HotpointMission.html#a1ae0588ac6c5a525dc929fa498bf8bddaf81c4c3f3cff471a18bbec3518364514", null ],
+      [ "YAW_STATIC", "classDJI_1_1OSDK_1_1HotpointMission.html#a1ae0588ac6c5a525dc929fa498bf8bdda8ac8fc4b56efaebc7fd94f0b3dfe8fa4", null ]
+    ] ],
+    [ "HotpointMission", "classDJI_1_1OSDK_1_1HotpointMission.html#a2aa16e490d633facbbd5a14bc2e45e60", null ],
+    [ "~HotpointMission", "classDJI_1_1OSDK_1_1HotpointMission.html#a0a43a194733cf456d49e8e21f72c77fa", null ],
+    [ "getData", "classDJI_1_1OSDK_1_1HotpointMission.html#aa4c822ea6ceb0d71ed4f32572b361562", null ],
+    [ "initData", "classDJI_1_1OSDK_1_1HotpointMission.html#a25a5f7ed542cbcc3344822f9a456c7fc", null ],
+    [ "pause", "classDJI_1_1OSDK_1_1HotpointMission.html#ae84f9c568ce391508eb125140e93345b", null ],
+    [ "pause", "classDJI_1_1OSDK_1_1HotpointMission.html#aed544cba624572e7afb2fae017f908ad", null ],
+    [ "readData", "classDJI_1_1OSDK_1_1HotpointMission.html#ab9cc1476b13b764d34cfdae131f5d986", null ],
+    [ "readData", "classDJI_1_1OSDK_1_1HotpointMission.html#a249cd60d0bc4ee0fc728b4e79b713406", null ],
+    [ "resetYaw", "classDJI_1_1OSDK_1_1HotpointMission.html#a610bf9468597c4e2da987b9419715f76", null ],
+    [ "resetYaw", "classDJI_1_1OSDK_1_1HotpointMission.html#ab04d05cdaea0ca14bf7ca6cfa14550da", null ],
+    [ "resume", "classDJI_1_1OSDK_1_1HotpointMission.html#a1fc73550ee5bcc36ca1b42550a5a693b", null ],
+    [ "resume", "classDJI_1_1OSDK_1_1HotpointMission.html#a5b472af0da9c1370dae19d3e586ef00a", null ],
+    [ "setCameraView", "classDJI_1_1OSDK_1_1HotpointMission.html#aec0d5fa28da5381df51108211056b2a2", null ],
+    [ "setClockwise", "classDJI_1_1OSDK_1_1HotpointMission.html#aee686337934a2302ca8533df0cffe480", null ],
+    [ "setData", "classDJI_1_1OSDK_1_1HotpointMission.html#a93684377dc3688fabbc41eb50956bbc6", null ],
+    [ "setHotPoint", "classDJI_1_1OSDK_1_1HotpointMission.html#acd663d4e10447cb3d4bc82e1c39b9f25", null ],
+    [ "setHotPoint", "classDJI_1_1OSDK_1_1HotpointMission.html#a2946e47508f5ec822f4795eb811afc12", null ],
+    [ "setHotpointCallback", "classDJI_1_1OSDK_1_1HotpointMission.html#a4c292d437ea5af86b87f3e621935e56d", null ],
+    [ "setRadius", "classDJI_1_1OSDK_1_1HotpointMission.html#a277d36e0e8107e819360e9cf1049713e", null ],
+    [ "setYawMode", "classDJI_1_1OSDK_1_1HotpointMission.html#a105c0713ebe5d11e0242e00baf52639e", null ],
+    [ "setYawRate", "classDJI_1_1OSDK_1_1HotpointMission.html#a65dff90db7b525dec505ca4602ce2d2a", null ],
+    [ "start", "classDJI_1_1OSDK_1_1HotpointMission.html#a4a0151215ad6204133361bd81e87f44c", null ],
+    [ "start", "classDJI_1_1OSDK_1_1HotpointMission.html#a03b7adf6cbac5a91101a578ee5ff8fd5", null ],
+    [ "stop", "classDJI_1_1OSDK_1_1HotpointMission.html#ac32563e7bc146fa96831237773280b36", null ],
+    [ "stop", "classDJI_1_1OSDK_1_1HotpointMission.html#ae91b0d3ca7da7ddb083cf1f678355ff8", null ],
+    [ "updateRadius", "classDJI_1_1OSDK_1_1HotpointMission.html#a23db500bffe71b0dca90c70b10e751d4", null ],
+    [ "updateRadius", "classDJI_1_1OSDK_1_1HotpointMission.html#aafa97568c631a714657f6ec94694f792", null ],
+    [ "updateYawRate", "classDJI_1_1OSDK_1_1HotpointMission.html#a37d8a42f3faaf4958d18fca68e4bc9f4", null ],
+    [ "updateYawRate", "classDJI_1_1OSDK_1_1HotpointMission.html#a022e97754db2c8191ffbf41133102b05", null ],
+    [ "updateYawRate", "classDJI_1_1OSDK_1_1HotpointMission.html#a2999fe48791ddefe9c75a98ef7f58996", null ],
+    [ "hotPointCallback", "classDJI_1_1OSDK_1_1HotpointMission.html#aadfa36fbb7ea6eed16702fe7d0fc5cb7", null ]
+];

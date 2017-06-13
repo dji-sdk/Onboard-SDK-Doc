@@ -1,0 +1,7 @@
+<map id="osdk&#45;core/api/inc/dji_waypoint.hpp" name="osdk&#45;core/api/inc/dji_waypoint.hpp">
+<area shape="rect" id="node2" href="$dji__mission__base_8hpp.html" title="Mission&#45;Base abstract class for DJI OSDK library. " alt="" coords="167,95,313,121"/>
+<area shape="rect" id="node3" href="$dji__command_8hpp.html" title="All DJI OSDK OpenProtocol Command IDs. " alt="" coords="46,169,170,196"/>
+<area shape="rect" id="node6" href="$dji__type_8hpp.html" title="Data type and Data Structure definitions for use throughout DJI OSDK. " alt="" coords="194,169,286,196"/>
+<area shape="rect" id="node8" href="$dji__vehicle__callback_8hpp.html" title="Type definition for new Vehicle&#45;style callbacks. " alt="" coords="311,169,473,196"/>
+<area shape="rect" id="node4" href="$dji__error_8hpp.html" title="All DJI OSDK OpenProtocol ACK Error Codes. " alt="" coords="5,244,99,271"/>
+</map>
