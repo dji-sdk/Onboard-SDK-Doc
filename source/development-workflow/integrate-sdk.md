@@ -15,8 +15,6 @@ In addition to the OSDK Core Library, and any application specific third party l
 
 The application links to OSDK Core and the platform threading library at run-time.
 
-
-
 ## Including DJI OSDK Headers in Your Code
 
 The [hierarchy diagram](../introduction/sdk-architectural-overview.html#hierarchy) in the SDK Architectural Overview shows that the Vehicle class contains references to all components available through the OSDK.
@@ -54,7 +52,7 @@ Every API that communicates with the flight controller has two overloads in the 
 Blocking APIs wait until the aircraft returns an acknowledgement. Blocking calls pass that acknowledgement, along with some metadata, to the caller as a return value for the API itself.
 Most blocking APIs return an [ACK::ErrorCode](/onboard-api-reference/structDJI_1_1OSDK_1_1ACK_1_1ErrorCode.html); this allows querying of errors through the [ACK::getError](/onboard-api-reference/classDJI_1_1OSDK_1_1ACK.html#aa6a80877d41e0bffd3e44de1af585e09) and [ACK::getErrorCodeMessage](/onboard-api-reference/classDJI_1_1OSDK_1_1ACK.html#a140b7c908f55e5f6b7b9f32056828af1) APIs. Some blocking APIs have some additional information, and have specific return types.
 
-One example of calling a blocking API and using the acknowledgement is shown in the image here.
+One example of calling a blocking API and using the acknowledgement is shown in the image here, from the MFIO sample.
 
 ![blocking-api-example](../images/workflow/blocking-api-sample.png)
 
@@ -62,7 +60,7 @@ One example of calling a blocking API and using the acknowledgement is shown in 
 
 Non-blocking APIs will return immediately after the request is sent to the aircraft, and developers are expected to implement and supply a callback function to a non-blocking API to deal with the acknowledgement from the aircraft. Use these in an asynchronous program - where the handling of acknowledgements is not essential to the correct operation of the main flow of logic in the program.
 
-The image shows a non-blocking API being called, and its associated callback implementation from the MFIO sample:
+The image shows a non-blocking API being called, and its associated callback implementation that executes the exact same functionality as the blocking call shown above:
 
 ![non-blocking-api-example](../images/workflow/non-blocking-api-sample.png)
 
