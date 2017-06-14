@@ -19,7 +19,7 @@ The SDK includes:
 
 DJI offers a Mobile SDK and an Onboard SDK.
 
-Both SDKs allow applications to control DJI aircraft, but are optimized for different compute platforms and applications. The Mobile SDK is designed for Mobile Devices (such as Android and iOS) that connect to the aircraft wirelessly through the remote controller. The Onboard SDK is designed for Linux Devices (and the STM32), and connects directly to the flight controller over a serial interface. 
+Both SDKs allow applications to control DJI aircraft, but are optimized for different compute platforms and applications. The Mobile SDK is designed for Mobile Devices (such as Android and iOS) that connect to the aircraft wirelessly through the remote controller. The Onboard SDK is designed for Linux computers (and the STM32), and connects directly to the flight controller over a serial interface. 
 
 The table below compares the two SDKs.
 
@@ -94,7 +94,7 @@ The table below compares the two SDKs.
 </table>
 </html>
 
-As the Mobile SDK is for ground based applications, and the Onboard SDK for aircraft based applications, both SDKs can be used simultaneously in a solution. Both SDKs have APIs that allow communication through the aircraft's wireless link and therefore data can be sent between the mobile and onboard devices.
+As the Mobile SDK is for ground based applications, and the Onboard SDK for aircraft based applications, both SDKs can be used simultaneously in a solution. Both SDKs have APIs that allow communication through the aircraft's wireless link and therefore data can be sent between the mobile and onboard computer.
 
 ### When to use the Onboard SDK
 The reasons you should consider using the Onboard SDK are if you want to:
@@ -141,7 +141,11 @@ TODO ...
 
 ##### MFIO Control
 
-TODO ...
+The Onboard SDK allows configuring user defined pins for Multi-Function IO functionality. Multi-Function IO supports
+
+* PWM write
+* Analog to Digital Conversion
+* GPIO
 
 ##### Aircraft Telemetry
 

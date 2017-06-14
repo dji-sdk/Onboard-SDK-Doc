@@ -29,7 +29,7 @@ We provide threading implementations for all our x86 and ARM-based samples. For 
 
 ##### Application-Layer API calls
 
-This is the part of the system where functionality for controlling the drone is implemented. In the core Onboard SDK library, we provide a number of APIs that provide interfaces for all functionality made available through the [Open Protocol](../introduction/index.html). The sample programs provided execute combinations and compositions of the library API calls together with some logic.
+This is the part of the system where functionality for controlling the drone is implemented. In the core Onboard SDK library, we provide a number of APIs that provide interfaces for all functionality made available through the [Open Protocol](../../protocol-doc/open-protocol.html). The sample programs provided execute combinations and compositions of the library API calls together with some logic.
 
 ## Programming Paradigms
 
@@ -83,7 +83,7 @@ void takeControlCallback(CoreAPI* api, Header *protHeader, DJI::UserData data) {
 }
 ```
 
-3. The meaning of ACK return values(result) is explained for each command in the [Flight ACK Codes](../introduction/index.html#CMD-Val-ACK-Val) document.
+3. The meaning of ACK return values(result) is explained for each command in the [Flight ACK Codes](flight-mission-ack-codes.html) document.
 
 >Note: Callbacks, in this implementation is executed in a separate callback thread, but blocks the 'read' thread with mutexes until the callback is complete. Do not execute large pieces of code in callbacks; reading the serial port is prevented until the callback finishes.
 
@@ -101,9 +101,9 @@ void takeControlCallback(CoreAPI* api, Header *protHeader, DJI::UserData data) {
     ```c
     api->activate(&activateData, DJIonboardSDK::activationCallback, this);
     ```
-    Here, we call the overloaded `activate` function that takes in a user-specified callback and some user-provided data as the second and third arguments. The prototype for all API functions can be found in [DJI_API.h](https://github.com/dji-sdk/Onboard-SDK/blob/3.1/lib/inc/DJI_API.h).  
+    Here, we call the overloaded `activate` function that takes in a user-specified callback and some user-provided data as the second and third arguments. The prototype for all API functions can be found in [DJI_API.h](https://github.com/dji-sdk/Onboard-SDK/blob/3.1/osdk-core/inc/DJI_API.h).  
 
-3. The meaning of ACK return values(result) is explained for each command in the [Flight ACK Codes](../introduction/index.html#CMD-Val-ACK-Val) document.
+3. The meaning of ACK return values(result) is explained for each command in the [Flight ACK Codes](flight-mission-ack-codes.html) document.
 
 >Note: Callbacks, in the current implementation, are executed on the read thread. Do not execute large pieces of code in callbacks; reading the serial port is prevented until the callback finishes.
 
@@ -123,7 +123,7 @@ Blocking calls are great for maintaining a linear flow of execution. They are al
 
     This function prototype takes in a timeout as the second parameter - this is to prevent the blocking funtion from blocking execution indefinitely if the ACK is not received - when there is a packet corruption, for example.
 
-2. Parse the returned ACK according to the [Flight ACK Codes](../introduction/index.html#CMD-Val-ACK-Val) document.
+2. Parse the returned ACK according to the [Flight ACK Codes](flight-mission-ack-codes.html) document.
 
     ```c
     switch (takeControlAck)
@@ -160,7 +160,7 @@ Blocking calls are great for maintaining a linear flow of execution. They are al
 
 When calling APIs, developers should make sure that the sequence of events follows this chart:
 
-![Workflow](../images/common/Workflow.png)
+![Workflow](../../images/common/Workflow.png)
 
 There are some exceptions to this workflow - Virtual RC and arming/disarming are not part of this flow, for example - but for most cases this workflow suffices.
 
@@ -170,7 +170,7 @@ The above workflow talks about the *sending* side of user code; another importan
 
 The aircraft will always send this data at the frequencies set here (or set through the Onboard SDK's `setBroadcastFreq()` API call) over the serial port.
 
-To save this flight data, developers need to declare correct structs. The [DJI_Type.h](https://github.com/dji-sdk/Onboard-SDK/blob/3.1/lib/inc/DJI_Type.h) file contains sample structs for correctly accepting all kinds of broadcast data. 
+To save this flight data, developers need to declare correct structs. The [DJI_Type.h](https://github.com/dji-sdk/Onboard-SDK/blob/3.1/osdk-core/inc/DJI_Type.h) file contains sample structs for correctly accepting all kinds of broadcast data. 
 
 This is the BroadcastData struct definition in DJI_Type.h:
 
@@ -229,7 +229,7 @@ Movement control is a mechanism through which users can command the drone to exe
 
 We recommend developers send their movement control commands at 50Hz frequency. Developers can implement that by calling `usleep(20000)`, `ros::Duration(1/50)` or other ways which depend on the development environment.
 
-For Movement Control, specific meanings of arguments are decided by the control mode byte. For more info about Movement Control, please refer to the [Control mode byte](../appendix/index.html#Control-Mode-Byte) section in the Appendix.
+For Movement Control, specific meanings of arguments are decided by the control mode byte. For more info about Movement Control, please refer to the [Control mode byte](../../appendix/index.html#Control-Mode-Byte) section in the Appendix.
 
 To execute horizontal movement, developers can use the `HORI_POS` mode (`0x91`) for horizontal movement. More details are shown in [Position Control(HORI_POS)](#position-control-hori-pos) in this document. In this mode, speed and attitude are controlled by autopilot, thus developers do not need to worry about that.
 

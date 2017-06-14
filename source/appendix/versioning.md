@@ -7,11 +7,11 @@ keywords: [OSDK version, SDK version, version, firmware]
 
 ## Versioning
 
-The firmware versions for the flight controller differ from the firmware packages available for download through DJI Assistant 2; the firmware package contains firmware for other components as well as the flight controller.
+Firmware upgrades are delivered to DJI Products through firmware packages available on DJI Assistant 2. The firmware versioning system for the flight controller differs from the firmware **package** versioning system ; the firmware package contains firmware for other components as well as the flight controller.
 
-The Onboard SDK is only concerned with the flight control version. Activating the Onboard SDK requires the flight controller firmware version to be passed as an argument.
+The Onboard SDK is only concerned with the flight control version. Activating the Onboard SDK requires the flight controller firmware version to be supported by the Onboard SDK.
 
-On all platforms other than the STM32, this versioning is automatically handled as part of the Vehicle constructor. However on the STM32, users need to provide the version manually.
+See the table below to determine which firmware package available on DJI Assitant 2 works with which version of the OSDK.
 
 #### Finding your Firmware Package Version
 
@@ -22,16 +22,17 @@ On all platforms other than the STM32, this versioning is automatically handled 
 
 #### Mapping Firmware Package Version to Flight Control Version
 
-| Aircraft/FC    	| Firmware Package Version 	| Flight Controller Version  	|
-|----------------	|--------------------------	|----------------------------	|
-| A3/A3 Pro      	| 1.7.0.5                  	| 3.2.15.50                  	|
-|                	| 1.7.0.0                  	| 3.2.15.37                  	|
-|                	|                          	|                            	|
-| N3             	| 1.7.0.0                  	| 3.2.15.37                  	|
-|                	|                          	|                            	|
-| M600/ M600 Pro 	| 1.0.1.20                 	| 3.2.15.62                  	|
-|                	| 1.0.0.80                 	| 3.2.15.00                  	|
-
-#### Using this version in the STM Sample
-
-Once you have your flight controller version (3.x.yz.wv), simply replace the periods `.` with commas `,` and enter them on the `user_act_data.version = Version::FW(3, x, yz, wv)` line.
+| Aircraft/FC       | Firmware Package Version | Flight Controller Version  | OSDK Version Support      |
+|---------------    |--------------------------|----------------------------|----------------------     |
+| **A3/A3 Pro**     | **<Insert latest>**      | **3.2.36.7**               | **OSDK 3.3 (Current)**    |
+|                   | 1.7.0.5                  | 3.2.15.50                  | OSDK 3.2                  |
+|                   | 1.7.0.0                  | 3.2.15.37                  | OSDK 3.2                  |
+|                   |                          |                            |                           |
+| **N3**            | **<Insert Latest>**      | **3.2.36.7**               | **OSDK 3.3 (Current)**    |
+|                   | 1.7.0.0                  | 3.2.15.37                  | OSDK 3.2                  |
+|                   |                          |                            |                           |
+| **M600/M600 Pro** | **<Insert Latest>**      | **3.2.36.7**               | **OSDK 3.3 (Current)**    |
+|                   | 1.0.1.20                 | 3.2.15.62                  | OSDK 3.2                  |
+|                   | 1.0.0.80                 | 3.2.15.00                  | OSDK 3.2                  |
+|                   |                          |                            |                           |
+| **M100**          | 1.3.1.0                  | 3.1.10.0                   | OSDK 3.2                  |
