@@ -23,35 +23,32 @@ A general description of fundamental flight control concepts can be found [here]
 
 The flight controller provides detailed real-time state information at up to 200 Hz including:
  
-* Aircraft position, velocity and altitude
+* Aircraft status, position, velocity and altitude
 * Remaining battery capacity information
-* Home location **Verify for OSDK**
 * Sensor information (Compass, IMU, Satellite positioning)
-* Return home status **Verify for OSDK**
-* Motors status
-* Flight limitation and GEO system information **Verify for OSDK**
+* Return home status 
 
 ## Flying
 
-### Motor Control
+##### Motor Control
 
 Motors can be turned on and off through APIs in the DJI Onboard SDK. Motors can only be turned off when the aircraft is not flying. Motors will not turn on if there are [IMU](#IMU-Inertial-Measurement-Unit) or Compass calibration errors, or if the IMU is still pre-heating.
 
-### Beginning and Ending Flights
+##### Beginning and Ending Flights
 
 Aircraft take-off and landing can be automated through APIs in the DJI Onboard SDK. Takeoff is considered complete when the aircraft is hovering 1.2 meters (4 feet) above the ground. Automatic take-off can only be initiated when the motors are off.
 
 When a automated land command is sent, the aircraft will descend at it's current position and land.
 
-### Flight Control
+##### Flight Control
 
 Aircraft flight can be controlled in several ways:
 
-* **Manually**: While Onboard SDK used to program flight missions, manual control is also possible via remote controller to manipulate limited features of the flight (TODO add control precedence table)
+* **Manually**: While Onboard SDK used to program flight missions, manual control is also possible via remote controller to manipulate limited features of the flight 
 * **[Missions](./component-guide-missions.html)**: Simple high level flight automatioin via Mission Manager
-* **[Flight Control](#flight-control)**: Flight control commands can be sent using DJI Onboard SDK APIs that manipulate manual flight 
+* **[Flight Control](#flight-control)**: Flight control commands can be sent using DJI Onboard SDK APIs
 
-### Flight Orientation Modes
+##### Flight Orientation Modes
 
 The remote controller control sticks can be used to move the aircraft forward, backwards, left and right. However, if the direction of the aircraft isn't obvious, it can be difficult to control the aircraft predictably from pilot's perspective on the ground.
 
@@ -61,13 +58,9 @@ Several flight orientation modes are available to make flying easier:
 * **Home Lock**: The aircraft moves relative radially to the Home Point.
 * **Aircraft Heading**: The aircraft moves relative to the front of the aircraft.
 
-More details are described in [Flight Control Concepts](./flightController_concepts.html#ioc-intelligent-orientation-control).
+More details are described in [Flight Control Concepts](https://developer.dji.com/mobile-sdk/documentation/introduction/flightController_concepts.html#ioc-intelligent-orientation-control).
 
-### Flight Limitation
-
-Maximum aircraft altitude and distance from home location can be used to limit the area an aircraft can fly in. The DJI Onboard SDK provides APIs that allow developers to query and change these limitations.
-
-### Geospatial Environment Online (GEO)
+## Geospatial Environment Online (GEO)
 
 The <a href="http://www.dji.com/flysafe/geo-system" target="_blank">GEO system</a> is a best-in-class geospatial information system that provides drone operators with information that will help them make smart decisions about where and when to fly. It combines up-to-date airspace information, a warning and flight-restriction system, a mechanism for <a href="http://www.dji.com/flysafe/geo-system/unlock" target="_blank"> unlocking </a> (self-authorizing) drone flights in locations where flight is permitted under certain conditions, and a minimally-invasive accountability mechanism for these decisions.
 
@@ -75,23 +68,22 @@ The <a href="http://www.dji.com/flysafe/geo-system" target="_blank">GEO system</
 
 The Flight controller manages several sub components of the aircraft including sensors and landing gear.
 
-### Compass
+##### Compass
 
 The compass measures magnetic field direction and is used to determine the heading of the aircraft relative to North. The compass must be calibrated first time you turn on an aircraft as well as periodically if flying near magnetic interference.
 
 Compass calibration can be done manually or programmatically:
 
 * **Manual**: require the user to rotate the aircraft vertically and horizontally through the azimuth. Products with multiple compasses (like the Phantom 4) will have their compass state fused into one compass class for simplicity.
-* **Programmatic**: use DJI Onboard SDK APIs. 
 
 
-### IMU - Inertial Measurement Unit
+##### IMU - Inertial Measurement Unit
 
 The IMU contains an accelerometer and gyroscope to measure linear acceleration and angular velocity. The IMU is a sensitive system that is dependent on temperature and sometimes requires recalibration. Preheating is done automatically by the aircraft, and its status can be monitored in the flight controller state data. Calibration can be initiated by Assistant Software when required.
 
 Some products have more than one IMU for redundancy. The Phantom 4 has two IMUs, while the M600 can accommodate up to three.
 
-### RTK Positioning System
+##### RTK Positioning System
 
 DJI Products come with built-in consumer satellite positioning systems that use GPS and GLONASS satellite constellations. Consumer grade satellite positioning can have position errors of several meters.
 
@@ -135,12 +127,12 @@ Aircraft flight time is determined by total aircraft mass, the available stored 
 
 During a flight, the flight controller and smart battery will work together to estimate the remaining time of the current flight based on data collected during the flight. It will also provide estimates for the the battery percentage required to return home from the current location, or land immediately.
 
-**Verify For OSDK** In addition, two manual battery thresholds can be set that will automate aircraft behavior when the battery is running low. 
+In addition, two manual battery thresholds can be set in DJI Assistant 2 that will automate aircraft behavior when the battery is running low. 
 
 * **Return to home**: The threshold is usually set between 25% and 50%, and will automatically initiate a return to home warning if the threshold is crossed. If no action is taken within 10s, then the aircraft will automatically return home. The return home can be cancelled by pressing the **Return Home** button on the remote controller.
 * **Land in place**: The threshold is usually set between 10% and 25%, and will immediately land the aircraft if crossed.
 
-**Verify For OSDK **## Returning Home
+## Returning Home
 
 The aircraft can automatically return-to-home (RTH) in a number of scenarios:
 
@@ -152,11 +144,9 @@ When automatically going home, the aircraft will rise to a minimum altitude, fly
 
 The home point is automatically set as the location the aircraft first takes off from after power on. 
 
-**Verify For OSDK** After that, the home point can be updated through APIs in the DJI Mobile SDK but is limited to being within 30m of initial take-off location, current aircraft's location, current mobile location, or current remote controller's location (for remote controllers with GPS capability).
-
 > **Note:** If the GPS signal is not sufficient during take-off to record a home location, the home point will be recorded when the GPS signal is strong enough. When taking off in poor satellite signal environments, developers should ensure the home point being set is within the user's expectations.
 
-#### Smart RTH **Verify for control precedence**
+##### Smart RTH 
 
 Press the **Return Home** button on the remote controller to initiate Smart RTH. The aircraft will then automatically return to the last recorded Home Point. 
 
@@ -164,19 +154,19 @@ The remote controller's control sticks can be used to change the aircraft's posi
 
 Smart RTH can also be initiated and cancelled through the DJI Mobile SDK.
 
-#### Failsafe RTH **Verify for control precedence**
+##### Failsafe RTH 
 
 If the Home Point was successfully recorded and the compass is functioning normally, Failsafe RTH will be automatically activated if the remote controller signal is lost for more than three seconds. The RTH process may be interrupted and the operator may regain control of the aircraft if the remote controller signal connection is re-established.
 
-In some missions, it is not desirable to immediately return home when signal connection is lost. Failsafe behavior can be configured using DJI Mobile SDK APIs.
+In some missions, it is not desirable to immediately return home when signal connection is lost. Failsafe behavior can be configured using DJI Assistant 2.
 
-#### Low Battery RTH
+##### Low Battery RTH
 
-When the battery drops below a certain threshold (typically 25% to 50%), the aircraft will not initiate a mission or a single flight. If battery capacity dropped below allowed during a flight, aircraft will request to come home **Verify for OSDK**. When it does so, the DJI Onboard SDK APIs that monitor flight controller state will be updated to include this request, and at the same time the remote controller will start beeping.
+When the battery drops below a certain threshold (typically 25% to 50%), the aircraft will not initiate a mission or a single flight. At the same time the remote controller will start beeping.
 
-The RTH procedure can be cancelled by either pressing the home button on the remote controller, or sending a cancel command through the application using the SDK. **Verify for control precedence**
+The RTH procedure can be cancelled by either pressing the home button on the remote controller, or sending a cancel command through the application using the SDK.
 
-## Loss of Wireless Link
+##### Loss of Wireless Link
 
 The wireless connection between the remote controller and aircraft can sometimes be lost when the distance is too great, or obstacles impede the link.
 
@@ -186,17 +176,13 @@ If the link is lost for 3 seconds, the aircraft will start performing a failsafe
 * Hovering in position
 * Landing in position
 
-## Mobile SDK Communication
+## Coordinate System
 
-Applications using the DJI Onboard SDK can communicate with DJI Mobile SDK applications over the Lightbridge wireless communication link. Both send and receive payload. The size of the payload cannot be greater than 100 bytes, and will be sent in 40 byte increments every 14ms.
+Description of aircraft movement is dependent on the location and orientation of coordinate axes that make a coordinate system (or frame of reference). Many coordinate systems exist, but the two used in the DJI SDK are relative to the aircraft body (body frame), and relative to the ground (world frame).
 
-### Coordinate System
+##### Roll Pitch Control Mode
 
-Either Ground or Body coordinate system can be chosen. All horizontal movement commands (X, Y, pitch, roll) will be relative to the coordinate system.
-
-### Roll Pitch Control Mode
-
-Virtual stick commands to move the aircraft horizontally can either be set with X/Y velocities, or roll/pitch angles. Larger roll and pitch angles result in larger Y and X velocities respectively. Roll and pitch angles are always relative to the horizontal. Roll and pitch directions are dependent on the coordinate system, and can be confusing. For convenience a table detailing how the aircraft moves depending on coordinate system and roll pitch control mode is given below. These can all be calculated using the definition of the coordinate systems.
+The horizontal movement of the aircraft can either be set with X/Y velocities, or roll/pitch angles. Larger roll and pitch angles result in larger Y and X velocities respectively. Roll and pitch angles are always relative to the horizontal. Roll and pitch directions are dependent on the coordinate system, and can be confusing. For convenience a table detailing how the aircraft moves depending on coordinate system and roll pitch control mode is given below. These can all be calculated using the definition of the coordinate systems.
 
 <table id="t01">
   <thead>
@@ -282,11 +268,11 @@ Virtual stick commands to move the aircraft horizontally can either be set with 
   </tbody>
 </table>
 
-### Yaw Control Mode **Verify: ADD MORE MODES ?**
+##### Yaw Control Mode 
 
 Yaw can be changed by either angle or velocity. Yaw settings are independent of the coordinate system. Positive yaw velocity will always rotate clockwise, and yaw angle is always relative to North.
 
-### Vertical Throttle Control Mode: 
+##### Vertical Throttle Control Mode: 
 
 Vertical movement can be achieved either using velocity or position. Position is an altitude relative to the take-off location. Velocity is always relative to the aircraft, and does not follow typical coordinate system convention (positive vertical velocity results in the aircraft ascending). 
 
