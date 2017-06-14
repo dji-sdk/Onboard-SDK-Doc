@@ -1,0 +1,541 @@
+<!-- HTML header for doxygen 1.8.8-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- For Mobile Devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="generator" content="Doxygen 1.8.11"/>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <title>DJI Onboard SDK: Namespace Members</title>
+        <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
+        <script type="text/javascript" src="dynsections.js"></script>
+        <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+        <link href="doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <script src="bootstrap.min.js"></script>
+        <script type="text/javascript" src="doxy-boot.js"></script>
+    </head>
+    <body>
+        <nav id="site-header" class="site-header navbar">
+            <div class="container">
+                <div class="navbar-header"><a href="" class="logo"><img src="dji-logo@2x.png">Developer</a></div>
+                <div id="header-navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="hovedown"><a href="javascript:void(0);" class="hovedown-toggle">SDK<span class="caret"></span></a>
+                            <ul class="hovedown-menu">
+                                <li><a href="mobile-sdk">Mobile SDK</a></li>
+                                <li><a href="onboard-sdk">Onboard SDK</a></li>
+                                <li><a href="guidance-sdk">Guidance SDK</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="products">Products</a></li>
+                        <li><a href="showcase">Showcase</a></li>
+                        <li><a href="news">News</a></li>
+                        <li><a href="http://forum.dev.dji.com/en" target="_blank">Forum</a></li>
+                        <li class="hovedown"><a href="javascript:void(0);" class="hovedown-toggle">GitHub<span class="caret"></span></a>
+                            <ul class="hovedown-menu">
+                                <li><a href="https://github.com/dji-sdk/Mobile-SDK-iOS" target="_blank">iOS SDK</a></li>
+                                <li><a href="https://github.com/dji-sdk/Mobile-SDK-Android" target="_blank">Android SDK</a></li>
+                                <li><a href="https://github.com/dji-sdk/Onboard-SDK" target="_blank">Onboard SDK</a></li>
+                                <li><a href="https://github.com/dji-sdk/Guidance-SDK" target="_blank">Guidance SDK</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="challenge2016" target="_blank">Challenge</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div data-offset-top="60" data-spy="affix" class="sub-nav">
+            <div class="container">
+                <h1 class="logo">Onboard SDK</h1>
+                <nav><a href="onboard-sdk">Overview</a><a href="onboard-sdk/documentation">Documentation</a><a href="/onboard-api-reference/index.html" class="active">API Reference</a><a href="onboard-sdk/downloads">Downloads</a>
+                </nav>
+            </div>
+        </div>
+        <!--<nav class="navbar navbar-default" role="navigation">-->
+            <!--<div class="container">-->
+                <!--<div class="navbar-header">-->
+                    <!--<a href="#" class="navbar-left"><img src="dji_logo_gray_small.png" alt="DJI OSDK API Documentation" width="32px"/></a>-->
+                    <!--<a class="navbar-brand" href="index.html">ONBOARD SDK 3.3</a>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</nav>-->
+        <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+            <div class="content" id="content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 panel " style="padding-bottom: 15px; padding-top: 52px;">
+                            <div style="margin-bottom: 15px;">
+<!-- end header part -->
+<!-- Generated by Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li class="current"><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="namespaces.html"><span>Namespace&#160;List</span></a></li>
+      <li class="current"><a href="namespacemembers.html"><span>Namespace&#160;Members</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow3" class="tabs2">
+    <ul class="tablist">
+      <li class="current"><a href="namespacemembers.html"><span>All</span></a></li>
+      <li><a href="namespacemembers_vars.html"><span>Variables</span></a></li>
+      <li><a href="namespacemembers_type.html"><span>Typedefs</span></a></li>
+      <li><a href="namespacemembers_enum.html"><span>Enumerations</span></a></li>
+      <li><a href="namespacemembers_eval.html"><span>Enumerator</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow4" class="tabs3">
+    <ul class="tablist">
+      <li><a href="#index_b"><span>b</span></a></li>
+      <li><a href="#index_c"><span>c</span></a></li>
+      <li><a href="#index_d"><span>d</span></a></li>
+      <li><a href="#index_e"><span>e</span></a></li>
+      <li><a href="#index_g"><span>g</span></a></li>
+      <li><a href="#index_h"><span>h</span></a></li>
+      <li><a href="#index_m"><span>m</span></a></li>
+      <li><a href="#index_p"><span>p</span></a></li>
+      <li><a href="#index_q"><span>q</span></a></li>
+      <li><a href="#index_r"><span>r</span></a></li>
+      <li><a href="#index_s"><span>s</span></a></li>
+      <li><a href="#index_t"><span>t</span></a></li>
+      <li><a href="#index_u"><span>u</span></a></li>
+      <li><a href="#index_v"><span>v</span></a></li>
+      <li class="current"><a href="#index_w"><span>w</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="contents">
+<div class="textblock">Here is a list of all documented namespace members with links to the namespaces they belong to:</div>
+
+<h3><a class="anchor" id="index_b"></a>- b -</h3><ul>
+<li>Battery
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#ab8627e735286fa269ccd69b4d6598945">DJI::OSDK::Telemetry</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
+<li>CMD_SETSupportMatrix
+: <a class="el" href="namespaceDJI_1_1OSDK.html#ad664c6de8e9f134f835b660814cae1b8">DJI::OSDK</a>
+</li>
+<li>CTRL_MODE_ATTI_CTRL_YAW_RATE
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1VehicleStatus.html#a9d0d80b981d2e3c5850fafdd9fd701f6a99dc5c7691caafe0e26edd8ade3208d3">DJI::OSDK::VehicleStatus</a>
+</li>
+<li>CTRL_MODE_GPS_ATII_CTRL_CL_YAW_RATE
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1VehicleStatus.html#a9d0d80b981d2e3c5850fafdd9fd701f6a8ff31abc048931024f92b6ded963cbbd">DJI::OSDK::VehicleStatus</a>
+</li>
+<li>CTRL_MODE_GPS_ATTI_CTRL_YAW_RATE
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1VehicleStatus.html#a9d0d80b981d2e3c5850fafdd9fd701f6a2fa191d8fe47ccc30f90799052ed6c31">DJI::OSDK::VehicleStatus</a>
+</li>
+<li>CTRL_MODE_MODE_NOT_SUPPORTED
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1VehicleStatus.html#a9d0d80b981d2e3c5850fafdd9fd701f6a19e4c1311ceb56178f0dc29642392ec4">DJI::OSDK::VehicleStatus</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_d"></a>- d -</h3><ul>
+<li>DispatchInfo
+: <a class="el" href="namespaceDJI_1_1OSDK.html#a6e1701dde6d5a10a3e0f39a2f9a4080e">DJI::OSDK</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_e"></a>- e -</h3><ul>
+<li>encrypt
+: <a class="el" href="namespaceDJI_1_1OSDK.html#a4c51013df4e24ad707a5c31b27483e9f">DJI::OSDK</a>
+</li>
+<li>extendedVersionBase
+: <a class="el" href="namespaceDJI_1_1OSDK.html#a0d2ad9adfdf62e6d7123e2ef73cdff88">DJI::OSDK</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_g"></a>- g -</h3><ul>
+<li>Gimbal
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a23421d83f0d09f28ea3d8d0757b7260b">DJI::OSDK::Telemetry</a>
+</li>
+<li>GimbalStatus
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a58d206190f365a978c94bcf4be8fea05">DJI::OSDK::Telemetry</a>
+</li>
+<li>GlobalPosition
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a72c760de7b3be338fe910e675a0a98cb">DJI::OSDK::Telemetry</a>
+</li>
+<li>GPSDetail
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a6a9bde380a5e5d1818055f05d1f1449b">DJI::OSDK::Telemetry</a>
+</li>
+<li>GPSFused
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a246c4e343c723bb671ef18b7aacc7829">DJI::OSDK::Telemetry</a>
+</li>
+<li>GPSInfo
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#aa0fa8017bda3764d92235a20c86e9084">DJI::OSDK::Telemetry</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_h"></a>- h -</h3><ul>
+<li>HardSyncData
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a3a7a0e798f8be5e0c208338672c5b26e">DJI::OSDK::Telemetry</a>
+</li>
+<li>Header
+: <a class="el" href="namespaceDJI_1_1OSDK.html#ad668392b507a4a224a10c3ca219b462a">DJI::OSDK</a>
+</li>
+<li>HotPointSettings
+: <a class="el" href="namespaceDJI_1_1OSDK.html#ae77ba11af1f90df05889c12732c74317">DJI::OSDK</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_m"></a>- m -</h3><ul>
+<li>Mag
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#acca53ea861f162aadc2753ff4c44eb70">DJI::OSDK::Telemetry</a>
+</li>
+<li>mandatoryVersionBase
+: <a class="el" href="namespaceDJI_1_1OSDK.html#af1b92aeca3ba6f10371ec3dd7575eda4">DJI::OSDK</a>
+</li>
+<li>MAX_INCOMING_DATA_SIZE
+: <a class="el" href="namespaceDJI_1_1OSDK.html#a0278bdc24560401128675003f8cb2ae3">DJI::OSDK</a>
+</li>
+<li>MODE_ASSISTED_TAKEOFF
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1VehicleStatus.html#a9d0d80b981d2e3c5850fafdd9fd701f6a7c7bd5115bea11447f36a53e5aa1b2c6">DJI::OSDK::VehicleStatus</a>
+</li>
+<li>MODE_ATTITUDE
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1VehicleStatus.html#a9d0d80b981d2e3c5850fafdd9fd701f6a5702b84d7505d6affb706572d09c8541">DJI::OSDK::VehicleStatus</a>
+</li>
+<li>MODE_AUTO_LANDING
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1VehicleStatus.html#a9d0d80b981d2e3c5850fafdd9fd701f6a41bb3dddb70c5bd04cc652422834be88">DJI::OSDK::VehicleStatus</a>
+</li>
+<li>MODE_AUTO_TAKEOFF
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1VehicleStatus.html#a9d0d80b981d2e3c5850fafdd9fd701f6a54b6a15df4d98d6885fd24e6cdbf461a">DJI::OSDK::VehicleStatus</a>
+</li>
+<li>MODE_CINEMATIC
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1VehicleStatus.html#a9d0d80b981d2e3c5850fafdd9fd701f6ab513acbb1b7d64c3b3fc9085b2b9eb11">DJI::OSDK::VehicleStatus</a>
+</li>
+<li>MODE_COURSELOCK
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1VehicleStatus.html#a9d0d80b981d2e3c5850fafdd9fd701f6a2a5808c30178be7be8c558e066005687">DJI::OSDK::VehicleStatus</a>
+</li>
+<li>MODE_CTRL_FARMING
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1VehicleStatus.html#a9d0d80b981d2e3c5850fafdd9fd701f6a5f658a72d273297cd4d16257c3610403">DJI::OSDK::VehicleStatus</a>
+</li>
+<li>MODE_CTRL_FPV
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1VehicleStatus.html#a9d0d80b981d2e3c5850fafdd9fd701f6ae02eda80057a58d427b113964bc060b6">DJI::OSDK::VehicleStatus</a>
+</li>
+<li>MODE_ENGINE_START
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1VehicleStatus.html#a9d0d80b981d2e3c5850fafdd9fd701f6a16e542b5b9144500b016c1a8ef729bcb">DJI::OSDK::VehicleStatus</a>
+</li>
+<li>MODE_FORCE_AUTO_LANDING
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1VehicleStatus.html#a9d0d80b981d2e3c5850fafdd9fd701f6a4a07431404c3bac158d8733261bdf8eb">DJI::OSDK::VehicleStatus</a>
+</li>
+<li>MODE_GPS_GENTAL
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1VehicleStatus.html#a9d0d80b981d2e3c5850fafdd9fd701f6a44abe45ae114cb3940adc5847b7db147">DJI::OSDK::VehicleStatus</a>
+</li>
+<li>MODE_GPS_SPORT
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1VehicleStatus.html#a9d0d80b981d2e3c5850fafdd9fd701f6acf75410ba66b4422ba3545a177d2b3be">DJI::OSDK::VehicleStatus</a>
+</li>
+<li>MODE_HOTPOINT_MODE
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1VehicleStatus.html#a9d0d80b981d2e3c5850fafdd9fd701f6ab3f0676aa2d2b30b3d9447dfd615187a">DJI::OSDK::VehicleStatus</a>
+</li>
+<li>MODE_MANUAL_CTRL
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1VehicleStatus.html#a9d0d80b981d2e3c5850fafdd9fd701f6aea6fb284932d75735920138d6672b646">DJI::OSDK::VehicleStatus</a>
+</li>
+<li>MODE_MISSION_FOLLOW
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1VehicleStatus.html#a9d0d80b981d2e3c5850fafdd9fd701f6a5acc12c37dc8134e2f3a6837f83bf533">DJI::OSDK::VehicleStatus</a>
+</li>
+<li>MODE_NAVI_GO_HOME
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1VehicleStatus.html#a9d0d80b981d2e3c5850fafdd9fd701f6abb645d98fa2602c2fab0f6f4d634cb4c">DJI::OSDK::VehicleStatus</a>
+</li>
+<li>MODE_NAVI_SDK_CTRL
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1VehicleStatus.html#a9d0d80b981d2e3c5850fafdd9fd701f6af2527d8588f6e382a45c9e3b75e04f06">DJI::OSDK::VehicleStatus</a>
+</li>
+<li>MODE_NAVI_USER_DEFINED
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1VehicleStatus.html#a9d0d80b981d2e3c5850fafdd9fd701f6a079b75e18e581c67053c1c75fdb3a242">DJI::OSDK::VehicleStatus</a>
+</li>
+<li>MODE_P_GPS
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1VehicleStatus.html#a9d0d80b981d2e3c5850fafdd9fd701f6a1c6d97776e9c847f2d3c6bf1c16d3e7f">DJI::OSDK::VehicleStatus</a>
+</li>
+<li>MODE_P_GPS_COURSELOCK
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1VehicleStatus.html#a9d0d80b981d2e3c5850fafdd9fd701f6af027c5cc4c9bf93bc8f5850f7a3e342a">DJI::OSDK::VehicleStatus</a>
+</li>
+<li>MODE_P_GPS_HOMELOCK
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1VehicleStatus.html#a9d0d80b981d2e3c5850fafdd9fd701f6ab4d8c8fdb5b9328a698e5601ac238224">DJI::OSDK::VehicleStatus</a>
+</li>
+<li>MODE_SEARCH_MODE
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1VehicleStatus.html#a9d0d80b981d2e3c5850fafdd9fd701f6a925920502f1779ca036bd3ced58a0e11">DJI::OSDK::VehicleStatus</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_p"></a>- p -</h3><ul>
+<li>PositionData
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a46f49eee9621f8df6d283591aec4a324">DJI::OSDK::Telemetry</a>
+</li>
+<li>PositionFrame
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#aae196d22f89bf0a7657c97b33cd63494">DJI::OSDK::Telemetry</a>
+</li>
+<li>PositionTimeStamp
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#af021f9dd32b2a4f738b77b0732163788">DJI::OSDK::Telemetry</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_q"></a>- q -</h3><ul>
+<li>Quaternion
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a8f94bf8e3675ca6f4083534aadf7127a">DJI::OSDK::Telemetry</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_r"></a>- r -</h3><ul>
+<li>RC
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a2115e658a94a872327fa54ca268bb5f2">DJI::OSDK::Telemetry</a>
+</li>
+<li>RelativePosition
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a7d6224f8c2f0f9d992247ceddf888631">DJI::OSDK::Telemetry</a>
+</li>
+<li>RTK
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a7db716c64fc34cbc8efca4598fe2cc45">DJI::OSDK::Telemetry</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
+<li>SDKInfo
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a1199ecc601e19b0a21718ec47ab62a05">DJI::OSDK::Telemetry</a>
+</li>
+<li>Status
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a9ddda77e4b4cf68092cb8ed81c7de03c">DJI::OSDK::Telemetry</a>
+</li>
+<li>SyncStamp
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a4cc21640d26dff1b6ada4edbaa52fda3">DJI::OSDK::Telemetry</a>
+</li>
+<li>SyncTimestamp
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a02c5356848b432627e7e70507689045d">DJI::OSDK::Telemetry</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_t"></a>- t -</h3><ul>
+<li>TimeStamp
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#ac413584451e586917d9f6c7ebbd0d217">DJI::OSDK::Telemetry</a>
+</li>
+<li>TOPIC_ACCELERATION_BODY
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaaa7e75b9735e4f668d1b4de6e8ec438e1">DJI::OSDK::Telemetry</a>
+</li>
+<li>TOPIC_ACCELERATION_GROUND
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaa814554007c7776ed379350a6ffaa5171">DJI::OSDK::Telemetry</a>
+</li>
+<li>TOPIC_ACCELERATION_RAW
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaa99df11872b1818d274fb5d068abe07fd">DJI::OSDK::Telemetry</a>
+</li>
+<li>TOPIC_ALTITUDE_BAROMETER
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaa931d3d60e84eff70f1b633e1c0408ec2">DJI::OSDK::Telemetry</a>
+</li>
+<li>TOPIC_ALTITUDE_FUSIONED
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaa49545f17cbeaabee4f33ccce2e277a43">DJI::OSDK::Telemetry</a>
+</li>
+<li>TOPIC_ANGULAR_RATE_FUSIONED
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaaa5ec29e47ac74fcf6914a80e14fd3cdf">DJI::OSDK::Telemetry</a>
+</li>
+<li>TOPIC_ANGULAR_RATE_RAW
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaae259a558c35f9c8b0dd7f5ef900ca3dc">DJI::OSDK::Telemetry</a>
+</li>
+<li>TOPIC_BATTERY_INFO
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaa4070ae9a844631e26464188250389d55">DJI::OSDK::Telemetry</a>
+</li>
+<li>TOPIC_COMPASS
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaa864ce2d677a42d20413bc086f2857d4b">DJI::OSDK::Telemetry</a>
+</li>
+<li>TOPIC_CONTROL_DEVICE
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaabbc031091fa68241c499e7eca018e4c9">DJI::OSDK::Telemetry</a>
+</li>
+<li>TOPIC_GIMBAL_ANGLES
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaa6fccb78faebd094b3257b1c61ec2b972">DJI::OSDK::Telemetry</a>
+</li>
+<li>TOPIC_GIMBAL_STATUS
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaa274f91bf61bf3b25702d0e9fe48e18ce">DJI::OSDK::Telemetry</a>
+</li>
+<li>TOPIC_GPS_CONTROL_LEVEL
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaaa73d88af1c654946585bc9db32539cfb">DJI::OSDK::Telemetry</a>
+</li>
+<li>TOPIC_GPS_DATE
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaac0ab8cd2cc9114383d099514411c6d12">DJI::OSDK::Telemetry</a>
+</li>
+<li>TOPIC_GPS_DETAILS
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaab8be6d1a971658616b1f5b627f8cfeda">DJI::OSDK::Telemetry</a>
+</li>
+<li>TOPIC_GPS_FUSED
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaa926a5966ea903ee80fe4f479c15bf8d2">DJI::OSDK::Telemetry</a>
+</li>
+<li>TOPIC_GPS_POSITION
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaacd2584480d7ea2f79fd6cd7314296efa">DJI::OSDK::Telemetry</a>
+</li>
+<li>TOPIC_GPS_SIGNAL_LEVEL
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaa1b0f298e4e2378683c1b0f4f406288eb">DJI::OSDK::Telemetry</a>
+</li>
+<li>TOPIC_GPS_TIME
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaa8548b3f5c078df707c67f2474ae33dc4">DJI::OSDK::Telemetry</a>
+</li>
+<li>TOPIC_GPS_VELOCITY
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaa2943afd2cfb78f3541b93af525928ce7">DJI::OSDK::Telemetry</a>
+</li>
+<li>TOPIC_HARD_SYNC
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaa9c598051e527734dc05d0c22ad0bab67">DJI::OSDK::Telemetry</a>
+</li>
+<li>TOPIC_HEIGHT_FUSION
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaadb1aaceca520b5f7d3590bcb43d5a912">DJI::OSDK::Telemetry</a>
+</li>
+<li>TOPIC_HEIGHT_HOMEPOOINT
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaa6c4ddd5a37bb1f1926a4ee723bd27aa5">DJI::OSDK::Telemetry</a>
+</li>
+<li>TOPIC_QUATERNION
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaa1a333381ae5690e2750ec8997c5b7f49">DJI::OSDK::Telemetry</a>
+</li>
+<li>TOPIC_RC
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaa7a7169a4ac7c7a7ddc59df78caa4d63c">DJI::OSDK::Telemetry</a>
+</li>
+<li>TOPIC_RTK_POSITION
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaac69f71da38b6360a0a7e7d8980ded9f0">DJI::OSDK::Telemetry</a>
+</li>
+<li>TOPIC_RTK_POSITION_INFO
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaafea45f2eeb04ab686b04e69dd72b6527">DJI::OSDK::Telemetry</a>
+</li>
+<li>TOPIC_RTK_VELOCITY
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaa83ca3bcf18fd86ffca3f1dc68a368fdc">DJI::OSDK::Telemetry</a>
+</li>
+<li>TOPIC_RTK_YAW
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaaf9b09edd05dd5207706521fe10eed76d">DJI::OSDK::Telemetry</a>
+</li>
+<li>TOPIC_RTK_YAW_INFO
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaaaf908b0645cb2b944325cda3dda19f99">DJI::OSDK::Telemetry</a>
+</li>
+<li>TOPIC_STATUS_DISPLAYMODE
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaab7dcb77913104dfaaac4c5cbb030a30b">DJI::OSDK::Telemetry</a>
+</li>
+<li>TOPIC_STATUS_FLIGHT
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaa3d059115c39fe3f9cadd7d2feada21f5">DJI::OSDK::Telemetry</a>
+</li>
+<li>TOPIC_STATUS_LANDINGGEAR
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaa3006b5da7953827ee11f875d8a1f1555">DJI::OSDK::Telemetry</a>
+</li>
+<li>TOPIC_STATUS_MOTOR_START_ERROR
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaaeb3fd8bfa333024495855f0a8153a9df">DJI::OSDK::Telemetry</a>
+</li>
+<li>TOPIC_UID
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#abf4195c02ef49660caaf1b238bb91349">DJI::OSDK::Telemetry</a>
+</li>
+<li>TOPIC_VELOCITY
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaad70452fb4cc2d81c8edd3832b8ccdc19">DJI::OSDK::Telemetry</a>
+</li>
+<li>TopicName
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfa">DJI::OSDK::Telemetry</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_u"></a>- u -</h3><ul>
+<li>UserData
+: <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">DJI::OSDK</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_v"></a>- v -</h3><ul>
+<li>Vector3d
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#ae8a60f88132f42a16082ce6dd83bc404">DJI::OSDK::Telemetry</a>
+</li>
+<li>Vector3f
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a907945255a0a054a27483600d66b6ffb">DJI::OSDK::Telemetry</a>
+</li>
+<li>VehicleCallBack
+: <a class="el" href="namespaceDJI_1_1OSDK.html#a20a68c21abe449cf5f133f7d398055d3">DJI::OSDK</a>
+</li>
+<li>VehicleCallBackHandler
+: <a class="el" href="namespaceDJI_1_1OSDK.html#a13ff7c1eae1e64a40621f3f77714afd0">DJI::OSDK</a>
+</li>
+<li>Velocity
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a14063ccfc0ed1034ac7db03b328b61b5">DJI::OSDK::Telemetry</a>
+</li>
+<li>VelocityInfo
+: <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a350417ea830a66048be40eb1382ece06">DJI::OSDK::Telemetry</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_w"></a>- w -</h3><ul>
+<li>WayPointFinishData
+: <a class="el" href="namespaceDJI_1_1OSDK.html#adde3d427e6840acde772d2f41986cad6">DJI::OSDK</a>
+</li>
+<li>WayPointIncidentType
+: <a class="el" href="namespaceDJI_1_1OSDK.html#af3a7a0d8bedc58f01394be842a67f825">DJI::OSDK</a>
+</li>
+<li>WayPointInitSettings
+: <a class="el" href="namespaceDJI_1_1OSDK.html#a4a93159909ea49707832eb67135e8ebe">DJI::OSDK</a>
+</li>
+<li>WayPointSettings
+: <a class="el" href="namespaceDJI_1_1OSDK.html#a916c7d68f44d00fb6b01c55385ed927a">DJI::OSDK</a>
+</li>
+</ul>
+</div><!-- contents -->
+<!-- HTML footer for doxygen 1.8.8-->
+<!-- start footer part -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr class="footer"/><address class="footer"><small>
+<a href="https://developer.dji.com/onboard-sdk/documentation/introduction/index.html">
+<img class="footer" src="dji-logo-foot.png" alt="DJI Onboard SDK" height="20px" />
+</a>
+</small></address>
+</body>
+</html>

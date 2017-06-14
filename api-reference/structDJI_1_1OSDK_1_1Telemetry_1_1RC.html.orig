@@ -1,0 +1,262 @@
+<!-- HTML header for doxygen 1.8.8-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- For Mobile Devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="generator" content="Doxygen 1.8.11"/>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <title>DJI Onboard SDK: DJI::OSDK::Telemetry::RC Struct Reference</title>
+        <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
+        <script type="text/javascript" src="dynsections.js"></script>
+        <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+        <link href="doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <script src="bootstrap.min.js"></script>
+        <script type="text/javascript" src="doxy-boot.js"></script>
+    </head>
+    <body>
+        <nav id="site-header" class="site-header navbar">
+            <div class="container">
+                <div class="navbar-header"><a href="" class="logo"><img src="dji-logo@2x.png">Developer</a></div>
+                <div id="header-navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="hovedown"><a href="javascript:void(0);" class="hovedown-toggle">SDK<span class="caret"></span></a>
+                            <ul class="hovedown-menu">
+                                <li><a href="mobile-sdk">Mobile SDK</a></li>
+                                <li><a href="onboard-sdk">Onboard SDK</a></li>
+                                <li><a href="guidance-sdk">Guidance SDK</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="products">Products</a></li>
+                        <li><a href="showcase">Showcase</a></li>
+                        <li><a href="news">News</a></li>
+                        <li><a href="http://forum.dev.dji.com/en" target="_blank">Forum</a></li>
+                        <li class="hovedown"><a href="javascript:void(0);" class="hovedown-toggle">GitHub<span class="caret"></span></a>
+                            <ul class="hovedown-menu">
+                                <li><a href="https://github.com/dji-sdk/Mobile-SDK-iOS" target="_blank">iOS SDK</a></li>
+                                <li><a href="https://github.com/dji-sdk/Mobile-SDK-Android" target="_blank">Android SDK</a></li>
+                                <li><a href="https://github.com/dji-sdk/Onboard-SDK" target="_blank">Onboard SDK</a></li>
+                                <li><a href="https://github.com/dji-sdk/Guidance-SDK" target="_blank">Guidance SDK</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="challenge2016" target="_blank">Challenge</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div data-offset-top="60" data-spy="affix" class="sub-nav">
+            <div class="container">
+                <h1 class="logo">Onboard SDK</h1>
+                <nav><a href="onboard-sdk">Overview</a><a href="onboard-sdk/documentation">Documentation</a><a href="/onboard-api-reference/index.html" class="active">API Reference</a><a href="onboard-sdk/downloads">Downloads</a>
+                </nav>
+            </div>
+        </div>
+        <!--<nav class="navbar navbar-default" role="navigation">-->
+            <!--<div class="container">-->
+                <!--<div class="navbar-header">-->
+                    <!--<a href="#" class="navbar-left"><img src="dji_logo_gray_small.png" alt="DJI OSDK API Documentation" width="32px"/></a>-->
+                    <!--<a class="navbar-brand" href="index.html">ONBOARD SDK 3.3</a>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</nav>-->
+        <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+            <div class="content" id="content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 panel " style="padding-bottom: 15px; padding-top: 52px;">
+                            <div style="margin-bottom: 15px;">
+<!-- end header part -->
+<!-- Generated by Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
+      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceDJI.html">DJI</a></li><li class="navelem"><a class="el" href="namespaceDJI_1_1OSDK.html">OSDK</a></li><li class="navelem"><a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html">Telemetry</a></li><li class="navelem"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1RC.html">RC</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="structDJI_1_1OSDK_1_1Telemetry_1_1RC-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">DJI::OSDK::Telemetry::RC Struct Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>struct for data broadcast and data subscription, return <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1RC.html" title="struct for data broadcast and data subscription, return RC reading ">RC</a> reading  
+ <a href="structDJI_1_1OSDK_1_1Telemetry_1_1RC.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="dji__telemetry_8hpp_source.html">dji_telemetry.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a8633b4f26c56296595dd0ac16604718b"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1RC.html#a8633b4f26c56296595dd0ac16604718b">roll</a></td></tr>
+<tr class="separator:a8633b4f26c56296595dd0ac16604718b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab09e85897d3483b799da499b5cabd2a2"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1RC.html#ab09e85897d3483b799da499b5cabd2a2">pitch</a></td></tr>
+<tr class="separator:ab09e85897d3483b799da499b5cabd2a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adedd62a79a13c4c830c189853b81e4a1"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1RC.html#adedd62a79a13c4c830c189853b81e4a1">yaw</a></td></tr>
+<tr class="separator:adedd62a79a13c4c830c189853b81e4a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14a47a19c1e41fbb7fdce70c822cf5bc"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1RC.html#a14a47a19c1e41fbb7fdce70c822cf5bc">throttle</a></td></tr>
+<tr class="separator:a14a47a19c1e41fbb7fdce70c822cf5bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e69e1b32599986319ad3312ca5723de"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1RC.html#a9e69e1b32599986319ad3312ca5723de">mode</a></td></tr>
+<tr class="separator:a9e69e1b32599986319ad3312ca5723de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8cfe628ed6ab215c7a96e711cf1c2bc"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1RC.html#ab8cfe628ed6ab215c7a96e711cf1c2bc">gear</a></td></tr>
+<tr class="separator:ab8cfe628ed6ab215c7a96e711cf1c2bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>struct for data broadcast and data subscription, return <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1RC.html" title="struct for data broadcast and data subscription, return RC reading ">RC</a> reading </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="ab8cfe628ed6ab215c7a96e711cf1c2bc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int16_t DJI::OSDK::Telemetry::RC::gear</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Up: -10000, Down: -4545 </p>
+
+</div>
+</div>
+<a class="anchor" id="a9e69e1b32599986319ad3312ca5723de"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int16_t DJI::OSDK::Telemetry::RC::mode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>P: -8000, A: 0, F: 8000 </p>
+
+</div>
+</div>
+<a class="anchor" id="ab09e85897d3483b799da499b5cabd2a2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int16_t DJI::OSDK::Telemetry::RC::pitch</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>[-10000,10000] </p>
+
+</div>
+</div>
+<a class="anchor" id="a8633b4f26c56296595dd0ac16604718b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int16_t DJI::OSDK::Telemetry::RC::roll</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>[-10000,10000] </p>
+
+</div>
+</div>
+<a class="anchor" id="a14a47a19c1e41fbb7fdce70c822cf5bc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int16_t DJI::OSDK::Telemetry::RC::throttle</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>[-10000,10000] </p>
+
+</div>
+</div>
+<a class="anchor" id="adedd62a79a13c4c830c189853b81e4a1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int16_t DJI::OSDK::Telemetry::RC::yaw</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>[-10000,10000] </p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>osdk-core/api/inc/<a class="el" href="dji__telemetry_8hpp_source.html">dji_telemetry.hpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- HTML footer for doxygen 1.8.8-->
+<!-- start footer part -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr class="footer"/><address class="footer"><small>
+<a href="https://developer.dji.com/onboard-sdk/documentation/introduction/index.html">
+<img class="footer" src="dji-logo-foot.png" alt="DJI Onboard SDK" height="20px" />
+</a>
+</small></address>
+</body>
+</html>

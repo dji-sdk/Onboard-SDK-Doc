@@ -1,0 +1,4 @@
+<map id="DJI::OSDK::MissionBase" name="DJI::OSDK::MissionBase">
+<area shape="rect" id="node2" href="$classDJI_1_1OSDK_1_1HotpointMission.html" title="APIs for Hotpoint (Point of Interest) Missions. " alt="" coords="5,277,196,531"/>
+<area shape="rect" id="node3" href="$classDJI_1_1OSDK_1_1WaypointMission.html" title="APIs for GPS Waypoint Missions. " alt="" coords="221,263,418,545"/>
+</map>

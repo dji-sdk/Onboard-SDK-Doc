@@ -1,0 +1,765 @@
+<!-- HTML header for doxygen 1.8.8-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- For Mobile Devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="generator" content="Doxygen 1.8.11"/>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <title>DJI Onboard SDK: DJI::OSDK::DataBroadcast Class Reference</title>
+        <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
+        <script type="text/javascript" src="dynsections.js"></script>
+        <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+        <link href="doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <script src="bootstrap.min.js"></script>
+        <script type="text/javascript" src="doxy-boot.js"></script>
+    </head>
+    <body>
+        <nav id="site-header" class="site-header navbar">
+            <div class="container">
+                <div class="navbar-header"><a href="" class="logo"><img src="dji-logo@2x.png">Developer</a></div>
+                <div id="header-navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="hovedown"><a href="javascript:void(0);" class="hovedown-toggle">SDK<span class="caret"></span></a>
+                            <ul class="hovedown-menu">
+                                <li><a href="mobile-sdk">Mobile SDK</a></li>
+                                <li><a href="onboard-sdk">Onboard SDK</a></li>
+                                <li><a href="guidance-sdk">Guidance SDK</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="products">Products</a></li>
+                        <li><a href="showcase">Showcase</a></li>
+                        <li><a href="news">News</a></li>
+                        <li><a href="http://forum.dev.dji.com/en" target="_blank">Forum</a></li>
+                        <li class="hovedown"><a href="javascript:void(0);" class="hovedown-toggle">GitHub<span class="caret"></span></a>
+                            <ul class="hovedown-menu">
+                                <li><a href="https://github.com/dji-sdk/Mobile-SDK-iOS" target="_blank">iOS SDK</a></li>
+                                <li><a href="https://github.com/dji-sdk/Mobile-SDK-Android" target="_blank">Android SDK</a></li>
+                                <li><a href="https://github.com/dji-sdk/Onboard-SDK" target="_blank">Onboard SDK</a></li>
+                                <li><a href="https://github.com/dji-sdk/Guidance-SDK" target="_blank">Guidance SDK</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="challenge2016" target="_blank">Challenge</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div data-offset-top="60" data-spy="affix" class="sub-nav">
+            <div class="container">
+                <h1 class="logo">Onboard SDK</h1>
+                <nav><a href="onboard-sdk">Overview</a><a href="onboard-sdk/documentation">Documentation</a><a href="/onboard-api-reference/index.html" class="active">API Reference</a><a href="onboard-sdk/downloads">Downloads</a>
+                </nav>
+            </div>
+        </div>
+        <!--<nav class="navbar navbar-default" role="navigation">-->
+            <!--<div class="container">-->
+                <!--<div class="navbar-header">-->
+                    <!--<a href="#" class="navbar-left"><img src="dji_logo_gray_small.png" alt="DJI OSDK API Documentation" width="32px"/></a>-->
+                    <!--<a class="navbar-brand" href="index.html">ONBOARD SDK 3.3</a>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</nav>-->
+        <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+            <div class="content" id="content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 panel " style="padding-bottom: 15px; padding-top: 52px;">
+                            <div style="margin-bottom: 15px;">
+<!-- end header part -->
+<!-- Generated by Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
+      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceDJI.html">DJI</a></li><li class="navelem"><a class="el" href="namespaceDJI_1_1OSDK.html">OSDK</a></li><li class="navelem"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DataBroadcast</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="classDJI_1_1OSDK_1_1DataBroadcast-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">DJI::OSDK::DataBroadcast Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html" title="This namespace encapsulates all available telemetry topics through either Broadcast or Subscribe...">Telemetry</a> API through asynchronous "Broadcast"-style messages.  
+ <a href="classDJI_1_1OSDK_1_1DataBroadcast.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="dji__broadcast_8hpp_source.html">dji_broadcast.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a4c999bae5bd618b8b2ae5acacf03a665"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c999bae5bd618b8b2ae5acacf03a665"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>FREQ</b> { <br />
+&#160;&#160;<b>FREQ_0HZ</b> = 0, 
+<br />
+&#160;&#160;<b>FREQ_1HZ</b> = 1, 
+<br />
+&#160;&#160;<b>FREQ_10HZ</b> = 2, 
+<br />
+&#160;&#160;<b>FREQ_50HZ</b> = 3, 
+<br />
+&#160;&#160;<b>FREQ_100HZ</b> = 4, 
+<br />
+&#160;&#160;<b>FREQ_200HZ</b> = 6, 
+<br />
+&#160;&#160;<b>FREQ_400HZ</b> = 7, 
+<br />
+&#160;&#160;<b>FREQ_HOLD</b> = 5
+<br />
+ }</td></tr>
+<tr class="separator:a4c999bae5bd618b8b2ae5acacf03a665"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a198083070852870f5fa700417442813b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a198083070852870f5fa700417442813b"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>DATA_ENABLE_FLAG</b> { <br />
+&#160;&#160;<b>HAS_TIME</b> = 0x0001, 
+<br />
+&#160;&#160;<b>HAS_Q</b> = 0x0002, 
+<br />
+&#160;&#160;<b>HAS_A</b> = 0x0004, 
+<br />
+&#160;&#160;<b>HAS_V</b> = 0x0008, 
+<br />
+&#160;&#160;<b>HAS_W</b> = 0x0010, 
+<br />
+&#160;&#160;<b>HAS_POS</b> = 0x0020, 
+<br />
+&#160;&#160;<b>HAS_MAG</b> = 0x0040, 
+<br />
+&#160;&#160;<b>HAS_RC</b> = 0x0080, 
+<br />
+&#160;&#160;<b>HAS_GIMBAL</b> = 0x0100, 
+<br />
+&#160;&#160;<b>HAS_STATUS</b> = 0x0200, 
+<br />
+&#160;&#160;<b>HAS_BATTERY</b> = 0x0400, 
+<br />
+&#160;&#160;<b>HAS_DEVICE</b> = 0x0800, 
+<br />
+&#160;&#160;<b>A3_HAS_GPS</b> = 0x0040, 
+<br />
+&#160;&#160;<b>A3_HAS_RTK</b> = 0x0080, 
+<br />
+&#160;&#160;<b>A3_HAS_MAG</b> = 0x0100, 
+<br />
+&#160;&#160;<b>A3_HAS_RC</b> = 0x0200, 
+<br />
+&#160;&#160;<b>A3_HAS_GIMBAL</b> = 0x0400, 
+<br />
+&#160;&#160;<b>A3_HAS_STATUS</b> = 0x0800, 
+<br />
+&#160;&#160;<b>A3_HAS_BATTERY</b> = 0x1000, 
+<br />
+&#160;&#160;<b>A3_HAS_DEVICE</b> = 0x2000
+<br />
+ }</td></tr>
+<tr class="separator:a198083070852870f5fa700417442813b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a4638557b1163c9325c5562fbb88843c0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4638557b1163c9325c5562fbb88843c0"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DataBroadcast</b> (<a class="el" href="classDJI_1_1OSDK_1_1Vehicle.html">Vehicle</a> *vehicle=0)</td></tr>
+<tr class="separator:a4638557b1163c9325c5562fbb88843c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade67a9a95d41af12edfc9f645e6eb141"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1TimeStamp.html">Telemetry::TimeStamp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#ade67a9a95d41af12edfc9f645e6eb141">getTimeStamp</a> () const </td></tr>
+<tr class="separator:ade67a9a95d41af12edfc9f645e6eb141"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3704fbd0e36242453005d68ebe518904"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1SyncStamp.html">Telemetry::SyncStamp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#a3704fbd0e36242453005d68ebe518904">getSyncStamp</a> () const </td></tr>
+<tr class="separator:a3704fbd0e36242453005d68ebe518904"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a867609946b938782a7c611c2ec6e225d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Quaternion.html">Telemetry::Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#a867609946b938782a7c611c2ec6e225d">getQuaternion</a> () const </td></tr>
+<tr class="separator:a867609946b938782a7c611c2ec6e225d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f9dab34f42351ef42256f0662aa2fc2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Vector3f.html">Telemetry::Vector3f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#a1f9dab34f42351ef42256f0662aa2fc2">getAcceleration</a> () const </td></tr>
+<tr class="separator:a1f9dab34f42351ef42256f0662aa2fc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d354af7d736ae7949074459e37c2d58"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Vector3f.html">Telemetry::Vector3f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#a3d354af7d736ae7949074459e37c2d58">getVelocity</a> () const </td></tr>
+<tr class="separator:a3d354af7d736ae7949074459e37c2d58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a747a031f44c4c19432f989b868856ad7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Vector3f.html">Telemetry::Vector3f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#a747a031f44c4c19432f989b868856ad7">getAngularRate</a> () const </td></tr>
+<tr class="separator:a747a031f44c4c19432f989b868856ad7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e22e26862c3891d44998f6837a22ba9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1VelocityInfo.html">Telemetry::VelocityInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#a9e22e26862c3891d44998f6837a22ba9">getVelocityInfo</a> () const </td></tr>
+<tr class="separator:a9e22e26862c3891d44998f6837a22ba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2eb66a61c33a87ab62892ea3780e5b37"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1GlobalPosition.html">Telemetry::GlobalPosition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#a2eb66a61c33a87ab62892ea3780e5b37">getGlobalPosition</a> () const </td></tr>
+<tr class="separator:a2eb66a61c33a87ab62892ea3780e5b37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adac1bb9e037d05df76e71f045009e38c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1RelativePosition.html">Telemetry::RelativePosition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#adac1bb9e037d05df76e71f045009e38c">getRelativePosition</a> () const </td></tr>
+<tr class="separator:adac1bb9e037d05df76e71f045009e38c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31f8ced40b7c35c97a7818e96a1017ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1GPSInfo.html">Telemetry::GPSInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#a31f8ced40b7c35c97a7818e96a1017ad">getGPSInfo</a> () const </td></tr>
+<tr class="separator:a31f8ced40b7c35c97a7818e96a1017ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86bbaeeee8525d988a6a2da498acd7d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1RTK.html">Telemetry::RTK</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#a86bbaeeee8525d988a6a2da498acd7d2">getRTKInfo</a> () const </td></tr>
+<tr class="separator:a86bbaeeee8525d988a6a2da498acd7d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7017090831e26bcf74ae40177c3f115c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Mag.html">Telemetry::Mag</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#a7017090831e26bcf74ae40177c3f115c">getMag</a> () const </td></tr>
+<tr class="separator:a7017090831e26bcf74ae40177c3f115c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ed34e4b39317833d2cfddbe8be9686e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1RC.html">Telemetry::RC</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#a1ed34e4b39317833d2cfddbe8be9686e">getRC</a> () const </td></tr>
+<tr class="separator:a1ed34e4b39317833d2cfddbe8be9686e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d7bcde01f0290ebb69e4f1f2a861adf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Gimbal.html">Telemetry::Gimbal</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#a5d7bcde01f0290ebb69e4f1f2a861adf">getGimbal</a> () const </td></tr>
+<tr class="separator:a5d7bcde01f0290ebb69e4f1f2a861adf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c6a43474f86a09f77d09b8d9bbbfa58"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Status.html">Telemetry::Status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#a0c6a43474f86a09f77d09b8d9bbbfa58">getStatus</a> () const </td></tr>
+<tr class="separator:a0c6a43474f86a09f77d09b8d9bbbfa58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cf8001310d6e39bc515e9a1c2f8436a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Battery.html">Telemetry::Battery</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#a4cf8001310d6e39bc515e9a1c2f8436a">getBatteryInfo</a> () const </td></tr>
+<tr class="separator:a4cf8001310d6e39bc515e9a1c2f8436a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64277059875a85b87dfa91eecd2953c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1SDKInfo.html">Telemetry::SDKInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#a64277059875a85b87dfa91eecd2953c3">getSDKInfo</a> () const </td></tr>
+<tr class="separator:a64277059875a85b87dfa91eecd2953c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa569086b84999250aa98f0d534ee64c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#aa569086b84999250aa98f0d534ee64c7">setBroadcastFreq</a> (uint8_t *dataLenIs16, <a class="el" href="namespaceDJI_1_1OSDK.html#a20a68c21abe449cf5f133f7d398055d3">VehicleCallBack</a> callback=0, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData=0)</td></tr>
+<tr class="separator:aa569086b84999250aa98f0d534ee64c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0086f5472866ac5f9ee832433d5d88d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1ErrorCode.html">ACK::ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#a0086f5472866ac5f9ee832433d5d88d9">setBroadcastFreq</a> (uint8_t *dataLenIs16, int wait_timeout)</td></tr>
+<tr class="separator:a0086f5472866ac5f9ee832433d5d88d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ee62c0dff56f32a6a0b27051319454a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#a9ee62c0dff56f32a6a0b27051319454a">setBroadcastFreqDefaults</a> ()</td></tr>
+<tr class="separator:a9ee62c0dff56f32a6a0b27051319454a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3be7c4e6f19e51c9fcc00aaed1577103"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1ErrorCode.html">ACK::ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#a3be7c4e6f19e51c9fcc00aaed1577103">setBroadcastFreqDefaults</a> (int timeout)</td></tr>
+<tr class="separator:a3be7c4e6f19e51c9fcc00aaed1577103"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5a5906895f058dcd43eaf48210c7c85"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#ad5a5906895f058dcd43eaf48210c7c85">setBroadcastFreqToZero</a> ()</td></tr>
+<tr class="separator:ad5a5906895f058dcd43eaf48210c7c85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab38cc665ce241efaf8004e00c8efe217"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#ab38cc665ce241efaf8004e00c8efe217">getPassFlag</a> ()</td></tr>
+<tr class="separator:ab38cc665ce241efaf8004e00c8efe217"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2468ee8489bba33f48d86be33db92cc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa2468ee8489bba33f48d86be33db92cc"></a>
+<a class="el" href="classDJI_1_1OSDK_1_1Vehicle.html">Vehicle</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getVehicle</b> () const </td></tr>
+<tr class="separator:aa2468ee8489bba33f48d86be33db92cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bee9a70ded253cf99f1ce5647d5f960"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1bee9a70ded253cf99f1ce5647d5f960"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setVehicle</b> (<a class="el" href="classDJI_1_1OSDK_1_1Vehicle.html">Vehicle</a> *vehiclePtr)</td></tr>
+<tr class="separator:a1bee9a70ded253cf99f1ce5647d5f960"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a169a6c1917700b44f7092c6c1699455d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a169a6c1917700b44f7092c6c1699455d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setVersionDefaults</b> (uint8_t *frequencyBuffer)</td></tr>
+<tr class="separator:a169a6c1917700b44f7092c6c1699455d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6497b5ab408882aa29d7ea90d31d776"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab6497b5ab408882aa29d7ea90d31d776"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setFreqDefaultsM100_31</b> (uint8_t *frequencyBuffer)</td></tr>
+<tr class="separator:ab6497b5ab408882aa29d7ea90d31d776"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6de2170bf6f4b13cb2b23d268365b3a2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6de2170bf6f4b13cb2b23d268365b3a2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setFreqDefaults</b> (uint8_t *frequencyBuffer)</td></tr>
+<tr class="separator:a6de2170bf6f4b13cb2b23d268365b3a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a799bf7147ce3495b1a66f2ca61d2c637"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a799bf7147ce3495b1a66f2ca61d2c637"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setUserBroadcastCallback</b> (<a class="el" href="namespaceDJI_1_1OSDK.html#a20a68c21abe449cf5f133f7d398055d3">VehicleCallBack</a> callback, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)</td></tr>
+<tr class="separator:a799bf7147ce3495b1a66f2ca61d2c637"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a4ab6e98273dbc30f6a4c83740f3960f1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4ab6e98273dbc30f6a4c83740f3960f1"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>unpackCallback</b> (<a class="el" href="classDJI_1_1OSDK_1_1Vehicle.html">Vehicle</a> *vehicle, RecvContainer recvFrame, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)</td></tr>
+<tr class="separator:a4ab6e98273dbc30f6a4c83740f3960f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4f71ca895974e8eca03bee2159fd18f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af4f71ca895974e8eca03bee2159fd18f"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>setFrequencyCallback</b> (<a class="el" href="classDJI_1_1OSDK_1_1Vehicle.html">Vehicle</a> *vehicle, RecvContainer recvFrame, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)</td></tr>
+<tr class="separator:af4f71ca895974e8eca03bee2159fd18f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a3e31e33f4a9e1934340a3da5a078fe4f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3e31e33f4a9e1934340a3da5a078fe4f"></a>
+<a class="el" href="structDJI_1_1OSDK_1_1VehicleCallBackHandler.html">VehicleCallBackHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><b>unpackHandler</b></td></tr>
+<tr class="separator:a3e31e33f4a9e1934340a3da5a078fe4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html" title="This namespace encapsulates all available telemetry topics through either Broadcast or Subscribe...">Telemetry</a> API through asynchronous "Broadcast"-style messages. </p>
+<p>Broadcast telemetry is sent by the FC as push data - whenever an OES connects to the API port on FC, broadcast telemetry starts pushing data to the OES.</p>
+<p>Frequencies can be set through <a class="el" href="namespaceDJI.html">DJI</a> Assistant 2 or through these APIs.</p>
+<dl class="section note"><dt>Note</dt><dd>Broadcast-style telemetry is an old feature, and will not see many updates. </dd></dl>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a1f9dab34f42351ef42256f0662aa2fc2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Vector3f.html">Telemetry::Vector3f</a> DataBroadcast::getAcceleration </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get acceleration from local cache </p><dl class="section note"><dt>Note</dt><dd>This getter function is only available with Broadcast, not with Subscribe telemetry</dd></dl>
+<p>The acceleration may be in body or ground frame, fused or raw, based on settings on <a class="el" href="namespaceDJI.html">DJI</a> Assistant 2's SDK page. </p><dl class="section return"><dt>Returns</dt><dd><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Vector3f.html" title="struct for multiple Topics ">Telemetry::Vector3f</a> data structure with the newest value </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a747a031f44c4c19432f989b868856ad7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Vector3f.html">Telemetry::Vector3f</a> DataBroadcast::getAngularRate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get Angular Rates from local cache </p><dl class="section note"><dt>Note</dt><dd>This getter function is only available with Broadcast, not with Subscribe telemetry</dd></dl>
+<p>The angular rates may be in body or ground frame, fused or raw, based on settings on <a class="el" href="namespaceDJI.html">DJI</a> Assistant 2's SDK page. </p><dl class="section return"><dt>Returns</dt><dd><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Vector3f.html" title="struct for multiple Topics ">Telemetry::Vector3f</a> data structure with the newest value </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4cf8001310d6e39bc515e9a1c2f8436a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Battery.html">Telemetry::Battery</a> DataBroadcast::getBatteryInfo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get Battery Info from local cache </p><dl class="section note"><dt>Note</dt><dd>This getter function is only available with Broadcast, not with Subscribe telemetry</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Battery.html" title="struct for TOPIC_BATTERY_INFO and data broadcast, return battery status ">Telemetry::Battery</a> data structure with the newest value </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5d7bcde01f0290ebb69e4f1f2a861adf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Gimbal.html">Telemetry::Gimbal</a> DataBroadcast::getGimbal </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get <a class="el" href="classDJI_1_1OSDK_1_1Gimbal.html" title="The Gimbal class for controlling gimbal-related functions. ">Gimbal</a> data from local cache </p><dl class="section note"><dt>Note</dt><dd>This getter function is only available with Broadcast, not with Subscribe telemetry</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Gimbal.html" title="struct for data broadcast, return gimbal angle ">Telemetry::Gimbal</a> data structure with the newest value </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2eb66a61c33a87ab62892ea3780e5b37"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1GlobalPosition.html">Telemetry::GlobalPosition</a> DataBroadcast::getGlobalPosition </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get Globalc Position (LLA and metadata) from local cache </p><dl class="section note"><dt>Note</dt><dd>This getter function is only available with Broadcast, not with Subscribe telemetry</dd></dl>
+<p>The returned Lat/Lon values are in rad. </p><dl class="section return"><dt>Returns</dt><dd><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1GlobalPosition.html" title="struct for data broadcast, return GPS data ">Telemetry::GlobalPosition</a> data structure with the newest value </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a31f8ced40b7c35c97a7818e96a1017ad"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1GPSInfo.html">Telemetry::GPSInfo</a> DataBroadcast::getGPSInfo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get GPS Info from local cache </p><dl class="section note"><dt>Note</dt><dd>This getter function is only available with Broadcast, not with Subscribe telemetry</dd></dl>
+<p>This feature provides detailed GPS info. Available on A3/N3/M600. You need to enable it separately on <a class="el" href="namespaceDJI.html">DJI</a> Assistant 2's SDK page. </p><dl class="section return"><dt>Returns</dt><dd><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1GPSInfo.html" title="struct for GPSInfo of data broadcast ">Telemetry::GPSInfo</a> data structure with the newest value. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7017090831e26bcf74ae40177c3f115c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Mag.html">Telemetry::Mag</a> DataBroadcast::getMag </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get Magnetometer data from local cache </p><dl class="section note"><dt>Note</dt><dd>This getter function is only available with Broadcast, not with Subscribe telemetry</dd></dl>
+<p>The returned value is calibrated mag data, 1000 &lt; |mag| &lt; 2000 for normal operation </p><dl class="section return"><dt>Returns</dt><dd><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Mag.html" title="struct for data broadcast, return magnetometer reading ">Telemetry::Mag</a> data structure with the newest value. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab38cc665ce241efaf8004e00c8efe217"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t DataBroadcast::getPassFlag </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>getter function for passFlag</p>
+<dl class="section return"><dt>Returns</dt><dd>uint16_t passFlag </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a867609946b938782a7c611c2ec6e225d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Quaternion.html">Telemetry::Quaternion</a> DataBroadcast::getQuaternion </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get quaternion data from local cache </p><dl class="section note"><dt>Note</dt><dd>This getter function is only available with Broadcast, not with Subscribe telemetry</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Quaternion data structure with the newest value </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1ed34e4b39317833d2cfddbe8be9686e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1RC.html">Telemetry::RC</a> DataBroadcast::getRC </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get RC channel data from local cache </p><dl class="section note"><dt>Note</dt><dd>This getter function is only available with Broadcast, not with Subscribe telemetry </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1RC.html" title="struct for data broadcast and data subscription, return RC reading ">Telemetry::RC</a> data structure with the newest value. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="adac1bb9e037d05df76e71f045009e38c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1RelativePosition.html">Telemetry::RelativePosition</a> DataBroadcast::getRelativePosition </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get Obstacle info around the vehicle from local cache </p><dl class="section note"><dt>Note</dt><dd>This getter function is only available with Broadcast, not with Subscribe telemetry</dd></dl>
+<p>The returned value is relative to your home location. </p><dl class="section return"><dt>Returns</dt><dd><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1RelativePosition.html" title="struct for data broadcast, return obstacle info around the vehicle ">Telemetry::RelativePosition</a> data strucutre with the newest value </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a86bbaeeee8525d988a6a2da498acd7d2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1RTK.html">Telemetry::RTK</a> DataBroadcast::getRTKInfo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get RTK data from local cache </p><dl class="section note"><dt>Note</dt><dd>This getter function is only available with Broadcast, not with Subscribe telemetry</dd></dl>
+<p>This feature provides detailed RTK info. Available on A3/M600. You need to enable it separately on <a class="el" href="namespaceDJI.html">DJI</a> Assistant 2's SDK page. </p><dl class="section return"><dt>Returns</dt><dd><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1RTK.html" title="struct for data broadcast, return RTK info ">Telemetry::RTK</a> data structure with the newest value. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a64277059875a85b87dfa91eecd2953c3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1SDKInfo.html">Telemetry::SDKInfo</a> DataBroadcast::getSDKInfo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get SDK <a class="el" href="classDJI_1_1OSDK_1_1Control.html" title="Flight control API: high-level actions and low-level control modes. ">Control</a> Mode/Authority info from local cache </p><dl class="section note"><dt>Note</dt><dd>This getter function is only available with Broadcast, not with Subscribe telemetry</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1SDKInfo.html" title="struct for TOPIC_CONTROL_DEVICE and data broadcast, return SDK info ">Telemetry::SDKInfo</a> data structure with the newest value </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0c6a43474f86a09f77d09b8d9bbbfa58"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Status.html">Telemetry::Status</a> DataBroadcast::getStatus </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get Status (flight status, mode, gear and error) from local cache </p><dl class="section note"><dt>Note</dt><dd>This getter function is only available with Broadcast, not with Subscribe telemetry</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Status.html" title="struct for data broadcast, return flight status ">Telemetry::Status</a> data structure with the newest value </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3704fbd0e36242453005d68ebe518904"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1SyncStamp.html">Telemetry::SyncStamp</a> DataBroadcast::getSyncStamp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get software sync timestamp from local cache </p><dl class="section note"><dt>Note</dt><dd>This getter function is only available with Broadcast, not with Subscribe telemetry</dd></dl>
+<p>Note that this is unrelated to the hardware sync subscription. </p><dl class="section return"><dt>Returns</dt><dd><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1SyncStamp.html" title="struct for data broadcast, software sync timestamp from local cache ">Telemetry::SyncStamp</a> data structure with the newest value </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ade67a9a95d41af12edfc9f645e6eb141"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1TimeStamp.html">Telemetry::TimeStamp</a> DataBroadcast::getTimeStamp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get timestamp from local cache </p><dl class="section note"><dt>Note</dt><dd>This getter function is only available with Broadcast, not with Subscribe telemetry </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1TimeStamp.html" title="struct for data broadcast, timestamp from local cache ">Telemetry::TimeStamp</a> data structure with the newest value </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3d354af7d736ae7949074459e37c2d58"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Vector3f.html">Telemetry::Vector3f</a> DataBroadcast::getVelocity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get velocity from local cache </p><dl class="section note"><dt>Note</dt><dd>This getter function is only available with Broadcast, not with Subscribe telemetry</dd></dl>
+<p>The velocity may be in body or ground frame based on settings on <a class="el" href="namespaceDJI.html">DJI</a> Assistant 2's SDK page. </p><dl class="section return"><dt>Returns</dt><dd><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Vector3f.html" title="struct for multiple Topics ">Telemetry::Vector3f</a> data structure with the newest value </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9e22e26862c3891d44998f6837a22ba9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1VelocityInfo.html">Telemetry::VelocityInfo</a> DataBroadcast::getVelocityInfo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get Velocity Info (health) from local cache </p><dl class="section note"><dt>Note</dt><dd>This getter function is only available with Broadcast, not with Subscribe telemetry</dd></dl>
+<p>This data is received along with velocity. </p><dl class="section return"><dt>Returns</dt><dd><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1VelocityInfo.html" title="struct indicates the signal level of GPS velocity info   ">Telemetry::VelocityInfo</a> data structure with the newest value </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa569086b84999250aa98f0d534ee64c7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DataBroadcast::setBroadcastFreq </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>dataLenIs16</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceDJI_1_1OSDK.html#a20a68c21abe449cf5f133f7d398055d3">VehicleCallBack</a>&#160;</td>
+          <td class="paramname"><em>callback</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a>&#160;</td>
+          <td class="paramname"><em>userData</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Non-blocking call for Frequency setting</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dataLenIs16</td><td>Array of length 16 that has frequency values for each topic </td></tr>
+    <tr><td class="paramname">callback</td><td>Callback function you want called upon <a class="el" href="classDJI_1_1OSDK_1_1ACK.html" title="Class for handling acknowledgements from the aircraft. ">ACK</a> </td></tr>
+    <tr><td class="paramname">userData</td><td>Additional data you want the callback function to have access to </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>see also enum BROADCAST_FREQ in DJI_API.h </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0086f5472866ac5f9ee832433d5d88d9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1ErrorCode.html">ACK::ErrorCode</a> DataBroadcast::setBroadcastFreq </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>dataLenIs16</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>wait_timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Blocking call for Frequency setting</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dataLenIs16</td><td>Array of length 16 that has frequency values for each topic </td></tr>
+    <tr><td class="paramname">wait_timeout</td><td>Time(in s) you want the function to wait for an <a class="el" href="classDJI_1_1OSDK_1_1ACK.html" title="Class for handling acknowledgements from the aircraft. ">ACK</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1ErrorCode.html" title="This struct is returned from all blocking calls, except certain mission calls that have explicit type...">ACK::ErrorCode</a> struct containing the <a class="el" href="classDJI_1_1OSDK_1_1ACK.html" title="Class for handling acknowledgements from the aircraft. ">ACK</a> and metadata </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9ee62c0dff56f32a6a0b27051319454a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DataBroadcast::setBroadcastFreqDefaults </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Non-Blocking call for setting default frequencies </p>
+
+</div>
+</div>
+<a class="anchor" id="a3be7c4e6f19e51c9fcc00aaed1577103"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1ErrorCode.html">ACK::ErrorCode</a> DataBroadcast::setBroadcastFreqDefaults </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timeout</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Blocking call for setting default frequencies</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">wait_timeout</td><td>Time(in s) you want the function to wait for an <a class="el" href="classDJI_1_1OSDK_1_1ACK.html" title="Class for handling acknowledgements from the aircraft. ">ACK</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1ErrorCode.html" title="This struct is returned from all blocking calls, except certain mission calls that have explicit type...">ACK::ErrorCode</a> struct containing the <a class="el" href="classDJI_1_1OSDK_1_1ACK.html" title="Class for handling acknowledgements from the aircraft. ">ACK</a> and metadata </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad5a5906895f058dcd43eaf48210c7c85"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DataBroadcast::setBroadcastFreqToZero </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Non-Blocking call for setting all frequencies to zero </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>osdk-core/api/inc/<a class="el" href="dji__broadcast_8hpp_source.html">dji_broadcast.hpp</a></li>
+<li>osdk-core/api/src/<a class="el" href="dji__broadcast_8cpp.html">dji_broadcast.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- HTML footer for doxygen 1.8.8-->
+<!-- start footer part -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr class="footer"/><address class="footer"><small>
+<a href="https://developer.dji.com/onboard-sdk/documentation/introduction/index.html">
+<img class="footer" src="dji-logo-foot.png" alt="DJI Onboard SDK" height="20px" />
+</a>
+</small></address>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!-- HTML header for doxygen 1.8.8-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- For Mobile Devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="generator" content="Doxygen 1.8.11"/>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <title>DJI Onboard SDK: Member List</title>
+        <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
+        <script type="text/javascript" src="dynsections.js"></script>
+        <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+        <link href="doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <script src="bootstrap.min.js"></script>
+        <script type="text/javascript" src="doxy-boot.js"></script>
+    </head>
+    <body>
+        <nav id="site-header" class="site-header navbar">
+            <div class="container">
+                <div class="navbar-header"><a href="" class="logo"><img src="dji-logo@2x.png">Developer</a></div>
+                <div id="header-navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="hovedown"><a href="javascript:void(0);" class="hovedown-toggle">SDK<span class="caret"></span></a>
+                            <ul class="hovedown-menu">
+                                <li><a href="mobile-sdk">Mobile SDK</a></li>
+                                <li><a href="onboard-sdk">Onboard SDK</a></li>
+                                <li><a href="guidance-sdk">Guidance SDK</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="products">Products</a></li>
+                        <li><a href="showcase">Showcase</a></li>
+                        <li><a href="news">News</a></li>
+                        <li><a href="http://forum.dev.dji.com/en" target="_blank">Forum</a></li>
+                        <li class="hovedown"><a href="javascript:void(0);" class="hovedown-toggle">GitHub<span class="caret"></span></a>
+                            <ul class="hovedown-menu">
+                                <li><a href="https://github.com/dji-sdk/Mobile-SDK-iOS" target="_blank">iOS SDK</a></li>
+                                <li><a href="https://github.com/dji-sdk/Mobile-SDK-Android" target="_blank">Android SDK</a></li>
+                                <li><a href="https://github.com/dji-sdk/Onboard-SDK" target="_blank">Onboard SDK</a></li>
+                                <li><a href="https://github.com/dji-sdk/Guidance-SDK" target="_blank">Guidance SDK</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="challenge2016" target="_blank">Challenge</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div data-offset-top="60" data-spy="affix" class="sub-nav">
+            <div class="container">
+                <h1 class="logo">Onboard SDK</h1>
+                <nav><a href="onboard-sdk">Overview</a><a href="onboard-sdk/documentation">Documentation</a><a href="/onboard-api-reference/index.html" class="active">API Reference</a><a href="onboard-sdk/downloads">Downloads</a>
+                </nav>
+            </div>
+        </div>
+        <!--<nav class="navbar navbar-default" role="navigation">-->
+            <!--<div class="container">-->
+                <!--<div class="navbar-header">-->
+                    <!--<a href="#" class="navbar-left"><img src="dji_logo_gray_small.png" alt="DJI OSDK API Documentation" width="32px"/></a>-->
+                    <!--<a class="navbar-brand" href="index.html">ONBOARD SDK 3.3</a>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</nav>-->
+        <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+            <div class="content" id="content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 panel " style="padding-bottom: 15px; padding-top: 52px;">
+                            <div style="margin-bottom: 15px;">
+<!-- end header part -->
+<!-- Generated by Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
+      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceDJI.html">DJI</a></li><li class="navelem"><a class="el" href="namespaceDJI_1_1OSDK.html">OSDK</a></li><li class="navelem"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DataBroadcast</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">DJI::OSDK::DataBroadcast Member List</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>This is the complete list of members for <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a>, including all inherited members.</p>
+<table class="directory">
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>A3_HAS_BATTERY</b> enum value (defined in <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>A3_HAS_DEVICE</b> enum value (defined in <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>A3_HAS_GIMBAL</b> enum value (defined in <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>A3_HAS_GPS</b> enum value (defined in <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>A3_HAS_MAG</b> enum value (defined in <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>A3_HAS_RC</b> enum value (defined in <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>A3_HAS_RTK</b> enum value (defined in <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>A3_HAS_STATUS</b> enum value (defined in <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>DATA_ENABLE_FLAG</b> enum name (defined in <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>DataBroadcast</b>(Vehicle *vehicle=0) (defined in <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>FREQ</b> enum name (defined in <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>FREQ_0HZ</b> enum value (defined in <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>FREQ_100HZ</b> enum value (defined in <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>FREQ_10HZ</b> enum value (defined in <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>FREQ_1HZ</b> enum value (defined in <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>FREQ_200HZ</b> enum value (defined in <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>FREQ_400HZ</b> enum value (defined in <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>FREQ_50HZ</b> enum value (defined in <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>FREQ_HOLD</b> enum value (defined in <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#a1f9dab34f42351ef42256f0662aa2fc2">getAcceleration</a>() const </td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#a747a031f44c4c19432f989b868856ad7">getAngularRate</a>() const </td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#a4cf8001310d6e39bc515e9a1c2f8436a">getBatteryInfo</a>() const </td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#a5d7bcde01f0290ebb69e4f1f2a861adf">getGimbal</a>() const </td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#a2eb66a61c33a87ab62892ea3780e5b37">getGlobalPosition</a>() const </td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#a31f8ced40b7c35c97a7818e96a1017ad">getGPSInfo</a>() const </td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#a7017090831e26bcf74ae40177c3f115c">getMag</a>() const </td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#ab38cc665ce241efaf8004e00c8efe217">getPassFlag</a>()</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#a867609946b938782a7c611c2ec6e225d">getQuaternion</a>() const </td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#a1ed34e4b39317833d2cfddbe8be9686e">getRC</a>() const </td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#adac1bb9e037d05df76e71f045009e38c">getRelativePosition</a>() const </td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#a86bbaeeee8525d988a6a2da498acd7d2">getRTKInfo</a>() const </td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#a64277059875a85b87dfa91eecd2953c3">getSDKInfo</a>() const </td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#a0c6a43474f86a09f77d09b8d9bbbfa58">getStatus</a>() const </td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#a3704fbd0e36242453005d68ebe518904">getSyncStamp</a>() const </td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#ade67a9a95d41af12edfc9f645e6eb141">getTimeStamp</a>() const </td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>getVehicle</b>() const  (defined in <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#a3d354af7d736ae7949074459e37c2d58">getVelocity</a>() const </td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#a9e22e26862c3891d44998f6837a22ba9">getVelocityInfo</a>() const </td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>HAS_A</b> enum value (defined in <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>HAS_BATTERY</b> enum value (defined in <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>HAS_DEVICE</b> enum value (defined in <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>HAS_GIMBAL</b> enum value (defined in <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>HAS_MAG</b> enum value (defined in <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>HAS_POS</b> enum value (defined in <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>HAS_Q</b> enum value (defined in <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>HAS_RC</b> enum value (defined in <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>HAS_STATUS</b> enum value (defined in <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>HAS_TIME</b> enum value (defined in <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>HAS_V</b> enum value (defined in <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>HAS_W</b> enum value (defined in <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#aa569086b84999250aa98f0d534ee64c7">setBroadcastFreq</a>(uint8_t *dataLenIs16, VehicleCallBack callback=0, UserData userData=0)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#a0086f5472866ac5f9ee832433d5d88d9">setBroadcastFreq</a>(uint8_t *dataLenIs16, int wait_timeout)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#a9ee62c0dff56f32a6a0b27051319454a">setBroadcastFreqDefaults</a>()</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#a3be7c4e6f19e51c9fcc00aaed1577103">setBroadcastFreqDefaults</a>(int timeout)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#ad5a5906895f058dcd43eaf48210c7c85">setBroadcastFreqToZero</a>()</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>setFreqDefaults</b>(uint8_t *frequencyBuffer) (defined in <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>setFreqDefaultsM100_31</b>(uint8_t *frequencyBuffer) (defined in <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>setFrequencyCallback</b>(Vehicle *vehicle, RecvContainer recvFrame, UserData userData) (defined in <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>setUserBroadcastCallback</b>(VehicleCallBack callback, UserData userData) (defined in <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>setVehicle</b>(Vehicle *vehiclePtr) (defined in <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>setVersionDefaults</b>(uint8_t *frequencyBuffer) (defined in <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>unpackCallback</b>(Vehicle *vehicle, RecvContainer recvFrame, UserData userData) (defined in <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>unpackHandler</b> (defined in <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>~DataBroadcast</b>() (defined in <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html">DJI::OSDK::DataBroadcast</a></td><td class="entry"></td></tr>
+</table></div><!-- contents -->
+<!-- HTML footer for doxygen 1.8.8-->
+<!-- start footer part -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr class="footer"/><address class="footer"><small>
+<a href="https://developer.dji.com/onboard-sdk/documentation/introduction/index.html">
+<img class="footer" src="dji-logo-foot.png" alt="DJI Onboard SDK" height="20px" />
+</a>
+</small></address>
+</body>
+</html>

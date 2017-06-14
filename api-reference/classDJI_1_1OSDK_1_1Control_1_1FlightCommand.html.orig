@@ -1,0 +1,300 @@
+<!-- HTML header for doxygen 1.8.8-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- For Mobile Devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="generator" content="Doxygen 1.8.11"/>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <title>DJI Onboard SDK: DJI::OSDK::Control::FlightCommand Class Reference</title>
+        <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
+        <script type="text/javascript" src="dynsections.js"></script>
+        <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+        <link href="doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <script src="bootstrap.min.js"></script>
+        <script type="text/javascript" src="doxy-boot.js"></script>
+    </head>
+    <body>
+        <nav id="site-header" class="site-header navbar">
+            <div class="container">
+                <div class="navbar-header"><a href="" class="logo"><img src="dji-logo@2x.png">Developer</a></div>
+                <div id="header-navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="hovedown"><a href="javascript:void(0);" class="hovedown-toggle">SDK<span class="caret"></span></a>
+                            <ul class="hovedown-menu">
+                                <li><a href="mobile-sdk">Mobile SDK</a></li>
+                                <li><a href="onboard-sdk">Onboard SDK</a></li>
+                                <li><a href="guidance-sdk">Guidance SDK</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="products">Products</a></li>
+                        <li><a href="showcase">Showcase</a></li>
+                        <li><a href="news">News</a></li>
+                        <li><a href="http://forum.dev.dji.com/en" target="_blank">Forum</a></li>
+                        <li class="hovedown"><a href="javascript:void(0);" class="hovedown-toggle">GitHub<span class="caret"></span></a>
+                            <ul class="hovedown-menu">
+                                <li><a href="https://github.com/dji-sdk/Mobile-SDK-iOS" target="_blank">iOS SDK</a></li>
+                                <li><a href="https://github.com/dji-sdk/Mobile-SDK-Android" target="_blank">Android SDK</a></li>
+                                <li><a href="https://github.com/dji-sdk/Onboard-SDK" target="_blank">Onboard SDK</a></li>
+                                <li><a href="https://github.com/dji-sdk/Guidance-SDK" target="_blank">Guidance SDK</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="challenge2016" target="_blank">Challenge</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div data-offset-top="60" data-spy="affix" class="sub-nav">
+            <div class="container">
+                <h1 class="logo">Onboard SDK</h1>
+                <nav><a href="onboard-sdk">Overview</a><a href="onboard-sdk/documentation">Documentation</a><a href="/onboard-api-reference/index.html" class="active">API Reference</a><a href="onboard-sdk/downloads">Downloads</a>
+                </nav>
+            </div>
+        </div>
+        <!--<nav class="navbar navbar-default" role="navigation">-->
+            <!--<div class="container">-->
+                <!--<div class="navbar-header">-->
+                    <!--<a href="#" class="navbar-left"><img src="dji_logo_gray_small.png" alt="DJI OSDK API Documentation" width="32px"/></a>-->
+                    <!--<a class="navbar-brand" href="index.html">ONBOARD SDK 3.3</a>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</nav>-->
+        <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+            <div class="content" id="content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 panel " style="padding-bottom: 15px; padding-top: 52px;">
+                            <div style="margin-bottom: 15px;">
+<!-- end header part -->
+<!-- Generated by Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
+      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceDJI.html">DJI</a></li><li class="navelem"><a class="el" href="namespaceDJI_1_1OSDK.html">OSDK</a></li><li class="navelem"><a class="el" href="classDJI_1_1OSDK_1_1Control.html">Control</a></li><li class="navelem"><a class="el" href="classDJI_1_1OSDK_1_1Control_1_1FlightCommand.html">FlightCommand</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="classDJI_1_1OSDK_1_1Control_1_1FlightCommand-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">DJI::OSDK::Control::FlightCommand Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Flight control commands.  
+ <a href="classDJI_1_1OSDK_1_1Control_1_1FlightCommand.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="dji__control_8hpp_source.html">dji_control.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:aa0302e774ca7a47ffbf88be7d0dfd090"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa0302e774ca7a47ffbf88be7d0dfd090"></a>
+static const int&#160;</td><td class="memItemRight" valign="bottom"><b>TASK_GOHOME</b> = 1</td></tr>
+<tr class="separator:aa0302e774ca7a47ffbf88be7d0dfd090"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afeeaa850e7a70477dff27250e3579df9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afeeaa850e7a70477dff27250e3579df9"></a>
+static const int&#160;</td><td class="memItemRight" valign="bottom"><b>TASK_TAKEOFF</b> = 4</td></tr>
+<tr class="separator:afeeaa850e7a70477dff27250e3579df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae483ca17837886e6c8eeddbb562dc553"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae483ca17837886e6c8eeddbb562dc553"></a>
+static const int&#160;</td><td class="memItemRight" valign="bottom"><b>TASK_LANDING</b> = 6</td></tr>
+<tr class="separator:ae483ca17837886e6c8eeddbb562dc553"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab69f0f163923b3e4c7c7ecc8654d03e1"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Control_1_1FlightCommand.html#ab69f0f163923b3e4c7c7ecc8654d03e1">takeOff</a> = 1</td></tr>
+<tr class="separator:ab69f0f163923b3e4c7c7ecc8654d03e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92a4c70cf12f4b61076e496830d6183c"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Control_1_1FlightCommand.html#a92a4c70cf12f4b61076e496830d6183c">landing</a> = 2</td></tr>
+<tr class="separator:a92a4c70cf12f4b61076e496830d6183c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed2304ca06f54995d815491c289483ec"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Control_1_1FlightCommand.html#aed2304ca06f54995d815491c289483ec">courseLock</a> = 5</td></tr>
+<tr class="separator:aed2304ca06f54995d815491c289483ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82bb82f61ceaea0177d0d8224ff117e6"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Control_1_1FlightCommand.html#a82bb82f61ceaea0177d0d8224ff117e6">goHome</a> = 6</td></tr>
+<tr class="separator:a82bb82f61ceaea0177d0d8224ff117e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d23f4d766cdabe32b7f929240383df2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0d23f4d766cdabe32b7f929240383df2"></a>
+static const int&#160;</td><td class="memItemRight" valign="bottom"><b>startMotor</b> = 7</td></tr>
+<tr class="separator:a0d23f4d766cdabe32b7f929240383df2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd9bad039f7cce9791c6e4169e74777f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd9bad039f7cce9791c6e4169e74777f"></a>
+static const int&#160;</td><td class="memItemRight" valign="bottom"><b>stopMotor</b> = 8</td></tr>
+<tr class="separator:abd9bad039f7cce9791c6e4169e74777f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31189c79c1deb64a8dba59166fd32902"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a31189c79c1deb64a8dba59166fd32902"></a>
+static const int&#160;</td><td class="memItemRight" valign="bottom"><b>calibrateCompass</b> = 9</td></tr>
+<tr class="separator:a31189c79c1deb64a8dba59166fd32902"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabfa3f14994a4b4692b16923107633ae"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aabfa3f14994a4b4692b16923107633ae"></a>
+static const int&#160;</td><td class="memItemRight" valign="bottom"><b>exitGoHome</b> = 12</td></tr>
+<tr class="separator:aabfa3f14994a4b4692b16923107633ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadc1a44eed8fddba9d3c29d00425c3ba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aadc1a44eed8fddba9d3c29d00425c3ba"></a>
+static const int&#160;</td><td class="memItemRight" valign="bottom"><b>exitTakeOff</b> = 13</td></tr>
+<tr class="separator:aadc1a44eed8fddba9d3c29d00425c3ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5606a3c8836432ca8f468166e14004b2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5606a3c8836432ca8f468166e14004b2"></a>
+static const int&#160;</td><td class="memItemRight" valign="bottom"><b>exitLanding</b> = 14</td></tr>
+<tr class="separator:a5606a3c8836432ca8f468166e14004b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af33da4711c1f56dd249d995f140686f3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af33da4711c1f56dd249d995f140686f3"></a>
+static const int&#160;</td><td class="memItemRight" valign="bottom"><b>exitCalibrateCompass</b> = 21</td></tr>
+<tr class="separator:af33da4711c1f56dd249d995f140686f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b59a6ac8e37a78bd627cd63d4a4f56b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2b59a6ac8e37a78bd627cd63d4a4f56b"></a>
+static const int&#160;</td><td class="memItemRight" valign="bottom"><b>landingGearDown</b> = 28</td></tr>
+<tr class="separator:a2b59a6ac8e37a78bd627cd63d4a4f56b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a517c9030de8686d426e79f5c6ab79c4f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a517c9030de8686d426e79f5c6ab79c4f"></a>
+static const int&#160;</td><td class="memItemRight" valign="bottom"><b>landingGearUp</b> = 29</td></tr>
+<tr class="separator:a517c9030de8686d426e79f5c6ab79c4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Flight control commands. </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="aed2304ca06f54995d815491c289483ec"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int DJI::OSDK::Control::FlightCommand::courseLock = 5</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section note"><dt>Note</dt><dd>independent mode courseLock, cannot be controlled through SDK </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a82bb82f61ceaea0177d0d8224ff117e6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int DJI::OSDK::Control::FlightCommand::goHome = 6</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>vehicle return home position </p>
+
+</div>
+</div>
+<a class="anchor" id="a92a4c70cf12f4b61076e496830d6183c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int DJI::OSDK::Control::FlightCommand::landing = 2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>vehicle landing </p>
+
+</div>
+</div>
+<a class="anchor" id="ab69f0f163923b3e4c7c7ecc8654d03e1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int DJI::OSDK::Control::FlightCommand::takeOff = 1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>vehicle takeoff </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>osdk-core/api/inc/<a class="el" href="dji__control_8hpp_source.html">dji_control.hpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- HTML footer for doxygen 1.8.8-->
+<!-- start footer part -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr class="footer"/><address class="footer"><small>
+<a href="https://developer.dji.com/onboard-sdk/documentation/introduction/index.html">
+<img class="footer" src="dji-logo-foot.png" alt="DJI Onboard SDK" height="20px" />
+</a>
+</small></address>
+</body>
+</html>

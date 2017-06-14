@@ -1,0 +1,206 @@
+<!-- HTML header for doxygen 1.8.8-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- For Mobile Devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="generator" content="Doxygen 1.8.11"/>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <title>DJI Onboard SDK: Member List</title>
+        <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
+        <script type="text/javascript" src="dynsections.js"></script>
+        <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+        <link href="doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <script src="bootstrap.min.js"></script>
+        <script type="text/javascript" src="doxy-boot.js"></script>
+    </head>
+    <body>
+        <nav id="site-header" class="site-header navbar">
+            <div class="container">
+                <div class="navbar-header"><a href="" class="logo"><img src="dji-logo@2x.png">Developer</a></div>
+                <div id="header-navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="hovedown"><a href="javascript:void(0);" class="hovedown-toggle">SDK<span class="caret"></span></a>
+                            <ul class="hovedown-menu">
+                                <li><a href="mobile-sdk">Mobile SDK</a></li>
+                                <li><a href="onboard-sdk">Onboard SDK</a></li>
+                                <li><a href="guidance-sdk">Guidance SDK</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="products">Products</a></li>
+                        <li><a href="showcase">Showcase</a></li>
+                        <li><a href="news">News</a></li>
+                        <li><a href="http://forum.dev.dji.com/en" target="_blank">Forum</a></li>
+                        <li class="hovedown"><a href="javascript:void(0);" class="hovedown-toggle">GitHub<span class="caret"></span></a>
+                            <ul class="hovedown-menu">
+                                <li><a href="https://github.com/dji-sdk/Mobile-SDK-iOS" target="_blank">iOS SDK</a></li>
+                                <li><a href="https://github.com/dji-sdk/Mobile-SDK-Android" target="_blank">Android SDK</a></li>
+                                <li><a href="https://github.com/dji-sdk/Onboard-SDK" target="_blank">Onboard SDK</a></li>
+                                <li><a href="https://github.com/dji-sdk/Guidance-SDK" target="_blank">Guidance SDK</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="challenge2016" target="_blank">Challenge</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div data-offset-top="60" data-spy="affix" class="sub-nav">
+            <div class="container">
+                <h1 class="logo">Onboard SDK</h1>
+                <nav><a href="onboard-sdk">Overview</a><a href="onboard-sdk/documentation">Documentation</a><a href="/onboard-api-reference/index.html" class="active">API Reference</a><a href="onboard-sdk/downloads">Downloads</a>
+                </nav>
+            </div>
+        </div>
+        <!--<nav class="navbar navbar-default" role="navigation">-->
+            <!--<div class="container">-->
+                <!--<div class="navbar-header">-->
+                    <!--<a href="#" class="navbar-left"><img src="dji_logo_gray_small.png" alt="DJI OSDK API Documentation" width="32px"/></a>-->
+                    <!--<a class="navbar-brand" href="index.html">ONBOARD SDK 3.3</a>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</nav>-->
+        <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+            <div class="content" id="content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 panel " style="padding-bottom: 15px; padding-top: 52px;">
+                            <div style="margin-bottom: 15px;">
+<!-- end header part -->
+<!-- Generated by Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
+      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceDJI.html">DJI</a></li><li class="navelem"><a class="el" href="namespaceDJI_1_1OSDK.html">OSDK</a></li><li class="navelem"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">HotpointMission</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">DJI::OSDK::HotpointMission Member List</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>This is the complete list of members for <a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a>, including all inherited members.</p>
+<table class="directory">
+  <tr class="even"><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#aa4c822ea6ceb0d71ed4f32572b361562">getData</a>() const </td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>hotPointCallback</b> (defined in <a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#a2aa16e490d633facbbd5a14bc2e45e60">HotpointMission</a>(Vehicle *vehicle=0)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#a25a5f7ed542cbcc3344822f9a456c7fc">initData</a>()</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>MissionBase</b>(Vehicle *vehicle=0) (defined in <a class="el" href="classDJI_1_1OSDK_1_1MissionBase.html">DJI::OSDK::MissionBase</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1MissionBase.html">DJI::OSDK::MissionBase</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#ae84f9c568ce391508eb125140e93345b">pause</a>(VehicleCallBack callback=0, UserData userData=0)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#aed544cba624572e7afb2fae017f908ad">pause</a>(int timer)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#a1e7ad1c4ea625b434c2b8e6af60b25fa">readCallback</a>(RecvContainer recvFrame, UserData userData)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#ab9cc1476b13b764d34cfdae131f5d986">readData</a>(VehicleCallBack callback=0, UserData userData=0)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#a249cd60d0bc4ee0fc728b4e79b713406">readData</a>(int timer)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#a610bf9468597c4e2da987b9419715f76">resetYaw</a>(VehicleCallBack callback=0, UserData userData=0)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#ab04d05cdaea0ca14bf7ca6cfa14550da">resetYaw</a>(int timer)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#a1fc73550ee5bcc36ca1b42550a5a693b">resume</a>(VehicleCallBack callback=0, UserData userData=0)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#a5b472af0da9c1370dae19d3e586ef00a">resume</a>(int timer)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#aec0d5fa28da5381df51108211056b2a2">setCameraView</a>(View view)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#aee686337934a2302ca8533df0cffe480">setClockwise</a>(bool isClockwise)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#a93684377dc3688fabbc41eb50956bbc6">setData</a>(HotPointSettings *data)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#aa997b14e21eba4a8fc73a8b1a346d724">setHotPoint</a>(float64_t longitude, float64_t latitude, float64_t altitude)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#a2946e47508f5ec822f4795eb811afc12">setHotPoint</a>(Telemetry::GlobalPosition gps)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#a4c292d437ea5af86b87f3e621935e56d">setHotpointCallback</a>(VehicleCallBack callback, UserData userData)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#a277d36e0e8107e819360e9cf1049713e">setRadius</a>(float64_t meter)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#a105c0713ebe5d11e0242e00baf52639e">setYawMode</a>(YawMode mode)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#af8583e764f9097c6d67dd257d2263ae7">setYawRate</a>(float32_t degree)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#a4a0151215ad6204133361bd81e87f44c">start</a>(VehicleCallBack callback=0, UserData userData=0)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#a03b7adf6cbac5a91101a578ee5ff8fd5">start</a>(int timer)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#afb0c8327e444a78a49c03b3bf0946730">startCallback</a>(RecvContainer recvFrame, UserData userData)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#ac32563e7bc146fa96831237773280b36">stop</a>(VehicleCallBack callback=0, UserData userData=0)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#ae91b0d3ca7da7ddb083cf1f678355ff8">stop</a>(int timer)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#a23db500bffe71b0dca90c70b10e751d4">updateRadius</a>(float32_t meter, VehicleCallBack callback=0, UserData userData=0)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#aafa97568c631a714657f6ec94694f792">updateRadius</a>(float32_t meter, int timer)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#aa73b985636b20e5449c2da4eaf98517c">updateYawRate</a>(YawRate &amp;Data, VehicleCallBack callback=0, UserData userData=0)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#a2649be5171a2e6f02ff96022423a7f32">updateYawRate</a>(YawRate &amp;Data, int timer)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#a2999fe48791ddefe9c75a98ef7f58996">updateYawRate</a>(float32_t yawRate, bool isClockwise, VehicleCallBack callback=0, UserData userData=0)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>vehicle</b> (defined in <a class="el" href="classDJI_1_1OSDK_1_1MissionBase.html">DJI::OSDK::MissionBase</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1MissionBase.html">DJI::OSDK::MissionBase</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>View</b> enum name (defined in <a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>VIEW_EAST</b> enum value (defined in <a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>VIEW_NEARBY</b> enum value (defined in <a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>VIEW_NORTH</b> enum value (defined in <a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>VIEW_SOUTH</b> enum value (defined in <a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>VIEW_WEST</b> enum value (defined in <a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>YAW_AUTO</b> enum value (defined in <a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>YAW_CUSTOM</b> enum value (defined in <a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>YAW_INSIDE</b> enum value (defined in <a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>YAW_OUTSIDE</b> enum value (defined in <a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>YAW_STATIC</b> enum value (defined in <a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>YawMode</b> enum name (defined in <a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>YawRate</b> typedef (defined in <a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>~HotpointMission</b>() (defined in <a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html">DJI::OSDK::HotpointMission</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>~MissionBase</b>() (defined in <a class="el" href="classDJI_1_1OSDK_1_1MissionBase.html">DJI::OSDK::MissionBase</a>)</td><td class="entry"><a class="el" href="classDJI_1_1OSDK_1_1MissionBase.html">DJI::OSDK::MissionBase</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+</table></div><!-- contents -->
+<!-- HTML footer for doxygen 1.8.8-->
+<!-- start footer part -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr class="footer"/><address class="footer"><small>
+<a href="https://developer.dji.com/onboard-sdk/documentation/introduction/index.html">
+<img class="footer" src="dji-logo-foot.png" alt="DJI Onboard SDK" height="20px" />
+</a>
+</small></address>
+</body>
+</html>

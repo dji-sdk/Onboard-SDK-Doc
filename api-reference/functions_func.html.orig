@@ -1,0 +1,599 @@
+<!-- HTML header for doxygen 1.8.8-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- For Mobile Devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="generator" content="Doxygen 1.8.11"/>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <title>DJI Onboard SDK: Class Members - Functions</title>
+        <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
+        <script type="text/javascript" src="dynsections.js"></script>
+        <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+        <link href="doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <script src="bootstrap.min.js"></script>
+        <script type="text/javascript" src="doxy-boot.js"></script>
+    </head>
+    <body>
+        <nav id="site-header" class="site-header navbar">
+            <div class="container">
+                <div class="navbar-header"><a href="" class="logo"><img src="dji-logo@2x.png">Developer</a></div>
+                <div id="header-navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="hovedown"><a href="javascript:void(0);" class="hovedown-toggle">SDK<span class="caret"></span></a>
+                            <ul class="hovedown-menu">
+                                <li><a href="mobile-sdk">Mobile SDK</a></li>
+                                <li><a href="onboard-sdk">Onboard SDK</a></li>
+                                <li><a href="guidance-sdk">Guidance SDK</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="products">Products</a></li>
+                        <li><a href="showcase">Showcase</a></li>
+                        <li><a href="news">News</a></li>
+                        <li><a href="http://forum.dev.dji.com/en" target="_blank">Forum</a></li>
+                        <li class="hovedown"><a href="javascript:void(0);" class="hovedown-toggle">GitHub<span class="caret"></span></a>
+                            <ul class="hovedown-menu">
+                                <li><a href="https://github.com/dji-sdk/Mobile-SDK-iOS" target="_blank">iOS SDK</a></li>
+                                <li><a href="https://github.com/dji-sdk/Mobile-SDK-Android" target="_blank">Android SDK</a></li>
+                                <li><a href="https://github.com/dji-sdk/Onboard-SDK" target="_blank">Onboard SDK</a></li>
+                                <li><a href="https://github.com/dji-sdk/Guidance-SDK" target="_blank">Guidance SDK</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="challenge2016" target="_blank">Challenge</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div data-offset-top="60" data-spy="affix" class="sub-nav">
+            <div class="container">
+                <h1 class="logo">Onboard SDK</h1>
+                <nav><a href="onboard-sdk">Overview</a><a href="onboard-sdk/documentation">Documentation</a><a href="/onboard-api-reference/index.html" class="active">API Reference</a><a href="onboard-sdk/downloads">Downloads</a>
+                </nav>
+            </div>
+        </div>
+        <!--<nav class="navbar navbar-default" role="navigation">-->
+            <!--<div class="container">-->
+                <!--<div class="navbar-header">-->
+                    <!--<a href="#" class="navbar-left"><img src="dji_logo_gray_small.png" alt="DJI OSDK API Documentation" width="32px"/></a>-->
+                    <!--<a class="navbar-brand" href="index.html">ONBOARD SDK 3.3</a>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</nav>-->
+        <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+            <div class="content" id="content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 panel " style="padding-bottom: 15px; padding-top: 52px;">
+                            <div style="margin-bottom: 15px;">
+<!-- end header part -->
+<!-- Generated by Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
+      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li class="current"><a href="functions.html"><span>Class&#160;Members</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow3" class="tabs2">
+    <ul class="tablist">
+      <li><a href="functions.html"><span>All</span></a></li>
+      <li class="current"><a href="functions_func.html"><span>Functions</span></a></li>
+      <li><a href="functions_vars.html"><span>Variables</span></a></li>
+      <li><a href="functions_type.html"><span>Typedefs</span></a></li>
+      <li><a href="functions_enum.html"><span>Enumerations</span></a></li>
+      <li><a href="functions_eval.html"><span>Enumerator</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow4" class="tabs3">
+    <ul class="tablist">
+      <li><a href="#index_a"><span>a</span></a></li>
+      <li><a href="#index_c"><span>c</span></a></li>
+      <li><a href="#index_d"><span>d</span></a></li>
+      <li><a href="#index_e"><span>e</span></a></li>
+      <li><a href="#index_f"><span>f</span></a></li>
+      <li><a href="#index_g"><span>g</span></a></li>
+      <li><a href="#index_h"><span>h</span></a></li>
+      <li><a href="#index_i"><span>i</span></a></li>
+      <li><a href="#index_l"><span>l</span></a></li>
+      <li><a href="#index_m"><span>m</span></a></li>
+      <li><a href="#index_o"><span>o</span></a></li>
+      <li><a href="#index_p"><span>p</span></a></li>
+      <li><a href="#index_r"><span>r</span></a></li>
+      <li><a href="#index_s"><span>s</span></a></li>
+      <li><a href="#index_t"><span>t</span></a></li>
+      <li><a href="#index_u"><span>u</span></a></li>
+      <li><a href="#index_v"><span>v</span></a></li>
+      <li class="current"><a href="#index_w"><span>w</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="contents">
+&#160;
+
+<h3><a class="anchor" id="index_a"></a>- a -</h3><ul>
+<li>action()
+: <a class="el" href="classDJI_1_1OSDK_1_1Control.html#a29a7c4aab568fb82dd372bc758885a2a">DJI::OSDK::Control</a>
+</li>
+<li>actionCallback()
+: <a class="el" href="classDJI_1_1OSDK_1_1Control.html#ad1cf1aeed4e91f03634895ce151ff4d7">DJI::OSDK::Control</a>
+</li>
+<li>activate()
+: <a class="el" href="classDJI_1_1OSDK_1_1Vehicle.html#ac7de97778fc5114e38d01dfb009a4a8a">DJI::OSDK::Vehicle</a>
+</li>
+<li>angularRateAndVertPosCtrl()
+: <a class="el" href="classDJI_1_1OSDK_1_1Control.html#ab3c9ebc4484a235549ea5c85589757bc">DJI::OSDK::Control</a>
+</li>
+<li>armMotors()
+: <a class="el" href="classDJI_1_1OSDK_1_1Control.html#ac4742f9e7155e0bf4651cde4ee39b116">DJI::OSDK::Control</a>
+</li>
+<li>attitudeAndVertPosCtrl()
+: <a class="el" href="classDJI_1_1OSDK_1_1Control.html#a70947186cffb7d0047a02db237afd19e">DJI::OSDK::Control</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
+<li>callbackPoll()
+: <a class="el" href="classDJI_1_1OSDK_1_1Vehicle.html#aecffab87d973216e8076bb891e32f0ad">DJI::OSDK::Vehicle</a>
+</li>
+<li>checkBaudRate()
+: <a class="el" href="classDJI_1_1OSDK_1_1LinuxSerialDevice.html#ae8024ecb6b46e647446cdb68de98bc29">DJI::OSDK::LinuxSerialDevice</a>
+</li>
+<li>config()
+: <a class="el" href="classDJI_1_1OSDK_1_1MFIO.html#ad835c6e3e14a720c66aab9855310e6a7">DJI::OSDK::MFIO</a>
+</li>
+<li>CtrlData()
+: <a class="el" href="structDJI_1_1OSDK_1_1Control_1_1CtrlData.html#aff12437ea62b8565aa42068e5257b3e0">DJI::OSDK::Control::CtrlData</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_d"></a>- d -</h3><ul>
+<li>DataSubscription()
+: <a class="el" href="classDJI_1_1OSDK_1_1DataSubscription.html#ac8d44d4288c7fbdff9fb904606c7bfc8">DJI::OSDK::DataSubscription</a>
+</li>
+<li>decodeCallback()
+: <a class="el" href="classDJI_1_1OSDK_1_1DataSubscription.html#a33b0917c8430a186fdea272f552a80b7">DJI::OSDK::DataSubscription</a>
+</li>
+<li>disArmMotors()
+: <a class="el" href="classDJI_1_1OSDK_1_1Control.html#a97b2f4d031f4b6898310c220f72eece0">DJI::OSDK::Control</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_e"></a>- e -</h3><ul>
+<li>emergencyBrake()
+: <a class="el" href="classDJI_1_1OSDK_1_1Control.html#afdf111f752a36ccf541198ca7212331a">DJI::OSDK::Control</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_f"></a>- f -</h3><ul>
+<li>flightCtrl()
+: <a class="el" href="classDJI_1_1OSDK_1_1Control.html#a1f2c5a277f091fb5fb5b39baf6f6fa0f">DJI::OSDK::Control</a>
+</li>
+<li>functionalSetUp()
+: <a class="el" href="classDJI_1_1OSDK_1_1Vehicle.html#a52b65df0247c13cda2e9e3d3f3115773">DJI::OSDK::Vehicle</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_g"></a>- g -</h3><ul>
+<li>getAcceleration()
+: <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#a1f9dab34f42351ef42256f0662aa2fc2">DJI::OSDK::DataBroadcast</a>
+</li>
+<li>getAccountData()
+: <a class="el" href="classDJI_1_1OSDK_1_1Vehicle.html#aa6b09696d12a2b6eccab03edeecbb420">DJI::OSDK::Vehicle</a>
+</li>
+<li>getAngularRate()
+: <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#a747a031f44c4c19432f989b868856ad7">DJI::OSDK::DataBroadcast</a>
+</li>
+<li>getBatteryInfo()
+: <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#a4cf8001310d6e39bc515e9a1c2f8436a">DJI::OSDK::DataBroadcast</a>
+</li>
+<li>getData()
+: <a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#aa4c822ea6ceb0d71ed4f32572b361562">DJI::OSDK::HotpointMission</a>
+</li>
+<li>getDroneVersion()
+: <a class="el" href="classDJI_1_1OSDK_1_1Vehicle.html#a257f78845ca1dc25c0ed66f9a6499f52">DJI::OSDK::Vehicle</a>
+</li>
+<li>getError()
+: <a class="el" href="classDJI_1_1OSDK_1_1ACK.html#aa6a80877d41e0bffd3e44de1af585e09">DJI::OSDK::ACK</a>
+</li>
+<li>getErrorCodeMessage()
+: <a class="el" href="classDJI_1_1OSDK_1_1ACK.html#a140b7c908f55e5f6b7b9f32056828af1">DJI::OSDK::ACK</a>
+</li>
+<li>getGimbal()
+: <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#a5d7bcde01f0290ebb69e4f1f2a861adf">DJI::OSDK::DataBroadcast</a>
+</li>
+<li>getGlobalPosition()
+: <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#a2eb66a61c33a87ab62892ea3780e5b37">DJI::OSDK::DataBroadcast</a>
+</li>
+<li>getGPSInfo()
+: <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#a31f8ced40b7c35c97a7818e96a1017ad">DJI::OSDK::DataBroadcast</a>
+</li>
+<li>getHotpt()
+: <a class="el" href="classDJI_1_1OSDK_1_1MissionManager.html#acdd37f52db4721152f871058d2424372">DJI::OSDK::MissionManager</a>
+</li>
+<li>getIndex()
+: <a class="el" href="classDJI_1_1OSDK_1_1WaypointMission.html#aa9cba3732c71b14fe62398c8dcf6347a">DJI::OSDK::WaypointMission</a>
+</li>
+<li>getInfo()
+: <a class="el" href="classDJI_1_1OSDK_1_1WaypointMission.html#a3b94c5b71753efe556166323e6d1d749">DJI::OSDK::WaypointMission</a>
+</li>
+<li>getMag()
+: <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#a7017090831e26bcf74ae40177c3f115c">DJI::OSDK::DataBroadcast</a>
+</li>
+<li>getPassFlag()
+: <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#ab38cc665ce241efaf8004e00c8efe217">DJI::OSDK::DataBroadcast</a>
+</li>
+<li>getQuaternion()
+: <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#a867609946b938782a7c611c2ec6e225d">DJI::OSDK::DataBroadcast</a>
+</li>
+<li>getRC()
+: <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#a1ed34e4b39317833d2cfddbe8be9686e">DJI::OSDK::DataBroadcast</a>
+</li>
+<li>getRelativePosition()
+: <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#adac1bb9e037d05df76e71f045009e38c">DJI::OSDK::DataBroadcast</a>
+</li>
+<li>getRTKInfo()
+: <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#a86bbaeeee8525d988a6a2da498acd7d2">DJI::OSDK::DataBroadcast</a>
+</li>
+<li>getSDKInfo()
+: <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#a64277059875a85b87dfa91eecd2953c3">DJI::OSDK::DataBroadcast</a>
+</li>
+<li>getStatus()
+: <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#a0c6a43474f86a09f77d09b8d9bbbfa58">DJI::OSDK::DataBroadcast</a>
+</li>
+<li>getSyncStamp()
+: <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#a3704fbd0e36242453005d68ebe518904">DJI::OSDK::DataBroadcast</a>
+</li>
+<li>getTimeStamp()
+: <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#ade67a9a95d41af12edfc9f645e6eb141">DJI::OSDK::DataBroadcast</a>
+, <a class="el" href="classDJI_1_1OSDK_1_1LinuxSerialDevice.html#a0acb5e77c1f9dd0ab64dab66c4b1e43f">DJI::OSDK::LinuxSerialDevice</a>
+</li>
+<li>getValue()
+: <a class="el" href="classDJI_1_1OSDK_1_1MFIO.html#ad64c03a68764d310202a15ed85454ab6">DJI::OSDK::MFIO</a>
+</li>
+<li>getVelocity()
+: <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#a3d354af7d736ae7949074459e37c2d58">DJI::OSDK::DataBroadcast</a>
+</li>
+<li>getVelocityInfo()
+: <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#a9e22e26862c3891d44998f6837a22ba9">DJI::OSDK::DataBroadcast</a>
+</li>
+<li>getWaypt()
+: <a class="el" href="classDJI_1_1OSDK_1_1MissionManager.html#a0c910dc986310624ca97ff3dbb97f172">DJI::OSDK::MissionManager</a>
+</li>
+<li>goHome()
+: <a class="el" href="classDJI_1_1OSDK_1_1Control.html#a5fda2b2c0466333328c364b29200a153">DJI::OSDK::Control</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_h"></a>- h -</h3><ul>
+<li>HotpointMission()
+: <a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#a2aa16e490d633facbbd5a14bc2e45e60">DJI::OSDK::HotpointMission</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_i"></a>- i -</h3><ul>
+<li>idleVelocityCallback()
+: <a class="el" href="classDJI_1_1OSDK_1_1WaypointMission.html#a7806b834f4343fe59570816fa66d015e">DJI::OSDK::WaypointMission</a>
+</li>
+<li>init()
+: <a class="el" href="classDJI_1_1OSDK_1_1MissionManager.html#a91d3ce7c6018fed8c609227c54b4e7cd">DJI::OSDK::MissionManager</a>
+, <a class="el" href="classDJI_1_1OSDK_1_1PosixThreadManager.html#ae9ec07ff40b00eb6fd200bdc693af5dc">DJI::OSDK::PosixThreadManager</a>
+, <a class="el" href="classDJI_1_1OSDK_1_1WaypointMission.html#a8d15d4c9a6918b3a0ffdc5baf0c1a2e6">DJI::OSDK::WaypointMission</a>
+</li>
+<li>initData()
+: <a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#a25a5f7ed542cbcc3344822f9a456c7fc">DJI::OSDK::HotpointMission</a>
+</li>
+<li>initPackageFromTopicList()
+: <a class="el" href="classDJI_1_1OSDK_1_1DataSubscription.html#a47dd81b458bde99864994ad808d9ff02">DJI::OSDK::DataSubscription</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_l"></a>- l -</h3><ul>
+<li>land()
+: <a class="el" href="classDJI_1_1OSDK_1_1Control.html#a4a9092bb63a1c309a54841f851bb16d7">DJI::OSDK::Control</a>
+</li>
+<li>LinuxSerialDevice()
+: <a class="el" href="classDJI_1_1OSDK_1_1LinuxSerialDevice.html#a8bdb4069f8658bc6bf4c9e1c22aa9c63">DJI::OSDK::LinuxSerialDevice</a>
+</li>
+<li>lockMemory()
+: <a class="el" href="classDJI_1_1OSDK_1_1PosixThreadManager.html#a7371fcf13a9143fb7ffb63518b2ff2ba">DJI::OSDK::PosixThreadManager</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_m"></a>- m -</h3><ul>
+<li>missionCallback()
+: <a class="el" href="classDJI_1_1OSDK_1_1MissionManager.html#a431ef98a73939b779051359269683d6e">DJI::OSDK::MissionManager</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_o"></a>- o -</h3><ul>
+<li>obtainCtrlAuthority()
+: <a class="el" href="classDJI_1_1OSDK_1_1Vehicle.html#a9d126654855a4ab0e6184cf9b2c0d14b">DJI::OSDK::Vehicle</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_p"></a>- p -</h3><ul>
+<li>packageAddSuccessHandler()
+: <a class="el" href="classDJI_1_1OSDK_1_1SubscriptionPackage.html#a0ba8730ebee7c0d05b654d79ded399b2">DJI::OSDK::SubscriptionPackage</a>
+</li>
+<li>packageRemoveSuccessHandler()
+: <a class="el" href="classDJI_1_1OSDK_1_1SubscriptionPackage.html#a858dfe31ddba393923d11c8055ca7a2d">DJI::OSDK::SubscriptionPackage</a>
+</li>
+<li>parseDroneVersionInfo()
+: <a class="el" href="classDJI_1_1OSDK_1_1Vehicle.html#a06b82bc6cb9110540e4239c071a8112a">DJI::OSDK::Vehicle</a>
+</li>
+<li>pause()
+: <a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#ae84f9c568ce391508eb125140e93345b">DJI::OSDK::HotpointMission</a>
+, <a class="el" href="classDJI_1_1OSDK_1_1WaypointMission.html#a7311c2d6b04983dda49e2854f264e6a4">DJI::OSDK::WaypointMission</a>
+</li>
+<li>positionAndYawCtrl()
+: <a class="el" href="classDJI_1_1OSDK_1_1Control.html#a6ed4bc74691c3e4fb0d5b30bcb67d6f5">DJI::OSDK::Control</a>
+</li>
+<li>printInfo()
+: <a class="el" href="classDJI_1_1OSDK_1_1MissionManager.html#ad1fcbb1152e6569c4774113f10ed79ae">DJI::OSDK::MissionManager</a>
+</li>
+<li>processReceivedData()
+: <a class="el" href="classDJI_1_1OSDK_1_1Vehicle.html#adf08142b360400c0a781b5414a33da5d">DJI::OSDK::Vehicle</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_r"></a>- r -</h3><ul>
+<li>readCallback()
+: <a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#a1e7ad1c4ea625b434c2b8e6af60b25fa">DJI::OSDK::HotpointMission</a>
+</li>
+<li>readData()
+: <a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#ab9cc1476b13b764d34cfdae131f5d986">DJI::OSDK::HotpointMission</a>
+</li>
+<li>readIdleVelocity()
+: <a class="el" href="classDJI_1_1OSDK_1_1WaypointMission.html#a881cc37e0cba5752a17565915b39c4c8">DJI::OSDK::WaypointMission</a>
+</li>
+<li>readInitDataCallback()
+: <a class="el" href="classDJI_1_1OSDK_1_1WaypointMission.html#a93a8f2872a8fa6e18e5429baca9288ce">DJI::OSDK::WaypointMission</a>
+</li>
+<li>registerUserPackageUnpackCallback()
+: <a class="el" href="classDJI_1_1OSDK_1_1DataSubscription.html#a69bfb721713e8fdd164d1cf065d7a180">DJI::OSDK::DataSubscription</a>
+</li>
+<li>releaseCtrlAuthority()
+: <a class="el" href="classDJI_1_1OSDK_1_1Vehicle.html#a42a4c6010022629269d936e03efc8b0c">DJI::OSDK::Vehicle</a>
+</li>
+<li>resetYaw()
+: <a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#a610bf9468597c4e2da987b9419715f76">DJI::OSDK::HotpointMission</a>
+</li>
+<li>resume()
+: <a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#a1fc73550ee5bcc36ca1b42550a5a693b">DJI::OSDK::HotpointMission</a>
+, <a class="el" href="classDJI_1_1OSDK_1_1WaypointMission.html#ab890e43b9ba152e5d48fc052c7676156">DJI::OSDK::WaypointMission</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
+<li>send()
+: <a class="el" href="classDJI_1_1OSDK_1_1LinuxSerialDevice.html#a8d049404301807f9b270b85dad740d5a">DJI::OSDK::LinuxSerialDevice</a>
+</li>
+<li>sendDataToMSDK()
+: <a class="el" href="classDJI_1_1OSDK_1_1MobileCommunication.html#a3450236032429d4603100ca00f87e75b">DJI::OSDK::MobileCommunication</a>
+</li>
+<li>serializePackageInfo()
+: <a class="el" href="classDJI_1_1OSDK_1_1SubscriptionPackage.html#a58f4f8d179a961af12d421c6ffcd6aed">DJI::OSDK::SubscriptionPackage</a>
+</li>
+<li>setAngle()
+: <a class="el" href="classDJI_1_1OSDK_1_1Gimbal.html#a6ce7def5eb61934e2e13184b8467c7ed">DJI::OSDK::Gimbal</a>
+</li>
+<li>setBaudrate()
+: <a class="el" href="classDJI_1_1OSDK_1_1LinuxSerialDevice.html#a73ec219df14ded200d5a89b1c0ecca19">DJI::OSDK::LinuxSerialDevice</a>
+</li>
+<li>setBroadcastFreq()
+: <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#aa569086b84999250aa98f0d534ee64c7">DJI::OSDK::DataBroadcast</a>
+</li>
+<li>setBroadcastFreqDefaults()
+: <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#a9ee62c0dff56f32a6a0b27051319454a">DJI::OSDK::DataBroadcast</a>
+</li>
+<li>setBroadcastFreqToZero()
+: <a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html#ad5a5906895f058dcd43eaf48210c7c85">DJI::OSDK::DataBroadcast</a>
+</li>
+<li>setCameraView()
+: <a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#aec0d5fa28da5381df51108211056b2a2">DJI::OSDK::HotpointMission</a>
+</li>
+<li>setClockwise()
+: <a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#aee686337934a2302ca8533df0cffe480">DJI::OSDK::HotpointMission</a>
+</li>
+<li>setData()
+: <a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#a93684377dc3688fabbc41eb50956bbc6">DJI::OSDK::HotpointMission</a>
+</li>
+<li>setHotPoint()
+: <a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#aa997b14e21eba4a8fc73a8b1a346d724">DJI::OSDK::HotpointMission</a>
+</li>
+<li>setHotpointCallback()
+: <a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#a4c292d437ea5af86b87f3e621935e56d">DJI::OSDK::HotpointMission</a>
+</li>
+<li>setIndex()
+: <a class="el" href="classDJI_1_1OSDK_1_1WaypointMission.html#aa9de35a0a5d6208c623ea5a13ade0379">DJI::OSDK::WaypointMission</a>
+</li>
+<li>setInfo()
+: <a class="el" href="classDJI_1_1OSDK_1_1WaypointMission.html#a9d760177d6c8e0b90bdc232783f6cfd7">DJI::OSDK::WaypointMission</a>
+</li>
+<li>setLastReceivedFrame()
+: <a class="el" href="classDJI_1_1OSDK_1_1Vehicle.html#ade3ef1560e1f07dd8c6c8bc5cf0a1f0d">DJI::OSDK::Vehicle</a>
+</li>
+<li>setRadius()
+: <a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#a277d36e0e8107e819360e9cf1049713e">DJI::OSDK::HotpointMission</a>
+</li>
+<li>setSpeed()
+: <a class="el" href="classDJI_1_1OSDK_1_1Gimbal.html#a2c496e88796c5e174223035f9570aa85">DJI::OSDK::Gimbal</a>
+</li>
+<li>setSyncFreq()
+: <a class="el" href="classDJI_1_1OSDK_1_1HardwareSync.html#ab05f264d3e1266f91f9423d332decfed">DJI::OSDK::HardwareSync</a>
+</li>
+<li>setTopicList()
+: <a class="el" href="classDJI_1_1OSDK_1_1SubscriptionPackage.html#a6eaeebd4f63340da619088abafdabf26">DJI::OSDK::SubscriptionPackage</a>
+</li>
+<li>setValue()
+: <a class="el" href="classDJI_1_1OSDK_1_1MFIO.html#a833730cd241dae33b28dd2624b3571fb">DJI::OSDK::MFIO</a>
+</li>
+<li>setVersion()
+: <a class="el" href="classDJI_1_1OSDK_1_1Vehicle.html#a2ce0e9a5f64947c6dc670c4c3a8276d6">DJI::OSDK::Vehicle</a>
+</li>
+<li>setWaypointCallback()
+: <a class="el" href="classDJI_1_1OSDK_1_1WaypointMission.html#a1d00cf266ded9418f86ae4e3bb1dd388">DJI::OSDK::WaypointMission</a>
+</li>
+<li>setWaypointEventCallback()
+: <a class="el" href="classDJI_1_1OSDK_1_1WaypointMission.html#a7153c1ba5267f5f08fd135fd6e46bae2">DJI::OSDK::WaypointMission</a>
+</li>
+<li>setYawMode()
+: <a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#a105c0713ebe5d11e0242e00baf52639e">DJI::OSDK::HotpointMission</a>
+</li>
+<li>setYawRate()
+: <a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#af8583e764f9097c6d67dd257d2263ae7">DJI::OSDK::HotpointMission</a>
+</li>
+<li>shootPhoto()
+: <a class="el" href="classDJI_1_1OSDK_1_1Camera.html#a27faf4d48b342f292c3d3f7915239758">DJI::OSDK::Camera</a>
+</li>
+<li>start()
+: <a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#a4a0151215ad6204133361bd81e87f44c">DJI::OSDK::HotpointMission</a>
+, <a class="el" href="classDJI_1_1OSDK_1_1WaypointMission.html#ade3dcecda4f1ca069021b01b7f855ce1">DJI::OSDK::WaypointMission</a>
+</li>
+<li>startCallback()
+: <a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#afb0c8327e444a78a49c03b3bf0946730">DJI::OSDK::HotpointMission</a>
+</li>
+<li>startPackage()
+: <a class="el" href="classDJI_1_1OSDK_1_1DataSubscription.html#a87ba0e274119c68277bb749de1aad39e">DJI::OSDK::DataSubscription</a>
+</li>
+<li>startSync()
+: <a class="el" href="classDJI_1_1OSDK_1_1HardwareSync.html#aeb35dae3161b67dfa7a0a1d2e4618453">DJI::OSDK::HardwareSync</a>
+</li>
+<li>stop()
+: <a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#ac32563e7bc146fa96831237773280b36">DJI::OSDK::HotpointMission</a>
+, <a class="el" href="classDJI_1_1OSDK_1_1WaypointMission.html#a9459bbe0539b362e5b8ce5ef7a2e2365">DJI::OSDK::WaypointMission</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_t"></a>- t -</h3><ul>
+<li>takeoff()
+: <a class="el" href="classDJI_1_1OSDK_1_1Control.html#a7f79c6ed6e9c399fff2354d0403be6f5">DJI::OSDK::Control</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_u"></a>- u -</h3><ul>
+<li>updateIdleVelocity()
+: <a class="el" href="classDJI_1_1OSDK_1_1WaypointMission.html#affd964d55236c2ba99ce790f7ba1efa2">DJI::OSDK::WaypointMission</a>
+</li>
+<li>updateRadius()
+: <a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#a23db500bffe71b0dca90c70b10e751d4">DJI::OSDK::HotpointMission</a>
+</li>
+<li>updateYawRate()
+: <a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#aa73b985636b20e5449c2da4eaf98517c">DJI::OSDK::HotpointMission</a>
+</li>
+<li>uploadIndexData()
+: <a class="el" href="classDJI_1_1OSDK_1_1WaypointMission.html#a0923b487adb4c6968268914baebd880c">DJI::OSDK::WaypointMission</a>
+</li>
+<li>uploadIndexDataCallback()
+: <a class="el" href="classDJI_1_1OSDK_1_1WaypointMission.html#ae09771749e867713524fae85f96ed4e1">DJI::OSDK::WaypointMission</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_v"></a>- v -</h3><ul>
+<li>velocityAndYawRateCtrl()
+: <a class="el" href="classDJI_1_1OSDK_1_1Control.html#a24c02f8db0ce0ae10a784c3c998e979f">DJI::OSDK::Control</a>
+</li>
+<li>verify()
+: <a class="el" href="classDJI_1_1OSDK_1_1DataSubscription.html#a6a3cf7624e29d3a6ccb1b524d40c3b3f">DJI::OSDK::DataSubscription</a>
+</li>
+<li>verifyCallback()
+: <a class="el" href="classDJI_1_1OSDK_1_1DataSubscription.html#ab8612b27a4c74b40a065517130450ea7">DJI::OSDK::DataSubscription</a>
+</li>
+<li>videoStart()
+: <a class="el" href="classDJI_1_1OSDK_1_1Camera.html#a450c3423ab27048d57713286e04deadf">DJI::OSDK::Camera</a>
+</li>
+<li>videoStop()
+: <a class="el" href="classDJI_1_1OSDK_1_1Camera.html#a7a1de3ac2882382f81333deb575afb9d">DJI::OSDK::Camera</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_w"></a>- w -</h3><ul>
+<li>waitForACK()
+: <a class="el" href="classDJI_1_1OSDK_1_1Vehicle.html#a6de2a1dcf6d392fa561c1cb555e6f8fc">DJI::OSDK::Vehicle</a>
+</li>
+</ul>
+</div><!-- contents -->
+<!-- HTML footer for doxygen 1.8.8-->
+<!-- start footer part -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr class="footer"/><address class="footer"><small>
+<a href="https://developer.dji.com/onboard-sdk/documentation/introduction/index.html">
+<img class="footer" src="dji-logo-foot.png" alt="DJI Onboard SDK" height="20px" />
+</a>
+</small></address>
+</body>
+</html>

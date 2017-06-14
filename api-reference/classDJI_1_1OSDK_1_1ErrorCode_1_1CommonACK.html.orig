@@ -1,0 +1,1556 @@
+<!-- HTML header for doxygen 1.8.8-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- For Mobile Devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="generator" content="Doxygen 1.8.11"/>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <title>DJI Onboard SDK: DJI::OSDK::ErrorCode::CommonACK Class Reference</title>
+        <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
+        <script type="text/javascript" src="dynsections.js"></script>
+        <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+        <link href="doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <script src="bootstrap.min.js"></script>
+        <script type="text/javascript" src="doxy-boot.js"></script>
+    </head>
+    <body>
+        <nav id="site-header" class="site-header navbar">
+            <div class="container">
+                <div class="navbar-header"><a href="" class="logo"><img src="dji-logo@2x.png">Developer</a></div>
+                <div id="header-navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="hovedown"><a href="javascript:void(0);" class="hovedown-toggle">SDK<span class="caret"></span></a>
+                            <ul class="hovedown-menu">
+                                <li><a href="mobile-sdk">Mobile SDK</a></li>
+                                <li><a href="onboard-sdk">Onboard SDK</a></li>
+                                <li><a href="guidance-sdk">Guidance SDK</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="products">Products</a></li>
+                        <li><a href="showcase">Showcase</a></li>
+                        <li><a href="news">News</a></li>
+                        <li><a href="http://forum.dev.dji.com/en" target="_blank">Forum</a></li>
+                        <li class="hovedown"><a href="javascript:void(0);" class="hovedown-toggle">GitHub<span class="caret"></span></a>
+                            <ul class="hovedown-menu">
+                                <li><a href="https://github.com/dji-sdk/Mobile-SDK-iOS" target="_blank">iOS SDK</a></li>
+                                <li><a href="https://github.com/dji-sdk/Mobile-SDK-Android" target="_blank">Android SDK</a></li>
+                                <li><a href="https://github.com/dji-sdk/Onboard-SDK" target="_blank">Onboard SDK</a></li>
+                                <li><a href="https://github.com/dji-sdk/Guidance-SDK" target="_blank">Guidance SDK</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="challenge2016" target="_blank">Challenge</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div data-offset-top="60" data-spy="affix" class="sub-nav">
+            <div class="container">
+                <h1 class="logo">Onboard SDK</h1>
+                <nav><a href="onboard-sdk">Overview</a><a href="onboard-sdk/documentation">Documentation</a><a href="/onboard-api-reference/index.html" class="active">API Reference</a><a href="onboard-sdk/downloads">Downloads</a>
+                </nav>
+            </div>
+        </div>
+        <!--<nav class="navbar navbar-default" role="navigation">-->
+            <!--<div class="container">-->
+                <!--<div class="navbar-header">-->
+                    <!--<a href="#" class="navbar-left"><img src="dji_logo_gray_small.png" alt="DJI OSDK API Documentation" width="32px"/></a>-->
+                    <!--<a class="navbar-brand" href="index.html">ONBOARD SDK 3.3</a>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</nav>-->
+        <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+            <div class="content" id="content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 panel " style="padding-bottom: 15px; padding-top: 52px;">
+                            <div style="margin-bottom: 15px;">
+<!-- end header part -->
+<!-- Generated by Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
+      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceDJI.html">DJI</a></li><li class="navelem"><a class="el" href="namespaceDJI_1_1OSDK.html">OSDK</a></li><li class="navelem"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html">ErrorCode</a></li><li class="navelem"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html">CommonACK</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">DJI::OSDK::ErrorCode::CommonACK Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Common <a class="el" href="classDJI_1_1OSDK_1_1ACK.html" title="Class for handling acknowledgements from the aircraft. ">ACK</a> Error Codes.  
+ <a href="classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="dji__error_8hpp_source.html">dji_error.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK_1_1FlightStatus.html">FlightStatus</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flight Status enum.  <a href="structDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK_1_1FlightStatus.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:ac01ea36473365b483830b25dd3431c01"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK_1_1FlightStatus.html">DJI::OSDK::ErrorCode::CommonACK::FlightStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#ac01ea36473365b483830b25dd3431c01">FlightStatus</a></td></tr>
+<tr class="memdesc:ac01ea36473365b483830b25dd3431c01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flight Status enum.  <a href="#ac01ea36473365b483830b25dd3431c01">More...</a><br /></td></tr>
+<tr class="separator:ac01ea36473365b483830b25dd3431c01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a559d9b700f3859736a039707ba683941"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a559d9b700f3859736a039707ba683941"></a>
+static const uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>SUCCESS</b> = 0x0000</td></tr>
+<tr class="separator:a559d9b700f3859736a039707ba683941"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69f6ae40f18ed1189dec2770b71bc948"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a69f6ae40f18ed1189dec2770b71bc948"></a>
+static const uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>KEY_ERROR</b> = 0xFF00</td></tr>
+<tr class="separator:a69f6ae40f18ed1189dec2770b71bc948"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad523322cf927a9b55d67c3864d839bb4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad523322cf927a9b55d67c3864d839bb4"></a>
+static const uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>NO_AUTHORIZATION_ERROR</b> = 0xFF01</td></tr>
+<tr class="separator:ad523322cf927a9b55d67c3864d839bb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a400b03e2c4e39e5a1bb0aa2cf25a0743"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a400b03e2c4e39e5a1bb0aa2cf25a0743"></a>
+static const uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>NO_RIGHTS_ERROR</b> = 0xFF02</td></tr>
+<tr class="separator:a400b03e2c4e39e5a1bb0aa2cf25a0743"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d498d1827e27a1ddd3f260ccc229909"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4d498d1827e27a1ddd3f260ccc229909"></a>
+static const uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>NO_RESPONSE_ERROR</b> = 0xFFFF</td></tr>
+<tr class="separator:a4d498d1827e27a1ddd3f260ccc229909"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99e987b6e2fb374bca47ec29eb4b7349"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a99e987b6e2fb374bca47ec29eb4b7349"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_NONE</b> = 0</td></tr>
+<tr class="separator:a99e987b6e2fb374bca47ec29eb4b7349"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4a4baee5231f9c85916940b54ead615"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#ad4a4baee5231f9c85916940b54ead615">MOTOR_FAIL_COMPASS_ABNORMAL</a> = 1</td></tr>
+<tr class="separator:ad4a4baee5231f9c85916940b54ead615"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc79588c5b42ba90b1d3bd69360a1438"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#abc79588c5b42ba90b1d3bd69360a1438">MOTOR_FAIL_ASSISTANT_PROTECTED</a> = 2</td></tr>
+<tr class="separator:abc79588c5b42ba90b1d3bd69360a1438"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ab9221fa21b172af411679756b27c1a"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#a1ab9221fa21b172af411679756b27c1a">MOTOR_FAIL_DEVICE_LOCKED</a> = 3</td></tr>
+<tr class="separator:a1ab9221fa21b172af411679756b27c1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e298a2e4301812e80472eb9ac59ad74"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#a2e298a2e4301812e80472eb9ac59ad74">MOTOR_FAIL_IMU_NEED_ADV_CALIBRATION</a> = 5</td></tr>
+<tr class="separator:a2e298a2e4301812e80472eb9ac59ad74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0d87648735466755dc97b77fd5b2514"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#aa0d87648735466755dc97b77fd5b2514">MOTOR_FAIL_IMU_SN_ERROR</a> = 6</td></tr>
+<tr class="separator:aa0d87648735466755dc97b77fd5b2514"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace4d5bbff36a7f619a4d6947788e786a"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#ace4d5bbff36a7f619a4d6947788e786a">MOTOR_FAIL_IMU_PREHEATING</a> = 7</td></tr>
+<tr class="separator:ace4d5bbff36a7f619a4d6947788e786a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46f57e021f963f5b22a07a9852cb2203"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a46f57e021f963f5b22a07a9852cb2203"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_COMPASS_CALIBRATING</b> = 8</td></tr>
+<tr class="separator:a46f57e021f963f5b22a07a9852cb2203"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a093e79fdc9699300980c2d88b86971cd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a093e79fdc9699300980c2d88b86971cd"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_IMU_NO_ATTITUDE</b> = 9</td></tr>
+<tr class="separator:a093e79fdc9699300980c2d88b86971cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef3567764bb0f39f6762104cfc9b7a2a"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#aef3567764bb0f39f6762104cfc9b7a2a">MOTOR_FAIL_NO_GPS_IN_NOVICE_MODE</a> = 10</td></tr>
+<tr class="separator:aef3567764bb0f39f6762104cfc9b7a2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20b714b8bdcde3ba844166f90a38d142"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a20b714b8bdcde3ba844166f90a38d142"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_BATTERY_CELL_ERROR</b> = 11</td></tr>
+<tr class="separator:a20b714b8bdcde3ba844166f90a38d142"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6422ddf71157c94701347e3db7451400"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6422ddf71157c94701347e3db7451400"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_BATTERY_COMMUNICATION_ERROR</b> = 12</td></tr>
+<tr class="separator:a6422ddf71157c94701347e3db7451400"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad94979bef8eb4eee59dd872790838ec6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad94979bef8eb4eee59dd872790838ec6"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_BATTERY_VOLTAGE_TOO_LOW</b> = 13</td></tr>
+<tr class="separator:ad94979bef8eb4eee59dd872790838ec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa52e70fa5c552e5d50bbcb2c2cda40c9"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#aa52e70fa5c552e5d50bbcb2c2cda40c9">MOTOR_FAIL_BATTERY_USER_LOW_LAND</a> = 14</td></tr>
+<tr class="separator:aa52e70fa5c552e5d50bbcb2c2cda40c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d2e623fdc6e5d3ef4330c4300057280"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#a0d2e623fdc6e5d3ef4330c4300057280">MOTOR_FAIL_BATTERY_MAIN_VOL_LOW</a> = 15</td></tr>
+<tr class="separator:a0d2e623fdc6e5d3ef4330c4300057280"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeccea3a85101e87b7b5f7332a874bb37"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeccea3a85101e87b7b5f7332a874bb37"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_BATTERY_TEMP_VOL_LOW</b> = 16</td></tr>
+<tr class="separator:aeccea3a85101e87b7b5f7332a874bb37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab88019be01c638f79ba99f1e80136bee"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#ab88019be01c638f79ba99f1e80136bee">MOTOR_FAIL_BATTERY_SMART_LOW_LAND</a> = 17</td></tr>
+<tr class="separator:ab88019be01c638f79ba99f1e80136bee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9987f33e66db0d6b46978336a75d678"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#aa9987f33e66db0d6b46978336a75d678">MOTOR_FAIL_BATTERY_NOT_READY</a> = 18</td></tr>
+<tr class="separator:aa9987f33e66db0d6b46978336a75d678"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83254c705f5bef6bab3d04be9bde4819"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a83254c705f5bef6bab3d04be9bde4819"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_RUNNING_SIMULATOR</b> = 19</td></tr>
+<tr class="separator:a83254c705f5bef6bab3d04be9bde4819"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e22293185f647656fe0bb6e2f60d586"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#a9e22293185f647656fe0bb6e2f60d586">MOTOR_FAIL_PACK_MODE</a> = 20</td></tr>
+<tr class="separator:a9e22293185f647656fe0bb6e2f60d586"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e4d88fb112ffa09ef879cfd1be949b9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3e4d88fb112ffa09ef879cfd1be949b9"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_IMU_ATTI_LIMIT</b> = 21</td></tr>
+<tr class="separator:a3e4d88fb112ffa09ef879cfd1be949b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a416a5526873f0e88d121e40606370808"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a416a5526873f0e88d121e40606370808"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_NOT_ACTIVATED</b> = 22</td></tr>
+<tr class="separator:a416a5526873f0e88d121e40606370808"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d09eedd86ae10a28465aa2edc77db9e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7d09eedd86ae10a28465aa2edc77db9e"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_IN_FLYLIMIT_AREA</b> = 23</td></tr>
+<tr class="separator:a7d09eedd86ae10a28465aa2edc77db9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac225f3b24e9b2e215230d690e5f5759c"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#ac225f3b24e9b2e215230d690e5f5759c">MOTOR_FAIL_IMU_BIAS_LIMIT</a> = 24</td></tr>
+<tr class="separator:ac225f3b24e9b2e215230d690e5f5759c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6a14e6f963a039d3a2a15d808eae11d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae6a14e6f963a039d3a2a15d808eae11d"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_ESC_ERROR</b> = 25</td></tr>
+<tr class="separator:ae6a14e6f963a039d3a2a15d808eae11d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21af73a4eb68df680c5ee3487366f674"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#a21af73a4eb68df680c5ee3487366f674">MOTOR_FAIL_IMU_INITING</a> = 26</td></tr>
+<tr class="separator:a21af73a4eb68df680c5ee3487366f674"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd2acb170c3121fdd12cce42bd13140f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd2acb170c3121fdd12cce42bd13140f"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_UPGRADING</b> = 27</td></tr>
+<tr class="separator:abd2acb170c3121fdd12cce42bd13140f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedd198758f000c71430ff72139861b50"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#aedd198758f000c71430ff72139861b50">MOTOR_FAIL_HAVE_RUN_SIM</a> = 28</td></tr>
+<tr class="separator:aedd198758f000c71430ff72139861b50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa5802e70358eedcda8ba5b5447c4a4a"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#afa5802e70358eedcda8ba5b5447c4a4a">MOTOR_FAIL_IMU_CALIBRATING</a> = 29</td></tr>
+<tr class="separator:afa5802e70358eedcda8ba5b5447c4a4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebb4f51965d8503e4f54101b69b9296b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aebb4f51965d8503e4f54101b69b9296b"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_TAKEOFF_TILT_TOO_LARGE</b> = 30</td></tr>
+<tr class="separator:aebb4f51965d8503e4f54101b69b9296b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e096a15a62390ae3b6023ed951f8eac"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e096a15a62390ae3b6023ed951f8eac"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_RESERVED_31</b> = 31</td></tr>
+<tr class="separator:a2e096a15a62390ae3b6023ed951f8eac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ff729849fd9cd60e4082dd63ec1c5a8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9ff729849fd9cd60e4082dd63ec1c5a8"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_RESERVED_32</b> = 32</td></tr>
+<tr class="separator:a9ff729849fd9cd60e4082dd63ec1c5a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8289de16ed9edc630521a364f65bc6c1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8289de16ed9edc630521a364f65bc6c1"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_RESERVED_33</b> = 33</td></tr>
+<tr class="separator:a8289de16ed9edc630521a364f65bc6c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd59a1c3a2dbfb11bcca8332a08e7946"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd59a1c3a2dbfb11bcca8332a08e7946"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_RESERVED_34</b> = 34</td></tr>
+<tr class="separator:abd59a1c3a2dbfb11bcca8332a08e7946"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae13370bb99ae75d58b5b2ee0d1b33c51"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae13370bb99ae75d58b5b2ee0d1b33c51"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_RESERVED_35</b> = 35</td></tr>
+<tr class="separator:ae13370bb99ae75d58b5b2ee0d1b33c51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac30dd83dbd21adc6207577817048288d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac30dd83dbd21adc6207577817048288d"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_RESERVED_36</b> = 36</td></tr>
+<tr class="separator:ac30dd83dbd21adc6207577817048288d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23258828100104714cf86b3e633cbb19"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a23258828100104714cf86b3e633cbb19"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_RESERVED_37</b> = 37</td></tr>
+<tr class="separator:a23258828100104714cf86b3e633cbb19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f9d23c7752685dc10a56eec4199bc13"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7f9d23c7752685dc10a56eec4199bc13"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_RESERVED_38</b> = 38</td></tr>
+<tr class="separator:a7f9d23c7752685dc10a56eec4199bc13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2597f5cec80a5b761ecdede609e98719"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2597f5cec80a5b761ecdede609e98719"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_RESERVED_39</b> = 39</td></tr>
+<tr class="separator:a2597f5cec80a5b761ecdede609e98719"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86feacfb5592f636a9e216769fbdf028"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a86feacfb5592f636a9e216769fbdf028"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_RESERVED_40</b> = 40</td></tr>
+<tr class="separator:a86feacfb5592f636a9e216769fbdf028"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2b992341299643b7837a8cf9ca80ef8"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#ab2b992341299643b7837a8cf9ca80ef8">MOTOR_FAIL_INVALID_SN</a> = 41</td></tr>
+<tr class="separator:ab2b992341299643b7837a8cf9ca80ef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a892314a011b65452a7b2c7f724a7f14b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a892314a011b65452a7b2c7f724a7f14b"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_RESERVED_42</b> = 42</td></tr>
+<tr class="separator:a892314a011b65452a7b2c7f724a7f14b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e74dd99e79e5607a41d9d667ecc93ec"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e74dd99e79e5607a41d9d667ecc93ec"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_RESERVED_43</b> = 43</td></tr>
+<tr class="separator:a2e74dd99e79e5607a41d9d667ecc93ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a0c4125a42f717ede3be8d0df8e9f26"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#a4a0c4125a42f717ede3be8d0df8e9f26">MOTOR_FAIL_FLASH_OPERATING</a> = 44</td></tr>
+<tr class="separator:a4a0c4125a42f717ede3be8d0df8e9f26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a759920cc163a592681e7eb7ab0051c76"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a759920cc163a592681e7eb7ab0051c76"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_GPS_DISCONNECT</b> = 45</td></tr>
+<tr class="separator:a759920cc163a592681e7eb7ab0051c76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0d944014352aad0a05ba7e77a257d2e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa0d944014352aad0a05ba7e77a257d2e"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_INTERNAL_46</b> = 46</td></tr>
+<tr class="separator:aa0d944014352aad0a05ba7e77a257d2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ab6eeb6e75f47abbac48a1951c5e1b7"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#a8ab6eeb6e75f47abbac48a1951c5e1b7">MOTOR_FAIL_RECORDER_ERROR</a> = 47</td></tr>
+<tr class="separator:a8ab6eeb6e75f47abbac48a1951c5e1b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a010d9aa962dbc4a944b87bf2e1e8da3b"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#a010d9aa962dbc4a944b87bf2e1e8da3b">MOTOR_FAIL_INVALID_PRODUCT</a> = 48</td></tr>
+<tr class="separator:a010d9aa962dbc4a944b87bf2e1e8da3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d134fd7b5cc77e0db8953391447119d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9d134fd7b5cc77e0db8953391447119d"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_RESERVED_49</b> = 49</td></tr>
+<tr class="separator:a9d134fd7b5cc77e0db8953391447119d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61fccca216c04c45be7969f341c8a70d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a61fccca216c04c45be7969f341c8a70d"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_RESERVED_50</b> = 50</td></tr>
+<tr class="separator:a61fccca216c04c45be7969f341c8a70d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dfbf35ac84425b0346dae90047caaf2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5dfbf35ac84425b0346dae90047caaf2"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_RESERVED_51</b> = 51</td></tr>
+<tr class="separator:a5dfbf35ac84425b0346dae90047caaf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba01f5001b0b1a235e5a77aadad0e1bf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aba01f5001b0b1a235e5a77aadad0e1bf"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_RESERVED_52</b> = 52</td></tr>
+<tr class="separator:aba01f5001b0b1a235e5a77aadad0e1bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab78154f22dde7d6d6aee8893d31596a7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab78154f22dde7d6d6aee8893d31596a7"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_RESERVED_53</b> = 53</td></tr>
+<tr class="separator:ab78154f22dde7d6d6aee8893d31596a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cab43340ee6f959daf5d590a7aee640"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1cab43340ee6f959daf5d590a7aee640"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_RESERVED_54</b> = 54</td></tr>
+<tr class="separator:a1cab43340ee6f959daf5d590a7aee640"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae389d0321d21dafe4a962a332f42f0b8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae389d0321d21dafe4a962a332f42f0b8"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_RESERVED_55</b> = 55</td></tr>
+<tr class="separator:ae389d0321d21dafe4a962a332f42f0b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd958634bb4f3bebdf939d900091d678"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd958634bb4f3bebdf939d900091d678"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_RESERVED_56</b> = 56</td></tr>
+<tr class="separator:abd958634bb4f3bebdf939d900091d678"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6fa4e84869b78d00f0aaece32bf8034"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af6fa4e84869b78d00f0aaece32bf8034"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_RESERVED_57</b> = 57</td></tr>
+<tr class="separator:af6fa4e84869b78d00f0aaece32bf8034"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18b1c6835f99246f619bb7d5dbf5b73d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a18b1c6835f99246f619bb7d5dbf5b73d"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_RESERVED_58</b> = 58</td></tr>
+<tr class="separator:a18b1c6835f99246f619bb7d5dbf5b73d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1da095284323bdef6d5aca6b858bf3f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af1da095284323bdef6d5aca6b858bf3f"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_RESERVED_59</b> = 59</td></tr>
+<tr class="separator:af1da095284323bdef6d5aca6b858bf3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc7fce14f73b26e2a38e22ed03fdca33"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abc7fce14f73b26e2a38e22ed03fdca33"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_RESERVED_60</b> = 60</td></tr>
+<tr class="separator:abc7fce14f73b26e2a38e22ed03fdca33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1fb7ce9801e54144e533dd04cef87eb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac1fb7ce9801e54144e533dd04cef87eb"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_IMU_DISCONNECTED</b> = 61</td></tr>
+<tr class="separator:ac1fb7ce9801e54144e533dd04cef87eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa57b4adf9423ef8225101ce5a4c83b5f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa57b4adf9423ef8225101ce5a4c83b5f"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_RC_CALIBRATING</b> = 62</td></tr>
+<tr class="separator:aa57b4adf9423ef8225101ce5a4c83b5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3fe57020c2b16b8d2f99872854edd91"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa3fe57020c2b16b8d2f99872854edd91"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_RC_CALI_DATA_OUT_RANGE</b> = 63</td></tr>
+<tr class="separator:aa3fe57020c2b16b8d2f99872854edd91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eeaecfe4478379cb55d6df04859bdd0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9eeaecfe4478379cb55d6df04859bdd0"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_RC_QUIT_CALI</b> = 64</td></tr>
+<tr class="separator:a9eeaecfe4478379cb55d6df04859bdd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5b1a374a97a59d4c840b4877948098a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac5b1a374a97a59d4c840b4877948098a"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_RC_CENTER_OUT_RANGE</b> = 65</td></tr>
+<tr class="separator:ac5b1a374a97a59d4c840b4877948098a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34ae5656ba2af63e2238cd48094354b4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a34ae5656ba2af63e2238cd48094354b4"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_RC_MAP_ERROR</b> = 66</td></tr>
+<tr class="separator:a34ae5656ba2af63e2238cd48094354b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a596c437880578f82a20f0b15baf99a23"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#a596c437880578f82a20f0b15baf99a23">MOTOR_FAIL_WRONG_AIRCRAFT_TYPE</a> = 67</td></tr>
+<tr class="separator:a596c437880578f82a20f0b15baf99a23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac79e4ba70464d5f227ef556eb1d74ec0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac79e4ba70464d5f227ef556eb1d74ec0"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_SOME_MODULE_NOT_CONFIGURED</b> = 68</td></tr>
+<tr class="separator:ac79e4ba70464d5f227ef556eb1d74ec0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4af53395e191094a5bc8c3ecd2983eda"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4af53395e191094a5bc8c3ecd2983eda"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_RESERVED_69</b> = 69</td></tr>
+<tr class="separator:a4af53395e191094a5bc8c3ecd2983eda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82024d764f7a81a47f008862ac82cea0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a82024d764f7a81a47f008862ac82cea0"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_RESERVED_70</b> = 70</td></tr>
+<tr class="separator:a82024d764f7a81a47f008862ac82cea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a392f23a46b05278473d219da31f6cf2f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a392f23a46b05278473d219da31f6cf2f"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_RESERVED_71</b> = 71</td></tr>
+<tr class="separator:a392f23a46b05278473d219da31f6cf2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81c1c639a33ccbaf2806c310782a6858"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a81c1c639a33ccbaf2806c310782a6858"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_RESERVED_72</b> = 72</td></tr>
+<tr class="separator:a81c1c639a33ccbaf2806c310782a6858"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6af50037bcf57ffdfce874b346d83bf1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6af50037bcf57ffdfce874b346d83bf1"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_RESERVED_73</b> = 73</td></tr>
+<tr class="separator:a6af50037bcf57ffdfce874b346d83bf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f523480f7079c221154e4e0dc4d5141"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#a5f523480f7079c221154e4e0dc4d5141">MOTOR_FAIL_NS_ABNORMAL</a> = 74</td></tr>
+<tr class="separator:a5f523480f7079c221154e4e0dc4d5141"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1522582e51750c18863b7dd8806c1bca"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#a1522582e51750c18863b7dd8806c1bca">MOTOR_FAIL_TOPOLOGY_ABNORMAL</a> = 75</td></tr>
+<tr class="separator:a1522582e51750c18863b7dd8806c1bca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae83a62c98f3f50398d232c43d9c750e8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae83a62c98f3f50398d232c43d9c750e8"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_RC_NEED_CALI</b> = 76</td></tr>
+<tr class="separator:ae83a62c98f3f50398d232c43d9c750e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09dad8b4c9f668d1de054b901f8d9879"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#a09dad8b4c9f668d1de054b901f8d9879">MOTOR_FAIL_INVALID_FLOAT</a> = 77</td></tr>
+<tr class="separator:a09dad8b4c9f668d1de054b901f8d9879"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09388145bdfd823ed59fee4c2f65f97f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a09388145bdfd823ed59fee4c2f65f97f"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_M600_BAT_TOO_FEW</b> = 78</td></tr>
+<tr class="separator:a09388145bdfd823ed59fee4c2f65f97f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2eff1082842ecf2e38398f90303b9be"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa2eff1082842ecf2e38398f90303b9be"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_M600_BAT_AUTH_ERR</b> = 79</td></tr>
+<tr class="separator:aa2eff1082842ecf2e38398f90303b9be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02ede20cb4c7ed4f97de316a06dcfb78"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a02ede20cb4c7ed4f97de316a06dcfb78"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_M600_BAT_COMM_ERR</b> = 80</td></tr>
+<tr class="separator:a02ede20cb4c7ed4f97de316a06dcfb78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d5cd53e7e0ab605b964680d5477b06e"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#a0d5cd53e7e0ab605b964680d5477b06e">MOTOR_FAIL_M600_BAT_DIF_VOLT_LARGE_1</a> = 81</td></tr>
+<tr class="separator:a0d5cd53e7e0ab605b964680d5477b06e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f5823f6eda645fc35d424e74e147bda"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6f5823f6eda645fc35d424e74e147bda"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_BATTERY_BOLTAHGE_DIFF_82</b> = 82</td></tr>
+<tr class="separator:a6f5823f6eda645fc35d424e74e147bda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a732ea0b21281a0cfc7d1bebea93e2216"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a732ea0b21281a0cfc7d1bebea93e2216"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_INVALID_VERSION</b> = 83</td></tr>
+<tr class="separator:a732ea0b21281a0cfc7d1bebea93e2216"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc1252e9e89936f6378422d29aed0c47"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#abc1252e9e89936f6378422d29aed0c47">MOTOR_FAIL_GIMBAL_GYRO_ABNORMAL</a> = 84</td></tr>
+<tr class="separator:abc1252e9e89936f6378422d29aed0c47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b675bcde376ab2221a500bde85d2fb6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9b675bcde376ab2221a500bde85d2fb6"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_GIMBAL_ESC_PITCH_NO_DATA</b> = 85</td></tr>
+<tr class="separator:a9b675bcde376ab2221a500bde85d2fb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8eaf587c3ea55b723b1f4708f0e8f770"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8eaf587c3ea55b723b1f4708f0e8f770"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_GIMBAL_ESC_ROLL_NO_DATA</b> = 86</td></tr>
+<tr class="separator:a8eaf587c3ea55b723b1f4708f0e8f770"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4650659512c3d9d4318dac77204b7d5e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4650659512c3d9d4318dac77204b7d5e"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_GIMBAL_ESC_YAW_NO_DATA</b> = 87</td></tr>
+<tr class="separator:a4650659512c3d9d4318dac77204b7d5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92947aa657e91cfc66a6dacbabc0bd74"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a92947aa657e91cfc66a6dacbabc0bd74"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_GIMBAL_FIRM_IS_UPDATING</b> = 88</td></tr>
+<tr class="separator:a92947aa657e91cfc66a6dacbabc0bd74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeca7c4d1d7e3c1f0d68b0113ea0f67bd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeca7c4d1d7e3c1f0d68b0113ea0f67bd"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_GIMBAL_OUT_OF_CONTROL</b> = 89</td></tr>
+<tr class="separator:aeca7c4d1d7e3c1f0d68b0113ea0f67bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46ffa5b001f591f1b5d873a43a260d3e"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#a46ffa5b001f591f1b5d873a43a260d3e">MOTOR_FAIL_GIMBAL_PITCH_SHOCK</a> = 90</td></tr>
+<tr class="separator:a46ffa5b001f591f1b5d873a43a260d3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8abfa6f354aed92d4806aaad5077a4a5"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#a8abfa6f354aed92d4806aaad5077a4a5">MOTOR_FAIL_GIMBAL_ROLL_SHOCK</a> = 91</td></tr>
+<tr class="separator:a8abfa6f354aed92d4806aaad5077a4a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89d574f11a5d80f002ebe809dd0f269c"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#a89d574f11a5d80f002ebe809dd0f269c">MOTOR_FAIL_GIMBAL_YAW_SHOCK</a> = 92</td></tr>
+<tr class="separator:a89d574f11a5d80f002ebe809dd0f269c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a0a5b77c9348477adb666b64eb0649d"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#a7a0a5b77c9348477adb666b64eb0649d">MOTOR_FAIL_IMU_CALI_SUCCESS</a> = 93</td></tr>
+<tr class="separator:a7a0a5b77c9348477adb666b64eb0649d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca8ed6de7570f30ce9597fcc296a0a95"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aca8ed6de7570f30ce9597fcc296a0a95"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_TAKEOFF_EXCEPTION</b> = 94</td></tr>
+<tr class="separator:aca8ed6de7570f30ce9597fcc296a0a95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55fa0ed6e67d4f46dfad5f276026c517"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#a55fa0ed6e67d4f46dfad5f276026c517">MOTOR_FAIL_ESC_STALL_NEAR_GOUND</a> = 95</td></tr>
+<tr class="separator:a55fa0ed6e67d4f46dfad5f276026c517"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e4d356d338108c52e38732db2067e90"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#a9e4d356d338108c52e38732db2067e90">MOTOR_FAIL_ESC_UNBALANCE_ON_GRD</a> = 96</td></tr>
+<tr class="separator:a9e4d356d338108c52e38732db2067e90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dd74582545e6534f89e3a51bfa98f88"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#a8dd74582545e6534f89e3a51bfa98f88">MOTOR_FAIL_ESC_PART_EMPTY_ON_GRD</a> = 97</td></tr>
+<tr class="separator:a8dd74582545e6534f89e3a51bfa98f88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8b2b1640e7bfcf01fe331183a753164"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#af8b2b1640e7bfcf01fe331183a753164">MOTOR_FAIL_ENGINE_START_FAILED</a> = 98</td></tr>
+<tr class="separator:af8b2b1640e7bfcf01fe331183a753164"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd6101976fe4f1a773c9ac0b737825d9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd6101976fe4f1a773c9ac0b737825d9"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_AUTO_TAKEOFF_LAUNCH_FAILED</b> = 99</td></tr>
+<tr class="separator:abd6101976fe4f1a773c9ac0b737825d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ab4df3143789cfbf5d494dc6af4ffdb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4ab4df3143789cfbf5d494dc6af4ffdb"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_ROLL_OVER_ON_GRD</b> = 100</td></tr>
+<tr class="separator:a4ab4df3143789cfbf5d494dc6af4ffdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d5b57dd83e0e36f650af78e02e7fcdc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1d5b57dd83e0e36f650af78e02e7fcdc"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_BAT_VERSION_ERR</b> = 101</td></tr>
+<tr class="separator:a1d5b57dd83e0e36f650af78e02e7fcdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76c4b166f7f5808524e9712b74fd993d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a76c4b166f7f5808524e9712b74fd993d"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_RTK_INITING</b> = 102</td></tr>
+<tr class="separator:a76c4b166f7f5808524e9712b74fd993d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97b10d05a3e7d659f1440cb1769190f4"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#a97b10d05a3e7d659f1440cb1769190f4">MOTOR_FAIL_RTK_FAIL_TO_INIT</a> = 103</td></tr>
+<tr class="separator:a97b10d05a3e7d659f1440cb1769190f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1695ff92ab5574ab8cace50730bebd10"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1695ff92ab5574ab8cace50730bebd10"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_RESERVED_104</b> = 104</td></tr>
+<tr class="separator:a1695ff92ab5574ab8cace50730bebd10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a017d86101b836b13143909b18e12064d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a017d86101b836b13143909b18e12064d"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_RESERVED_105</b> = 105</td></tr>
+<tr class="separator:a017d86101b836b13143909b18e12064d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34beb6b378e21b12c1a25d54a1a80f75"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a34beb6b378e21b12c1a25d54a1a80f75"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_RESERVED_106</b> = 106</td></tr>
+<tr class="separator:a34beb6b378e21b12c1a25d54a1a80f75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac808250a9a4daa128370a8dccc60c95d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac808250a9a4daa128370a8dccc60c95d"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_RESERVED_107</b> = 107</td></tr>
+<tr class="separator:ac808250a9a4daa128370a8dccc60c95d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa19aa3ac513378ee5463e96fe6270116"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa19aa3ac513378ee5463e96fe6270116"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_RESERVED_108</b> = 108</td></tr>
+<tr class="separator:aa19aa3ac513378ee5463e96fe6270116"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ad8e2267593060e5860a12145db428e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7ad8e2267593060e5860a12145db428e"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_RESERVED_109</b> = 109</td></tr>
+<tr class="separator:a7ad8e2267593060e5860a12145db428e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4159b9c6cebf4c1effbbd3d9509ef462"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#a4159b9c6cebf4c1effbbd3d9509ef462">START_MOTOR_FAIL_MOTOR_STARTED</a> = 110</td></tr>
+<tr class="separator:a4159b9c6cebf4c1effbbd3d9509ef462"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35aef2b6b44fc5cbe877ce7a854f352c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a35aef2b6b44fc5cbe877ce7a854f352c"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_INTERNAL_111</b> = 111</td></tr>
+<tr class="separator:a35aef2b6b44fc5cbe877ce7a854f352c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b3a10bd67443121e8b07791430c3fe9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5b3a10bd67443121e8b07791430c3fe9"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_ESC_CALIBRATING</b> = 112</td></tr>
+<tr class="separator:a5b3a10bd67443121e8b07791430c3fe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6c61ae50c0e8bbd9ff5c5e6d34f4fa5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad6c61ae50c0e8bbd9ff5c5e6d34f4fa5"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_GPS_SIGNATURE_INVALID</b> = 113</td></tr>
+<tr class="separator:ad6c61ae50c0e8bbd9ff5c5e6d34f4fa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adea08cd3c2d54cfc24779874e52c0867"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adea08cd3c2d54cfc24779874e52c0867"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_GIMBAL_CALIBRATING</b> = 114</td></tr>
+<tr class="separator:adea08cd3c2d54cfc24779874e52c0867"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51a6d997c4d379f02dde19297245229b"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#a51a6d997c4d379f02dde19297245229b">MOTOR_FAIL_FORCE_DISABLE</a> = 115</td></tr>
+<tr class="separator:a51a6d997c4d379f02dde19297245229b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc05abd317e887da6734d4401cad517f"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#afc05abd317e887da6734d4401cad517f">TAKEOFF_HEIGHT_EXCEPTION</a> = 116</td></tr>
+<tr class="separator:afc05abd317e887da6734d4401cad517f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae71143e47ad849098da99ec4bcd66ac1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae71143e47ad849098da99ec4bcd66ac1"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_ESC_NEED_UPGRADE</b> = 117</td></tr>
+<tr class="separator:ae71143e47ad849098da99ec4bcd66ac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1775c974c835c89bb1ce8faf1572c6c"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#ad1775c974c835c89bb1ce8faf1572c6c">MOTOR_FAIL_GYRO_DATA_NOT_MATCH</a> = 118</td></tr>
+<tr class="separator:ad1775c974c835c89bb1ce8faf1572c6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a442b2ad340f197c7bd90dcd114b17656"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#a442b2ad340f197c7bd90dcd114b17656">MOTOR_FAIL_APP_NOT_ALLOW</a> = 119</td></tr>
+<tr class="separator:a442b2ad340f197c7bd90dcd114b17656"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9581018de9335c883645e59b014d8576"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9581018de9335c883645e59b014d8576"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_COMPASS_IMU_MISALIGN</b> = 120</td></tr>
+<tr class="separator:a9581018de9335c883645e59b014d8576"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3bcf472d709711306d86e7c9d216cf5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af3bcf472d709711306d86e7c9d216cf5"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_FLASH_UNLOCK</b> = 121</td></tr>
+<tr class="separator:af3bcf472d709711306d86e7c9d216cf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71662c9ee736924c978f34a93e74044d"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#a71662c9ee736924c978f34a93e74044d">MOTOR_FAIL_ESC_SCREAMING</a> = 122</td></tr>
+<tr class="separator:a71662c9ee736924c978f34a93e74044d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad84c543e176708e9ade5b40b0916cb22"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad84c543e176708e9ade5b40b0916cb22"></a>
+static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MOTOR_FAIL_ESC_TEMP_HIGH</b> = 123</td></tr>
+<tr class="separator:ad84c543e176708e9ade5b40b0916cb22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0a93ec793c1e5a53d8187d3fce90b84"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#ad0a93ec793c1e5a53d8187d3fce90b84">MOTOR_FAIL_BAT_ERR</a> = 124</td></tr>
+<tr class="separator:ad0a93ec793c1e5a53d8187d3fce90b84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2dd35ca5e39082b57ec71a243fbca29"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#ac2dd35ca5e39082b57ec71a243fbca29">IMPACT_IS_DETECTED</a> = 125</td></tr>
+<tr class="separator:ac2dd35ca5e39082b57ec71a243fbca29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a614e37efc11fd78103239dc724002757"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#a614e37efc11fd78103239dc724002757">MOTOR_FAIL_MODE_FAILURE</a> = 126</td></tr>
+<tr class="separator:a614e37efc11fd78103239dc724002757"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adee1c615d319961c11f0a287875faafb"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#adee1c615d319961c11f0a287875faafb">MOTOR_FAIL_CRAFT_FAIL_LATELY</a> = 127</td></tr>
+<tr class="separator:adee1c615d319961c11f0a287875faafb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9d033c93c2e7f4902245f28786b2e23"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#ae9d033c93c2e7f4902245f28786b2e23">MOTOR_FAIL_MOTOR_CODE_ERROR</a> = 255</td></tr>
+<tr class="separator:ae9d033c93c2e7f4902245f28786b2e23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Common <a class="el" href="classDJI_1_1OSDK_1_1ACK.html" title="Class for handling acknowledgements from the aircraft. ">ACK</a> Error Codes. </p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="ac01ea36473365b483830b25dd3431c01"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK_1_1FlightStatus.html">DJI::OSDK::ErrorCode::CommonACK::FlightStatus</a>  <a class="el" href="structDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK_1_1FlightStatus.html">DJI::OSDK::ErrorCode::CommonACK::FlightStatus</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Flight Status enum. </p>
+<dl class="section note"><dt>Note</dt><dd>this is not just an acknowledgement, it is also a DataBroadcast/DataSubscription telemetry message. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="ac2dd35ca5e39082b57ec71a243fbca29"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t DJI::OSDK::ErrorCode::CommonACK::IMPACT_IS_DETECTED = 125</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The aircraft detects an impact if the measured value of accelerometer exceeds 8g near ground. </p>
+
+</div>
+</div>
+<a class="anchor" id="a442b2ad340f197c7bd90dcd114b17656"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t DJI::OSDK::ErrorCode::CommonACK::MOTOR_FAIL_APP_NOT_ALLOW = 119</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>APP stops the takeoff. </p>
+
+</div>
+</div>
+<a class="anchor" id="abc79588c5b42ba90b1d3bd69360a1438"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t DJI::OSDK::ErrorCode::CommonACK::MOTOR_FAIL_ASSISTANT_PROTECTED = 2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The aircraft is connected to the software for debugging parameters via the USB cable. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad0a93ec793c1e5a53d8187d3fce90b84"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t DJI::OSDK::ErrorCode::CommonACK::MOTOR_FAIL_BAT_ERR = 124</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The battery is not in place. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0d2e623fdc6e5d3ef4330c4300057280"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t DJI::OSDK::ErrorCode::CommonACK::MOTOR_FAIL_BATTERY_MAIN_VOL_LOW = 15</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The voltage is below the second-level power set by user. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa9987f33e66db0d6b46978336a75d678"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t DJI::OSDK::ErrorCode::CommonACK::MOTOR_FAIL_BATTERY_NOT_READY = 18</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This error occurs whin 7s after power up. Also, it occurs if the battery certification hasn't passed yet. </p>
+
+</div>
+</div>
+<a class="anchor" id="ab88019be01c638f79ba99f1e80136bee"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t DJI::OSDK::ErrorCode::CommonACK::MOTOR_FAIL_BATTERY_SMART_LOW_LAND = 17</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Flight contol calculates that current power is only adequate to land. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa52e70fa5c552e5d50bbcb2c2cda40c9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t DJI::OSDK::ErrorCode::CommonACK::MOTOR_FAIL_BATTERY_USER_LOW_LAND = 14</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The volume (%) is below the second-level power set by user. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad4a4baee5231f9c85916940b54ead615"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t DJI::OSDK::ErrorCode::CommonACK::MOTOR_FAIL_COMPASS_ABNORMAL = 1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The compass being used appears as follows: <br />
+ (1) The compass data has too much noise. <br />
+ (2) The compass data is stuck. <br />
+ (3) The compass is disconnected. <br />
+ (4) Compass user compilation error. <br />
+ For the flight control of N3, A3 and M600, there are more situations: <br />
+ (5) The compass is disturbed. <br />
+ (6) Multiple compasses point different directions. <br />
+ (7) Compass calibration failed. <br />
+ (8) The compass is not calibrated. </p>
+
+</div>
+</div>
+<a class="anchor" id="adee1c615d319961c11f0a287875faafb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t DJI::OSDK::ErrorCode::CommonACK::MOTOR_FAIL_CRAFT_FAIL_LATELY = 127</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The aircraft recently had an error of NO. 125. </p>
+
+</div>
+</div>
+<a class="anchor" id="a1ab9221fa21b172af411679756b27c1a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t DJI::OSDK::ErrorCode::CommonACK::MOTOR_FAIL_DEVICE_LOCKED = 3</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The structure of the parameter list has changed after the FW upgrade. </p>
+
+</div>
+</div>
+<a class="anchor" id="af8b2b1640e7bfcf01fe331183a753164"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t DJI::OSDK::ErrorCode::CommonACK::MOTOR_FAIL_ENGINE_START_FAILED = 98</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>During starting, the speed of any motor is less than the minimum starting speed. <br />
+ For N3 and A3, the minimum starting speed is 100rpm. <br />
+ For M600, the minimum starting speed is 700rpm. <br />
+ For other aircrafts, the minimum starting speed is 1100rpm. </p>
+
+</div>
+</div>
+<a class="anchor" id="a8dd74582545e6534f89e3a51bfa98f88"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t DJI::OSDK::ErrorCode::CommonACK::MOTOR_FAIL_ESC_PART_EMPTY_ON_GRD = 97</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>There are some no-load motors. Please check the status of the motors and blades. </p>
+
+</div>
+</div>
+<a class="anchor" id="a71662c9ee736924c978f34a93e74044d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t DJI::OSDK::ErrorCode::CommonACK::MOTOR_FAIL_ESC_SCREAMING = 122</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The ESC is in the buzzing mode. </p>
+
+</div>
+</div>
+<a class="anchor" id="a55fa0ed6e67d4f46dfad5f276026c517"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t DJI::OSDK::ErrorCode::CommonACK::MOTOR_FAIL_ESC_STALL_NEAR_GOUND = 95</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The motor is locked. Please check the status of the motors and blades. </p>
+
+</div>
+</div>
+<a class="anchor" id="a9e4d356d338108c52e38732db2067e90"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t DJI::OSDK::ErrorCode::CommonACK::MOTOR_FAIL_ESC_UNBALANCE_ON_GRD = 96</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The feedback speed of motor is different with the input command. </p>
+
+</div>
+</div>
+<a class="anchor" id="a4a0c4125a42f717ede3be8d0df8e9f26"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t DJI::OSDK::ErrorCode::CommonACK::MOTOR_FAIL_FLASH_OPERATING = 44</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>accessing flash data, MCU is blocked </p>
+
+</div>
+</div>
+<a class="anchor" id="a51a6d997c4d379f02dde19297245229b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t DJI::OSDK::ErrorCode::CommonACK::MOTOR_FAIL_FORCE_DISABLE = 115</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The aircraft is force locked by APP. </p>
+
+</div>
+</div>
+<a class="anchor" id="abc1252e9e89936f6378422d29aed0c47"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t DJI::OSDK::ErrorCode::CommonACK::MOTOR_FAIL_GIMBAL_GYRO_ABNORMAL = 84</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>There is an gimbal attitude error which happens only in M600. </p>
+
+</div>
+</div>
+<a class="anchor" id="a46ffa5b001f591f1b5d873a43a260d3e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t DJI::OSDK::ErrorCode::CommonACK::MOTOR_FAIL_GIMBAL_PITCH_SHOCK = 90</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The gimbal has self-oscillation in the pitch direction. <br />
+ Please lock the camera or reduce the gimbal sensitivity. </p>
+
+</div>
+</div>
+<a class="anchor" id="a8abfa6f354aed92d4806aaad5077a4a5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t DJI::OSDK::ErrorCode::CommonACK::MOTOR_FAIL_GIMBAL_ROLL_SHOCK = 91</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The gimbal has self-oscillation in the roll direction. <br />
+ Please lock the camera or reduce the gimbal sensitivity. </p>
+
+</div>
+</div>
+<a class="anchor" id="a89d574f11a5d80f002ebe809dd0f269c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t DJI::OSDK::ErrorCode::CommonACK::MOTOR_FAIL_GIMBAL_YAW_SHOCK = 92</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The gimbal has self-oscillation in the yaw direction. <br />
+ Please lock the camera or reduce the gimbal sensitivity. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad1775c974c835c89bb1ce8faf1572c6c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t DJI::OSDK::ErrorCode::CommonACK::MOTOR_FAIL_GYRO_DATA_NOT_MATCH = 118</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>IMU direction is misaligned. </p>
+
+</div>
+</div>
+<a class="anchor" id="aedd198758f000c71430ff72139861b50"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t DJI::OSDK::ErrorCode::CommonACK::MOTOR_FAIL_HAVE_RUN_SIM = 28</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The simulator has already been run. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac225f3b24e9b2e215230d690e5f5759c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t DJI::OSDK::ErrorCode::CommonACK::MOTOR_FAIL_IMU_BIAS_LIMIT = 24</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The IMU is too biased if the gyro's bias is over 0.03rad/s or the accelerometer's bias is over 50 mg when first started up. </p>
+
+</div>
+</div>
+<a class="anchor" id="a7a0a5b77c9348477adb666b64eb0649d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t DJI::OSDK::ErrorCode::CommonACK::MOTOR_FAIL_IMU_CALI_SUCCESS = 93</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>IMU calibration finished. Please reset aircraft. </p>
+
+</div>
+</div>
+<a class="anchor" id="afa5802e70358eedcda8ba5b5447c4a4a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t DJI::OSDK::ErrorCode::CommonACK::MOTOR_FAIL_IMU_CALIBRATING = 29</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The IMU is in calibration or the aircraft should reset after IMU calibration. </p>
+
+</div>
+</div>
+<a class="anchor" id="a21af73a4eb68df680c5ee3487366f674"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t DJI::OSDK::ErrorCode::CommonACK::MOTOR_FAIL_IMU_INITING = 26</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The IMU is initializing.The attitude data of the current navigation system has not converged yet and the height data of the current navigation system is not ready. </p>
+
+</div>
+</div>
+<a class="anchor" id="a2e298a2e4301812e80472eb9ac59ad74"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t DJI::OSDK::ErrorCode::CommonACK::MOTOR_FAIL_IMU_NEED_ADV_CALIBRATION = 5</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The IMU being used appears as follows: <br />
+ (1) The accelerometer output exceeds its range. <br />
+ (2) The accelerometer is stuck. <br />
+ (3) The accelerometer data has too much noise. <br />
+ (4) The accelerometer outputs illegal floating numbers. <br />
+ (5) The factory data of IMU has exception. <br />
+ (6) Multiple accelerometers output differently. <br />
+ (7) The temperature of the IMU is too high. <br />
+ (8) The temperature of the IMU is very high. <br />
+ (9) The gyro output exceeds its range. <br />
+ (10) The gyro is stuck. <br />
+ (11) The gyro data has too much noise. <br />
+ (12) The gyro outputs illegal floating numbers. <br />
+ (13) Multiple accelerometers output differently. <br />
+ (14) The temperature control of gyro is abnormal. <br />
+ For the flight control of Inspire 2, there are more situations: <br />
+ (15)The default IMU exception causes the switch to backup IMU. </p>
+
+</div>
+</div>
+<a class="anchor" id="ace4d5bbff36a7f619a4d6947788e786a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t DJI::OSDK::ErrorCode::CommonACK::MOTOR_FAIL_IMU_PREHEATING = 7</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The IMU being used is preheated and current temperature is not wihin the calibration range. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa0d87648735466755dc97b77fd5b2514"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t DJI::OSDK::ErrorCode::CommonACK::MOTOR_FAIL_IMU_SN_ERROR = 6</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The SN status is wrong. </p>
+
+</div>
+</div>
+<a class="anchor" id="a09dad8b4c9f668d1de054b901f8d9879"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t DJI::OSDK::ErrorCode::CommonACK::MOTOR_FAIL_INVALID_FLOAT = 77</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>invalid data, system will block motor spinning </p>
+
+</div>
+</div>
+<a class="anchor" id="a010d9aa962dbc4a944b87bf2e1e8da3b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t DJI::OSDK::ErrorCode::CommonACK::MOTOR_FAIL_INVALID_PRODUCT = 48</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The firmware is unmatched with configured type. </p>
+
+</div>
+</div>
+<a class="anchor" id="ab2b992341299643b7837a8cf9ca80ef8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t DJI::OSDK::ErrorCode::CommonACK::MOTOR_FAIL_INVALID_SN = 41</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>invalid serial number </p>
+
+</div>
+</div>
+<a class="anchor" id="a0d5cd53e7e0ab605b964680d5477b06e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t DJI::OSDK::ErrorCode::CommonACK::MOTOR_FAIL_M600_BAT_DIF_VOLT_LARGE_1 = 81</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Battery voltage difference is too large. Please check the battery status. </p>
+
+</div>
+</div>
+<a class="anchor" id="a614e37efc11fd78103239dc724002757"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t DJI::OSDK::ErrorCode::CommonACK::MOTOR_FAIL_MODE_FAILURE = 126</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Under the P stall, the aircraft mode degenerates to the Attitude mode. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae9d033c93c2e7f4902245f28786b2e23"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t DJI::OSDK::ErrorCode::CommonACK::MOTOR_FAIL_MOTOR_CODE_ERROR = 255</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The code logic is illegal. </p>
+
+</div>
+</div>
+<a class="anchor" id="aef3567764bb0f39f6762104cfc9b7a2a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t DJI::OSDK::ErrorCode::CommonACK::MOTOR_FAIL_NO_GPS_IN_NOVICE_MODE = 10</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The aircraft is in Novice Mode without gps. </p>
+
+</div>
+</div>
+<a class="anchor" id="a5f523480f7079c221154e4e0dc4d5141"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t DJI::OSDK::ErrorCode::CommonACK::MOTOR_FAIL_NS_ABNORMAL = 74</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>navigation system abnormal </p>
+
+</div>
+</div>
+<a class="anchor" id="a9e22293185f647656fe0bb6e2f60d586"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t DJI::OSDK::ErrorCode::CommonACK::MOTOR_FAIL_PACK_MODE = 20</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The aircraft (Inspire series) is setting itself to packing config. </p>
+
+</div>
+</div>
+<a class="anchor" id="a8ab6eeb6e75f47abbac48a1951c5e1b7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t DJI::OSDK::ErrorCode::CommonACK::MOTOR_FAIL_RECORDER_ERROR = 47</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>SD card has an exception. Please repair SD card if repeats after reset. </p>
+
+</div>
+</div>
+<a class="anchor" id="a97b10d05a3e7d659f1440cb1769190f4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t DJI::OSDK::ErrorCode::CommonACK::MOTOR_FAIL_RTK_FAIL_TO_INIT = 103</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>rtk yaw and magnetometer yaw misaligned </p>
+
+</div>
+</div>
+<a class="anchor" id="a1522582e51750c18863b7dd8806c1bca"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t DJI::OSDK::ErrorCode::CommonACK::MOTOR_FAIL_TOPOLOGY_ABNORMAL = 75</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Each craft has a set of devices to register. <br />
+ It won't take off if a class of device is missing. Please reset and check the connection. </p>
+
+</div>
+</div>
+<a class="anchor" id="a596c437880578f82a20f0b15baf99a23"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t DJI::OSDK::ErrorCode::CommonACK::MOTOR_FAIL_WRONG_AIRCRAFT_TYPE = 67</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The aircraft type in flash is unmatched with the type in firmware. <br />
+ Please check the aircraft type. </p>
+
+</div>
+</div>
+<a class="anchor" id="a4159b9c6cebf4c1effbbd3d9509ef462"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t DJI::OSDK::ErrorCode::CommonACK::START_MOTOR_FAIL_MOTOR_STARTED = 110</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The motor status shows the motor has been started. </p>
+
+</div>
+</div>
+<a class="anchor" id="afc05abd317e887da6734d4401cad517f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t DJI::OSDK::ErrorCode::CommonACK::TAKEOFF_HEIGHT_EXCEPTION = 116</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The height of the takeoff is abnormal. <br />
+ This error happens when the takeoff height relative to ground is up to 100m. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>osdk-core/api/inc/<a class="el" href="dji__error_8hpp_source.html">dji_error.hpp</a></li>
+<li>osdk-core/api/src/<a class="el" href="dji__error_8cpp.html">dji_error.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- HTML footer for doxygen 1.8.8-->
+<!-- start footer part -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr class="footer"/><address class="footer"><small>
+<a href="https://developer.dji.com/onboard-sdk/documentation/introduction/index.html">
+<img class="footer" src="dji-logo-foot.png" alt="DJI Onboard SDK" height="20px" />
+</a>
+</small></address>
+</body>
+</html>

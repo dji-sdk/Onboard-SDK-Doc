@@ -1,0 +1,240 @@
+<!-- HTML header for doxygen 1.8.8-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- For Mobile Devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="generator" content="Doxygen 1.8.11"/>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <title>DJI Onboard SDK: Class Hierarchy</title>
+        <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
+        <script type="text/javascript" src="dynsections.js"></script>
+        <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+        <link href="doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <script src="bootstrap.min.js"></script>
+        <script type="text/javascript" src="doxy-boot.js"></script>
+    </head>
+    <body>
+        <nav id="site-header" class="site-header navbar">
+            <div class="container">
+                <div class="navbar-header"><a href="" class="logo"><img src="dji-logo@2x.png">Developer</a></div>
+                <div id="header-navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="hovedown"><a href="javascript:void(0);" class="hovedown-toggle">SDK<span class="caret"></span></a>
+                            <ul class="hovedown-menu">
+                                <li><a href="mobile-sdk">Mobile SDK</a></li>
+                                <li><a href="onboard-sdk">Onboard SDK</a></li>
+                                <li><a href="guidance-sdk">Guidance SDK</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="products">Products</a></li>
+                        <li><a href="showcase">Showcase</a></li>
+                        <li><a href="news">News</a></li>
+                        <li><a href="http://forum.dev.dji.com/en" target="_blank">Forum</a></li>
+                        <li class="hovedown"><a href="javascript:void(0);" class="hovedown-toggle">GitHub<span class="caret"></span></a>
+                            <ul class="hovedown-menu">
+                                <li><a href="https://github.com/dji-sdk/Mobile-SDK-iOS" target="_blank">iOS SDK</a></li>
+                                <li><a href="https://github.com/dji-sdk/Mobile-SDK-Android" target="_blank">Android SDK</a></li>
+                                <li><a href="https://github.com/dji-sdk/Onboard-SDK" target="_blank">Onboard SDK</a></li>
+                                <li><a href="https://github.com/dji-sdk/Guidance-SDK" target="_blank">Guidance SDK</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="challenge2016" target="_blank">Challenge</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div data-offset-top="60" data-spy="affix" class="sub-nav">
+            <div class="container">
+                <h1 class="logo">Onboard SDK</h1>
+                <nav><a href="onboard-sdk">Overview</a><a href="onboard-sdk/documentation">Documentation</a><a href="/onboard-api-reference/index.html" class="active">API Reference</a><a href="onboard-sdk/downloads">Downloads</a>
+                </nav>
+            </div>
+        </div>
+        <!--<nav class="navbar navbar-default" role="navigation">-->
+            <!--<div class="container">-->
+                <!--<div class="navbar-header">-->
+                    <!--<a href="#" class="navbar-left"><img src="dji_logo_gray_small.png" alt="DJI OSDK API Documentation" width="32px"/></a>-->
+                    <!--<a class="navbar-brand" href="index.html">ONBOARD SDK 3.3</a>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</nav>-->
+        <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+            <div class="content" id="content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 panel " style="padding-bottom: 15px; padding-top: 52px;">
+                            <div style="margin-bottom: 15px;">
+<!-- end header part -->
+<!-- Generated by Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
+      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li class="current"><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Class Hierarchy</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock">
+<p><a href="inherits.html">Go to the graphical class hierarchy</a></p>
+This inheritance list is sorted roughly, but not completely, alphabetically:</div><div class="directory">
+<div class="levels">[detail level <span onclick="javascript:toggleLevel(1);">1</span><span onclick="javascript:toggleLevel(2);">2</span>]</div><table class="directory">
+<tr id="row_0_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classDJI_1_1OSDK_1_1ACK.html" target="_self">DJI::OSDK::ACK</a></td><td class="desc">Class for handling acknowledgements from the aircraft </td></tr>
+<tr id="row_1_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode_1_1ActivationACK.html" target="_self">DJI::OSDK::ErrorCode::ActivationACK</a></td><td class="desc">CMDSet: Activation <a class="el" href="classDJI_1_1OSDK_1_1ACK.html" title="Class for handling acknowledgements from the aircraft. ">ACK</a> Error Codes </td></tr>
+<tr id="row_2_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structDJI_1_1OSDK_1_1Control_1_1AdvancedCtrlData.html" target="_self">DJI::OSDK::Control::AdvancedCtrlData</a></td><td class="desc"><a class="el" href="structDJI_1_1OSDK_1_1Control_1_1AdvancedCtrlData.html" title="AdvancedCtrlData. ">AdvancedCtrlData</a> </td></tr>
+<tr id="row_3_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structDJI_1_1OSDK_1_1Gimbal_1_1AngleData.html" target="_self">DJI::OSDK::Gimbal::AngleData</a></td><td class="desc">The Angle Data struct for gimbal control </td></tr>
+<tr id="row_4_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Battery.html" target="_self">DJI::OSDK::Telemetry::Battery</a></td><td class="desc">Struct for TOPIC_BATTERY_INFO and data broadcast, return battery status </td></tr>
+<tr id="row_5_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classDJI_1_1OSDK_1_1Camera.html" target="_self">DJI::OSDK::Camera</a></td><td class="desc"><a class="el" href="classDJI_1_1OSDK_1_1Camera.html" title="Camera class for controlling camera-related functions available through open protocol. ">Camera</a> class for controlling camera-related functions available through open protocol </td></tr>
+<tr id="row_6_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structDJI_1_1OSDK_1_1CMD__SETSupportMatrix.html" target="_self">DJI::OSDK::CMD_SETSupportMatrix</a></td><td class="desc">Define CMD_SET support matrix </td></tr>
+<tr id="row_7_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structDJI_1_1OSDK_1_1ErrorCode_1_1MissionACK_1_1Common.html" target="_self">DJI::OSDK::ErrorCode::MissionACK::Common</a></td><td class="desc"><a class="el" href="structDJI_1_1OSDK_1_1ErrorCode_1_1MissionACK_1_1Common.html" title="Common Mission ACK codes. ">Common</a> Mission <a class="el" href="classDJI_1_1OSDK_1_1ACK.html" title="Class for handling acknowledgements from the aircraft. ">ACK</a> codes </td></tr>
+<tr id="row_8_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html" target="_self">DJI::OSDK::ErrorCode::CommonACK</a></td><td class="desc">Common <a class="el" href="classDJI_1_1OSDK_1_1ACK.html" title="Class for handling acknowledgements from the aircraft. ">ACK</a> Error Codes </td></tr>
+<tr id="row_9_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classDJI_1_1OSDK_1_1Control.html" target="_self">DJI::OSDK::Control</a></td><td class="desc">Flight control API: high-level actions and low-level control modes </td></tr>
+<tr id="row_10_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode_1_1ControlACK.html" target="_self">DJI::OSDK::ErrorCode::ControlACK</a></td><td class="desc">CMDSet: <a class="el" href="classDJI_1_1OSDK_1_1Control.html" title="Flight control API: high-level actions and low-level control modes. ">Control</a> <a class="el" href="classDJI_1_1OSDK_1_1ACK.html" title="Class for handling acknowledgements from the aircraft. ">ACK</a> Error Codes </td></tr>
+<tr id="row_11_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structDJI_1_1OSDK_1_1Control_1_1CtrlData.html" target="_self">DJI::OSDK::Control::CtrlData</a></td><td class="desc"><a class="el" href="structDJI_1_1OSDK_1_1Control_1_1CtrlData.html" title="CtrlData used for flight control. ">CtrlData</a> used for flight control </td></tr>
+<tr id="row_12_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classDJI_1_1OSDK_1_1DataBroadcast.html" target="_self">DJI::OSDK::DataBroadcast</a></td><td class="desc"><a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html" title="This namespace encapsulates all available telemetry topics through either Broadcast or Subscribe...">Telemetry</a> API through asynchronous "Broadcast"-style messages </td></tr>
+<tr id="row_13_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classDJI_1_1OSDK_1_1DataSubscription.html" target="_self">DJI::OSDK::DataSubscription</a></td><td class="desc"><a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html" title="This namespace encapsulates all available telemetry topics through either Broadcast or Subscribe...">Telemetry</a> API through asynchronous "Subscribe"-style messages </td></tr>
+<tr id="row_14_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structDJI_1_1OSDK_1_1DispatchInfo.html" target="_self">DJI::OSDK::DispatchInfo</a></td><td class="desc">Dispatch info </td></tr>
+<tr id="row_15_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1DroneVersion.html" target="_self">DJI::OSDK::ACK::DroneVersion</a></td><td class="desc">This struct is returned from the <a class="el" href="classDJI_1_1OSDK_1_1Vehicle.html#a257f78845ca1dc25c0ed66f9a6499f52" title="Send get version control to the vehicle. ">DJI::OSDK::Vehicle::getDroneVersion</a> blocking API </td></tr>
+<tr id="row_16_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1ErrorCode.html" target="_self">DJI::OSDK::ACK::ErrorCode</a></td><td class="desc">This struct is returned from all blocking calls, except certain mission calls that have explicit types defined later in this file </td></tr>
+<tr id="row_17_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html" target="_self">DJI::OSDK::ErrorCode</a></td><td class="desc"></td></tr>
+<tr id="row_18_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classDJI_1_1OSDK_1_1Control_1_1FlightCommand.html" target="_self">DJI::OSDK::Control::FlightCommand</a></td><td class="desc">Flight control commands </td></tr>
+<tr id="row_19_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK_1_1FlightStatus.html" target="_self">DJI::OSDK::ErrorCode::CommonACK::FlightStatus</a></td><td class="desc">Flight Status enum </td></tr>
+<tr id="row_20_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structDJI_1_1OSDK_1_1ErrorCode_1_1MissionACK_1_1Follow.html" target="_self">DJI::OSDK::ErrorCode::MissionACK::Follow</a></td><td class="desc"><a class="el" href="structDJI_1_1OSDK_1_1ErrorCode_1_1MissionACK_1_1Follow.html" title="Follow Mission ACK Error Code. ">Follow</a> Mission <a class="el" href="classDJI_1_1OSDK_1_1ACK.html" title="Class for handling acknowledgements from the aircraft. ">ACK</a> Error Code </td></tr>
+<tr id="row_21_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structDJI_1_1OSDK_1_1ErrorCode_1_1MFIOACK_1_1get.html" target="_self">DJI::OSDK::ErrorCode::MFIOACK::get</a></td><td class="desc">CMDID: get </td></tr>
+<tr id="row_22_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Gimbal.html" target="_self">DJI::OSDK::Telemetry::Gimbal</a></td><td class="desc">Struct for data broadcast, return gimbal angle </td></tr>
+<tr id="row_23_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classDJI_1_1OSDK_1_1Gimbal.html" target="_self">DJI::OSDK::Gimbal</a></td><td class="desc">For controlling gimbal-related functions </td></tr>
+<tr id="row_24_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1GimbalStatus.html" target="_self">DJI::OSDK::Telemetry::GimbalStatus</a></td><td class="desc">Struct for TOPIC_GIMBAL_STATUS </td></tr>
+<tr id="row_25_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1GlobalPosition.html" target="_self">DJI::OSDK::Telemetry::GlobalPosition</a></td><td class="desc">Struct for data broadcast, return GPS data </td></tr>
+<tr id="row_26_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1GPSDetail.html" target="_self">DJI::OSDK::Telemetry::GPSDetail</a></td><td class="desc">Struct for TOPIC_GPS_DETAILS and sub struct for <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1GPSInfo.html" title="struct for GPSInfo of data broadcast ">GPSInfo</a> of data broadcast </td></tr>
+<tr id="row_27_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1GPSFused.html" target="_self">DJI::OSDK::Telemetry::GPSFused</a></td><td class="desc">Struct for TOPIC_GPS_FUSED </td></tr>
+<tr id="row_28_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1GPSInfo.html" target="_self">DJI::OSDK::Telemetry::GPSInfo</a></td><td class="desc">Struct for <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1GPSInfo.html" title="struct for GPSInfo of data broadcast ">GPSInfo</a> of data broadcast </td></tr>
+<tr id="row_29_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1HardSyncData.html" target="_self">DJI::OSDK::Telemetry::HardSyncData</a></td><td class="desc">Struct for TOPIC_HARD_SYNC </td></tr>
+<tr id="row_30_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classDJI_1_1OSDK_1_1HardwareSync.html" target="_self">DJI::OSDK::HardwareSync</a></td><td class="desc">APIs for controlling Hardware Sync </td></tr>
+<tr id="row_31_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structDJI_1_1OSDK_1_1Header.html" target="_self">DJI::OSDK::Header</a></td><td class="desc">The <a class="el" href="structDJI_1_1OSDK_1_1Header.html" title="The Header struct is meant to handle the open protocol header. ">Header</a> struct is meant to handle the open protocol header </td></tr>
+<tr id="row_32_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structDJI_1_1OSDK_1_1ErrorCode_1_1MissionACK_1_1HotPoint.html" target="_self">DJI::OSDK::ErrorCode::MissionACK::HotPoint</a></td><td class="desc"><a class="el" href="structDJI_1_1OSDK_1_1ErrorCode_1_1MissionACK_1_1HotPoint.html" title="HotPoint Mission ACK Error Code. ">HotPoint</a> Mission <a class="el" href="classDJI_1_1OSDK_1_1ACK.html" title="Class for handling acknowledgements from the aircraft. ">ACK</a> Error Code </td></tr>
+<tr id="row_33_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1HotPointRead.html" target="_self">DJI::OSDK::ACK::HotPointRead</a></td><td class="desc">This struct is returned from the DJI::OSDK::HotpointMission::read blocking API </td></tr>
+<tr id="row_34_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structDJI_1_1OSDK_1_1HotPointSettings.html" target="_self">DJI::OSDK::HotPointSettings</a></td><td class="desc">HotPoint Mission Initialization settings </td></tr>
+<tr id="row_35_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1HotPointStart.html" target="_self">DJI::OSDK::ACK::HotPointStart</a></td><td class="desc">This struct is returned from the <a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#a4a0151215ad6204133361bd81e87f44c" title="start the hotpoint mission ">DJI::OSDK::HotpointMission::start</a> blocking API </td></tr>
+<tr id="row_36_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structDJI_1_1OSDK_1_1ErrorCode_1_1MFIOACK_1_1init.html" target="_self">DJI::OSDK::ErrorCode::MFIOACK::init</a></td><td class="desc">CMDID: init </td></tr>
+<tr id="row_37_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structDJI_1_1OSDK_1_1ErrorCode_1_1MissionACK_1_1IOC.html" target="_self">DJI::OSDK::ErrorCode::MissionACK::IOC</a></td><td class="desc"><a class="el" href="structDJI_1_1OSDK_1_1ErrorCode_1_1MissionACK_1_1IOC.html" title="IOC ACK Mission Error Code. ">IOC</a> <a class="el" href="classDJI_1_1OSDK_1_1ACK.html" title="Class for handling acknowledgements from the aircraft. ">ACK</a> Mission Error Code </td></tr>
+<tr id="row_38_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classDJI_1_1OSDK_1_1LinuxSerialDevice.html" target="_self">DJI::OSDK::LinuxSerialDevice</a></td><td class="desc">POSIX-Compatible Serial Driver for *NIX platforms </td></tr>
+<tr id="row_39_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Mag.html" target="_self">DJI::OSDK::Telemetry::Mag</a></td><td class="desc">Struct for data broadcast, return magnetometer reading </td></tr>
+<tr id="row_40_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classDJI_1_1OSDK_1_1MFIO.html" target="_self">DJI::OSDK::MFIO</a></td><td class="desc">APIs for Multi-Function Input-Output functionality </td></tr>
+<tr id="row_41_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode_1_1MFIOACK.html" target="_self">DJI::OSDK::ErrorCode::MFIOACK</a></td><td class="desc">CMDSet: <a class="el" href="classDJI_1_1OSDK_1_1MFIO.html" title="APIs for Multi-Function Input-Output functionality. ">MFIO</a> </td></tr>
+<tr id="row_42_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode_1_1MissionACK.html" target="_self">DJI::OSDK::ErrorCode::MissionACK</a></td><td class="desc">Mission <a class="el" href="classDJI_1_1OSDK_1_1ACK.html" title="Class for handling acknowledgements from the aircraft. ">ACK</a> Error Codes </td></tr>
+<tr id="row_43_"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_43_" class="arrow" onclick="toggleFolder('43_')">&#9660;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classDJI_1_1OSDK_1_1MissionBase.html" target="_self">DJI::OSDK::MissionBase</a></td><td class="desc">Mission Base class for commonality between SDK Missions </td></tr>
+<tr id="row_43_0_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html" target="_self">DJI::OSDK::HotpointMission</a></td><td class="desc">APIs for Hotpoint (Point of Interest) Missions </td></tr>
+<tr id="row_43_1_"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classDJI_1_1OSDK_1_1WaypointMission.html" target="_self">DJI::OSDK::WaypointMission</a></td><td class="desc">APIs for GPS Waypoint Missions </td></tr>
+<tr id="row_44_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classDJI_1_1OSDK_1_1MissionManager.html" target="_self">DJI::OSDK::MissionManager</a></td><td class="desc"><a class="el" href="classDJI_1_1OSDK_1_1MissionManager.html" title="MissionManager class for chaining/managing missions. ">MissionManager</a> class for chaining/managing missions </td></tr>
+<tr id="row_45_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classDJI_1_1OSDK_1_1MobileCommunication.html" target="_self">DJI::OSDK::MobileCommunication</a></td><td class="desc">APIs for Mobile-Onboard SDK Communication </td></tr>
+<tr id="row_46_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1PositionData.html" target="_self">DJI::OSDK::Telemetry::PositionData</a></td><td class="desc">Struct for TOPIC_RTK_POSITION and sub struct for <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1RTK.html" title="struct for data broadcast, return RTK info ">RTK</a> of data broadcast </td></tr>
+<tr id="row_47_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1PositionFrame.html" target="_self">DJI::OSDK::Telemetry::PositionFrame</a></td><td class="desc">Sub struct for <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1RTK.html" title="struct for data broadcast, return RTK info ">RTK</a> of data broadcast </td></tr>
+<tr id="row_48_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1PositionTimeStamp.html" target="_self">DJI::OSDK::Telemetry::PositionTimeStamp</a></td><td class="desc">Sub struct for <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1GPSInfo.html" title="struct for GPSInfo of data broadcast ">GPSInfo</a> </td></tr>
+<tr id="row_49_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classDJI_1_1OSDK_1_1PosixThread.html" target="_self">DJI::OSDK::PosixThread</a></td><td class="desc">POSIX-compatible threading implementation for *NIX systems </td></tr>
+<tr id="row_50_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classDJI_1_1OSDK_1_1PosixThreadManager.html" target="_self">DJI::OSDK::PosixThreadManager</a></td><td class="desc">POSIX-COmpatible Data Protection and Condition Variables for *NIX platforms </td></tr>
+<tr id="row_51_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Quaternion.html" target="_self">DJI::OSDK::Telemetry::Quaternion</a></td><td class="desc">Struct for TOPIC_QUATERNION </td></tr>
+<tr id="row_52_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1RC.html" target="_self">DJI::OSDK::Telemetry::RC</a></td><td class="desc">Struct for data broadcast and data subscription, return <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1RC.html" title="struct for data broadcast and data subscription, return RC reading ">RC</a> reading </td></tr>
+<tr id="row_53_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1RelativePosition.html" target="_self">DJI::OSDK::Telemetry::RelativePosition</a></td><td class="desc">Struct for data broadcast, return obstacle info around the vehicle </td></tr>
+<tr id="row_54_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1RTK.html" target="_self">DJI::OSDK::Telemetry::RTK</a></td><td class="desc">Struct for data broadcast, return <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1RTK.html" title="struct for data broadcast, return RTK info ">RTK</a> info </td></tr>
+<tr id="row_55_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1SDKInfo.html" target="_self">DJI::OSDK::Telemetry::SDKInfo</a></td><td class="desc">Struct for TOPIC_CONTROL_DEVICE and data broadcast, return SDK info </td></tr>
+<tr id="row_56_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structDJI_1_1OSDK_1_1ErrorCode_1_1MFIOACK_1_1set.html" target="_self">DJI::OSDK::ErrorCode::MFIOACK::set</a></td><td class="desc">CMDID: set </td></tr>
+<tr id="row_57_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structDJI_1_1OSDK_1_1ErrorCode_1_1ControlACK_1_1SetControl.html" target="_self">DJI::OSDK::ErrorCode::ControlACK::SetControl</a></td><td class="desc">CMDID: <a class="el" href="structDJI_1_1OSDK_1_1ErrorCode_1_1ControlACK_1_1SetControl.html" title="CMDID: SetControl. ">SetControl</a> </td></tr>
+<tr id="row_58_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structDJI_1_1OSDK_1_1Gimbal_1_1SpeedData.html" target="_self">DJI::OSDK::Gimbal::SpeedData</a></td><td class="desc">The Speed Data struct for gimbal control </td></tr>
+<tr id="row_59_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Status.html" target="_self">DJI::OSDK::Telemetry::Status</a></td><td class="desc">Struct for data broadcast, return flight status </td></tr>
+<tr id="row_60_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode_1_1SubscribeACK.html" target="_self">DJI::OSDK::ErrorCode::SubscribeACK</a></td><td class="desc">CMDSet: Subscribe </td></tr>
+<tr id="row_61_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classDJI_1_1OSDK_1_1SubscriptionPackage.html" target="_self">DJI::OSDK::SubscriptionPackage</a></td><td class="desc">Package class to support Subscribe-style telemetry </td></tr>
+<tr id="row_62_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1SyncStamp.html" target="_self">DJI::OSDK::Telemetry::SyncStamp</a></td><td class="desc">Struct for data broadcast, software sync timestamp from local cache </td></tr>
+<tr id="row_63_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1SyncTimestamp.html" target="_self">DJI::OSDK::Telemetry::SyncTimestamp</a></td><td class="desc">Sub struct for TOPIC_HARD_SYNC </td></tr>
+<tr id="row_64_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structDJI_1_1OSDK_1_1ErrorCode_1_1ControlACK_1_1Task.html" target="_self">DJI::OSDK::ErrorCode::ControlACK::Task</a></td><td class="desc">CMDID: <a class="el" href="structDJI_1_1OSDK_1_1ErrorCode_1_1ControlACK_1_1Task.html" title="CMDID: Task. ">Task</a> </td></tr>
+<tr id="row_65_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1TimeStamp.html" target="_self">DJI::OSDK::Telemetry::TimeStamp</a></td><td class="desc">Struct for data broadcast, timestamp from local cache </td></tr>
+<tr id="row_66_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1TypeMap.html" target="_self">DJI::OSDK::Telemetry::TypeMap&lt; T &gt;</a></td><td class="desc">Template struct maps a topic name to the corresponding data type </td></tr>
+<tr id="row_67_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Vector3d.html" target="_self">DJI::OSDK::Telemetry::Vector3d</a></td><td class="desc">Struct for multiple Topics </td></tr>
+<tr id="row_68_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Vector3f.html" target="_self">DJI::OSDK::Telemetry::Vector3f</a></td><td class="desc">Struct for multiple Topics </td></tr>
+<tr id="row_69_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classDJI_1_1OSDK_1_1Vehicle.html" target="_self">DJI::OSDK::Vehicle</a></td><td class="desc">A top-level encapsulation of a <a class="el" href="namespaceDJI.html">DJI</a> drone/FC connected to your OES </td></tr>
+<tr id="row_70_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structDJI_1_1OSDK_1_1VehicleCallBackHandler.html" target="_self">DJI::OSDK::VehicleCallBackHandler</a></td><td class="desc">The CallBackHandler struct allows users to encapsulate callbacks and data in one struct </td></tr>
+<tr id="row_71_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Velocity.html" target="_self">DJI::OSDK::Telemetry::Velocity</a></td><td class="desc">Struct for TOPIC_VELOCITY </td></tr>
+<tr id="row_72_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1VelocityInfo.html" target="_self">DJI::OSDK::Telemetry::VelocityInfo</a></td><td class="desc">Struct indicates the signal level of GPS velocity info <br />
+ </td></tr>
+<tr id="row_73_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structDJI_1_1OSDK_1_1ErrorCode_1_1MissionACK_1_1WayPoint.html" target="_self">DJI::OSDK::ErrorCode::MissionACK::WayPoint</a></td><td class="desc"><a class="el" href="structDJI_1_1OSDK_1_1ErrorCode_1_1MissionACK_1_1WayPoint.html" title="WayPoint Mission ACK Error Code. ">WayPoint</a> Mission <a class="el" href="classDJI_1_1OSDK_1_1ACK.html" title="Class for handling acknowledgements from the aircraft. ">ACK</a> Error Code </td></tr>
+<tr id="row_74_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structDJI_1_1OSDK_1_1WayPointFinishData.html" target="_self">DJI::OSDK::WayPointFinishData</a></td><td class="desc">Waypoint Mission Finish Event Push Data </td></tr>
+<tr id="row_75_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1WayPointIndex.html" target="_self">DJI::OSDK::ACK::WayPointIndex</a></td><td class="desc">This struct is returned from the <a class="el" href="classDJI_1_1OSDK_1_1WaypointMission.html#a0923b487adb4c6968268914baebd880c" title="setting waypt init data ">DJI::OSDK::WaypointMission::uploadIndexData</a> blocking API </td></tr>
+<tr id="row_76_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1WayPointInit.html" target="_self">DJI::OSDK::ACK::WayPointInit</a></td><td class="desc">This struct is used in the readInitData non-blocking API callback </td></tr>
+<tr id="row_77_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structDJI_1_1OSDK_1_1WayPointInitSettings.html" target="_self">DJI::OSDK::WayPointInitSettings</a></td><td class="desc">Waypoint Mission Initialization settings </td></tr>
+<tr id="row_78_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1WayPointReachedData.html" target="_self">DJI::OSDK::ACK::WayPointReachedData</a></td><td class="desc">This struct captures PushData while ground-station is enabled on Assistant's SDK Page </td></tr>
+<tr id="row_79_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structDJI_1_1OSDK_1_1WayPointSettings.html" target="_self">DJI::OSDK::WayPointSettings</a></td><td class="desc">Waypoint settings for individual waypoints being added to the mission </td></tr>
+<tr id="row_80_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1WayPointVelocity.html" target="_self">DJI::OSDK::ACK::WayPointVelocity</a></td><td class="desc">This struct is returned from the <a class="el" href="classDJI_1_1OSDK_1_1WaypointMission.html#affd964d55236c2ba99ce790f7ba1efa2" title="setting waypt idle velocity ">DJI::OSDK::WaypointMission::updateIdleVelocity</a> blocking API </td></tr>
+</table>
+</div><!-- directory -->
+</div><!-- contents -->
+<!-- HTML footer for doxygen 1.8.8-->
+<!-- start footer part -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr class="footer"/><address class="footer"><small>
+<a href="https://developer.dji.com/onboard-sdk/documentation/introduction/index.html">
+<img class="footer" src="dji-logo-foot.png" alt="DJI Onboard SDK" height="20px" />
+</a>
+</small></address>
+</body>
+</html>

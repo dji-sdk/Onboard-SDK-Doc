@@ -1,0 +1,222 @@
+<!-- HTML header for doxygen 1.8.8-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- For Mobile Devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+        <meta name="generator" content="Doxygen 1.8.11"/>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <title>DJI Onboard SDK: osdk-core/api/inc Directory Reference</title>
+        <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
+        <script type="text/javascript" src="dynsections.js"></script>
+        <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+        <link href="doxygen.css" rel="stylesheet" type="text/css" />
+        <link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <script src="bootstrap.min.js"></script>
+        <script type="text/javascript" src="doxy-boot.js"></script>
+    </head>
+    <body>
+        <nav id="site-header" class="site-header navbar">
+            <div class="container">
+                <div class="navbar-header"><a href="" class="logo"><img src="dji-logo@2x.png">Developer</a></div>
+                <div id="header-navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="hovedown"><a href="javascript:void(0);" class="hovedown-toggle">SDK<span class="caret"></span></a>
+                            <ul class="hovedown-menu">
+                                <li><a href="mobile-sdk">Mobile SDK</a></li>
+                                <li><a href="onboard-sdk">Onboard SDK</a></li>
+                                <li><a href="guidance-sdk">Guidance SDK</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="products">Products</a></li>
+                        <li><a href="showcase">Showcase</a></li>
+                        <li><a href="news">News</a></li>
+                        <li><a href="http://forum.dev.dji.com/en" target="_blank">Forum</a></li>
+                        <li class="hovedown"><a href="javascript:void(0);" class="hovedown-toggle">GitHub<span class="caret"></span></a>
+                            <ul class="hovedown-menu">
+                                <li><a href="https://github.com/dji-sdk/Mobile-SDK-iOS" target="_blank">iOS SDK</a></li>
+                                <li><a href="https://github.com/dji-sdk/Mobile-SDK-Android" target="_blank">Android SDK</a></li>
+                                <li><a href="https://github.com/dji-sdk/Onboard-SDK" target="_blank">Onboard SDK</a></li>
+                                <li><a href="https://github.com/dji-sdk/Guidance-SDK" target="_blank">Guidance SDK</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="challenge2016" target="_blank">Challenge</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div data-offset-top="60" data-spy="affix" class="sub-nav">
+            <div class="container">
+                <h1 class="logo">Onboard SDK</h1>
+                <nav><a href="onboard-sdk">Overview</a><a href="onboard-sdk/documentation">Documentation</a><a href="/onboard-api-reference/index.html" class="active">API Reference</a><a href="onboard-sdk/downloads">Downloads</a>
+                </nav>
+            </div>
+        </div>
+        <!--<nav class="navbar navbar-default" role="navigation">-->
+            <!--<div class="container">-->
+                <!--<div class="navbar-header">-->
+                    <!--<a href="#" class="navbar-left"><img src="dji_logo_gray_small.png" alt="DJI OSDK API Documentation" width="32px"/></a>-->
+                    <!--<a class="navbar-brand" href="index.html">ONBOARD SDK 3.3</a>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</nav>-->
+        <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+            <div class="content" id="content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 panel " style="padding-bottom: 15px; padding-top: 52px;">
+                            <div style="margin-bottom: 15px;">
+<!-- end header part -->
+<!-- Generated by Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Files</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li class="current"><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_95d02babf7f2c2cbb8138434e234b0a4.html">osdk-core</a></li><li class="navelem"><a class="el" href="dir_ef926edda2a887b065db034fc3005c14.html">api</a></li><li class="navelem"><a class="el" href="dir_0fb058e33548cd6e720172c5f012eda8.html">inc</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">inc Directory Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="files"></a>
+Files</h2></td></tr>
+<tr class="memitem:dji__ack_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dji__ack_8hpp.html">dji_ack.hpp</a> <a href="dji__ack_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:dji__ack_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">All <a class="el" href="namespaceDJI.html">DJI</a> OSDK ACK parsing. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dji__broadcast_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dji__broadcast_8hpp.html">dji_broadcast.hpp</a> <a href="dji__broadcast_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:dji__broadcast_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broadcast Telemetry API for <a class="el" href="namespaceDJI.html">DJI</a> onboardSDK library. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dji__camera_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dji__camera_8hpp.html">dji_camera.hpp</a> <a href="dji__camera_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:dji__camera_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Camera/Gimbal API for <a class="el" href="namespaceDJI.html">DJI</a> onboardSDK library. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dji__command_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dji__command_8hpp.html">dji_command.hpp</a> <a href="dji__command_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:dji__command_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">All <a class="el" href="namespaceDJI.html">DJI</a> OSDK OpenProtocol Command IDs. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dji__control_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dji__control_8hpp.html">dji_control.hpp</a> <a href="dji__control_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:dji__control_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control API for <a class="el" href="namespaceDJI.html">DJI</a> OSDK library. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dji__error_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dji__error_8hpp.html">dji_error.hpp</a> <a href="dji__error_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:dji__error_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">All <a class="el" href="namespaceDJI.html">DJI</a> OSDK OpenProtocol ACK Error Codes. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dji__gimbal_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dji__gimbal_8hpp.html">dji_gimbal.hpp</a> <a href="dji__gimbal_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:dji__gimbal_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gimbal API for OSDK library. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dji__hardware__sync_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dji__hardware__sync_8hpp.html">dji_hardware_sync.hpp</a> <a href="dji__hardware__sync_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:dji__hardware__sync_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hardware Sync API for <a class="el" href="namespaceDJI.html">DJI</a> OSDK. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dji__hotpoint_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dji__hotpoint_8hpp.html">dji_hotpoint.hpp</a> <a href="dji__hotpoint_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:dji__hotpoint_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of HotPoint (Point of Interest) Missions for <a class="el" href="namespaceDJI.html">DJI</a> OSDK. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dji__mfio_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dji__mfio_8hpp.html">dji_mfio.hpp</a> <a href="dji__mfio_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:dji__mfio_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">MFIO API for <a class="el" href="namespaceDJI.html">DJI</a> OSDK library. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dji__mission__base_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dji__mission__base_8hpp.html">dji_mission_base.hpp</a> <a href="dji__mission__base_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:dji__mission__base_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mission-Base abstract class for <a class="el" href="namespaceDJI.html">DJI</a> OSDK library. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dji__mission__manager_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dji__mission__manager_8hpp.html">dji_mission_manager.hpp</a> <a href="dji__mission__manager_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:dji__mission__manager_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mission-Manager API for <a class="el" href="namespaceDJI.html">DJI</a> OSDK library. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dji__mission__type_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dji__mission__type_8hpp.html">dji_mission_type.hpp</a> <a href="dji__mission__type_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:dji__mission__type_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mission related data struct for <a class="el" href="namespaceDJI.html">DJI</a> OSDK library. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dji__mobile__communication_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dji__mobile__communication_8hpp.html">dji_mobile_communication.hpp</a> <a href="dji__mobile__communication_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:dji__mobile__communication_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of <a class="el" href="namespaceDJI.html">DJI</a> Mobile-Onboard SDK Communication (MOC) <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dji__status_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dji__status_8hpp.html">dji_status.hpp</a> <a href="dji__status_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:dji__status_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Status information for <a class="el" href="namespaceDJI.html">DJI</a> Vehicle. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dji__subscription_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dji__subscription_8hpp.html">dji_subscription.hpp</a> <a href="dji__subscription_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:dji__subscription_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Telemetry Subscription API for <a class="el" href="namespaceDJI.html">DJI</a> OSDK library. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dji__telemetry_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dji__telemetry_8hpp.html">dji_telemetry.hpp</a> <a href="dji__telemetry_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:dji__telemetry_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration of all telemetry data types, structures and maps. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dji__type_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dji__type_8hpp.html">dji_type.hpp</a> <a href="dji__type_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:dji__type_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data type and Data Structure definitions for use throughout <a class="el" href="namespaceDJI.html">DJI</a> OSDK. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dji__vehicle_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dji__vehicle_8hpp.html">dji_vehicle.hpp</a> <a href="dji__vehicle_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:dji__vehicle_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vehicle API for <a class="el" href="namespaceDJI.html">DJI</a> onboardSDK library. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dji__vehicle__callback_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dji__vehicle__callback_8hpp.html">dji_vehicle_callback.hpp</a> <a href="dji__vehicle__callback_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:dji__vehicle__callback_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type definition for new Vehicle-style callbacks. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dji__version_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dji__version_8hpp.html">dji_version.hpp</a> <a href="dji__version_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:dji__version_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drone/SDK Version definition for <a class="el" href="namespaceDJI.html">DJI</a> onboardSDK library. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dji__waypoint_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dji__waypoint_8hpp.html">dji_waypoint.hpp</a> <a href="dji__waypoint_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:dji__waypoint_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of GPS Waypoint Missions for <a class="el" href="namespaceDJI.html">DJI</a> OSDK. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+</div><!-- contents -->
+<!-- HTML footer for doxygen 1.8.8-->
+<!-- start footer part -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr class="footer"/><address class="footer"><small>
+<a href="https://developer.dji.com/onboard-sdk/documentation/introduction/index.html">
+<img class="footer" src="dji-logo-foot.png" alt="DJI Onboard SDK" height="20px" />
+</a>
+</small></address>
+</body>
+</html>
