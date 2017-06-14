@@ -118,14 +118,14 @@ The user can view the output of the program through the USART2 port of the STM32
 3. Clone (or download as zip) the DJI OSDK from Github [here](https://www.github.com/dji-sdk/Onboard-SDK).
 4. Open the project located in `sample/STM32/OnBoardSDK_STM32/Project/OnBoardSDK_STM32.uvprojx` in Keil uVision IDE.
 5. To build the code, developers need to input the correct APP KEY and APP ID obtained from DJI Developer site in `OnboardSDK_STM32/User/Activate.cpp` file.
-6. Also inside `Activate.cpp`, enter your version firmware on the `Version::FW(enter_your_version_code_here)` line. To get your version code and use it in this sample, follow the instructions on the [version map](../appendix/versioning.html) page.
 
 ##### Building and Running the Samples
 
+6. To choose which sample to run, you need to pass a preprocessor flag using Keil. See the image to find the location (underlined in red) you need to edit:
+![STM32-choose-sample](../images/STM32/stm32_sample_macro.png)
 7. Use the menu item `Project->Build Target` and `Flash->Download` to build the project and flash to the STM32 board.
 8. Set the baud rate of your serial terminal software (here we use the open-source <a href="http://realterm.sourceforge.net" target="_blank"> RealTerm </a>) to be **115200**, which is the one we use to configure USART2 in the example App. Configure the serial terminal to display the received information in Ascii mode.
 ![Realterm Setup](../../images/STM32/STM32_Realterm.png)
-9. All the available samples will run in order after starting the program.
 
 ## Understanding the Samples
 
