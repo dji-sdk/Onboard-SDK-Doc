@@ -621,7 +621,7 @@ Remote controllers will differ in:
 * What wireless technology they use to connect with the aircraft
 * Whether they have GPS built-in
 * If they can output secondary video
-* If they can be used in a dual configuration (one flys the aircraft while the other controls the gimbal and camera)
+* If they can be used in a dual configuration (one flies the aircraft while the other controls the gimbal and camera)
 
 Remote Controllers that use WiFi to connect to the mobile device will act as a WiFi access point and will need to be joined.
 
