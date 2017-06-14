@@ -6,7 +6,7 @@ keywords: [component, propellor, sensor, product comparison]
 
 DJI produces small, highly capable, remotely controlled aircraft, cameras and stabilizers perfect for both consumer and commercial applications. The products are very accessible being easy to use and affordable, and have a quality and feature set unmatched in the industry.
 
-This introduction summarizes the products that are compatible with the Onboard SDK. A high level description of the products main components, as well as detailed comparisons between products are provided to help the developer choose which product is best for the application they are developing.
+This introduction summarizes the products that are compatible with the Onboard SDK. High level descriptions of the products and main components, and detailed comparisons between products are provided to help the developer choose which product is best for the application they are working on.
 
 ## Product Categories
 
@@ -25,9 +25,9 @@ DJI has a range of multi-rotor aircraft that can be automated with the Onboard S
 * Remote controller features
 * Support for Onboard SDK
 
-### Stand Alone Flight Controllers
+### Stand-Alone Flight Controllers
 
-A3 and N3 flight control modules are stand alone components that can be automated with the Onboard SDK. A3/N3 includes:
+N3, A3 and A3 Pro flight control modules are stand-alone components that can be automated with the Onboard SDK. All flight control modules include:
 
 * Flight computer
 * Inertial measurement unit (IMU) including compass, gyroscope, barometer, accelerometer
@@ -42,10 +42,11 @@ To create an aircraft, these flight controllers can be combined with:
 * DJI Cameras (see [table](#supported_products) below), and/or third party cameras
 * Third party batteries
 
+The A3 and A3 Pro flight controllers are also used in the M600 and M600 Pro products respectively. It should be noted however, that the firmware for the A3 and A3 Pro will be different to that used in the M600 and M600 Pro.
 
 ### Cameras
 
-DJI provides a number of gimbal mounted cameras that can be swapped between aircraft or used in conjunction with DJI's flight controllers and wireless links. Cameras that are compatible with M100, M600, M600 Pro, A3 and N3 are detailed in this [table](#supported_products)
+DJI provides a number of gimbal mounted cameras that can be swapped between aircraft or used in conjunction with DJI's flight controllers and wireless links. Cameras that are compatible with M100, M600, M600 Pro, A3, A3 Pro and N3 are detailed in this [table](#supported_products)
 
 
 
@@ -55,9 +56,8 @@ Before doing a detailed product comparison it is useful to understand the compon
 
 All products comprise component modules that provide an important feature or function. An introduction to typical components is below with more details in the [Component Guide](../guides/component-guide-flight-control.html).
 
-![ComponentsAircraft](../images/common/hardware_introduction.png)
+![ComponentsAircraft](../images/common/M600Diagram.png)
 
-TODO: What is "GPS Compass Pro"?
 
 #### Propulsion
 
@@ -97,7 +97,7 @@ An Android or iOS device can be connected to the remote controller through eithe
 
 ## Supported Products
 
-Below is a table listing the aircraft, handheld cameras and stand alone components supported by the DJI Onboard SDK.
+Below is a table listing the aircraft, handheld cameras and stand-alone components supported by the DJI Onboard SDK.
 <a id="supported_products"></a>
 <html><table class="table-product-accessories">
   <thead>
@@ -128,17 +128,23 @@ Below is a table listing the aircraft, handheld cameras and stand alone componen
       <td>X3, X5, X5R, XT, Z3, Z30</td>        
       <td> DRTK, Ronin MX </td>
     </tr>
+    </tr>
     <tr>
-      <td rowspan="2">Components</th>
-      <td>A3 (with Lightbridge 2)</td>
+      <td rowspan="3">Flight Controllers</th>
+      <td>N3</td>
       <td> X3, X5, X5R, XT, Z3, Z30 </td>        
-      <td> DRTK, Ronin MX </td>
+      <td> Lightbridge 2, Ronin MX </td>
+    </tr>
+    <tr>
+      <td> A3</td>
+      <td> X3, X5, X5R, XT, Z3, Z30 </td>        
+      <td> Lightbridge 2, DRTK, Ronin MX </td>
     </tr>
     </tr>
-      <tr>
-      <td>N3 (with Lightbridge 2)</td>
+    <tr>
+      <td> A3 Pro</td>
       <td> X3, X5, X5R, XT, Z3, Z30 </td>        
-      <td> DRTK, Ronin MX </td>
+      <td> Lightbridge 2, DRTK, Ronin MX </td>
     </tr>
   </tbody>
 </table></html>
@@ -218,8 +224,7 @@ Detailed specifications are listed on each product's webpage **specs** section a
 </tbody></table></html>
 
 
-> Note: For mission descriptions, see [Missions](./component-guide-missions.html) in **Guides**.
-> 
+
 
 ### Flight Time
 
@@ -439,42 +444,92 @@ To help understand the potential functionality and flight time of different airc
 
 ## Flight Controller Comparison
 
+There are three flight controller options available:
+
+* **N3**: A consumer grade flight controller with single redundant IMU
+* **A3**: A commercial grade flight controller
+* **A3 Pro**: A commercial grade flight controller with 2 redundant IMUs and GPS antennas.
+
+All three flight controllers can be used on a range of airframe configurations:
+![configs](../images/common/FlightControllerAirframeConfigs.png)
+
+The table below details the differences between the flight controller options.
+
 <html><table class="table-aircraft-comparison">
 <thead><tr><th colspan="9">Flight Controller Comparison: <b>Flight Controller System</th></tr></thead>
-<tbody>
+<tbody style="text-align:center;">
+
 <tr>
-<th width = 20%><p>Product</p></th>
-<th><p>Supported Multi-rotor</p></th>
-<th><p>DJI Products Supported</p></th>
-<th><p>Battery</p></th>
-<th><p>Supported ESC</p></th>
-<th><p>Supported SDK</p></th>
-<th><p>SDK Port</p></th>
-<th><p>Components</p></th>
+<th width = 20%><p style="text-align:center;">Flight Controller</p></th>
+<th><p style="text-align:center;">N3</p></th>
+<th><p style="text-align:center;">A3</p></th>
+<th><p style="text-align:center;">A3 Pro</p></th>
+</tr>
+<tr >
+<td>IMU</td>
+<td>2</td>
+<td>1</td>
+<td>3</td>
+</tr>
+<tr >
+<td>IMU Quality</td>
+<td>Consumer</td>
+<td>Industrial</td>
+<td>Industrial</td>
 </tr>
 <tr>
-<td>A3 Pro</td><td>Quadcopter: I4，X4</br>Hexacopter: I6，X6，Y6，IY6</br>Octocopter: X8，I8，V8 Ronin-MX</br></td>
-<td>Z15</br>Ronin-MX</br>S900</br>S1000</br>S1000+</br>iOSD</br>D-RTK</br>DATALINK PRO</td>
-<td>3S to 12S LiPo</td><td>400Hz Frequency</td><td>Mobile SDK</br>Onboard SDK</td><td>API/CAN2</td>
-<td>Main controller unit</br>(integrated with IMU)</br>IMU PRO module x 2 PMU</br>GPS-Compass PRO module</br>X3 RGB LED</td></tr>
+<td>GPS Antenna</td>
+<td>1x Square ceramic antennas</td>
+<td>1x Dual-feed circular patch antennas</td>
+<td>3x Dual-feed circular patch antennas</td>
+</tr>
 <tr>
-<td>A3</td><td>Quadcopter: I4，X4</br>Hexacopter: I6，X6，Y6，IY6</br>Octocopter: X8，I8，V8</br></td>
-<td>Z15</br>Ronin-MX</br>S900</br>S1000</br>S1000+</br>iOSD</br>D-RTK</br>DATALINK PRO</td>
-<td>3S to 12S LiPo</td><td>400Hz Frequency</td><td>Mobile SDK</br>Onboard SDK</td><td>API/CAN2</td>
-<td>Main controller unit</br>integrated with IMU PMU</br>GPS-Compass PRO moduleRGB LED</td></tr>
+<td>GPS Noise Immunity</td>
+<td>Moderate</td>
+<td>High</td>
+<td>High</td>
+</tr>
 <tr>
-<td>N3</td><td>Quadcopter: I4，X4</br>Hexacopter: I6，X6，Y6，IY6</br>Octocopter: X8，I8，V8</td>
-<td>DJI GO</br>iOSD</br>Zenmuse Z15-A7</br>5D III</br>GH4</br>BMPCC</br>Ronin-MX</br>X3</br>X5</br>X5R</br>Z15</br>DJI propulsion systems</br>S900</br>S1000</br>S1000+</td>
-<td>3S to 12S LiPo</td><td>400Hz Frequency,</br>DJI Intelligent ESC</td><td>Mobile SDK</br>Onboard SDK</td><td>API/CAN2</td><td>With A3 upgrade kit (IMU Pro and GPS-Compass Pro modules)</td></tr>
-<tr>
-</tbody></table></html>
+<td>Redundancy Upgrade Options</td>
+<td>1x A3 Upgrade Kit<br><span style="font-size:70%">1xIMU, 1xGPS</span></td>
+<td>2x A3 Upgrade Kit<br><span style="font-size:70%">2xIMU, 2xGPS<br>Equivalent to A3 Pro</span></td>
+<td>-</td>
+</tr>
 
+
+<tr>
+<td>DRTK Support</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Power Consumption<br><font color="#BBBBBB" size=1 style="font-weight:bold">W</td>
+<td>4.8</td>
+<td>8</td>
+<td>16</td>
+</tr>
+<tr>
+<td>PMU Output</td>
+<td>2A @ 9V</td>
+<td>3A @ 9V</td>
+<td>3A @ 9V</td>
+</tr>
+<tr>
+<td>Weight<br><font color="#BBBBBB" size=1 style="font-weight:bold">g</td>
+<td>132</td>
+<td>186</td>
+<td>386</td>
+</tr>
+</tbody>
+</table>
+</html>
 
 
 
 ## Camera Comparison
 
-DJI provides several camera configurations. For the Inspire and Matrice lines of products, cameras can be interchanged (Zenmuse X3, X5, X5R, Z3, XT, Z30, X4S, X5S)  The [Products and Accessories](#supported-products) table at the top of the page details the combinations of camera and aircraft compatibility.
+DJI provides several camera configurations. For the Inspire and Matrice lines of products, cameras can be interchanged (Zenmuse X3, X5, X5R, Z3, XT, Z30).  The [Products and Accessories](#supported-products) table at the top of the page details the combinations of camera and aircraft compatibility.
 
 The Zenmuse XT is a thermal camera. It's specifications are difficult to compare directly to other cameras, however it is included in the comparison for it's mass for payload calculation. More details on the specifications of the Zenmuse XT can be found <a href="http://www.dji.com/product/zenmuse-xt/info#specs" target="_blank"> here </a>.
 
@@ -586,8 +641,8 @@ Remote Controllers that use WiFi to connect to the mobile device will act as a W
 <tr>
 <td>Matrice 100</td><td>Required</td><td>USB</td><td>Lightbridge</td><td>Yes</td><td>Yes</td><td>Mini HDMI</td><td>F</td></tr>
 <tr>
-<td>Matrice 600</td><td>Required</td><td>USB</td><td>Lightbridge</td><td>Yes</td><td>Yes</td><td>Mini HDMI, SDI</td><td>F</td></tr>
+<td>Matrice 600</td><td>Required</td><td>USB</td><td>Lightbridge</td><td>Yes</td><td>Yes</td><td>Mini HDMI, SDI</td><td>Any</td></tr>
 <tr>
-<td>Matrice 600 Professional</td><td>Required</td><td>USB</td><td>Lightbridge</td><td>Yes</td><td>Yes</td><td>Mini HDMI, SDI</td><td>F</td></tr>
+<td>Matrice 600 Professional</td><td>Required</td><td>USB</td><td>Lightbridge</td><td>Yes</td><td>Yes</td><td>Mini HDMI, SDI</td><td>Any</td></tr>
 </tbody></table></html>
 
