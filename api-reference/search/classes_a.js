@@ -3,6 +3,7 @@ var searchData=
   ['mag',['Mag',['../structDJI_1_1OSDK_1_1Telemetry_1_1Mag.html',1,'DJI::OSDK::Telemetry']]],
   ['mfio',['MFIO',['../classDJI_1_1OSDK_1_1MFIO.html',1,'DJI::OSDK']]],
   ['mfioack',['MFIOACK',['../classDJI_1_1OSDK_1_1ErrorCode_1_1MFIOACK.html',1,'DJI::OSDK::ErrorCode']]],
+  ['mfioget',['MFIOGet',['../structDJI_1_1OSDK_1_1ACK_1_1MFIOGet.html',1,'DJI::OSDK::ACK']]],
   ['missionack',['MissionACK',['../classDJI_1_1OSDK_1_1ErrorCode_1_1MissionACK.html',1,'DJI::OSDK::ErrorCode']]],
   ['missionbase',['MissionBase',['../classDJI_1_1OSDK_1_1MissionBase.html',1,'DJI::OSDK']]],
   ['missionmanager',['MissionManager',['../classDJI_1_1OSDK_1_1MissionManager.html',1,'DJI::OSDK']]],

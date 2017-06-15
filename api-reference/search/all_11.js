@@ -50,7 +50,7 @@ var searchData=
   ['stop',['stop',['../classDJI_1_1OSDK_1_1HotpointMission.html#ac32563e7bc146fa96831237773280b36',1,'DJI::OSDK::HotpointMission::stop(VehicleCallBack callback=0, UserData userData=0)'],['../classDJI_1_1OSDK_1_1HotpointMission.html#ae91b0d3ca7da7ddb083cf1f678355ff8',1,'DJI::OSDK::HotpointMission::stop(int timer)'],['../classDJI_1_1OSDK_1_1WaypointMission.html#a9459bbe0539b362e5b8ce5ef7a2e2365',1,'DJI::OSDK::WaypointMission::stop(VehicleCallBack callback=0, UserData userData=0)'],['../classDJI_1_1OSDK_1_1WaypointMission.html#ae44be081993711a0c975cb19a4481b12',1,'DJI::OSDK::WaypointMission::stop(int timer)']]],
   ['subscribeack',['SubscribeACK',['../classDJI_1_1OSDK_1_1ErrorCode_1_1SubscribeACK.html',1,'DJI::OSDK::ErrorCode']]],
   ['subscriptionpackage',['SubscriptionPackage',['../classDJI_1_1OSDK_1_1SubscriptionPackage.html',1,'DJI::OSDK']]],
-  ['success',['SUCCESS',['../classDJI_1_1OSDK_1_1ACK.html#ad9d4dc1ed4d14c52d08e6b15f69e043c',1,'DJI::OSDK::ACK::SUCCESS()'],['../structDJI_1_1OSDK_1_1ErrorCode_1_1MissionACK_1_1Common.html#aae5ed75f11e573ddfb60ce6663cad9c1',1,'DJI::OSDK::ErrorCode::MissionACK::Common::SUCCESS()']]],
+  ['success',['SUCCESS',['../classDJI_1_1OSDK_1_1ACK.html#ad9d4dc1ed4d14c52d08e6b15f69e043c',1,'DJI::OSDK::ACK']]],
   ['syncstamp',['SyncStamp',['../structDJI_1_1OSDK_1_1Telemetry_1_1SyncStamp.html',1,'DJI::OSDK::Telemetry']]],
   ['syncstamp',['SyncStamp',['../namespaceDJI_1_1OSDK_1_1Telemetry.html#a4cc21640d26dff1b6ada4edbaa52fda3',1,'DJI::OSDK::Telemetry']]],
   ['synctimestamp',['SyncTimestamp',['../namespaceDJI_1_1OSDK_1_1Telemetry.html#a02c5356848b432627e7e70507689045d',1,'DJI::OSDK::Telemetry']]],

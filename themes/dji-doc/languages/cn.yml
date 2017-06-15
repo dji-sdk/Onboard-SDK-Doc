@@ -30,6 +30,7 @@ sub_nav:
   features: 功能
   documentation: 文档
   downloads: 下载
+  api_reference: API Reference
   support: 技术支持
 
 policies:

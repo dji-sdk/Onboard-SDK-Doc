@@ -3,6 +3,7 @@ var searchData=
   ['calibrating',['calibrating',['../structDJI_1_1OSDK_1_1Telemetry_1_1GimbalStatus.html#a928c8e22e8d275739bb401158cca9508',1,'DJI::OSDK::Telemetry::GimbalStatus']]],
   ['callbackpoll',['callbackPoll',['../classDJI_1_1OSDK_1_1Vehicle.html#aecffab87d973216e8076bb891e32f0ad',1,'DJI::OSDK::Vehicle']]],
   ['camera',['Camera',['../classDJI_1_1OSDK_1_1Camera.html',1,'DJI::OSDK']]],
+  ['channel_5ferror',['CHANNEL_ERROR',['../structDJI_1_1OSDK_1_1ErrorCode_1_1MFIOACK_1_1set.html#a2c4dd27d79300a3fa03827049957704b',1,'DJI::OSDK::ErrorCode::MFIOACK::set']]],
   ['checkbaudrate',['checkBaudRate',['../classDJI_1_1OSDK_1_1LinuxSerialDevice.html#ae8024ecb6b46e647446cdb68de98bc29',1,'DJI::OSDK::LinuxSerialDevice']]],
   ['clockwise',['clockwise',['../structDJI_1_1OSDK_1_1HotPointSettings.html#aac4845a986802ae3df36849cd29e4ffc',1,'DJI::OSDK::HotPointSettings']]],
   ['cmd_5fsetsupportmatrix',['CMD_SETSupportMatrix',['../structDJI_1_1OSDK_1_1CMD__SETSupportMatrix.html',1,'DJI::OSDK']]],
@@ -12,6 +13,7 @@ var searchData=
   ['common',['Common',['../structDJI_1_1OSDK_1_1ErrorCode_1_1MissionACK_1_1Common.html',1,'DJI::OSDK::ErrorCode::MissionACK']]],
   ['common',['Common',['../classDJI_1_1OSDK_1_1ErrorCode_1_1MissionACK.html#a0a0540feac043302b09b2911d4910231',1,'DJI::OSDK::ErrorCode::MissionACK']]],
   ['commonack',['CommonACK',['../classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html',1,'DJI::OSDK::ErrorCode']]],
+  ['conditions_5fnot_5fsatisfied',['CONDITIONS_NOT_SATISFIED',['../structDJI_1_1OSDK_1_1ErrorCode_1_1MissionACK_1_1Common.html#a30ecbffd415c4f517d44b1b0dc77853f',1,'DJI::OSDK::ErrorCode::MissionACK::Common']]],
   ['config',['config',['../classDJI_1_1OSDK_1_1MFIO.html#ad835c6e3e14a720c66aab9855310e6a7',1,'DJI::OSDK::MFIO::config(MODE mode, CHANNEL channel, uint32_t defaultValue, uint16_t freq, VehicleCallBack fn=0, UserData userData=0)'],['../classDJI_1_1OSDK_1_1MFIO.html#a404925d18f7d84187b0c692ce765e10a',1,'DJI::OSDK::MFIO::config(MODE mode, CHANNEL channel, uint32_t defaultValue, uint16_t freq, int wait_timeout)']]],
   ['control',['Control',['../classDJI_1_1OSDK_1_1Control.html',1,'DJI::OSDK']]],
   ['controlack',['ControlACK',['../classDJI_1_1OSDK_1_1ErrorCode_1_1ControlACK.html',1,'DJI::OSDK::ErrorCode']]],
@@ -21,7 +23,7 @@ var searchData=
   ['ctrl_5fmode_5fgps_5fatii_5fctrl_5fcl_5fyaw_5frate',['CTRL_MODE_GPS_ATII_CTRL_CL_YAW_RATE',['../namespaceDJI_1_1OSDK_1_1VehicleStatus.html#a9d0d80b981d2e3c5850fafdd9fd701f6a8ff31abc048931024f92b6ded963cbbd',1,'DJI::OSDK::VehicleStatus']]],
   ['ctrl_5fmode_5fgps_5fatti_5fctrl_5fyaw_5frate',['CTRL_MODE_GPS_ATTI_CTRL_YAW_RATE',['../namespaceDJI_1_1OSDK_1_1VehicleStatus.html#a9d0d80b981d2e3c5850fafdd9fd701f6a2fa191d8fe47ccc30f90799052ed6c31',1,'DJI::OSDK::VehicleStatus']]],
   ['ctrl_5fmode_5fmode_5fnot_5fsupported',['CTRL_MODE_MODE_NOT_SUPPORTED',['../namespaceDJI_1_1OSDK_1_1VehicleStatus.html#a9d0d80b981d2e3c5850fafdd9fd701f6a19e4c1311ceb56178f0dc29642392ec4',1,'DJI::OSDK::VehicleStatus']]],
-  ['ctrldata',['CtrlData',['../structDJI_1_1OSDK_1_1Control_1_1CtrlData.html',1,'DJI::OSDK::Control']]],
   ['ctrldata',['CtrlData',['../classDJI_1_1OSDK_1_1Control.html#aeb69d4f51d26373e7fe907ae5e948744',1,'DJI::OSDK::Control::CtrlData()'],['../structDJI_1_1OSDK_1_1Control_1_1CtrlData.html#aff12437ea62b8565aa42068e5257b3e0',1,'DJI::OSDK::Control::CtrlData::CtrlData()']]],
+  ['ctrldata',['CtrlData',['../structDJI_1_1OSDK_1_1Control_1_1CtrlData.html',1,'DJI::OSDK::Control']]],
   ['current_5fstatus',['current_status',['../structDJI_1_1OSDK_1_1ACK_1_1WayPointReachedData.html#a7da82d816e7886df063f0ee10bf8724a',1,'DJI::OSDK::ACK::WayPointReachedData']]]
 ];

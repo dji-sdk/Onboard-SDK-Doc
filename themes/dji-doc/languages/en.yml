@@ -30,6 +30,7 @@ sub_nav:
   features: Features
   documentation: Documentation
   downloads: Downloads
+  api_reference: API Reference
   support: Support
 
 policies:
