@@ -20,20 +20,15 @@
     -
       title: Run Sample Application
       path: /cn/quick-start/quick-start.html
-
--
-  title: CONCEPTS TO UNDERSTAND
-  list:
-    -
-      title: Flight Control
-      path: /cn/introduction/things-to-know.html
-
 -
   title: GUIDES
   list:
     -
       title: Flight Control
       path: /cn/guides/component-guide-flight-control.html
+    -
+      title: Control Authority
+      path: /cn/guides/component-guide-control-authority.html
     -
       title: Camera And Gimbal
       path: /cn/guides/component-guide-camera-and-gimbal.html
@@ -49,6 +44,9 @@
     -
       title: MSDK and OSDK Communication
       path: /cn/guides/component-guide-mobile-communication.html
+    -
+      title: Multi-Function IO
+      path: /cn/guides/component-guide-multi-function-io.html
 
 -
   title: DEVELOPMENT WORKFLOW
@@ -60,7 +58,7 @@
       title: Hardware Setup
       path: /cn/development-workflow/hardware-setup.html
     -
-      title: Environment Setup
+      title: Software Setup
       path: /cn/development-workflow/environment-setup.html
     -
       title: Integrate SDK into Application
@@ -95,29 +93,18 @@
       path: /cn/sample-doc/mfio.html
 
 -
-  title: PROTOCOL DOCUMENTS
-  list:
-    -
-      title: Onboard SDK OPEN Protocol
-      path: /cn/protocol-doc/index.html
-    -
-      title: Data Transparent Transmission
-      path: /cn/protocol-doc/data-transparent-transmission.html
-    -
-      title: Ground Station Protocol
-      path: /cn/protocol-doc/ground-station-protocol.html
-
--
   title: APPENDIX
   list:
     -
-      title: Appendix
-      path: /cn/appendix/index.html
+      title: Matrice 100
+      path: /cn/M100%20Docs/main.html
     -
       title: FAQ
       path: /cn/appendix/FAQ.html
     -
       title: Release Notes
       path: /cn/appendix/releaseNotes.html
-
+    -
+      title: Mobile-Onboard APIs
+      path: /cn/appendix/mobile-onboard-APIs.html
 

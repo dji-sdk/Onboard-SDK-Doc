@@ -81,7 +81,7 @@ With the help of waypoint API, developers can make drone fly throught a given gr
 
   There are severl other waypoint APIs developers can make use of, such as pause, resume and stop the task. Developers can also set and read the idle speed as well as the maximum speed. 
   
-  Please refer to the [Ground Station Protocol](../introduction/ground-station-protocol.html) for detail.
+  Please refer to the [Ground Station Protocol](../../protocol-doc/ground-station-protocol.html) for detail.
   
 ## Hotpoint Task
 
@@ -116,7 +116,7 @@ Hotpoint is a functionality that allows the drone to circle around a given point
 
   There are severl other hotpoint APIs developers can make use of, such as pause, resume and stop the task. Developers can also set and read the idle speed as well as the radius. 
   
-  Please refer to the [Ground Station Protocol](../introduction/ground-station-protocol.html) for detail.
+  Please refer to the [Ground Station Protocol](../../protocol-doc/ground-station-protocol.html) for detail.
   
 ## Follow Me Task
 
@@ -159,7 +159,7 @@ Hotpoint is a functionality that allows the drone to circle around a given point
 
   There are severl other follow me APIs developers can make use of, such as pause, resume and stop the task. 
   
-  Please refer to the [Ground Station Protocol](../introduction/ground-station-protocol.html) for detail.
+  Please refer to the [Ground Station Protocol](../../protocol-doc/ground-station-protocol.html) for detail.
 
 ## The Status Push Information and Event Push Information
 
@@ -167,7 +167,7 @@ Hotpoint is a functionality that allows the drone to circle around a given point
 
   Note: Developers should select the `Ground Station Status` checkbox in DJI Assistant in order to receive the pushed info.
 
-  ![](../images/common/groundstation.png)
+  ![](../../images/common/groundstation.png)
   
 1. Status Push Information
 
@@ -175,7 +175,7 @@ Hotpoint is a functionality that allows the drone to circle around a given point
   
   There are four kinds of status corresponding to the task types, waypoint, hotpoint, follow me and non of above.
   
-  Please refer to the [Ground Station Protocol](../introduction/ground-station-protocol.html) for detail.
+  Please refer to the [Ground Station Protocol](../../protocol-doc/ground-station-protocol.html) for detail.
 
 2. Event Push Information
 
@@ -183,5 +183,5 @@ Hotpoint is a functionality that allows the drone to circle around a given point
   
   There are three events included in the push info, data uploaded, task finished and waypoint reached.
   
-  Please refer to the [Ground Station Protocol](../introduction/ground-station-protocol.html) for detail.
+  Please refer to the [Ground Station Protocol](../../protocol-doc/ground-station-protocol.html) for detail.
 

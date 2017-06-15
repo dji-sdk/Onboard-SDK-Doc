@@ -27,15 +27,15 @@ Developers can operate flight with this example via the GUI interaction interfac
 
  > The Qt example has recently undergone a number of changes. Try it out! Here's an example:
  > Old Waypoint interface:
- > ![Old Waypoint](../../images/qt/Qt_waypointOld.png)
+ > ![Old Waypoint](../../../images/qt/Qt_waypointOld.png)
  > New Waypoint interface: 
- > ![New Waypoint](../../images/qt/Qt_waypointNew.png)
+ > ![New Waypoint](../../../images/qt/Qt_waypointNew.png)
 
 ## Setup
 
 ### 1. Hardware
 
-The [Hardware Setup](../../hardware-setup/index.html) guide illustrates setting up your OES of choice. Make sure your setup matches that in the document before proceeding further. 
+The [Hardware Setup](../../../development-workflow/hardware-setup.html) guide illustrates setting up your OES of choice. Make sure your setup matches that in the document before proceeding further. 
 
 ### 2. Software
 
@@ -148,7 +148,7 @@ Before you can execute any flight commands, an initialization and activation pro
 
 Figure 1 below shows the UI.
 
-![Initialization and activation](../../images/qt/Qt_Init_Activation.PNG)
+![Initialization and activation](../../../images/qt/Qt_Init_Activation.PNG)
 
 Figure 1 Initialization and activation
 
@@ -167,12 +167,12 @@ Overall, the following operations can be performed:
 
 Figure 2 below shows the procedure of flight with the virtual RC.
 
-![Flight with VRC](../../images/qt/qtDemo1.PNG)
+![Flight with VRC](../../../images/qt/qtDemo1.PNG)
 
 Figrue 2: Flight with VRC
 
 Figure 3 below shows the procedure of flight with different missions.
 
-![Flight with different Missions](../../images/qt/QtDemo2.PNG)
+![Flight with different Missions](../../../images/qt/QtDemo2.PNG)
 
 Figure 3: Flight with different Missions
