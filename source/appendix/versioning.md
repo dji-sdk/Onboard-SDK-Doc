@@ -24,14 +24,14 @@ See the table below to determine which firmware package available on DJI Assitan
 
 | Aircraft/FC       | Firmware Package Version | Flight Controller Version  | OSDK Version Support      |
 |---------------    |--------------------------|----------------------------|----------------------     |
-| **A3/A3 Pro**     | **<Insert latest>**      | **3.2.36.7**               | **OSDK 3.3 (Current)**    |
+| **A3/A3 Pro**     | 1.7.1.5                  | **3.2.36.8**               | **OSDK 3.3 (Current)**    |
 |                   | 1.7.0.5                  | 3.2.15.50                  | OSDK 3.2                  |
 |                   | 1.7.0.0                  | 3.2.15.37                  | OSDK 3.2                  |
 |                   |                          |                            |                           |
-| **N3**            | **<Insert Latest>**      | **3.2.36.7**               | **OSDK 3.3 (Current)**    |
+| **N3**            | 1.7.1.5                  | **3.2.36.8**               | **OSDK 3.3 (Current)**    |
 |                   | 1.7.0.0                  | 3.2.15.37                  | OSDK 3.2                  |
 |                   |                          |                            |                           |
-| **M600/M600 Pro** | **<Insert Latest>**      | **3.2.36.7**               | **OSDK 3.3 (Current)**    |
+| **M600/M600 Pro** | Coming soon!             | **3.2.36.8**               | **OSDK 3.3 (Current)**    |
 |                   | 1.0.1.20                 | 3.2.15.62                  | OSDK 3.2                  |
 |                   | 1.0.0.80                 | 3.2.15.00                  | OSDK 3.2                  |
 |                   |                          |                            |                           |
