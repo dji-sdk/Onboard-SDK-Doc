@@ -32,4 +32,4 @@ If you have an A3, A3 Pro, M600, M600 Pro or an N3, upgrade to this release to r
 
 #### Old Releases
 
-- Release notes for pre-3.3 releases can be found [here](../M100%20Docs/old-release-notes.html).
+- Release notes for pre-3.3 releases can be found [here](../M100-Docs/old-release-notes.html).
