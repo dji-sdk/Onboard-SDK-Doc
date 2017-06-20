@@ -1,7 +1,7 @@
 ---
 title: Multi-Function IO
-date: 2017-03-07
-keywords: []
+date: 2017-06-16
+keywords: [MFIO, ADC, PWM, analog, digital, pinout, GPIO, pulse, hardware]
 ---
 
 ## Introduction
@@ -38,6 +38,11 @@ The image below shows the pins that are available for MFIO functionality.
 
 [![A3 MFIO](../images/common/A3MFIO.png)](../images/common/A3MFIO.png) 
 
+## DJI Assistant 2 MFIO Configuration
+
+In DJI Assistant 2's Tools->Function Channels tab, we can map a hardware channel to an MFIO channel; to do so, click on any of F3-F8 and select `SDK1-SDK8`. Note that in the source code, we refer to the MFIO channels from `MFIO::CHANNEL_0` to `MFIO::CHANNEL_7`, though they map to `SDK1` to `SDK8`.
+
+![MFIO-Assistant-config](../images/guides/MFIO_config.png)
 
 
 

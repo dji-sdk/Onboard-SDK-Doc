@@ -1,7 +1,7 @@
 ---
-title: Flight Controller
-date: 2016-12-13
-keywords: [flight mode switch, control authority, control presidence]
+title: Control Authority
+date: 2017-06-16
+keywords: [flight mode switch, control authority, control precedence, RC lost]
 ---
 
 ## Introduction
@@ -85,3 +85,10 @@ The remote controller sticks can manually control aircraft flight for all states
 * Waypoint Mission: Sticks will control mission speed and aircraft yaw
 * Hotpoint Mission: Sticks will control mission speed, hotpoint radius, direction of travel and aircraft yaw
 
+## Remote Controller Lost
+
+By default, when the remote controller loses connection to the vehicle, the vehicle executes a return-to-home-and-land (RTL) maneuver. However, there is now an option to override this behavior by allowing the OSDK to continue executing its mission. To do so, users will have to check the `Enable SDK Failsafe Action` box and set the `SDK Failsafe Action` to `Hover` as shown in the picture.
+
+![sdk-failsafe](../images/guides/sdk-failsafe.png)
+
+With this functionality, users can also execute complete missions without having to use LightBridge 2 or a similar RC. In this situation, first-use activation (which requires internet connection and is otherwise done through DJI Go) is done through DJI Assistant 2.
