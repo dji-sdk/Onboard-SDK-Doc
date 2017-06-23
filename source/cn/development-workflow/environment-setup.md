@@ -50,8 +50,14 @@ To build standalone Linux applications based on the OSDK, you need:
 * CMake >= 2.8
 * A modern Linux distribution
 
-To make sure your Linux environment is ready to run OSDK applications, follow the [Linux Platform Guide](../sample-doc/sample-setup.html#linux-oes) on the Sample Setup page and run a sample app.
+##### Permissions
 
+You need to add your user to the `dialout` group to obtain read/write permissions for the uart communication; follow these steps to do so:
+
+1. Type `sudo usermod -a -G dialout $USER` in a terminal
+2. Log out of your user account and log in again for the permissions to take effect.
+
+To make sure your Linux environment is ready to run OSDK applications, follow the [Linux Platform Guide](../sample-doc/sample-setup.html#linux-oes) on the Sample Setup page and run a sample app.
 
 ## STM32
 
@@ -91,4 +97,12 @@ cd src
 catkin_init_workspace
 ```
 
+##### Permissions
+
+You need to add your user to the `dialout` group to obtain read/write permissions for the uart communication; follow these steps to do so:
+
+1. Type `sudo usermod -a -G dialout $USER` in a terminal
+2. Log out of your user account and log in again for the permissions to take effect.
+
 To make sure your ROS environment is ready to run OSDK applications, follow the [ROS Platform Guide](../sample-doc/sample-setup.html#ros-oes) on the Sample Setup page and run a sample app.
+

@@ -21,7 +21,7 @@ keywords: [write apps, run apps, SDK, integrate, DJI]
     - The box titled `Enable API Control` is checked.
     - The baudrate is the same as the one provided on the OES. If you had to change this setting, re-start the FC/Aircraft.
     - **Not all** the broadcast telemetries are set to `Do Not Send`, i.e. at least something is broadcasting.
-- Upgrade to the newest firmware that is [officially supported](../features/authority.html) by the OSDK version you are using.
+- Upgrade to the newest firmware that is [officially supported](../appendix/versioning.html) by the OSDK version you are using.
 
 ## Simulation Checklist
 

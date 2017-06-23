@@ -31,7 +31,7 @@ See the table below to determine which firmware package available on DJI Assitan
 | **N3**            | **1.7.1.5**              | **3.2.36.8**               | **OSDK 3.3 (Current)**    |
 |                   | 1.7.0.0                  | 3.2.15.37                  | OSDK 3.2                  |
 |                   |                          |                            |                           |
-| **M600/M600 Pro** | Coming soon!             | **3.2.36.8**               | **OSDK 3.3 (Current)**    |
+| **M600/M600 Pro** | Coming soon!             | Coming Soon!               | **OSDK 3.3 (Current)**    |
 |                   | 1.0.1.20                 | 3.2.15.62                  | OSDK 3.2                  |
 |                   | 1.0.0.80                 | 3.2.15.00                  | OSDK 3.2                  |
 |                   |                          |                            |                           |
