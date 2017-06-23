@@ -16,6 +16,8 @@ keywords: [SDK, Hardware Sync, New Features, Updates, release, notes, bugs]
 
 If you have an A3, A3 Pro, M600, M600 Pro or an N3, upgrade to this release to receive all the goodness! If you have an M100, stay tuned for more. Support for M210 and M210-RTK is also coming soon!
 
+Please visit the [Version Compatibility](../appendix/versioning.html) page to finds out what firmware you need to be running to take advantage of OSDK 3.3.
+
 ## New Features
 
 - External hardware time synchronization capability
