@@ -1,6 +1,6 @@
 ---
 title: Matrice 100 
-date: 2017-06-01
+date: 2017-07-03
 keywords: [M100, linux, ros, qt, stm32, mobile sdk, protocol]
 ---
 
@@ -45,3 +45,5 @@ Note. OSDK 3.3 does not support Matrice 100, please refer to this page for previ
 [Ground Station Protocol](../protocol-doc/ground-station-protocol.html)
 
 [Virtual RC Protocol](virtual-rc-protocol.html)
+
+[Flight Modes and Telemetry](../appendix/index.html)

@@ -1,6 +1,6 @@
 ---
 title: Get Started
-date: 2017-06-01
+date: 2017-07-03
 version: 3.3
 keywords: [get started, key features, hardware overview, registration, enable flight controller API control, safety]
 ---
@@ -9,7 +9,7 @@ This document takes you through a quick set of steps to see the DJI Onboard SDK 
 
 ## Register as a DJI Developer
 
-Follow the steps [here](../development-workflow/environment-setup/sample-setup.html#onboard-sdk-application-registration) to register as a DJI Onboard SDK developer, and generate an app ID and key.
+Follow the steps [here](../development-workflow/environment-setup.html#onboard-sdk-application-registration) to register as a DJI Onboard SDK developer, and generate an app ID and key.
 
 ## Setup
 
