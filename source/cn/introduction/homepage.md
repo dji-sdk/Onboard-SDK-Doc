@@ -10,7 +10,7 @@ The DJI Onboard SDK (OSDK) allows you to build powerful, automated drone applica
 
 This document helps you get started with the various aspects of building OSDK applications.
 
-Note. OSDK 3.3 does not support Matrice 100, please refer to [here](../M100%20Docs/main.html) for previous documentation.
+Note. OSDK 3.3 does not support Matrice 100, please refer to [here](../M100-Docs/main.html) for previous documentation.
 
 ## Get Started Immediately
 

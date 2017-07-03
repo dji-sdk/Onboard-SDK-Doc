@@ -34,4 +34,4 @@ Please visit the [Version Compatibility](../appendix/versioning.html) page to fi
 
 #### Old Releases
 
-- Release notes for pre-3.3 releases can be found [here](../M100%20Docs/old-release-notes.html).
+- Release notes for pre-3.3 releases can be found [here](../M100-Docs/old-release-notes.html).
