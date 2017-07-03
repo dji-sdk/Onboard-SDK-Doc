@@ -45,3 +45,5 @@ Note. OSDK 3.3 does not support Matrice 100, please refer to this page for previ
 [Ground Station Protocol](../protocol-doc/ground-station-protocol.html)
 
 [Virtual RC Protocol](virtual-rc-protocol.html)
+
+[Flight Modes and Telemetry](../appendix/index.html)

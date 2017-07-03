@@ -137,7 +137,11 @@ The Onboard SDK allows control of both camera and gimbal. Note that the Mobile S
 
 ##### Hardware Synchronization Control
 
-TODO ...
+Developers can, for the first time, access and program a hardware synchronization digital signal from DJI Aircraft/flight controllers with the Onboard SDK. This functionality provides:
+
+* **Hardware Pulsed Signal**: Programmable pulse triggered by the aircraft/FC's clock that can be consumed by external sensors or computers
+* **Software Data Packet**: IMU data and timestamps corresponding to the hardware pulse, useful for registering this sensor data accurately with other sensors or algorithms
+
 
 ##### MFIO Control
 

@@ -1,7 +1,7 @@
 ---
 title: Release Notes for Onboard SDK 3.3
 version: 3.3
-date: 2017-06-13
+date: 2017-07-03
 keywords: [SDK, Hardware Sync, New Features, Updates, release, notes, bugs]
 ---
 
@@ -16,7 +16,7 @@ keywords: [SDK, Hardware Sync, New Features, Updates, release, notes, bugs]
 
 If you have an A3, A3 Pro, M600, M600 Pro or an N3, upgrade to this release to receive all the goodness! If you have an M100, stay tuned for more. Support for M210 and M210-RTK is also coming soon!
 
-Please visit the [Version Compatibility](../appendix/versioning.html) page to finds out what firmware you need to be running to take advantage of OSDK 3.3.
+Please visit the [Version Compatibility](../appendix/versioning.html) page to finds out what firmware you need to be running to take advantage of OSDK 3.3. Note that though this documentation mentions M600/Pro support in most places, the flight control firmware for OSDK 3.3 support is not out yet. The projected release date for this firmware is end-July.
 
 ## New Features
 

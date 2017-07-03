@@ -17,7 +17,7 @@ The flight controller is responsible for:
 * Flight limitation systems such as No Fly Zones and the GEO System
 * Aircraft flight simulation for testing and debugging
 
-A general description of fundamental flight control concepts can be found [here](./flightController_concepts.html).
+A general description of fundamental flight control concepts can be found [here](http://developer.dji.com/mobile-sdk/documentation/introduction/flightController_concepts.html).
 
 ## Telemetry Assistance
 

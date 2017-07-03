@@ -8,7 +8,7 @@ keywords: [single, burst, HDR, AEB, Interval, Timelapse, video resolution, frame
 
 The camera captures photos and videos. Many different modes of operation, resolutions, frame rates, exposure settings, picture settings and file types can be selected. Cameras have local storage to hold the media which will typically be an SD card, and in some cases an SSD (solid state drive). 
 
-This guide covers the large array of settings, modes and functionality provided by DJI cameras. A more general description of camera concepts can be found [here](./camera_concepts.html).
+This guide covers the large array of settings, modes and functionality provided by DJI cameras. A more general description of camera concepts can be found [here](http://developer.dji.com/mobile-sdk/documentation/introduction/camera_concepts.html).
 
 ## Supported Features
 

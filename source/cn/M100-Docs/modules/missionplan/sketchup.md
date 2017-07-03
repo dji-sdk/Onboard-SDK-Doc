@@ -5,8 +5,8 @@ github: https://github.com/dji-sdk/Onboard-SDK/releases/download/3.1.9/dji_traje
 date: 2016-10-14
 ---
 
-![Overview](../../images/modules/missionplan/sketchup/overview.png)
-![Tower](../../images/modules/missionplan/sketchup/tower.png)
+![Overview](../../../images/modules/missionplan/sketchup/overview.png)
+![Tower](../../../images/modules/missionplan/sketchup/tower.png)
 
 ## Introduction
 
