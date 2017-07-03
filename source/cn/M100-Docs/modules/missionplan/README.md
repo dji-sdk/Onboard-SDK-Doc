@@ -4,7 +4,7 @@ version: 3.2.0
 date: 2016-12-23
 github: https://github.com/dji-sdk/Onboard-SDK-Resources/tree/precision-missions-1.0.2/precision-missions-1.0.2
 ---
-![Assistant-Spiral](../../images/modules/missionplan/spiral.png)
+![Assistant-Spiral](../../../images/modules/missionplan/spiral.png)
 
 
 ## Introduction
@@ -99,15 +99,15 @@ The workflow for using this suite consists of two parts - planning a mission usi
 * You can view the drone simulation as part of SketchUp too - Make sure Assistant 2 is running on the same machine as SketchUp. Using the plugin's `Simulator Connect` feature, you can match up the simulation to the planned trajectory. 
 * In simulation, set up the drone's home position close to the planned trajectory - as you would in real life.
 * To run the sample interactively, you can press `[z]` to run the trajectory following for the json supplied at command line. It is recommended to execute a takeoff command prior to executing a mission. If the aircraft is not in the air, it will takeoff now. 
-![Interactive trajectory](../../images/modules/missionplan/PM101.png)
+![Interactive trajectory](../../../images/modules/missionplan/PM101.png)
 * To run it on mobile, you can go to the new `Advanced` tab and choose what components you want enabled in the lower part of the screen. It is recommended to execute a takeoff command prior to executing a mission. If the aircraft is not in the air, it will takeoff now.
-![mobile vanilla trajectory](../../images/modules/missionplan/mobile_advanced.png) 
+![mobile vanilla trajectory](../../../images/modules/missionplan/mobile_advanced.png)
 
 * To integrate this functionality into your own code, take a look at the includes and the linking in the `CMakeLists.txt` in the `sample/Linux/Blocking` directory as well as the `osdk-wrapper` directory.  
     The calls you will need to make can be seen in the `LinuxInteractive.cpp` or the `LinuxMobile.cpp` files; these include initialization of various variables at the start of the sample and a few function calls inside of the interactive/mobile spin.
 
   On running the trajectory follower, you should see feedback about the library's current state/intent:
-  ![trajectory info](../../images/modules/missionplan/trajectory_info_101.png)
+  ![trajectory info](../../../images/modules/missionplan/trajectory_info_101.png)
 
    You will also see the percentage progress indicator on the last line as the aircraft traverses the trajectory.
 
@@ -138,7 +138,7 @@ The workflow for using this suite consists of two parts - planning a mission usi
 * MSL altitude is not supported through the mission planning interface and has not been adequately tested. The suite is designed to prefer MSL heights over AGL heights, which will be enabled once we add MSL heights to the planning software; we ask that you do not change the MSL value (-9999) in the json file and instead only plan missions using height above takeoff point.
 * Staying within the velocity limits might still lead to infeasible trajectories depending on how far away the spiral is from the current location. Tweak the spiral velocity and radii to make it feasible.
 * The start angle parameter does not rotate the spiral to the desired angle; it merely enters the first loop of a 0&deg; spiral at the position corresponding to the specified start angle.
-* Always, if there are any suspicions that the drone might crash, switch out of F mode ([P mode for A3 FW > 1.5.0.0, N3](../../appendix/releaseNotes.html#Notes-for-using-Onboard-SDK-with-the-new-a3-v1-5-0-0-fw)) and the drone will stop following.
+* Always, if there are any suspicions that the drone might crash, switch out of F mode ([P mode for A3 FW > 1.5.0.0, N3](../../old-release-notes.html#Notes-for-using-Onboard-SDK-with-the-new-a3-v1-5-0-0-fw)) and the drone will stop following.
 
 ### Safety Cases Handled
 

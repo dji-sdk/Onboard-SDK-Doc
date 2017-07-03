@@ -14,7 +14,7 @@ The objective of the LiDAR-based collision avoidance package [beta] is to help e
 ## Hardware and Software Setup
 
 ### Hardware setup
-![fully-assembled-system](../../images/modules/collision-avoidance/fully-assembled-system.jpg)
+![fully-assembled-system](../../../images/modules/collision-avoidance/fully-assembled-system.jpg)
 
 The system for collision avoidance consists of the following components:
 
@@ -26,7 +26,7 @@ The system for collision avoidance consists of the following components:
 The overall weight of the above system is around 1.77 kg, so we choose the DJI Matrice 600 as the platform. The rack is designed such that the field of view (FOV) of the VLP-16 is not blocked by the body of the M600. The VLP-16 is mounted upside down, with the power cable pointing to the right side of the M600.
 
 The VLP-16 needs to be configured from its network interface as shown is the figure below:
-![VLP16-webconfig](../../images/modules/collision-avoidance/VLP16-webconfig.png)
+![VLP16-webconfig](../../../images/modules/collision-avoidance/VLP16-webconfig.png)
 
 
 ### Software setup
@@ -44,7 +44,7 @@ The collision avoidance module can be used in conjunction with precision mission
 
 ##### Collision Avoidance with Precision Missions
 
-First follow software setup instructions in [Precision Mission](../../modules/missionplan/README.html#setup) to get the sample built with trajectory and collision avoidance support.
+First follow software setup instructions in [Precision Mission](../missionplan/README.html#setup) to get the sample built with trajectory and collision avoidance support.
 
 Passing the `-DUSE_COLLISION_AVOIDANCE=ON` parameter to CMake while building the Linux sample will place collision avoidance binaries in the `build/bin/dji-ros-collision-avoidance` directory.
 
@@ -78,7 +78,7 @@ Finally, source the collision avoidance install-space as above (make sure you `c
 
 The collision avoidance module can be started automatically with the precision trajectory following mission. To execute a precision mission with collision avoidance support, run the linux sample executable in mobile mode (`-mobile`). Obtain Control in the Core Functions tab. Then from the `advanced` tab in the mobile app, hit the `Go` button under the `Precision Trajectory` section with the 'Collision Avoidance` switch on, as shown below. After the M600 takes off, the collision avoidance module will be started and the drone will hover/pause if there are unexpected obstacles in the direction of motion. The precision mission will resume when the obstacle has cleared. If the obstacle cannot be removed, the user will have to abort the mission with manual control. Hit Release control in the Core Functions tab to get full manual control of the aircraft. 
 
-![mission-collision-avoidance](../../images/modules/collision-avoidance/mission-collision-avoidance.png)
+![mission-collision-avoidance](../../../images/modules/collision-avoidance/mission-collision-avoidance.png)
 
 ### Use with manual piloted flying
 
@@ -87,7 +87,7 @@ The collision avoidance module can also be started to assist the pilot during ma
 In collision avoidance manual flight mode, the user stick inputs are be remapped to velocity commands. To ensure safety, we scaled the maximum velocities such that the maximum `X` and `Y` velocities are scaled to `3 m/s`, the maximum `Z` velocity is scaled to `2 m/s`, and the maximum yaw rate is scaled to `45 deg/s`.
 
 
-![manual-fly-collision-avoidance](../../images/modules/collision-avoidance/manual-fly-collision-avoidance.png)
+![manual-fly-collision-avoidance](../../../images/modules/collision-avoidance/manual-fly-collision-avoidance.png)
 
 ## Under the hood
 

@@ -17,7 +17,7 @@ Mapping can be enabled as a part of a Precision Trajectory mission or can be run
   
 We are excited to see the different ways the LiDAR Mapping package will be put to use by our users! 
 
-![3-D Map](../../images/modules/lidarmapping/pointcloudimage.png)
+![3-D Map](../../../images/modules/lidarmapping/pointcloudimage.png)
 *Aerial Map generated with DJI Matrice 600, Velodyne PUCK Lite running LOAM package and pointcloud2las library.* 
 
 ### Features
@@ -57,7 +57,7 @@ at the end of the spiral by enabling this feature in the mobile app.
      ```
   5. Lidar Mapping can be enabled in Precision Missions using the tab below in the OSDK-Mobile iOS app.     
    
-   ![Mobile App](../../images/modules/lidarmapping/lidarmapping_mobile.PNG) 
+   ![Mobile App](../../../images/modules/lidarmapping/lidarmapping_mobile.PNG)
    
    ### LiDAR Mapping enabled Manually
    
@@ -69,7 +69,7 @@ at the end of the spiral by enabling this feature in the mobile app.
   
   2. Use the button below in the MOS app to enable and disable LiDAR mapping. 
   
-   ![Mobile App manual](../../images/modules/lidarmapping/lidarmapping_manual.PNG)
+   ![Mobile App manual](../../../images/modules/lidarmapping/lidarmapping_manual.PNG)
    
   **Running LiDAR Mapping via OnboardSDK-ROS**
   
@@ -86,7 +86,7 @@ at the end of the spiral by enabling this feature in the mobile app.
       source catkin_ws/dji-ros-pointcloud2las/setup.bash --extend
       ```
   5. Use the button below in the OSDK-Mobile iOS app to enable and disable LiDAR mapping. 
-    ![Mobile App manual](../../images/modules/lidarmapping/lidarmapping_manual.PNG)    
+    ![Mobile App manual](../../../images/modules/lidarmapping/lidarmapping_manual.PNG)
     
     
   ## Hardware setup
@@ -94,7 +94,7 @@ at the end of the spiral by enabling this feature in the mobile app.
  Our hardware is powered by an [x86 system](https://zareason.com/shop/Zini-1660.html), 
   and a [Velodyne PUCK Lite](http://velodynelidar.com/vlp-16-lite.html). We make use of a custom designed mounting system for the Matrice 600.   
      
-  ![Lidar hardware 2](../../images/modules/lidarmapping/hardware_lidar2.jpg)
+  ![Lidar hardware 2](../../../images/modules/lidarmapping/hardware_lidar2.jpg)
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*The figure shows the setup in-flight.* 
   
   ***If you have interest in acquiring a ready-to-fly customized Lidar mapping solution, please [contact us](http://enterprise.dji.com/contact-us).***
