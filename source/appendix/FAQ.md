@@ -1,9 +1,9 @@
 ---
 title: FAQ 
-date: 2016-10-14
+date: 2017-07-03
 keywords: [OES, N1/A3, N3, FAQ, stackOverFlow, Github Issues, activation fail, M100, video, lightbridge, flight control, data transparent transmission, open protocol, frequency, commands]
 ---
-> New! Updated with questions on the DJI forums and Github
+> NOTE: FAQ have not been updated for OSDK 3.3, the information here is relevant for OSDK 3.2. An all-new FAQ will be out soon!
 
 ## Table of Contents
 
