@@ -96,8 +96,8 @@
   title: APPENDIX
   list:
     -
-      title: Matrice 100
-      path: /M100-Docs/main.html
+      title: Protocol Documents
+      path: /Protocol-Documents/main.html
     -
       title: FAQ
       path: /appendix/FAQ.html
