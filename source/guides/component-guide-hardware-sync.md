@@ -10,6 +10,8 @@ Hardware synchronization, an exclusive Onboard SDK 3.3 feature, offers users the
 
 Hardware sync provides users with a digital timing signal from a hardware output line, along with a software packet that timestamps the digital signal in the aircraft/FC's clock reference. What's more, the software packet also includes time-aligned IMU data for use with external fusion algorithms.
 
+##### NOTE: Hardware Sync feature not supported in Matrice 100.
+
 ## Why Hardware Clock Sync?
 
 The goal of hardware synchronization is to offer users a means to accurately synchronize the free-running clock used by DJI flight controllers/aircraft with the clock on users' onboard computer or sensors.

@@ -54,11 +54,13 @@ By allowing flexibility of setting frequencies for each Broadcast component indi
 
 ## Subscription
 
-Data Subscription is a new and improved paradigm introduced in DJI Onboard SDK 3.3.  Like Broadcast, it offers real-time telemetry data transmission from the flight controller to the DJI Oonboard SDK. In addition to Broadcast, it provides more variety of status information data sets or "Topics" as well as flexible frequency configuration.
+Data Subscription is a new and improved paradigm introduced in DJI Onboard SDK 3.3.  Like Broadcast, it offers real-time telemetry data transmission from the flight controller to the DJI Onboard SDK. In addition to Broadcast, it provides more variety of status information data sets or "Topics" as well as flexible frequency configuration.
+
+##### NOTE: Subscription feature not supported in Matrice 100.
 
 #### How It Works
 
-You can choose a set of "Topics" or Subscription data sets, add them to a Subscription package and configure the package to arrive on prefered frequency. There are total of five packages available to a user to configure via DJI Onboard API. Each package can be set to individual frequency and has fixed-size buffer of 300-Bytes allowing user to add as many Telemetry Topics per package as desired.
+You can choose a set of "Topics" or Subscription data sets, add them to a Subscription package and configure the package to arrive on preferred frequency. There are total of five packages available to a user to configure via DJI Onboard API. Each package can be set to individual frequency and has fixed-size buffer of 300-Bytes allowing user to add as many Telemetry Topics per package as desired.
 
 #### Available Subscription Topics and Their MAX Frequencies
 

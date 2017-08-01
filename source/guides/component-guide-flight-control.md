@@ -45,7 +45,7 @@ When a automated land command is sent, the aircraft will descend at it's current
 Aircraft flight can be controlled in several ways:
 
 * **Manually**: While Onboard SDK used to program flight missions, manual control is also possible via remote controller to manipulate limited features of the flight 
-* **[Missions](./component-guide-missions.html)**: Simple high level flight automatioin via Mission Manager
+* **[Missions](./component-guide-missions.html)**: Simple high level flight automation via Mission Manager
 * **[Flight Control](#flight-control)**: Flight control commands can be sent using DJI Onboard SDK APIs
 
 ##### Flight Orientation Modes
