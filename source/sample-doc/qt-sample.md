@@ -1,10 +1,13 @@
 ---
-title: Qt Sample Application
+title: Qt Sample Application [Beta]
 date: 2017-08-02
+version: 3.3.1
 keywords: [Qt, windows, mac, osx, cross-platform, sample, test, GUI]
 ---
 
 ## Introduction
+
+![qt-broadcast](../images/qt/Qt-Broadcast.png)
 
 The new Qt sample app provides a cross-platform GUI to try out DJI OSDK functionality. The application supports Ubuntu Linux, MacOS and Windows platforms.
 
@@ -55,9 +58,8 @@ The startup screen should look like this:
 
 - First, select the serial port and hit the `Initialize Vehicle` button. This sets up the `Vehicle` object, initializes all components and reads App ID and Key from the UserConfig.txt file.
 - Next, you must activate the drone and optionally obtain control.
-- From here on, explore the various components by clikcing on the tabs at the top. Here are screenshots of the Flight Control page and the Broadcast Telemetry page.
+- From here on, explore the various components by clikcing on the tabs at the top. For example, here is a screenshot of the Flight Control page:
 ![qt-flight-control](../images/qt/Qt-Flight.png)
-![qt-broadcast](../images/qt/Qt-Broadcast.png)
 
 - The terminal is your source of debug and status information; here is a screenshot of what that looks like.
  ![qt-terminal](../images/qt/Qt-terminal.png)
