@@ -11,9 +11,9 @@
 <polygon fill="white" stroke="none" points="-4,4 -4,-24 169,-24 169,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node"><title>Node1</title>
-<g id="a_node1"><a xlink:href="classDJI_1_1OSDK_1_1SubscriptionPackage.html" target="_top" xlink:title="Package class to support Subscribe&#45;style telemetry. ">
+<g id="a_node1"><a xlink:href="classDJI_1_1OSDK_1_1PosixThreadManager.html" target="_top" xlink:title="POSIX&#45;COmpatible Data Protection and Condition Variables for *NIX platforms. ">
 <polygon fill="white" stroke="black" points="0,-0.5 0,-19.5 165,-19.5 165,-0.5 0,-0.5"/>
-<text text-anchor="middle" x="82.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">DJI::OSDK::SubscriptionPackage</text>
+<text text-anchor="middle" x="82.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">DJI::OSDK::PosixThreadManager</text>
 </a>
 </g>
 </g>

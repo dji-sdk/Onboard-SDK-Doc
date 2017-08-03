@@ -158,7 +158,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct is returned from all blocking calls, except certain mission calls that have explicit types defined later in this file.  <a href="structDJI_1_1OSDK_1_1ACK_1_1ErrorCode.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1HotPointRead.html">HotPointRead</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct is returned from the <a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#ab9cc1476b13b764d34cfdae131f5d986" title="read hotpt mission info from flight controller ">DJI::OSDK::HotpointMission::readData</a> blocking API.  <a href="structDJI_1_1OSDK_1_1ACK_1_1HotPointRead.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct is returned from the DJI::OSDK::HotpointMission::readData blocking API.  <a href="structDJI_1_1OSDK_1_1ACK_1_1HotPointRead.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1HotPointStart.html">HotPointStart</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct is returned from the <a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#a4a0151215ad6204133361bd81e87f44c" title="start the hotpoint mission ">DJI::OSDK::HotpointMission::start</a> blocking API.  <a href="structDJI_1_1OSDK_1_1ACK_1_1HotPointStart.html#details">More...</a><br /></td></tr>
@@ -166,8 +166,11 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1MFIOGet.html">MFIOGet</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct is returned from the <a class="el" href="classDJI_1_1OSDK_1_1MFIO.html#ad64c03a68764d310202a15ed85454ab6" title="Non-blocking call for getting data from an MFIO channel. ">DJI::OSDK::MFIO::getValue</a> blocking API.  <a href="structDJI_1_1OSDK_1_1ACK_1_1MFIOGet.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1WayPointAddPoint.html">WayPointAddPoint</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct is returned from the <a class="el" href="classDJI_1_1OSDK_1_1WaypointMission.html#a0923b487adb4c6968268914baebd880c" title="setting waypt init data ">DJI::OSDK::WaypointMission::uploadIndexData</a> blocking API.  <a href="structDJI_1_1OSDK_1_1ACK_1_1WayPointAddPoint.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1WayPointIndex.html">WayPointIndex</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct is returned from the <a class="el" href="classDJI_1_1OSDK_1_1WaypointMission.html#a0923b487adb4c6968268914baebd880c" title="setting waypt init data ">DJI::OSDK::WaypointMission::uploadIndexData</a> blocking API.  <a href="structDJI_1_1OSDK_1_1ACK_1_1WayPointIndex.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct is returned from the DJI::OSDK::WaypointMission::waypointIndexDownload blocking API.  <a href="structDJI_1_1OSDK_1_1ACK_1_1WayPointIndex.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1WayPointInit.html">WayPointInit</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct is used in the readInitData non-blocking API callback.  <a href="structDJI_1_1OSDK_1_1ACK_1_1WayPointInit.html#details">More...</a><br /></td></tr>
@@ -190,9 +193,12 @@ typedef struct DJI::OSDK::ACK::HotPointStartInternal&#160;</td><td class="memIte
 <tr class="memitem:a199a4b44ba72338ef49feb3a68b6d1fd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a199a4b44ba72338ef49feb3a68b6d1fd"></a>
 typedef struct DJI::OSDK::ACK::HotPointReadInternal&#160;</td><td class="memItemRight" valign="bottom"><b>HotPointReadInternal</b></td></tr>
 <tr class="separator:a199a4b44ba72338ef49feb3a68b6d1fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d894a05e3765e4eb0309e09ea357d89"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d894a05e3765e4eb0309e09ea357d89"></a>
-typedef struct DJI::OSDK::ACK::WayPointDataInternal&#160;</td><td class="memItemRight" valign="bottom"><b>WayPointDataInternal</b></td></tr>
-<tr class="separator:a2d894a05e3765e4eb0309e09ea357d89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb3d04b1ffb877e3236f67d95494d64d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abb3d04b1ffb877e3236f67d95494d64d"></a>
+typedef struct DJI::OSDK::ACK::WayPointAddPointInternal&#160;</td><td class="memItemRight" valign="bottom"><b>WayPointAddPointInternal</b></td></tr>
+<tr class="separator:abb3d04b1ffb877e3236f67d95494d64d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cbecbab82f9ff9071452c94ac6dd74c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9cbecbab82f9ff9071452c94ac6dd74c"></a>
+typedef struct DJI::OSDK::ACK::WayPointIndexInternal&#160;</td><td class="memItemRight" valign="bottom"><b>WayPointIndexInternal</b></td></tr>
+<tr class="separator:a9cbecbab82f9ff9071452c94ac6dd74c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bb4b5e7616ce1256781a0775aa51f5d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5bb4b5e7616ce1256781a0775aa51f5d"></a>
 typedef struct DJI::OSDK::ACK::WayPointVelocityInternal&#160;</td><td class="memItemRight" valign="bottom"><b>WayPointVelocityInternal</b></td></tr>
 <tr class="separator:a5bb4b5e7616ce1256781a0775aa51f5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -212,17 +218,20 @@ typedef struct DJI::OSDK::ACK::MFIOGetInternal&#160;</td><td class="memItemRight
 <tr class="memdesc:ab4f73fdaa9df6637eb60f8834d0965c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct is returned from the <a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#a4a0151215ad6204133361bd81e87f44c" title="start the hotpoint mission ">DJI::OSDK::HotpointMission::start</a> blocking API.  <a href="#ab4f73fdaa9df6637eb60f8834d0965c7">More...</a><br /></td></tr>
 <tr class="separator:ab4f73fdaa9df6637eb60f8834d0965c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5ce5bcddd23cc9f338b5f6a5b6639b4"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1HotPointRead.html">DJI::OSDK::ACK::HotPointRead</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ACK.html#aa5ce5bcddd23cc9f338b5f6a5b6639b4">HotPointRead</a></td></tr>
-<tr class="memdesc:aa5ce5bcddd23cc9f338b5f6a5b6639b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct is returned from the <a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#ab9cc1476b13b764d34cfdae131f5d986" title="read hotpt mission info from flight controller ">DJI::OSDK::HotpointMission::readData</a> blocking API.  <a href="#aa5ce5bcddd23cc9f338b5f6a5b6639b4">More...</a><br /></td></tr>
+<tr class="memdesc:aa5ce5bcddd23cc9f338b5f6a5b6639b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct is returned from the DJI::OSDK::HotpointMission::readData blocking API.  <a href="#aa5ce5bcddd23cc9f338b5f6a5b6639b4">More...</a><br /></td></tr>
 <tr class="separator:aa5ce5bcddd23cc9f338b5f6a5b6639b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0dd1b61256d88d01233c31d0936f064f"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1WayPointIndex.html">DJI::OSDK::ACK::WayPointIndex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ACK.html#a0dd1b61256d88d01233c31d0936f064f">WayPointIndex</a></td></tr>
-<tr class="memdesc:a0dd1b61256d88d01233c31d0936f064f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct is returned from the <a class="el" href="classDJI_1_1OSDK_1_1WaypointMission.html#a0923b487adb4c6968268914baebd880c" title="setting waypt init data ">DJI::OSDK::WaypointMission::uploadIndexData</a> blocking API.  <a href="#a0dd1b61256d88d01233c31d0936f064f">More...</a><br /></td></tr>
+<tr class="memdesc:a0dd1b61256d88d01233c31d0936f064f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct is returned from the DJI::OSDK::WaypointMission::waypointIndexDownload blocking API.  <a href="#a0dd1b61256d88d01233c31d0936f064f">More...</a><br /></td></tr>
 <tr class="separator:a0dd1b61256d88d01233c31d0936f064f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53dd92219f528e568fbfcceb470dbd38"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1WayPointAddPoint.html">DJI::OSDK::ACK::WayPointAddPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ACK.html#a53dd92219f528e568fbfcceb470dbd38">WayPointAddPoint</a></td></tr>
+<tr class="memdesc:a53dd92219f528e568fbfcceb470dbd38"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct is returned from the <a class="el" href="classDJI_1_1OSDK_1_1WaypointMission.html#a0923b487adb4c6968268914baebd880c" title="setting waypt init data ">DJI::OSDK::WaypointMission::uploadIndexData</a> blocking API.  <a href="#a53dd92219f528e568fbfcceb470dbd38">More...</a><br /></td></tr>
+<tr class="separator:a53dd92219f528e568fbfcceb470dbd38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a343ac813c4be2a5f67aecc3d9dd4d6"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1WayPointVelocity.html">DJI::OSDK::ACK::WayPointVelocity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ACK.html#a8a343ac813c4be2a5f67aecc3d9dd4d6">WayPointVelocity</a></td></tr>
 <tr class="memdesc:a8a343ac813c4be2a5f67aecc3d9dd4d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct is returned from the <a class="el" href="classDJI_1_1OSDK_1_1WaypointMission.html#affd964d55236c2ba99ce790f7ba1efa2" title="setting waypt idle velocity ">DJI::OSDK::WaypointMission::updateIdleVelocity</a> blocking API.  <a href="#a8a343ac813c4be2a5f67aecc3d9dd4d6">More...</a><br /></td></tr>
 <tr class="separator:a8a343ac813c4be2a5f67aecc3d9dd4d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68d6aedb1dd2b293928e6efac4174689"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1WayPointInit.html">DJI::OSDK::ACK::WayPointInit</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ACK.html#a68d6aedb1dd2b293928e6efac4174689">WaypointInit</a></td></tr>
-<tr class="memdesc:a68d6aedb1dd2b293928e6efac4174689"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct is used in the readInitData non-blocking API callback.  <a href="#a68d6aedb1dd2b293928e6efac4174689">More...</a><br /></td></tr>
-<tr class="separator:a68d6aedb1dd2b293928e6efac4174689"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af29c92d2c9c945db8e95a354bfce3af5"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1WayPointInit.html">DJI::OSDK::ACK::WayPointInit</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ACK.html#af29c92d2c9c945db8e95a354bfce3af5">WayPointInit</a></td></tr>
+<tr class="memdesc:af29c92d2c9c945db8e95a354bfce3af5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct is used in the readInitData non-blocking API callback.  <a href="#af29c92d2c9c945db8e95a354bfce3af5">More...</a><br /></td></tr>
+<tr class="separator:af29c92d2c9c945db8e95a354bfce3af5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a523b5ed7436a3367a7a7dde580555d62"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1DroneVersion.html">DJI::OSDK::ACK::DroneVersion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ACK.html#a523b5ed7436a3367a7a7dde580555d62">DroneVersion</a></td></tr>
 <tr class="memdesc:a523b5ed7436a3367a7a7dde580555d62"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct is returned from the <a class="el" href="classDJI_1_1OSDK_1_1Vehicle.html#a257f78845ca1dc25c0ed66f9a6499f52" title="Send get version control to the vehicle. ">DJI::OSDK::Vehicle::getDroneVersion</a> blocking API.  <a href="#a523b5ed7436a3367a7a7dde580555d62">More...</a><br /></td></tr>
 <tr class="separator:a523b5ed7436a3367a7a7dde580555d62"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -303,7 +312,7 @@ static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>RELEA
       </table>
 </div><div class="memdoc">
 
-<p>This struct is returned from the <a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#ab9cc1476b13b764d34cfdae131f5d986" title="read hotpt mission info from flight controller ">DJI::OSDK::HotpointMission::readData</a> blocking API. </p>
+<p>This struct is returned from the DJI::OSDK::HotpointMission::readData blocking API. </p>
 
 </div>
 </div>
@@ -335,6 +344,20 @@ static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>RELEA
 
 </div>
 </div>
+<a class="anchor" id="a53dd92219f528e568fbfcceb470dbd38"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1WayPointAddPoint.html">DJI::OSDK::ACK::WayPointAddPoint</a>  <a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1WayPointAddPoint.html">DJI::OSDK::ACK::WayPointAddPoint</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This struct is returned from the <a class="el" href="classDJI_1_1OSDK_1_1WaypointMission.html#a0923b487adb4c6968268914baebd880c" title="setting waypt init data ">DJI::OSDK::WaypointMission::uploadIndexData</a> blocking API. </p>
+
+</div>
+</div>
 <a class="anchor" id="a0dd1b61256d88d01233c31d0936f064f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -345,16 +368,16 @@ static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>RELEA
       </table>
 </div><div class="memdoc">
 
-<p>This struct is returned from the <a class="el" href="classDJI_1_1OSDK_1_1WaypointMission.html#a0923b487adb4c6968268914baebd880c" title="setting waypt init data ">DJI::OSDK::WaypointMission::uploadIndexData</a> blocking API. </p>
+<p>This struct is returned from the DJI::OSDK::WaypointMission::waypointIndexDownload blocking API. </p>
 
 </div>
 </div>
-<a class="anchor" id="a68d6aedb1dd2b293928e6efac4174689"></a>
+<a class="anchor" id="af29c92d2c9c945db8e95a354bfce3af5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef struct <a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1WayPointInit.html">DJI::OSDK::ACK::WayPointInit</a>  <a class="el" href="classDJI_1_1OSDK_1_1ACK.html#a68d6aedb1dd2b293928e6efac4174689">DJI::OSDK::ACK::WaypointInit</a></td>
+          <td class="memname">typedef struct <a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1WayPointInit.html">DJI::OSDK::ACK::WayPointInit</a>  <a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1WayPointInit.html">DJI::OSDK::ACK::WayPointInit</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -408,7 +431,8 @@ static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>RELEA
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool that is SUCCESS if the call was successful, FAIL if the call was not. </dd></dl>
-<p>Data is set at buf + SET_CMD_SIZE which is buf + 2; </p>
+<p>Data is set at buf + SET_CMD_SIZE which is buf + 2;</p>
+<p>ACKs supported in Matrice 100 </p>
 
 </div>
 </div>

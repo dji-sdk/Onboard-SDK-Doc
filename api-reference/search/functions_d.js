@@ -10,6 +10,7 @@ var searchData=
   ['setbroadcastfreqtozero',['setBroadcastFreqToZero',['../classDJI_1_1OSDK_1_1DataBroadcast.html#ad5a5906895f058dcd43eaf48210c7c85',1,'DJI::OSDK::DataBroadcast']]],
   ['setcameraview',['setCameraView',['../classDJI_1_1OSDK_1_1HotpointMission.html#aec0d5fa28da5381df51108211056b2a2',1,'DJI::OSDK::HotpointMission']]],
   ['setclockwise',['setClockwise',['../classDJI_1_1OSDK_1_1HotpointMission.html#aee686337934a2302ca8533df0cffe480',1,'DJI::OSDK::HotpointMission']]],
+  ['setcontrol',['setControl',['../classDJI_1_1OSDK_1_1VirtualRC.html#a561e25be8d98214360affe7907b52f63',1,'DJI::OSDK::VirtualRC']]],
   ['setdata',['setData',['../classDJI_1_1OSDK_1_1HotpointMission.html#a93684377dc3688fabbc41eb50956bbc6',1,'DJI::OSDK::HotpointMission']]],
   ['sethotpoint',['setHotPoint',['../classDJI_1_1OSDK_1_1HotpointMission.html#aa997b14e21eba4a8fc73a8b1a346d724',1,'DJI::OSDK::HotpointMission::setHotPoint(float64_t longitude, float64_t latitude, float64_t altitude)'],['../classDJI_1_1OSDK_1_1HotpointMission.html#a2946e47508f5ec822f4795eb811afc12',1,'DJI::OSDK::HotpointMission::setHotPoint(Telemetry::GlobalPosition gps)']]],
   ['sethotpointcallback',['setHotpointCallback',['../classDJI_1_1OSDK_1_1HotpointMission.html#a4c292d437ea5af86b87f3e621935e56d',1,'DJI::OSDK::HotpointMission']]],
