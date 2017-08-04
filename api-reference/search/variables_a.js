@@ -46,5 +46,6 @@ var searchData=
   ['motor_5ffail_5frecorder_5ferror',['MOTOR_FAIL_RECORDER_ERROR',['../classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#a8ab6eeb6e75f47abbac48a1951c5e1b7',1,'DJI::OSDK::ErrorCode::CommonACK']]],
   ['motor_5ffail_5frtk_5ffail_5fto_5finit',['MOTOR_FAIL_RTK_FAIL_TO_INIT',['../classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#a97b10d05a3e7d659f1440cb1769190f4',1,'DJI::OSDK::ErrorCode::CommonACK']]],
   ['motor_5ffail_5ftopology_5fabnormal',['MOTOR_FAIL_TOPOLOGY_ABNORMAL',['../classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#a1522582e51750c18863b7dd8806c1bca',1,'DJI::OSDK::ErrorCode::CommonACK']]],
-  ['motor_5ffail_5fwrong_5faircraft_5ftype',['MOTOR_FAIL_WRONG_AIRCRAFT_TYPE',['../classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#a596c437880578f82a20f0b15baf99a23',1,'DJI::OSDK::ErrorCode::CommonACK']]]
+  ['motor_5ffail_5fwrong_5faircraft_5ftype',['MOTOR_FAIL_WRONG_AIRCRAFT_TYPE',['../classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#a596c437880578f82a20f0b15baf99a23',1,'DJI::OSDK::ErrorCode::CommonACK']]],
+  ['mountstatus',['mountStatus',['../structDJI_1_1OSDK_1_1Telemetry_1_1GimbalStatus.html#ac88f90816c5e608701a897f7950acf68',1,'DJI::OSDK::Telemetry::GimbalStatus']]]
 ];

@@ -11,10 +11,10 @@
 <polygon fill="white" stroke="none" points="-4,4 -4,-35 147,-35 147,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node"><title>Node1</title>
-<g id="a_node1"><a xlink:href="structDJI_1_1OSDK_1_1ACK_1_1WayPointVelocity.html" target="_top" xlink:title="This struct is returned from the DJI::OSDK::WaypointMission::updateIdleVelocity blocking API...">
+<g id="a_node1"><a xlink:href="structDJI_1_1OSDK_1_1ACK_1_1WayPointReachedData.html" target="_top" xlink:title="This struct captures PushData while ground&#45;station is enabled on Assistant&#39;s SDK Page. ">
 <polygon fill="white" stroke="black" points="0,-0.5 0,-30.5 143,-30.5 143,-0.5 0,-0.5"/>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">DJI::OSDK::ACK::WayPoint</text>
-<text text-anchor="middle" x="71.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">Velocity</text>
+<text text-anchor="middle" x="71.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">ReachedData</text>
 </a>
 </g>
 </g>

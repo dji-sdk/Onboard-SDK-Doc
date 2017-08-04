@@ -36,6 +36,8 @@ var searchData=
   ['dji_5fvehicle_5fcallback_2ehpp',['dji_vehicle_callback.hpp',['../dji__vehicle__callback_8hpp.html',1,'']]],
   ['dji_5fversion_2ecpp',['dji_version.cpp',['../dji__version_8cpp.html',1,'']]],
   ['dji_5fversion_2ehpp',['dji_version.hpp',['../dji__version_8hpp.html',1,'']]],
+  ['dji_5fvirtual_5frc_2ecpp',['dji_virtual_rc.cpp',['../dji__virtual__rc_8cpp.html',1,'']]],
+  ['dji_5fvirtual_5frc_2ehpp',['dji_virtual_rc.hpp',['../dji__virtual__rc_8hpp.html',1,'']]],
   ['dji_5fwaypoint_2ecpp',['dji_waypoint.cpp',['../dji__waypoint_8cpp.html',1,'']]],
   ['dji_5fwaypoint_2ehpp',['dji_waypoint.hpp',['../dji__waypoint_8hpp.html',1,'']]]
 ];

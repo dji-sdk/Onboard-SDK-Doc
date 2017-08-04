@@ -224,6 +224,9 @@ Protocol *&#160;</td><td class="memItemRight" valign="bottom"><b>protocolLayer</
 <tr class="memitem:a542d6dd2a04c04d4694e5d07937b1152"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a542d6dd2a04c04d4694e5d07937b1152"></a>
 <a class="el" href="classDJI_1_1OSDK_1_1HardwareSync.html">HardwareSync</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>hardSync</b></td></tr>
 <tr class="separator:a542d6dd2a04c04d4694e5d07937b1152"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab20da33ed2799409cf276015676be25d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab20da33ed2799409cf276015676be25d"></a>
+<a class="el" href="classDJI_1_1OSDK_1_1VirtualRC.html">VirtualRC</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>virtualRC</b></td></tr>
+<tr class="separator:ab20da33ed2799409cf276015676be25d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08920cd84383dbfff96cd837eead31cb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a08920cd84383dbfff96cd837eead31cb"></a>
 CircularBuffer *&#160;</td><td class="memItemRight" valign="bottom"><b>circularBuffer</b></td></tr>
 <tr class="separator:a08920cd84383dbfff96cd837eead31cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -276,8 +279,9 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 <tr class="memitem:a0b56c4ccfe97f6c35e33f8fecaa2c621"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0b56c4ccfe97f6c35e33f8fecaa2c621"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>callbackIdIndex</b> ()</td></tr>
 <tr class="separator:a0b56c4ccfe97f6c35e33f8fecaa2c621"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52b65df0247c13cda2e9e3d3f3115773"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Vehicle.html#a52b65df0247c13cda2e9e3d3f3115773">functionalSetUp</a> ()</td></tr>
-<tr class="memdesc:a52b65df0247c13cda2e9e3d3f3115773"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize all functional <a class="el" href="classDJI_1_1OSDK_1_1Vehicle.html" title="A top-level encapsulation of a DJI drone/FC connected to your OES. ">Vehicle</a> components like, Subscription, Broadcast, <a class="el" href="classDJI_1_1OSDK_1_1Control.html" title="Flight control API: high-level actions and low-level control modes. ">Control</a>, <a class="el" href="classDJI_1_1OSDK_1_1Gimbal.html" title="The Gimbal class for controlling gimbal-related functions. ">Gimbal</a>, ect.  <a href="#a52b65df0247c13cda2e9e3d3f3115773">More...</a><br /></td></tr>
+<tr class="memitem:a52b65df0247c13cda2e9e3d3f3115773"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a52b65df0247c13cda2e9e3d3f3115773"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Vehicle.html#a52b65df0247c13cda2e9e3d3f3115773">functionalSetUp</a> ()</td></tr>
+<tr class="memdesc:a52b65df0247c13cda2e9e3d3f3115773"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize all functional <a class="el" href="classDJI_1_1OSDK_1_1Vehicle.html" title="A top-level encapsulation of a DJI drone/FC connected to your OES. ">Vehicle</a> components like, Subscription, Broadcast, <a class="el" href="classDJI_1_1OSDK_1_1Control.html" title="Flight control API: high-level actions and low-level control modes. ">Control</a>, <a class="el" href="classDJI_1_1OSDK_1_1Gimbal.html" title="The Gimbal class for controlling gimbal-related functions. ">Gimbal</a>, ect. <br /></td></tr>
 <tr class="separator:a52b65df0247c13cda2e9e3d3f3115773"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06b82bc6cb9110540e4239c071a8112a"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Vehicle.html#a06b82bc6cb9110540e4239c071a8112a">parseDroneVersionInfo</a> (Version::VersionData &amp;versionData, uint8_t *ackPtr)</td></tr>
 <tr class="separator:a06b82bc6cb9110540e4239c071a8112a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -377,24 +381,6 @@ Proceed to programming if activation successful. </p>
 </div><div class="memdoc">
 <p>User sets this to true in order to enable Callback thread with Non blocking calls. </p>
 <p>If Head = Tail, there is no data in the buffer, do not call cbPop. </p>
-
-</div>
-</div>
-<a class="anchor" id="a52b65df0247c13cda2e9e3d3f3115773"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Vehicle::functionalSetUp </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initialize all functional <a class="el" href="classDJI_1_1OSDK_1_1Vehicle.html" title="A top-level encapsulation of a DJI drone/FC connected to your OES. ">Vehicle</a> components like, Subscription, Broadcast, <a class="el" href="classDJI_1_1OSDK_1_1Control.html" title="Flight control API: high-level actions and low-level control modes. ">Control</a>, <a class="el" href="classDJI_1_1OSDK_1_1Gimbal.html" title="The Gimbal class for controlling gimbal-related functions. ">Gimbal</a>, ect. </p>
-<p>TODO init flight class </p>
 
 </div>
 </div>
