@@ -47,6 +47,9 @@
     -
       title: Multi-Function IO
       path: /cn/guides/component-guide-multi-function-io.html
+    -
+      title: Qt Sample
+      path: /cn/sample-doc/qt-sample.html
 
 -
   title: DEVELOPMENT WORKFLOW

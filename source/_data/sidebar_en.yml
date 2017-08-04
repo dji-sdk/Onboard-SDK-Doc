@@ -91,6 +91,9 @@
     -
       title: Multi-Function IO
       path: /sample-doc/mfio.html
+    -
+      title: Qt Sample
+      path: /sample-doc/qt-sample.html
 
 -
   title: APPENDIX
