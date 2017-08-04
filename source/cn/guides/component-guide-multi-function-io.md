@@ -1,13 +1,15 @@
 ---
 title: Multi-Function IO
-date: 2017-06-16
+date: 2017-08-03
 keywords: [MFIO, ADC, PWM, analog, digital, pinout, GPIO, pulse, hardware]
 ---
 
 ## Introduction
 
 The Multi Function IO feature of the A3 and N3 Flight Controller supports reading and writing PWM signals, Analog to Digital Conversion and General Purpose Input Output. These new features are being introduced
-  in order to avoid having to arrange additional circuitry or microcontrollers for the mentioned low level functionalities. 
+  in order to avoid having to arrange additional circuitry or micro-controllers for the mentioned low level functionalities.
+
+##### NOTE: Multi-Function IO feature not supported in Matrice 100.
  
 ### PWM
 

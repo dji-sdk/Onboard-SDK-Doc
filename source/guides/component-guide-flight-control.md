@@ -1,6 +1,6 @@
 ---
 title: Flight Controller
-date: 2016-12-13
+date: 2017-08-03
 keywords: [flight controller, motor control, flight control, flight orientation, course lock, home lock, aircraft heading, flight limitation, GEO, compass, IMU, RTK, DRTK, Vision System, Obstacle Avoidance, Intelligent Flight Assistant, landing gear, transport mode, battery threshold, Smart RTH, Failsafe RTH, Low Battery RTH, virtual stick, roll pitch control mode, yaw control mode, vertical throttle control mode]
 ---
 
@@ -45,7 +45,7 @@ When a automated land command is sent, the aircraft will descend at it's current
 Aircraft flight can be controlled in several ways:
 
 * **Manually**: While Onboard SDK used to program flight missions, manual control is also possible via remote controller to manipulate limited features of the flight 
-* **[Missions](./component-guide-missions.html)**: Simple high level flight automatioin via Mission Manager
+* **[Missions](./component-guide-missions.html)**: Simple high level flight automation via Mission Manager
 * **[Flight Control](#flight-control)**: Flight control commands can be sent using DJI Onboard SDK APIs
 
 ##### Flight Orientation Modes
