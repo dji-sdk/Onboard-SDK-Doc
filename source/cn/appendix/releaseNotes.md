@@ -16,8 +16,8 @@ keywords: [SDK, Hardware Sync, New Features, Updates, release, notes, bugs, M100
 - **Waypoint & Hotpoint read API calls:** Ability to read missions' settings and Waypoint index settings from an aircraft.
 
 ## Supported Firmware
-- A3/A3 Pro: 1.7.15
-- N3: 1.7.15
+- A3/A3 Pro: 1.7.1.5
+- N3: 1.7.1.5
 - M100: 1.3.1.0
 - M600/M600 Pro: coming soon; will likely be released before next OSDK iteration
 
@@ -31,14 +31,6 @@ keywords: [SDK, Hardware Sync, New Features, Updates, release, notes, bugs, M100
 - **Potential SerialDevice infinite loop:** If aircraft is connected incorrectly and there’s no data on the serial line, the read thread might loop indefinitely.
 - **GCC7 compilation:** OSDK will not compile correctly using GCC7.
 - **QT Sample M100 Compatibility:** Some M100-specific feature are not supported in QT Sample.
-
-
-<div>
-
-        &copy; 2017 DJI. All Rights Reserved.
-
-</div>
-
 
 <hr>
 
