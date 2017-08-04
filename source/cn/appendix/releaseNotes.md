@@ -11,8 +11,8 @@ keywords: [SDK, Hardware Sync, New Features, Updates, release, notes, bugs, M100
 
 ## Highlights
 
-- **M100 backwards compatibility:** All M100 features previously supported on OSDK 3.2 are now fully supported on 3.3. Fully re-written ROS wrapper, compliant with ROS standards, is now also compatible with M100.
-- **Beta QT Sample:** Reintroduced with fully featured implementation of OSDK 3.3.
+- **M100 backwards compatibility:** All M100 features previously supported on OSDK 3.2 are now fully supported on 3.3.1. The 3.3 ROS wrapper, compliant with ROS standards, is now also compatible with M100.
+- **Beta QT Sample:** Reintroduced with fully featured implementation of OSDK 3.3 features
 - **Waypoint & Hotpoint read API calls:** Ability to read missions' settings and Waypoint index settings from an aircraft.
 
 ## Supported Firmware
@@ -33,8 +33,6 @@ keywords: [SDK, Hardware Sync, New Features, Updates, release, notes, bugs, M100
 - **QT Sample M100 Compatibility:** Some M100-specific feature are not supported in QT Sample.
 
 <hr>
-
-<p style="page-break-after:always;"></p>
 
 ## Previous Releases
 
