@@ -1,6 +1,6 @@
 ---
 title: Telemetry
-date: 2017-03-07
+date: 2017-08-03
 keywords: [telemetry, broadcast, subscription]
 ---
 

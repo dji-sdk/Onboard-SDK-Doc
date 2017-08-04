@@ -1,6 +1,6 @@
 ---
 title: Multi-Function IO
-date: 2017-06-16
+date: 2017-08-03
 keywords: [MFIO, ADC, PWM, analog, digital, pinout, GPIO, pulse, hardware]
 ---
 

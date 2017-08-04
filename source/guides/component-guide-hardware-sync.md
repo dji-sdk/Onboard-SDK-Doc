@@ -1,6 +1,6 @@
 ---
 title: Hardware Sync
-date: 2017-03-07
+date: 2017-08-03
 keywords: [synchronization, timestamp, IMU, PPS, sync, INS, shutter]
 ---
 
