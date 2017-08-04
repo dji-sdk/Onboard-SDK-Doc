@@ -47,6 +47,9 @@
     -
       title: Multi-Function IO
       path: /cn/guides/component-guide-multi-function-io.html
+    -
+      title: Qt Sample
+      path: /cn/sample-doc/qt-sample.html
 
 -
   title: DEVELOPMENT WORKFLOW
@@ -96,8 +99,8 @@
   title: APPENDIX
   list:
     -
-      title: Matrice 100
-      path: /cn/M100-Docs/main.html
+      title: M100 Protocol Documents
+      path: /cn/Protocol-Documents/main.html
     -
       title: FAQ
       path: /cn/appendix/FAQ.html

@@ -150,7 +150,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="dynheader">
 Inheritance diagram for DJI::OSDK::WaypointMission:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classDJI_1_1OSDK_1_1WaypointMission__inherit__graph.svg" width="208" height="551"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classDJI_1_1OSDK_1_1WaypointMission__inherit__graph.svg" width="226" height="566"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -191,18 +192,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9d760177d6c8e0b90bdc232783f6cfd7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1WaypointMission.html#a9d760177d6c8e0b90bdc232783f6cfd7">setInfo</a> (const <a class="el" href="structDJI_1_1OSDK_1_1WayPointInitSettings.html">WayPointInitSettings</a> &amp;value)</td></tr>
 <tr class="memdesc:a9d760177d6c8e0b90bdc232783f6cfd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">setting waypt init data  <a href="#a9d760177d6c8e0b90bdc232783f6cfd7">More...</a><br /></td></tr>
 <tr class="separator:a9d760177d6c8e0b90bdc232783f6cfd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b94c5b71753efe556166323e6d1d749"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDJI_1_1OSDK_1_1WayPointInitSettings.html">WayPointInitSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1WaypointMission.html#a3b94c5b71753efe556166323e6d1d749">getInfo</a> () const </td></tr>
-<tr class="memdesc:a3b94c5b71753efe556166323e6d1d749"><td class="mdescLeft">&#160;</td><td class="mdescRight">getting waypt init data  <a href="#a3b94c5b71753efe556166323e6d1d749">More...</a><br /></td></tr>
-<tr class="separator:a3b94c5b71753efe556166323e6d1d749"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a095b0dec4a11fab68f5a6fc40744e4a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1WayPointInit.html">ACK::WayPointInit</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1WaypointMission.html#a095b0dec4a11fab68f5a6fc40744e4a9">getWaypointSettings</a> (int timer)</td></tr>
+<tr class="memdesc:a095b0dec4a11fab68f5a6fc40744e4a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read WayPoint mission settings from the flight controller.  <a href="#a095b0dec4a11fab68f5a6fc40744e4a9">More...</a><br /></td></tr>
+<tr class="separator:a095b0dec4a11fab68f5a6fc40744e4a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8f29d7e087b36b1abf8081722b8839f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1WaypointMission.html#ae8f29d7e087b36b1abf8081722b8839f">getWaypointSettings</a> (<a class="el" href="namespaceDJI_1_1OSDK.html#a20a68c21abe449cf5f133f7d398055d3">VehicleCallBack</a> callback, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)</td></tr>
+<tr class="memdesc:ae8f29d7e087b36b1abf8081722b8839f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read WayPoint mission settings from the flight controller.  <a href="#ae8f29d7e087b36b1abf8081722b8839f">More...</a><br /></td></tr>
+<tr class="separator:ae8f29d7e087b36b1abf8081722b8839f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1e2609542f2c6f3a168bc107a830b07"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1WayPointIndex.html">ACK::WayPointIndex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1WaypointMission.html#aa1e2609542f2c6f3a168bc107a830b07">getIndex</a> (uint8_t index, int timer)</td></tr>
+<tr class="memdesc:aa1e2609542f2c6f3a168bc107a830b07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read WayPoint index settings from the flight controller.  <a href="#aa1e2609542f2c6f3a168bc107a830b07">More...</a><br /></td></tr>
+<tr class="separator:aa1e2609542f2c6f3a168bc107a830b07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cb543d21cc938d0bd4a252e3c56f977"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1WaypointMission.html#a3cb543d21cc938d0bd4a252e3c56f977">getIndex</a> (uint8_t index, <a class="el" href="namespaceDJI_1_1OSDK.html#a20a68c21abe449cf5f133f7d398055d3">VehicleCallBack</a> callback, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)</td></tr>
+<tr class="memdesc:a3cb543d21cc938d0bd4a252e3c56f977"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read WayPoint index settings from the flight controller.  <a href="#a3cb543d21cc938d0bd4a252e3c56f977">More...</a><br /></td></tr>
+<tr class="separator:a3cb543d21cc938d0bd4a252e3c56f977"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9de35a0a5d6208c623ea5a13ade0379"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1WaypointMission.html#aa9de35a0a5d6208c623ea5a13ade0379">setIndex</a> (<a class="el" href="structDJI_1_1OSDK_1_1WayPointSettings.html">WayPointSettings</a> *value, size_t pos)</td></tr>
-<tr class="memdesc:aa9de35a0a5d6208c623ea5a13ade0379"><td class="mdescLeft">&#160;</td><td class="mdescRight">setting waypt data to the waypt container wiht specified idx  <a href="#aa9de35a0a5d6208c623ea5a13ade0379">More...</a><br /></td></tr>
+<tr class="memdesc:aa9de35a0a5d6208c623ea5a13ade0379"><td class="mdescLeft">&#160;</td><td class="mdescRight">setting waypt data to the waypt container with specified idx  <a href="#aa9de35a0a5d6208c623ea5a13ade0379">More...</a><br /></td></tr>
 <tr class="separator:aa9de35a0a5d6208c623ea5a13ade0379"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9cba3732c71b14fe62398c8dcf6347a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDJI_1_1OSDK_1_1WayPointSettings.html">WayPointSettings</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1WaypointMission.html#aa9cba3732c71b14fe62398c8dcf6347a">getIndex</a> () const </td></tr>
-<tr class="memdesc:aa9cba3732c71b14fe62398c8dcf6347a"><td class="mdescLeft">&#160;</td><td class="mdescRight">getting waypt data  <a href="#aa9cba3732c71b14fe62398c8dcf6347a">More...</a><br /></td></tr>
-<tr class="separator:aa9cba3732c71b14fe62398c8dcf6347a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cf82209a4230a69ff93c8f174ffe942"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDJI_1_1OSDK_1_1WayPointSettings.html">WayPointSettings</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1WaypointMission.html#a3cf82209a4230a69ff93c8f174ffe942">getIndex</a> (size_t pos) const </td></tr>
-<tr class="memdesc:a3cf82209a4230a69ff93c8f174ffe942"><td class="mdescLeft">&#160;</td><td class="mdescRight">getting waypt data  <a href="#a3cf82209a4230a69ff93c8f174ffe942">More...</a><br /></td></tr>
-<tr class="separator:a3cf82209a4230a69ff93c8f174ffe942"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0923b487adb4c6968268914baebd880c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1WaypointMission.html#a0923b487adb4c6968268914baebd880c">uploadIndexData</a> (<a class="el" href="structDJI_1_1OSDK_1_1WayPointSettings.html">WayPointSettings</a> *data, <a class="el" href="namespaceDJI_1_1OSDK.html#a20a68c21abe449cf5f133f7d398055d3">VehicleCallBack</a> callback=0, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData=0)</td></tr>
 <tr class="memdesc:a0923b487adb4c6968268914baebd880c"><td class="mdescLeft">&#160;</td><td class="mdescRight">setting waypt init data  <a href="#a0923b487adb4c6968268914baebd880c">More...</a><br /></td></tr>
 <tr class="separator:a0923b487adb4c6968268914baebd880c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -237,9 +241,12 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a7806b834f4343fe59570816fa66d015e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1WaypointMission.html#a7806b834f4343fe59570816fa66d015e">idleVelocityCallback</a> (<a class="el" href="classDJI_1_1OSDK_1_1Vehicle.html">Vehicle</a> *vehicle, RecvContainer recvFrame, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)</td></tr>
 <tr class="memdesc:a7806b834f4343fe59570816fa66d015e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A callback function for setting idle velocity non-blocking calls.  <a href="#a7806b834f4343fe59570816fa66d015e">More...</a><br /></td></tr>
 <tr class="separator:a7806b834f4343fe59570816fa66d015e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93a8f2872a8fa6e18e5429baca9288ce"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1WaypointMission.html#a93a8f2872a8fa6e18e5429baca9288ce">readInitDataCallback</a> (<a class="el" href="classDJI_1_1OSDK_1_1Vehicle.html">Vehicle</a> *vehicle, RecvContainer recvFrame, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)</td></tr>
-<tr class="memdesc:a93a8f2872a8fa6e18e5429baca9288ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">A callback function for reading init data non-blocking calls.  <a href="#a93a8f2872a8fa6e18e5429baca9288ce">More...</a><br /></td></tr>
-<tr class="separator:a93a8f2872a8fa6e18e5429baca9288ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e078fe72b3d1f39ef92143513c75f26"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1WaypointMission.html#a6e078fe72b3d1f39ef92143513c75f26">getWaypointSettingsCallback</a> (<a class="el" href="classDJI_1_1OSDK_1_1Vehicle.html">Vehicle</a> *vehicle, RecvContainer recvFrame, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)</td></tr>
+<tr class="memdesc:a6e078fe72b3d1f39ef92143513c75f26"><td class="mdescLeft">&#160;</td><td class="mdescRight">A callback function for reading initialization data non-blocking calls.  <a href="#a6e078fe72b3d1f39ef92143513c75f26">More...</a><br /></td></tr>
+<tr class="separator:a6e078fe72b3d1f39ef92143513c75f26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bae4dd7a95edc0e61d81a07c6c8917c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1WaypointMission.html#a4bae4dd7a95edc0e61d81a07c6c8917c">getIndexCallback</a> (<a class="el" href="classDJI_1_1OSDK_1_1Vehicle.html">Vehicle</a> *vehicle, RecvContainer recvFrame, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)</td></tr>
+<tr class="memdesc:a4bae4dd7a95edc0e61d81a07c6c8917c"><td class="mdescLeft">&#160;</td><td class="mdescRight">A callback function for getting waypoint information for a specified index (non-blocking call)  <a href="#a4bae4dd7a95edc0e61d81a07c6c8917c">More...</a><br /></td></tr>
+<tr class="separator:a4bae4dd7a95edc0e61d81a07c6c8917c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae09771749e867713524fae85f96ed4e1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1WaypointMission.html#ae09771749e867713524fae85f96ed4e1">uploadIndexDataCallback</a> (<a class="el" href="classDJI_1_1OSDK_1_1Vehicle.html">Vehicle</a> *vehicle, RecvContainer recvFrame, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)</td></tr>
 <tr class="memdesc:ae09771749e867713524fae85f96ed4e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">A callback function for uploading waypt index non-blocking calls.  <a href="#ae09771749e867713524fae85f96ed4e1">More...</a><br /></td></tr>
 <tr class="separator:ae09771749e867713524fae85f96ed4e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -264,61 +271,213 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p>APIs for GPS Waypoint Missions. </p>
 <p>This class inherits from <a class="el" href="classDJI_1_1OSDK_1_1MissionBase.html" title="Mission Base class for commonality between SDK Missions. ">MissionBase</a> and can be used with <a class="el" href="classDJI_1_1OSDK_1_1MissionManager.html" title="MissionManager class for chaining/managing missions. ">MissionManager</a>. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="aa9cba3732c71b14fe62398c8dcf6347a"></a>
+<a class="anchor" id="aa1e2609542f2c6f3a168bc107a830b07"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structDJI_1_1OSDK_1_1WayPointSettings.html">WayPointSettings</a> * WaypointMission::getIndex </td>
+          <td class="memname"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1WayPointIndex.html">ACK::WayPointIndex</a> WaypointMission::getIndex </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>getting waypt data </p>
+<p>Read WayPoint index settings from the flight controller. </p>
+<dl class="section return"><dt>Returns</dt><dd>Information about uploaded WayPoint index, error if index not uploaded. </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a3cf82209a4230a69ff93c8f174ffe942"></a>
+<a class="anchor" id="a3cb543d21cc938d0bd4a252e3c56f977"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structDJI_1_1OSDK_1_1WayPointSettings.html">WayPointSettings</a> * WaypointMission::getIndex </td>
+          <td class="memname">void WaypointMission::getIndex </td>
           <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>pos</em></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceDJI_1_1OSDK.html#a20a68c21abe449cf5f133f7d398055d3">VehicleCallBack</a>&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a>&#160;</td>
+          <td class="paramname"><em>userData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>getting waypt data </p>
+<p>Read WayPoint index settings from the flight controller. </p>
+<p>Information about uploaded WayPoint index, error if index not uploaded will be handled in a user defined or default callback. </p>
+
+</div>
+</div>
+<a class="anchor" id="a4bae4dd7a95edc0e61d81a07c6c8917c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WaypointMission::getIndexCallback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDJI_1_1OSDK_1_1Vehicle.html">Vehicle</a> *&#160;</td>
+          <td class="paramname"><em>vehicle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RecvContainer&#160;</td>
+          <td class="paramname"><em>recvFrame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a>&#160;</td>
+          <td class="paramname"><em>userData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A callback function for getting waypoint information for a specified index (non-blocking call) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pos</td><td>idx of the specified watpt data </td></tr>
+    <tr><td class="paramname">recvFrame</td><td>the data comes with the callback function </td></tr>
+    <tr><td class="paramname">userData</td><td>a void ptr that user can manipulate inside the callback </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="a3b94c5b71753efe556166323e6d1d749"></a>
+<a class="anchor" id="a095b0dec4a11fab68f5a6fc40744e4a9"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structDJI_1_1OSDK_1_1WayPointInitSettings.html">WayPointInitSettings</a> WaypointMission::getInfo </td>
+          <td class="memname"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1WayPointInit.html">ACK::WayPointInit</a> WaypointMission::getWaypointSettings </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timer</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>getting waypt init data </p>
+<p>Read WayPoint mission settings from the flight controller. </p>
+<dl class="section return"><dt>Returns</dt><dd>Information about uploaded WayPoint mission, error if mission settings not uploaded. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae8f29d7e087b36b1abf8081722b8839f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WaypointMission::getWaypointSettings </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceDJI_1_1OSDK.html#a20a68c21abe449cf5f133f7d398055d3">VehicleCallBack</a>&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a>&#160;</td>
+          <td class="paramname"><em>userData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read WayPoint mission settings from the flight controller. </p>
+<p>Information about uploaded WayPoint mission, error if mission settings not uploaded will be handled in a user defined or default callback. </p>
+
+</div>
+</div>
+<a class="anchor" id="a6e078fe72b3d1f39ef92143513c75f26"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WaypointMission::getWaypointSettingsCallback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDJI_1_1OSDK_1_1Vehicle.html">Vehicle</a> *&#160;</td>
+          <td class="paramname"><em>vehicle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RecvContainer&#160;</td>
+          <td class="paramname"><em>recvFrame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a>&#160;</td>
+          <td class="paramname"><em>userData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A callback function for reading initialization data non-blocking calls. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">recvFrame</td><td>the data comes with the callback function </td></tr>
+    <tr><td class="paramname">userData</td><td>a void ptr that user can manipulate inside the callback </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -586,55 +745,6 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a93a8f2872a8fa6e18e5429baca9288ce"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void WaypointMission::readInitDataCallback </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classDJI_1_1OSDK_1_1Vehicle.html">Vehicle</a> *&#160;</td>
-          <td class="paramname"><em>vehicle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">RecvContainer&#160;</td>
-          <td class="paramname"><em>recvFrame</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a>&#160;</td>
-          <td class="paramname"><em>userData</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>A callback function for reading init data non-blocking calls. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">recvFrame</td><td>the data comes with the callback function </td></tr>
-    <tr><td class="paramname">userData</td><td>a void ptr that user can manipulate inside the callback </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a class="anchor" id="ab890e43b9ba152e5d48fc052c7676156"></a>
 <div class="memitem">
 <div class="memproto">
@@ -738,7 +848,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>setting waypt data to the waypt container wiht specified idx </p>
+<p>setting waypt data to the waypt container with specified idx </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">value</td><td>user specified WayPointData </td></tr>

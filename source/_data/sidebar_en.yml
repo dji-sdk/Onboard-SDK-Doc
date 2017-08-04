@@ -91,13 +91,16 @@
     -
       title: Multi-Function IO
       path: /sample-doc/mfio.html
+    -
+      title: Qt Sample
+      path: /sample-doc/qt-sample.html
 
 -
   title: APPENDIX
   list:
     -
-      title: Matrice 100
-      path: /M100-Docs/main.html
+      title: M100 Protocol Documents
+      path: /Protocol-Documents/main.html
     -
       title: FAQ
       path: /appendix/FAQ.html

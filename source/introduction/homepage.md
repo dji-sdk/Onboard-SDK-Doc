@@ -1,16 +1,14 @@
 ---
 title: Onboard SDK Documentation Home
-date: 2017-06-01
-version: 3.3
+date: 2017-08-03
+version: 3.3.1
 keywords: [homepage, key features, hardware overview, registration, enable flight controller API control, safety]
 ---
-> New Major Release! Onboard SDK 3.3 is a full redesign of the DJI OSDK. Please read the docs for the best developer experience!
+> OSDK 3.3.1 was released on 3 Aug 2017. This release introduces backward compatibility for the DJI M100 and re-introduces the cross-platform Qt GUI sample. Please see the [release notes](../appendix/releaseNotes.html) for more information.
 
 The DJI Onboard SDK (OSDK) allows you to build powerful, automated drone applications for supported DJI vehicles (<a href="http://www.dji.com/product/matrice100" target="_blank">Matrice 100</a>, <a href="http://www.dji.com/product/matrice600" target="_blank">Matrice 600</a> or <a href="http://www.dji.com/matrice-200-series" target="_blank">Matrice 210/210-RTK</a>) or flight controllers (<a href="http://www.dji.com/product/a3" target="_blank">A3</a> or <a href="http://www.dji.com/product/n3" target="_blank">N3</a>).
 
 This document helps you get started with the various aspects of building OSDK applications.
-
-Note. OSDK 3.3 does not support Matrice 100, please refer to [here](../M100-Docs/main.html) for previous documentation.
 
 ## Get Started Immediately
 
