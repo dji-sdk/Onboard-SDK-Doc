@@ -1,7 +1,7 @@
 ---
 title: Release Notes for Onboard SDK 3.3.1
 version: 3.3.1
-date: 2017-08-03
+date: 2017-08-30
 keywords: [SDK, Hardware Sync, New Features, Updates, release, notes, bugs, M100, Qt]
 ---
 
@@ -19,7 +19,7 @@ keywords: [SDK, Hardware Sync, New Features, Updates, release, notes, bugs, M100
 - A3/A3 Pro: 1.7.1.5
 - N3: 1.7.1.5
 - M100: 1.3.1.0
-- M600/M600 Pro: coming soon; will likely be released before next OSDK iteration
+- M600/M600 Pro: 1.0.1.60
 
 ## Bug Fixes:
 - **Control authority UNKNOWN_ACK_ERROR_CODE:** fixed incorrect messaging when trying to obtain or release control.
