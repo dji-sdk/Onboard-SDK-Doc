@@ -1,6 +1,6 @@
 ---
 title: Versioning Map
-date: 2017-08-03
+date: 2017-08-30
 version: 3.3.1
 keywords: [OSDK version, SDK version, version, firmware]
 ---
@@ -31,7 +31,7 @@ See the table below to determine which firmware package available on DJI Assitan
 | **N3**            | **1.7.1.5**              | **3.2.36.8**               | **OSDK 3.3.1 (Current)**  |
 |                   | 1.7.0.0                  | 3.2.15.37                  | OSDK 3.2                  |
 |                   |                          |                            |                           |
-| **M600/M600 Pro** | Coming in August!        | Coming in August!          | **OSDK 3.3.1 (Current)**  |
+| **M600/M600 Pro** | **1.0.1.60**             | **3.2.41.5**               | **OSDK 3.3.1 (Current)**  |
 |                   | 1.0.1.20                 | 3.2.15.62                  | OSDK 3.2                  |
 |                   | 1.0.0.80                 | 3.2.15.00                  | OSDK 3.2                  |
 |                   |                          |                            |                           |
