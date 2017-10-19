@@ -12,7 +12,7 @@ keywords: [write apps, development, SDK, samples, DJI, OSDK, setup]
 2. Follow the steps in the [Environment Setup guide](../development-workflow/environment-setup.html) to get your software platform ready to run samples.
 3. Before you run the samples, consult the checklists in the [Running your Application](../development-workflow/run-application.html) guide.
 
-## Linux OES
+## Linux Onboard Computer
 
 ##### Building the OSDK and Samples
 
@@ -41,7 +41,7 @@ cd bin
 ```
 7. Follow the interactive prompt to execute actions available in the sample.
 
-## ROS OES
+## ROS Onboard Computer
 
 ##### Installing the OSDK
 
@@ -99,7 +99,7 @@ rosrun dji_sdk_demo demo_flight_control
 ```
 11. Follow the prompt on screen to choose an action for the drone to do.
 
-## STM32 OES
+## STM32 Onboard Computer
 
 ##### Introduction
 

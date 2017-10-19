@@ -1,14 +1,14 @@
 ---
-title: M210 OES Checklist
+title: M210 onboard computer  Checklist
 date: 2017-10-10
-keywords: [M210, linux, ros, onboard computer, OES, USB, libusb, udev, configuration]
+keywords: [M210, linux, ros, onboard computer, onboard computer, USB, libusb, udev, configuration]
 ---
 
-## Mount an OES on M210
+## Mount an Onboard Computer on M210
 
 An example of how to mount a NVIDIA Jetson TX2 on a M210 is shown in below picture. 
 
-Depending on where the OES is mounted, please be aware that the magnetometer interference and upward infrared occlusion could happen. To disable upward infrared obstacle avoidance, please use DJI Go 4 --> Top right option --> Main Controller Setting --> Upward Obstacle Avoidance.
+Depending on where the onboard computer is mounted, please be aware that the magnetometer interference and upward infrared occlusion could happen. To disable upward infrared obstacle avoidance, please use DJI Go 4 --> Top right option --> Main Controller Setting --> Upward Obstacle Avoidance.
 
 ![tx2_on_m210](../images/hardwaresetup/tx2_on_m210_small.jpg)
 
@@ -18,7 +18,7 @@ The [Advanced Sensing](../guides/component-guide-advanced-sensing-stereo-camera.
 
 #### LibUSB
 
-The [Advanced Sensing](../guides/component-guide-advanced-sensing-stereo-camera.html) feature relies on libUSB to receive image data from the aircraft via USB. Please make sure libUSB is installed if one would like to enable this feature. The recommended version is 1.0.17 and above.
+The [Advanced Sensing](../guides/component-guide-advanced-sensing-stereo-camera.html) feature relies on [libUSB](https://github.com/libusb/libusb) to receive image data from the aircraft via USB. Please make sure libUSB is installed if one would like to enable this feature. The recommended version is 1.0.17 and above.
 
 In addition to libUSB, an udev file is required to allow your system to obtain permission and to identify DJI USB port. 
 
@@ -28,7 +28,7 @@ In addition to libUSB, an udev file is required to allow your system to obtain p
 
 #### USB Abstract Control Model (ACM) Driver
 
-OSDK supports a configuration tool in executable form to allow developers to turn on/off simulation and external power supply and to enable flight when USB is connected to the aircraft. This tool communicates with M210 via USB. In order to use it, please make sure your OES has ACM driver installed. An example of system message from `dmesg` command in terminal is shown below.
+OSDK supports a configuration tool in executable form to allow developers to turn on/off simulation and external power supply and to enable flight when USB is connected to the aircraft. This tool communicates with M210 via USB. In order to use it, please make sure your onboard computer has ACM driver installed. An example of system message from `dmesg` command in terminal is shown below.
 
 ![acm_dmesg](../images/Linux/acm_dmesg.png)
 

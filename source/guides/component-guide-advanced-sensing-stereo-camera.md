@@ -30,11 +30,11 @@ Available image data include:
 
 * Grayscale image in QVGA (320x240) resolution at 20 fps.
 
-Note. Advanced Sensing currently uses the synchronous bulk tranfer function from LibUSB library to receive raw image data from the aircraft. Depending on the size and the frequency of the data subscribed and the computing power of the onboard computer, user may experience drop frame issue.
+Note. Advanced Sensing currently uses the synchronous bulk transfer function from LibUSB library to receive raw image data from the aircraft. Depending on the size and the frequency of the data subscribed and the computing power of the onboard computer, user may experience drop frame issue. The maximum speed is 12 MB/sec when subscribing VGA image at 20 fps.
 
 ## Meta Data
 
-All images come with frame index and timestamp as metadata. Frame index for QVGA images starts whenever the drone is powered and will continue no matter developer subscribes to it or not. On the other hand, the frame index for VGA images follows user's subscription workflow. If users subscribe and unsubscribe VGA images, the frame index will continue from the last subscribed image. For time stamp, all four cameras are triggered at the same time and share the same timer.
+All images come with frame index and timestamp as metadata. Frame index for QVGA images starts whenever the drone is powered and will continue no matter developer subscribes to it or not. On the other hand, the frame index for VGA images follows user's subscription workflow. If users subscribe and unsubscribe VGA images, the frame index will continue from the last subscribed image. For time stamp, all four cameras are triggered at the same time and share the same timer. At this moment, the timer is not synchronized to the timers of telemetry data.
 
 
 ![m210_flying_with_stereo_imgs](../images/samples/m210_all_image.gif)
