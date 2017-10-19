@@ -1,7 +1,7 @@
 ---
 title: Software Environment Setup Guide
-date: 2017-06-01
-version: 3.3
+date: 2017-10-10
+version: 3.4
 keywords: [hardware setup，M100 UART Connector, A3 UART Connector, N3 UART]
 ---
 
@@ -49,6 +49,7 @@ To build standalone Linux applications based on the OSDK, you need:
 * A bash shell
 * CMake >= 2.8
 * A modern Linux distribution
+* Libusb library for [Advanced Sensing](../sample-doc/advanced-sensing-stereo-images.html) feature on M210
 
 ##### Permissions
 
@@ -56,6 +57,12 @@ You need to add your user to the `dialout` group to obtain read/write permission
 
 1. Type `sudo usermod -a -G dialout $USER` in a terminal
 2. Log out of your user account and log in again for the permissions to take effect.
+
+For M210 users interested in [Advanced Sensing](../sample-doc/advanced-sensing-stereo-images.html) feature, one need to add an udev file to allow your system to obtain permission and identify DJI USB port. 
+
+1. Create a udev file called `DJIDevice.rules` inside `/etc/udev/rules.d/`
+2. Add `SUBSYSTEM=="usb", ATTRS{idVendor}=="2ca3", MODE="0666"` to this file
+3. Reboot your computer
 
 To make sure your Linux environment is ready to run OSDK applications, follow the [Linux Platform Guide](../sample-doc/sample-setup.html#linux-oes) on the Sample Setup page and run a sample app.
 
@@ -103,6 +110,12 @@ You need to add your user to the `dialout` group to obtain read/write permission
 
 1. Type `sudo usermod -a -G dialout $USER` in a terminal
 2. Log out of your user account and log in again for the permissions to take effect.
+
+For M210 users interested in [Advanced Sensing](../sample-doc/advanced-sensing-stereo-images.html) feature, you need to add an udev file to allow your system to obtain permission and identify DJI USB port. 
+
+1. Create a udev file called `DJIDevice.rules` inside `/etc/udev/rules.d/`
+2. Add `SUBSYSTEM=="usb", ATTRS{idVendor}=="2ca3", MODE="0666"` to this file
+3. Reboot your computer
 
 To make sure your ROS environment is ready to run OSDK applications, follow the [ROS Platform Guide](../sample-doc/sample-setup.html#ros-oes) on the Sample Setup page and run a sample app.
 

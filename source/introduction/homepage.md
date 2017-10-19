@@ -1,7 +1,7 @@
 ---
 title: Onboard SDK Documentation Home
-date: 2017-08-30
-version: 3.3.1
+date: 2017-10-10
+version: 3.4
 keywords: [homepage, key features, hardware overview, registration, enable flight controller API control, safety]
 ---
 > OSDK 3.3.1 was released on 3 Aug 2017. This release introduces backward compatibility for the DJI M100 and re-introduces the cross-platform Qt GUI sample. M600/Pro is also supported now! Please see the [release notes](../appendix/releaseNotes.html) for more information.
@@ -33,6 +33,8 @@ The features available through the OSDK are detailed in our Feature Guides. Thes
 - [Multi-Function IO Guide](../guides/component-guide-multi-function-io.html)
 - [Mobile SDK Commmunication Guide](../guides/component-guide-mobile-communication.html)
 - [Hardware Synchronization Guide](../guides/component-guide-hardware-sync.html)
+- [Advanced Sensing - Stereo Camera Guide](../guides/component-guide-advanced-sensing-stereo-camera.html)
+
 
 ## Development Workflow
 
@@ -42,7 +44,7 @@ This section provides a step-by-step guide taking you through the entire develop
 - [Hardware Setup](../development-workflow/hardware-setup.html)
 - [Environment Setup](../development-workflow/environment-setup.html)
 - [Integrating the OSDK into your Application](../development-workflow/integrate-sdk.html)
-- [Running your OSDK Application](../development-workflow/run-applicaiton.html)
+- [Running your OSDK Application](../development-workflow/run-application.html)
 
 ## Sample Code
 
@@ -53,7 +55,8 @@ We provide a number of samples designed to showcase example end-to-end implement
 - [GPS Missions Sample](../sample-doc/missions.html)
 - [Camera/Gimbal Control Sample](../sample-doc/camera-gimbal-control.html)
 - [Multi-Function IO Sample](../sample-doc/mfio.html)
-- [Mobile SDK Communication](../sample-doc/msdk-comm.html)
+- [Mobile SDK Communication Sample](../sample-doc/msdk-comm.html)
+- [Advanced Sensing - Stereo Images Sample](../sample-doc/advanced-sensing-stereo-images.html)
 
 ## API Reference
 

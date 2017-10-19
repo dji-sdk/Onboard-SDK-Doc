@@ -12,7 +12,7 @@ This introduction summarizes the products that are compatible with the Onboard S
 
 ### Aircraft
 
-DJI has a range of multi-rotor aircraft that can be automated with the Onboard SDK including Matrice 600 Pro, Matrice 600, Matrice 100. The aircraft provide a range of features, performance, size and price. Specific metrics developers and users should be aware of when they consider an aircraft include:
+DJI has a range of multi-rotor aircraft that can be automated with the Onboard SDK including Matrice 600 Pro, Matrice 600, Matrice 210, Matrice 100. The aircraft provide a range of features, performance, size and price. Specific metrics developers and users should be aware of when they consider an aircraft include:
 
 * Flight time
 * Size and weight
@@ -46,7 +46,7 @@ The A3 and A3 Pro flight controllers are also used in the M600 and M600 Pro prod
 
 ### Cameras
 
-DJI provides a number of gimbal mounted cameras that can be swapped between aircraft or used in conjunction with DJI's flight controllers and wireless links. Cameras that are compatible with M100, M600, M600 Pro, A3, A3 Pro and N3 are detailed in this [table](#supported_products)
+DJI provides a number of gimbal mounted cameras that can be swapped between aircraft or used in conjunction with DJI's flight controllers and wireless links. Cameras that are compatible with M100, M210, M600, M600 Pro, A3, A3 Pro and N3 are detailed in this [table](#supported_products)
 
 
 
@@ -77,7 +77,7 @@ The camera can record image and video data locally.
 
 #### Gimbal
 
-The gimbal holds the camera and can rotate it around three axes. The rotation can be used to both control the direction the camera points, and provide rotational stabilization when the aircraft is not horizontal. The gimbal is mounted on a damped plate for Matrice 100 and on a specialized gimbal mount for Matrice 600 and Matrice 600 Pro to stabilize lateral vibrations and rotational movement.
+The gimbal holds the camera and can rotate it around three axes. The rotation can be used to both control the direction the camera points, and provide rotational stabilization when the aircraft is not horizontal. The gimbal is mounted on a damped plate for Matrice 100 and Matrice 210 and on a specialized gimbal mount for Matrice 600 and Matrice 600 Pro to stabilize lateral vibrations and rotational movement.
 
 #### Smart Battery
 

@@ -1,7 +1,7 @@
 ---
 title: Onboard SDK Introduction
-date: 2017-06-01
-version: 3.3
+date: 2017-10-10
+version: 3.4
 keywords: [get started, key features, hardware overview, registration, enable flight controller API control, safety]
 ---
 
@@ -147,9 +147,9 @@ Developers can, for the first time, access and program a hardware synchronizatio
 
 The Onboard SDK allows configuring user defined pins for Multi-Function IO functionality. Multi-Function IO supports
 
-* PWM write
-* Analog to Digital Conversion
-* GPIO
+* **PWM write**
+* **Analog to Digital Conversion**
+* **GPIO**
 
 ##### Aircraft Telemetry
 
@@ -171,6 +171,14 @@ Aircraft Status Data
 * **Quaternion**<br>
 * **Linear Acceleration**<br>
 * **Angular Rate**<br>
+
+##### Stereo Camera
+
+For M210, developers can access data from forward and downward stereo camera pairs.
+
+* **Front stereo grayscale images in VGA and QVGA resolution**
+* **Front stereo depth map**
+* **Downward stereo grayscale images in QVGA resolution**
 
 ## Connection to User Application and Aircraft
 
