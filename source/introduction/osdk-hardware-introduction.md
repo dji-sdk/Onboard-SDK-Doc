@@ -1,6 +1,6 @@
 ---
 title: Hardware Introduction
-date: 2017-06-06
+date: 2017-10-10
 keywords: [component, propellor, sensor, product comparison]
 ---
 
@@ -77,7 +77,7 @@ The camera can record image and video data locally.
 
 #### Gimbal
 
-The gimbal holds the camera and can rotate it around three axes. The rotation can be used to both control the direction the camera points, and provide rotational stabilization when the aircraft is not horizontal. The gimbal is mounted on a damped plate for Matrice 100 and Matrice 210 and on a specialized gimbal mount for Matrice 600 and Matrice 600 Pro to stabilize lateral vibrations and rotational movement.
+The gimbal holds the camera and can rotate it around three axes. The rotation can be used to both control the direction the camera points, and provide rotational stabilization when the aircraft is not horizontal. The gimbal is mounted on a damped plate for Matrice 100 and on a specialized gimbal mount for Matrice 600, Matrice 210 and Matrice 600 Pro to stabilize lateral vibrations and rotational movement.
 
 #### Smart Battery
 
@@ -113,10 +113,20 @@ Below is a table listing the aircraft, handheld cameras and stand-alone componen
   </thead>
   <tbody>
     <tr>
-      <td rowspan="3">Aircraft</th>
+      <td rowspan="5">Aircraft</th>
       <td>Matrice 100</td>
       <td>X3, X5, X5R, XT, Z3, Z30</td>        
       <td> N1 Video Encoder </td>
+    </tr>
+    <tr>
+      <td>Matrice 210</td>
+      <td>X3, X5, X5R, XT, Z3, Z30</td>        
+      <td> Upward gimbal, Third-party sensors </td>
+    </tr>
+    <tr>
+      <td>Matrice 210 RTK</td>
+      <td>X3, X5, X5R, XT, Z3, Z30</td>        
+      <td> Upward gimbal, Third-party sensors </td>
     </tr>
     <tr>
       <td>Matrice 600</td>
@@ -128,7 +138,6 @@ Below is a table listing the aircraft, handheld cameras and stand-alone componen
       <td>X3, X5, X5R, XT, Z3, Z30</td>        
       <td> DRTK, Ronin MX </td>
     </tr>
-    </tr>
     <tr>
       <td rowspan="3">Flight Controllers</th>
       <td>N3</td>
@@ -139,7 +148,6 @@ Below is a table listing the aircraft, handheld cameras and stand-alone componen
       <td> A3</td>
       <td> X3, X5, X5R, XT, Z3, Z30 </td>        
       <td> Lightbridge 2, DRTK, Ronin MX </td>
-    </tr>
     </tr>
     <tr>
       <td> A3 Pro</td>
@@ -168,7 +176,11 @@ Aircraft comparison can be difficult due to the large selection of products, fea
 <th width = 15%><p>Max dimension</br><font color="#BBBBBB" size=1.7 style="font-weight:normal">Without propellors</br><font color="#BBBBBB" size=1 style="font-weight:bold">mm</p></th>
 </tr>
 <tr>
-<td>Matrice 100</td><td>16-40*</td><td>18</td><td>5</td><td>4</td><td>4500</td><td>4</td><td>2355</br><p style="line-height:90%"><font color="#BBBBBB" size=1 style="font-weight:normal">With TB47 Battery</p></td><td>650</td></tr>
+<td>Matrice 100</td><td>19-40*</td><td>22</td><td>5</td><td>4</td><td>4500</td><td>4</td><td>2355</br><p style="line-height:90%"><font color="#BBBBBB" size=1 style="font-weight:normal">With TB47 Battery</p></td><td>650</td></tr>
+<tr>
+<td>Matrice 210</td><td>13-38*</td><td>23</td><td>5</td><td>3</td><td>3000</td><td>4</td><td>4420</br><p style="line-height:90%"><font color="#BBBBBB" size=1 style="font-weight:normal">With TB50 Battery</p></td><td>643</td></tr>
+<tr>
+<td>Matrice 210 RTK</td><td>13-32*</td><td>23</td><td>5</td><td>3</td><td>3000</td><td>4</td><td>4420</br><p style="line-height:90%"><font color="#BBBBBB" size=1 style="font-weight:normal">With TB50 Battery</p></td><td>643</td></tr>
 <tr>
 <td>Matrice 600</td><td>18-40*</td><td>18</td><td>5</td><td>3</td><td>2500</td><td>6</td><td>9100</br><p style="line-height:90%"><font color="#BBBBBB" size=1 style="font-weight:normal">With 6x TB47 Batteries</p></td><td>1133</td></tr>
 <tr>
@@ -192,10 +204,15 @@ Aircraft comparison can be difficult due to the large selection of products, fea
 <tr>
 <td>Matrice 100</td><td>X3, Z3, X5, X5R, XT, Z30</td><td>-</td><td>5 / 3.1</td><td>1-2</td><td>Fixed</td><td>1000</td><td>Guidance, Manifold, Focus</td></tr>
 <tr>
+<td>Matrice 210</td><td>X3, Z3, X5, X5R, XT, Z30</td><td>YES</td><td>5 / 3.1</td><td>1-2</td><td>Fixed</td><td>2300</td><td>Manifold, Focus, Third-party Sensors</td></tr>
+<tr>
+<td>Matrice 210 RTK</td><td>X3, Z3, X5, X5R, XT, Z30</td><td>YES</td><td>5 / 3.1</td><td>1-2</td><td>Fixed</td><td>1720</td><td>Manifold, Focus, Third-party Sensors</td></tr>
+<tr>
 <td>Matrice 600</td><td>X3, Z3, X5, X5R, XT, Custom with Ronin MX</td><td>-</td><td>5 / 3.1</td><td>6</td><td>Moveable</td><td>6000</td><td>Manifold, DRTK, Ronin MX</td></tr>
 <tr>
 <td>Matrice 600 Professional</td><td>X3, Z3, X5, X5R, XT, Custom with Ronin MX, Z30</td><td>-</td><td>5 / 3.1</td><td>6</td><td>Moveable</td><td>6000</td><td>Manifold, DRTK, Ronin MX</td></tr>
 </tbody></table></html>
+
 
 
 Detailed specifications are listed on each product's webpage **specs** section at <a href="http://www.dji.com" target="_blank">www.dji.com</a>.
@@ -218,11 +235,14 @@ Detailed specifications are listed on each product's webpage **specs** section a
 <tr>
 <td>Matrice 100</td><td>With Guidance</td><td>-</td><td>With Guidance</td><td>Yes</td><td>Yes</td><td>Yes</td><td>-</td><td>-</td></tr>
 <tr>
+<td>Matrice 210</td><td>True</td><td>True</td><td>True</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+<tr>
+<td>Matrice 210 RTK</td><td>True</td><td>True</td><td>True</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+<tr>
 <td>Matrice 600</td><td>-</td><td>-</td><td>-</td><td>Yes</td><td>Yes</td><td>Yes</td><td>-</td><td>-</td></tr>
 <tr>
 <td>Matrice 600 Professional</td><td>-</td><td>-</td><td>-</td><td>Yes</td><td>Yes</td><td>Yes</td><td>-</td><td>-</td></tr>
 </tbody></table></html>
-
 
 
 
@@ -302,7 +322,7 @@ To help understand the potential functionality and flight time of different airc
     <td>2855</td>        
     <td>17</td>
   </tr>
-    <tr>
+  <tr>
     <td align= "center">-</td>
     <td>TB47D</td>        
     <td>1755</td>        
@@ -312,7 +332,7 @@ To help understand the potential functionality and flight time of different airc
     <td>3355</td>        
     <td>13</td>
   </tr>
-    <tr>
+  <tr>
     <td align= "center">-</td>
     <td>TB48D</td>        
     <td>1755</td>        
@@ -322,7 +342,7 @@ To help understand the potential functionality and flight time of different airc
     <td>2431</td>        
     <td>28</td>
   </tr>
-    <tr>
+  <tr>
     <td align= "center">-</td>
     <td>TB48D</td>        
     <td>1755</td>        
@@ -332,7 +352,7 @@ To help understand the potential functionality and flight time of different airc
     <td>2931</td>        
     <td>20</td>
   </tr>
-    <tr>
+  <tr>
     <td align= "center">-</td>
     <td>TB48D</td>        
     <td>1755</td>        
@@ -342,7 +362,7 @@ To help understand the potential functionality and flight time of different airc
     <td>3431</td>        
     <td>16</td>
   </tr>
-    <tr>
+  <tr>
     <td align= "center">-</td>
     <td>2x TB47D</td>        
     <td>1915</td>        
@@ -352,7 +372,7 @@ To help understand the potential functionality and flight time of different airc
     <td>3115</td>        
     <td>33</td>
   </tr>
-    <tr>
+  <tr>
     <td align= "center">-</td>
     <td>2x TB48D</td>        
     <td>1915</td>        
@@ -362,7 +382,7 @@ To help understand the potential functionality and flight time of different airc
     <td>3267</td>        
     <td>40</td>
   </tr>
-    <tr>
+  <tr>
     <td>X3</td>
     <td>TB47D</td>        
     <td>1755</td>        
@@ -372,7 +392,7 @@ To help understand the potential functionality and flight time of different airc
     <td>2602</td>        
     <td>19</td>
   </tr>
-    <tr>
+  <tr>
     <td>X3</td>
     <td>TB48D</td>        
     <td>1755</td>        
@@ -382,7 +402,7 @@ To help understand the potential functionality and flight time of different airc
     <td>2678</td>        
     <td>23</td>
   </tr>
-    <tr>
+  <tr>
     <td>X3</td>
     <td>2x TB48D</td>        
     <td>1915</td>        
@@ -392,8 +412,132 @@ To help understand the potential functionality and flight time of different airc
     <td>3514</td>        
     <td>33</td>
   </tr>
-
-
+  <tr>
+    <td rowspan="12">
+    Matrice 210
+    <p><font size="1">Max Take-off Mass: 6140g</br>Compatible with XT, X3, X5, X5R, Z30 Manifold</p>
+    </td>
+    <td align= "center">-</td>
+    <td>2x TB50</td>        
+    <td>2770</td>        
+    <td>1030</td>        
+    <td>0</td>        
+    <td>0</td>        
+    <td>3800</td>        
+    <td>27</td>        
+  </tr>
+  <tr>
+    <td align= "center">X4S</td>
+    <td>2x TB50</td>        
+    <td>2770</td>        
+    <td>1030</td>        
+    <td>250</td>        
+    <td>0</td>        
+    <td>4050</td>        
+    <td>23</td>
+  </tr>
+  <tr>
+    <td align= "center">X5S</td>
+    <td>2x TB50</td>        
+    <td>2770</td>        
+    <td>1030</td>        
+    <td>460</td>        
+    <td>0</td>        
+    <td>4260</td>        
+    <td>22</td>
+  </tr>
+  <tr>
+    <td align= "center">Z30</td>
+    <td>2x TB50</td>        
+    <td>2770</td>        
+    <td>1030</td>        
+    <td>550</td>        
+    <td>0</td>        
+    <td>4350</td>        
+    <td>22</td>
+  </tr>
+  </tr>
+    <tr>
+    <td align= "center">Z30+XT</td>
+    <td>2x TB50</td>        
+    <td>2770</td>        
+    <td>1030</td>        
+    <td>820</td>        
+    <td>0</td>        
+    <td>4620</td>        
+    <td>20</td>
+  </tr>
+    <tr>
+    <td align= "center">Z30+X5S</td>
+    <td>2x TB50</td>        
+    <td>2770</td>        
+    <td>1030</td>        
+    <td>1150</td>        
+    <td>0</td>        
+    <td>4950</td>        
+    <td>17</td>
+  </tr>
+    <tr>
+    <td align= "center">-</td>
+    <td>2x TB55</td>        
+    <td>2770</td>        
+    <td>1770</td>        
+    <td>0</td>        
+    <td>0</td>        
+    <td>4540</td>        
+    <td>38</td>        
+  </tr>
+  <tr>
+    <td align= "center">X4S</td>
+    <td>2x TB55</td>        
+    <td>2770</td>        
+    <td>1770</td>        
+    <td>250</td>        
+    <td>0</td>        
+    <td>4790</td>        
+    <td>35</td>
+  </tr>
+  <tr>
+    <td align= "center">X5S</td>
+    <td>2x TB55</td>        
+    <td>2770</td>        
+    <td>1770</td>        
+    <td>460</td>        
+    <td>0</td>        
+    <td>5000</td>        
+    <td>33</td>
+  </tr>
+  <tr>
+    <td align= "center">Z30</td>
+    <td>2x TB55</td>        
+    <td>2770</td>        
+    <td>1770</td>        
+    <td>550</td>        
+    <td>0</td>        
+    <td>5090</td>        
+    <td>32</td>
+  </tr>
+  </tr>
+    <tr>
+    <td align= "center">Z30+XT</td>
+    <td>2x TB55</td>        
+    <td>2770</td>        
+    <td>1770</td>        
+    <td>820</td>        
+    <td>0</td>        
+    <td>5360</td>        
+    <td>28</td>
+  </tr>
+    <tr>
+    <td align= "center">Z30+X5S</td>
+    <td>2x TB55</td>        
+    <td>2770</td>        
+    <td>1770</td>        
+    <td>1150</td>        
+    <td>0</td>        
+    <td>5690</td>        
+    <td>26</td>
+  </tr>
   <tr>
     <td rowspan="4">
     Matrice 600
@@ -408,7 +552,7 @@ To help understand the potential functionality and flight time of different airc
     <td>9100</td>        
     <td>35</td>        
   </tr>
-    <tr>
+  <tr>
     <td align= "center">-</td>
     <td>6x TB47S</td>        
     <td>5530</td>        
@@ -418,7 +562,7 @@ To help understand the potential functionality and flight time of different airc
     <td>15100</td>        
     <td>16</td>
   </tr>
-    <tr>
+  <tr>
     <td align= "center">-</td>
     <td>6x TB48S</td>        
     <td>5530</td>        
@@ -428,7 +572,7 @@ To help understand the potential functionality and flight time of different airc
     <td>9610</td>        
     <td>40</td>
   </tr>
-    <tr>
+  <tr>
     <td align= "center">-</td>
     <td>6x TB48S</td>        
     <td>5530</td>        
@@ -621,7 +765,7 @@ Remote controllers will differ in:
 * What wireless technology they use to connect with the aircraft
 * Whether they have GPS built-in
 * If they can output secondary video
-* If they can be used in a dual configuration (one flies the aircraft while the other controls the gimbal and camera)
+* If they can be used in a dual configuration (one flys the aircraft while the other controls the gimbal and camera)
 
 Remote Controllers that use WiFi to connect to the mobile device will act as a WiFi access point and will need to be joined.
 
@@ -641,8 +785,11 @@ Remote Controllers that use WiFi to connect to the mobile device will act as a W
 <tr>
 <td>Matrice 100</td><td>Required</td><td>USB</td><td>Lightbridge</td><td>Yes</td><td>Yes</td><td>Mini HDMI</td><td>F</td></tr>
 <tr>
+<td>Matrice 210</td><td>Required</td><td>USB</td><td>Lightbridge</td><td>Yes</td><td>Yes</td><td>Mini HDMI</td><td>F</td></tr>
+<tr>
+<td>Matrice 210 RTK</td><td>Required</td><td>USB</td><td>Lightbridge</td><td>Yes</td><td>Yes</td><td>Mini HDMI</td><td>F</td></tr>
+<tr>
 <td>Matrice 600</td><td>Required</td><td>USB</td><td>Lightbridge</td><td>Yes</td><td>Yes</td><td>Mini HDMI, SDI</td><td>Any</td></tr>
 <tr>
 <td>Matrice 600 Professional</td><td>Required</td><td>USB</td><td>Lightbridge</td><td>Yes</td><td>Yes</td><td>Mini HDMI, SDI</td><td>Any</td></tr>
 </tbody></table></html>
-
