@@ -20,7 +20,10 @@ The next section details the UART specifications for different DJI products, and
 
 ### Power 
 
-Power can be drawn directly from the power rail on DJI aircraft. It's possible a DC-DC regulator will also be required to convert the voltage to the onboard computer's power input.
+Power can be drawn directly from the power rail on DJI aircraft. For Matrice 100 and 210, a DC-DC regulator is required to convert the voltage to the onboard computer's power input. 
+* Matrice 100: voltage ranges from 20V - 26V with current limit of 10A
+* Matrice 210: voltage ranges from 18V - 26V with current limit of 2A
+* Matrice 600: voltage is regulated at 18V with current limit of 3A
 
 If using a stand alone flight controller product, or if power is needed not just when the aircraft is on, then an external battery (with appropriate regulator) can be used.
 
@@ -123,3 +126,28 @@ The diagram below shows the hardware connection between an A3/N3 and STM32. Note
 
 
 ![A3STM32](../images/hardwaresetup/A3N3_3.png)
+
+
+#### M210 + PC/Linux machine
+
+The diagram below shows the hardware connection between a M210 and an Onbaord Computer without [Advanced Sensing](../guides/component-guide-advanced-sensing-stereo-camera.html). Note that:
+
+- USB to TTL cable can be purchased on [Amazon](https://www.amazon.com/ADAFRUIT-INDUSTRIES-954-SERIAL-RASPBERRY/dp/B00DJUHGHI/ref=sr_1_5?s=electronics&ie=UTF8&qid=1466208644&sr=1-5&keywords=usb+to+ttl).
+- To run DJI Assistant 2, please use the USB port to connect to PC/Mac.
+- With DJI Assistant you can enable OSDK API, set baud rate and/or run the Simulator.
+
+![A3STM32](../images/hardwaresetup/m210_without_usb_scaled.png)
+
+
+#### M210 + PC/Linux machine with Advanced Sensing
+
+The diagram below shows the hardware connection between a M210 and an Onbaord Computer with [Advanced Sensing](../guides/component-guide-advanced-sensing-stereo-camera.html). Note that:
+
+- USB to TTL cable can be purchased on [Amazon](https://www.amazon.com/ADAFRUIT-INDUSTRIES-954-SERIAL-RASPBERRY/dp/B00DJUHGHI/ref=sr_1_5?s=electronics&ie=UTF8&qid=1466208644&sr=1-5&keywords=usb+to+ttl).
+- For [Advanced Sensing](../guides/component-guide-advanced-sensing-stereo-camera.html), please connect the USB port of M210 to another USB port of your computer via the included DJI USB cable.
+- With DJI Assistant you can enable OSDK API, set baud rate and/or run the Simulator.
+- To run DJI Assistant 2, please use the same USB port to connect to PC/Mac. To prevent conflict between two different computer talking to the same USB port on M210, please check out [M210 simulation checklist](../M210-Docs/simulation-checklist.html).
+
+
+![A3STM32](../images/hardwaresetup/m210_with_usb_scaled.png)
+
