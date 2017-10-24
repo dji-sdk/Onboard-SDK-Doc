@@ -22,3 +22,4 @@ To build an Onboard SDK based application the following are required:
 
 # Optional
 - An iOS device to run the [Mobile-Onboard SDK Sample](https://github.com/dji-sdk/Mobile-OSDK-iOS-App) application, and a MacOS laptop with XCode 7 to compile and load this application
+- For M210 Developers interested in [Advanced Sensing](../guides/component-guide-advanced-sensing-stereo-camera.html), an Onboard Computer with USB 2.0 is required. Please check out [M210 Checklist](../M210-Docs/main.html) for more details.
