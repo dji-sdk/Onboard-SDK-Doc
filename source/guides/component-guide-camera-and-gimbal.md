@@ -20,6 +20,9 @@ Camera and Gimbal modes and features available through DJI Onboard SDK:
 
 The camera can only operate in one mode at any one time. For example, media download cannot happen during image capture.
 
+For M210 with dual gimbal connected, by default the left gimbal has precedence over the right one. The cameras OSDK support at the left gimbal slot are X4 and X5 while the ones supported at the right gimbal slot are XT and Z30.
+If developers wish to control both gimbals simultaneously, please configure it in DJI Go App.
+  
 ## Image Quality, Resolution and Frame Rate
 
 ##### Video Resolution and Frame Rate
