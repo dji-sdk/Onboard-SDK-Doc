@@ -90,8 +90,8 @@ at 20 fps (12 MB/s) on different computing platforms.
 
 Developers could use this table to decide whether multiple threads
 are required for their applications. For example, developer subscribing to front VGA images at 20 fps on a DJI Manifold 
-has roughly 15.31 ms (50-34.69) to process the image before the next set of images in a single thread framework.
+has roughly 15.31 ms (50-34.69) to process the image without dropping a frame in a single thread framework.
 
 |                                                                   | Intel i7   | DJI Manifold | Nvidia TX2<br /> with JetPack OS | Nvidia TX1<br /> with JetPack OS |
 |-------------------------------------------------------------------|------------|--------------------------------|----------------------------------|----------------------------------|
-| Libusb read <br />  2 x VGA images<br /> at 20 fps<br /> unit: ms | 36.96±1.06 | 34.69±1.27                     | 42.18±2.47                       | 41.69±2.74                       |
+| Libusb read <br />  2 x VGA images<br /> @ 20 fps<br /> unit: ms | 36.96±1.06 | 34.69±1.27                     | 42.18±2.47                       | 41.69±2.74                       |
