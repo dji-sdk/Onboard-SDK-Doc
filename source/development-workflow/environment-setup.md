@@ -58,7 +58,7 @@ You need to add your user to the `dialout` group to obtain read/write permission
 1. Type `sudo usermod -a -G dialout $USER` in a terminal
 2. Log out of your user account and log in again for the permissions to take effect.
 
-For M210 users interested in [Advanced Sensing](../sample-doc/advanced-sensing-stereo-images.html) feature, you will need to add an udev file to allow your system to obtain permission and identify DJI USB port. 
+For M210 users interested in [Advanced Sensing](../sample-doc/advanced-sensing-stereo-images.html) feature, you will need to add an udev file to allow your system to obtain permission and to identify DJI USB port. 
 
 1. Create a udev file called `DJIDevice.rules` inside `/etc/udev/rules.d/`
 2. Add `SUBSYSTEM=="usb", ATTRS{idVendor}=="2ca3", MODE="0666"` to this file
