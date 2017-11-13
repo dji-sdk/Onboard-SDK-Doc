@@ -1,7 +1,7 @@
 ---
 title: Advanced Sensing - Stereo Camera
 date: 2017-10-10
-keywords: [stereo, depth map, monotone, VGA, QVGA, USB]
+keywords: [stereo, disparity map, monotone, VGA, QVGA, USB]
 ---
 
 ## Introduction
@@ -24,7 +24,7 @@ Available image data include:
 
 * Grayscale image in VGA (640x480) resolution at 10 or 20 fps.
 * Grayscale image in QVGA (320x240) resolution at 20 fps.
-* Depth map in QVGA (320x240) resolution at 10 fps.
+* Disparity map in QVGA (320x240) resolution at 10 fps.
 
 #### Down Stereo cameras
 

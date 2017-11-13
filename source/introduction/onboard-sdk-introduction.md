@@ -177,7 +177,7 @@ Aircraft Status Data
 For M210, developers can access data from forward and downward stereo camera pairs.
 
 * **Front stereo grayscale images in VGA and QVGA resolution**
-* **Front stereo depth map**
+* **Front stereo disparity map**
 * **Downward stereo grayscale images in QVGA resolution**
 
 ## Connection to User Application and Aircraft

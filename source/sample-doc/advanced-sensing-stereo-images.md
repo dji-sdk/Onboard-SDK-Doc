@@ -2,7 +2,7 @@
 title: Advanced Sensing - Stereo Images sample
 date: 2017-10-10
 version: 3.4
-keywords: [sample, camera, stereo, image, openCV, disparity, depth, VGA, QVGA]
+keywords: [sample, camera, stereo, image, openCV, disparity, disparity, VGA, QVGA]
 ---
 
 ## Introduction
