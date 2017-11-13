@@ -146,7 +146,7 @@ The diagram below shows the hardware connection between a M210 and an Onbaord Co
 - USB to TTL cable can be purchased on [Amazon](https://www.amazon.com/ADAFRUIT-INDUSTRIES-954-SERIAL-RASPBERRY/dp/B00DJUHGHI/ref=sr_1_5?s=electronics&ie=UTF8&qid=1466208644&sr=1-5&keywords=usb+to+ttl).
 - For [Advanced Sensing](../guides/component-guide-advanced-sensing-stereo-camera.html), please connect the USB port of M210 to another USB port of your computer via the included DJI USB cable.
 - With DJI Assistant you can enable OSDK API, set baud rate and/or run the Simulator.
-- To run DJI Assistant 2, please use the same USB port to connect to PC/Mac. To prevent conflict between two different computer talking to the same USB port on M210, please check out [M210 simulation checklist](../M210-Docs/simulation-checklist.html).
+- To run DJI Assistant 2, please use the same USB port to connect to PC/Mac. To prevent conflict between two different computers talking to the same USB port on M210, please check out [M210 simulation checklist](../M210-Docs/simulation-checklist.html).
 
 
 ![A3STM32](../images/hardwaresetup/m210_with_usb_scaled.png)

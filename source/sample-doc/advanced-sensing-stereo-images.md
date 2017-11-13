@@ -54,7 +54,7 @@ callback function will be invoked whenever image data is received from
 the reading thread. Depending on how many camera and the resolution 
 and frequency of the image subscribed, the USB reading might occupied 
 most of the bandwidth and remain little time for processing. 
-Checkout below table for benchmark result and refer to Sample #2
+Check out below table for benchmark result and refer to Sample #2
 if you experience drop frame issue.
 
 ![adv_sensing_workflow](../images/samples/adv_sensing_sample1_workflow.png)
@@ -62,13 +62,13 @@ if you experience drop frame issue.
 
 #### Sample #2 Image Reading and Processing on Different Threads
 
-In the second sample, two threads are instantiated to read and process images.
+In the second sample, two threads are instantiated to read and to process images.
 A class `ImageProcessContainer` is provided to store images on the reading 
-thread and process them on processing thread.
+thread and to process them on processing thread.
 Two callback functions are registered for these two purposes. 
 As shown below, an image callback is invoked whenever data is transferred from USB
-and a processing callback is invoked whenever image data is copied. This 
-extra thread provides more bandwidth to process the images.
+to the onboard computer and a processing callback is invoked whenever image 
+data is copied. This extra thread provides more bandwidth to process the images.
  
 
 ![adv_sensing_workflow](../images/samples/adv_sensing_sample2_workflow.png)
@@ -90,8 +90,8 @@ at 20 fps (12 MB/s) on different computing platforms.
 
 Developers could use this table to decide whether multiple threads
 are required for their applications. For example, developer subscribing to front VGA images at 20 fps on a DJI Manifold 
-has roughly 15.31 ms (50-34.69) to process the image without dropping a frame in a single thread framework.
+has roughly 15.31 ms (50-34.69) to process the image without dropping a frame in a single-thread framework.
 
 |                                                                   | Intel i7   | DJI Manifold | Nvidia TX2<br /> with JetPack OS | Nvidia TX1<br /> with JetPack OS |
 |-------------------------------------------------------------------|------------|--------------------------------|----------------------------------|----------------------------------|
-| Libusb read <br />  2 x VGA images<br /> @ 20 fps<br /> unit: ms | 36.96±1.06 | 34.69±1.27                     | 42.18±2.47                       | 41.69±2.74                       |
+| Libusb read <br />  2 x VGA images<br /> @ 20 fps<br /> (unit: ms) | 36.96±1.06 | 34.69±1.27                     | 42.18±2.47                       | 41.69±2.74                       |
