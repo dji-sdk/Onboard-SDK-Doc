@@ -1,6 +1,6 @@
 ---
 title: Data Transparent Transmission 
-date: 2016-06-24
+date: 2017-11-16
 keywords: [data transparent transmission, downstream, upstream]
 ---
 
@@ -46,24 +46,24 @@ The following code snippet shows you how to receive the data on different mobile
 Please implement the following delegate method of DJIFlightControllerDelegate:
 
 ~~~objc
-- (void)flightController:(DJIFlightController *)fc didReceiveDataFromExternalDevice:(NSData *)data;
+- (void)flightController:(DJIFlightController *_Nonnull)fc didReceiveDataFromOnboardSDKDevice:(NSData *_Nonnull)data;
 ~~~
 
 For more details, please check **DJIFlightController.h** file in the iOS SDK.
 
 - Android
 
-Please implement the `FlightControllerReceivedDataFromExternalDeviceCallback` callback function as shown below:
+Please implement the `setOnboardSDKDeviceDataCallback` callback function as shown below:
 
 ~~~java
-DJIAircraft mAircraft = (DJIAircraft)DJISDKManager.getInstance().getDJIProduct();
-DJIFlightController mFlightController = mAircraft.getFlightController();
+Aircraft mAircraft = (Aircraft)DJISDKManager.getInstance().getProduct();
+FlightController mFlightController = mAircraft.getFlightController();
+mFlightController.setOnboardSDKDeviceDataCallback(new FlightController.OnboardSDKDeviceDataCallback() {
+    @Override
+    public void onReceive(byte[] bytes) {
 
-mFlightController.setReceiveExternalDeviceDataCallback(new FlightControllerReceivedDataFromExternalDeviceCallback() {         
-          @Override
-          public void onResult(byte[] data) {
-          }
-        });
+    }
+});
 ~~~
 
 For more details, please check the **FlightController** class in the Android SDK.
@@ -77,7 +77,7 @@ The following SDK interface can help you understand how to communicate with Onbo
 Please use the following method of DJIFlightController:
 
 ~~~objc
-- (void)sendDataToOnboardSDKDevice:(NSData *)data withCompletion:(DJICompletionBlock)completion;
+- (void)sendDataToOnboardSDKDevice:(NSData *_Nonnull)data withCompletion:(DJICompletionBlock)completion;
 ~~~
 
 For more details, please check **DJIFlightController.h** file in the iOS SDK.
@@ -87,15 +87,14 @@ For more details, please check **DJIFlightController.h** file in the iOS SDK.
 Please implement the `sendDataToOnboardSDKDevice` method of DJIFlightController as shown below:
 
 ~~~java
-DJIAircraft mAircraft = (DJIAircraft)DJISDKManager.getInstance().getDJIProduct();
-DJIFlightController mFlightController = mAircraft.getFlightController();
+Aircraft mAircraft = (Aircraft)DJISDKManager.getInstance().getProduct();
+FlightController mFlightController = mAircraft.getFlightController();
+mFlightController.sendDataToOnboardSDKDevice(data, new CommonCallbacks.CompletionCallback() {
+    @Override
+    public void onResult(DJIError error) {
 
-mFlightController.sendDataToOnboardSDKDevice(data,
-                new DJICompletionCallback() {
-                    @Override
-                    public void onResult(DJIError pError) {
-                    }
-                });
+    }
+});
 ~~~
 
 For more details, please check the **FlightController** class in the Android SDK.
