@@ -25,7 +25,7 @@ Onboard API is implemented through the OES which is mounted on the UAV. Communic
 
 In short, Data Transparent Transmission serves as a linkage between Mobile API and Onboard API, granting developers a better flexibility in creating their own flight APPs.
 
-![streamFrame](../images/common/streamFrame.png)
+![streamFrame](../../images/common/streamFrame.jpg)
 
 ## Usage Scenario 1 - downstream from OES to Mobile Device
 
