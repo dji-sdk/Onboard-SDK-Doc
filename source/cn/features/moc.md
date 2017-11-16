@@ -27,7 +27,7 @@ MOC is developed to combine the benefits of these two APIs by establishing a con
 
 In short, Data Transparent Transmission serves as a linkage between Mobile API and Onboard API, granting developers a better flexibility in creating their own flight APPs.
 
-![streamFrame](../images/common/streamFrame.png)
+![streamFrame](../images/common/streamFrame.jpg)
 
 ### Related code base
 all APIs for MOC feature are annouced in file dji_mobile_communication.hpp.
