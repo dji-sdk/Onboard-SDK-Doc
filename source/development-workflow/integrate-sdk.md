@@ -70,7 +70,7 @@ On systems that support threading (all platforms except the STM32), the OSDK run
 
 1. **Main** thread: The main flow of execution of the program happens here. Typically, all commands sent to the aircraft/FC are executed on this thread.
 2. **Serial Read** thread: Telemetry data coming from the aircraft/FC is handled on the serial read thread, and acknowledgements/return types are populated here. Blocking calls will block the main thread until the read thread finishes processing its acknowledgement. Some callbacks are handled on this thread - those registered for asynchronous "push data" coming from the aircraft (this can be enabled through DJI Assistant 2's SDK page).
-3. **USB Read** thread: A separate thread is created if [Advanced Sensing](../guides/component-guide-advanced-sensing-stereo-camera.html) feature on M210 is enabled. This feature works in subscription mechanism, once the images are subscribed, push data will keep coming through USB. This thread only provides reading functionality. If developers would like to run intense computation on the image data, it is suggested to create a separate thread. 
+3. **USB Read** thread: A separate thread is created if the [Advanced Sensing](../guides/component-guide-advanced-sensing-stereo-camera.html) feature on M210 is enabled. This feature works in subscription mechanism. Once the images are subscribed, push data will keep coming through USB. This thread only provides read functionality. If developers would like to run intense computation on the image data, it is suggested to create a separate thread. 
 4. **Callback** thread: All callbacks that handle acknowedgements for commands sent to the aircraft/FC are executed on the callback thread.
 
 Some things to note:
