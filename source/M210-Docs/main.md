@@ -8,10 +8,10 @@ This page documents the extra steps needed to have a fully functional M210. Note
 
 Please follow [Development Workflow](../development-workflow/run-application.html) first for basic setup.
 
-[Onboard Computer Checklist](oes-checklist.html)
+## [Onboard Computer Checklist](oes-checklist.html)
 
-[Aircraft Checklist](aircraft-checklist.html)
+## [Aircraft Checklist](aircraft-checklist.html)
 
-[Simulation Checklist](simulation-checklist.html)
+## [Simulation Checklist](simulation-checklist.html)
 
-[Real-world Tests Checklist](real-world-test-checklist.html)
+## [Real-world Tests Checklist](real-world-test-checklist.html)
