@@ -1,5 +1,5 @@
 ---
-title: M210 onboard computer  Checklist
+title: M210 Onboard Computer  Checklist
 date: 2017-10-10
 keywords: [M210, linux, ros, onboard computer, onboard computer, USB, libusb, udev, configuration]
 ---
