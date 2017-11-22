@@ -148,11 +148,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a059886d022dd3bb10affcd879f0e4f0e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a059886d022dd3bb10affcd879f0e4f0e"></a>
-<a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1PositionFrame.html">PositionFrame</a>&#160;</td><td class="memItemRight" valign="bottom"><b>pos</b></td></tr>
+<tr class="memitem:a059886d022dd3bb10affcd879f0e4f0e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1PositionFrame.html">PositionFrame</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1RTK.html#a059886d022dd3bb10affcd879f0e4f0e">pos</a></td></tr>
 <tr class="separator:a059886d022dd3bb10affcd879f0e4f0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a523524d5cf3bb9658b512a9371c897de"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a523524d5cf3bb9658b512a9371c897de"></a>
-<a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Vector3f.html">Vector3f</a>&#160;</td><td class="memItemRight" valign="bottom"><b>velocityNED</b></td></tr>
+<tr class="memitem:a523524d5cf3bb9658b512a9371c897de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Vector3f.html">Vector3f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1RTK.html#a523524d5cf3bb9658b512a9371c897de">velocityNED</a></td></tr>
 <tr class="separator:a523524d5cf3bb9658b512a9371c897de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa47a7360a2cba3b2c4ea34b8c633769"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1RTK.html#aaa47a7360a2cba3b2c4ea34b8c633769">yaw</a></td></tr>
 <tr class="separator:aaa47a7360a2cba3b2c4ea34b8c633769"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -165,6 +163,19 @@ Public Attributes</h2></td></tr>
 <div class="textblock"><p>struct for data broadcast, return <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1RTK.html" title="struct for data broadcast, return RTK info ">RTK</a> info </p>
 <dl class="section note"><dt>Note</dt><dd>Available on A3/M600, need to enable it separately on <a class="el" href="namespaceDJI.html">DJI</a> Assistant 2 </dd></dl>
 </div><h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a059886d022dd3bb10affcd879f0e4f0e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1PositionFrame.html">PositionFrame</a> DJI::OSDK::Telemetry::RTK::pos</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Timestamp and GPS coordinates </p>
+
+</div>
+</div>
 <a class="anchor" id="a7c6422cd6f17152cc01b330ac4701f95"></a>
 <div class="memitem">
 <div class="memproto">
@@ -190,6 +201,19 @@ Public Attributes</h2></td></tr>
  49 - Integer wide-lane ambiguity solution <br />
  50 - Integer narrow-lane ambiguity solution <br />
  </p>
+
+</div>
+</div>
+<a class="anchor" id="a523524d5cf3bb9658b512a9371c897de"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Vector3f.html">Vector3f</a> DJI::OSDK::Telemetry::RTK::velocityNED</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>NED velocity measured by <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1RTK.html" title="struct for data broadcast, return RTK info ">RTK</a> </p>
 
 </div>
 </div>

@@ -216,9 +216,9 @@ Public Types</h2></td></tr>
 <tr class="memitem:ab7ea2c02a75d2a31942c9e29d92aa397"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structDJI_1_1OSDK_1_1Control_1_1AdvancedCtrlData.html">DJI::OSDK::Control::AdvancedCtrlData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Control.html#ab7ea2c02a75d2a31942c9e29d92aa397">AdvancedCtrlData</a></td></tr>
 <tr class="memdesc:ab7ea2c02a75d2a31942c9e29d92aa397"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structDJI_1_1OSDK_1_1Control_1_1AdvancedCtrlData.html" title="AdvancedCtrlData. ">AdvancedCtrlData</a>.  <a href="#ab7ea2c02a75d2a31942c9e29d92aa397">More...</a><br /></td></tr>
 <tr class="separator:ab7ea2c02a75d2a31942c9e29d92aa397"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63a6ac80ff2566c6fa5e76de234f47d5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a63a6ac80ff2566c6fa5e76de234f47d5"></a>
-typedef struct DJI::OSDK::Control::M100CMDData&#160;</td><td class="memItemRight" valign="bottom"><b>M100CMDData</b></td></tr>
-<tr class="separator:a63a6ac80ff2566c6fa5e76de234f47d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cfff651965dc21574d8903ceda37443"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5cfff651965dc21574d8903ceda37443"></a>
+typedef struct DJI::OSDK::Control::LegacyCMDData&#160;</td><td class="memItemRight" valign="bottom"><b>LegacyCMDData</b></td></tr>
+<tr class="separator:a5cfff651965dc21574d8903ceda37443"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -364,7 +364,7 @@ Public Attributes</h2></td></tr>
 <p>bit 7:6 of the 8-bit (7:0) <a class="el" href="structDJI_1_1OSDK_1_1Control_1_1CtrlData.html#a5f683c6c69478dc720245c9c2b79cf5e">CtrlData.flag</a> </p>
 <dl class="section note"><dt>Note</dt><dd><ul>
 <li>Only when the GPS signal is good (health_flag &gt;=3)，horizontal position control (HORIZONTAL_POSITION) related control modes can be used.</li>
-<li>Only when GPS signal is good (health_flag &gt;=3)，or when Guidance system is working properly with Autopilot， horizontal velocity control（HORIZONTAL_VELOCITY）related control modes can be used. </li>
+<li>Only when GPS signal is good (health_flag &gt;=3)，or when <a class="el" href="classDJI_1_1OSDK_1_1AdvancedSensing.html" title="The AdvancedSensing class for subscribing stereo images. ">AdvancedSensing</a> system is working properly with Autopilot， horizontal velocity control（HORIZONTAL_VELOCITY）related control modes can be used. </li>
 </ul>
 </dd></dl>
 <table class="fieldtable">
@@ -411,7 +411,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>bit 0 of the 8-bit (7:0) <a class="el" href="structDJI_1_1OSDK_1_1Control_1_1CtrlData.html#a5f683c6c69478dc720245c9c2b79cf5e">CtrlData.flag</a>. </p>
-<p>Drone will try to hold at current position if enable </p>
+<p>Only works in Horizontal velocity control mode In velocity stable mode, drone will brake and hover at one position once the input command is zero. Drone will try to stay in position once in hover state.</p>
+<p>In velocity non-stable mode, drone will follow the velocity command and doesn’t hover when the command is zero. That’s to say drone will drift with the wind. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="af272070f4394375c6e7bd9b822df4781a0fd217005553a1b639fb4cb88854ac75"></a>STABLE_DISABLE&#160;</td><td class="fielddoc">
 <p>Disable the stable mode </p>
@@ -847,10 +848,48 @@ Public Attributes</h2></td></tr>
 <p><a class="el" href="classDJI_1_1OSDK_1_1Control.html" title="Flight control API: high-level actions and low-level control modes. ">Control</a> the vehicle using user-specified mode. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">data</td><td>control set-points and flags </td></tr>
+    <tr><td class="paramname">data</td><td>control set-points and flags</td></tr>
   </table>
   </dd>
 </dl>
+<p><a class="el" href="classDJI_1_1OSDK_1_1Control.html" title="Flight control API: high-level actions and low-level control modes. ">Control</a> Mode Byte</p>
+<table class="doxtable">
+<tr>
+<th>bit 7:6 </th><th>bit 5:4 </th><th>bit 3 </th><th>bit 2:1 </th><th>bit 0  </th></tr>
+<tr>
+<td>0b00: HORI_ATTI_TILT_ANG </td><td>0b00: VERT_VEL </td><td>0b00: YAW_ANG </td><td>0b00: ground frame </td><td>0b0: non-stable mode </td></tr>
+<tr>
+<td>0b01: HORI_VEL </td><td>0b01: VERT_POS </td><td>0b01: YAW_RATE </td><td>0b01: body frame </td><td>0b1: stable mode </td></tr>
+<tr>
+<td>0b10: HORI_POS </td><td>0b10: VERT_THRUST </td><td></td><td>(horizontal frame) </td><td></td></tr>
+<tr>
+<td>0b11: HORI_ANG_VEL </td><td></td><td></td><td></td><td></td></tr>
+</table>
+<p>Command Value</p>
+<table class="doxtable">
+<tr>
+<th>ctrl_flag </th><th>ctrl_byte </th><th>roll_or_x </th><th>pitch_or_y </th><th>thr_z </th><th>yaw </th><th>feedforward_x </th><th>feedforward_y  </th></tr>
+<tr>
+<td>uint8_t </td><td>uint8_t </td><td>float32 </td><td>float32 </td><td>float32 </td><td>float32 </td><td>float32 </td><td>float32 </td></tr>
+</table>
+<table class="doxtable">
+<tr>
+<th>Mode </th><th>Input Limit  </th></tr>
+<tr>
+<td>vert_thrust </td><td>0 to 100 % </td></tr>
+<tr>
+<td>vert_vel </td><td>-5 to 5 m/s </td></tr>
+<tr>
+<td>vert_pos </td><td>0 to 120m </td></tr>
+<tr>
+<td>hori_ang </td><td>35 degrees </td></tr>
+<tr>
+<td>hori_vel </td><td>30 m/s </td></tr>
+<tr>
+<td>hori_acc </td><td>7 m/s^2 </td></tr>
+<tr>
+<td>yaw_rate </td><td>150 deg/s </td></tr>
+</table>
 
 </div>
 </div>
@@ -872,10 +911,22 @@ Public Attributes</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>this mode only works in HORIZONTAL_VELOCITY and the unit of feedforward term is m/s^2</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">data</td><td>control set-points and flags </td></tr>
+    <tr><td class="paramname">data</td><td>control set-points and flags</td></tr>
   </table>
   </dd>
 </dl>
+<p><a class="el" href="classDJI_1_1OSDK_1_1Control.html" title="Flight control API: high-level actions and low-level control modes. ">Control</a> Advanced Byte</p>
+<table class="doxtable">
+<tr>
+<th>bit 7 </th><th>bit 6 </th><th>bit 5 </th><th>bit 4 </th><th>bit 3:0  </th></tr>
+<tr>
+<td>adv flag </td><td>brake_flag </td><td>yaw_ctrl_flag </td><td>avoid_atti_limit_enable </td><td>reserved </td></tr>
+<tr>
+<td>(1 for ON, 0 for OFF) </td><td>(1 for ON, 0 for OFF) </td><td></td><td>(1 for ON, 0 for OFF) </td><td></td></tr>
+</table>
+<p>If adv_flag is ON, feedforward of x axis and y axis will work in horiz_vel</p>
+<p>If brake_flag is ON, emergency brake will work when you use joystick.</p>
+<p>If avoid_atti_limit_enable is ON, the atti limit will be ignored. </p>
 
 </div>
 </div>

@@ -375,6 +375,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Get <a class="el" href="classDJI_1_1OSDK_1_1Gimbal.html" title="The Gimbal class for controlling gimbal-related functions. ">Gimbal</a> data from local cache </p><dl class="section note"><dt>Note</dt><dd>This getter function is only available with Broadcast, not with Subscribe telemetry</dd></dl>
+<p>Data Accuracy: 0.1 deg in all axes</p>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Gimbal.html" title="struct for data broadcast, return gimbal angle ">Telemetry::Gimbal</a> data structure with the newest value. </dd></dl>
 
 </div>
@@ -392,6 +393,18 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Get Globalc Position (LLA and metadata) from local cache </p><dl class="section note"><dt>Note</dt><dd>This getter function is only available with Broadcast, not with Subscribe telemetry</dd></dl>
+<p>Data accuracy: </p><table class="doxtable">
+<tr>
+<th>Axis </th><th>Unit </th><th>Position Sensor </th><th>Accuracy  </th></tr>
+<tr>
+<td>x, y </td><td>m </td><td>GPS </td><td>&lt;3m with open sky without multipath </td></tr>
+<tr>
+<td>z </td><td>m </td><td>GPS </td><td>&lt;5m with open sky without multipath </td></tr>
+<tr>
+<td>x, y </td><td>m </td><td>RTK </td><td>around 2cm with fine alignment and fix condition </td></tr>
+<tr>
+<td>z </td><td>m </td><td>RTK </td><td>around 3cm with fine alignment and fix condition </td></tr>
+</table>
 <p>The returned Lat/Lon values are in rad. </p><dl class="section return"><dt>Returns</dt><dd><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1GlobalPosition.html" title="struct for data broadcast, return GPS data ">Telemetry::GlobalPosition</a> data structure with the newest value. </dd></dl>
 
 </div>
@@ -459,8 +472,18 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get quaternion data from local cache </p><dl class="section note"><dt>Note</dt><dd>This getter function is only available with Broadcast, not with Subscribe telemetry</dd></dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Quaternion.html" title="struct for TOPIC_QUATERNION ">Telemetry::Quaternion</a> data structure with the newest value. </dd></dl>
+<p>Get quaternion data from local cache </p><dl class="section note"><dt>Note</dt><dd>This getter function is only available with Broadcast, not with Subscribe telemetry </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Quaternion.html" title="struct for TOPIC_QUATERNION ">Telemetry::Quaternion</a> data structure with the newest value.</dd></dl>
+<p>Data accuracy: </p><table class="doxtable">
+<tr>
+<th>Angle </th><th>Unit </th><th>Accuracy </th><th>Notes  </th></tr>
+<tr>
+<td>pitch, roll </td><td>deg </td><td>&lt;1 </td><td>in non-ahrs mode </td></tr>
+<tr>
+<td>yaw </td><td>deg </td><td>&lt;3 </td><td>for well-calibrated compass with fine alignment </td></tr>
+<tr>
+<td>yaw with rtk </td><td>deg </td><td>around 1.2 </td><td>in RTK heading fixed mode with 1 meter baseline </td></tr>
+</table>
 
 </div>
 </div>
@@ -511,7 +534,42 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Get RTK data from local cache </p><dl class="section note"><dt>Note</dt><dd>This getter function is only available with Broadcast, not with Subscribe telemetry</dd></dl>
-<p>This feature provides detailed RTK info. Available on A3/M600. You need to enable it separately on <a class="el" href="namespaceDJI.html">DJI</a> Assistant 2's SDK page. </p><dl class="section return"><dt>Returns</dt><dd><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1RTK.html" title="struct for data broadcast, return RTK info ">Telemetry::RTK</a> data structure with the newest value. </dd></dl>
+<p>This feature provides detailed RTK info. Available on A3/M600. You need to enable it separately on <a class="el" href="namespaceDJI.html">DJI</a> Assistant 2's SDK page. </p><dl class="section return"><dt>Returns</dt><dd><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1RTK.html" title="struct for data broadcast, return RTK info ">Telemetry::RTK</a> data structure with the newest value.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>RTK Position Info and Yaw Info State is shown in the table below</dd></dl>
+<table class="doxtable">
+<tr>
+<th>State </th><th>Meaning </th><th>Description  </th></tr>
+<tr>
+<td>0 </td><td>NONE </td><td>No solution </td></tr>
+<tr>
+<td>1 </td><td>FIXEDPOS </td><td>Position has been fixed by the FIX POSITION command </td></tr>
+<tr>
+<td>2 </td><td>FIXEDHEIGHT </td><td>Position has been fixed by the FIX HEIGHT/AUTO command </td></tr>
+<tr>
+<td>8 </td><td>DOPPLER_VELOCITY </td><td>Velocity computed using instantaneous Doppler </td></tr>
+<tr>
+<td>16 </td><td>Single </td><td>Single point position </td></tr>
+<tr>
+<td>17 </td><td>PSRDIFF </td><td>Pseudorange differential solution </td></tr>
+<tr>
+<td>18 </td><td>WAAS </td><td>Solution calculated using corrections from an SBAS </td></tr>
+<tr>
+<td>19 </td><td>PROPAGATED </td><td>Propagated by a Kalman filter without new observations </td></tr>
+<tr>
+<td>20 </td><td>OMNISTAR </td><td>OmniSTAR VBS position (L1 sub-metre) </td></tr>
+<tr>
+<td>32 </td><td>L1_FLOAT </td><td>Floating L1 ambiguity solution </td></tr>
+<tr>
+<td>33 </td><td>IONOFREE_FLOAT </td><td>Floating ionospheric-free ambiguity solution </td></tr>
+<tr>
+<td>34 </td><td>NARROW_FLOAT </td><td>Floating narrow-lane ambiguity solution </td></tr>
+<tr>
+<td>48 </td><td>L1_INT </td><td>Integer L1 ambiguity solution </td></tr>
+<tr>
+<td>49 </td><td>WIDE_INT </td><td>Integer wide-lane ambiguity solution </td></tr>
+<tr>
+<td>50 </td><td>NARROW_INT </td><td>Integer narrow-lane ambiguity solution </td></tr>
+</table>
 
 </div>
 </div>
@@ -596,6 +654,14 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Get velocity from local cache </p><dl class="section note"><dt>Note</dt><dd>This getter function is only available with Broadcast, not with Subscribe telemetry</dd></dl>
+<p>Data accuracy: </p><table class="doxtable">
+<tr>
+<th>Axis </th><th>Unit </th><th>Accuracy  </th></tr>
+<tr>
+<td>vgx, vgy </td><td>m/s </td><td>Around 5cm/s for GNSS navigation. Around 3cm/s with VO at 1 meter height </td></tr>
+<tr>
+<td>vgz </td><td>m/s </td><td>10cm/s only with barometer in steady air. 3cm/s with VO at 1 meter height with 8cm baseline </td></tr>
+</table>
 <p>The velocity may be in body or ground frame based on settings on <a class="el" href="namespaceDJI.html">DJI</a> Assistant 2's SDK page. </p><dl class="section return"><dt>Returns</dt><dd><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Vector3f.html" title="struct for multiple Topics ">Telemetry::Vector3f</a> data structure with the newest value. </dd></dl>
 
 </div>

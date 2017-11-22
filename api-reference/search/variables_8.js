@@ -1,6 +1,10 @@
 var searchData=
 [
   ['idlevelocity',['idleVelocity',['../structDJI_1_1OSDK_1_1WayPointInitSettings.html#a5aa1ba41b4f872e11ed2287634eb34c4',1,'DJI::OSDK::WayPointInitSettings']]],
+  ['ignore_5faircraft_5fmotion',['ignore_aircraft_motion',['../structDJI_1_1OSDK_1_1Gimbal_1_1SpeedData.html#a397f12869c8d9ed52c205f290e6345b6',1,'DJI::OSDK::Gimbal::SpeedData']]],
+  ['ignore_5fuser_5fstick',['ignore_user_stick',['../structDJI_1_1OSDK_1_1Gimbal_1_1SpeedData.html#aab8dbdd355c8cf0917600ff48ba461ae',1,'DJI::OSDK::Gimbal::SpeedData']]],
+  ['img_5f240p_5fsize',['IMG_240P_SIZE',['../classDJI_1_1OSDK_1_1ACK.html#a3998929032fd58cde29e33c07be8b548',1,'DJI::OSDK::ACK']]],
+  ['img_5fvga_5fsize',['IMG_VGA_SIZE',['../classDJI_1_1OSDK_1_1ACK.html#a7cf75fc544fa62f6bcbbbb57b5bc9ae1',1,'DJI::OSDK::ACK']]],
   ['impact_5fis_5fdetected',['IMPACT_IS_DETECTED',['../classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#ac2dd35ca5e39082b57ec71a243fbca29',1,'DJI::OSDK::ErrorCode::CommonACK']]],
   ['index',['index',['../structDJI_1_1OSDK_1_1WayPointSettings.html#a43c55812c7e8c40fad0f8374632c1238',1,'DJI::OSDK::WayPointSettings::index()'],['../structDJI_1_1OSDK_1_1Telemetry_1_1SyncTimestamp.html#ac37a7734543aac271e61dee0b82027d9',1,'DJI::OSDK::Telemetry::SyncTimestamp::index()']]],
   ['indexnumber',['indexNumber',['../structDJI_1_1OSDK_1_1WayPointInitSettings.html#a0397e8b504d932bd600aaa66b003bc21',1,'DJI::OSDK::WayPointInitSettings']]],

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['topic_5fuid',['TOPIC_UID',['../namespaceDJI_1_1OSDK_1_1Telemetry.html#abf4195c02ef49660caaf1b238bb91349',1,'DJI::OSDK::Telemetry']]],
-  ['topicname',['TopicName',['../namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfa',1,'DJI::OSDK::Telemetry']]]
+  ['stablemode',['StableMode',['../classDJI_1_1OSDK_1_1Control.html#af272070f4394375c6e7bd9b822df4781',1,'DJI::OSDK::Control']]]
 ];

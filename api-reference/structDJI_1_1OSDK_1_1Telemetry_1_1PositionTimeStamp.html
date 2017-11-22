@@ -141,7 +141,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>sub struct for <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1GPSInfo.html" title="struct for GPSInfo of data broadcast ">GPSInfo</a>  
+<p>Timestamp for GPS and <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1RTK.html" title="struct for data broadcast, return RTK info ">RTK</a>.  
  <a href="structDJI_1_1OSDK_1_1Telemetry_1_1PositionTimeStamp.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="dji__telemetry_8hpp_source.html">dji_telemetry.hpp</a>&gt;</code></p>
@@ -154,7 +154,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ac8a39a4d8523e38c64c9073312b76d61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>sub struct for <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1GPSInfo.html" title="struct for GPSInfo of data broadcast ">GPSInfo</a> </p>
+<div class="textblock"><p>Timestamp for GPS and <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1RTK.html" title="struct for data broadcast, return RTK info ">RTK</a>. </p>
+<dl class="section note"><dt>Note</dt><dd>: Data and time are GMT+8 </dd></dl>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a class="anchor" id="a7c2d64724f1abd7bcdc39e648e5fd79a"></a>
 <div class="memitem">
@@ -165,7 +166,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>yyyy-mm-dd </p>
+<p>yyyymmdd E.g.20150205 means February 5th,2015 (GMT+8) </p>
 
 </div>
 </div>
@@ -178,7 +179,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>hh-mm-ss </p>
+<p>hhmmss E.g. 90209 means 09:02:09 (GMT+8) </p>
 
 </div>
 </div>

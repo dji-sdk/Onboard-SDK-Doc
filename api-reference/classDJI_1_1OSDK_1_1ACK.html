@@ -163,8 +163,17 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1HotPointStart.html">HotPointStart</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct is returned from the <a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#a4a0151215ad6204133361bd81e87f44c" title="start the hotpoint mission ">DJI::OSDK::HotpointMission::start</a> blocking API.  <a href="structDJI_1_1OSDK_1_1ACK_1_1HotPointStart.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1ImageMeta.html">ImageMeta</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">sub-struct for stereo image with raw data and camera name  <a href="structDJI_1_1OSDK_1_1ACK_1_1ImageMeta.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1MFIOGet.html">MFIOGet</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct is returned from the <a class="el" href="classDJI_1_1OSDK_1_1MFIO.html#ad64c03a68764d310202a15ed85454ab6" title="Non-blocking call for getting data from an MFIO channel. ">DJI::OSDK::MFIO::getValue</a> blocking API.  <a href="structDJI_1_1OSDK_1_1ACK_1_1MFIOGet.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1StereoImgData.html">StereoImgData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct captures PushData when subscribe to QVGA images.  <a href="structDJI_1_1OSDK_1_1ACK_1_1StereoImgData.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1StereoVGAImgData.html">StereoVGAImgData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct captures PushData when subscribe to VGA images.  <a href="structDJI_1_1OSDK_1_1ACK_1_1StereoVGAImgData.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1WayPointAddPoint.html">WayPointAddPoint</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct is returned from the <a class="el" href="classDJI_1_1OSDK_1_1WaypointMission.html#a0923b487adb4c6968268914baebd880c" title="setting waypt init data ">DJI::OSDK::WaypointMission::uploadIndexData</a> blocking API.  <a href="structDJI_1_1OSDK_1_1ACK_1_1WayPointAddPoint.html#details">More...</a><br /></td></tr>
@@ -176,7 +185,10 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct is used in the readInitData non-blocking API callback.  <a href="structDJI_1_1OSDK_1_1ACK_1_1WayPointInit.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1WayPointReachedData.html">WayPointReachedData</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct captures PushData while ground-station is enabled on Assistant's SDK Page.  <a href="structDJI_1_1OSDK_1_1ACK_1_1WayPointReachedData.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct captures PushData while ground-station is enabled on Assistant's SDK Page, CMD: 0x02, 0x04.  <a href="structDJI_1_1OSDK_1_1ACK_1_1WayPointReachedData.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1WayPointStatusPushData.html">WayPointStatusPushData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct captures PushData while ground-station is enabled on Assistant's SDK Page, CMD: 0x02, 0x03.  <a href="structDJI_1_1OSDK_1_1ACK_1_1WayPointStatusPushData.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1WayPointVelocity.html">WayPointVelocity</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct is returned from the <a class="el" href="classDJI_1_1OSDK_1_1WaypointMission.html#affd964d55236c2ba99ce790f7ba1efa2" title="setting waypt idle velocity ">DJI::OSDK::WaypointMission::updateIdleVelocity</a> blocking API.  <a href="structDJI_1_1OSDK_1_1ACK_1_1WayPointVelocity.html#details">More...</a><br /></td></tr>
@@ -237,8 +249,30 @@ typedef struct DJI::OSDK::ACK::MFIOGetInternal&#160;</td><td class="memItemRight
 <tr class="separator:a523b5ed7436a3367a7a7dde580555d62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a975e66157392efaa50b1c0608025767a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a975e66157392efaa50b1c0608025767a"></a>
 typedef struct <a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1WayPointReachedData.html">DJI::OSDK::ACK::WayPointReachedData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ACK.html#a975e66157392efaa50b1c0608025767a">WayPointReachedData</a></td></tr>
-<tr class="memdesc:a975e66157392efaa50b1c0608025767a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct captures PushData while ground-station is enabled on Assistant's SDK Page. <br /></td></tr>
+<tr class="memdesc:a975e66157392efaa50b1c0608025767a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct captures PushData while ground-station is enabled on Assistant's SDK Page, CMD: 0x02, 0x04. <br /></td></tr>
 <tr class="separator:a975e66157392efaa50b1c0608025767a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a25ab972da85aa8c54d74196c2713f0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2a25ab972da85aa8c54d74196c2713f0"></a>
+typedef struct <a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1WayPointStatusPushData.html">DJI::OSDK::ACK::WayPointStatusPushData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ACK.html#a2a25ab972da85aa8c54d74196c2713f0">WayPointStatusPushData</a></td></tr>
+<tr class="memdesc:a2a25ab972da85aa8c54d74196c2713f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct captures PushData while ground-station is enabled on Assistant's SDK Page, CMD: 0x02, 0x03. <br /></td></tr>
+<tr class="separator:a2a25ab972da85aa8c54d74196c2713f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbff6f3b430a8d2dc1832785463b04b1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acbff6f3b430a8d2dc1832785463b04b1"></a>
+typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>Image</b>[<a class="el" href="classDJI_1_1OSDK_1_1ACK.html#a3998929032fd58cde29e33c07be8b548">IMG_240P_SIZE</a>]</td></tr>
+<tr class="separator:acbff6f3b430a8d2dc1832785463b04b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6844e0975928e5c43d7908b806afdda9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6844e0975928e5c43d7908b806afdda9"></a>
+typedef struct <a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1ImageMeta.html">DJI::OSDK::ACK::ImageMeta</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ACK.html#a6844e0975928e5c43d7908b806afdda9">ImageMeta</a></td></tr>
+<tr class="memdesc:a6844e0975928e5c43d7908b806afdda9"><td class="mdescLeft">&#160;</td><td class="mdescRight">sub-struct for stereo image with raw data and camera name <br /></td></tr>
+<tr class="separator:a6844e0975928e5c43d7908b806afdda9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8645647f8ca9a498ecf3fa00bbb42f90"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8645647f8ca9a498ecf3fa00bbb42f90"></a>
+typedef struct <a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1StereoImgData.html">DJI::OSDK::ACK::StereoImgData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ACK.html#a8645647f8ca9a498ecf3fa00bbb42f90">StereoImgData</a></td></tr>
+<tr class="memdesc:a8645647f8ca9a498ecf3fa00bbb42f90"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct captures PushData when subscribe to QVGA images. <br /></td></tr>
+<tr class="separator:a8645647f8ca9a498ecf3fa00bbb42f90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef4287d5e9eae1c5fb288a9469cff620"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aef4287d5e9eae1c5fb288a9469cff620"></a>
+typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>VGAImage</b>[<a class="el" href="classDJI_1_1OSDK_1_1ACK.html#a7cf75fc544fa62f6bcbbbb57b5bc9ae1">IMG_VGA_SIZE</a>]</td></tr>
+<tr class="separator:aef4287d5e9eae1c5fb288a9469cff620"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac53045c2c2530f7e1737a412838195a4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac53045c2c2530f7e1737a412838195a4"></a>
+typedef struct <a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1StereoVGAImgData.html">DJI::OSDK::ACK::StereoVGAImgData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ACK.html#ac53045c2c2530f7e1737a412838195a4">StereoVGAImgData</a></td></tr>
+<tr class="memdesc:ac53045c2c2530f7e1737a412838195a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct captures PushData when subscribe to VGA images. <br /></td></tr>
+<tr class="separator:ac53045c2c2530f7e1737a412838195a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f84d91a0391a710e7c7ed7c5d1b5d6b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4f84d91a0391a710e7c7ed7c5d1b5d6b"></a>
 typedef union DJI::OSDK::ACK::TypeUnion&#160;</td><td class="memItemRight" valign="bottom"><b>TypeUnion</b></td></tr>
 <tr class="separator:a4f84d91a0391a710e7c7ed7c5d1b5d6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -254,6 +288,14 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
+<tr class="memitem:a3998929032fd58cde29e33c07be8b548"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3998929032fd58cde29e33c07be8b548"></a>
+static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ACK.html#a3998929032fd58cde29e33c07be8b548">IMG_240P_SIZE</a> = 240 * 320</td></tr>
+<tr class="memdesc:a3998929032fd58cde29e33c07be8b548"><td class="mdescLeft">&#160;</td><td class="mdescRight">This constant variable defines number of pixels for QVGA images. <br /></td></tr>
+<tr class="separator:a3998929032fd58cde29e33c07be8b548"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cf75fc544fa62f6bcbbbb57b5bc9ae1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7cf75fc544fa62f6bcbbbb57b5bc9ae1"></a>
+static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ACK.html#a7cf75fc544fa62f6bcbbbb57b5bc9ae1">IMG_VGA_SIZE</a> = 640 * 480</td></tr>
+<tr class="memdesc:a7cf75fc544fa62f6bcbbbb57b5bc9ae1"><td class="mdescLeft">&#160;</td><td class="mdescRight">This constant variable defines number of pixels for VGA images. <br /></td></tr>
+<tr class="separator:a7cf75fc544fa62f6bcbbbb57b5bc9ae1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9d4dc1ed4d14c52d08e6b15f69e043c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad9d4dc1ed4d14c52d08e6b15f69e043c"></a>
 static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ACK.html#ad9d4dc1ed4d14c52d08e6b15f69e043c">SUCCESS</a> = 0</td></tr>
 <tr class="memdesc:ad9d4dc1ed4d14c52d08e6b15f69e043c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDJI_1_1OSDK_1_1ACK.html#aa6a80877d41e0bffd3e44de1af585e09" title="Call this function with an ACK::ErrorCode returned from a blocking call to find out if the call succe...">ACK::getError</a> return type when blocking call is successful. <br /></td></tr>
@@ -432,6 +474,7 @@ static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>RELEA
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool that is SUCCESS if the call was successful, FAIL if the call was not. </dd></dl>
 <p>Data is set at buf + SET_CMD_SIZE which is buf + 2;</p>
+<p>ACKs supported in Matrice 600 old firmware</p>
 <p>ACKs supported in Matrice 100 </p>
 
 </div>

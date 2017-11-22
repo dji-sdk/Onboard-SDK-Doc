@@ -187,7 +187,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">struct for data broadcast, return obstacle info around the vehicle  <a href="structDJI_1_1OSDK_1_1Telemetry_1_1RelativePosition.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1PositionTimeStamp.html">DJI::OSDK::Telemetry::PositionTimeStamp</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">sub struct for <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1GPSInfo.html" title="struct for GPSInfo of data broadcast ">GPSInfo</a>  <a href="structDJI_1_1OSDK_1_1Telemetry_1_1PositionTimeStamp.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timestamp for GPS and <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1RTK.html" title="struct for data broadcast, return RTK info ">RTK</a>.  <a href="structDJI_1_1OSDK_1_1Telemetry_1_1PositionTimeStamp.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1PositionData.html">DJI::OSDK::Telemetry::PositionData</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">struct for TOPIC_RTK_POSITION and sub struct for <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1RTK.html" title="struct for data broadcast, return RTK info ">RTK</a> of data broadcast  <a href="structDJI_1_1OSDK_1_1Telemetry_1_1PositionData.html#details">More...</a><br /></td></tr>
@@ -231,11 +231,14 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1HardSyncData.html">DJI::OSDK::Telemetry::HardSyncData</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">struct for TOPIC_HARD_SYNC  <a href="structDJI_1_1OSDK_1_1Telemetry_1_1HardSyncData.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1M100TimeStamp.html">DJI::OSDK::Telemetry::M100TimeStamp</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrice 100 Timestamp data, available in Broadcast telemetry (only for M100)  <a href="structDJI_1_1OSDK_1_1Telemetry_1_1M100TimeStamp.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1LegacyTimeStamp.html">DJI::OSDK::Telemetry::LegacyTimeStamp</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrice 100 Timestamp data, available in Broadcast telemetry (only for M100)  <a href="structDJI_1_1OSDK_1_1Telemetry_1_1LegacyTimeStamp.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1M100Velocity.html">DJI::OSDK::Telemetry::M100Velocity</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrice 100 <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Velocity.html" title="struct for TOPIC_VELOCITY ">Velocity</a> struct, returned in Broadcast telemetry (only for M100)  <a href="structDJI_1_1OSDK_1_1Telemetry_1_1M100Velocity.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1LegacyVelocity.html">DJI::OSDK::Telemetry::LegacyVelocity</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrice 100 <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Velocity.html" title="struct for TOPIC_VELOCITY ">Velocity</a> struct, returned in Broadcast telemetry (only for M100)  <a href="structDJI_1_1OSDK_1_1Telemetry_1_1LegacyVelocity.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1LegacyGPSInfo.html">DJI::OSDK::Telemetry::LegacyGPSInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">struct for <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1GPSInfo.html" title="struct for GPSInfo of data broadcast ">GPSInfo</a> of data broadcast  <a href="structDJI_1_1OSDK_1_1Telemetry_1_1LegacyGPSInfo.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1TypeMap.html">DJI::OSDK::Telemetry::TypeMap&lt; T &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">template struct maps a topic name to the corresponding data type  <a href="structDJI_1_1OSDK_1_1Telemetry_1_1TypeMap.html#details">More...</a><br /></td></tr>
@@ -286,9 +289,8 @@ typedef struct <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1VelocityInf
 <tr class="memitem:a7d6224f8c2f0f9d992247ceddf888631"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1RelativePosition.html">DJI::OSDK::Telemetry::RelativePosition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a7d6224f8c2f0f9d992247ceddf888631">DJI::OSDK::Telemetry::RelativePosition</a></td></tr>
 <tr class="memdesc:a7d6224f8c2f0f9d992247ceddf888631"><td class="mdescLeft">&#160;</td><td class="mdescRight">struct for data broadcast, return obstacle info around the vehicle  <a href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a7d6224f8c2f0f9d992247ceddf888631">More...</a><br /></td></tr>
 <tr class="separator:a7d6224f8c2f0f9d992247ceddf888631"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af021f9dd32b2a4f738b77b0732163788"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af021f9dd32b2a4f738b77b0732163788"></a>
-typedef struct <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1PositionTimeStamp.html">DJI::OSDK::Telemetry::PositionTimeStamp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#af021f9dd32b2a4f738b77b0732163788">DJI::OSDK::Telemetry::PositionTimeStamp</a></td></tr>
-<tr class="memdesc:af021f9dd32b2a4f738b77b0732163788"><td class="mdescLeft">&#160;</td><td class="mdescRight">sub struct for <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1GPSInfo.html" title="struct for GPSInfo of data broadcast ">GPSInfo</a> <br /></td></tr>
+<tr class="memitem:af021f9dd32b2a4f738b77b0732163788"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1PositionTimeStamp.html">DJI::OSDK::Telemetry::PositionTimeStamp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#af021f9dd32b2a4f738b77b0732163788">DJI::OSDK::Telemetry::PositionTimeStamp</a></td></tr>
+<tr class="memdesc:af021f9dd32b2a4f738b77b0732163788"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timestamp for GPS and <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1RTK.html" title="struct for data broadcast, return RTK info ">RTK</a>.  <a href="namespaceDJI_1_1OSDK_1_1Telemetry.html#af021f9dd32b2a4f738b77b0732163788">More...</a><br /></td></tr>
 <tr class="separator:af021f9dd32b2a4f738b77b0732163788"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46f49eee9621f8df6d283591aec4a324"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a46f49eee9621f8df6d283591aec4a324"></a>
 typedef struct <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1PositionData.html">DJI::OSDK::Telemetry::PositionData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a46f49eee9621f8df6d283591aec4a324">DJI::OSDK::Telemetry::PositionData</a></td></tr>
@@ -342,29 +344,32 @@ typedef struct <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1SyncTimesta
 typedef struct <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1HardSyncData.html">DJI::OSDK::Telemetry::HardSyncData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a3a7a0e798f8be5e0c208338672c5b26e">DJI::OSDK::Telemetry::HardSyncData</a></td></tr>
 <tr class="memdesc:a3a7a0e798f8be5e0c208338672c5b26e"><td class="mdescLeft">&#160;</td><td class="mdescRight">struct for TOPIC_HARD_SYNC <br /></td></tr>
 <tr class="separator:a3a7a0e798f8be5e0c208338672c5b26e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94cabac33eb6673cbf3d21bad008dd0b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a94cabac33eb6673cbf3d21bad008dd0b"></a>
-typedef struct <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1M100TimeStamp.html">DJI::OSDK::Telemetry::M100TimeStamp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a94cabac33eb6673cbf3d21bad008dd0b">DJI::OSDK::Telemetry::M100TimeStamp</a></td></tr>
-<tr class="memdesc:a94cabac33eb6673cbf3d21bad008dd0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrice 100 Timestamp data, available in Broadcast telemetry (only for M100) <br /></td></tr>
-<tr class="separator:a94cabac33eb6673cbf3d21bad008dd0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79e75c319e87d2fe3a3a4c9dcad1dd3d"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1M100Velocity.html">DJI::OSDK::Telemetry::M100Velocity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a79e75c319e87d2fe3a3a4c9dcad1dd3d">DJI::OSDK::Telemetry::M100Velocity</a></td></tr>
-<tr class="memdesc:a79e75c319e87d2fe3a3a4c9dcad1dd3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrice 100 <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Velocity.html" title="struct for TOPIC_VELOCITY ">Velocity</a> struct, returned in Broadcast telemetry (only for M100)  <a href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a79e75c319e87d2fe3a3a4c9dcad1dd3d">More...</a><br /></td></tr>
-<tr class="separator:a79e75c319e87d2fe3a3a4c9dcad1dd3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b26539f217a170e2986f77ba716464c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b26539f217a170e2986f77ba716464c"></a>
+typedef struct <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1LegacyTimeStamp.html">DJI::OSDK::Telemetry::LegacyTimeStamp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a4b26539f217a170e2986f77ba716464c">DJI::OSDK::Telemetry::LegacyTimeStamp</a></td></tr>
+<tr class="memdesc:a4b26539f217a170e2986f77ba716464c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrice 100 Timestamp data, available in Broadcast telemetry (only for M100) <br /></td></tr>
+<tr class="separator:a4b26539f217a170e2986f77ba716464c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a568cee5a41fae1ec2a90f9511f0444a8"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1LegacyVelocity.html">DJI::OSDK::Telemetry::LegacyVelocity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a568cee5a41fae1ec2a90f9511f0444a8">DJI::OSDK::Telemetry::LegacyVelocity</a></td></tr>
+<tr class="memdesc:a568cee5a41fae1ec2a90f9511f0444a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrice 100 <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Velocity.html" title="struct for TOPIC_VELOCITY ">Velocity</a> struct, returned in Broadcast telemetry (only for M100)  <a href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a568cee5a41fae1ec2a90f9511f0444a8">More...</a><br /></td></tr>
+<tr class="separator:a568cee5a41fae1ec2a90f9511f0444a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fa50918940882f4dd0e6993677702de"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3fa50918940882f4dd0e6993677702de"></a>
 typedef uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>DJI::OSDK::Telemetry::EnableFlag</b></td></tr>
 <tr class="separator:a3fa50918940882f4dd0e6993677702de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4b6b2708820f0bdc737d9aba2d0f2c0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac4b6b2708820f0bdc737d9aba2d0f2c0"></a>
-typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#ac4b6b2708820f0bdc737d9aba2d0f2c0">DJI::OSDK::Telemetry::M100Status</a></td></tr>
-<tr class="memdesc:ac4b6b2708820f0bdc737d9aba2d0f2c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return type for flight status data broadcast (only for M100). Returns VehicleStatus::M100FlightStatus. <br /></td></tr>
-<tr class="separator:ac4b6b2708820f0bdc737d9aba2d0f2c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a659b7c3396adf004d2f8498f0e6d2c91"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a659b7c3396adf004d2f8498f0e6d2c91"></a>
-typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a659b7c3396adf004d2f8498f0e6d2c91">DJI::OSDK::Telemetry::M100Battery</a></td></tr>
-<tr class="memdesc:a659b7c3396adf004d2f8498f0e6d2c91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return type for battery data broadcast (only for M100). Returns percentage. <br /></td></tr>
-<tr class="separator:a659b7c3396adf004d2f8498f0e6d2c91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa00950c1b7f8b610edc0fe964cf8e096"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa00950c1b7f8b610edc0fe964cf8e096"></a>
+typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#aa00950c1b7f8b610edc0fe964cf8e096">DJI::OSDK::Telemetry::LegacyStatus</a></td></tr>
+<tr class="memdesc:aa00950c1b7f8b610edc0fe964cf8e096"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return type for flight status data broadcast (only for M100). Returns VehicleStatus::M100FlightStatus. <br /></td></tr>
+<tr class="separator:aa00950c1b7f8b610edc0fe964cf8e096"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a565a6ffb61f37b49c700bfeaa14fdef5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a565a6ffb61f37b49c700bfeaa14fdef5"></a>
+typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a565a6ffb61f37b49c700bfeaa14fdef5">DJI::OSDK::Telemetry::LegacyBattery</a></td></tr>
+<tr class="memdesc:a565a6ffb61f37b49c700bfeaa14fdef5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return type for battery data broadcast (only for M100). Returns percentage. <br /></td></tr>
+<tr class="separator:a565a6ffb61f37b49c700bfeaa14fdef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42fccbe51c40a19a169b99c58211d70b"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1LegacyGPSInfo.html">DJI::OSDK::Telemetry::LegacyGPSInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a42fccbe51c40a19a169b99c58211d70b">DJI::OSDK::Telemetry::LegacyGPSInfo</a></td></tr>
+<tr class="memdesc:a42fccbe51c40a19a169b99c58211d70b"><td class="mdescLeft">&#160;</td><td class="mdescRight">struct for <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1GPSInfo.html" title="struct for GPSInfo of data broadcast ">GPSInfo</a> of data broadcast  <a href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a42fccbe51c40a19a169b99c58211d70b">More...</a><br /></td></tr>
+<tr class="separator:a42fccbe51c40a19a169b99c58211d70b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:a563d2333dc43253129a3915970f99cfa"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfa">DJI::OSDK::Telemetry::TopicName</a> { <br />
-&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaa1a333381ae5690e2750ec8997c5b7f49">DJI::OSDK::Telemetry::TOPIC_QUATERNION</a>, 
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaa9f80cb3628e4d2439b1cae362afbc1db">DJI::OSDK::Telemetry::TOPIC_QUATERNION</a>, 
 <br />
 &#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaa814554007c7776ed379350a6ffaa5171">DJI::OSDK::Telemetry::TOPIC_ACCELERATION_GROUND</a>, 
 <br />
@@ -372,7 +377,7 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaa99df11872b1818d274fb5d068abe07fd">DJI::OSDK::Telemetry::TOPIC_ACCELERATION_RAW</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaad70452fb4cc2d81c8edd3832b8ccdc19">DJI::OSDK::Telemetry::TOPIC_VELOCITY</a>, 
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaa6f42613ebd17222640a08e5fc6c75687">DJI::OSDK::Telemetry::TOPIC_VELOCITY</a>, 
 <br />
 &#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaaa5ec29e47ac74fcf6914a80e14fd3cdf">DJI::OSDK::Telemetry::TOPIC_ANGULAR_RATE_FUSIONED</a>, 
 <br />
@@ -386,7 +391,7 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaadb1aaceca520b5f7d3590bcb43d5a912">DJI::OSDK::Telemetry::TOPIC_HEIGHT_FUSION</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaa926a5966ea903ee80fe4f479c15bf8d2">DJI::OSDK::Telemetry::TOPIC_GPS_FUSED</a>, 
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaaf77cc8e9b81bc18b65a6e94226e263c0">DJI::OSDK::Telemetry::TOPIC_GPS_FUSED</a>, 
 <br />
 &#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaac0ab8cd2cc9114383d099514411c6d12">DJI::OSDK::Telemetry::TOPIC_GPS_DATE</a>, 
 <br />
@@ -412,7 +417,7 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaa7a7169a4ac7c7a7ddc59df78caa4d63c">DJI::OSDK::Telemetry::TOPIC_RC</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaa6fccb78faebd094b3257b1c61ec2b972">DJI::OSDK::Telemetry::TOPIC_GIMBAL_ANGLES</a>, 
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaa169a180eccdd3990803d1c4ccf51af5a">DJI::OSDK::Telemetry::TOPIC_GIMBAL_ANGLES</a>, 
 <br />
 &#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaa274f91bf61bf3b25702d0e9fe48e18ce">DJI::OSDK::Telemetry::TOPIC_GIMBAL_STATUS</a>, 
 <br />

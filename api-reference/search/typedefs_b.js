@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['quaternion',['Quaternion',['../namespaceDJI_1_1OSDK_1_1Telemetry.html#a8f94bf8e3675ca6f4083534aadf7127a',1,'DJI::OSDK::Telemetry']]]
+  ['openheader',['OpenHeader',['../namespaceDJI_1_1OSDK.html#a516293d5bd31dcc42f62375ca91b3971',1,'DJI::OSDK']]]
 ];
