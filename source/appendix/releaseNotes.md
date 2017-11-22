@@ -13,11 +13,12 @@ keywords: [SDK, Hardware Sync, New Features, Updates, release, notes, bugs, M100
 
 - Support for M210 and M210 RTK
 - Stereo vision data from M210 and M210 RTK
+- M600 backward compatibility to support firmware 1.0.1.20
+- ROS RTK support
 - Protocol layer refactor
 - Better abstraction layer for different computing platforms
 - Dynamic logging control
-- M600 backward compatibility to support firmware 1.0.1.20
-- ROS RTK support
+
 
 ## Support Firmware
 
@@ -34,7 +35,7 @@ keywords: [SDK, Hardware Sync, New Features, Updates, release, notes, bugs, M100
 - OpenProtocol encryption fix
 - Waypoint push data event handling
 - Set local position reference state fix
-g
+
 <hr>
 
 ## Previous Releases
