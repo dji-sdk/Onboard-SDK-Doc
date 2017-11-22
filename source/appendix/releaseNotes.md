@@ -11,16 +11,19 @@ keywords: [SDK, Hardware Sync, New Features, Updates, release, notes, bugs, M100
 
 ## Highlights
 
-- Support for M210 and M210 RTK
-- Stereo vision data from M210 and M210 RTK
-- M600 backward compatibility to support firmware 1.0.1.20
-- ROS RTK support
-- Protocol layer refactor
-- Better abstraction layer for different computing platforms
-- Dynamic logging control
+- **Support for M210 and M210 RTK:** 
+OSDK features are now supported for M210. Currently, hardware synchronization and Multi-function IO are not supported.
+- **Stereo vision data from M210 and M210 RTK:** Raw images and disparity map from stereo camera pairs of M210 are now available.
+- **M600 backward compatibility:** Supports M600 firmware 1.0.1.20.
+- **ROS RTK support:** RTK data via ROS topics.
+- **Protocol layer refactor:** Improved performance and better abstraction.
+- **Platform Manager:** Better abstraction layer for different computing platforms.
+- **Dynamic logging control:** Developers can now start or stop logging.
+- **Encryption flag:** Implemented getter/setter to modify encryption flag.
 
+## Supported Firmware
 
-## Support Firmware
+Please download the latest [DJI Assistant 2](https://www.dji.com/matrice-200-series/info#downloads) for M210/M210 RTK support.
 
 - A3/A3 Pro: 1.7.1.5
 - N3: 1.7.1.5
@@ -30,11 +33,11 @@ keywords: [SDK, Hardware Sync, New Features, Updates, release, notes, bugs, M100
 
 ## Bug Fixes
 
-- Multi-threaded segmentation fault fix
-- Qt sample failed to initialize serial port
-- OpenProtocol encryption fix
-- Waypoint push data event handling
-- Set local position reference state fix
+- **Multi-threaded segmentation fault fix:** Prevents access to unallocated memory in callback thread.
+- **Qt sample failed to initialize serial port:** Fixed QThreadManager with renamed pure virtual functions and added mutex to protect init function from being called in two threads.
+- **OpenProtocol activation fix:** Performs activation before using encryption.
+- **Waypoint push data event handling:** Waypoint PushData variable was not set properly.
+- **Local position reference state fix:** Returns state when setting local position.
 
 <hr>
 

@@ -44,7 +44,7 @@ through power cycles.
 
 ## Running mission without RTK reception
 
-Launching a mission via Onboard SDK without RTK reception requires extra
+Launching a mission on a M210 RTK via Onboard SDK without RTK reception requires extra
 steps. Mission will not start without RTK reception, 
 developers need to either get RTK reception or turn off RTK via DJI GO 4 App.
 To disable RTK, click on the satellite icon in the main page of DJI Go 4 App,
