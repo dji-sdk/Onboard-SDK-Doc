@@ -11,7 +11,7 @@ github: https://github.com/dji-sdk/Onboard-SDK/tree/3.1/sample/Linux/
 
 The C++ Linux example is meant to showcase recommended application-layer usage of the DJI Onboard API.
 
-This example eases a new developer into the world of programming for drones - the sample makes heavy use of the well-abstracted [osdk-wrapper](https://github.com/dji-sdk/Onboard-SDK/tree/3.2/osdk-wrapper) library. Packaged with the Linux sample is a pthread-based threading implementation as well as an efficient serial device driver that implements many checks (on x86 systems) to ensure reliable communication between your Onboard Embeddeed System (OES) and your drone.   
+This example eases a new developer into the world of programming for drones - the sample makes heavy use of the well-abstracted [osdk-wrapper](https://github.com/dji-sdk/Onboard-SDK/tree/3.2/osdk-wrapper) library. Packaged with the Linux sample is a pthread-based threading implementation as well as an efficient serial device driver that implements many checks (on x86 systems) to ensure reliable communication between your onboard computer and your drone.   
 
 Since OSDK 3.1.9, the Linux example app comes in two flavors - synchronous (Blocking) and asynchronous (Nonblocking).
 
@@ -44,7 +44,7 @@ The examples are extensible - if you want to build additional functionality, it 
 
 ##### 1. Hardware
 
-The [Hardware Setup](../../../development-workflow/hardware-setup.html) guide talks about setting up your OES of choice. Make sure your setup matches that in the document before proceeding further. 
+The [Hardware Setup](../../../development-workflow/hardware-setup.html) guide talks about setting up your onboard computer of choice. Make sure your setup matches that in the document before proceeding further. 
 
 ##### 2. Software  
 
@@ -95,7 +95,7 @@ For **3.2.0**:
 ---
 ## Activation
 
-The first time a drone/OES combination is used, it needs to be activated. Activation requires an App ID and a key got from the DJI website, and requires an internet connection and an RC connected to a mobile device running DJI GO. The image below shows the flow of information during activation:
+The first time a drone/onboard computer combination is used, it needs to be activated. Activation requires an App ID and a key got from the DJI website, and requires an internet connection and an RC connected to a mobile device running DJI GO. The image below shows the flow of information during activation:
 ![ActivationSetup](../../../images/common/activation_1.png)
 
 1. [Enable API control](../../../development-workflow/environment-setup.html#Enable-Flight-Controller-API-control) and [get an app ID and key](https://developer.dji.com/register/).

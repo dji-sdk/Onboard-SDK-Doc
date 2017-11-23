@@ -8,7 +8,7 @@ keywords: [qt]
 
 ## Introduction
 
-This example, which can run on both Windows and Linux Onboard Embedded Systems (OES), is aimed at helping you understand and operate the basic flight procedures and segments which include:
+This example, which can run on both Windows and Linux onboard computer, is aimed at helping you understand and operate the basic flight procedures and segments which include:
 
 * Activation
 * Obtain/Release Flight Control
@@ -35,7 +35,7 @@ Developers can operate flight with this example via the GUI interaction interfac
 
 ### 1. Hardware
 
-The [Hardware Setup](../../../development-workflow/hardware-setup.html) guide illustrates setting up your OES of choice. Make sure your setup matches that in the document before proceeding further. 
+The [Hardware Setup](../../../development-workflow/hardware-setup.html) guide illustrates setting up your onboard computer of choice. Make sure your setup matches that in the document before proceeding further. 
 
 ### 2. Software
 
@@ -57,7 +57,7 @@ To build a Linux app, the following tools are needed:
 * Qt Ver: QT 5.2.1 or later
 * Compiler Ver: gcc/g++ 4.8.1
 
-If using Manifold, you can follow these steps to install Qt from the command line. The setup should be similar for any other ubuntu-based OES.
+If using Manifold, you can follow these steps to install Qt from the command line. The setup should be similar for any other ubuntu-based onboard computer.
 
 ```
 sudo apt-get update
@@ -152,7 +152,7 @@ Figure 1 below shows the UI.
 
 Figure 1 Initialization and activation
 
-At this point, the communication between the N1 flight controller of M100 (or A3/N3 flight controller) and your OES (PC for this case) has been established.
+At this point, the communication between the N1 flight controller of M100 (or A3/N3 flight controller) and your onboard computer (PC for this case) has been established.
 
 ## Operation
 

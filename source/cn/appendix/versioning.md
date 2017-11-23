@@ -1,7 +1,7 @@
 ---
 title: Versioning Map
 date: 2017-08-30
-version: 3.3
+version: 3.3.1
 keywords: [OSDK version, SDK version, version, firmware]
 ---
 

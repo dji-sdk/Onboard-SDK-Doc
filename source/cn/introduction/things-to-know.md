@@ -8,7 +8,7 @@ This page outlines a few things you should know about Onboard SDK and drones in 
 
 ## Control Precedence
 
-In a typical Onboard SDK setup, the drone can be controlled by (1) Remote Controller (2) Mobile Device and (3) Onboard Embedded System (OES). The priority is set as (1) > (2) > (3). This is to prevent the dangerous situation of code failing and the user not being able to take control of the drone to shut it down. 
+In a typical Onboard SDK setup, the drone can be controlled by (1) Remote Controller (2) Mobile Device and (3) onboard computer. The priority is set as (1) > (2) > (3). This is to prevent the dangerous situation of code failing and the user not being able to take control of the drone to shut it down. 
 
 The **remote controller always enjoys top priority** for control. The flight controller can enter API Control Mode (Programmable Mode) if the following conditions are met:
 

@@ -16,7 +16,7 @@ Follow the steps [here](../development-workflow/environment-setup.html#onboard-s
 For this tutorial, you will need :
 
 1. A [compatible](../appendix/versioning.html) DJI vehicle/flight controller
-2. An Ubuntu 16.04 PC (virtual machine works as well) to act as your Onboard Embedded System (OES)
+2. An Ubuntu 16.04 PC (virtual machine works as well) to act as your onboard computer
 3. A Windows/Mac machine to run DJI Assistant 2, required for simulation.
 
 #### 1. Hardware Setup

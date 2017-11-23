@@ -1,6 +1,6 @@
 ---
 title: Onboard SDK Documentation Home
-date: 2017-10-10
+date: 2017-11-23
 version: 3.4
 keywords: [homepage, key features, hardware overview, registration, enable flight controller API control, safety]
 ---

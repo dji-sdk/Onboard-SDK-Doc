@@ -1,6 +1,6 @@
 ---
 title: Integrate The SDK Into Your Own Application
-date: 2017-10-10
+date: 2017-11-23
 version: 3.4
 keywords: [write apps, developemtn, SDK, integrate, DJI]
 ---
