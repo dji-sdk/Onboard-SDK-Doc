@@ -11,6 +11,7 @@ var searchData=
   ['velocity',['Velocity',['../structDJI_1_1OSDK_1_1Telemetry_1_1Velocity.html',1,'DJI::OSDK::Telemetry']]],
   ['velocity',['Velocity',['../namespaceDJI_1_1OSDK_1_1Telemetry.html#a14063ccfc0ed1034ac7db03b328b61b5',1,'DJI::OSDK::Telemetry']]],
   ['velocityandyawratectrl',['velocityAndYawRateCtrl',['../classDJI_1_1OSDK_1_1Control.html#a24c02f8db0ce0ae10a784c3c998e979f',1,'DJI::OSDK::Control']]],
+  ['velocityinfo',['VelocityInfo',['../structDJI_1_1OSDK_1_1Telemetry_1_1VelocityInfo.html',1,'DJI::OSDK::Telemetry']]],
   ['velocityinfo',['VelocityInfo',['../namespaceDJI_1_1OSDK_1_1Telemetry.html#a350417ea830a66048be40eb1382ece06',1,'DJI::OSDK::Telemetry']]],
   ['velocityned',['velocityNED',['../structDJI_1_1OSDK_1_1Telemetry_1_1GPSInfo.html#a7d2b3fc5198b2cc74958fa4e6f8b82a2',1,'DJI::OSDK::Telemetry::GPSInfo::velocityNED()'],['../structDJI_1_1OSDK_1_1Telemetry_1_1RTK.html#a523524d5cf3bb9658b512a9371c897de',1,'DJI::OSDK::Telemetry::RTK::velocityNED()'],['../structDJI_1_1OSDK_1_1Telemetry_1_1LegacyGPSInfo.html#a5d559102da8f35bb0110c88d5a1b86a0',1,'DJI::OSDK::Telemetry::LegacyGPSInfo::velocityNED()']]],
   ['verify',['verify',['../classDJI_1_1OSDK_1_1DataSubscription.html#a6a3cf7624e29d3a6ccb1b524d40c3b3f',1,'DJI::OSDK::DataSubscription::verify()'],['../classDJI_1_1OSDK_1_1DataSubscription.html#a5d05e8d87cb82b8a9f3cd12fe1d16e7d',1,'DJI::OSDK::DataSubscription::verify(int timeout)']]],

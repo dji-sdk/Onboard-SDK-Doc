@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['m100timestamp',['M100TimeStamp',['../structDJI_1_1OSDK_1_1Telemetry_1_1M100TimeStamp.html',1,'DJI::OSDK::Telemetry']]],
-  ['m100velocity',['M100Velocity',['../structDJI_1_1OSDK_1_1Telemetry_1_1M100Velocity.html',1,'DJI::OSDK::Telemetry']]],
   ['mag',['Mag',['../structDJI_1_1OSDK_1_1Telemetry_1_1Mag.html',1,'DJI::OSDK::Telemetry']]],
   ['mfio',['MFIO',['../classDJI_1_1OSDK_1_1MFIO.html',1,'DJI::OSDK']]],
   ['mfioack',['MFIOACK',['../classDJI_1_1OSDK_1_1ErrorCode_1_1MFIOACK.html',1,'DJI::OSDK::ErrorCode']]],
