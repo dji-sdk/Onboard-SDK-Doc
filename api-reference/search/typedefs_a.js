@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['positiondata',['PositionData',['../namespaceDJI_1_1OSDK_1_1Telemetry.html#a46f49eee9621f8df6d283591aec4a324',1,'DJI::OSDK::Telemetry']]],
-  ['positionframe',['PositionFrame',['../namespaceDJI_1_1OSDK_1_1Telemetry.html#aae196d22f89bf0a7657c97b33cd63494',1,'DJI::OSDK::Telemetry']]],
-  ['positiontimestamp',['PositionTimeStamp',['../namespaceDJI_1_1OSDK_1_1Telemetry.html#af021f9dd32b2a4f738b77b0732163788',1,'DJI::OSDK::Telemetry']]]
+  ['mag',['Mag',['../namespaceDJI_1_1OSDK_1_1Telemetry.html#acca53ea861f162aadc2753ff4c44eb70',1,'DJI::OSDK::Telemetry']]],
+  ['mfioget',['MFIOGet',['../classDJI_1_1OSDK_1_1ACK.html#aee5bc1ad935e8a8b6f15a81e99c49934',1,'DJI::OSDK::ACK']]]
 ];

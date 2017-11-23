@@ -3,6 +3,7 @@ var searchData=
   ['calibrating',['calibrating',['../structDJI_1_1OSDK_1_1Telemetry_1_1GimbalStatus.html#a928c8e22e8d275739bb401158cca9508',1,'DJI::OSDK::Telemetry::GimbalStatus']]],
   ['callbackpoll',['callbackPoll',['../classDJI_1_1OSDK_1_1Vehicle.html#aecffab87d973216e8076bb891e32f0ad',1,'DJI::OSDK::Vehicle']]],
   ['camera',['Camera',['../classDJI_1_1OSDK_1_1Camera.html',1,'DJI::OSDK']]],
+  ['camera_5fpair_5fnum',['CAMERA_PAIR_NUM',['../namespaceDJI_1_1OSDK.html#a488c95017187e5a76f8cf0fc53e1fc54',1,'DJI::OSDK']]],
   ['channel_5ferror',['CHANNEL_ERROR',['../structDJI_1_1OSDK_1_1ErrorCode_1_1MFIOACK_1_1set.html#a2c4dd27d79300a3fa03827049957704b',1,'DJI::OSDK::ErrorCode::MFIOACK::set']]],
   ['checkbaudrate',['checkBaudRate',['../classDJI_1_1OSDK_1_1LinuxSerialDevice.html#ae8024ecb6b46e647446cdb68de98bc29',1,'DJI::OSDK::LinuxSerialDevice']]],
   ['clockwise',['clockwise',['../structDJI_1_1OSDK_1_1HotPointSettings.html#aac4845a986802ae3df36849cd29e4ffc',1,'DJI::OSDK::HotPointSettings']]],
@@ -25,5 +26,5 @@ var searchData=
   ['ctrl_5fmode_5fmode_5fnot_5fsupported',['CTRL_MODE_MODE_NOT_SUPPORTED',['../namespaceDJI_1_1OSDK_1_1VehicleStatus_1_1CtlrMode.html#a6681a2e13cdc55848b9ceebdb3174287ae8abd8ea48c003cbb50a6434f3cc6984',1,'DJI::OSDK::VehicleStatus::CtlrMode']]],
   ['ctrldata',['CtrlData',['../classDJI_1_1OSDK_1_1Control.html#aeb69d4f51d26373e7fe907ae5e948744',1,'DJI::OSDK::Control::CtrlData()'],['../structDJI_1_1OSDK_1_1Control_1_1CtrlData.html#aff12437ea62b8565aa42068e5257b3e0',1,'DJI::OSDK::Control::CtrlData::CtrlData()']]],
   ['ctrldata',['CtrlData',['../structDJI_1_1OSDK_1_1Control_1_1CtrlData.html',1,'DJI::OSDK::Control']]],
-  ['current_5fstatus',['current_status',['../structDJI_1_1OSDK_1_1ACK_1_1WayPointReachedData.html#a7da82d816e7886df063f0ee10bf8724a',1,'DJI::OSDK::ACK::WayPointReachedData']]]
+  ['current_5fstatus',['current_status',['../structDJI_1_1OSDK_1_1ACK_1_1WayPointReachedData.html#a7da82d816e7886df063f0ee10bf8724a',1,'DJI::OSDK::ACK::WayPointReachedData::current_status()'],['../structDJI_1_1OSDK_1_1ACK_1_1WayPointStatusPushData.html#af9fd5bd6972d0f3086cae3751f010363',1,'DJI::OSDK::ACK::WayPointStatusPushData::current_status()']]]
 ];

@@ -18,6 +18,8 @@ var searchData=
   ['dji_5fhardware_5fsync_2ehpp',['dji_hardware_sync.hpp',['../dji__hardware__sync_8hpp.html',1,'']]],
   ['dji_5fhotpoint_2ecpp',['dji_hotpoint.cpp',['../dji__hotpoint_8cpp.html',1,'']]],
   ['dji_5fhotpoint_2ehpp',['dji_hotpoint.hpp',['../dji__hotpoint_8hpp.html',1,'']]],
+  ['dji_5flog_2ecpp',['dji_log.cpp',['../dji__log_8cpp.html',1,'']]],
+  ['dji_5flog_2ehpp',['dji_log.hpp',['../dji__log_8hpp.html',1,'']]],
   ['dji_5fmfio_2ecpp',['dji_mfio.cpp',['../dji__mfio_8cpp.html',1,'']]],
   ['dji_5fmfio_2ehpp',['dji_mfio.hpp',['../dji__mfio_8hpp.html',1,'']]],
   ['dji_5fmission_5fbase_2ehpp',['dji_mission_base.hpp',['../dji__mission__base_8hpp.html',1,'']]],

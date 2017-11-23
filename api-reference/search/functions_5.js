@@ -23,6 +23,7 @@ var searchData=
   ['getrelativeposition',['getRelativePosition',['../classDJI_1_1OSDK_1_1DataBroadcast.html#af9099c1e041f4b1bdd2d3c71942b25ef',1,'DJI::OSDK::DataBroadcast']]],
   ['getrtkinfo',['getRTKInfo',['../classDJI_1_1OSDK_1_1DataBroadcast.html#a1c275755b2fd13ceba3efacaf96a98dd',1,'DJI::OSDK::DataBroadcast']]],
   ['getsdkinfo',['getSDKInfo',['../classDJI_1_1OSDK_1_1DataBroadcast.html#aa98201736ae3b805a3500e37f722708c',1,'DJI::OSDK::DataBroadcast']]],
+  ['getserialreadthread',['getSerialReadThread',['../classDJI_1_1OSDK_1_1Vehicle.html#a8a2e8ed594f70a0042cea5c7580f3281',1,'DJI::OSDK::Vehicle']]],
   ['getstatus',['getStatus',['../classDJI_1_1OSDK_1_1DataBroadcast.html#aa183fef7e062139a32d361b3788d3c7f',1,'DJI::OSDK::DataBroadcast']]],
   ['getsyncstamp',['getSyncStamp',['../classDJI_1_1OSDK_1_1DataBroadcast.html#a94b93ab45c67eadedabb05d7881c376a',1,'DJI::OSDK::DataBroadcast']]],
   ['gettimestamp',['getTimeStamp',['../classDJI_1_1OSDK_1_1DataBroadcast.html#a2a26959d494caae72a0f56a8155078c7',1,'DJI::OSDK::DataBroadcast::getTimeStamp()'],['../classDJI_1_1OSDK_1_1LinuxSerialDevice.html#a0acb5e77c1f9dd0ab64dab66c4b1e43f',1,'DJI::OSDK::LinuxSerialDevice::getTimeStamp()']]],

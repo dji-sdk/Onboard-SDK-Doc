@@ -186,8 +186,12 @@ Typedefs</h2></td></tr>
 <tr class="memdesc:a916c7d68f44d00fb6b01c55385ed927a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waypoint settings for individual waypoints being added to the mission.  <a href="namespaceDJI_1_1OSDK.html#a916c7d68f44d00fb6b01c55385ed927a">More...</a><br /></td></tr>
 <tr class="separator:a916c7d68f44d00fb6b01c55385ed927a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c32350744acc4a420232c709e6794c3"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="namespaceDJI_1_1OSDK.html#af3a7a0d8bedc58f01394be842a67f825">DJI::OSDK::WayPointIncidentType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#a9c32350744acc4a420232c709e6794c3">DJI::OSDK::WayPointIncidentType</a></td></tr>
-<tr class="memdesc:a9c32350744acc4a420232c709e6794c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">WayPoint Push Data Incident Type enumerator.  <a href="namespaceDJI_1_1OSDK.html#a9c32350744acc4a420232c709e6794c3">More...</a><br /></td></tr>
+<tr class="memdesc:a9c32350744acc4a420232c709e6794c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">WayPoint Reached Data Incident Type enumerator.  <a href="namespaceDJI_1_1OSDK.html#a9c32350744acc4a420232c709e6794c3">More...</a><br /></td></tr>
 <tr class="separator:a9c32350744acc4a420232c709e6794c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ce8b6aa863e090fb7c4b79720ef3508"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9ce8b6aa863e090fb7c4b79720ef3508"></a>
+typedef enum <a class="el" href="namespaceDJI_1_1OSDK.html#a1f8f5930646e3b3fb40892c689b68730">DJI::OSDK::WayPointPushDataIncidentType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#a9ce8b6aa863e090fb7c4b79720ef3508">DJI::OSDK::WayPointPushDataIncidentType</a></td></tr>
+<tr class="memdesc:a9ce8b6aa863e090fb7c4b79720ef3508"><td class="mdescLeft">&#160;</td><td class="mdescRight">WayPoint Push Data Incident Type enumerator. <br /></td></tr>
+<tr class="separator:a9ce8b6aa863e090fb7c4b79720ef3508"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adde3d427e6840acde772d2f41986cad6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adde3d427e6840acde772d2f41986cad6"></a>
 typedef struct <a class="el" href="structDJI_1_1OSDK_1_1WayPointFinishData.html">DJI::OSDK::WayPointFinishData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#adde3d427e6840acde772d2f41986cad6">DJI::OSDK::WayPointFinishData</a></td></tr>
 <tr class="memdesc:adde3d427e6840acde772d2f41986cad6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waypoint Mission Finish Event Push Data. <br /></td></tr>
@@ -202,9 +206,23 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<b>NAVI_MISSION_WP_REACH_POINT</b>
 <br />
- }<tr class="memdesc:af3a7a0d8bedc58f01394be842a67f825"><td class="mdescLeft">&#160;</td><td class="mdescRight">WayPoint Push Data Incident Type enumerator.  <a href="namespaceDJI_1_1OSDK.html#af3a7a0d8bedc58f01394be842a67f825">More...</a><br /></td></tr>
+ }<tr class="memdesc:af3a7a0d8bedc58f01394be842a67f825"><td class="mdescLeft">&#160;</td><td class="mdescRight">WayPoint Reached Data Incident Type enumerator.  <a href="namespaceDJI_1_1OSDK.html#af3a7a0d8bedc58f01394be842a67f825">More...</a><br /></td></tr>
 </td></tr>
 <tr class="separator:af3a7a0d8bedc58f01394be842a67f825"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f8f5930646e3b3fb40892c689b68730"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1f8f5930646e3b3fb40892c689b68730"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#a1f8f5930646e3b3fb40892c689b68730">DJI::OSDK::WayPointPushDataIncidentType</a> { <br />
+&#160;&#160;<b>NAVI_MODE_ATTI</b>, 
+<br />
+&#160;&#160;<b>NAVI_MISSION_WAYPOINT</b>, 
+<br />
+&#160;&#160;<b>NAVI_MISSION_HOTPOINT</b>, 
+<br />
+&#160;&#160;<b>NAVI_MISSION_FOLLOWME</b>, 
+<br />
+&#160;&#160;<b>NAVI_MISSION_IOC</b>
+<br />
+ }<tr class="memdesc:a1f8f5930646e3b3fb40892c689b68730"><td class="mdescLeft">&#160;</td><td class="mdescRight">WayPoint Push Data Incident Type enumerator. <br /></td></tr>
+</td></tr>
+<tr class="separator:a1f8f5930646e3b3fb40892c689b68730"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Mission related data struct for <a class="el" href="namespaceDJI.html">DJI</a> OSDK library. </p>

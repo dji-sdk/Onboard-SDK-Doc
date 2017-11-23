@@ -10,12 +10,12 @@ var searchData=
   ['topic_5fbattery_5finfo',['TOPIC_BATTERY_INFO',['../namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaa4070ae9a844631e26464188250389d55',1,'DJI::OSDK::Telemetry']]],
   ['topic_5fcompass',['TOPIC_COMPASS',['../namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaa864ce2d677a42d20413bc086f2857d4b',1,'DJI::OSDK::Telemetry']]],
   ['topic_5fcontrol_5fdevice',['TOPIC_CONTROL_DEVICE',['../namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaabbc031091fa68241c499e7eca018e4c9',1,'DJI::OSDK::Telemetry']]],
-  ['topic_5fgimbal_5fangles',['TOPIC_GIMBAL_ANGLES',['../namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaa6fccb78faebd094b3257b1c61ec2b972',1,'DJI::OSDK::Telemetry']]],
+  ['topic_5fgimbal_5fangles',['TOPIC_GIMBAL_ANGLES',['../namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaa169a180eccdd3990803d1c4ccf51af5a',1,'DJI::OSDK::Telemetry']]],
   ['topic_5fgimbal_5fstatus',['TOPIC_GIMBAL_STATUS',['../namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaa274f91bf61bf3b25702d0e9fe48e18ce',1,'DJI::OSDK::Telemetry']]],
   ['topic_5fgps_5fcontrol_5flevel',['TOPIC_GPS_CONTROL_LEVEL',['../namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaaa73d88af1c654946585bc9db32539cfb',1,'DJI::OSDK::Telemetry']]],
   ['topic_5fgps_5fdate',['TOPIC_GPS_DATE',['../namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaac0ab8cd2cc9114383d099514411c6d12',1,'DJI::OSDK::Telemetry']]],
   ['topic_5fgps_5fdetails',['TOPIC_GPS_DETAILS',['../namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaab8be6d1a971658616b1f5b627f8cfeda',1,'DJI::OSDK::Telemetry']]],
-  ['topic_5fgps_5ffused',['TOPIC_GPS_FUSED',['../namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaa926a5966ea903ee80fe4f479c15bf8d2',1,'DJI::OSDK::Telemetry']]],
+  ['topic_5fgps_5ffused',['TOPIC_GPS_FUSED',['../namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaaf77cc8e9b81bc18b65a6e94226e263c0',1,'DJI::OSDK::Telemetry']]],
   ['topic_5fgps_5fposition',['TOPIC_GPS_POSITION',['../namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaacd2584480d7ea2f79fd6cd7314296efa',1,'DJI::OSDK::Telemetry']]],
   ['topic_5fgps_5fsignal_5flevel',['TOPIC_GPS_SIGNAL_LEVEL',['../namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaa1b0f298e4e2378683c1b0f4f406288eb',1,'DJI::OSDK::Telemetry']]],
   ['topic_5fgps_5ftime',['TOPIC_GPS_TIME',['../namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaa8548b3f5c078df707c67f2474ae33dc4',1,'DJI::OSDK::Telemetry']]],
@@ -23,7 +23,7 @@ var searchData=
   ['topic_5fhard_5fsync',['TOPIC_HARD_SYNC',['../namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaa9c598051e527734dc05d0c22ad0bab67',1,'DJI::OSDK::Telemetry']]],
   ['topic_5fheight_5ffusion',['TOPIC_HEIGHT_FUSION',['../namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaadb1aaceca520b5f7d3590bcb43d5a912',1,'DJI::OSDK::Telemetry']]],
   ['topic_5fheight_5fhomepoint',['TOPIC_HEIGHT_HOMEPOINT',['../namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaabb7337e1df4e48580a3995e8b1663d41',1,'DJI::OSDK::Telemetry']]],
-  ['topic_5fquaternion',['TOPIC_QUATERNION',['../namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaa1a333381ae5690e2750ec8997c5b7f49',1,'DJI::OSDK::Telemetry']]],
+  ['topic_5fquaternion',['TOPIC_QUATERNION',['../namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaa9f80cb3628e4d2439b1cae362afbc1db',1,'DJI::OSDK::Telemetry']]],
   ['topic_5frc',['TOPIC_RC',['../namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaa7a7169a4ac7c7a7ddc59df78caa4d63c',1,'DJI::OSDK::Telemetry']]],
   ['topic_5frtk_5fposition',['TOPIC_RTK_POSITION',['../namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaac69f71da38b6360a0a7e7d8980ded9f0',1,'DJI::OSDK::Telemetry']]],
   ['topic_5frtk_5fposition_5finfo',['TOPIC_RTK_POSITION_INFO',['../namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaafea45f2eeb04ab686b04e69dd72b6527',1,'DJI::OSDK::Telemetry']]],
@@ -34,5 +34,5 @@ var searchData=
   ['topic_5fstatus_5fflight',['TOPIC_STATUS_FLIGHT',['../namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaa3d059115c39fe3f9cadd7d2feada21f5',1,'DJI::OSDK::Telemetry']]],
   ['topic_5fstatus_5flandinggear',['TOPIC_STATUS_LANDINGGEAR',['../namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaa3006b5da7953827ee11f875d8a1f1555',1,'DJI::OSDK::Telemetry']]],
   ['topic_5fstatus_5fmotor_5fstart_5ferror',['TOPIC_STATUS_MOTOR_START_ERROR',['../namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaaeb3fd8bfa333024495855f0a8153a9df',1,'DJI::OSDK::Telemetry']]],
-  ['topic_5fvelocity',['TOPIC_VELOCITY',['../namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaad70452fb4cc2d81c8edd3832b8ccdc19',1,'DJI::OSDK::Telemetry']]]
+  ['topic_5fvelocity',['TOPIC_VELOCITY',['../namespaceDJI_1_1OSDK_1_1Telemetry.html#a563d2333dc43253129a3915970f99cfaa6f42613ebd17222640a08e5fc6c75687',1,'DJI::OSDK::Telemetry']]]
 ];
