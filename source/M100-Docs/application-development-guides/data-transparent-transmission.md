@@ -87,15 +87,14 @@ For more details, please check **DJIFlightController.h** file in the iOS SDK.
 Please implement the `sendDataToOnboardSDKDevice` method of DJIFlightController as shown below:
 
 ~~~java
-DJIAircraft mAircraft = (DJIAircraft)DJISDKManager.getInstance().getDJIProduct();
-DJIFlightController mFlightController = mAircraft.getFlightController();
+Aircraft mAircraft = (Aircraft)DJISDKManager.getInstance().getProduct();
+FlightController mFlightController = mAircraft.getFlightController();
+mFlightController.sendDataToOnboardSDKDevice(data, new CommonCallbacks.CompletionCallback() {
+    @Override
+    public void onResult(DJIError error) {
 
-mFlightController.sendDataToOnboardSDKDevice(data,
-                new DJICompletionCallback() {
-                    @Override
-                    public void onResult(DJIError pError) {
-                    }
-                });
+    }
+});
 ~~~
 
 For more details, please check the **FlightController** class in the Android SDK.
