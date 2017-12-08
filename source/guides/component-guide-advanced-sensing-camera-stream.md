@@ -14,16 +14,14 @@ The camera stream data is transmitted through the USB connection between the M21
 
 The Advanced Sensing library provides a set of simple APIs for developers to start, stop the camera streams, and check availability and obtain a copy of the latest image frame, for both the FPV camera and the main camera, listed as follows
 ```
-  bool startFPVCameraStream(DECODECALLBACK cb = NULL, void * cbParam = NULL);
-  bool startMainCameraStream(DECODECALLBACK cb = NULL, void * cbParam = NULL);
-
-  void stopFPVCameraStream();
-  void stopMainCameraStream();
-
+  bool startFPVCameraStream(CameraImageCallback cb = NULL, void * cbParam = NULL);
+  void stopFPVCameraStream(); 
   bool newFPVCameraImageIsReady();
-  bool newMainCameraImageReady();
-
   bool getFPVCameraImage(CameraRGBImage& copyOfImage);
+
+  bool startMainCameraStream(CameraImageCallback cb = NULL, void * cbParam = NULL);
+  void stopMainCameraStream();
+  bool newMainCameraImageReady();
   bool getMainCameraImage(CameraRGBImage& copyOfImage);
 ```
 Through the above APIs, developers have 2 ways to access the images
@@ -36,7 +34,7 @@ For details of the APIs, please refer to the API Ref and the samples.
 
 Different cameras can be mounted on the gimbal of the M210. The Onboard SDK can get main camera stream from the Zenmuse X4S and Zenmuse X5S.
 
-The images from the FPV camera stream are 608x448. The images from the main camera stream is 1280x720 when the live stream is set to video mode in DJI Go App, or 960x720 when in camera mode. The resolution of  the main camera stream is the same regardless which camera is mounted to the gimbal.
+The images from the FPV camera stream are 608x448. The images from the main camera stream is 1280x720 when the live stream is set to video mode in DJI Go App, or 960x720 when in camera mode. The resolution of  the main camera stream is the same regardless what camera is mounted to the gimbal.
 
 The frame rates for both FPV camera stream and the main camera stream are 30 FPS.
 
