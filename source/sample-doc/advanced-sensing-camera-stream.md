@@ -43,4 +43,3 @@ In this sample, accessing the camera images takes only two steps (taking FPV cam
 2. Before quitting the program, call `vehicle->advancedSensing->stopFPVCameraStream()` to disconnect from the camera and stop the camera reading thread and the callback thread.
 
 Note that in this sample, you can either view the FPV camera image or the main camera image, but not both simultaneously. This is because the callback functions for FPV camera and main camera are running in their independent callback threads, and OpenCV's imshow cannot run in different threads. If in your programs, the callback functions do some other type of processing or use other multi-thread friendly library to view the image, then you can start both cameras with different callback functions.
-
