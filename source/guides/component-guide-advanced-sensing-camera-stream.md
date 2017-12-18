@@ -1,6 +1,7 @@
 ---
 title: Advanced Sensing - Camera Video Stream
-date: 2017-12-06
+date: 2017-12-19
+version: 3.5
 keywords: [main camera, fpv camera, RGB, FFmpeg]
 ---
 
@@ -34,13 +35,13 @@ For details of the APIs, please refer to the API Ref and the samples.
 
 Different cameras can be mounted on the gimbal of the M210. The Onboard SDK can get main camera stream from the Zenmuse X4S and Zenmuse X5S.
 
-The images from the FPV camera stream are 608x448. The images from the main camera stream is 1280x720 when the live stream is set to video mode in DJI Go App, or 960x720 when in camera mode. The resolution of  the main camera stream is the same regardless what camera is mounted to the gimbal.
-
-The frame rates for both FPV camera stream and the main camera stream are 30 FPS.
+The resolution of images from the FPV camera stream is 608x448. The resolution of images from the main camera stream can be 1920x1080 (Video Mode, 1080p), 1440x1080 (Camera Mode, 1080p), 1280x720 (Video Mode, 720p), or 960x720 (Camera Mode, 720p), which can be set in DJI Go. The frame rates for both FPV camera stream and the main camera stream are 30 FPS.
 
 ## Limitations
 Under the hood, the data transmitted from the M210 to the onboard computer is compressed video stream at 30 fps. The onboard SDK uses FFmpeg to decode the video stream and outputs each decoded image frame. As a result, 
 1. It takes a little time, around 1 second, for the decoder to decode the first frame. Developers will see some error messages spit out by FFmpeg.
 2. There is a small delay in the image frames due to the encoding/transmission/decoding procedure.
-3. Depending on the computing power and the image processing running, drop of frame may happen.
+3. Depending on the computing power and the image processing running, drop of frame may happen. We use [Intel NUC](https://www.intel.com/content/www/us/en/products/boards-kits/nuc.html) and nVidia TX2 as our test and development platform.
+4. The APIs depends on FFmpeg. Currently they have only been tested on Ubuntu 16.04, since FFmpeg is not officially included in Ubuntu 14.04 software repositories. So Manifold is not supported by this release.
+5. The APIs depends on RNDIS drivers on Linux, the kernel drivers used for Android tethering. If you linux recognize a new network adapter when you connect to the M210, you are good to go.
 
