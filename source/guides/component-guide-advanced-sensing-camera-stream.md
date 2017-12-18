@@ -29,7 +29,7 @@ Through the above APIs, developers have 2 ways to access the images
 1. If developers provide a callback function for a camera stream, then that function will be called automatically in an independent thread when a new frame is available. 
 2. Otherwise, developers can obtain a copy of the image by polling in the main thread.
 
-For details of the APIs, please refer to the API Ref and the samples. 
+For details of the APIs, please refer to the API Ref and the [samples](../sample-doc/advanced-sensing-target-tracking.html). 
 
 ## Supported cameras, Resolution and Frame Rates
 
@@ -42,6 +42,6 @@ Under the hood, the data transmitted from the M210 to the onboard computer is co
 1. It takes a little time, around 1 second, for the decoder to decode the first frame. Developers will see some error messages spit out by FFmpeg.
 2. There is a small delay in the image frames due to the encoding/transmission/decoding procedure.
 3. Depending on the computing power and the image processing running, drop of frame may happen. We use [Intel NUC](https://www.intel.com/content/www/us/en/products/boards-kits/nuc.html) and nVidia TX2 as our test and development platform.
-4. The APIs depends on FFmpeg. Currently they have only been tested on Ubuntu 16.04, since FFmpeg is not officially included in Ubuntu 14.04 software repositories. So Manifold is not supported by this release.
-5. The APIs depends on RNDIS drivers on Linux, the kernel drivers used for Android tethering. If you linux recognize a new network adapter when you connect to the M210, you are good to go.
+4. The APIs depends on FFmpeg. Currently they have only been tested on Ubuntu 16.04, since FFmpeg is not officially included in Ubuntu 14.04 software repositories. So Manifold is not supported by this release unless you build FFmpeg from source.
+5. The APIs depends on [Ethernet over USB](https://en.wikipedia.org/wiki/Ethernet_over_USB) (specifically, the [RNDIS](https://en.wikipedia.org/wiki/RNDIS)) drivers on Linux, the kernel drivers used for tasks like Android tethering. If your Linux recognizes a new network adapter when you connect to the M210, you are good to go.
 
