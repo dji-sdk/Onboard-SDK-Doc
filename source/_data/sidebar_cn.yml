@@ -48,9 +48,8 @@
       title: Multi-Function IO
       path: /cn/guides/component-guide-multi-function-io.html
     -
-      title: Qt Sample
-      path: /cn/sample-doc/qt-sample.html
-
+      title: Advanced Sensing - Stereo Camera
+      path: /cn/guides/component-guide-advanced-sensing-stereo-camera.html
 -
   title: DEVELOPMENT WORKFLOW
   list:
@@ -94,13 +93,21 @@
     -
       title: Multi-Function IO
       path: /cn/sample-doc/mfio.html
-
+    -
+      title: Qt Sample
+      path: /cn/sample-doc/qt-sample.html
+    -
+      title: Advanced Sensing - Stereo Images
+      path: /cn/sample-doc/advanced-sensing-stereo-images.html
 -
   title: APPENDIX
   list:
     -
       title: M100 Protocol Documents
       path: /cn/Protocol-Documents/main.html
+    -
+      title: M210 Checklist
+      path: /cn/M210-Docs/main.html
     -
       title: FAQ
       path: /cn/appendix/FAQ.html

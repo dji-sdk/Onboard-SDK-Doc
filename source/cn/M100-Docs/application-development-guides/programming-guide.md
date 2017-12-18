@@ -33,7 +33,7 @@ This is the part of the system where functionality for controlling the drone is 
 
 ## Programming Paradigms
 
-The core of the Onboard API is a command (CMD)-acknowledgement(ACK) communication for executing actions; the OES sends CMD packets to the Flight Controller containing information about the action it is requesting. The flight controller, in return, replies with an ACK packet confirming or rejecting the CMD. SDK-side code must therefore implement some mechanism of relaying this ACK information back to the user or the CMD-sending function, so that the caller can take further action based on ths ACK response. 
+The core of the Onboard API is a command (CMD)-acknowledgement(ACK) communication for executing actions; the onboard computer sends CMD packets to the Flight Controller containing information about the action it is requesting. The flight controller, in return, replies with an ACK packet confirming or rejecting the CMD. SDK-side code must therefore implement some mechanism of relaying this ACK information back to the user or the CMD-sending function, so that the caller can take further action based on ths ACK response. 
 
 The Onboard SDK supports two ways of doing this, described below. 
 

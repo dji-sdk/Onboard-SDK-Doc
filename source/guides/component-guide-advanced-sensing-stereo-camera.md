@@ -1,6 +1,6 @@
 ---
 title: Advanced Sensing - Stereo Camera
-date: 2017-10-10
+date: 2017-11-23
 keywords: [stereo, disparity map, monotone, VGA, QVGA, USB]
 ---
 

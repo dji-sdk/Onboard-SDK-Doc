@@ -8,7 +8,7 @@ keywords: [ros example]
 
 ## Introduction
 
-This ROS example implements functionality of the DJI Onboard-SDK. It consists of the core library and client packages demonstrating communication with Matrice 100 and A3/N3 flight controllers. The flight controller type can be defined in the launch file of the core package at any time. Onboard SDK functionality offered in a wrapped header file called dji\_drone.h which user can include and use directly for his/her own demo applications. We also provide a python version called dji\_drone.py. To have our samples run as quickly as possible, we implemented a sample code for hardware driver that you can use as is to ensure safe serial communication between your flight controller and an Onboard Embedded System (OES) of your choice.
+This ROS example implements functionality of the DJI Onboard-SDK. It consists of the core library and client packages demonstrating communication with Matrice 100 and A3/N3 flight controllers. The flight controller type can be defined in the launch file of the core package at any time. Onboard SDK functionality offered in a wrapped header file called dji\_drone.h which user can include and use directly for his/her own demo applications. We also provide a python version called dji\_drone.py. To have our samples run as quickly as possible, we implemented a sample code for hardware driver that you can use as is to ensure safe serial communication between your flight controller and an onboard computer of your choice.
 
 
 Supported commands and  actions:

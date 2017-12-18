@@ -1,7 +1,7 @@
 ---
 title: Software Environment Setup Guide
-date: 2017-06-01
-version: 3.3
+date: 2017-11-23
+version: 3.4
 keywords: [hardware setup，M100 UART Connector, A3 UART Connector, N3 UART]
 ---
 
@@ -17,7 +17,7 @@ This guide details the software environment needed to work with the Onboard SDK.
 
 #### Update Firmware
 
-- Connect your computer to the Micro-USB port on the M100/600 or A3/N3. For the M210 (support coming soon!), use the USB-A to USB-A cable provided with the aircraft.
+- Connect your computer to the Micro-USB port on the M100/600 or A3/N3. For the M210, use the USB-A to USB-A cable provided with the aircraft.
 - Update your aircraft/flight controller with the latest released firmware. Please visit the [Compatibility Matrix](../appendix/versioning.html) to find out which SDK version your firmware supports.
 
 #### Enable OSDK API
@@ -49,6 +49,7 @@ To build standalone Linux applications based on the OSDK, you need:
 * A bash shell
 * CMake >= 2.8
 * A modern Linux distribution
+* (Optional) Libusb library for [Advanced Sensing](../sample-doc/advanced-sensing-stereo-images.html) feature on M210
 
 ##### Permissions
 
@@ -56,6 +57,12 @@ You need to add your user to the `dialout` group to obtain read/write permission
 
 1. Type `sudo usermod -a -G dialout $USER` in a terminal
 2. Log out of your user account and log in again for the permissions to take effect.
+
+For M210 users interested in the [Advanced Sensing](../sample-doc/advanced-sensing-stereo-images.html) feature, you will need to add an udev file to allow your system to obtain permission and to identify DJI USB port. 
+
+1. Create a udev file called `DJIDevice.rules` inside `/etc/udev/rules.d/`
+2. Add `SUBSYSTEM=="usb", ATTRS{idVendor}=="2ca3", MODE="0666"` to this file
+3. Reboot your computer
 
 To make sure your Linux environment is ready to run OSDK applications, follow the [Linux Platform Guide](../sample-doc/sample-setup.html#linux-oes) on the Sample Setup page and run a sample app.
 
@@ -103,6 +110,12 @@ You need to add your user to the `dialout` group to obtain read/write permission
 
 1. Type `sudo usermod -a -G dialout $USER` in a terminal
 2. Log out of your user account and log in again for the permissions to take effect.
+
+For M210 users interested in the [Advanced Sensing](../sample-doc/advanced-sensing-stereo-images.html) feature, you need to add an udev file to allow your system to obtain permission and identify DJI USB port. 
+
+1. Create a udev file called `DJIDevice.rules` inside `/etc/udev/rules.d/`
+2. Add `SUBSYSTEM=="usb", ATTRS{idVendor}=="2ca3", MODE="0666"` to this file
+3. Reboot your computer
 
 To make sure your ROS environment is ready to run OSDK applications, follow the [ROS Platform Guide](../sample-doc/sample-setup.html#ros-oes) on the Sample Setup page and run a sample app.
 

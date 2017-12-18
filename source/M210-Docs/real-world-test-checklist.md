@@ -1,6 +1,6 @@
 ---
 title: M210 Real-world Tests Checklist
-date: 2017-10-10
+date: 2017-11-23
 keywords: [M210, linux, ros, onboard computer, OES, USB, libusb, udev, configuration]
 ---
 
