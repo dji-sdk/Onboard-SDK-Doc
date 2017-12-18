@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_7emfio',['~MFIO',['../classDJI_1_1OSDK_1_1MFIO.html#a59aa0a5baa8c0a4e33658461a107b28f',1,'DJI::OSDK::MFIO']]]
+  ['waitforack',['waitForACK',['../classDJI_1_1OSDK_1_1Vehicle.html#a529c358d1e3df914f1b638dbad68c5b9',1,'DJI::OSDK::Vehicle']]]
 ];

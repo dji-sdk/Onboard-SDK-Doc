@@ -11,10 +11,10 @@
 <polygon fill="white" stroke="none" points="-4,4 -4,-35 114,-35 114,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node"><title>Node1</title>
-<g id="a_node1"><a xlink:href="structDJI_1_1OSDK_1_1Gimbal_1_1SpeedData.html" target="_top" xlink:title="The Speed Data struct for gimbal control. ">
+<g id="a_node1"><a xlink:href="structDJI_1_1OSDK_1_1Gimbal_1_1AngleData.html" target="_top" xlink:title="The Angle Data struct for gimbal control. ">
 <polygon fill="white" stroke="black" points="0,-0.5 0,-30.5 110,-30.5 110,-0.5 0,-0.5"/>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">DJI::OSDK::Gimbal::</text>
-<text text-anchor="middle" x="55" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">SpeedData</text>
+<text text-anchor="middle" x="55" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">AngleData</text>
 </a>
 </g>
 </g>

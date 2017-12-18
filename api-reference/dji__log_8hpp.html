@@ -170,30 +170,44 @@ Namespaces</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:a55ba12ce36191a3d5e39b1e3563eb243"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>DLOG</b>(_title_)</td></tr>
 <tr class="separator:a55ba12ce36191a3d5e39b1e3563eb243"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cf9846a3866bb166ccf12f615090db3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>DLOG_PRIVATE</b>(_title_)</td></tr>
+<tr class="separator:a6cf9846a3866bb166ccf12f615090db3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59279bee44f34d08b3cbf3a89fb0d8d9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a59279bee44f34d08b3cbf3a89fb0d8d9"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>STATUS</b>&#160;&#160;&#160;DJI::OSDK::Log::instance().getStatusLogState()</td></tr>
 <tr class="separator:a59279bee44f34d08b3cbf3a89fb0d8d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8fe83ac76edc595f6b98cd4a4127aed5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8fe83ac76edc595f6b98cd4a4127aed5"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>ERROR</b>&#160;&#160;&#160;DJI::OSDK::Log::instance().getErrorLogState()</td></tr>
-<tr class="separator:a8fe83ac76edc595f6b98cd4a4127aed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3622605c241c801bd66050facd6b5bb3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3622605c241c801bd66050facd6b5bb3"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ERRORLOG</b>&#160;&#160;&#160;DJI::OSDK::Log::instance().getErrorLogState()</td></tr>
+<tr class="separator:a3622605c241c801bd66050facd6b5bb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad72dbcf6d0153db1b8d8a58001feed83"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad72dbcf6d0153db1b8d8a58001feed83"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>DEBUG</b>&#160;&#160;&#160;DJI::OSDK::Log::instance().getDebugLogState()</td></tr>
 <tr class="separator:ad72dbcf6d0153db1b8d8a58001feed83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad45e7d0da18cb9a27cbcc3b77a41876b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dji__log_8hpp.html#ad45e7d0da18cb9a27cbcc3b77a41876b">DSTATUS</a>&#160;&#160;&#160;DLOG(STATUS)</td></tr>
 <tr class="memdesc:ad45e7d0da18cb9a27cbcc3b77a41876b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global Logging macro for status messages.  <a href="#ad45e7d0da18cb9a27cbcc3b77a41876b">More...</a><br /></td></tr>
 <tr class="separator:ad45e7d0da18cb9a27cbcc3b77a41876b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b53798ea5f701e57bbee80e28189e19"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dji__log_8hpp.html#a8b53798ea5f701e57bbee80e28189e19">DERROR</a>&#160;&#160;&#160;DLOG(ERROR)</td></tr>
+<tr class="memitem:a0e38f11d64e74ef310a2d199a3cbd5c2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0e38f11d64e74ef310a2d199a3cbd5c2"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>DSTATUS_PRIVATE</b>&#160;&#160;&#160;DLOG_PRIVATE(STATUS)</td></tr>
+<tr class="separator:a0e38f11d64e74ef310a2d199a3cbd5c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b53798ea5f701e57bbee80e28189e19"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dji__log_8hpp.html#a8b53798ea5f701e57bbee80e28189e19">DERROR</a>&#160;&#160;&#160;DLOG(ERRORLOG)</td></tr>
 <tr class="memdesc:a8b53798ea5f701e57bbee80e28189e19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global Logging macro for error messages.  <a href="#a8b53798ea5f701e57bbee80e28189e19">More...</a><br /></td></tr>
 <tr class="separator:a8b53798ea5f701e57bbee80e28189e19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2f47f27bac80de18cd5db741f2cb018"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa2f47f27bac80de18cd5db741f2cb018"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>DERROR_PRIVATE</b>&#160;&#160;&#160;DLOG_PRIVATE(ERRORLOG)</td></tr>
+<tr class="separator:aa2f47f27bac80de18cd5db741f2cb018"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31cbc593db4fbcc518a5b0a4aff903ac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dji__log_8hpp.html#a31cbc593db4fbcc518a5b0a4aff903ac">DDEBUG</a>&#160;&#160;&#160;DLOG(DEBUG)</td></tr>
 <tr class="memdesc:a31cbc593db4fbcc518a5b0a4aff903ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global Logging macro for debug messages.  <a href="#a31cbc593db4fbcc518a5b0a4aff903ac">More...</a><br /></td></tr>
 <tr class="separator:a31cbc593db4fbcc518a5b0a4aff903ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aede08ca9e070ad805df047b3d9d3b5ef"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aede08ca9e070ad805df047b3d9d3b5ef"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>DDEBUG_PRIVATE</b>&#160;&#160;&#160;DLOG_PRIVATE(DEBUG)</td></tr>
+<tr class="separator:aede08ca9e070ad805df047b3d9d3b5ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Logging mechanism for printing status and error messages to the screen. </p>
 <dl class="section version"><dt>Version</dt><dd>3.3 </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>Jun 15 2017</dd></dl>
-<dl class="section copyright"><dt>Copyright</dt><dd>2016-17 <a class="el" href="namespaceDJI.html">DJI</a>. All right reserved. </dd></dl>
+<p>(c) 2016-2017 <a class="el" href="namespaceDJI.html">DJI</a></p>
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a31cbc593db4fbcc518a5b0a4aff903ac"></a>
 <div class="memitem">
@@ -215,7 +229,7 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define DERROR&#160;&#160;&#160;DLOG(ERROR)</td>
+          <td class="memname">#define DERROR&#160;&#160;&#160;DLOG(ERRORLOG)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -239,6 +253,22 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">DJI::OSDK::Log::instance()                                                   \</div><div class="line">    .title((_title_), #_title_, __func__, __LINE__)                            \</div><div class="line">    .print</div></div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a6cf9846a3866bb166ccf12f615090db3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DLOG_PRIVATE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">_title_</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">DJI::OSDK::Log::instance()                                                   \</div><div class="line">    .title((_title_), #_title_)                            \</div><div class="line">    .print</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="ad45e7d0da18cb9a27cbcc3b77a41876b"></a>

@@ -147,8 +147,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>The <a class="el" href="classDJI_1_1OSDK_1_1AdvancedSensing.html" title="The AdvancedSensing class for subscribing stereo images. ">AdvancedSensing</a> class for subscribing stereo images.  
  <a href="classDJI_1_1OSDK_1_1AdvancedSensing.html#details">More...</a></p>
-
-<p><code>#include &lt;<a class="el" href="dji__advanced__sensing_8hpp_source.html">dji_advanced_sensing.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -199,6 +197,32 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1AdvancedSensing.html#ab4fa7ef15480ee0c99cd1f43f191d2c1">unsubscribeVGAImages</a> ()</td></tr>
 <tr class="memdesc:ab4fa7ef15480ee0c99cd1f43f191d2c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">unsubscribe to VGA (480x640) stereo images <br /></td></tr>
 <tr class="separator:ab4fa7ef15480ee0c99cd1f43f191d2c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbd5b8c22634373ac4be113cc6caca71"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1AdvancedSensing.html#abbd5b8c22634373ac4be113cc6caca71">startFPVCameraStream</a> (CameraImageCallback cb=NULL, void *cbParam=NULL)</td></tr>
+<tr class="memdesc:abbd5b8c22634373ac4be113cc6caca71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start the FPV <a class="el" href="classDJI_1_1OSDK_1_1Camera.html" title="Camera class for controlling camera-related functions available through open protocol. ">Camera</a> Stream.  <a href="#abbd5b8c22634373ac4be113cc6caca71">More...</a><br /></td></tr>
+<tr class="separator:abbd5b8c22634373ac4be113cc6caca71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a275df18c20707b28cbb0d1fb61a34d78"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1AdvancedSensing.html#a275df18c20707b28cbb0d1fb61a34d78">startMainCameraStream</a> (CameraImageCallback cb=NULL, void *cbParam=NULL)</td></tr>
+<tr class="memdesc:a275df18c20707b28cbb0d1fb61a34d78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start the Main <a class="el" href="classDJI_1_1OSDK_1_1Camera.html" title="Camera class for controlling camera-related functions available through open protocol. ">Camera</a> Stream.  <a href="#a275df18c20707b28cbb0d1fb61a34d78">More...</a><br /></td></tr>
+<tr class="separator:a275df18c20707b28cbb0d1fb61a34d78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56837e67371ce638ef2386dca2ef6f1c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a56837e67371ce638ef2386dca2ef6f1c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1AdvancedSensing.html#a56837e67371ce638ef2386dca2ef6f1c">stopFPVCameraStream</a> ()</td></tr>
+<tr class="memdesc:a56837e67371ce638ef2386dca2ef6f1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop the FPV <a class="el" href="classDJI_1_1OSDK_1_1Camera.html" title="Camera class for controlling camera-related functions available through open protocol. ">Camera</a> Stream. <br /></td></tr>
+<tr class="separator:a56837e67371ce638ef2386dca2ef6f1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0132cad60dd645c6c05e67f814ed77c6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0132cad60dd645c6c05e67f814ed77c6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1AdvancedSensing.html#a0132cad60dd645c6c05e67f814ed77c6">stopMainCameraStream</a> ()</td></tr>
+<tr class="memdesc:a0132cad60dd645c6c05e67f814ed77c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop the Main <a class="el" href="classDJI_1_1OSDK_1_1Camera.html" title="Camera class for controlling camera-related functions available through open protocol. ">Camera</a> Stream. <br /></td></tr>
+<tr class="separator:a0132cad60dd645c6c05e67f814ed77c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fabd335381065fd235bd14173f6171c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1AdvancedSensing.html#a1fabd335381065fd235bd14173f6171c">newFPVCameraImageIsReady</a> ()</td></tr>
+<tr class="memdesc:a1fabd335381065fd235bd14173f6171c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a new image from the FPV camera is received.  <a href="#a1fabd335381065fd235bd14173f6171c">More...</a><br /></td></tr>
+<tr class="separator:a1fabd335381065fd235bd14173f6171c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45ba24fc4d8743ba879d4d7a343718b3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1AdvancedSensing.html#a45ba24fc4d8743ba879d4d7a343718b3">newMainCameraImageReady</a> ()</td></tr>
+<tr class="memdesc:a45ba24fc4d8743ba879d4d7a343718b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a new image from the main camera is received.  <a href="#a45ba24fc4d8743ba879d4d7a343718b3">More...</a><br /></td></tr>
+<tr class="separator:a45ba24fc4d8743ba879d4d7a343718b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a086727ee09b9a90e5fc7d70f6571c77c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1AdvancedSensing.html#a086727ee09b9a90e5fc7d70f6571c77c">getFPVCameraImage</a> (<a class="el" href="structCameraRGBImage.html">CameraRGBImage</a> &amp;copyOfImage)</td></tr>
+<tr class="memdesc:a086727ee09b9a90e5fc7d70f6571c77c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a copy of the new image from the FPV camera.  <a href="#a086727ee09b9a90e5fc7d70f6571c77c">More...</a><br /></td></tr>
+<tr class="separator:a086727ee09b9a90e5fc7d70f6571c77c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cf4c323ed7eeebd468543f12a8ab65a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1AdvancedSensing.html#a0cf4c323ed7eeebd468543f12a8ab65a">getMainCameraImage</a> (<a class="el" href="structCameraRGBImage.html">CameraRGBImage</a> &amp;copyOfImage)</td></tr>
+<tr class="memdesc:a0cf4c323ed7eeebd468543f12a8ab65a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a copy of the new image from the main camera.  <a href="#a0cf4c323ed7eeebd468543f12a8ab65a">More...</a><br /></td></tr>
+<tr class="separator:a0cf4c323ed7eeebd468543f12a8ab65a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad72f715ec352153643a3fa75a3892dfe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad72f715ec352153643a3fa75a3892dfe"></a>
 AdvancedSensingProtocol *&#160;</td><td class="memItemRight" valign="bottom"><b>getAdvancedSensingProtocol</b> ()</td></tr>
 <tr class="separator:ad72f715ec352153643a3fa75a3892dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -223,7 +247,168 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="classDJI_1_1OSDK_1_1AdvancedSensing.html" title="The AdvancedSensing class for subscribing stereo images. ">AdvancedSensing</a> class for subscribing stereo images. </p>
+<p>APIs to access stereo camera, FPV camera and the main gimbaled camera on M210 and M210RTK </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a086727ee09b9a90e5fc7d70f6571c77c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DJI::OSDK::AdvancedSensing::getFPVCameraImage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structCameraRGBImage.html">CameraRGBImage</a> &amp;&#160;</td>
+          <td class="paramname"><em>copyOfImage</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a copy of the new image from the FPV camera. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">A</td><td>copy of the new available image will be put here. It is safe for user to manipulate this image. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>If a new image is not ready upon calling this function, it will wait for 30ms till timeout.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if a new image frame is ready, false if timeout </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0cf4c323ed7eeebd468543f12a8ab65a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DJI::OSDK::AdvancedSensing::getMainCameraImage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structCameraRGBImage.html">CameraRGBImage</a> &amp;&#160;</td>
+          <td class="paramname"><em>copyOfImage</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a copy of the new image from the main camera. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">A</td><td>copy of the new available image will be put here. It is safe for user to manipulate this image. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>If a new image is not ready upon calling this function, it will wait for 30ms till timeout.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if a new image frame is ready, false if timeout </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1fabd335381065fd235bd14173f6171c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DJI::OSDK::AdvancedSensing::newFPVCameraImageIsReady </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if a new image from the FPV camera is received. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if a new image frame is ready, false otherwise </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a45ba24fc4d8743ba879d4d7a343718b3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DJI::OSDK::AdvancedSensing::newMainCameraImageReady </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if a new image from the main camera is received. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if a new image frame is ready, false otherwise </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abbd5b8c22634373ac4be113cc6caca71"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DJI::OSDK::AdvancedSensing::startFPVCameraStream </td>
+          <td>(</td>
+          <td class="paramtype">CameraImageCallback&#160;</td>
+          <td class="paramname"><em>cb</em> = <code>NULL</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cbParam</em> = <code>NULL</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Start the FPV <a class="el" href="classDJI_1_1OSDK_1_1Camera.html" title="Camera class for controlling camera-related functions available through open protocol. ">Camera</a> Stream. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cb</td><td>callback function that is called in a callback thread when a new image is received and decoded </td></tr>
+    <tr><td class="paramname">cbParam</td><td>a void pointer that users can manipulate inside the callback </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if successfully started, false otherwise </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a275df18c20707b28cbb0d1fb61a34d78"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DJI::OSDK::AdvancedSensing::startMainCameraStream </td>
+          <td>(</td>
+          <td class="paramtype">CameraImageCallback&#160;</td>
+          <td class="paramname"><em>cb</em> = <code>NULL</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cbParam</em> = <code>NULL</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Start the Main <a class="el" href="classDJI_1_1OSDK_1_1Camera.html" title="Camera class for controlling camera-related functions available through open protocol. ">Camera</a> Stream. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cb</td><td>callback function that is called in a callback thread when a new image is received and decoded </td></tr>
+    <tr><td class="paramname">cbParam</td><td>a void pointer that users can manipulate inside the callback </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if successfully started, false otherwise </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a4bc919398dbea3315911078f44457ec1"></a>
 <div class="memitem">
 <div class="memproto">
@@ -444,7 +629,7 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>osdk-core/advanced-sensing-1.0.0/inc/<a class="el" href="dji__advanced__sensing_8hpp_source.html">dji_advanced_sensing.hpp</a></li>
+<li>osdk-core/advanced-sensing-2.0.0/inc/<a class="el" href="dji__advanced__sensing_8hpp_source.html">dji_advanced_sensing.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.8-->

@@ -11,10 +11,10 @@
 <polygon fill="white" stroke="none" points="-4,4 -4,-35 121,-35 121,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node"><title>Node1</title>
-<g id="a_node1"><a xlink:href="structDJI_1_1OSDK_1_1ErrorCode_1_1MFIOACK_1_1set.html" target="_top" xlink:title="CMDID: set. ">
+<g id="a_node1"><a xlink:href="structDJI_1_1OSDK_1_1ErrorCode_1_1MFIOACK_1_1init.html" target="_top" xlink:title="CMDID: init. ">
 <polygon fill="white" stroke="black" points="0,-0.5 0,-30.5 117,-30.5 117,-0.5 0,-0.5"/>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">DJI::OSDK::ErrorCode</text>
-<text text-anchor="middle" x="58.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">::MFIOACK::set</text>
+<text text-anchor="middle" x="58.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">::MFIOACK::init</text>
 </a>
 </g>
 </g>

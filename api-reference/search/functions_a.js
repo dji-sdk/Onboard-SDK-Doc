@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['obtainctrlauthority',['obtainCtrlAuthority',['../classDJI_1_1OSDK_1_1Vehicle.html#a9d126654855a4ab0e6184cf9b2c0d14b',1,'DJI::OSDK::Vehicle::obtainCtrlAuthority(VehicleCallBack callback=0, UserData userData=0)'],['../classDJI_1_1OSDK_1_1Vehicle.html#ada0f01f29348a0ba1f9ca9d254643c92',1,'DJI::OSDK::Vehicle::obtainCtrlAuthority(int timeout)']]]
+  ['newfpvcameraimageisready',['newFPVCameraImageIsReady',['../classDJI_1_1OSDK_1_1AdvancedSensing.html#a1fabd335381065fd235bd14173f6171c',1,'DJI::OSDK::AdvancedSensing']]],
+  ['newmaincameraimageready',['newMainCameraImageReady',['../classDJI_1_1OSDK_1_1AdvancedSensing.html#a45ba24fc4d8743ba879d4d7a343718b3',1,'DJI::OSDK::AdvancedSensing']]]
 ];

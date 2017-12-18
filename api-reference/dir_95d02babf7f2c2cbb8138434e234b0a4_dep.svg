@@ -19,11 +19,11 @@
 <g id="node1" class="node"><title>dir_95d02babf7f2c2cbb8138434e234b0a4</title>
 <text text-anchor="middle" x="256" y="-175.5" font-family="Helvetica,sans-Serif" font-size="10.00">osdk&#45;core</text>
 </g>
-<!-- dir_8272195721bb30401abb6488c4645a99 -->
-<g id="node2" class="node"><title>dir_8272195721bb30401abb6488c4645a99</title>
-<g id="a_node2"><a xlink:href="dir_8272195721bb30401abb6488c4645a99.html" target="_top" xlink:title="advanced&#45;sensing&#45;1.0.0">
+<!-- dir_f2583c6e7b7612631c3fdbaaac734bac -->
+<g id="node2" class="node"><title>dir_f2583c6e7b7612631c3fdbaaac734bac</title>
+<g id="a_node2"><a xlink:href="dir_f2583c6e7b7612631c3fdbaaac734bac.html" target="_top" xlink:title="advanced&#45;sensing&#45;2.0.0">
 <polygon fill="white" stroke="red" points="208,-196 88,-196 88,-160 208,-160 208,-196"/>
-<text text-anchor="middle" x="148" y="-175.5" font-family="Helvetica,sans-Serif" font-size="10.00">advanced&#45;sensing&#45;1.0.0</text>
+<text text-anchor="middle" x="148" y="-175.5" font-family="Helvetica,sans-Serif" font-size="10.00">advanced&#45;sensing&#45;2.0.0</text>
 </a>
 </g>
 </g>
@@ -35,8 +35,8 @@
 </a>
 </g>
 </g>
-<!-- dir_8272195721bb30401abb6488c4645a99&#45;&gt;dir_ef926edda2a887b065db034fc3005c14 -->
-<g id="edge4" class="edge"><title>dir_8272195721bb30401abb6488c4645a99&#45;&gt;dir_ef926edda2a887b065db034fc3005c14</title>
+<!-- dir_f2583c6e7b7612631c3fdbaaac734bac&#45;&gt;dir_ef926edda2a887b065db034fc3005c14 -->
+<g id="edge4" class="edge"><title>dir_f2583c6e7b7612631c3fdbaaac734bac&#45;&gt;dir_ef926edda2a887b065db034fc3005c14</title>
 <path fill="none" stroke="black" d="M133.416,-159.697C126.342,-151.305 117.717,-141.07 109.955,-131.861"/>
 <polygon fill="black" stroke="black" points="112.537,-129.495 103.417,-124.104 107.185,-134.006 112.537,-129.495"/>
 <g id="a_edge4&#45;headlabel"><a xlink:href="dir_000003_000005.html" target="_top" xlink:title="3">

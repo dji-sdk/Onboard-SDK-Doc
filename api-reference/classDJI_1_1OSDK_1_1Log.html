@@ -155,6 +155,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afebff031f21e4aa58cfdf4fd0787d57a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9373914bf75d6b77c779098ea04f474"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDJI_1_1OSDK_1_1Log.html">Log</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Log.html#af9373914bf75d6b77c779098ea04f474">title</a> (int level, const char *prefix, const char *func, int line)</td></tr>
 <tr class="separator:af9373914bf75d6b77c779098ea04f474"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73d0b45d5dd739c74145c37b0db2718e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDJI_1_1OSDK_1_1Log.html">Log</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Log.html#a73d0b45d5dd739c74145c37b0db2718e">title</a> (int level, const char *prefix)</td></tr>
+<tr class="separator:a73d0b45d5dd739c74145c37b0db2718e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed779bf46433ee037dd703534d44e7b6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aed779bf46433ee037dd703534d44e7b6"></a>
 <a class="el" href="classDJI_1_1OSDK_1_1Log.html">Log</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>print</b> ()</td></tr>
 <tr class="separator:aed779bf46433ee037dd703534d44e7b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -388,6 +390,33 @@ virtual <a class="el" href="classDJI_1_1OSDK_1_1Log.html">Log</a> &amp;&#160;</t
       </table>
 </div><div class="memdoc">
 <dl class="section note"><dt>Note</dt><dd>if title level is 0, this log would not be print at all this feature is used for dynamical/statical optional log output </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a73d0b45d5dd739c74145c37b0db2718e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDJI_1_1OSDK_1_1Log.html">Log</a> &amp; Log::title </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>prefix</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section note"><dt>Note</dt><dd>Used for closed source logging, where we don't want to print function name and line number </dd></dl>
 
 </div>
 </div>
