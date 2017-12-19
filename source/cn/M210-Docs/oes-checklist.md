@@ -43,6 +43,7 @@ OSDK supports a configuration tool in executable form to allow developers to tur
 
 ![acm_dmesg](../images/Linux/acm_dmesg.png)
 
+A tutorial on how to build ACM driver on NVIDIA TX2 can be found in [this video](https://www.youtube.com/watch?v=tDZF7ntLbxc)
 #### 3. FFmpeg
 
 The Camera Stream feature of the Advanced Sensing depends on the [FFmpeg](http://www.ffmpeg.org) library. Please install FFmpeg with the following command

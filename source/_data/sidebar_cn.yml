@@ -108,6 +108,9 @@
     -
       title: Advanced Sensing - Target Tracking
       path: /cn/sample-doc/advanced-sensing-target-tracking.html
+    -
+      title: Advanced Sensing - Object Detection
+      path: /cn/sample-doc/advanced-sensing-object-detection.html
 -
   title: APPENDIX
   list:
