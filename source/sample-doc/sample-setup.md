@@ -9,7 +9,7 @@ keywords: [write apps, development, SDK, samples, DJI, OSDK, setup]
 ## Before you start
 
 1. Make sure you have followed the steps in the [Hardware Setup guide](../development-workflow/hardware-setup.html) to get your connections right.
-2. Follow the steps in the [Environment Setup guide](../development-workflow/environment-setup.html) to get your software platform ready to run samples.
+2. Follow the steps in the [Environment Setup guide](../development-workflow/environment-setup.html) to get your software platform ready to run samples. If you are working with M210 and want the *Advanced Sensing* features, please also follow the [M210 Onboard Computer Checklist](../M210-Docs/oes-checklist.html) to install extra dependencies.
 3. Before you run the samples, consult the checklists in the [Running your Application](../development-workflow/run-application.html) guide.
 
 ## Linux Onboard Computer
@@ -17,13 +17,15 @@ keywords: [write apps, development, SDK, samples, DJI, OSDK, setup]
 ##### Building the OSDK and Samples
 
 1. Clone (or download as zip) the DJI OSDK from Github [here](https://www.github.com/dji-sdk/Onboard-SDK).
-2. Open a terminal inside the onboardsdk folder and follow these steps to build the OSDK:
+2. Open a terminal, `cd` into the onboardsdk folder and follow these steps to build the OSDK:
 ```
 mkdir build
 cd build
 cmake ..
 make
 ```
+If you want the Advanced Sensing features for the M210, replace `cmake ..` with `cmake .. -DADVANCED_SENSING=ON` in the above commands.
+
 3. The above step builds the `osdk-core` library, as well as the Linux samples. Executables are located inside the `build/bin` folder.
 
 ##### Configuration
@@ -46,13 +48,15 @@ cd bin
 ##### Installing the OSDK
 
 1. Clone (or download as zip) the DJI OSDK from Github [here](https://www.github.com/dji-sdk/Onboard-SDK).
-2. Open a terminal inside the onboardsdk folder and follow these steps to build the core OSDK library:
+2. Open a terminal, `cd` into the onboardsdk folder and follow these steps to build the core OSDK library:
 ```
 mkdir build
 cd build
 cmake ..
 make djiosdk-core
 ```
+If you want the Advanced Sensing features for the M210, replace `cmake ..` with `cmake .. -DADVANCED_SENSING=ON` in the above commands.
+
 3. Now, install the osdk-core library to your system so that the `dji_sdk` ROS node may find it and link against it:
 ```
 sudo make install djiosdk-core

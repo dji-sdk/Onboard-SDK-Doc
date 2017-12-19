@@ -48,8 +48,11 @@
       title: Multi-Function IO
       path: /cn/guides/component-guide-multi-function-io.html
     -
-      title: Advanced Sensing - Stereo Camera
+      title: Advanced Sensing - Stereo Vision
       path: /cn/guides/component-guide-advanced-sensing-stereo-camera.html
+    -
+      title: Advanced Sensing - Camera Stream
+      path: /cn/guides/component-guide-advanced-sensing-camera-stream.html
 -
   title: DEVELOPMENT WORKFLOW
   list:
@@ -99,6 +102,15 @@
     -
       title: Advanced Sensing - Stereo Images
       path: /cn/sample-doc/advanced-sensing-stereo-images.html
+    -
+      title: Advanced Sensing - Camera Stream
+      path: /cn/sample-doc/advanced-sensing-camera-stream.html
+    -
+      title: Advanced Sensing - Target Tracking
+      path: /cn/sample-doc/advanced-sensing-target-tracking.html
+    -
+      title: Advanced Sensing - Object Detection
+      path: /cn/sample-doc/advanced-sensing-object-detection.html
 -
   title: APPENDIX
   list:

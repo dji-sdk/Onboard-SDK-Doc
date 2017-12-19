@@ -13,25 +13,7 @@ in their system. If they do, the sample callback function will display the image
 
 For ROS developers, please use `ROS services` to subscribe the images and `image_view` to display them.
 
-## Before you start
-
-Since Advanced Sensing is a new and additional feature, there are some extra steps for setup:
-
-1. Make sure you follow the [M210 checklist](../M210-Docs/main.html) to setup your M210
-2. Provide an extra argument to `cmake` to build Advanced Sensing Library
-
-Instead of 
-```
-cmake ..
-```
-
-Please do
-```
-cmake .. -DADVANCED_SENSING=ON
-```
-
-The rest of the steps are the same as [Sample Setup](./sample-setup.html).
-
+To build the samples, follow the steps in [Sample Setup](./sample-setup.html) to build with Advanced Sensing support.
 
 ## Workflow
 

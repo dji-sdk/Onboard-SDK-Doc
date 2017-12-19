@@ -6,7 +6,7 @@ keywords: [M210, linux, ros, onboard computer, onboard computer, USB, libusb, ud
 
 ## Mount an Onboard Computer on M210
 
-An example of how to mount a NVIDIA Jetson TX2 on a M210 is shown in below picture. 
+An example of how to mount a NVIDIA Jetson TX2 on a M210 is shown in the picture below.
 
 Depending on where the onboard computer is mounted, 
 please be aware that the magnetometer interference and 
@@ -16,19 +16,20 @@ right option --> Main Controller Setting --> Upward Obstacle Avoidance.
 
 ![tx2_on_m210](../images/hardwaresetup/tx2_on_m210_small.jpg)
 
-## Driver Dependency 
+After the physically mounting, developers need to make proper connections between the onboard computer and the M210 following the [Hardware Setup](../development-workflow/hardware-setup.html).
 
-The [Advanced Sensing](../guides/component-guide-advanced-sensing-stereo-camera.html) feature 
-and the utility tool to configure the aircraft require additional drivers 
-to work with OSDK. If developers would like to enable them, please make 
-sure below drivers are installed.
+## Software Dependencies for Advanced Sensing
 
-#### LibUSB
+The [Advanced Sensing](../guides/component-guide-advanced-sensing-stereo-camera.html) features and the utility to configure the aircraft require additional drivers and libraries to work with OSDK. In order to use them, please make sure the following dependencies are installed.
 
-The [Advanced Sensing](../guides/component-guide-advanced-sensing-stereo-camera.html) feature 
+#### 1. LibUSB
+
+The [Stereo Images](../guides/component-guide-advanced-sensing-stereo-camera.html) feature 
 relies on [libUSB](https://github.com/libusb/libusb) to receive image data 
-from the aircraft via USB. Please make sure libUSB is installed 
-if you would like to enable this feature. The recommended version is 1.0.17 and above.
+from the aircraft via USB. The recommended version is 1.0.17 and above. Please install libusb with the following command
+```
+sudo apt-get install libusb-1.0-0-dev
+```
 
 In addition to libUSB, an udev file is required to allow your system to obtain permission and to identify DJI USB port. 
 
@@ -36,12 +37,25 @@ In addition to libUSB, an udev file is required to allow your system to obtain p
 2. Add `SUBSYSTEM=="usb", ATTRS{idVendor}=="2ca3", MODE="0666"` to this file
 3. Reboot your computer
 
-#### USB Abstract Control Model (ACM) Driver
+#### 2. USB Abstract Control Model (ACM) Driver
 
 OSDK supports a configuration tool in executable form to allow developers to turn on/off simulation and external power supply and to enable flight when USB is connected to the aircraft. This tool communicates with M210 via USB. In order to use it, please make sure your onboard computer has ACM driver installed. An example of system message from `dmesg` command in terminal is shown below.
 
 ![acm_dmesg](../images/Linux/acm_dmesg.png)
 
-#### OpenCV
+A tutorial on how to build ACM driver on NVIDIA TX2 can be found in [this video](https://www.youtube.com/watch?v=tDZF7ntLbxc)
 
-The [Advanced Sensing](../sample-doc/advanced-sensing-stereo-images.html) sample uses OpenCV to visualize stereo images. The CMakeList.txt in this sample detects if OpenCV is installed in the system. If yes, the sample callback functions will display the images.
+#### 3. FFmpeg
+
+The Camera Stream feature of the Advanced Sensing depends on the [FFmpeg](http://www.ffmpeg.org) library. Please install FFmpeg with the following command
+```
+sudo apt-get install libavcodec-dev libswresample-dev
+```
+
+#### OpenCV (Recommend for running the samples)
+
+The [stereo image samples](../sample-doc/advanced-sensing-stereo-images.html) and the [camera stream samples](../sample-doc/advanced-sensing-camera-stream.html) use OpenCV to visualize images. Without OpenCV, these samples will just print some message to screen. To get the most from the samples, please install OpenCV with the following command.
+```
+sudo apt-get install libopencv-dev
+```
+

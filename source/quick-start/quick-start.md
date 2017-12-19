@@ -48,13 +48,13 @@ You are now ready to run the sample app! Here's a checklist before you run the a
  1. Vehicle/Flight controller is in simulation mode, connected via USB cable to a computer running DJI Assistant 2
  1. `Enable API Control` is checked on DJI Assistant 2's SDK page
  1. The frequencies at which data is broadcasting on the SDK page are not *all* zero
- 1. The baudrate on DJI Assistant 2 matches that in your `config.json` file
- 1. App ID and Key have been entered in your `config.json` file
+ 1. The baudrate on DJI Assistant 2 matches that in your `UserConfig.txt` file
+ 1. App ID and Key have been entered in your `UserConfig.txt` file
  1. Your hardware setup matches that in the Hardware Setup guide
 
 If all of these are done, proceed to enter the next set of commands inside the `build/bin` directory:
     ```
-    ./djiosdk-flightcontrol-sample ../../sample/linux/common/config.json
+    ./djiosdk-flightcontrol-sample ../../sample/linux/common/UserConfig.txt
     ```
 
 You should now see your terminal showing something like this:
@@ -67,11 +67,6 @@ To learn how to write applications like these, go ahead and check out the refere
 
 ## Troubleshooting
 
-**Q.** The sample app doesn't compile.
-
-**A.** Please make sure you are running Ubuntu 16.04 on an x86_64 machine, and you have an internet connection to download the rapidJSON dependency. If it still doesn't work, raise a GitHub issue.
-
-
 **Q.** The sample app doesn't show the interactive prompt, instead:
  1. It shows a number of errors
  2. It hangs
@@ -83,7 +78,7 @@ To learn how to write applications like these, go ahead and check out the refere
 
 **Q.** The sample says `Activation failed!` and does not proceed.
 
-**A.** Please make sure you have DJI Go open and your mobile device connected to the internet, and the correct App ID and Key in your `config.json` file. Try a couple of times, if it doesn't work, raise a Github issue.
+**A.** Please make sure you have DJI Go open and your mobile device connected to the internet, and the correct App ID and Key in your `UserConfig.txt` file. Try a couple of times, if it doesn't work, raise a Github issue.
 
 **Q.** The drone doesn't actually move in simulation, even though the sample suggests it is working correctly.
 
