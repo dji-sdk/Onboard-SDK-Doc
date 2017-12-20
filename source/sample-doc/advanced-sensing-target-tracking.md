@@ -12,7 +12,6 @@ Assuming you have followed the [basic samples of camera stream](./advanced-sensi
 This sample will rotate the gimbal automatically to follow (point to) the object selected by the user from the main camera frame. The following image shows the result of an M210 tracking a Phantom 4 using onboard SDK. 
 
 ![M210_tracking_phantom4](../images/samples/target_tracking.gif)
-(Note that the frame rate in the animation is down sampled to reduce the image size.)
 
 The source code of this sample is located in `onboardsdk/samples/linux/advanced-sensing/camera_stream_target_tracking`. Since this sample depends on third a third party open-source library from github, it's not built by default. 
 To build this sample, use the following command.
