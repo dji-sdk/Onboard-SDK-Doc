@@ -103,6 +103,9 @@
       title: Advanced Sensing - Stereo Images
       path: /sample-doc/advanced-sensing-stereo-images.html
     -
+      title: Advanced Sensing - Depth Perception
+      path: /sample-doc/advanced-sensing-stereo-depth-perception.html
+    -
       title: Advanced Sensing - Camera Stream
       path: /sample-doc/advanced-sensing-camera-stream.html
     -

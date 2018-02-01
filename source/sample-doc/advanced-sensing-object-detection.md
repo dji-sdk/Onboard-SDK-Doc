@@ -4,15 +4,22 @@ date: 2017-12-19
 version: 3.5
 keywords: [Object detection, main camera, fpv camera, image, tiny-yolo, CNN]
 ---
+## Introduction
 
-With the capability to access the camera streams of M210 and reasonable onboard computing power, we can run convolutional neural network (CNN) based object detection algorithms. In this sample, we will demonstrate how to run a very powerful real-time object detection package named [YOLO V2](https://pjreddie.com/darknet/yolo/) and one of its ROS wrappers [darknet_ros](https://github.com/leggedrobotics/darknet_ros) in ROS environment.
-
-![M210_object_detection](../images/samples/object_detection.gif)
+With the capability to access the stereo images and camera streams of M210 and reasonable onboard 
+computing power, we can run convolutional neural network (CNN) based object detection algorithms. 
+Here we provide two samples, the first one demonstratea how to run a very powerful real-time 
+object detection package named [YOLO V2](https://pjreddie.com/darknet/yolo/) 
+and one of its ROS wrappers [darknet_ros](https://github.com/leggedrobotics/darknet_ros) in ROS environment.
+The second one run the same object detection algorithm on one of the stereo image and 
+use the [depth perception sample](./advanced-sensing-stereo-depth-perception.html) to infer object 3D information.
 
 We have tested this setup on Ubuntu 16.04 and ROS kinect, on both a laptop computer with NVIDIA GTX 970M graphics card and the [NVIDIA Jetson TX2](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems-dev-kits-modules/) with the [Orbitty Carrier board](http://connecttech.com/product/orbitty-carrier-for-nvidia-jetson-tx2-tx1/).
 
+## Sample 1 Object Detection in Camera Stream Using Yolo2 on ROS
 
-## Object Detection in Camera Stream Using Yolo2 on ROS
+![M210_object_detection](../images/samples/object_detection.gif)
+
 
 #### 1. Setup the Onboard SDK ROS environment
 
@@ -61,3 +68,36 @@ With all the modifications we made to `darknet_ros` in step 3, you can start it 
 roslaunch darknet_ros darknet_ros.launch
 ```
 Now you should see bounding boxes around detected objects.
+
+## Sample 2 Object Depth Perception in Stereo Image
+
+This sample is built on top of the [stereo depth perception sample](./advanced-sensing-stereo-depth-perception.html).
+It subscribes to the front-facing stereo images published from `dji_sdk` node and to the object detection 
+information from `darknet_ros` node. It then rectifies the stereo images, computes the disparity map, 
+and unprojects the point cloud. In addition, it computes 3D information of the object detected on the image.
+As shown below, the point cloud is visualized in `Rviz` with object information displayed on it.
+
+![M210_object_depth perception](../images/samples/m210_stereo_pt_cloud.gif)
+
+#### 1. Setup Onboard SDK and darknet in ROS
+Please follow the first three steps of Sample 1 to setup DJI OSDK and darkent_ros.
+
+#### 2. Start the object detection node
+Please edit the config files to tell `darknet_ros` to use use the image source from 
+`/dji_sdk/stereo_vga_front_left_images`.
+
+With all the modifications we made to `darknet_ros`, you can start it with 
+```
+roslaunch darknet_ros darknet_ros.launch
+```
+
+#### 3. Start the object depth perception node
+This node will call the subscription service and prompt you for available commands.
+
+```
+rosrun dji_sdk_demo demo_stereo_object_depth_perception m210_stereo_param.yaml
+```
+
+Once `darknet_ros` detects an object in the image, the object depth perception node 
+will publish rectified images, disparity map, point cloud, and object information using marker array. 
+Please use `Rviz` to visualize them.

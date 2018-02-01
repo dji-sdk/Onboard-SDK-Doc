@@ -12,7 +12,7 @@ To build the samples, follow the steps in [Sample Setup](./sample-setup.html) to
 
 Two samples are provided here to demonstrate different ways of accessing and processing the camera images.
 
-## Sample #1: Polling and Viewing Images in Main Loop
+## Sample 1 Polling and Viewing Images in Main Loop
 
 The source code of this sample is located in `onboardsdk/samples/linux/advanced-sensing/camera_stream_poll_sample/camera-stream-poll-sample.cpp`. After building the onboardsdk, from the `build` folder, you can run the sample with the following command.
 ```
@@ -28,7 +28,7 @@ The sample will ask you to choose which camera images (FPV camera, main camera o
 
 3. Before quitting the program, call `vehicle->advancedSensing->stopFPVCameraStream()` to disconnect from the camera and stop the camera reading thread.
 
-## Sample #2: Accessing the Images with Callback Functions
+## Sample 2 Accessing the Images with Callback Functions
 
 The source code of this sample is located in `onboardsdk/samples/linux/advanced-sensing/camera_stream_poll_sample/camera-stream-callback-sample.cpp`. After building the onboardsdk, from the `build` folder, you can run the sample with the following command.
 ```

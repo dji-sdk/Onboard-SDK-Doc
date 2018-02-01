@@ -12,6 +12,6 @@ var searchData=
   ['follow',['Follow',['../classDJI_1_1OSDK_1_1ErrorCode_1_1MissionACK.html#afca57636cf1ce7438468b0659dd97516',1,'DJI::OSDK::ErrorCode::MissionACK']]],
   ['front',['front',['../structDJI_1_1OSDK_1_1Telemetry_1_1RelativePosition.html#a533cecb0b4a52dde663d0e35b649bbd7',1,'DJI::OSDK::Telemetry::RelativePosition']]],
   ['fronthealth',['frontHealth',['../structDJI_1_1OSDK_1_1Telemetry_1_1RelativePosition.html#a4dd2678d0e53be264431e23d0534ada0',1,'DJI::OSDK::Telemetry::RelativePosition']]],
-  ['functionalsetup',['functionalSetUp',['../classDJI_1_1OSDK_1_1Vehicle.html#a52b65df0247c13cda2e9e3d3f3115773',1,'DJI::OSDK::Vehicle']]],
+  ['functionalsetup',['functionalSetUp',['../classDJI_1_1OSDK_1_1Vehicle.html#a70b3010edc538b6b121bb9469f5de9dd',1,'DJI::OSDK::Vehicle']]],
   ['fwupdating',['FWUpdating',['../structDJI_1_1OSDK_1_1Telemetry_1_1GimbalStatus.html#a2745230586517cc6f42b5678b00e16a1',1,'DJI::OSDK::Telemetry::GimbalStatus']]]
 ];

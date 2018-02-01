@@ -28,7 +28,7 @@ If developers would like to perform intense computation on the image data,
 it is suggested to create a separate processing thread to avoid interference with the reading thread. 
 
 
-#### Sample #1 Image Reading and Processing on the Same Thread
+## Sample 1 Image Reading and Processing on the Same Thread
 
 In this sample, one thread is instantiated to read image data from USB 
 and one callback function is registered to the subscription API. This 
@@ -42,7 +42,7 @@ if you experience drop frame issue.
 ![adv_sensing_workflow](../images/samples/adv_sensing_sample1_workflow.png)
 
 
-#### Sample #2 Image Reading and Processing on Different Threads
+## Sample 2 Image Reading and Processing on Different Threads
 
 In the second sample, two threads are instantiated to read and to process images.
 A class `ImageProcessContainer` is provided to store images on the reading 
