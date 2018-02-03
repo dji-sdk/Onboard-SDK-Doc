@@ -1,24 +1,56 @@
 ---
-title: Release Notes for Onboard SDK 3.5
-version: 3.5
-date: 2017-12-19
-keywords: [SDK, Camera Stream, Target Tracking, FPV Camera, Main Camera, M210]
+title: Release Notes for Onboard SDK 3.6
+version: 3.6
+date: 2018-02-01
+keywords: [SDK, M210, Point Cloud, Camera, Disparity Map, collision avoidance]
 ---
 
 ## Release Date
 
-2017.12.19
+2018.02.01
 
-## Highlights
+## OSDK 3.6 Highlights
 
-- **Access to live camera streams of M210 and M210 RTK**: both FPV camera and main gimbaled camera
-- **Comprehensive Samples for live camera streams APIs**: from basic data accessing samples to more advanced target tracking samples
-- **More complete license information is added**
+- **Major stereo vision stack update:** New samples have been added for better rectification, disparity, and point cloud projection, accurate to a few cm.
+- **3D object localization sample:** Building on this stack, we now showcase a CNN-based 3D object detection and localization sample.
+- **Multiple performance improvements and bugfixes:** Over twenty bugs have been fixed, and error handling and reporting have been made more robust.
+
+## Supported Firmware
+
+Please download the latest [DJI Assistant 2](https://www.dji.com/matrice-200-series/info#downloads) for M210/M210 RTK support.
+
+- A3/A3 Pro: 1.7.1.5+
+- N3: 1.7.1.5+
+- M100: 1.3.1.0+
+- M600/M600 Pro: 1.0.1.65+
+- M210/M210 RTK: 1.1.0410+
+
+## Bug Fixes
+
+- **Samples hang when no data on serial line:** The read thread now quits as expected, allowing clean exit.
+- **Memory Leaks:** Fixed a few memory leaks in osdk-core, mainly related to buffers.
+- **Flight Control Sample height/altitude references:** Previously, flight control samples used an incorrect reference for height, causing unpredictable real-world behavior. This has been fixed.
+- **Many other smaller bugfixes:** Undefined return values, uninitialized variables, unreliable initial connection, etc.
+
+## Improvements
+
+- **Components initialize on successful activation:** All components of Vehicle are now only initialized after activating successfully to allow error handling without the use of exceptions.
+- **Actionable error messages:** Errors at various stages will now offer possible causes and remedies.
+- **Subscription cleanup:** The vehicle initialization routine will automatically clean up if a previous subscription exists in an unclean state. There is a similar fix for the Advanced Sensing library as well.
+
+## Developer Notes
+- Since program components are no longer initialized prior to activation, please ensure that the first API your program calls after initialization is *activate*.
+- Please be sure to update your Advanced Sensing binary to 2.0.1, supporting x86 and 64-bit ARMv8.
 
 <hr>
 
 ## Previous Releases
 
+### OSDK 3.5 Highlights
+
+- **Access to live camera streams of M210 and M210 RTK**: both FPV camera and main gimbaled camera
+- **Comprehensive Samples for live camera streams APIs**: from basic data accessing samples to more advanced target tracking samples
+- **More complete license information is added**
 
 ### OSDK 3.4 Highlights
 
@@ -49,33 +81,6 @@ Please download the latest [DJI Assistant 2](https://www.dji.com/matrice-200-ser
 - **OpenProtocol activation fix:** Performs activation before using encryption.
 - **Waypoint push data event handling:** Waypoint PushData variable was not set properly.
 - **Local position reference state fix:** Returns state when setting local position.
-
-
-### OSDK 3.3.1 Highlights
-
-- **M100 backwards compatibility:** All M100 features previously supported on OSDK 3.2 are now fully supported on 3.3.1. The 3.3 ROS wrapper, compliant with ROS standards, is now also compatible with M100.
-- **Beta QT Sample:** Reintroduced with fully featured implementation of OSDK 3.3 features
-- **Waypoint & Hotpoint read API calls:** Ability to read missions' settings and Waypoint index settings from an aircraft.
-
-#### Supported Firmware
-
-- A3/A3 Pro: 1.7.1.5
-- N3: 1.7.1.5
-- M100: 1.3.1.0
-- M600/M600 Pro: 1.0.1.60
-
-#### Bug Fixes:
-
-- **Control authority UNKNOWN_ACK_ERROR_CODE:** fixed incorrect messaging when trying to obtain or release control.
-- **Gimbal mount status check:** SDK will now check whether gimbal is mounted during initialization of vehicle object.
-- **STM32 memory footprint:** Reduced OSDK memory footprint by 60%.
-- **Receive container firmware version:** Fixed incorrect version which was set in receive container.
-
-#### Known Issues
-
-- **Potential SerialDevice infinite loop:** If aircraft is connected incorrectly and there’s no data on the serial line, the read thread might loop indefinitely.
-- **GCC7 compilation:** OSDK will not compile correctly using GCC7.
-- **QT Sample M100 Compatibility:** Some M100-specific feature are not supported in QT Sample.
 
 ### Old Releases
 
