@@ -1,11 +1,11 @@
 ---
 title: Onboard SDK Documentation Home
-date: 2017-11-23
-version: 3.4
+date: 2018-02-02
+version: 3.6
 keywords: [homepage, key features, hardware overview, registration, enable flight controller API control, safety]
 ---
 
-> OSDK 3.5 was released on 15 Dec 2017. This release brings new features for the Matrice 210 and 210 RTK aircraft. Developers will now have access to the live streams of the main (Zenmuse X4 and X5S) and FPV cameras. Additionally, more complete license information is added to the repository. Please see the [release notes](../appendix/releaseNotes.html) for more information.
+> OSDK 3.6 was released on 02 Feb 2018. This release adds powerful features on top of the stereo vision stack for M210/M210 RTK, and brings a number of bugfixes and performance improvements. Please see the [release notes](../appendix/releaseNotes.html) for more information.
 
 The DJI Onboard SDK (OSDK) allows you to build powerful, automated drone applications for supported DJI vehicles (<a href="http://www.dji.com/product/matrice100" target="_blank">Matrice 100</a>, <a href="http://www.dji.com/product/matrice600" target="_blank">Matrice 600</a> or <a href="http://www.dji.com/matrice-200-series" target="_blank">Matrice 210/210-RTK</a>) or flight controllers (<a href="http://www.dji.com/product/a3" target="_blank">A3</a> or <a href="http://www.dji.com/product/n3" target="_blank">N3</a>).
 
