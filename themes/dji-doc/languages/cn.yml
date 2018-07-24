@@ -4,6 +4,8 @@ nav:
   onboard_sdk: "Onboard SDK"
   guidance_sdk: "Guidance SDK"
   payload_sdk: "Payload SDK"
+  ux_sdk: "UX SDK"
+  windows_sdk: "Windows SDK"
   mobile-sdk: "Mobile SDK"
   onboard-sdk: "Onboard SDK"
   guidance-sdk: "Guidance SDK"
@@ -17,6 +19,8 @@ nav:
   forum: "论坛"
   github: "Github"
   stackoverflow: "Stack Overflow"
+  youtube: "YouTube"
+  twitter: "Twitter"
   login: "登录"
   register: "注册"
   logout: "登出"
@@ -25,7 +29,7 @@ nav:
   dji_store: "大疆官方商城"
   contact_us: "联系我们"
   contact_us_bd: "商务合作"
-  copyright: "Copyright © 2017 DJI 大疆创新 版权所有"
+  copyright: "Copyright © 2018 DJI 大疆创新 版权所有"
 
 sub_nav:
   overview: 概览
