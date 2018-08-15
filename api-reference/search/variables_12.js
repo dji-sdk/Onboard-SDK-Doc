@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['velocityned',['velocityNED',['../structDJI_1_1OSDK_1_1Telemetry_1_1GPSInfo.html#a7d2b3fc5198b2cc74958fa4e6f8b82a2',1,'DJI::OSDK::Telemetry::GPSInfo::velocityNED()'],['../structDJI_1_1OSDK_1_1Telemetry_1_1RTK.html#a523524d5cf3bb9658b512a9371c897de',1,'DJI::OSDK::Telemetry::RTK::velocityNED()'],['../structDJI_1_1OSDK_1_1Telemetry_1_1LegacyGPSInfo.html#a5d559102da8f35bb0110c88d5a1b86a0',1,'DJI::OSDK::Telemetry::LegacyGPSInfo::velocityNED()']]],
-  ['version',['version',['../structDJI_1_1OSDK_1_1HotPointSettings.html#a789cd78691d550c40ee73e3005851c9f',1,'DJI::OSDK::HotPointSettings']]],
-  ['visiblesatellitenumber',['visibleSatelliteNumber',['../structDJI_1_1OSDK_1_1Telemetry_1_1GPSFused.html#a2f01aa648a30661094c996eaad1dfbf2',1,'DJI::OSDK::Telemetry::GPSFused']]]
+  ['unbalanced',['unbalanced',['../structDJI_1_1OSDK_1_1Telemetry_1_1ESCStatusIndividual.html#aec128d93bc2c3b546393c79e190283ae',1,'DJI::OSDK::Telemetry::ESCStatusIndividual']]],
+  ['unrecorded_5fhome',['UNRECORDED_HOME',['../structDJI_1_1OSDK_1_1ErrorCode_1_1MissionACK_1_1Common.html#a99a154ed3a1956310727b1cdea613cac',1,'DJI::OSDK::ErrorCode::MissionACK::Common']]],
+  ['up',['up',['../structDJI_1_1OSDK_1_1Telemetry_1_1RelativePosition.html#a69ac12205c74bc918548b3e582a34fc8',1,'DJI::OSDK::Telemetry::RelativePosition']]],
+  ['uphealth',['upHealth',['../structDJI_1_1OSDK_1_1Telemetry_1_1RelativePosition.html#a3c80fb248c45c7fdfc7d6d840525b22d',1,'DJI::OSDK::Telemetry::RelativePosition']]],
+  ['usedgln',['usedGLN',['../structDJI_1_1OSDK_1_1Telemetry_1_1GPSDetail.html#a90abfb74dd921e1faa066ce7d014565b',1,'DJI::OSDK::Telemetry::GPSDetail']]],
+  ['usedgps',['usedGPS',['../structDJI_1_1OSDK_1_1Telemetry_1_1GPSDetail.html#a5f75f4d81f2cd4168e9d248ad9c3f4a6',1,'DJI::OSDK::Telemetry::GPSDetail']]]
 ];

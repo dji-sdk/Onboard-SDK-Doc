@@ -6,6 +6,8 @@ var searchData=
   ['img_5f240p_5fsize',['IMG_240P_SIZE',['../classDJI_1_1OSDK_1_1ACK.html#a3998929032fd58cde29e33c07be8b548',1,'DJI::OSDK::ACK']]],
   ['img_5fvga_5fsize',['IMG_VGA_SIZE',['../classDJI_1_1OSDK_1_1ACK.html#a7cf75fc544fa62f6bcbbbb57b5bc9ae1',1,'DJI::OSDK::ACK']]],
   ['impact_5fis_5fdetected',['IMPACT_IS_DETECTED',['../classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#ac2dd35ca5e39082b57ec71a243fbca29',1,'DJI::OSDK::ErrorCode::CommonACK']]],
+  ['impactinair',['impactInAir',['../structDJI_1_1OSDK_1_1Telemetry_1_1FlightAnomaly.html#a2c166c384f928675d1bb08534f76390b',1,'DJI::OSDK::Telemetry::FlightAnomaly']]],
+  ['imuinstallationerror',['imuInstallationError',['../structDJI_1_1OSDK_1_1Telemetry_1_1FlightAnomaly.html#aef77c17a037c8773e262d7614946d57d',1,'DJI::OSDK::Telemetry::FlightAnomaly']]],
   ['index',['index',['../structDJI_1_1OSDK_1_1WayPointSettings.html#a43c55812c7e8c40fad0f8374632c1238',1,'DJI::OSDK::WayPointSettings::index()'],['../structDJI_1_1OSDK_1_1Telemetry_1_1SyncTimestamp.html#ac37a7734543aac271e61dee0b82027d9',1,'DJI::OSDK::Telemetry::SyncTimestamp::index()']]],
   ['indexnumber',['indexNumber',['../structDJI_1_1OSDK_1_1WayPointInitSettings.html#a0397e8b504d932bd600aaa66b003bc21',1,'DJI::OSDK::WayPointInitSettings']]],
   ['info',['info',['../structDJI_1_1OSDK_1_1Telemetry_1_1Velocity.html#a2af2c023b3336b27e58c74d288972444',1,'DJI::OSDK::Telemetry::Velocity']]],

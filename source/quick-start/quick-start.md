@@ -1,7 +1,7 @@
 ---
 title: Get Started
-date: 2017-07-03
-version: 3.3
+date: 2018-08-14
+version: 3.7
 keywords: [get started, key features, hardware overview, registration, enable flight controller API control, safety]
 ---
 

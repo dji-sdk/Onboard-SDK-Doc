@@ -215,7 +215,7 @@ $( document ).ready(function() {
   /* enumerations */
   $('table.fieldtable').removeClass('fieldtable').addClass('table table-striped table-bordered').each(function(){
     $(this).prepend('<thead></thead>');
-    $(this).find('tbody > tr:first').prependTo($(this).find('thead'));
+    $(this).find('tbody > tr:first');
 
     $(this).find('td > span.success').parent().addClass('success');
     $(this).find('td > span.warning').parent().addClass('warning');

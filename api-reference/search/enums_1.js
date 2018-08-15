@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['receivedimgdesc',['ReceivedImgDesc',['../classDJI_1_1OSDK_1_1AdvancedSensing.html#a48d5c83513bde58904580b8c2da9143a',1,'DJI::OSDK::AdvancedSensing']]]
+  ['killswitch',['KillSwitch',['../classDJI_1_1OSDK_1_1Control.html#a2d81493e9c6b0246811cbe71d8825db6',1,'DJI::OSDK::Control']]]
 ];

@@ -1,25 +1,26 @@
 <map id="osdk&#45;core/api/src/dji_hardware_sync.cpp" name="osdk&#45;core/api/src/dji_hardware_sync.cpp">
-<area shape="rect" id="node2" href="$dji__hardware__sync_8hpp.html" title="Hardware Sync API for DJI OSDK. " alt="" coords="2204,169,2359,196"/>
-<area shape="rect" id="node6" href="$dji__vehicle_8hpp.html" title="Vehicle API for DJI onboardSDK library. " alt="" coords="991,95,1099,121"/>
-<area shape="rect" id="node3" href="$dji__type_8hpp.html" title="Data type and Data Structure definitions for use throughout DJI OSDK. " alt="" coords="1570,393,1662,420"/>
-<area shape="rect" id="node8" href="$dji__broadcast_8hpp.html" title="Broadcast Telemetry API for DJI onboardSDK library. " alt="" coords="749,244,873,271"/>
-<area shape="rect" id="node10" href="$dji__vehicle__callback_8hpp.html" title="Type definition for new Vehicle&#45;style callbacks. " alt="" coords="528,393,691,420"/>
-<area shape="rect" id="node12" href="$dji__camera_8hpp.html" title="Camera/Gimbal API for DJI onboardSDK library. " alt="" coords="1654,319,1765,345"/>
-<area shape="rect" id="node13" href="$dji__command_8hpp.html" title="All DJI OSDK OpenProtocol Command IDs. " alt="" coords="1302,393,1426,420"/>
-<area shape="rect" id="node16" href="$dji__control_8hpp.html" title="Control API for DJI OSDK library. " alt="" coords="921,169,1028,196"/>
-<area shape="rect" id="node19" href="$dji__version_8hpp.html" title="Drone/SDK Version definition for DJI onboardSDK library. " alt="" coords="849,319,959,345"/>
-<area shape="rect" id="node21" href="$dji__gimbal_8hpp.html" title="Gimbal API for OSDK library. " alt="" coords="1402,319,1507,345"/>
-<area shape="rect" id="node23" href="$dji__mfio_8hpp.html" title="MFIO API for DJI OSDK library. " alt="" coords="479,244,571,271"/>
-<area shape="rect" id="node24" href="$dji__mission__manager_8hpp.html" title="Mission&#45;Manager API for DJI OSDK library. " alt="" coords="1207,169,1377,196"/>
-<area shape="rect" id="node28" href="$dji__mobile__communication_8hpp.html" title="Implementation of DJI Mobile&#45;Onboard SDK Communication (MOC) " alt="" coords="93,244,293,271"/>
-<area shape="rect" id="node30" href="$dji__status_8hpp.html" title="Status information for DJI Vehicle. " alt="" coords="1698,169,1801,196"/>
-<area shape="rect" id="node31" href="$dji__subscription_8hpp.html" title="Telemetry Subscription API for DJI OSDK library. " alt="" coords="318,244,455,271"/>
-<area shape="rect" id="node33" href="$dji__virtual__rc_8hpp.html" title="Virtual Radio Control API for DJI onboardSDK library. " alt="" coords="1825,169,1945,196"/>
-<area shape="rect" id="node9" href="$dji__telemetry_8hpp.html" title="Enumeration of all telemetry data types, structures and maps. " alt="" coords="983,319,1105,345"/>
-<area shape="rect" id="node14" href="$dji__error_8hpp.html" title="All DJI OSDK OpenProtocol ACK Error Codes. " alt="" coords="1317,468,1411,495"/>
-<area shape="rect" id="node17" href="$dji__ack_8hpp.html" title="All DJI OSDK ACK parsing. " alt="" coords="1452,244,1540,271"/>
-<area shape="rect" id="node18" href="$dji__mission__type_8hpp.html" title="Mission related data struct for DJI OSDK library. " alt="" coords="1789,319,1933,345"/>
-<area shape="rect" id="node25" href="$dji__hotpoint_8hpp.html" title="Implementation of HotPoint (Point of Interest) Missions for DJI OSDK. " alt="" coords="1019,244,1133,271"/>
-<area shape="rect" id="node27" href="$dji__waypoint_8hpp.html" title="Implementation of GPS Waypoint Missions for DJI OSDK. " alt="" coords="1157,244,1275,271"/>
-<area shape="rect" id="node26" href="$dji__mission__base_8hpp.html" title="Mission&#45;Base abstract class for DJI OSDK library. " alt="" coords="1129,319,1276,345"/>
+<area shape="rect" id="node2" href="$dji__hardware__sync_8hpp.html" title="Hardware Sync API for DJI OSDK. " alt="" coords="5,169,160,196"/>
+<area shape="rect" id="node6" href="$dji__vehicle_8hpp.html" title="Vehicle API for DJI onboardSDK library. " alt="" coords="1159,95,1267,121"/>
+<area shape="rect" id="node3" href="$dji__type_8hpp.html" title="Data type and Data Structure definitions for use throughout DJI OSDK. " alt="" coords="502,393,594,420"/>
+<area shape="rect" id="node8" href="$dji__broadcast_8hpp.html" title="Broadcast Telemetry API for DJI onboardSDK library. " alt="" coords="1278,244,1402,271"/>
+<area shape="rect" id="node10" href="$dji__vehicle__callback_8hpp.html" title="Type definition for new Vehicle&#45;style callbacks. " alt="" coords="1583,393,1745,420"/>
+<area shape="rect" id="node12" href="$dji__camera_8hpp.html" title="Camera/Gimbal API for DJI onboardSDK library. " alt="" coords="49,319,159,345"/>
+<area shape="rect" id="node13" href="$dji__command_8hpp.html" title="All DJI OSDK OpenProtocol Command IDs. " alt="" coords="295,393,419,420"/>
+<area shape="rect" id="node16" href="$dji__control_8hpp.html" title="Control API for DJI OSDK library. " alt="" coords="1019,169,1125,196"/>
+<area shape="rect" id="node19" href="$dji__version_8hpp.html" title="Drone/SDK Version definition for DJI onboardSDK library. " alt="" coords="977,319,1087,345"/>
+<area shape="rect" id="node21" href="$dji__gimbal_8hpp.html" title="Gimbal API for OSDK library. " alt="" coords="183,319,289,345"/>
+<area shape="rect" id="node23" href="$dji__mfio_8hpp.html" title="MFIO API for DJI OSDK library. " alt="" coords="1691,244,1783,271"/>
+<area shape="rect" id="node24" href="$dji__mission__manager_8hpp.html" title="Mission&#45;Manager API for DJI OSDK library. " alt="" coords="581,169,750,196"/>
+<area shape="rect" id="node28" href="$dji__mobile__communication_8hpp.html" title="Implementation of DJI Mobile&#45;Onboard SDK Communication (MOC) " alt="" coords="2288,169,2488,196"/>
+<area shape="rect" id="node30" href="$dji__mobile__device_8hpp.html" title="Implementation of DJI Mobile Device Abstraction. " alt="" coords="1943,244,2094,271"/>
+<area shape="rect" id="node32" href="$dji__status_8hpp.html" title="Status information for DJI Vehicle. " alt="" coords="1875,169,1978,196"/>
+<area shape="rect" id="node33" href="$dji__subscription_8hpp.html" title="Telemetry Subscription API for DJI OSDK library. " alt="" coords="1478,244,1615,271"/>
+<area shape="rect" id="node35" href="$dji__virtual__rc_8hpp.html" title="Virtual Radio Control API for DJI onboardSDK library. " alt="" coords="824,169,944,196"/>
+<area shape="rect" id="node9" href="$dji__telemetry_8hpp.html" title="Enumeration of all telemetry data types, structures and maps. " alt="" coords="1162,319,1283,345"/>
+<area shape="rect" id="node14" href="$dji__error_8hpp.html" title="All DJI OSDK OpenProtocol ACK Error Codes. " alt="" coords="305,468,399,495"/>
+<area shape="rect" id="node17" href="$dji__ack_8hpp.html" title="All DJI OSDK ACK parsing. " alt="" coords="840,244,928,271"/>
+<area shape="rect" id="node18" href="$dji__mission__type_8hpp.html" title="Mission related data struct for DJI OSDK library. " alt="" coords="687,319,831,345"/>
+<area shape="rect" id="node25" href="$dji__hotpoint_8hpp.html" title="Implementation of HotPoint (Point of Interest) Missions for DJI OSDK. " alt="" coords="609,244,722,271"/>
+<area shape="rect" id="node27" href="$dji__waypoint_8hpp.html" title="Implementation of GPS Waypoint Missions for DJI OSDK. " alt="" coords="466,244,585,271"/>
+<area shape="rect" id="node26" href="$dji__mission__base_8hpp.html" title="Mission&#45;Base abstract class for DJI OSDK library. " alt="" coords="465,319,612,345"/>
 </map>

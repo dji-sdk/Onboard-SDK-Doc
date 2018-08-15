@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['send',['send',['../classDJI_1_1OSDK_1_1LinuxSerialDevice.html#a8d049404301807f9b270b85dad740d5a',1,'DJI::OSDK::LinuxSerialDevice::send()'],['../classDJI_1_1OSDK_1_1LinuxUSBDevice.html#ac78bd1bd1f32ada883b3a4be6105a31d',1,'DJI::OSDK::LinuxUSBDevice::send()']]],
-  ['senddatatomsdk',['sendDataToMSDK',['../classDJI_1_1OSDK_1_1MobileCommunication.html#a3450236032429d4603100ca00f87e75b',1,'DJI::OSDK::MobileCommunication']]],
+  ['send',['send',['../classDJI_1_1OSDK_1_1LinuxSerialDevice.html#a8d049404301807f9b270b85dad740d5a',1,'DJI::OSDK::LinuxSerialDevice']]],
+  ['senddatatomsdk',['sendDataToMSDK',['../classDJI_1_1OSDK_1_1MobileCommunication.html#a3450236032429d4603100ca00f87e75b',1,'DJI::OSDK::MobileCommunication::sendDataToMSDK()'],['../classDJI_1_1OSDK_1_1MobileDevice.html#a68010254d3e842b971338a1bb9c4a73d',1,'DJI::OSDK::MobileDevice::sendDataToMSDK()']]],
   ['serializepackageinfo',['serializePackageInfo',['../classDJI_1_1OSDK_1_1SubscriptionPackage.html#a58f4f8d179a961af12d421c6ffcd6aed',1,'DJI::OSDK::SubscriptionPackage']]],
   ['setangle',['setAngle',['../classDJI_1_1OSDK_1_1Gimbal.html#a6ce7def5eb61934e2e13184b8467c7ed',1,'DJI::OSDK::Gimbal']]],
   ['setbaudrate',['setBaudrate',['../classDJI_1_1OSDK_1_1LinuxSerialDevice.html#a73ec219df14ded200d5a89b1c0ecca19',1,'DJI::OSDK::LinuxSerialDevice']]],
@@ -30,15 +30,7 @@ var searchData=
   ['shootphoto',['shootPhoto',['../classDJI_1_1OSDK_1_1Camera.html#a27faf4d48b342f292c3d3f7915239758',1,'DJI::OSDK::Camera']]],
   ['start',['start',['../classDJI_1_1OSDK_1_1HotpointMission.html#a4a0151215ad6204133361bd81e87f44c',1,'DJI::OSDK::HotpointMission::start(VehicleCallBack callback=0, UserData userData=0)'],['../classDJI_1_1OSDK_1_1HotpointMission.html#a03b7adf6cbac5a91101a578ee5ff8fd5',1,'DJI::OSDK::HotpointMission::start(int timer)'],['../classDJI_1_1OSDK_1_1WaypointMission.html#ade3dcecda4f1ca069021b01b7f855ce1',1,'DJI::OSDK::WaypointMission::start(VehicleCallBack callback=0, UserData userData=0)'],['../classDJI_1_1OSDK_1_1WaypointMission.html#af8c58d7863c1c898ae350402a1292afc',1,'DJI::OSDK::WaypointMission::start(int timer)']]],
   ['startcallback',['startCallback',['../classDJI_1_1OSDK_1_1HotpointMission.html#afb0c8327e444a78a49c03b3bf0946730',1,'DJI::OSDK::HotpointMission']]],
-  ['startfpvcamerastream',['startFPVCameraStream',['../classDJI_1_1OSDK_1_1AdvancedSensing.html#abbd5b8c22634373ac4be113cc6caca71',1,'DJI::OSDK::AdvancedSensing']]],
-  ['startmaincamerastream',['startMainCameraStream',['../classDJI_1_1OSDK_1_1AdvancedSensing.html#a275df18c20707b28cbb0d1fb61a34d78',1,'DJI::OSDK::AdvancedSensing']]],
   ['startpackage',['startPackage',['../classDJI_1_1OSDK_1_1DataSubscription.html#a87ba0e274119c68277bb749de1aad39e',1,'DJI::OSDK::DataSubscription::startPackage(int packageID)'],['../classDJI_1_1OSDK_1_1DataSubscription.html#a71c59eafc86a428f1c97bf049a68bdc5',1,'DJI::OSDK::DataSubscription::startPackage(int packageID, int timeout)']]],
   ['startsync',['startSync',['../classDJI_1_1OSDK_1_1HardwareSync.html#aeb35dae3161b67dfa7a0a1d2e4618453',1,'DJI::OSDK::HardwareSync']]],
-  ['stereocallback',['stereoCallback',['../classDJI_1_1OSDK_1_1AdvancedSensing.html#a4bc919398dbea3315911078f44457ec1',1,'DJI::OSDK::AdvancedSensing']]],
-  ['stop',['stop',['../classDJI_1_1OSDK_1_1HotpointMission.html#ac32563e7bc146fa96831237773280b36',1,'DJI::OSDK::HotpointMission::stop(VehicleCallBack callback=0, UserData userData=0)'],['../classDJI_1_1OSDK_1_1HotpointMission.html#ae91b0d3ca7da7ddb083cf1f678355ff8',1,'DJI::OSDK::HotpointMission::stop(int timer)'],['../classDJI_1_1OSDK_1_1WaypointMission.html#a9459bbe0539b362e5b8ce5ef7a2e2365',1,'DJI::OSDK::WaypointMission::stop(VehicleCallBack callback=0, UserData userData=0)'],['../classDJI_1_1OSDK_1_1WaypointMission.html#ae44be081993711a0c975cb19a4481b12',1,'DJI::OSDK::WaypointMission::stop(int timer)']]],
-  ['stopfpvcamerastream',['stopFPVCameraStream',['../classDJI_1_1OSDK_1_1AdvancedSensing.html#a56837e67371ce638ef2386dca2ef6f1c',1,'DJI::OSDK::AdvancedSensing']]],
-  ['stopmaincamerastream',['stopMainCameraStream',['../classDJI_1_1OSDK_1_1AdvancedSensing.html#a0132cad60dd645c6c05e67f814ed77c6',1,'DJI::OSDK::AdvancedSensing']]],
-  ['subscribefrontstereodisparity',['subscribeFrontStereoDisparity',['../classDJI_1_1OSDK_1_1AdvancedSensing.html#af8b4c3a2739bb9213ce271c370476dda',1,'DJI::OSDK::AdvancedSensing']]],
-  ['subscribefrontstereovga',['subscribeFrontStereoVGA',['../classDJI_1_1OSDK_1_1AdvancedSensing.html#a4632ade56b957cf1926425d57f75dcef',1,'DJI::OSDK::AdvancedSensing']]],
-  ['subscribestereoimages',['subscribeStereoImages',['../classDJI_1_1OSDK_1_1AdvancedSensing.html#a198453fdf1ba36bf8a6757f3a8978a9e',1,'DJI::OSDK::AdvancedSensing']]]
+  ['stop',['stop',['../classDJI_1_1OSDK_1_1HotpointMission.html#ac32563e7bc146fa96831237773280b36',1,'DJI::OSDK::HotpointMission::stop(VehicleCallBack callback=0, UserData userData=0)'],['../classDJI_1_1OSDK_1_1HotpointMission.html#ae91b0d3ca7da7ddb083cf1f678355ff8',1,'DJI::OSDK::HotpointMission::stop(int timer)'],['../classDJI_1_1OSDK_1_1WaypointMission.html#a9459bbe0539b362e5b8ce5ef7a2e2365',1,'DJI::OSDK::WaypointMission::stop(VehicleCallBack callback=0, UserData userData=0)'],['../classDJI_1_1OSDK_1_1WaypointMission.html#ae44be081993711a0c975cb19a4481b12',1,'DJI::OSDK::WaypointMission::stop(int timer)']]]
 ];

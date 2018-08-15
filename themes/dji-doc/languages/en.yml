@@ -1,10 +1,10 @@
 nav:
   sdk: "SDK"
   mobile_sdk: "Mobile SDK"
+  ux_sdk: "UX SDK"
   onboard_sdk: "Onboard SDK"
   guidance_sdk: "Guidance SDK"
   payload_sdk: "Payload SDK"
-  ux_sdk: "UX SDK"
   windows_sdk: "Windows SDK"
   mobile-sdk: "Mobile SDK"
   onboard-sdk: "Onboard SDK"

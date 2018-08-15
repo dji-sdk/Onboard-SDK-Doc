@@ -1,8 +1,10 @@
 ---
 title: Mobile SDK sample
-date: 2017-03-07
-keywords: [Mobile, communication]
+date: 2018-08-14
+keywords: [Mobile, communication, SDK, distributed, redundancy]
 ---
+
+>Note: Since OSDK 3.7, we have deprecated the MobileCommunication class and recommend that you upgrade to the MobileDevice class instead. Sample code in 3.7 now shows usage of both classes.
 
 ## Introduction
 
