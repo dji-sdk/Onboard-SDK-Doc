@@ -115,14 +115,44 @@
       title: Advanced Sensing - Object Detection
       path: /sample-doc/advanced-sensing-object-detection.html
 -
-  title: APPENDIX
+  title: M210 Checklist
   list:
     -
-      title: M100 Protocol Documents
+      title: Introduction
+      path: /M210-Docs/main.html
+    -
+      title: Onboard Computer Checklist
+      path: /M210-Docs/oes-checklist.html
+    -
+      title: Aircraft Checklist
+      path: /M210-Docs/aircraft-checklist.html
+    -
+      title: Simulation Checklist
+      path: /M210-Docs/simulation-checklist.html
+    -
+      title: Real-world Tests Checklist
+      path: /M210-Docs/real-world-test-checklist.html
+-
+  title: M100 Protocol
+  list:
+    -
+      title: Introduction
       path: /Protocol-Documents/main.html
     -
-      title: M210 Checklist
-      path: /M210-Docs/main.html
+      title: Onboard SDK OPEN Protocol
+      path: /protocol-doc/open-protocol.html
+    -
+      title: Data Transparent Transmission
+      path: /M100-Docs/application-development-guides/data-transparent-transmission.html
+    -
+      title: Ground Station Protocol
+      path: /protocol-doc/ground-station-protocol.html
+    -
+      title: Virtual RC Protocol
+      path: /Protocol-Documents/virtual-rc-protocol.html
+-
+  title: APPENDIX
+  list:
     -
       title: FAQ
       path: /appendix/FAQ.html

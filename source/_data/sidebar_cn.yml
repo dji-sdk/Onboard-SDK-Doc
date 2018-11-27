@@ -103,6 +103,9 @@
       title: Advanced Sensing - Stereo Images
       path: /cn/sample-doc/advanced-sensing-stereo-images.html
     -
+      title: Advanced Sensing - Depth Perception
+      path: /cn/sample-doc/advanced-sensing-stereo-depth-perception.html
+    -
       title: Advanced Sensing - Camera Stream
       path: /cn/sample-doc/advanced-sensing-camera-stream.html
     -
@@ -112,14 +115,44 @@
       title: Advanced Sensing - Object Detection
       path: /cn/sample-doc/advanced-sensing-object-detection.html
 -
-  title: APPENDIX
+  title: M210 Checklist
   list:
     -
-      title: M100 Protocol Documents
+      title: Introduction
+      path: /cn/M210-Docs/main.html
+    -
+      title: Onboard Computer Checklist
+      path: /cn/M210-Docs/oes-checklist.html
+    -
+      title: Aircraft Checklist
+      path: /cn/M210-Docs/aircraft-checklist.html
+    -
+      title: Simulation Checklist
+      path: /cn/M210-Docs/simulation-checklist.html
+    -
+      title: Real-world Tests Checklist
+      path: /cn/M210-Docs/real-world-test-checklist.html
+-
+  title: M100 Protocol
+  list:
+    -
+      title: Introduction
       path: /cn/Protocol-Documents/main.html
     -
-      title: M210 Checklist
-      path: /cn/M210-Docs/main.html
+      title: Onboard SDK OPEN Protocol
+      path: /cn/protocol-doc/open-protocol.html
+    -
+      title: Data Transparent Transmission
+      path: /cn/M100-Docs/application-development-guides/data-transparent-transmission.html
+    -
+      title: Ground Station Protocol
+      path: /cn/protocol-doc/ground-station-protocol.html
+    -
+      title: Virtual RC Protocol
+      path: /cn/Protocol-Documents/virtual-rc-protocol.html
+-
+  title: APPENDIX
+  list:
     -
       title: FAQ
       path: /cn/appendix/FAQ.html
