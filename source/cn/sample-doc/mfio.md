@@ -24,24 +24,24 @@ The MFIO sample is more varied than some of the other samples due to the nature 
 
 This flowchart shows a few of the options available in the prompt. Please read the source code to see the port configuration you need to do in DJI Asssitant 2; also note that you need to have an oscilloscope (or logic/waveform analyzer) and a function generator to try out all the samples present here.
 
-[![MFIO code workflow](../images/samples/mfio_sample.png)](../images/samples/mfio_sample.png)
+[![MFIO code workflow](../../images/samples/mfio_sample.png)](../../images/samples/mfio_sample.png)
 
 ## Setup & Output
 
 #### PWM Output
 Here is an example of the PWM output on an oscilloscope (70% duty cycle):
 
-![PWM Output](../images/samples/pwm_output.jpg)
+![PWM Output](../../images/samples/pwm_output.jpg)
 
 #### GPIO Loopback
 
 **Setup:**
 
-![GPIO Setup](../images/samples/gpio_setup.jpg)
+![GPIO Setup](../../images/samples/gpio_setup.jpg)
 
 **Output:**
 
 The output of the GPIO loopback (blocking) sample is shown on your terminal like this:
 
-![GPIO Results](../images/samples/gpio_loopback_blocking.png)
+![GPIO Results](../../images/samples/gpio_loopback_blocking.png)
 

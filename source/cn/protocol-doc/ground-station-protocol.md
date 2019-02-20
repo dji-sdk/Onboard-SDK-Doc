@@ -513,7 +513,7 @@ The following CMD SET/ID are not API but broadcast data protocol, by which devel
 
 Note: Developers should select the `Ground Station Status` checkbox in DJI Assistant.
 
-![](../images/common/groundstation.png)
+![](../../images/common/groundstation.png)
 
 ### 0x02, 0x03 Current Mission Status Push Information 
 

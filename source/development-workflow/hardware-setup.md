@@ -1,6 +1,6 @@
 ---
 title: Hardware Setup Guide
-date: 2017-11-23
+date: 2019-02-20
 version: 3.4
 keywords: [hardware setup，M100 UART Connector, A3 UART Connector, N3 UART]
 ---

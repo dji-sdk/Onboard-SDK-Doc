@@ -39,7 +39,7 @@ most of the bandwidth and remain little time for processing.
 Check out below table for benchmark result and refer to Sample #2
 if you experience drop frame issue.
 
-![adv_sensing_workflow](../images/samples/adv_sensing_sample1_workflow.png)
+![adv_sensing_workflow](../../images/samples/adv_sensing_sample1_workflow.png)
 
 
 #### Sample #2 Image Reading and Processing on Different Threads
@@ -53,7 +53,7 @@ to the onboard computer and a processing callback is invoked whenever image
 data is copied. This extra thread provides more bandwidth to process the images.
  
 
-![adv_sensing_workflow](../images/samples/adv_sensing_sample2_workflow.png)
+![adv_sensing_workflow](../../images/samples/adv_sensing_sample2_workflow.png)
 
 
 ## Output
@@ -61,7 +61,7 @@ data is copied. This extra thread provides more bandwidth to process the images.
 As shown below, an onboard computer is attached to M210 running this sample. Stereo images from both forward and 
 downward stereo camera pairs are collected in QVGA resolution (240p) at 20 fps. 
 
-![m210_flying_with_stereo_imgs](../images/samples/m210_all_image.gif)
+![m210_flying_with_stereo_imgs](../../images/samples/m210_all_image.gif)
 
 
 #### Appendix. Benchmark Result of Libusb Reading Time

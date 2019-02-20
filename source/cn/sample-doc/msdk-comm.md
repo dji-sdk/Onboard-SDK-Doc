@@ -12,7 +12,7 @@ This sample shows how custom data can be sent between a DJI Mobile SDK based app
 
 Specifically, this sample sends commands from the mobile device, to the onboard computer and the onboard computer sends acknowledgements back to the mobile device. An example of this data flow is below.
 
-![OSDK-MOC-Comms.png](../images/samples/OSDK-MOC-Comms.png)
+![OSDK-MOC-Comms.png](../../images/samples/OSDK-MOC-Comms.png)
 
 While such a simple example would not be used in a final application (the Mobile SDK can send the take-off command directly to the aircraft already), it is however quite useful during development and testing of an Onboard SDK based application.
 
@@ -49,7 +49,7 @@ The Mobile APIs being used are listed in the [Appendix](./../appendix/mobile-onb
 
 The general execution flow of the sample code is below:
 
-[![MOC code workflow](../images/samples/moc_sample_flowchart.jpg)](../images/samples/moc_sample_flowchart.jpg)
+[![MOC code workflow](../../images/samples/moc_sample_flowchart.jpg)](../../images/samples/moc_sample_flowchart.jpg)
 
 ## Feature Support
 

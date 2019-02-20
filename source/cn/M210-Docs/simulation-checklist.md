@@ -13,6 +13,7 @@ simulation at the same time. A configuration tool in executable form
 located inside `utility/bin/` is provided to turn on/off simulation 
 programmatically. Please choose the right executable depending on your 
 processor. Example usage is shown below.
+
 ````
 ./M210ConfigTool --usb-port /dev/ttyACM0 --config-file UserConfig.txt --simulation on --latitude 37.422083 --longitude -122.137390
 ````
@@ -24,7 +25,7 @@ see the flight mode changes from DJI Go 4 App, as shown
 below. Another indicator is that the LED lights will keep 
 flashing for roughly 3 seconds when simulation is turned on.  
 
-![simulation_indicator](../images/workflow/simulation_mode_gps_app.PNG)
+![simulation_indicator](../../images/workflow/simulation_mode_gps_app.png)
 
 ## Interference between Obstacle Avoidance Sensors and Simulation
 
@@ -38,9 +39,9 @@ protection feature. Note that these two configurations do not persist
 through power cycles.
 
 
-![m210_upward_infrared](../images/workflow/m210_upward_app.PNG)
+![m210_upward_infrared](../../images/workflow/m210_upward_app.png)
 
-![m210_expansion_port](../images/workflow/m210_landing_app.PNG)
+![m210_expansion_port](../../images/workflow/m210_landing_app.png)
 
 ## Running mission without RTK reception
 
@@ -49,8 +50,8 @@ steps. Mission will not start without RTK reception,
 developers need to either get RTK reception or turn off RTK via DJI GO 4 App.
 To disable RTK, click on the satellite icon in the main page of DJI Go 4 App,
 
-![rtk_icon](../images/workflow/rtk_icon_app.PNG)
+![rtk_icon](../../images/workflow/rtk_icon_app.png)
 
 A window with RTK information will show up. Turn it off and press "OK".
 
-![rtk_window](../images/workflow/rtk_window.PNG)
+![rtk_window](../../images/workflow/rtk_window.png)

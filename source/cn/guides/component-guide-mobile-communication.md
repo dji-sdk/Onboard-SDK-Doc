@@ -14,7 +14,7 @@ Sometimes it is useful combine the flexibility of the Mobile SDK with the real t
  
 The upstream (mobile device to onboard computer) bandwidth is approximately _1KB/s_ while the downstream (onboard computer to mobile device) bandwidth is approximately _8KB/s_
 
-![OSDKMOC](../images/common/OSDK_MOC.png)
+![OSDKMOC](../../images/common/OSDK_MOC.png)
 
 ## Uses
 

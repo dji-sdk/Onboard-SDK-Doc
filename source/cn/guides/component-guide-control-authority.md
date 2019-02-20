@@ -34,7 +34,7 @@ On all products, SDK control is possible in either P or F mode. Other modes can 
 #### A3, N3
 A3 and N3 stand alone flight controllers can be setup in DJI assistant to either have various combinations of flight modes map to the remote controller flight mode switch position, or have all positions map to P mode. This selection is done with the **Multiple Flight Modes** option:
 
-![Multi-flight-mode](../images/guides/multi-flight-mode.png)
+![Multi-flight-mode](../../images/guides/multi-flight-mode.png)
 
 * **Enabled**: Flight mode switch on the remote controller represents a selection of 3 modes including P, A, S, G and/or M modes. All modes other than P are used to regain control for the remote controller.
 * **Disabled**: All flight mode switch positions on the remote controller represent P mode. The flight mode switch just needs to be changed for the remote controller to regain control. Control is only temporarily regained, and logic in the onboard computer should monitor the remote controller flight mode switch and stop sending commands to the flight controller if the user needs to use the switch to permanently regain control.
@@ -76,7 +76,7 @@ Control authority simply means the onboard computer can command the aircraft to 
 
 The state diagram below shows what is available to the onboard computer and when during the various stages of running an Onboard SDK application. In addition, the authority of the remote controller and Mobile SDK is also shown for each onboard SDK application state.
 
-![Control-Authority-State-Diagram](../images/common/Control-Authority-State-Diagram.png)
+![Control-Authority-State-Diagram](../../images/common/Control-Authority-State-Diagram.png)
 
 >**Note**: While the Mobile SDK is sending virtual stick commands, or a mission is executing, then movement commands from the Onboard SDK will be ignored. Once the Mobile SDK commands complete, then the Onboard SDK will be in the same state as it was before the Mobile SDK commands started.
 
@@ -89,6 +89,6 @@ The remote controller sticks can manually control aircraft flight for all states
 
 By default, when the remote controller loses connection to the vehicle, the vehicle executes a return-to-home-and-land (RTL) maneuver. However, there is now an option to override this behavior by allowing the OSDK to continue executing its mission. To do so, users will have to check the `Enable SDK Failsafe Action` box and set the `SDK Failsafe Action` to `Hover` as shown in the picture.
 
-![sdk-failsafe](../images/guides/sdk-failsafe.png)
+![sdk-failsafe](../../images/guides/sdk-failsafe.png)
 
 With this functionality, users can also execute complete missions without having to use LightBridge 2 or a similar RC. In this situation, first-use activation (which requires internet connection and is otherwise done through DJI Go) is done through DJI Assistant 2.

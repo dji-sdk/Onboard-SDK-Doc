@@ -11,6 +11,6 @@ The DJI Onboard SDK includes a core library (OSDK-Core) through which aircraft d
 
 An application accesses the DJI product's capabilities through the main Vehicle class in the DJI Onboard SDK. 
 
-![Software Architecture](../images/common/OnboardSDKArchitecture.png)
+![Software Architecture](../../images/common/OnboardSDKArchitecture.png)
 
 The Vehicle class is used to administer the SDK (e.g. SDK activation), and also provides the objects to control and receive state information from the product.

@@ -116,7 +116,7 @@ The user can view the output of the program through the USART2 port of the STM32
 1. Download Keil MDK >5.22 and license it.
 2. Use Keil's `Pack Installer` to install the latest STM32F4xx_DFP.2.x.x pack, as shown below. (Alternatively, you can download manually from <a href="http://www.keil.com/dd2/Pack/" target="_blank">http://www.keil.com/dd2/Pack/</a> and import the downloaded file from Pack Installer.)
 
-![Keil_PackInstall](../images/STM32/STM32_Keil_PackInstall.png)
+![Keil_PackInstall](../../images/STM32/STM32_Keil_PackInstall.png)
 
 ##### Installing and Setting up the OSDK
 3. Clone (or download as zip) the DJI OSDK from Github [here](https://www.github.com/dji-sdk/Onboard-SDK).
@@ -126,7 +126,7 @@ The user can view the output of the program through the USART2 port of the STM32
 ##### Building and Running the Samples
 
 6. To choose which sample to run, you need to pass a preprocessor flag using Keil. See the image to find the location (underlined in red) you need to edit:
-![STM32-choose-sample](../images/STM32/stm32_sample_macro.png)
+![STM32-choose-sample](../../images/STM32/stm32_sample_macro.png)
 7. Use the menu item `Project->Build Target` and `Flash->Download` to build the project and flash to the STM32 board.
 8. Set the baud rate of your serial terminal software (here we use the open-source <a href="http://realterm.sourceforge.net" target="_blank"> RealTerm </a>) to be **115200**, which is the one we use to configure USART2 in the example App. Configure the serial terminal to display the received information in Ascii mode.
 ![Realterm Setup](../../images/STM32/STM32_Realterm.png)

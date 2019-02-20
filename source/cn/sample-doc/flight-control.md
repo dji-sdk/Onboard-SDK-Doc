@@ -1,5 +1,5 @@
 ---
-title: Flight Control sample
+title: Flight Control Sample
 date: 2017-03-07
 keywords: [sample, samples, Flight control, flightcontrol, position, positioncontrol, control]
 ---
@@ -24,10 +24,10 @@ The flight control sample is available on Linux, ROS and STM32.
 
 ## Code work flow 
 
-[![Flight Control code workflow](../images/samples/flightcontrol_flowchart.jpg)](../images/samples/flightcontrol_flowchart.jpg)
+[![Flight Control code workflow](../../images/samples/flightcontrol_flowchart.jpg)](../../images/samples/flightcontrol_flowchart.jpg)
 
 ## Output 
 
 The output of the flight control sample in simulation is as shown below. 
 
-[![Flight Control sample simulation](../images/samples/flight_control_loop.gif)](../images/samples/flight_control_loop.gif)
+[![Flight Control sample simulation](../../images/samples/flight_control_loop.gif)](../../images/samples/flight_control_loop.gif)

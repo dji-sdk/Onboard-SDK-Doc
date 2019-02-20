@@ -1,6 +1,6 @@
 ---
 title: Running your DJI OSDK Application
-date: 2017-11-23
+date: 2019-02-20
 version: 3.4
 keywords: [write apps, run apps, SDK, integrate, DJI]
 ---

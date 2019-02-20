@@ -1,5 +1,5 @@
 ---
-title: Missions sample
+title: GPS Missions sample
 date: 2017-03-07
 version: 3.3
 keywords: [sample, hotpoint, POI, point of interest, waypoint, gps, missions]

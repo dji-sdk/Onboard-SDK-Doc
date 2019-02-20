@@ -1,6 +1,6 @@
 ---
 title: Software Environment Setup Guide
-date: 2017-11-23
+date: 2019-02-20
 version: 3.4
 keywords: [hardware setup，M100 UART Connector, A3 UART Connector, N3 UART]
 ---
@@ -31,13 +31,17 @@ The OSDK API needs to be enabled to allow communication between the onboard comp
 #### Onboard SDK Application Registration
 
 - You must register as a developer with DJI and create an OSDK application ID and Key pair. Please go to <a href="https://developer.dji.com/register/" target="_blank">https://developer.dji.com/register/</a> to complete registration.
+- After registration, you need to create the APP to get APP ID and Key in the developer center.
+
+![Enable API Control](../images/common/APP_ID.png)
 
 #### Flight Platform Activation
 
 Each new vehicle or flight controller must be activated the first time it is used with an OSDK application. 
 
-The OSDK provides APIs for this activation, and all OSDK samples implement the activation.
+The OSDK provides APIs for this activation, and all OSDK samples implement the activation. So you can run the OSDK sample to activate the drone
 
+When you activate the drone, please open DJI GO or DJI Assistant 2.
 
 ## Ubuntu Linux
 
@@ -68,6 +72,13 @@ To make sure your Linux environment is ready to run OSDK applications, follow th
 
 ## STM32
 
+##### Introduction
+
+The system has the following setup:
+![system diagram](../images/STM32/STM32_System_Structure.png)
+
+The user can view the output of the program through the USART2 port of the STM32. The app communicates with the DJI product connected to the USART3 port through the Onboard SDK and prints feedback/debug information to the user thorugh USART2.
+
 ##### Toolchain Requirements
 - Keil MDK > 5.22 (armcc 5.06)
 - Windows PC to run Keil
@@ -79,7 +90,7 @@ To make sure your Linux environment is ready to run OSDK applications, follow th
 - In order for Keil to build code for the target board, you need to use Keil's `Pack Installer` to install the latest STM32F4xx_DFP.2.x.x pack, as shown below.
 - Alternatively, you can download manually from <a href="http://www.keil.com/dd2/Pack/" target="_blank">http://www.keil.com/dd2/Pack/</a> and import the downloaded file from Pack Installer.)
 
-![Keil_PackInstall](../../images/STM32/STM32_Keil_PackInstall.png)
+![Keil_PackInstall](../images/STM32/STM32_Keil_PackInstall.png)
 
 To make sure your STM32 environment is ready to run OSDK applications, follow the [STM32 Platform Guide](../sample-doc/sample-setup.html#stm32-oes) on the Sample Setup page and run a sample app.
 
@@ -119,3 +130,14 @@ For M210 users interested in the [Advanced Sensing](../sample-doc/advanced-sensi
 
 To make sure your ROS environment is ready to run OSDK applications, follow the [ROS Platform Guide](../sample-doc/sample-setup.html#ros-oes) on the Sample Setup page and run a sample app.
 
+## Qt
+
+##### Toolchain Requirements
+
+- Qt [5.9 or newer](https://info.qt.io/download-qt-for-application-development) (You may choose the Open-Source option)
+- Qt Creator 4.3 (Part of the download package above)
+- MSVC2015/ MSVC2013/ MinGW 5.3 (Windows 10) *OR*
+- Gcc 5.3.1 (Ubuntu Linux) *OR*
+- Apple LLVM 7.0 or newer (MacOS)
+
+The application may also work on other platforms/compilers but has not been tested with any combinations other than these.

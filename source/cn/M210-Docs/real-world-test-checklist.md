@@ -12,7 +12,7 @@ The [Advanced Sensing](../guides/component-guide-advanced-sensing-stereo-camera.
 ````
 
 
-![m210_usb_connected_flight](../images/workflow/m210_usb_connected_flight_app.PNG)
+![m210_usb_connected_flight](../../images/workflow/m210_usb_connected_flight_app.PNG)
 
 ## Running mission without RTK reception
 
@@ -21,8 +21,8 @@ steps. Mission will not start without RTK reception,
 developers need to either get RTK reception or turn off RTK via DJI GO 4 App.
 To disable RTK, click on the satellite icon in the main page of DJI Go 4 App,
 
-![rtk_icon](../images/workflow/rtk_icon_app.PNG)
+![rtk_icon](../../images/workflow/rtk_icon_app.PNG)
 
 A window with RTK information will show up. Turn it off and press "OK".
 
-![rtk_window](../images/workflow/rtk_window.PNG)
+![rtk_window](../../images/workflow/rtk_window.PNG)

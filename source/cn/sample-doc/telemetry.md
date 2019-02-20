@@ -23,13 +23,13 @@ The Telemetry sample is available on Linux and STM32.
 
 ## Code work flow 
 
-[![Telemetry code workflow](../images/samples/telemetry_flowchart.jpg)](../images/samples/telemetry_flowchart.jpg)
+[![Telemetry code workflow](../../images/samples/telemetry_flowchart.jpg)](../../images/samples/telemetry_flowchart.jpg)
 
 ## Output 
 
 The output of the telemetry sample is as shown below. 
 
-[![Telemetry output](../images/samples/telemetry_output.png)](../images/samples/telemetry_output.png)
+[![Telemetry output](../../images/samples/telemetry_output.png)](../../images/samples/telemetry_output.png)
 
 
 

@@ -25,10 +25,10 @@ The camera/gimbal sample is available on Linux, ROS and STM32.
 
 ## Code work flow
 
-[![CameraGimbal code workflow](../images/samples/cameragimbal_sample_flowchart.png)](../images/samples/cameragimbal_sample_flowchart.png)
+[![CameraGimbal code workflow](../../images/samples/cameragimbal_sample_flowchart.png)](../../images/samples/cameragimbal_sample_flowchart.png)
 
 ## Output
 
 The output of the camera gimabl sample should have the gimbal follow a trajectory similar to this:
 
-![Camera-Gimbal-output](../images/samples/camera_gimbal_output.gif)
+![Camera-Gimbal-output](../../images/samples/camera_gimbal_output.gif)

@@ -1,6 +1,6 @@
 ---
 title: Integrate The SDK Into Your Own Application
-date: 2017-11-23
+date: 2019-02-20
 version: 3.4
 keywords: [write apps, developemtn, SDK, integrate, DJI]
 ---
@@ -9,7 +9,7 @@ keywords: [write apps, developemtn, SDK, integrate, DJI]
 
 The diagram below demonstrates what would typically be included in an application that uses the Onboard SDK.
 
-![integrate-sdk](../images/workflow/djiosdk_integrate_into_app.png)
+![integrate-sdk](../../images/workflow/djiosdk_integrate_into_app.png)
 
 In addition to the OSDK Core Library, and any application specific third party libraries, the application will also need to include a platform specific threading library. OSDK uses threading handle user requests, callbacks and UART communication simultaneously. 
 
@@ -22,7 +22,7 @@ Thus, `Vehicle` acts as an entry point for user code.
 
 Let's take an example - `mission_sample` provided as part of the Linux samples. Here is a snippet of `mission_sample.hpp`:
 
-![integrate-sdk-sample](../images/workflow/integrate_sdk_includes.png)
+![integrate-sdk-sample](../../images/workflow/integrate_sdk_includes.png)
 
 - **L17-19**:   Includes that your application needs for the code you are writing
 - **L22**:      DJI OSDK Include. This is the only DJI OSDK header you need to include in your application.
@@ -34,7 +34,7 @@ Let's take an example - `mission_sample` provided as part of the Linux samples. 
 This section assumes you are using the CMake build system on Linux; the steps however are general enough to be
 conceptually reused with different platforms/build systems.
 
-![integrate-sdk-cmakelists](../images/workflow/integrate_sdk_cmakelists.png)
+![integrate-sdk-cmakelists](../../images/workflow/integrate_sdk_cmakelists.png)
 
 - **L5**:       Making sure you enable C++11 support, and linking against other third-party libraries
 - **L8-17**:    Telling the build system where to find `osdk-core` include files. If you install `osdk-core` to system,
@@ -54,7 +54,7 @@ Most blocking APIs return an [ACK::ErrorCode](/onboard-api-reference/structDJI_1
 
 One example of calling a blocking API and using the acknowledgement is shown in the image here, from the MFIO sample.
 
-![blocking-api-example](../images/workflow/blocking-api-sample.png)
+![blocking-api-example](../../images/workflow/blocking-api-sample.png)
 
 #### Non-blocking Overload API
 
@@ -62,7 +62,7 @@ Non-blocking APIs will return immediately after the request is sent to the aircr
 
 The image shows a non-blocking API being called, and its associated callback implementation that executes the exact same functionality as the blocking call shown above:
 
-![non-blocking-api-example](../images/workflow/non-blocking-api-sample.png)
+![non-blocking-api-example](../../images/workflow/non-blocking-api-sample.png)
 
 ## The OSDK Threading Model
 

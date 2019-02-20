@@ -7,7 +7,7 @@ keywords: [Object detection, main camera, fpv camera, image, tiny-yolo, CNN]
 
 With the capability to access the camera streams of M210 and reasonable onboard computing power, we can run convolutional neural network (CNN) based object detection algorithms. In this sample, we will demonstrate how to run a very powerful real-time object detection package named [YOLO V2](https://pjreddie.com/darknet/yolo/) and one of its ROS wrappers [darknet_ros](https://github.com/leggedrobotics/darknet_ros) in ROS environment.
 
-![M210_object_detection](../images/samples/object_detection.gif)
+![M210_object_detection](../../images/samples/object_detection.gif)
 
 We have tested this setup on Ubuntu 16.04 and ROS kinect, on both a laptop computer with NVIDIA GTX 970M graphics card and the [NVIDIA Jetson TX2](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems-dev-kits-modules/) with the [Orbitty Carrier board](http://connecttech.com/product/orbitty-carrier-for-nvidia-jetson-tx2-tx1/).
 

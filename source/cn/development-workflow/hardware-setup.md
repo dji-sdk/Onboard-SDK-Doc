@@ -1,6 +1,6 @@
 ---
 title: Hardware Setup Guide
-date: 2017-11-23
+date: 2019-02-20
 version: 3.4
 keywords: [hardware setup，M100 UART Connector, A3 UART Connector, N3 UART]
 ---
@@ -12,7 +12,7 @@ This guide will help you connect your Onboard Computer with the DJI aircraft (M1
 ### Data
 The onboard computer communicates to the flight controller or DJI aircraft through a UART interface. Generally, you will be working with one of the setups in the below diagram:
 
-![Hardware Setup](../images/common/GenericHWSetup.png)
+![Hardware Setup](../../images/common/GenericHWSetup.png)
 
 > Note the M600 and M600 Pro have an A3 flight controller underneath the top cover.
 
@@ -39,11 +39,11 @@ If using a stand alone flight controller product, or if power is needed not just
 
 #### M100
 
-![M100UARTConnector](../images/hardwaresetup/Connecter.jpg) 
+![M100UARTConnector](../../images/hardwaresetup/Connecter.jpg) 
 
 #### A3/N3/M600 UART Connector
 
-![A3UARTConnector](../images/hardwaresetup/A3UARTPort.png) 
+![A3UARTConnector](../../images/hardwaresetup/A3UARTPort.png) 
 
 **Note: Do NOT use the Vcc pin to power your own devices. You might damage your onboard computer, A3/N3 or both.**
 
@@ -57,7 +57,7 @@ The diagram below shows the hardware connection between an M100 and Manifold. No
 - M100 to PC connection can be used to run DJI Assistant 2. 
 - With DJI Assistant you can enable the OSDK API, set baud rate and/or run the Simulator.
 
-![M100Manifold](../images/hardwaresetup/M100Manifold.png)
+![M100Manifold](../../images/hardwaresetup/M100Manifold.png)
 
 #### M100 + PC/Linux machine
 
@@ -70,7 +70,7 @@ The diagram below shows the hardware connection between an M100 and a PC or Linu
 - With DJI Assistant you can enable the OSDK API, set baud rate and/or run the Simulator.
 
 
-![M100PCLinux](../images/hardwaresetup/M100PCLinux.png)
+![M100PCLinux](../../images/hardwaresetup/M100PCLinux.png)
 
 
 #### M100 + STM32
@@ -85,7 +85,7 @@ The diagram below shows the hardware connection between an M100 and STM32. Note 
 - In the STM32 sample App, users can send commands and receive feedback on the PC. 
 
 
-![M100STM32](../images/hardwaresetup/M100STM32.png)
+![M100STM32](../../images/hardwaresetup/M100STM32.png)
 
 
 #### A3/N3/M600 + Manifold
@@ -99,7 +99,7 @@ The diagram below shows the hardware connection between an A3/N3 and Manifold. N
 - A3/N3 to PC connection is used to run DJI Assistant 2.
 - With DJI Assistant you can enable OSDK API, set baud rate and/or run the Simulator.
 
-![A3Manifold](../images/hardwaresetup/A3N3_1.png)
+![A3Manifold](../../images/hardwaresetup/A3N3_1.png)
 
 
 #### A3/N3/M600 + PC/Linux machine
@@ -110,7 +110,7 @@ The diagram below shows the hardware connection between an A3/N3 and a PC or Lin
 - A3/N3 to PC connection is used to run DJI Assistant 2.
 - With DJI Assistant you can enable OSDK API, set baud rate and/or run the Simulator. 
 
-![A3PCLinux](../images/hardwaresetup/A3N3_2.png)
+![A3PCLinux](../../images/hardwaresetup/A3N3_2.png)
 
 
 #### A3/N3/M600 + STM32
@@ -125,7 +125,7 @@ The diagram below shows the hardware connection between an A3/N3 and STM32. Note
 - In the STM32 sample App, users can send commands and receive feedback on a Computer.
 
 
-![A3STM32](../images/hardwaresetup/A3N3_3.png)
+![A3STM32](../../images/hardwaresetup/A3N3_3.png)
 
 
 #### M210 + PC/Linux machine
@@ -136,7 +136,7 @@ The diagram below shows the hardware connection between a M210 and an Onbaord Co
 - To run DJI Assistant 2, please use the USB port to connect to PC/Mac.
 - With DJI Assistant you can enable OSDK API, set baud rate and/or run the Simulator.
 
-![A3STM32](../images/hardwaresetup/m210_without_usb_scaled.png)
+![A3STM32](../../images/hardwaresetup/m210_without_usb_scaled.png)
 
 
 #### M210 + PC/Linux machine with Advanced Sensing
@@ -149,5 +149,5 @@ The diagram below shows the hardware connection between a M210 and an Onbaord Co
 - To run DJI Assistant 2, please use the same USB port to connect to PC/Mac. To prevent conflict between two different computers talking to the same USB port on M210, please see [M210 simulation checklist](../M210-Docs/simulation-checklist.html).
 
 
-![A3STM32](../images/hardwaresetup/m210_with_usb_scaled.png)
+![A3STM32](../../images/hardwaresetup/m210_with_usb_scaled.png)
 

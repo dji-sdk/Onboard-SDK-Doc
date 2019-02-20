@@ -11,10 +11,6 @@ The DJI Onboard SDK (OSDK) allows you to build powerful, automated drone applica
 
 This document helps you get started with the various aspects of building OSDK applications.
 
-## Get Started Immediately
-
-Developers can get started immediately by following the steps to [run a sample application](../quick-start/quick-start.html). If you haven't been here before, please read the rest of this document.
-
 ## Introduction
 
 This section introduces and compares the products compatible with the DJI OSDK, and outlines the SDK itself.
@@ -22,20 +18,6 @@ This section introduces and compares the products compatible with the DJI OSDK, 
 - [Hardware Support](osdk-hardware-introduction.html)
 - [Onboard SDK Introduction](onboard-sdk-introduction.html)
 - [OSDK Architectural Overview](sdk-architectural-overview.html)
-
-## Guides
-
-The features available through the OSDK are detailed in our Feature Guides. These guides provide useful information about various aspects of modules present on DJI vehicles. The guides also help users understand the interaction of the Onboard SDK with the feature set.
-
-- [Telemetry Guide](../guides/component-guide-telemetry.html)
-- [Flight Control Guide](../guides/component-guide-flight-control.html)
-- [GPS Missions Guide](../guides/component-guide-missions.html)
-- [Camera/Gimbal Guide](../guides/component-guide-camera-and-gimbal.html)
-- [Multi-Function IO Guide](../guides/component-guide-multi-function-io.html)
-- [Mobile SDK Commmunication Guide](../guides/component-guide-mobile-communication.html)
-- [Hardware Synchronization Guide](../guides/component-guide-hardware-sync.html)
-- [Advanced Sensing - Stereo Camera Guide](../guides/component-guide-advanced-sensing-stereo-camera.html)
-
 
 ## Development Workflow
 
@@ -46,6 +28,21 @@ This section provides a step-by-step guide taking you through the entire develop
 - [Environment Setup](../development-workflow/environment-setup.html)
 - [Integrating the OSDK into your Application](../development-workflow/integrate-sdk.html)
 - [Running your OSDK Application](../development-workflow/run-application.html)
+
+## Guides
+
+The features available through the OSDK are detailed in our Feature Guides. These guides provide useful information about various aspects of modules present on DJI vehicles. The guides also help users understand the interaction of the Onboard SDK with the feature set.
+
+- [Telemetry Guide](../guides/component-guide-telemetry.html)
+- [Control authority Guide](../guides/component-guide-flight-control.html)
+- [Flight Control Guide](../guides/component-guide-control-authority.html)
+- [GPS Missions Guide](../guides/component-guide-missions.html)
+- [Camera/Gimbal Guide](../guides/component-guide-camera-and-gimbal.html)
+- [Multi-Function IO Guide](../guides/component-guide-multi-function-io.html)
+- [Mobile SDK Commmunication Guide](../guides/component-guide-mobile-communication.html)
+- [Hardware Synchronization Guide](../guides/component-guide-hardware-sync.html)
+- [Advanced Sensing - Stereo Camera Guide](../guides/component-guide-advanced-sensing-stereo-camera.html)
+- [Advanced Sensing - Camera Stream Guide](../guides/component-guide-advanced-sensing-camera-stream.html)
 
 ## Sample Code
 
@@ -58,6 +55,10 @@ We provide a number of samples designed to showcase example end-to-end implement
 - [Multi-Function IO Sample](../sample-doc/mfio.html)
 - [Mobile SDK Communication Sample](../sample-doc/msdk-comm.html)
 - [Advanced Sensing - Stereo Images Sample](../sample-doc/advanced-sensing-stereo-images.html)
+- [Advanced Sensing - Depth Perception Sample](../sample-doc/advanced-sensing-stereo-depth-perception.html)
+- [Advanced Sensing - Camera stream Sample](../sample-doc/advanced-sensing-camera-stream.html)
+- [Advanced Sensing - Target Tracking Sample](../sample-doc/advanced-sensing-target-tracking.html)
+- [Advanced Sensing - Object Detection Sample](../sample-doc/advanced-sensing-object-detection.html)
 
 ## API Reference
 

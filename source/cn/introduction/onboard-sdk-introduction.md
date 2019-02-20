@@ -184,5 +184,5 @@ For M210, developers can access data from forward and downward stereo camera pai
 
 The following diagram illustrates how the DJI Onboard SDK fits into an application, and how it is connected to a DJI aircraft.
 
-[![Software Architecture](../images/common/connection_to_application_and_product.png)](..images/common/connection_to_application_and_product.png)
+[![Software Architecture](../../images/common/connection_to_application_and_product.png)](..images/common/connection_to_application_and_product.png)
 

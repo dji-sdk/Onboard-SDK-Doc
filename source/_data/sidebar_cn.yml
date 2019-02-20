@@ -13,13 +13,27 @@
     -
       title: SDK Architectural Overview
       path: /cn/introduction/sdk-architectural-overview.html
-
 -
-  title: GET STARTED IMMEDIATELY
+  title: DEVELOPMENT WORKFLOW
   list:
     -
-      title: Run Sample Application
-      path: /cn/quick-start/quick-start.html
+      title: Prerequisites
+      path: /cn/development-workflow/workflow-prereq.html
+    -
+      title: Hardware Setup
+      path: /cn/development-workflow/hardware-setup.html
+    -
+      title: Software Setup
+      path: /cn/development-workflow/environment-setup.html
+    -
+      title: Checklist
+      path: /cn/development-workflow/run-application.html
+    -
+      title: Sample Setup
+      path: /cn/development-workflow/sample-setup.html
+    -
+      title: Integrate SDK into your Application
+      path: /cn/development-workflow/integrate-sdk.html
 -
   title: GUIDES
   list:
@@ -54,30 +68,8 @@
       title: Advanced Sensing - Camera Stream
       path: /cn/guides/component-guide-advanced-sensing-camera-stream.html
 -
-  title: DEVELOPMENT WORKFLOW
-  list:
-    -
-      title: Prerequisites
-      path: /cn/development-workflow/workflow-prereq.html
-    -
-      title: Hardware Setup
-      path: /cn/development-workflow/hardware-setup.html
-    -
-      title: Software Setup
-      path: /cn/development-workflow/environment-setup.html
-    -
-      title: Integrate SDK into Application
-      path: /cn/development-workflow/integrate-sdk.html
-    -
-      title: Run Application
-      path: /cn/development-workflow/run-application.html
-
--
   title: SAMPLE APPLICATIONS
   list:
-    -
-      title: Sample Setup
-      path: /cn/sample-doc/sample-setup.html
     -
       title: Telemetry
       path: /cn/sample-doc/telemetry.html
@@ -88,7 +80,7 @@
       title: Camera + Gimbal Control
       path: /cn/sample-doc/camera-gimbal-control.html
     -
-      title: Missions
+      title: GPS Missions
       path: /cn/sample-doc/missions.html
     -
       title: Mobile SDK Communication
@@ -96,9 +88,6 @@
     -
       title: Multi-Function IO
       path: /cn/sample-doc/mfio.html
-    -
-      title: Qt Sample
-      path: /cn/sample-doc/qt-sample.html
     -
       title: Advanced Sensing - Stereo Images
       path: /cn/sample-doc/advanced-sensing-stereo-images.html
@@ -159,6 +148,9 @@
     -
       title: Release Notes
       path: /cn/appendix/releaseNotes.html
+    -
+      title: Versioning
+      path: /cn/appendix/versioning.html
     -
       title: Mobile-Onboard APIs
       path: /cn/appendix/mobile-onboard-APIs.html

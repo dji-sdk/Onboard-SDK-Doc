@@ -74,7 +74,7 @@ The table below compares the two SDKs.
     <td>Remote Controller Needed</td>
     <td>No</td>
     <td>Yes</td>
-  </tr>
+  1. </tr>
   <tr>
     <td>Gimbal Control</td>
     <td>Yes</td>

@@ -56,7 +56,7 @@ Before doing a detailed product comparison it is useful to understand the compon
 
 All products comprise component modules that provide an important feature or function. An introduction to typical components is below with more details in the [Component Guide](../guides/component-guide-flight-control.html).
 
-![ComponentsAircraft](../images/common/M600Diagram.png)
+![ComponentsAircraft](../../images/common/M600Diagram.png)
 
 
 #### Propulsion
@@ -595,7 +595,7 @@ There are three flight controller options available:
 * **A3 Pro**: A commercial grade flight controller with 2 redundant IMUs and GPS antennas.
 
 All three flight controllers can be used on a range of airframe configurations:
-![configs](../images/common/FlightControllerAirframeConfigs.png)
+![configs](../../images/common/FlightControllerAirframeConfigs.png)
 
 The table below details the differences between the flight controller options.
 

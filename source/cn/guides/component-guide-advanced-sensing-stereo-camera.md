@@ -10,7 +10,7 @@ The advanced forward and downward stereo vision positioning systems (VPS) on DJI
 
 As an OSDK developer, you have access to this image data to expand the capabilities of your application. Besides the image data, OSDK also provides access to a pre-processed disparity map for front stereo as well as ROS interfaces for neat integration into ROS image and stereo vision workflows.
 
-![m210_front_stereo](../images/guides/m210_stereo_composite.png)
+![m210_front_stereo](../../images/guides/m210_stereo_composite.png)
 
 ## Image workflow, Resolution, and Frame Rate
 
@@ -35,7 +35,7 @@ Available image data includes:
 All images come with frame index and timestamp as metadata. Frame index for QVGA images starts whenever the drone is powered and will continue no matter whether the developer subscribes to it or not. On the other hand, the frame index for VGA images follows the user's subscription workflow. If the user subscribes and unsubscribes to VGA images, the frame index will continue from the last subscribed image. For time stamp, all four cameras are triggered at the same time and share the same timer. At this moment, the timer is not synchronized to the timers of telemetry data.
 
 
-![m210_flying_with_stereo_imgs](../images/samples/m210_all_image.gif)
+![m210_flying_with_stereo_imgs](../../images/samples/m210_all_image.gif)
 
 
 

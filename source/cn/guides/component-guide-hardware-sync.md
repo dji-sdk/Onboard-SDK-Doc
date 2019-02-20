@@ -22,7 +22,7 @@ An example use case - developers can use the data from sensors on board DJI airc
 
 The central principal of operation for hardware sync can be followed in this diagram:
 
-![hardware-sync-principles](../images/guides/hardsync.png)
+![hardware-sync-principles](../../images/guides/hardsync.png)
 
  1. A digital pulse is generated from the sending device, say the A3, and sent out on a hardware line (1) in the diagram.
  2. At the same time, the sending device timestamps this pulse in its own reference frame. Let's call this **(t<sub>0</sub><sup>A3</sup>)**.
@@ -38,19 +38,19 @@ The central principal of operation for hardware sync can be followed in this dia
 
 To use the hardware signal, developers must first set a function channel (F1-F8) to output hardware sync signal through DJI Assistant 2 as shown here:
 
-![Hard-Sync-Assistant](../images/guides/HardSync_Assistant.png)
+![Hard-Sync-Assistant](../../images/guides/HardSync_Assistant.png)
 
 This step ensures that when we call the APIs that trigger hardware sync, we have a channel through which the aircraft/FC can output the sync line. Connect this sync line to your OC or external sensor.
 
 To trigger the hardware sync, we use the Hardware Sync Start API
 
-![Sync API](../images/guides/syncAPI.png)
+![Sync API](../../images/guides/syncAPI.png)
 
 This API takes in a hardware sync signal frequency and a tag - this tag will be attached to each software packet that corresponds to a hardware pulse.
 
 Users can subscribe to `TOPIC_HARD_SYNC` using the Subscription telemetry to receive software packets corresponding to the hardware pulses; the incoming data looks like this:
 
-![Sync Data](../images/guides/syncSubscription.png)
+![Sync Data](../../images/guides/syncSubscription.png)
 
 Let's examine the `SyncTimeStamp` struct in some more detail:
 

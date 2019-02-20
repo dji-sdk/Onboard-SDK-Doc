@@ -18,6 +18,6 @@ keywords: [M210, linux, ros, onboard computer, OES, USB, libusb, udev, configura
 * Calibrate the vision positioning system for optimal performance. <a href="https://www.youtube.com/watch?v=mYSqz7R5zwI" target="_blank">[Video Link]</a>
 
 
-![m210_expansion_port](../images/hardwaresetup/m210_expansion_port_text.png)
+![m210_expansion_port](../../images/hardwaresetup/m210_expansion_port_text.png)
 
   

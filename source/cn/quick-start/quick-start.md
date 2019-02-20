@@ -59,7 +59,7 @@ If all of these are done, proceed to enter the next set of commands inside the `
 
 You should now see your terminal showing something like this:
 
-![successful-sample-setup](../images/quick-start/QuickStart_successful.png)
+![successful-sample-setup](../../images/quick-start/QuickStart_successful.png)
 
 Press the `b` key to run a `Takeoff + Position Control Sample + Landing` cycle. You should see the drone doing these in simulation. You are done!
 
@@ -72,7 +72,7 @@ To learn how to write applications like these, go ahead and check out the refere
  2. It hangs
  3. It says `Drone version not obtained!`
  4. It looks something like this:
- ![unsuccessful-sample-setup](../images/quick-start/QuickStart_unsuccessful.png)
+ ![unsuccessful-sample-setup](../../images/quick-start/QuickStart_unsuccessful.png)
 
 **A.** This is usually caused by a connection issue, or a baudrate issue. Please investigate your hardware connections, your baudrate and port name. If it still doesn't work, raise a Github issue.
 

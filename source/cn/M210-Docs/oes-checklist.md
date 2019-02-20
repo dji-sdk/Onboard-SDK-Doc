@@ -14,7 +14,7 @@ upward infrared occlusion could happen. To disable upward
 infrared obstacle avoidance, please use DJI Go 4 --> Top 
 right option --> Main Controller Setting --> Upward Obstacle Avoidance.
 
-![tx2_on_m210](../images/hardwaresetup/tx2_on_m210_small.jpg)
+![tx2_on_m210](../../images/hardwaresetup/tx2_on_m210_small.jpg)
 
 After the physically mounting, developers need to make proper connections between the onboard computer and the M210 following the [Hardware Setup](../development-workflow/hardware-setup.html).
 
@@ -41,7 +41,7 @@ In addition to libUSB, an udev file is required to allow your system to obtain p
 
 OSDK supports a configuration tool in executable form to allow developers to turn on/off simulation and external power supply and to enable flight when USB is connected to the aircraft. This tool communicates with M210 via USB. In order to use it, please make sure your onboard computer has ACM driver installed. An example of system message from `dmesg` command in terminal is shown below.
 
-![acm_dmesg](../images/Linux/acm_dmesg.png)
+![acm_dmesg](../../images/Linux/acm_dmesg.png)
 
 A tutorial on how to build ACM driver on NVIDIA TX2 can be found in [this video](https://www.youtube.com/watch?v=tDZF7ntLbxc)
 #### 3. FFmpeg

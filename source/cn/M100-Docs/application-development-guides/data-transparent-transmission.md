@@ -25,7 +25,7 @@ Onboard API is implemented through the onboard computer which is mounted on the 
 
 In short, Data Transparent Transmission serves as a linkage between Mobile API and Onboard API, granting developers a better flexibility in creating their own flight APPs.
 
-![streamFrame](../../images/common/streamFrame.jpg)
+![streamFrame](../../../images/common/streamFrame.png)
 
 ## Usage Scenario 1 - downstream from Onboard Computer to Mobile Device
 

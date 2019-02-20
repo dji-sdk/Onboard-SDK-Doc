@@ -20,15 +20,15 @@ The Missions sample is available on Linux, ROS and STM32.
 
 ## Code work flow
 
-[![Mission code workflow](../images/samples/missions_sample_flowchart.png)](../images/samples/missions_sample_flowchart.png)
+[![Mission code workflow](../../images/samples/missions_sample_flowchart.png)](../../images/samples/missions_sample_flowchart.png)
 
 ## Output
 
 The output of the waypoint mission sample in simulation is shown below, with `wayPointPolygonSides = 5`:
 
-<img src="../images/samples/Mission.gif" width="500" height="416" />
+<img src="../../images/samples/Mission.gif" width="500" height="416" />
 
 
 The output of the hotpoint mission sample in simulation is shown below:
 
-<img src="../images/samples/Hotpoint.gif" width="500" height="416" />
+<img src="../../images/samples/Hotpoint.gif" width="500" height="416" />
