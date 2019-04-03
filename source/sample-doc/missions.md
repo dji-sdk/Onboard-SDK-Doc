@@ -1,13 +1,13 @@
 ---
 title: GPS Missions sample
-date: 2017-03-07
-version: 3.3
+date: 2019-04-03
+version: 3.8
 keywords: [sample, hotpoint, POI, point of interest, waypoint, gps, missions]
 ---
 
 ## Introduction
 
-The Missions sample shows example usage of GPS Waypoint missions and GPS Hotpoint Missions.
+The Missions sample shows example usage of GPS Waypoint missions V1 and GPS Hotpoint Missions.
 
 ## Goals
 

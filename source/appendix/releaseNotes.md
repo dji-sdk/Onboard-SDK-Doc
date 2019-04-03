@@ -1,26 +1,23 @@
 ---
-title: Release Notes for Onboard SDK 3.6
-version: 3.7
-date: 2018-08-14
+title: Release Notes for Onboard SDK 3.8
+version: 3.8
+date: 2019-04-05
 keywords: [SDK, M210, Point Cloud, Camera, Disparity Map, collision avoidance, GPS-denied]
 ---
 
+## OSDK 3.8 Highlights
 
-## OSDK 3.7 Highlights
+<span style="font-size:larger;">Release Date: <strong>2019-04-05</strong></span>
 
-<span style="font-size:larger;">Release Date: <strong>2018-08-14</strong></span>
-
-- **Many new telemetry topics:** Local position in both GPS and GPS-denied situations, data from ESCs, more detailed RC data and additional state information. For a full list see [API Reference](https://developer.dji.com/onboard-api-reference/group__telem.html)
-- **New APIs**: `KillSwitch` API for emergency situations, new `MobileDevice` API in preparation of a future update
-- **Improved samples, docs and misc. updates** Telemetry documentation has been revamped, samples now demonstrate some additional typical use cases
+- **Support for M210 V2:** OSDK features are now supported for M210 V2. Currently, hardware synchronization and Multi-function IO are not supported. 
+- **New Time Sync feature:** The new time sync feature for M210 V2 is added. 
+- **Waypoint Mission V2 (beta):** A new generation of waypoint mission for M210 V2 is released for beta developers.
 
 ## Supported Firmware
 
 <span style="font-size:larger;">New Feature Support:</span>
 
-- A3/A3 Pro: 1.7.6.0+
-- N3: 1.7.6.0+
-- M210/M210 RTK: 1.1.0911+
+- M210/M210 RTK V2: 1.0.0300+
 
 <span style="font-size:larger;">Compatiblity:</span>
 
@@ -30,21 +27,24 @@ keywords: [SDK, M210, Point Cloud, Camera, Disparity Map, collision avoidance, G
 - M600/M600 Pro: 1.0.1.65+
 - M210/M210 RTK: 1.1.0410+
 
+<hr>
 
-## Improvements
+## Previous Releases
+
+### OSDK 3.7 Highlights
+
+<span style="font-size:larger;">Release Date: <strong>2018-08-14</strong></span>
+
+- **Many new telemetry topics:** Local position in both GPS and GPS-denied situations, data from ESCs, more detailed RC data and additional state information. For a full list see [API Reference](https://developer.dji.com/onboard-api-reference/group__telem.html)
+- **New APIs**: `KillSwitch` API for emergency situations, new `MobileDevice` API in preparation of a future update
+- **Improved samples, docs and misc. updates** Telemetry documentation has been revamped, samples now demonstrate some additional typical use cases
+
+#### Improvements
 
 - **Deprecation Macros** Some incorrect enum descriptions and old APIs - specfically the MobileCommunication class - are now deprecated, and a `DJI_DEPRECATED` macro has now been added
 - **Serial Connection Improvements** Removed serialDevice validation routine that sometimes reported false positives
 - **Version String Improvements** Hardware versions can now be accessed as `Version::M210` etc.
 
-## Developer Notes
-- This version of the SDK will throw warnings about the usage of a deprecated class (`MobileCommunication`) - this usage is necessary to provide a clean mechanism for developers to migrate code
-that may be using `MobileCommunication` to `MobileDevice`. If your code uses `MobileCommunication`, this is the right time to plan a migration to `MobileDevice`. In the next major update,
-`MobileCommunication` will be removed entirely and `MobileDevice` will add new features.
-
-<hr>
-
-## Previous Releases
 
 ### OSDK 3.6 Highlights
 

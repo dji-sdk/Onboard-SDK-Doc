@@ -56,6 +56,9 @@
       title: Hardware Synchronization
       path: /guides/component-guide-hardware-sync.html
     -
+      title: Time Synchronization
+      path: /guides/component-guide-time-sync.html
+    -
       title: MSDK and OSDK Communication
       path: /guides/component-guide-mobile-communication.html
     -
@@ -83,11 +86,17 @@
       title: GPS Missions
       path: /sample-doc/missions.html
     -
+      title: Waypoint Mission V2 (beta)
+      path: /sample-doc/wp2.html
+    -
       title: Mobile SDK Communication
       path: /sample-doc/msdk-comm.html
     -
       title: Multi-Function IO
       path: /sample-doc/mfio.html
+    -
+      title: Time Synchronization
+      path: /sample-doc/time-sync.html
     -
       title: Advanced Sensing - Stereo Images
       path: /sample-doc/advanced-sensing-stereo-images.html

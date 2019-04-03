@@ -1,7 +1,7 @@
 ---
 title: Setting up Samples
-date: 2019-02-20
-version: 3.3
+date: 2019-04-03
+version: 3.8
 keywords: [write apps, development, SDK, samples, DJI, OSDK, setup]
 ---
 
@@ -26,7 +26,7 @@ cmake ..
 make
 ```
 
-If you want the Advanced Sensing features for the M210, replace `cmake ..` with `cmake .. -DADVANCED_SENSING=ON` in the above commands.
+If you want the Advanced Sensing features for the M210, replace `cmake ..` with `cmake .. -DADVANCED_SENSING=ON` in the above commands. For Waypoint mission V2, please add `-DWAYPT2_CORE=ON`.
 
 3. The above step builds the `osdk-core` library, as well as the Linux samples. Executables are located inside the `build/bin` folder.
 

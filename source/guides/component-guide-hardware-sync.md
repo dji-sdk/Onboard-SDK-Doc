@@ -1,7 +1,7 @@
 ---
 title: Hardware Sync
-date: 2017-08-03
-keywords: [synchronization, timestamp, IMU, PPS, sync, INS, shutter]
+date: 2019-04-03
+keywords: [synchronization, timestamp, IMU, sync, INS, shutter]
 ---
 
 ## Introduction
@@ -10,13 +10,21 @@ Hardware synchronization, an exclusive Onboard SDK 3.3 feature, offers users the
 
 Hardware sync provides users with a digital timing signal from a hardware output line, along with a software packet that timestamps the digital signal in the aircraft/FC's clock reference. What's more, the software packet also includes time-aligned IMU data for use with external fusion algorithms.
 
-##### NOTE: Hardware Sync feature not supported in Matrice 100.
+##### NOTE: Hardware Sync feature is only supported in A3, N3 flight controller.
 
 ## Why Hardware Clock Sync?
 
 The goal of hardware synchronization is to offer users a means to accurately synchronize the free-running clock used by DJI flight controllers/aircraft with the clock on users' onboard computer or sensors.
 
 An example use case - developers can use the data from sensors on board DJI aircraft/flight controllers to accurately fuse with external sensors that accept a sync line, such as cameras. Another example is using it with sensors that have their own clock (such as GPS) - you can use an Onboard Computer (OC) to convert the DJI device clock as well as the sensor clock to the same reference (the OC's reference) and align the sensor data.
+
+## Differences between Time Sync and Hardware Sync
+|                     | Time Sync   | Hardware Sync |
+|---------------------|-------------|---------------|
+| Supported Products | M210 V2 | A3, N3 |
+| Time Reference | Free-flowing FC time + GPS/RTK time | Free-flowing FC time |
+| Hardware Pulse Frequency | 1Hz for RTK, 5Hz for GPS | up to 400Hz |
+| Time-aligned Data | IMU, Stereo images, NMEA messages| IMU|
 
 ## Principles of Operation
 

@@ -32,8 +32,7 @@ Available image data includes:
 
 ## Meta Data
 
-All images come with frame index and timestamp as metadata. Frame index for QVGA images starts whenever the drone is powered and will continue no matter whether the developer subscribes to it or not. On the other hand, the frame index for VGA images follows the user's subscription workflow. If the user subscribes and unsubscribes to VGA images, the frame index will continue from the last subscribed image. For time stamp, all four cameras are triggered at the same time and share the same timer. At this moment, the timer is not synchronized to the timers of telemetry data.
-
+All images come with frame index and timestamp as metadata. Frame index for QVGA images starts whenever the drone is powered and will continue no matter whether the developer subscribes to it or not. On the other hand, the frame index for VGA images follows the user's subscription workflow. If the user subscribes and unsubscribes to VGA images, the frame index will continue from the last subscribed image. For time stamp, all four cameras are triggered at the same time and share the same timer. The timer is synchronized to the clock of the flight controller on M210 V2 (Please update to the latest FW in DJI assistant 2). Please follow [Time Sync](../guides/component-guide-time-sync.html) for more detail.
 
 ![m210_flying_with_stereo_imgs](../images/samples/m210_all_image.gif)
 
