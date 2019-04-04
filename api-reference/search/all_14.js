@@ -2,6 +2,10 @@ var searchData=
 [
   ['unbalanced',['unbalanced',['../structDJI_1_1OSDK_1_1Telemetry_1_1ESCStatusIndividual.html#aec128d93bc2c3b546393c79e190283ae',1,'DJI::OSDK::Telemetry::ESCStatusIndividual']]],
   ['unrecorded_5fhome',['UNRECORDED_HOME',['../structDJI_1_1OSDK_1_1ErrorCode_1_1MissionACK_1_1Common.html#a99a154ed3a1956310727b1cdea613cac',1,'DJI::OSDK::ErrorCode::MissionACK::Common']]],
+  ['unsubscribefctimeinutcref',['unsubscribeFCTimeInUTCRef',['../classDJI_1_1OSDK_1_1HardwareSync.html#a61a4446558a06f726b8f2721e1baad5d',1,'DJI::OSDK::HardwareSync']]],
+  ['unsubscribenmeamsgs',['unsubscribeNMEAMsgs',['../classDJI_1_1OSDK_1_1HardwareSync.html#a335a945e5a0425d8afc3902749892428',1,'DJI::OSDK::HardwareSync']]],
+  ['unsubscribeppssource',['unsubscribePPSSource',['../classDJI_1_1OSDK_1_1HardwareSync.html#a37a321ce0be787c5fea542fa8cd87615',1,'DJI::OSDK::HardwareSync']]],
+  ['unsubscribeutctime',['unsubscribeUTCTime',['../classDJI_1_1OSDK_1_1HardwareSync.html#aec86984217521ea987df4b0a01adf02c',1,'DJI::OSDK::HardwareSync']]],
   ['up',['up',['../structDJI_1_1OSDK_1_1Telemetry_1_1RelativePosition.html#a69ac12205c74bc918548b3e582a34fc8',1,'DJI::OSDK::Telemetry::RelativePosition']]],
   ['updateidlevelocity',['updateIdleVelocity',['../classDJI_1_1OSDK_1_1WaypointMission.html#affd964d55236c2ba99ce790f7ba1efa2',1,'DJI::OSDK::WaypointMission::updateIdleVelocity(float32_t meterPreSecond, VehicleCallBack callback=0, UserData userData=0)'],['../classDJI_1_1OSDK_1_1WaypointMission.html#afe0ba7a20c4a882d9e2b3052feb69a29',1,'DJI::OSDK::WaypointMission::updateIdleVelocity(float32_t meterPreSecond, int timeout)']]],
   ['updateradius',['updateRadius',['../classDJI_1_1OSDK_1_1HotpointMission.html#a23db500bffe71b0dca90c70b10e751d4',1,'DJI::OSDK::HotpointMission::updateRadius(float32_t meter, VehicleCallBack callback=0, UserData userData=0)'],['../classDJI_1_1OSDK_1_1HotpointMission.html#aafa97568c631a714657f6ec94694f792',1,'DJI::OSDK::HotpointMission::updateRadius(float32_t meter, int timer)']]],

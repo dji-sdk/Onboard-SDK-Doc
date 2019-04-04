@@ -38,7 +38,7 @@
                         <li><a href="/windows-sdk">Windows SDK</a></li>
                     </ul>
                     <ul v-cloak="" v-show="!loggedIn" class="nav navbar-nav navbar-right nav-user">
-                        <li><a href="https://account.dji.com/login?appId=dji_sdk&backUrl=https%3A%2F%2Fdeveloper.dji.com%2Fuser&locale=en_US">Login</a></li>
+                       <li><a href="https://account.dji.com/login?appId=dji_sdk&backUrl=https%3A%2F%2Fdeveloper.dji.com%2Fuser&locale=en_US">Login</a></li>
                         <li><a href="https://account.dji.com/register?appId=dji_sdk&backUrl=https%3A%2F%2Fdeveloper.dji.com%2Fuser&locale=en_US" class="head-cta">Register</a></li>
                     </ul>
                     <ul v-cloak="" v-show="loggedIn" class="nav navbar-nav navbar-right nav-user">
@@ -134,6 +134,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classDJI_1_1OSDK_1_1HardwareSync-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">DJI::OSDK::HardwareSync Class Reference</div>  </div>
@@ -147,9 +148,42 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
+<tr class="memitem:a13af6a87e63268eca3f6f697d0f0b905"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a13af6a87e63268eca3f6f697d0f0b905"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>NMEAType</b> { <br />
+&#160;&#160;<b>GPGSA</b>, 
+<br />
+&#160;&#160;<b>GLGSA</b>, 
+<br />
+&#160;&#160;<b>GAGSA</b>, 
+<br />
+&#160;&#160;<b>BDGSA</b>, 
+<br />
+&#160;&#160;<b>GPRMC</b>, 
+<br />
+&#160;&#160;<b>TYPENUM</b>
+<br />
+ }</td></tr>
+<tr class="separator:a13af6a87e63268eca3f6f697d0f0b905"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcd2c1779fd2ff32ca51ffd134eed427"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adcd2c1779fd2ff32ca51ffd134eed427"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>PPSSource</b> { <br />
+&#160;&#160;<b>INTERNAL_GPS</b>, 
+<br />
+&#160;&#160;<b>EXTERNAL_GPS</b>, 
+<br />
+&#160;&#160;<b>RTK</b>
+<br />
+ }</td></tr>
+<tr class="separator:adcd2c1779fd2ff32ca51ffd134eed427"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0bea64d3c76ed98cef13b54b2bcee4ad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0bea64d3c76ed98cef13b54b2bcee4ad"></a>
 typedef struct DJI::OSDK::HardwareSync::SyncSettings&#160;</td><td class="memItemRight" valign="bottom"><b>SyncSettings</b></td></tr>
 <tr class="separator:a0bea64d3c76ed98cef13b54b2bcee4ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2d0436cf7c142415db14eeeb66731d7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa2d0436cf7c142415db14eeeb66731d7"></a>
+typedef enum DJI::OSDK::HardwareSync::NMEAType&#160;</td><td class="memItemRight" valign="bottom"><b>NMEAType</b></td></tr>
+<tr class="separator:aa2d0436cf7c142415db14eeeb66731d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59f44f960815a7d6150ecbd4076afd9a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a59f44f960815a7d6150ecbd4076afd9a"></a>
+typedef enum DJI::OSDK::HardwareSync::PPSSource&#160;</td><td class="memItemRight" valign="bottom"><b>PPSSource</b></td></tr>
+<tr class="separator:a59f44f960815a7d6150ecbd4076afd9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdcd89edd65664b3ae5a739cc6db3b68"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afdcd89edd65664b3ae5a739cc6db3b68"></a>
+typedef struct DJI::OSDK::HardwareSync::NMEAData&#160;</td><td class="memItemRight" valign="bottom"><b>NMEAData</b></td></tr>
+<tr class="separator:afdcd89edd65664b3ae5a739cc6db3b68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -162,6 +196,64 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aeb35dae3161b67dfa7a0a1d2e4618453"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1HardwareSync.html#aeb35dae3161b67dfa7a0a1d2e4618453">startSync</a> (SyncSettings &amp;data)</td></tr>
 <tr class="memdesc:aeb35dae3161b67dfa7a0a1d2e4618453"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal setter function that is called by setSyncFreq function.  <a href="#aeb35dae3161b67dfa7a0a1d2e4618453">More...</a><br /></td></tr>
 <tr class="separator:aeb35dae3161b67dfa7a0a1d2e4618453"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80fb47b6315f474ca25d7dad6eb70f90"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1HardwareSync.html#a80fb47b6315f474ca25d7dad6eb70f90">subscribeNMEAMsgs</a> (<a class="el" href="namespaceDJI_1_1OSDK.html#a20a68c21abe449cf5f133f7d398055d3">VehicleCallBack</a> cb, void *userData)</td></tr>
+<tr class="memdesc:a80fb47b6315f474ca25d7dad6eb70f90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subscribe to NMEA messages with a callback function.  <a href="#a80fb47b6315f474ca25d7dad6eb70f90">More...</a><br /></td></tr>
+<tr class="separator:a80fb47b6315f474ca25d7dad6eb70f90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a335a945e5a0425d8afc3902749892428"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a335a945e5a0425d8afc3902749892428"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1HardwareSync.html#a335a945e5a0425d8afc3902749892428">unsubscribeNMEAMsgs</a> ()</td></tr>
+<tr class="memdesc:a335a945e5a0425d8afc3902749892428"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unsubscribe to NMEA messages. <br /></td></tr>
+<tr class="separator:a335a945e5a0425d8afc3902749892428"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12229ad8966eb98703e98bde424150f2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1HardwareSync.html#a12229ad8966eb98703e98bde424150f2">getNMEAMsg</a> (NMEAType type, NMEAData &amp;nmea)</td></tr>
+<tr class="memdesc:a12229ad8966eb98703e98bde424150f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Poll NMEA messages.  <a href="#a12229ad8966eb98703e98bde424150f2">More...</a><br /></td></tr>
+<tr class="separator:a12229ad8966eb98703e98bde424150f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1f041a72d25b9acd49eea5d69584d49"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1HardwareSync.html#ae1f041a72d25b9acd49eea5d69584d49">subscribeUTCTime</a> (<a class="el" href="namespaceDJI_1_1OSDK.html#a20a68c21abe449cf5f133f7d398055d3">VehicleCallBack</a> cb, void *userData)</td></tr>
+<tr class="memdesc:ae1f041a72d25b9acd49eea5d69584d49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subscribe to UTC Time tag with a callback function.  <a href="#ae1f041a72d25b9acd49eea5d69584d49">More...</a><br /></td></tr>
+<tr class="separator:ae1f041a72d25b9acd49eea5d69584d49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec86984217521ea987df4b0a01adf02c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aec86984217521ea987df4b0a01adf02c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1HardwareSync.html#aec86984217521ea987df4b0a01adf02c">unsubscribeUTCTime</a> ()</td></tr>
+<tr class="memdesc:aec86984217521ea987df4b0a01adf02c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unsubscribe to UTC time tag. <br /></td></tr>
+<tr class="separator:aec86984217521ea987df4b0a01adf02c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ed5e55db885b7394067097536fdca7e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1HardwareSync.html#a0ed5e55db885b7394067097536fdca7e">getUTCTime</a> (NMEAData &amp;utc)</td></tr>
+<tr class="memdesc:a0ed5e55db885b7394067097536fdca7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Poll UTC time tag.  <a href="#a0ed5e55db885b7394067097536fdca7e">More...</a><br /></td></tr>
+<tr class="separator:a0ed5e55db885b7394067097536fdca7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a5033b8a07f0117cb6f3e0f1867fd81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1HardwareSync.html#a0a5033b8a07f0117cb6f3e0f1867fd81">subscribeFCTimeInUTCRef</a> (<a class="el" href="namespaceDJI_1_1OSDK.html#a20a68c21abe449cf5f133f7d398055d3">VehicleCallBack</a> cb, void *userData)</td></tr>
+<tr class="memdesc:a0a5033b8a07f0117cb6f3e0f1867fd81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subscribe to FC Time in UTC referece with a callback function.  <a href="#a0a5033b8a07f0117cb6f3e0f1867fd81">More...</a><br /></td></tr>
+<tr class="separator:a0a5033b8a07f0117cb6f3e0f1867fd81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61a4446558a06f726b8f2721e1baad5d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a61a4446558a06f726b8f2721e1baad5d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1HardwareSync.html#a61a4446558a06f726b8f2721e1baad5d">unsubscribeFCTimeInUTCRef</a> ()</td></tr>
+<tr class="memdesc:a61a4446558a06f726b8f2721e1baad5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unsubscribe to FC Time in UTC referece. <br /></td></tr>
+<tr class="separator:a61a4446558a06f726b8f2721e1baad5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad17cd403c695b368c46019de5ee523ae"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1HardwareSync.html#ad17cd403c695b368c46019de5ee523ae">getFCTimeInUTCRef</a> (<a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1FCTimeInUTC.html">DJI::OSDK::ACK::FCTimeInUTC</a> &amp;fcTimeInUTC)</td></tr>
+<tr class="memdesc:ad17cd403c695b368c46019de5ee523ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Poll FC Time in UTC referece.  <a href="#ad17cd403c695b368c46019de5ee523ae">More...</a><br /></td></tr>
+<tr class="separator:ad17cd403c695b368c46019de5ee523ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa03e25071136464de03e6d64c557f194"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1HardwareSync.html#aa03e25071136464de03e6d64c557f194">subscribePPSSource</a> (<a class="el" href="namespaceDJI_1_1OSDK.html#a20a68c21abe449cf5f133f7d398055d3">VehicleCallBack</a> cb, void *userData)</td></tr>
+<tr class="memdesc:aa03e25071136464de03e6d64c557f194"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subscribe to PPS source info with a callback function.  <a href="#aa03e25071136464de03e6d64c557f194">More...</a><br /></td></tr>
+<tr class="separator:aa03e25071136464de03e6d64c557f194"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37a321ce0be787c5fea542fa8cd87615"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a37a321ce0be787c5fea542fa8cd87615"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1HardwareSync.html#a37a321ce0be787c5fea542fa8cd87615">unsubscribePPSSource</a> ()</td></tr>
+<tr class="memdesc:a37a321ce0be787c5fea542fa8cd87615"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unsubscribe to PPS source info. <br /></td></tr>
+<tr class="separator:a37a321ce0be787c5fea542fa8cd87615"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae50f41651aaf82753c8a2d410b2478ab"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1HardwareSync.html#ae50f41651aaf82753c8a2d410b2478ab">getPPSSource</a> (PPSSource &amp;source)</td></tr>
+<tr class="memdesc:ae50f41651aaf82753c8a2d410b2478ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Poll PPS source info.  <a href="#ae50f41651aaf82753c8a2d410b2478ab">More...</a><br /></td></tr>
+<tr class="separator:ae50f41651aaf82753c8a2d410b2478ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcf55570e29b261ab4ab6aa1364f161d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1HardwareSync.html#afcf55570e29b261ab4ab6aa1364f161d">writeData</a> (const uint8_t cmdID, const RecvContainer *recvContainer)</td></tr>
+<tr class="memdesc:afcf55570e29b261ab4ab6aa1364f161d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write data when received from UART.  <a href="#afcf55570e29b261ab4ab6aa1364f161d">More...</a><br /></td></tr>
+<tr class="separator:afcf55570e29b261ab4ab6aa1364f161d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a4f931dc275d52b50ae0a2e452186fed6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4f931dc275d52b50ae0a2e452186fed6"></a>
+<a class="el" href="structDJI_1_1OSDK_1_1VehicleCallBackHandler.html">VehicleCallBackHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ppsNMEAHandler</b></td></tr>
+<tr class="separator:a4f931dc275d52b50ae0a2e452186fed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadde81ac3101784110cea40187f7fbab"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aadde81ac3101784110cea40187f7fbab"></a>
+<a class="el" href="structDJI_1_1OSDK_1_1VehicleCallBackHandler.html">VehicleCallBackHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ppsUTCTimeHandler</b></td></tr>
+<tr class="separator:aadde81ac3101784110cea40187f7fbab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5eaaf847a1297414dab09873ab41e20f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5eaaf847a1297414dab09873ab41e20f"></a>
+<a class="el" href="structDJI_1_1OSDK_1_1VehicleCallBackHandler.html">VehicleCallBackHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ppsUTCFCTimeHandler</b></td></tr>
+<tr class="separator:a5eaaf847a1297414dab09873ab41e20f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a702ed821ad13474c0b9e0761e287f373"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a702ed821ad13474c0b9e0761e287f373"></a>
+<a class="el" href="structDJI_1_1OSDK_1_1VehicleCallBackHandler.html">VehicleCallBackHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ppsSourceHandler</b></td></tr>
+<tr class="separator:a702ed821ad13474c0b9e0761e287f373"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>APIs for controlling Hardware Sync. </p>
@@ -170,6 +262,113 @@ Public Member Functions</h2></td></tr>
 <dd>
 You need to set a F-channel to Sync through <a class="el" href="namespaceDJI.html">DJI</a> Assistant 2. </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ad17cd403c695b368c46019de5ee523ae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HardwareSync::getFCTimeInUTCRef </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1FCTimeInUTC.html">DJI::OSDK::ACK::FCTimeInUTC</a> &amp;&#160;</td>
+          <td class="paramname"><em>fcTimeInUTC</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Poll FC Time in UTC referece. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>struct to fill </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a12229ad8966eb98703e98bde424150f2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HardwareSync::getNMEAMsg </td>
+          <td>(</td>
+          <td class="paramtype">NMEAType&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">NMEAData &amp;&#160;</td>
+          <td class="paramname"><em>nmea</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Poll NMEA messages. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">which</td><td>NMEA message to poll </td></tr>
+    <tr><td class="paramname">data</td><td>struct to fill </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ae50f41651aaf82753c8a2d410b2478ab"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HardwareSync::getPPSSource </td>
+          <td>(</td>
+          <td class="paramtype">PPSSource &amp;&#160;</td>
+          <td class="paramname"><em>source</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Poll PPS source info. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>struct to fill </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a0ed5e55db885b7394067097536fdca7e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HardwareSync::getUTCTime </td>
+          <td>(</td>
+          <td class="paramtype">NMEAData &amp;&#160;</td>
+          <td class="paramname"><em>utc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Poll UTC time tag. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>struct to fill </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="ab05f264d3e1266f91f9423d332decfed"></a>
 <div class="memitem">
 <div class="memproto">
@@ -231,6 +430,181 @@ You need to set a F-channel to Sync through <a class="el" href="namespaceDJI.htm
 
 </div>
 </div>
+<a class="anchor" id="a0a5033b8a07f0117cb6f3e0f1867fd81"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HardwareSync::subscribeFCTimeInUTCRef </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceDJI_1_1OSDK.html#a20a68c21abe449cf5f133f7d398055d3">VehicleCallBack</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>userData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Subscribe to FC Time in UTC referece with a callback function. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>callback function </td></tr>
+    <tr><td class="paramname">userData</td><td>user data (void ptr) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a80fb47b6315f474ca25d7dad6eb70f90"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HardwareSync::subscribeNMEAMsgs </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceDJI_1_1OSDK.html#a20a68c21abe449cf5f133f7d398055d3">VehicleCallBack</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>userData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Subscribe to NMEA messages with a callback function. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>callback function </td></tr>
+    <tr><td class="paramname">userData</td><td>user data (void ptr) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aa03e25071136464de03e6d64c557f194"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HardwareSync::subscribePPSSource </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceDJI_1_1OSDK.html#a20a68c21abe449cf5f133f7d398055d3">VehicleCallBack</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>userData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Subscribe to PPS source info with a callback function. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>callback function </td></tr>
+    <tr><td class="paramname">userData</td><td>user data (void ptr) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ae1f041a72d25b9acd49eea5d69584d49"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HardwareSync::subscribeUTCTime </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceDJI_1_1OSDK.html#a20a68c21abe449cf5f133f7d398055d3">VehicleCallBack</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>userData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Subscribe to UTC Time tag with a callback function. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>callback function </td></tr>
+    <tr><td class="paramname">userData</td><td>user data (void ptr) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="afcf55570e29b261ab4ab6aa1364f161d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HardwareSync::writeData </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t&#160;</td>
+          <td class="paramname"><em>cmdID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RecvContainer *&#160;</td>
+          <td class="paramname"><em>recvContainer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write data when received from UART. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmd</td><td>id </td></tr>
+    <tr><td class="paramname">received</td><td>data </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>osdk-core/api/inc/<a class="el" href="dji__hardware__sync_8hpp_source.html">dji_hardware_sync.hpp</a></li>
 <li>osdk-core/api/src/<a class="el" href="dji__hardware__sync_8cpp.html">dji_hardware_sync.cpp</a></li>
@@ -251,7 +625,8 @@ You need to set a F-channel to Sync through <a class="el" href="namespaceDJI.htm
         <nav class="link-list col-xs-2"><span class="title">Info</span><a href="/products">Products</a></nav>
         <nav class="link-list col-xs-2"><span class="title">Community</span><a href="http://stackoverflow.com/questions/tagged/dji-sdk" target="_blank">Stack Overflow</a><a href="https://www.youtube.com/channel/UCPQwN5xsob8zZGIcDhkYqUA" target="_blank">YouTube</a><a href="https://twitter.com/djidevelopers" target="_blank">Twitter</a></nav>
         <nav class="link-list col-xs-2"><span class="title">Contact Us</span><a href="mailto:dev@dji.com"> dev@dji.com</a></nav>
-        <nav class="link-list col-xs-3"><span class="title">Business Cooperation</span><a href="mailto:dev@dji.com"> dev@dji.com</a></nav>
+        <nav class="link-list col-xs-2"><span class="title">Business Cooperation</span><a href="mailto:dev@dji.com"> dev@dji.com</a></nav>
+        <nav class="link-list col-xs-2"><span class="title">BILLING</span><a href="mailto:billing-dev@dji.com"> billing-dev@dji.com</a></nav>
       </div>
       <div class="foot-copyright row">
         <div class="col-xs-3 foot-logo"><img src="dji-logo-foot.png"></div>

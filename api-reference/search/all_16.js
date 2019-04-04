@@ -26,5 +26,5 @@ var searchData=
   ['waypointstatuspushdata',['WayPointStatusPushData',['../classDJI_1_1OSDK_1_1ACK.html#a2a25ab972da85aa8c54d74196c2713f0',1,'DJI::OSDK::ACK']]],
   ['waypointvelocity',['WayPointVelocity',['../structDJI_1_1OSDK_1_1ACK_1_1WayPointVelocity.html',1,'DJI::OSDK::ACK']]],
   ['waypointvelocity',['WayPointVelocity',['../classDJI_1_1OSDK_1_1ACK.html#a8a343ac813c4be2a5f67aecc3d9dd4d6',1,'DJI::OSDK::ACK']]],
-  ['wayptcounter',['wayptCounter',['../classDJI_1_1OSDK_1_1MissionManager.html#a7bf41edbc79b69a85795eed1359f62d4',1,'DJI::OSDK::MissionManager']]]
+  ['writedata',['writeData',['../classDJI_1_1OSDK_1_1HardwareSync.html#afcf55570e29b261ab4ab6aa1364f161d',1,'DJI::OSDK::HardwareSync']]]
 ];

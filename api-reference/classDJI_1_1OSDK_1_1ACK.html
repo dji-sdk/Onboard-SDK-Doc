@@ -38,7 +38,7 @@
                         <li><a href="/windows-sdk">Windows SDK</a></li>
                     </ul>
                     <ul v-cloak="" v-show="!loggedIn" class="nav navbar-nav navbar-right nav-user">
-                        <li><a href="https://account.dji.com/login?appId=dji_sdk&backUrl=https%3A%2F%2Fdeveloper.dji.com%2Fuser&locale=en_US">Login</a></li>
+                       <li><a href="https://account.dji.com/login?appId=dji_sdk&backUrl=https%3A%2F%2Fdeveloper.dji.com%2Fuser&locale=en_US">Login</a></li>
                         <li><a href="https://account.dji.com/register?appId=dji_sdk&backUrl=https%3A%2F%2Fdeveloper.dji.com%2Fuser&locale=en_US" class="head-cta">Register</a></li>
                     </ul>
                     <ul v-cloak="" v-show="loggedIn" class="nav navbar-nav navbar-right nav-user">
@@ -155,6 +155,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1ErrorCode.html">ErrorCode</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct is returned from all blocking calls, except certain mission calls that have explicit types defined later in this file.  <a href="structDJI_1_1OSDK_1_1ACK_1_1ErrorCode.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1FCTimeInUTC.html">FCTimeInUTC</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct captures PushData when subscribe to UTC &amp; FC time in hardware sync.  <a href="structDJI_1_1OSDK_1_1ACK_1_1FCTimeInUTC.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1HotPointRead.html">HotPointRead</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct is returned from the DJI::OSDK::HotpointMission::readData blocking API.  <a href="structDJI_1_1OSDK_1_1ACK_1_1HotPointRead.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -209,6 +212,9 @@ typedef struct DJI::OSDK::ACK::WayPointAddPointInternal&#160;</td><td class="mem
 <tr class="memitem:a9cbecbab82f9ff9071452c94ac6dd74c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9cbecbab82f9ff9071452c94ac6dd74c"></a>
 typedef struct DJI::OSDK::ACK::WayPointIndexInternal&#160;</td><td class="memItemRight" valign="bottom"><b>WayPointIndexInternal</b></td></tr>
 <tr class="separator:a9cbecbab82f9ff9071452c94ac6dd74c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a958a24f0502c0afce6c4e1e194331da1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a958a24f0502c0afce6c4e1e194331da1"></a>
+typedef struct DJI::OSDK::ACK::WayPoint2CommonRsp&#160;</td><td class="memItemRight" valign="bottom"><b>WayPoint2CommonRsp</b></td></tr>
+<tr class="separator:a958a24f0502c0afce6c4e1e194331da1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bb4b5e7616ce1256781a0775aa51f5d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5bb4b5e7616ce1256781a0775aa51f5d"></a>
 typedef struct DJI::OSDK::ACK::WayPointVelocityInternal&#160;</td><td class="memItemRight" valign="bottom"><b>WayPointVelocityInternal</b></td></tr>
 <tr class="separator:a5bb4b5e7616ce1256781a0775aa51f5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -271,6 +277,10 @@ typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>VGAImage</
 typedef struct <a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1StereoVGAImgData.html">DJI::OSDK::ACK::StereoVGAImgData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ACK.html#ac53045c2c2530f7e1737a412838195a4">StereoVGAImgData</a></td></tr>
 <tr class="memdesc:ac53045c2c2530f7e1737a412838195a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct captures PushData when subscribe to VGA images. <br /></td></tr>
 <tr class="separator:ac53045c2c2530f7e1737a412838195a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34482073c3d027731083722e9902ce46"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a34482073c3d027731083722e9902ce46"></a>
+typedef struct <a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1FCTimeInUTC.html">DJI::OSDK::ACK::FCTimeInUTC</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ACK.html#a34482073c3d027731083722e9902ce46">FCTimeInUTC</a></td></tr>
+<tr class="memdesc:a34482073c3d027731083722e9902ce46"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct captures PushData when subscribe to UTC &amp; FC time in hardware sync. <br /></td></tr>
+<tr class="separator:a34482073c3d027731083722e9902ce46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f84d91a0391a710e7c7ed7c5d1b5d6b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4f84d91a0391a710e7c7ed7c5d1b5d6b"></a>
 typedef union DJI::OSDK::ACK::TypeUnion&#160;</td><td class="memItemRight" valign="bottom"><b>TypeUnion</b></td></tr>
 <tr class="separator:a4f84d91a0391a710e7c7ed7c5d1b5d6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -541,7 +551,8 @@ static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>RELEA
         <nav class="link-list col-xs-2"><span class="title">Info</span><a href="/products">Products</a></nav>
         <nav class="link-list col-xs-2"><span class="title">Community</span><a href="http://stackoverflow.com/questions/tagged/dji-sdk" target="_blank">Stack Overflow</a><a href="https://www.youtube.com/channel/UCPQwN5xsob8zZGIcDhkYqUA" target="_blank">YouTube</a><a href="https://twitter.com/djidevelopers" target="_blank">Twitter</a></nav>
         <nav class="link-list col-xs-2"><span class="title">Contact Us</span><a href="mailto:dev@dji.com"> dev@dji.com</a></nav>
-        <nav class="link-list col-xs-3"><span class="title">Business Cooperation</span><a href="mailto:dev@dji.com"> dev@dji.com</a></nav>
+        <nav class="link-list col-xs-2"><span class="title">Business Cooperation</span><a href="mailto:dev@dji.com"> dev@dji.com</a></nav>
+        <nav class="link-list col-xs-2"><span class="title">BILLING</span><a href="mailto:billing-dev@dji.com"> billing-dev@dji.com</a></nav>
       </div>
       <div class="foot-copyright row">
         <div class="col-xs-3 foot-logo"><img src="dji-logo-foot.png"></div>

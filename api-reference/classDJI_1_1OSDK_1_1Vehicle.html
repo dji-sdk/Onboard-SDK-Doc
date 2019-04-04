@@ -38,7 +38,7 @@
                         <li><a href="/windows-sdk">Windows SDK</a></li>
                     </ul>
                     <ul v-cloak="" v-show="!loggedIn" class="nav navbar-nav navbar-right nav-user">
-                        <li><a href="https://account.dji.com/login?appId=dji_sdk&backUrl=https%3A%2F%2Fdeveloper.dji.com%2Fuser&locale=en_US">Login</a></li>
+                       <li><a href="https://account.dji.com/login?appId=dji_sdk&backUrl=https%3A%2F%2Fdeveloper.dji.com%2Fuser&locale=en_US">Login</a></li>
                         <li><a href="https://account.dji.com/register?appId=dji_sdk&backUrl=https%3A%2F%2Fdeveloper.dji.com%2Fuser&locale=en_US" class="head-cta">Register</a></li>
                     </ul>
                     <ul v-cloak="" v-show="loggedIn" class="nav navbar-nav navbar-right nav-user">
@@ -213,9 +213,9 @@ OpenProtocol *&#160;</td><td class="memItemRight" valign="bottom"><b>protocolLay
 <tr class="memitem:a4f1e1adfc918dd2806d1c2e65a32f6a6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4f1e1adfc918dd2806d1c2e65a32f6a6"></a>
 <a class="el" href="classDJI_1_1OSDK_1_1MFIO.html">MFIO</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>mfio</b></td></tr>
 <tr class="separator:a4f1e1adfc918dd2806d1c2e65a32f6a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fc1c1f82269cdd5c4e4b15ffa992ead"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0fc1c1f82269cdd5c4e4b15ffa992ead"></a>
-DJI_DEPRECATED <a class="el" href="classDJI_1_1OSDK_1_1MobileCommunication.html">MobileCommunication</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>moc</b></td></tr>
-<tr class="separator:a0fc1c1f82269cdd5c4e4b15ffa992ead"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08cb6640f8ca2a26b8f41cb09a595f69"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a08cb6640f8ca2a26b8f41cb09a595f69"></a>
+<a class="el" href="classDJI_1_1OSDK_1_1MobileCommunication.html">MobileCommunication</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>moc</b></td></tr>
+<tr class="separator:a08cb6640f8ca2a26b8f41cb09a595f69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59533cd42762cc897d775474a0bed35d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a59533cd42762cc897d775474a0bed35d"></a>
 <a class="el" href="classDJI_1_1OSDK_1_1MobileDevice.html">MobileDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>mobileDevice</b></td></tr>
 <tr class="separator:a59533cd42762cc897d775474a0bed35d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -264,6 +264,9 @@ char *&#160;</td><td class="memItemRight" valign="bottom"><b>getHwSerialNum</b> 
 <tr class="separator:a1aa1a25e585fbfe1d420f598c6f2fe42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3eaa2fff48a08619b0a5f61069bc4ea9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Vehicle.html#a3eaa2fff48a08619b0a5f61069bc4ea9">isM100</a> ()</td></tr>
 <tr class="separator:a3eaa2fff48a08619b0a5f61069bc4ea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70195f38db923c0894231a17e8ca2c91"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a70195f38db923c0894231a17e8ca2c91"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isM210V2</b> ()</td></tr>
+<tr class="separator:a70195f38db923c0894231a17e8ca2c91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8b26ce02d4eaafd786918ac567ed24f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af8b26ce02d4eaafd786918ac567ed24f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setKey</b> (const char *key)</td></tr>
 <tr class="separator:af8b26ce02d4eaafd786918ac567ed24f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -779,7 +782,8 @@ Proceed to programming if activation successful. </p>
         <nav class="link-list col-xs-2"><span class="title">Info</span><a href="/products">Products</a></nav>
         <nav class="link-list col-xs-2"><span class="title">Community</span><a href="http://stackoverflow.com/questions/tagged/dji-sdk" target="_blank">Stack Overflow</a><a href="https://www.youtube.com/channel/UCPQwN5xsob8zZGIcDhkYqUA" target="_blank">YouTube</a><a href="https://twitter.com/djidevelopers" target="_blank">Twitter</a></nav>
         <nav class="link-list col-xs-2"><span class="title">Contact Us</span><a href="mailto:dev@dji.com"> dev@dji.com</a></nav>
-        <nav class="link-list col-xs-3"><span class="title">Business Cooperation</span><a href="mailto:dev@dji.com"> dev@dji.com</a></nav>
+        <nav class="link-list col-xs-2"><span class="title">Business Cooperation</span><a href="mailto:dev@dji.com"> dev@dji.com</a></nav>
+        <nav class="link-list col-xs-2"><span class="title">BILLING</span><a href="mailto:billing-dev@dji.com"> billing-dev@dji.com</a></nav>
       </div>
       <div class="foot-copyright row">
         <div class="col-xs-3 foot-logo"><img src="dji-logo-foot.png"></div>

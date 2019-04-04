@@ -1,5 +1,5 @@
 <map id="osdk&#45;core/api/src/dji_mission_manager.cpp" name="osdk&#45;core/api/src/dji_mission_manager.cpp">
-<area shape="rect" id="node2" href="$dji__mission__manager_8hpp.html" title="Mission&#45;Manager API for DJI OSDK library. " alt="" coords="217,95,387,121"/>
+<area shape="rect" id="node2" href="$dji__mission__manager_8hpp.html" title="Mission&#45;Manager API for DJI OSDK library. " alt="" coords="288,95,457,121"/>
 <area shape="rect" id="node3" href="$dji__hotpoint_8hpp.html" title="Implementation of HotPoint (Point of Interest) Missions for DJI OSDK. " alt="" coords="316,169,429,196"/>
 <area shape="rect" id="node13" href="$dji__waypoint_8hpp.html" title="Implementation of GPS Waypoint Missions for DJI OSDK. " alt="" coords="173,169,292,196"/>
 <area shape="rect" id="node4" href="$dji__mission__base_8hpp.html" title="Mission&#45;Base abstract class for DJI OSDK library. " alt="" coords="159,244,306,271"/>
