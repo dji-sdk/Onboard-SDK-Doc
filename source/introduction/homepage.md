@@ -54,7 +54,7 @@ We provide a number of samples designed to showcase example end-to-end implement
 - [GPS Missions Sample](../sample-doc/missions.html)
 - [Camera/Gimbal Control Sample](../sample-doc/camera-gimbal-control.html)
 - [Multi-Function IO Sample](../sample-doc/mfio.html)
-- [Time Synchronization](/sample-doc/time-sync.html)
+- [Time Synchronization](../sample-doc/time-sync.html)
 - [Waypoint Mission V2 (beta)](../sample-doc/wp2.html)
 - [Mobile SDK Communication Sample](../sample-doc/msdk-comm.html)
 - [Advanced Sensing - Stereo Images Sample](../sample-doc/advanced-sensing-stereo-images.html)
