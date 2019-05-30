@@ -4,13 +4,11 @@
       .modal-header
         a.btn-close(href="javascript:;", @click="closeSearch")
           | ×
-        h2.title 
+        h2.title
           - if (config.sdk == 'mobile-sdk')
             = __('doc.search_title_mobile')
           - if (config.sdk == 'onboard-sdk')
             = __('doc.search_title_onboard')
-          - if (config.sdk == 'guidance-sdk')
-            = __('doc.search_title_guidance')
         input(type="text", v-model="searchInput", @keydown.enter="search")
       .modal-body
         p.search-count(v-show="!!searchCount")
