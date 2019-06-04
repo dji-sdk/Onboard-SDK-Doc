@@ -30,6 +30,8 @@ var searchData=
   ['dji_5fmobile_5fcommunication_2ehpp',['dji_mobile_communication.hpp',['../dji__mobile__communication_8hpp.html',1,'']]],
   ['dji_5fmobile_5fdevice_2ecpp',['dji_mobile_device.cpp',['../dji__mobile__device_8cpp.html',1,'']]],
   ['dji_5fmobile_5fdevice_2ehpp',['dji_mobile_device.hpp',['../dji__mobile__device_8hpp.html',1,'']]],
+  ['dji_5fpayload_5fdevice_2ecpp',['dji_payload_device.cpp',['../dji__payload__device_8cpp.html',1,'']]],
+  ['dji_5fpayload_5fdevice_2ehpp',['dji_payload_device.hpp',['../dji__payload__device_8hpp.html',1,'']]],
   ['dji_5fstatus_2ehpp',['dji_status.hpp',['../dji__status_8hpp.html',1,'']]],
   ['dji_5fsubscription_2ecpp',['dji_subscription.cpp',['../dji__subscription_8cpp.html',1,'']]],
   ['dji_5fsubscription_2ehpp',['dji_subscription.hpp',['../dji__subscription_8hpp.html',1,'']]],

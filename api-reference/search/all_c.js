@@ -1,14 +1,12 @@
 var searchData=
 [
-  ['mag',['Mag',['../structDJI_1_1OSDK_1_1Telemetry_1_1Mag.html',1,'DJI::OSDK::Telemetry']]],
-  ['mag',['Mag',['../namespaceDJI_1_1OSDK_1_1Telemetry.html#acca53ea861f162aadc2753ff4c44eb70',1,'DJI::OSDK::Telemetry']]],
+  ['mag',['Mag',['../structDJI_1_1OSDK_1_1Telemetry_1_1Mag.html',1,'DJI::OSDK::Telemetry::Mag'],['../namespaceDJI_1_1OSDK_1_1Telemetry.html#acca53ea861f162aadc2753ff4c44eb70',1,'DJI::OSDK::Telemetry::Mag()']]],
   ['mandatoryversionbase',['mandatoryVersionBase',['../namespaceDJI_1_1OSDK.html#af1b92aeca3ba6f10371ec3dd7575eda4',1,'DJI::OSDK']]],
   ['max_5fincoming_5fdata_5fsize',['MAX_INCOMING_DATA_SIZE',['../namespaceDJI_1_1OSDK.html#a0278bdc24560401128675003f8cb2ae3',1,'DJI::OSDK']]],
   ['maxvelocity',['maxVelocity',['../structDJI_1_1OSDK_1_1WayPointInitSettings.html#ae47adf4a5537a50ee87f59e954921f7a',1,'DJI::OSDK::WayPointInitSettings']]],
   ['mfio',['MFIO',['../classDJI_1_1OSDK_1_1MFIO.html',1,'DJI::OSDK']]],
   ['mfioack',['MFIOACK',['../classDJI_1_1OSDK_1_1ErrorCode_1_1MFIOACK.html',1,'DJI::OSDK::ErrorCode']]],
-  ['mfioget',['MFIOGet',['../structDJI_1_1OSDK_1_1ACK_1_1MFIOGet.html',1,'DJI::OSDK::ACK']]],
-  ['mfioget',['MFIOGet',['../classDJI_1_1OSDK_1_1ACK.html#aee5bc1ad935e8a8b6f15a81e99c49934',1,'DJI::OSDK::ACK']]],
+  ['mfioget',['MFIOGet',['../structDJI_1_1OSDK_1_1ACK_1_1MFIOGet.html',1,'DJI::OSDK::ACK::MFIOGet'],['../classDJI_1_1OSDK_1_1ACK.html#aee5bc1ad935e8a8b6f15a81e99c49934',1,'DJI::OSDK::ACK::MFIOGet()']]],
   ['missionack',['MissionACK',['../classDJI_1_1OSDK_1_1ErrorCode_1_1MissionACK.html',1,'DJI::OSDK::ErrorCode']]],
   ['missionbase',['MissionBase',['../classDJI_1_1OSDK_1_1MissionBase.html',1,'DJI::OSDK']]],
   ['missioncallback',['missionCallback',['../classDJI_1_1OSDK_1_1MissionManager.html#a431ef98a73939b779051359269683d6e',1,'DJI::OSDK::MissionManager']]],

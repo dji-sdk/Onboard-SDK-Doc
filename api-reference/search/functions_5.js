@@ -1,10 +1,10 @@
 var searchData=
 [
   ['getacceleration',['getAcceleration',['../classDJI_1_1OSDK_1_1DataBroadcast.html#a2984bfd100aee86fca6a2971f3dd6cda',1,'DJI::OSDK::DataBroadcast']]],
-  ['getaccountdata',['getAccountData',['../classDJI_1_1OSDK_1_1Vehicle.html#aa6b09696d12a2b6eccab03edeecbb420',1,'DJI::OSDK::Vehicle']]],
+  ['getaccountdata',['getAccountData',['../classDJI_1_1OSDK_1_1Vehicle.html#a64f4ef8258eaab486a89056889ec3a09',1,'DJI::OSDK::Vehicle']]],
   ['getangularrate',['getAngularRate',['../classDJI_1_1OSDK_1_1DataBroadcast.html#aa3d85fb695bea8292287542eb6de85bd',1,'DJI::OSDK::DataBroadcast']]],
   ['getbatteryinfo',['getBatteryInfo',['../classDJI_1_1OSDK_1_1DataBroadcast.html#adc203d47de62961a98fcec7a886968c7',1,'DJI::OSDK::DataBroadcast']]],
-  ['getdata',['getData',['../classDJI_1_1OSDK_1_1HotpointMission.html#aa4c822ea6ceb0d71ed4f32572b361562',1,'DJI::OSDK::HotpointMission']]],
+  ['getdata',['getData',['../classDJI_1_1OSDK_1_1HotpointMission.html#a14972b9d8e86174a9f00fb327b824434',1,'DJI::OSDK::HotpointMission']]],
   ['getdroneversion',['getDroneVersion',['../classDJI_1_1OSDK_1_1Vehicle.html#a257f78845ca1dc25c0ed66f9a6499f52',1,'DJI::OSDK::Vehicle::getDroneVersion(int timeout)'],['../classDJI_1_1OSDK_1_1Vehicle.html#a4396e14090a4c0fd5b7f996c10025203',1,'DJI::OSDK::Vehicle::getDroneVersion(VehicleCallBack callback=0, UserData userData=0)']]],
   ['geterror',['getError',['../classDJI_1_1OSDK_1_1ACK.html#aa6a80877d41e0bffd3e44de1af585e09',1,'DJI::OSDK::ACK']]],
   ['geterrorcodemessage',['getErrorCodeMessage',['../classDJI_1_1OSDK_1_1ACK.html#a140b7c908f55e5f6b7b9f32056828af1',1,'DJI::OSDK::ACK']]],
@@ -26,7 +26,7 @@ var searchData=
   ['getrelativeposition',['getRelativePosition',['../classDJI_1_1OSDK_1_1DataBroadcast.html#af9099c1e041f4b1bdd2d3c71942b25ef',1,'DJI::OSDK::DataBroadcast']]],
   ['getrtkinfo',['getRTKInfo',['../classDJI_1_1OSDK_1_1DataBroadcast.html#a1c275755b2fd13ceba3efacaf96a98dd',1,'DJI::OSDK::DataBroadcast']]],
   ['getsdkinfo',['getSDKInfo',['../classDJI_1_1OSDK_1_1DataBroadcast.html#aa98201736ae3b805a3500e37f722708c',1,'DJI::OSDK::DataBroadcast']]],
-  ['getserialreadthread',['getSerialReadThread',['../classDJI_1_1OSDK_1_1Vehicle.html#a8a2e8ed594f70a0042cea5c7580f3281',1,'DJI::OSDK::Vehicle']]],
+  ['getserialreadthread',['getSerialReadThread',['../classDJI_1_1OSDK_1_1Vehicle.html#acb52649796631be8b07923c82209bc79',1,'DJI::OSDK::Vehicle']]],
   ['getstatus',['getStatus',['../classDJI_1_1OSDK_1_1DataBroadcast.html#aa183fef7e062139a32d361b3788d3c7f',1,'DJI::OSDK::DataBroadcast']]],
   ['getsyncstamp',['getSyncStamp',['../classDJI_1_1OSDK_1_1DataBroadcast.html#a94b93ab45c67eadedabb05d7881c376a',1,'DJI::OSDK::DataBroadcast']]],
   ['gettimestamp',['getTimeStamp',['../classDJI_1_1OSDK_1_1DataBroadcast.html#a2a26959d494caae72a0f56a8155078c7',1,'DJI::OSDK::DataBroadcast::getTimeStamp()'],['../classDJI_1_1OSDK_1_1LinuxSerialDevice.html#a0acb5e77c1f9dd0ab64dab66c4b1e43f',1,'DJI::OSDK::LinuxSerialDevice::getTimeStamp()']]],
@@ -37,5 +37,6 @@ var searchData=
   ['getwaypointsettings',['getWaypointSettings',['../classDJI_1_1OSDK_1_1WaypointMission.html#a095b0dec4a11fab68f5a6fc40744e4a9',1,'DJI::OSDK::WaypointMission::getWaypointSettings(int timer)'],['../classDJI_1_1OSDK_1_1WaypointMission.html#ae8f29d7e087b36b1abf8081722b8839f',1,'DJI::OSDK::WaypointMission::getWaypointSettings(VehicleCallBack callback, UserData userData)']]],
   ['getwaypointsettingscallback',['getWaypointSettingsCallback',['../classDJI_1_1OSDK_1_1WaypointMission.html#a6e078fe72b3d1f39ef92143513c75f26',1,'DJI::OSDK::WaypointMission']]],
   ['getwaypt',['getWaypt',['../classDJI_1_1OSDK_1_1MissionManager.html#a0c910dc986310624ca97ff3dbb97f172',1,'DJI::OSDK::MissionManager']]],
+  ['gimbalsetup',['GimbalSetUp',['../classDJI_1_1OSDK_1_1Vehicle.html#a4c42a9c75b37d3dfce252e6e7bd749cd',1,'DJI::OSDK::Vehicle']]],
   ['gohome',['goHome',['../classDJI_1_1OSDK_1_1Control.html#a5fda2b2c0466333328c364b29200a153',1,'DJI::OSDK::Control::goHome(int wait_timeout)'],['../classDJI_1_1OSDK_1_1Control.html#ac333a960007373badfc7426d3fa985f9',1,'DJI::OSDK::Control::goHome(VehicleCallBack callback=0, UserData userData=0)']]]
 ];

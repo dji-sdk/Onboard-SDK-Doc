@@ -1,8 +1,7 @@
 var searchData=
 [
   ['hacc',['hacc',['../structDJI_1_1OSDK_1_1Telemetry_1_1GPSDetail.html#a418a72af184e14df5577b96f345dccb4',1,'DJI::OSDK::Telemetry::GPSDetail']]],
-  ['hardsyncdata',['HardSyncData',['../structDJI_1_1OSDK_1_1Telemetry_1_1HardSyncData.html',1,'DJI::OSDK::Telemetry']]],
-  ['hardsyncdata',['HardSyncData',['../namespaceDJI_1_1OSDK_1_1Telemetry.html#a3a7a0e798f8be5e0c208338672c5b26e',1,'DJI::OSDK::Telemetry']]],
+  ['hardsyncdata',['HardSyncData',['../structDJI_1_1OSDK_1_1Telemetry_1_1HardSyncData.html',1,'DJI::OSDK::Telemetry::HardSyncData'],['../namespaceDJI_1_1OSDK_1_1Telemetry.html#a3a7a0e798f8be5e0c208338672c5b26e',1,'DJI::OSDK::Telemetry::HardSyncData()']]],
   ['hardwaresync',['HardwareSync',['../classDJI_1_1OSDK_1_1HardwareSync.html',1,'DJI::OSDK']]],
   ['hasaction',['hasAction',['../structDJI_1_1OSDK_1_1WayPointSettings.html#a564c5830fe54d69e091e52f862042240',1,'DJI::OSDK::WayPointSettings']]],
   ['hdop',['hdop',['../structDJI_1_1OSDK_1_1Telemetry_1_1GPSDetail.html#a350fc2c4ccc64b8f0ee76a3115ba42a0',1,'DJI::OSDK::Telemetry::GPSDetail']]],
@@ -18,14 +17,9 @@ var searchData=
   ['horizontal_5fvelocity',['HORIZONTAL_VELOCITY',['../classDJI_1_1OSDK_1_1Control.html#a7a7cab0e2d2c9415556837880ddf9e86ae7874e310fad4f148bb466f5d4395b9c',1,'DJI::OSDK::Control']]],
   ['horizontalcoordinate',['HorizontalCoordinate',['../classDJI_1_1OSDK_1_1Control.html#aa89e5fd518382c94fb6149a5b9a6183b',1,'DJI::OSDK::Control']]],
   ['horizontallogic',['HorizontalLogic',['../classDJI_1_1OSDK_1_1Control.html#a7a7cab0e2d2c9415556837880ddf9e86',1,'DJI::OSDK::Control']]],
-  ['hotpoint',['HotPoint',['../classDJI_1_1OSDK_1_1ErrorCode_1_1MissionACK.html#aa779f2f3b02b1610c5c314615c3dce09',1,'DJI::OSDK::ErrorCode::MissionACK']]],
-  ['hotpoint',['HotPoint',['../structDJI_1_1OSDK_1_1ErrorCode_1_1MissionACK_1_1HotPoint.html',1,'DJI::OSDK::ErrorCode::MissionACK']]],
-  ['hotpointmission',['HotpointMission',['../classDJI_1_1OSDK_1_1HotpointMission.html',1,'DJI::OSDK']]],
-  ['hotpointmission',['HotpointMission',['../classDJI_1_1OSDK_1_1HotpointMission.html#a2aa16e490d633facbbd5a14bc2e45e60',1,'DJI::OSDK::HotpointMission']]],
-  ['hotpointread',['HotPointRead',['../classDJI_1_1OSDK_1_1ACK.html#aa5ce5bcddd23cc9f338b5f6a5b6639b4',1,'DJI::OSDK::ACK']]],
-  ['hotpointread',['HotPointRead',['../structDJI_1_1OSDK_1_1ACK_1_1HotPointRead.html',1,'DJI::OSDK::ACK']]],
-  ['hotpointsettings',['HotPointSettings',['../structDJI_1_1OSDK_1_1HotPointSettings.html',1,'DJI::OSDK']]],
-  ['hotpointsettings',['HotPointSettings',['../namespaceDJI_1_1OSDK.html#ae77ba11af1f90df05889c12732c74317',1,'DJI::OSDK']]],
-  ['hotpointstart',['HotPointStart',['../classDJI_1_1OSDK_1_1ACK.html#ab4f73fdaa9df6637eb60f8834d0965c7',1,'DJI::OSDK::ACK']]],
-  ['hotpointstart',['HotPointStart',['../structDJI_1_1OSDK_1_1ACK_1_1HotPointStart.html',1,'DJI::OSDK::ACK']]]
+  ['hotpoint',['HotPoint',['../structDJI_1_1OSDK_1_1ErrorCode_1_1MissionACK_1_1HotPoint.html',1,'DJI::OSDK::ErrorCode::MissionACK::HotPoint'],['../classDJI_1_1OSDK_1_1ErrorCode_1_1MissionACK.html#aa779f2f3b02b1610c5c314615c3dce09',1,'DJI::OSDK::ErrorCode::MissionACK::HotPoint()']]],
+  ['hotpointmission',['HotpointMission',['../classDJI_1_1OSDK_1_1HotpointMission.html',1,'DJI::OSDK::HotpointMission'],['../classDJI_1_1OSDK_1_1HotpointMission.html#a2aa16e490d633facbbd5a14bc2e45e60',1,'DJI::OSDK::HotpointMission::HotpointMission()']]],
+  ['hotpointread',['HotPointRead',['../structDJI_1_1OSDK_1_1ACK_1_1HotPointRead.html',1,'DJI::OSDK::ACK::HotPointRead'],['../classDJI_1_1OSDK_1_1ACK.html#aa5ce5bcddd23cc9f338b5f6a5b6639b4',1,'DJI::OSDK::ACK::HotPointRead()']]],
+  ['hotpointsettings',['HotPointSettings',['../structDJI_1_1OSDK_1_1HotPointSettings.html',1,'DJI::OSDK::HotPointSettings'],['../namespaceDJI_1_1OSDK.html#ae77ba11af1f90df05889c12732c74317',1,'DJI::OSDK::HotPointSettings()']]],
+  ['hotpointstart',['HotPointStart',['../structDJI_1_1OSDK_1_1ACK_1_1HotPointStart.html',1,'DJI::OSDK::ACK::HotPointStart'],['../classDJI_1_1OSDK_1_1ACK.html#ab4f73fdaa9df6637eb60f8834d0965c7',1,'DJI::OSDK::ACK::HotPointStart()']]]
 ];
