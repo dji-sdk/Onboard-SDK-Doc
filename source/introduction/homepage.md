@@ -1,11 +1,11 @@
 ---
 title: Onboard SDK Documentation Home
-date: 2019-04-03
-version: 3.8
+date: 2019-06-04
+version: 3.8.1
 keywords: [homepage, key features, hardware overview, registration, enable flight controller API control, safety]
 ---
 
-> OSDK 3.8 was released on 01 April 2019. This release adds support of M210 V2 and its new feature time sync and waypoint 2.0 (beta) and some general improvements. Please see the [release notes](../appendix/releaseNotes.html) for more information.
+> OSDK 3.8.1 was released on 4 June 2019. This release fixes build issues for STM32 platform. Additionally, Onboard - Payload SDK communication and more camera supports are also added in this release. Please see the [release notes](../appendix/releaseNotes.html) for more information.
 
 The DJI Onboard SDK (OSDK) allows you to build powerful, automated drone applications for supported DJI vehicles (<a href="http://www.dji.com/product/matrice100" target="_blank">Matrice 100</a>, <a href="http://www.dji.com/product/matrice600" target="_blank">Matrice 600</a>, <a href="http://www.dji.com/matrice-200-series" target="_blank">Matrice 210/210-RTK</a> or <a href="https://www.dji.com/matrice-200-series-v2" target="_blank">Matrice 210/210-RTK V2</a>) or flight controllers (<a href="http://www.dji.com/product/a3" target="_blank">A3</a> or <a href="http://www.dji.com/product/n3" target="_blank">N3</a>).
 
@@ -54,7 +54,7 @@ We provide a number of samples designed to showcase example end-to-end implement
 - [GPS Missions Sample](../sample-doc/missions.html)
 - [Camera/Gimbal Control Sample](../sample-doc/camera-gimbal-control.html)
 - [Multi-Function IO Sample](../sample-doc/mfio.html)
-- [Time Synchronization](../sample-doc/time-sync.html)
+- [Time Synchronization](/sample-doc/time-sync.html)
 - [Waypoint Mission V2 (beta)](../sample-doc/wp2.html)
 - [Mobile SDK Communication Sample](../sample-doc/msdk-comm.html)
 - [Advanced Sensing - Stereo Images Sample](../sample-doc/advanced-sensing-stereo-images.html)

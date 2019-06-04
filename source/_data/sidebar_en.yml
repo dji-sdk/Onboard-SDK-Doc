@@ -62,6 +62,9 @@
       title: MSDK and OSDK Communication
       path: /guides/component-guide-mobile-communication.html
     -
+      title: PSDK and OSDK Communication
+      path: /guides/component-guide-payload-communication.html
+    -
       title: Multi-Function IO
       path: /guides/component-guide-multi-function-io.html
     -
@@ -91,6 +94,9 @@
     -
       title: Mobile SDK Communication
       path: /sample-doc/msdk-comm.html
+    -
+      title: Payload SDK Communication
+      path: /sample-doc/psdk-comm.html
     -
       title: Multi-Function IO
       path: /sample-doc/mfio.html
