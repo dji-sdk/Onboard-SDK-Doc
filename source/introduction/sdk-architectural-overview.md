@@ -1,7 +1,7 @@
 ---
 title: Onboard SDK Architectural Overview 
 version: 3.3
-date: 2017-05-20
+date: 2017-05-21
 keywords: [architecture guide]
 ---
 
