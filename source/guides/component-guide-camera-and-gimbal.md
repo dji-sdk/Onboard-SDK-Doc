@@ -17,6 +17,7 @@ Camera and Gimbal modes and features available through DJI Onboard SDK:
 * Still and in-motion image capture
 * Still and in-motion video capture
 * Gimbal angular and velocity rate setters
+* Control the zoom of Z30 Camera (Only support for Matrice 210 V2 and Matrice 210 RTK V2)
 
 The camera can only operate in one mode at any one time. For example, media download cannot happen during image capture.
 

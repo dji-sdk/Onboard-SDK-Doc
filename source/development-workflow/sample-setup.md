@@ -45,26 +45,9 @@ cd bin
 
 ## ROS Onboard Computer
 
-##### Installing the OSDK
-
-1. Clone (or download as zip) the DJI OSDK from Github [here](https://www.github.com/dji-sdk/Onboard-SDK).
-2. Open a terminal, `cd` into the onboardsdk folder and follow these steps to build the core OSDK library:
-```
-mkdir build
-cd build
-cmake ..
-make djiosdk-core
-```
-If you want the Advanced Sensing features for the M210, replace `cmake ..` with `cmake .. -DADVANCED_SENSING=ON` in the above commands.
-
-3. Now, install the osdk-core library to your system so that the `dji_sdk` ROS node may find it and link against it:
-```
-sudo make install djiosdk-core
-```
-
 ##### Building the ROS Nodes
 
-4. If you don't have a catkin workspace, create one as follows:
+1. If you don't have a catkin workspace, create one as follows:
 ```
 mkdir catkin_ws
 cd catkin_ws
@@ -72,19 +55,19 @@ mkdir src
 cd src
 catkin_init_workspace
 ```
-5. Clone (or download as zip) the DJI OSDK-ROS from Github [here](https://www.github.com/dji-sdk/Onboard-SDK-ROS) in the `src` folder.
-6. Build the `dji_sdk` ROS package and the `dji_sdk_demo` ROS package.
+2. Clone (or download as zip) the DJI OSDK-ROS from Github [here](https://www.github.com/dji-sdk/Onboard-SDK-ROS) in the `src` folder.
+3. Build the `dji_sdk` ROS package and the `dji_sdk_demo` ROS package.
 ```
 cd ..
 catkin_make
 ```
 
 ##### Configuration
-7. Remember to source your `setup.bash`:
+4. Remember to source your `setup.bash`:
 ```
 source devel/setup.bash
 ```
-8. Edit the launch file and enter your App ID, Key, Baudrate and Port name in the designated places:
+5. Edit the launch file and enter your App ID, Key, Baudrate and Port name in the designated places:
 ```
 rosed dji_sdk sdk.launch
 ```
@@ -92,16 +75,16 @@ rosed dji_sdk sdk.launch
 
 ##### Running the Samples
 
-9. Start up the `dji_sdk` ROS node:
+6. Start up the `dji_sdk` ROS node:
 ```
 roslaunch dji_sdk sdk.launch
 ```
-10. Open up another terminal and `cd` to your catkin_ws location, and start up a sample (e.g. flight control sample):
+7. Open up another terminal and `cd` to your catkin_ws location, and start up a sample (e.g. flight control sample):
 ```
 source devel/setup.bash
 rosrun dji_sdk_demo demo_flight_control
 ```
-11. Follow the prompt on screen to choose an action for the drone to do.
+8. Follow the prompt on screen to choose an action for the drone to do.
 
 ## STM32 Onboard Computer
 

@@ -45,6 +45,10 @@ The iOS app can be loaded to a iOS device using Xcode on a Mac OS X system. Belo
 
 The Mobile APIs being used are listed in the [Appendix](./../appendix/mobile-onboard-APIs.html)
 
+It should be paid attention that the API of sending data from Onboard SDK to Mobile SDK has a prerequisite that
+the aircraft must be activated successfully firstly. If the aircraft is not activated, the Onboard SDK code will alarm
+error while using this API.
+
 ## Code work flow
 
 The general execution flow of the sample code is below:

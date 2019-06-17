@@ -18,6 +18,7 @@ The sample has a single command-line option that cycles through the various comm
 3. Stop Video
 4. Control Gimbal Angle
 5. Control Gimbal Speed
+6. Control the zoom of Z30 Camera (Only support for Matrice 210 V2 and Matrice 210 RTK V2)
 
 Before you start, please ensure that you have an SD card plugged into your camera, and that a camera/gimbal is mounted on your aircraft or connected to your flight controller.
 
@@ -25,7 +26,7 @@ The camera/gimbal sample is available on Linux, ROS and STM32.
 
 ## Code work flow
 
-[![CameraGimbal code workflow](../../images/samples/cameragimbal_sample_flowchart.png)](../../images/samples/cameragimbal_sample_flowchart.png)
+[![CameraGimbal code workflow](../../images/samples/cameragimbal_sample_flowchart.bmp)](../../images/samples/cameragimbal_sample_flowchart.png)
 
 ## Output
 

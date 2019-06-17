@@ -1,116 +1,113 @@
 <!-- HTML header for doxygen 1.8.8-->
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <!-- For Mobile Devices -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-        <meta name="generator" content="Doxygen 1.8.11"/>
-        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <title>DJI Onboard SDK: DJI::OSDK::Telemetry::FlightAnomaly Struct Reference</title>
-        <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
-        <script type="text/javascript" src="dynsections.js"></script>
-        <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- For Mobile Devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta name="generator" content="Doxygen 1.8.15" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <title>DJI Onboard SDK: DJI::OSDK::Telemetry::FlightAnomaly Struct Reference</title>
+    <!-- <link href="tabs.css" rel="stylesheet" type="text/css"/> -->
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/javascript">
-  $(document).ready(function() { init_search(); });
-</script>
-        <link href="doxygen.css" rel="stylesheet" type="text/css" />
-        <link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
-        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
-        <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
-        <link rel="stylesheet" href="bootstrap.min.css">
-        <script src="bootstrap.min.js"></script>
-        <script type="text/javascript" src="doxy-boot.js"></script>
-    </head>
-    <body>
-        <nav id="site-header" class="site-header navbar">
-            <div class="container">
-                <div class="navbar-header"><a href="/" class="logo"><img src="dji-logo@2x.png">Developer</a></div>
-                <div id="header-navbar" class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a href="/mobile-sdk">Mobile SDK</a></li>
-                        <li><a href="/ux-sdk">UX SDK</a></li>
-                        <li><a href="/onboard-sdk">Onboard SDK</a></li>
-                        <li><a href="/payload-sdk">Payload SDK</a></li>
-                        <li><a href="/windows-sdk">Windows SDK</a></li>
-                    </ul>
-                    <ul v-cloak="" v-show="!loggedIn" class="nav navbar-nav navbar-right nav-user">
-                       <li><a href="https://account.dji.com/login?appId=dji_sdk&backUrl=https%3A%2F%2Fdeveloper.dji.com%2Fuser&locale=en_US">Login</a></li>
-                        <li><a href="https://account.dji.com/register?appId=dji_sdk&backUrl=https%3A%2F%2Fdeveloper.dji.com%2Fuser&locale=en_US" class="head-cta">Register</a></li>
-                    </ul>
-                    <ul v-cloak="" v-show="loggedIn" class="nav navbar-nav navbar-right nav-user">
-                        <li class="hovedown"><a href="javascript:void(0);" class="hovedown-toggle"><i class="fa fa-user"></i></a>
-                            <ul class="hovedown-menu hovedown-menu-right">
-                                <li><a href="/user">User Center</a></li>
-                                <li><a href="javascript:void(0);" v-on="click: logout">Logout</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <div data-offset-top="60" data-spy="affix" class="sub-nav">
-            <div class="container">
-                <h1 class="logo">Onboard SDK</h1>
-                <nav><a href="/onboard-sdk">Overview</a><a href="/onboard-sdk/documentation">Documentation</a><a href="/onboard-api-reference/index.html" class="active">API Reference</a><a href="/onboard-sdk/downloads">Downloads</a>
-                </nav>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link href="jquery.smartmenus.bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap-theme.css">
+    <script src="bootstrap.min.js"></script>
+    <link href="jquery.smartmenus.bootstrap.css" rel="stylesheet">
+    <!-- SmartMenus jQuery plugin -->
+    <script type="text/javascript" src="jquery.smartmenus.min.js"></script>
+    <!-- SmartMenus jQuery Bootstrap Addon -->
+    <script type="text/javascript" src="jquery.smartmenus.bootstrap.min.js"></script>
+    <style>
+        .has-submenu {
+            position: relative;
+        }
+        #main-nav {
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+    <nav id="site-header" class="site-header navbar">
+        <div class="container">
+            <div class="navbar-header"><a href="/" class="logo"><img src="dji-logo@2x.png">Developer</a></div>
+            <div id="header-navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/mobile-sdk">Mobile SDK</a></li>
+                    <li><a href="/ux-sdk">UX SDK</a></li>
+                    <li><a href="/onboard-sdk">Onboard SDK</a></li>
+                    <li><a href="/payload-sdk">Payload SDK</a></li>
+                    <li><a href="/windows-sdk">Windows SDK</a></li>
+                </ul>
+                <ul v-cloak="" v-show="!loggedIn" class="nav navbar-nav navbar-right nav-user">
+                    <li><a
+                            href="https://account.dji.com/login?appId=dji_sdk&backUrl=https%3A%2F%2Fdeveloper.dji.com%2Fuser&locale=en_US">Login</a>
+                    </li>
+                    <li><a href="https://account.dji.com/register?appId=dji_sdk&backUrl=https%3A%2F%2Fdeveloper.dji.com%2Fuser&locale=en_US"
+                            class="head-cta">Register</a></li>
+                </ul>
+                <ul v-cloak="" v-show="loggedIn" class="nav navbar-nav navbar-right nav-user">
+                    <li class="hovedown"><a href="javascript:void(0);" class="hovedown-toggle"><i
+                                class="fa fa-user"></i></a>
+                        <ul class="hovedown-menu hovedown-menu-right">
+                            <li><a href="/user">User Center</a></li>
+                            <li><a href="javascript:void(0);" v-on="click: logout">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </div>
-        <!--<nav class="navbar navbar-default" role="navigation">-->
-            <!--<div class="container">-->
-                <!--<div class="navbar-header">-->
-                    <!--<a href="#" class="navbar-left"><img src="dji_logo_gray_small.png" alt="DJI OSDK API Documentation" width="32px"/></a>-->
-                    <!--<a class="navbar-brand" href="index.html">ONBOARD SDK 3.3</a>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</nav>-->
-        <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
-            <div class="content" id="content">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-12 panel " style="padding-bottom: 15px; padding-top: 52px;">
-                            <div style="margin-bottom: 15px;">
-<!-- end header part -->
-<!-- Generated by Doxygen 1.8.11 -->
+    </nav>
+    <div data-offset-top="60" data-spy="affix" class="sub-nav">
+        <div class="container">
+            <h1 class="logo">Onboard SDK</h1>
+            <nav><a href="/onboard-sdk">Overview</a><a href="/onboard-sdk/documentation">Documentation</a><a
+                    href="/onboard-api-reference/index.html" class="active">API Reference</a><a
+                    href="/onboard-sdk/downloads">Downloads</a>
+            </nav>
+        </div>
+    </div>
+    <!--<nav class="navbar navbar-default" role="navigation">-->
+    <!--<div class="container">-->
+    <!--<div class="navbar-header">-->
+    <!--<a href="#" class="navbar-left"><img src="dji_logo_gray_small.png" alt="DJI OSDK API Documentation" width="32px"/></a>-->
+    <!--<a class="navbar-brand" href="index.html">ONBOARD SDK 3.3</a>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</nav>-->
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div class="content" id="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 panel " style="padding-bottom: 15px;">
+                        <div style="margin-bottom: 15px;">
+                            <!-- end header part --><!-- Generated by Doxygen 1.8.15 -->
 <script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 var searchBox = new SearchBox("searchBox", "search",false,'Search');
+/* @license-end */
 </script>
-  <div id="navrow1" class="tabs">
-    <ul class="tablist">
-      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
-      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
-      <li>
-        <div id="MSearchBox" class="MSearchBoxInactive">
-        <span class="left">
-          <img id="MSearchSelect" src="search/mag_sel.png"
-               onmouseover="return searchBox.OnSearchSelectShow()"
-               onmouseout="return searchBox.OnSearchSelectHide()"
-               alt=""/>
-          <input type="text" id="MSearchField" value="Search" accesskey="S"
-               onfocus="searchBox.OnSearchFieldFocus(true)" 
-               onblur="searchBox.OnSearchFieldFocus(false)" 
-               onkeyup="searchBox.OnSearchFieldChange(event)"/>
-          </span><span class="right">
-            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
-          </span>
-        </div>
-      </li>
-    </ul>
-  </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
-      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
-      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
-    </ul>
-  </div>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -172,14 +169,16 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ab16e0b3447a8c688c9c64ceb0aafed7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad53958ed168761b0348a2160210cc112"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1FlightAnomaly.html#ad53958ed168761b0348a2160210cc112">gpsYawError</a>: 1</td></tr>
 <tr class="separator:ad53958ed168761b0348a2160210cc112"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3897cc0832f3671fd803ef67ceb0ac4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af3897cc0832f3671fd803ef67ceb0ac4"></a>
+<tr class="memitem:af3897cc0832f3671fd803ef67ceb0ac4"><td class="memItemLeft" align="right" valign="top"><a id="af3897cc0832f3671fd803ef67ceb0ac4"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved</b>: 19</td></tr>
 <tr class="separator:af3897cc0832f3671fd803ef67ceb0ac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>struct for TOPIC_FLIGHT_ANOMALY </p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="afff22e5e2e9cf3a2d52ddd8ecea97186"></a>
+<a id="afff22e5e2e9cf3a2d52ddd8ecea97186"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afff22e5e2e9cf3a2d52ddd8ecea97186">&#9670;&nbsp;</a></span>aircraftIsFalling</h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -192,7 +191,9 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved</b>: 19<
 
 </div>
 </div>
-<a class="anchor" id="ab16e0b3447a8c688c9c64ceb0aafed7c"></a>
+<a id="ab16e0b3447a8c688c9c64ceb0aafed7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab16e0b3447a8c688c9c64ceb0aafed7c">&#9670;&nbsp;</a></span>atLeastOneEscDisconnected</h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -205,7 +206,9 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved</b>: 19<
 
 </div>
 </div>
-<a class="anchor" id="abf5cf4062f9ed4e913dcbb065e44ae94"></a>
+<a id="abf5cf4062f9ed4e913dcbb065e44ae94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf5cf4062f9ed4e913dcbb065e44ae94">&#9670;&nbsp;</a></span>compassInstallationError</h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -218,7 +221,9 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved</b>: 19<
 
 </div>
 </div>
-<a class="anchor" id="ae3ec85b00766a26eac8579664124551b"></a>
+<a id="ae3ec85b00766a26eac8579664124551b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3ec85b00766a26eac8579664124551b">&#9670;&nbsp;</a></span>escTemperatureHigh</h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -231,7 +236,9 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved</b>: 19<
 
 </div>
 </div>
-<a class="anchor" id="ad53958ed168761b0348a2160210cc112"></a>
+<a id="ad53958ed168761b0348a2160210cc112"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad53958ed168761b0348a2160210cc112">&#9670;&nbsp;</a></span>gpsYawError</h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -244,7 +251,9 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved</b>: 19<
 
 </div>
 </div>
-<a class="anchor" id="a4cd1dad35e6a8db5ec9b753e5b0c80cd"></a>
+<a id="a4cd1dad35e6a8db5ec9b753e5b0c80cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cd1dad35e6a8db5ec9b753e5b0c80cd">&#9670;&nbsp;</a></span>heightCtrlFail</h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -257,7 +266,9 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved</b>: 19<
 
 </div>
 </div>
-<a class="anchor" id="a2c166c384f928675d1bb08534f76390b"></a>
+<a id="a2c166c384f928675d1bb08534f76390b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c166c384f928675d1bb08534f76390b">&#9670;&nbsp;</a></span>impactInAir</h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -270,7 +281,9 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved</b>: 19<
 
 </div>
 </div>
-<a class="anchor" id="aef77c17a037c8773e262d7614946d57d"></a>
+<a id="aef77c17a037c8773e262d7614946d57d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef77c17a037c8773e262d7614946d57d">&#9670;&nbsp;</a></span>imuInstallationError</h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -283,7 +296,9 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved</b>: 19<
 
 </div>
 </div>
-<a class="anchor" id="a45148078dc88d223d6a4c2eea4690e2a"></a>
+<a id="a45148078dc88d223d6a4c2eea4690e2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45148078dc88d223d6a4c2eea4690e2a">&#9670;&nbsp;</a></span>randomFly</h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -296,7 +311,9 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved</b>: 19<
 
 </div>
 </div>
-<a class="anchor" id="a80c1bf74a4ac5000516732b5b7d3859c"></a>
+<a id="a80c1bf74a4ac5000516732b5b7d3859c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80c1bf74a4ac5000516732b5b7d3859c">&#9670;&nbsp;</a></span>rollPitchCtrlFail</h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -309,7 +326,9 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved</b>: 19<
 
 </div>
 </div>
-<a class="anchor" id="a9ddb44207d85b461d9bf913e7cab4868"></a>
+<a id="a9ddb44207d85b461d9bf913e7cab4868"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ddb44207d85b461d9bf913e7cab4868">&#9670;&nbsp;</a></span>strongWindLevel1</h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -322,7 +341,9 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved</b>: 19<
 
 </div>
 </div>
-<a class="anchor" id="aea4b54f50d07c3caa2cdf435a6f57dbb"></a>
+<a id="aea4b54f50d07c3caa2cdf435a6f57dbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea4b54f50d07c3caa2cdf435a6f57dbb">&#9670;&nbsp;</a></span>strongWindLevel2</h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -335,7 +356,9 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved</b>: 19<
 
 </div>
 </div>
-<a class="anchor" id="a84f37387e0aecc8dc254db23087b4d48"></a>
+<a id="a84f37387e0aecc8dc254db23087b4d48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84f37387e0aecc8dc254db23087b4d48">&#9670;&nbsp;</a></span>yawCtrlFail</h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -386,4 +409,5 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserved</b>: 19<
   </footer>
 </small></address>
 </body>
+<script type="text/javascript" src="doxy-boot.js"></script>
 </html>

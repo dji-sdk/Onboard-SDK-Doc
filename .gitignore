@@ -11,3 +11,5 @@ public/
 *.sh
 
 .idea/
+
+package.json

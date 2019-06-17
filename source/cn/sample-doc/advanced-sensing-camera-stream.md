@@ -1,7 +1,7 @@
 ---
 title: Advanced Sensing - Camera Stream Samples
-date: 2017-12-19
-version: 3.5
+date: 2019-06-17
+version: 3.8.1
 keywords: [sample, camera, stream, image, OpenCV]
 ---
 
@@ -17,6 +17,14 @@ Two samples are provided here to demonstrate different ways of accessing and pro
 The source code of this sample is located in `onboardsdk/samples/linux/advanced-sensing/camera_stream_poll_sample/camera-stream-poll-sample.cpp`. After building the onboardsdk, from the `build` folder, you can run the sample with the following command.
 ```
 bin/camera-stream-poll-sample UserConfig.txt
+```
+If you want to get stream of x4s, x5s, x7 camera, you can run the sample with the following command. `/dev/ttyACM0` is the USB device connected to aircraft, maybe different with this, you can use command `ls /dev/ttyACM` to check it.
+```
+bin/camera-stream-poll-sample UserConfig.txt /dev/ttyACM0
+```
+If you want to get stream of x4s, x5s, x7 camera, you can run the sample with the following command. `/dev/ttyACM0` is the USB device connected to aircraft, maybe different with this, you can use command `ls /dev/ttyACM` to check it.
+```
+bin/camera-stream-callback-sample UserConfig.txt /dev/ttyACM0
 ```
 The sample will ask you to choose which camera images (FPV camera, main camera or both) you want to view. Note that you need to **turn on the RC** to be able to connect to the main camera. The sample code is pretty straight forward. After setting up the OSDK environment and obtain a pointer to vehicle, as all Linux samples do, it takes the following steps to access the camera images (taking FPV camera for example)
 

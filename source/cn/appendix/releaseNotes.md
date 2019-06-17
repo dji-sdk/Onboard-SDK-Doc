@@ -1,9 +1,29 @@
 ---
-title: Release Notes for Onboard SDK 3.8
-version: 3.8
-date: 2019-04-05
+title: Release Notes for Onboard SDK 3.8.1
+version: 3.8.1
+date: 2019-06-04
 keywords: [SDK, M210, Point Cloud, Camera, Disparity Map, collision avoidance, GPS-denied]
 ---
+
+## OSDK 3.8.1 Highlights
+
+<span style="font-size:larger;">Release Date: <strong>2019-06-04</strong></span>
+
+- **Onboard - Payload SDK communication:** Add Onboard - Payload SDK communication APIs (with Payload SDK v1.4.0+).
+- **Camera zooming:** Add camera zooming API for Matrice 210 V2 and Matrice 210 RTK V2(with firmware V 01.00.0450).
+- **STM32 TimeSync sample:** Add TimeSync sample in STM32 platform for Matrice 210 V2 and Matrice 210 RTK V2.
+
+## Bug Fixes
+
+- **X4s, X5s video stream support:** Fix bug of getting X4s, X5s, X7 camera video stream for Matrice 210 V2 and Matrice 210 RTK V2.
+- **STM32 platform support:** Fix compiling issue of STM32 platform.
+- **STM32 platform Waypoint sample:** Fix bug of crashing while more than 95 points of Waypoint Mission are uploaded in STM32 platform.
+- **STM32 gimbal sample:** Fix bug of crashing while gimbal sample is running in STM32 platform.
+
+## Improvements
+
+- **Onboard - Mobile SDK communication error detection:** Improve Onboard - Mobile SDK communication API and alarms error when it is not activated.
+
 
 ## OSDK 3.8 Highlights
 

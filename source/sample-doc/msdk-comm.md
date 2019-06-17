@@ -30,10 +30,10 @@ The iOS app can be loaded to a iOS device using Xcode on a Mac OS X system. Belo
 - Click on the 'MOS' project in Xcode to view the General settings. 
 - Choose and set a Bundle Identifier for the application
 
-![MOS app](../../images/common/bundleID.png)
+![MOS app](../images/common/bundleID.png)
 
 - Use this Bundle Identifier to generate an app key in the DJI developer portal.
-![MOS app](../../images/common/createApp.png)
+![MOS app](../images/common/createApp.png)
 
 - Go to the info.plist of the MOS project and add the entry:
    - _key_: "DJIAppKey"
@@ -41,9 +41,13 @@ The iOS app can be loaded to a iOS device using Xcode on a Mac OS X system. Belo
 - Hit Run and let Xcode fix any issues that show up. 
 - The app can now be launched on your iOS device. 
 - Below is a screenshot of the app after a successful take-off command has been completed. 
-![MOS app](../../images/common/MOSDKApp.jpg)
+![MOS app](../images/common/MOSDKApp.jpg)
 
 The Mobile APIs being used are listed in the [Appendix](./../appendix/mobile-onboard-APIs.html)
+
+It should be paid attention that the API of sending data from Onboard SDK to Mobile SDK has a prerequisite that
+the aircraft must be activated successfully firstly. If the aircraft is not activated, the Onboard SDK code will alarm
+error while using this API.
 
 ## Code work flow
 

@@ -1,116 +1,113 @@
 <!-- HTML header for doxygen 1.8.8-->
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <!-- For Mobile Devices -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-        <meta name="generator" content="Doxygen 1.8.11"/>
-        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <title>DJI Onboard SDK: DJI::OSDK::HotpointMission Class Reference</title>
-        <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
-        <script type="text/javascript" src="dynsections.js"></script>
-        <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- For Mobile Devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta name="generator" content="Doxygen 1.8.15" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <title>DJI Onboard SDK: DJI::OSDK::HotpointMission Class Reference</title>
+    <!-- <link href="tabs.css" rel="stylesheet" type="text/css"/> -->
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/javascript">
-  $(document).ready(function() { init_search(); });
-</script>
-        <link href="doxygen.css" rel="stylesheet" type="text/css" />
-        <link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
-        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
-        <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
-        <link rel="stylesheet" href="bootstrap.min.css">
-        <script src="bootstrap.min.js"></script>
-        <script type="text/javascript" src="doxy-boot.js"></script>
-    </head>
-    <body>
-        <nav id="site-header" class="site-header navbar">
-            <div class="container">
-                <div class="navbar-header"><a href="/" class="logo"><img src="dji-logo@2x.png">Developer</a></div>
-                <div id="header-navbar" class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a href="/mobile-sdk">Mobile SDK</a></li>
-                        <li><a href="/ux-sdk">UX SDK</a></li>
-                        <li><a href="/onboard-sdk">Onboard SDK</a></li>
-                        <li><a href="/payload-sdk">Payload SDK</a></li>
-                        <li><a href="/windows-sdk">Windows SDK</a></li>
-                    </ul>
-                    <ul v-cloak="" v-show="!loggedIn" class="nav navbar-nav navbar-right nav-user">
-                       <li><a href="https://account.dji.com/login?appId=dji_sdk&backUrl=https%3A%2F%2Fdeveloper.dji.com%2Fuser&locale=en_US">Login</a></li>
-                        <li><a href="https://account.dji.com/register?appId=dji_sdk&backUrl=https%3A%2F%2Fdeveloper.dji.com%2Fuser&locale=en_US" class="head-cta">Register</a></li>
-                    </ul>
-                    <ul v-cloak="" v-show="loggedIn" class="nav navbar-nav navbar-right nav-user">
-                        <li class="hovedown"><a href="javascript:void(0);" class="hovedown-toggle"><i class="fa fa-user"></i></a>
-                            <ul class="hovedown-menu hovedown-menu-right">
-                                <li><a href="/user">User Center</a></li>
-                                <li><a href="javascript:void(0);" v-on="click: logout">Logout</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <div data-offset-top="60" data-spy="affix" class="sub-nav">
-            <div class="container">
-                <h1 class="logo">Onboard SDK</h1>
-                <nav><a href="/onboard-sdk">Overview</a><a href="/onboard-sdk/documentation">Documentation</a><a href="/onboard-api-reference/index.html" class="active">API Reference</a><a href="/onboard-sdk/downloads">Downloads</a>
-                </nav>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link href="jquery.smartmenus.bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap-theme.css">
+    <script src="bootstrap.min.js"></script>
+    <link href="jquery.smartmenus.bootstrap.css" rel="stylesheet">
+    <!-- SmartMenus jQuery plugin -->
+    <script type="text/javascript" src="jquery.smartmenus.min.js"></script>
+    <!-- SmartMenus jQuery Bootstrap Addon -->
+    <script type="text/javascript" src="jquery.smartmenus.bootstrap.min.js"></script>
+    <style>
+        .has-submenu {
+            position: relative;
+        }
+        #main-nav {
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+    <nav id="site-header" class="site-header navbar">
+        <div class="container">
+            <div class="navbar-header"><a href="/" class="logo"><img src="dji-logo@2x.png">Developer</a></div>
+            <div id="header-navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/mobile-sdk">Mobile SDK</a></li>
+                    <li><a href="/ux-sdk">UX SDK</a></li>
+                    <li><a href="/onboard-sdk">Onboard SDK</a></li>
+                    <li><a href="/payload-sdk">Payload SDK</a></li>
+                    <li><a href="/windows-sdk">Windows SDK</a></li>
+                </ul>
+                <ul v-cloak="" v-show="!loggedIn" class="nav navbar-nav navbar-right nav-user">
+                    <li><a
+                            href="https://account.dji.com/login?appId=dji_sdk&backUrl=https%3A%2F%2Fdeveloper.dji.com%2Fuser&locale=en_US">Login</a>
+                    </li>
+                    <li><a href="https://account.dji.com/register?appId=dji_sdk&backUrl=https%3A%2F%2Fdeveloper.dji.com%2Fuser&locale=en_US"
+                            class="head-cta">Register</a></li>
+                </ul>
+                <ul v-cloak="" v-show="loggedIn" class="nav navbar-nav navbar-right nav-user">
+                    <li class="hovedown"><a href="javascript:void(0);" class="hovedown-toggle"><i
+                                class="fa fa-user"></i></a>
+                        <ul class="hovedown-menu hovedown-menu-right">
+                            <li><a href="/user">User Center</a></li>
+                            <li><a href="javascript:void(0);" v-on="click: logout">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </div>
-        <!--<nav class="navbar navbar-default" role="navigation">-->
-            <!--<div class="container">-->
-                <!--<div class="navbar-header">-->
-                    <!--<a href="#" class="navbar-left"><img src="dji_logo_gray_small.png" alt="DJI OSDK API Documentation" width="32px"/></a>-->
-                    <!--<a class="navbar-brand" href="index.html">ONBOARD SDK 3.3</a>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</nav>-->
-        <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
-            <div class="content" id="content">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-12 panel " style="padding-bottom: 15px; padding-top: 52px;">
-                            <div style="margin-bottom: 15px;">
-<!-- end header part -->
-<!-- Generated by Doxygen 1.8.11 -->
+    </nav>
+    <div data-offset-top="60" data-spy="affix" class="sub-nav">
+        <div class="container">
+            <h1 class="logo">Onboard SDK</h1>
+            <nav><a href="/onboard-sdk">Overview</a><a href="/onboard-sdk/documentation">Documentation</a><a
+                    href="/onboard-api-reference/index.html" class="active">API Reference</a><a
+                    href="/onboard-sdk/downloads">Downloads</a>
+            </nav>
+        </div>
+    </div>
+    <!--<nav class="navbar navbar-default" role="navigation">-->
+    <!--<div class="container">-->
+    <!--<div class="navbar-header">-->
+    <!--<a href="#" class="navbar-left"><img src="dji_logo_gray_small.png" alt="DJI OSDK API Documentation" width="32px"/></a>-->
+    <!--<a class="navbar-brand" href="index.html">ONBOARD SDK 3.3</a>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</nav>-->
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div class="content" id="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 panel " style="padding-bottom: 15px;">
+                        <div style="margin-bottom: 15px;">
+                            <!-- end header part --><!-- Generated by Doxygen 1.8.15 -->
 <script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 var searchBox = new SearchBox("searchBox", "search",false,'Search');
+/* @license-end */
 </script>
-  <div id="navrow1" class="tabs">
-    <ul class="tablist">
-      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
-      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
-      <li>
-        <div id="MSearchBox" class="MSearchBoxInactive">
-        <span class="left">
-          <img id="MSearchSelect" src="search/mag_sel.png"
-               onmouseover="return searchBox.OnSearchSelectShow()"
-               onmouseout="return searchBox.OnSearchSelectHide()"
-               alt=""/>
-          <input type="text" id="MSearchField" value="Search" accesskey="S"
-               onfocus="searchBox.OnSearchFieldFocus(true)" 
-               onblur="searchBox.OnSearchFieldFocus(false)" 
-               onkeyup="searchBox.OnSearchFieldChange(event)"/>
-          </span><span class="right">
-            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
-          </span>
-        </div>
-      </li>
-    </ul>
-  </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
-      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
-      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
-    </ul>
-  </div>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -149,12 +146,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="dynheader">
 Inheritance diagram for DJI::OSDK::HotpointMission:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classDJI_1_1OSDK_1_1HotpointMission__inherit__graph.svg" width="219" height="522"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classDJI_1_1OSDK_1_1HotpointMission__inherit__graph.svg" width="220" height="486"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:af758f3e80f7558696d342e3be66b9132"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af758f3e80f7558696d342e3be66b9132"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>View</b> { <br />
+<tr class="memitem:af758f3e80f7558696d342e3be66b9132"><td class="memItemLeft" align="right" valign="top"><a id="af758f3e80f7558696d342e3be66b9132"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>View</b> { <br />
 &#160;&#160;<b>VIEW_NORTH</b> = 0, 
 <br />
 &#160;&#160;<b>VIEW_SOUTH</b> = 1, 
@@ -167,7 +164,7 @@ Public Types</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:af758f3e80f7558696d342e3be66b9132"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ae0588ac6c5a525dc929fa498bf8bdd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1ae0588ac6c5a525dc929fa498bf8bdd"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>YawMode</b> { <br />
+<tr class="memitem:a1ae0588ac6c5a525dc929fa498bf8bdd"><td class="memItemLeft" align="right" valign="top"><a id="a1ae0588ac6c5a525dc929fa498bf8bdd"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>YawMode</b> { <br />
 &#160;&#160;<b>YAW_AUTO</b> = 0, 
 <br />
 &#160;&#160;<b>YAW_INSIDE</b> = 1, 
@@ -180,7 +177,7 @@ Public Types</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a1ae0588ac6c5a525dc929fa498bf8bdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad595be8c74aecc478ac46c6c7aec12a0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad595be8c74aecc478ac46c6c7aec12a0"></a>
+<tr class="memitem:ad595be8c74aecc478ac46c6c7aec12a0"><td class="memItemLeft" align="right" valign="top"><a id="ad595be8c74aecc478ac46c6c7aec12a0"></a>
 typedef struct DJI::OSDK::HotpointMission::YawRate&#160;</td><td class="memItemRight" valign="bottom"><b>YawRate</b></td></tr>
 <tr class="separator:ad595be8c74aecc478ac46c6c7aec12a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -191,9 +188,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a25a5f7ed542cbcc3344822f9a456c7fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#a25a5f7ed542cbcc3344822f9a456c7fc">initData</a> ()</td></tr>
 <tr class="memdesc:a25a5f7ed542cbcc3344822f9a456c7fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">init hotpoint default data  <a href="#a25a5f7ed542cbcc3344822f9a456c7fc">More...</a><br /></td></tr>
 <tr class="separator:a25a5f7ed542cbcc3344822f9a456c7fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4c822ea6ceb0d71ed4f32572b361562"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDJI_1_1OSDK_1_1HotPointSettings.html">HotPointSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#aa4c822ea6ceb0d71ed4f32572b361562">getData</a> () const </td></tr>
-<tr class="memdesc:aa4c822ea6ceb0d71ed4f32572b361562"><td class="mdescLeft">&#160;</td><td class="mdescRight">getting hotpoint data  <a href="#aa4c822ea6ceb0d71ed4f32572b361562">More...</a><br /></td></tr>
-<tr class="separator:aa4c822ea6ceb0d71ed4f32572b361562"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14972b9d8e86174a9f00fb327b824434"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDJI_1_1OSDK_1_1HotPointSettings.html">HotPointSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#a14972b9d8e86174a9f00fb327b824434">getData</a> () const</td></tr>
+<tr class="memdesc:a14972b9d8e86174a9f00fb327b824434"><td class="mdescLeft">&#160;</td><td class="mdescRight">getting hotpoint data  <a href="#a14972b9d8e86174a9f00fb327b824434">More...</a><br /></td></tr>
+<tr class="separator:a14972b9d8e86174a9f00fb327b824434"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a0151215ad6204133361bd81e87f44c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1HotpointMission.html#a4a0151215ad6204133361bd81e87f44c">start</a> (<a class="el" href="namespaceDJI_1_1OSDK.html#a20a68c21abe449cf5f133f7d398055d3">VehicleCallBack</a> callback=0, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData=0)</td></tr>
 <tr class="memdesc:a4a0151215ad6204133361bd81e87f44c"><td class="mdescLeft">&#160;</td><td class="mdescRight">start the hotpoint mission  <a href="#a4a0151215ad6204133361bd81e87f44c">More...</a><br /></td></tr>
 <tr class="separator:a4a0151215ad6204133361bd81e87f44c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -273,7 +270,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a105c0713ebe5d11e0242e00baf52639e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set hotpoint data for initialization purpose.  <a href="#a105c0713ebe5d11e0242e00baf52639e">More...</a><br /></td></tr>
 <tr class="separator:a105c0713ebe5d11e0242e00baf52639e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classDJI_1_1OSDK_1_1MissionBase"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classDJI_1_1OSDK_1_1MissionBase')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classDJI_1_1OSDK_1_1MissionBase.html">DJI::OSDK::MissionBase</a></td></tr>
-<tr class="memitem:aa2a6becb5c63af4389c01be8666f94a4 inherit pub_methods_classDJI_1_1OSDK_1_1MissionBase"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa2a6becb5c63af4389c01be8666f94a4"></a>
+<tr class="memitem:aa2a6becb5c63af4389c01be8666f94a4 inherit pub_methods_classDJI_1_1OSDK_1_1MissionBase"><td class="memItemLeft" align="right" valign="top"><a id="aa2a6becb5c63af4389c01be8666f94a4"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>MissionBase</b> (<a class="el" href="classDJI_1_1OSDK_1_1Vehicle.html">Vehicle</a> *vehicle=0)</td></tr>
 <tr class="separator:aa2a6becb5c63af4389c01be8666f94a4 inherit pub_methods_classDJI_1_1OSDK_1_1MissionBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -288,22 +285,24 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:aadfa36fbb7ea6eed16702fe7d0fc5cb7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aadfa36fbb7ea6eed16702fe7d0fc5cb7"></a>
+<tr class="memitem:aadfa36fbb7ea6eed16702fe7d0fc5cb7"><td class="memItemLeft" align="right" valign="top"><a id="aadfa36fbb7ea6eed16702fe7d0fc5cb7"></a>
 <a class="el" href="structDJI_1_1OSDK_1_1VehicleCallBackHandler.html">VehicleCallBackHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><b>hotPointCallback</b></td></tr>
 <tr class="separator:aadfa36fbb7ea6eed16702fe7d0fc5cb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_classDJI_1_1OSDK_1_1MissionBase"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classDJI_1_1OSDK_1_1MissionBase')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classDJI_1_1OSDK_1_1MissionBase.html">DJI::OSDK::MissionBase</a></td></tr>
-<tr class="memitem:a609ce3f029a50b5ed4364df4c500253d inherit pro_attribs_classDJI_1_1OSDK_1_1MissionBase"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a609ce3f029a50b5ed4364df4c500253d"></a>
+<tr class="memitem:a609ce3f029a50b5ed4364df4c500253d inherit pro_attribs_classDJI_1_1OSDK_1_1MissionBase"><td class="memItemLeft" align="right" valign="top"><a id="a609ce3f029a50b5ed4364df4c500253d"></a>
 <a class="el" href="classDJI_1_1OSDK_1_1Vehicle.html">Vehicle</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>vehicle</b></td></tr>
 <tr class="separator:a609ce3f029a50b5ed4364df4c500253d inherit pro_attribs_classDJI_1_1OSDK_1_1MissionBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>APIs for Hotpoint (Point of Interest) Missions. </p>
-<p>This class inherits from <a class="el" href="classDJI_1_1OSDK_1_1MissionBase.html" title="Mission Base class for commonality between SDK Missions. ">MissionBase</a> and can be used with <a class="el" href="classDJI_1_1OSDK_1_1MissionManager.html" title="MissionManager class for chaining/managing missions. ">MissionManager</a>. </p>
+<p>This class inherits from <a class="el" href="classDJI_1_1OSDK_1_1MissionBase.html" title="Mission Base class for commonality between SDK Missions.">MissionBase</a> and can be used with <a class="el" href="classDJI_1_1OSDK_1_1MissionManager.html" title="MissionManager class for chaining/managing missions.">MissionManager</a>. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a2aa16e490d633facbbd5a14bc2e45e60"></a>
+<a id="a2aa16e490d633facbbd5a14bc2e45e60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2aa16e490d633facbbd5a14bc2e45e60">&#9670;&nbsp;</a></span>HotpointMission()</h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -323,7 +322,9 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="aa4c822ea6ceb0d71ed4f32572b361562"></a>
+<a id="a14972b9d8e86174a9f00fb327b824434"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14972b9d8e86174a9f00fb327b824434">&#9670;&nbsp;</a></span>getData()</h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -340,7 +341,9 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="abb0acb3f2efd5b93e19bf9703a5a7945"></a>
+<a id="abb0acb3f2efd5b93e19bf9703a5a7945"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb0acb3f2efd5b93e19bf9703a5a7945">&#9670;&nbsp;</a></span>getHotpointSettings() <span class="overload">[1/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -375,7 +378,9 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac6ed7f19d00ccada93dfd0fda031286e"></a>
+<a id="ac6ed7f19d00ccada93dfd0fda031286e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6ed7f19d00ccada93dfd0fda031286e">&#9670;&nbsp;</a></span>getHotpointSettings() <span class="overload">[2/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -392,14 +397,16 @@ Additional Inherited Members</h2></td></tr>
 <p>Read hotpoint mission information from flight controller. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">timer</td><td>timeout to wait for <a class="el" href="classDJI_1_1OSDK_1_1ACK.html" title="Class for handling acknowledgements from the aircraft. ">ACK</a> </td></tr>
+    <tr><td class="paramname">timer</td><td>timeout to wait for <a class="el" href="classDJI_1_1OSDK_1_1ACK.html" title="Class for handling acknowledgements from the aircraft.">ACK</a> </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="ae3e8c6c6d26a54cd28acb1a1efdaad1e"></a>
+<a id="ae3e8c6c6d26a54cd28acb1a1efdaad1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3e8c6c6d26a54cd28acb1a1efdaad1e">&#9670;&nbsp;</a></span>getHotpointSettingsCallback()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -448,7 +455,9 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a25a5f7ed542cbcc3344822f9a456c7fc"></a>
+<a id="a25a5f7ed542cbcc3344822f9a456c7fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25a5f7ed542cbcc3344822f9a456c7fc">&#9670;&nbsp;</a></span>initData()</h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -465,7 +474,9 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ae84f9c568ce391508eb125140e93345b"></a>
+<a id="ae84f9c568ce391508eb125140e93345b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae84f9c568ce391508eb125140e93345b">&#9670;&nbsp;</a></span>pause() <span class="overload">[1/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -510,7 +521,9 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aed544cba624572e7afb2fae017f908ad"></a>
+<a id="aed544cba624572e7afb2fae017f908ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed544cba624572e7afb2fae017f908ad">&#9670;&nbsp;</a></span>pause() <span class="overload">[2/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -535,7 +548,7 @@ Additional Inherited Members</h2></td></tr>
 <p>pause the hotpoint mission </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">timer</td><td>timeout to wait for <a class="el" href="classDJI_1_1OSDK_1_1ACK.html" title="Class for handling acknowledgements from the aircraft. ">ACK</a> </td></tr>
+    <tr><td class="paramname">timer</td><td>timeout to wait for <a class="el" href="classDJI_1_1OSDK_1_1ACK.html" title="Class for handling acknowledgements from the aircraft.">ACK</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -544,7 +557,9 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a610bf9468597c4e2da987b9419715f76"></a>
+<a id="a610bf9468597c4e2da987b9419715f76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a610bf9468597c4e2da987b9419715f76">&#9670;&nbsp;</a></span>resetYaw() <span class="overload">[1/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -579,7 +594,9 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab04d05cdaea0ca14bf7ca6cfa14550da"></a>
+<a id="ab04d05cdaea0ca14bf7ca6cfa14550da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab04d05cdaea0ca14bf7ca6cfa14550da">&#9670;&nbsp;</a></span>resetYaw() <span class="overload">[2/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -596,14 +613,16 @@ Additional Inherited Members</h2></td></tr>
 <p>reset yaw of hotpoint mission </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">timer</td><td>timeout to wait for <a class="el" href="classDJI_1_1OSDK_1_1ACK.html" title="Class for handling acknowledgements from the aircraft. ">ACK</a> </td></tr>
+    <tr><td class="paramname">timer</td><td>timeout to wait for <a class="el" href="classDJI_1_1OSDK_1_1ACK.html" title="Class for handling acknowledgements from the aircraft.">ACK</a> </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="a1fc73550ee5bcc36ca1b42550a5a693b"></a>
+<a id="a1fc73550ee5bcc36ca1b42550a5a693b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fc73550ee5bcc36ca1b42550a5a693b">&#9670;&nbsp;</a></span>resume() <span class="overload">[1/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -648,7 +667,9 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a5b472af0da9c1370dae19d3e586ef00a"></a>
+<a id="a5b472af0da9c1370dae19d3e586ef00a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b472af0da9c1370dae19d3e586ef00a">&#9670;&nbsp;</a></span>resume() <span class="overload">[2/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -673,7 +694,7 @@ Additional Inherited Members</h2></td></tr>
 <p>resume the hotpoint mission </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">timer</td><td>timeout to wait for <a class="el" href="classDJI_1_1OSDK_1_1ACK.html" title="Class for handling acknowledgements from the aircraft. ">ACK</a> </td></tr>
+    <tr><td class="paramname">timer</td><td>timeout to wait for <a class="el" href="classDJI_1_1OSDK_1_1ACK.html" title="Class for handling acknowledgements from the aircraft.">ACK</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -682,7 +703,9 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aec0d5fa28da5381df51108211056b2a2"></a>
+<a id="aec0d5fa28da5381df51108211056b2a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec0d5fa28da5381df51108211056b2a2">&#9670;&nbsp;</a></span>setCameraView()</h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -706,7 +729,9 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aee686337934a2302ca8533df0cffe480"></a>
+<a id="aee686337934a2302ca8533df0cffe480"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee686337934a2302ca8533df0cffe480">&#9670;&nbsp;</a></span>setClockwise()</h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -730,7 +755,9 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a93684377dc3688fabbc41eb50956bbc6"></a>
+<a id="a93684377dc3688fabbc41eb50956bbc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93684377dc3688fabbc41eb50956bbc6">&#9670;&nbsp;</a></span>setData()</h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -747,14 +774,16 @@ Additional Inherited Members</h2></td></tr>
 <p>Set hotpoint data for initialization purpose. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">data</td><td><a class="el" href="structDJI_1_1OSDK_1_1HotPointSettings.html" title="HotPoint Mission Initialization settings. ">HotPointSettings</a> </td></tr>
+    <tr><td class="paramname">data</td><td><a class="el" href="structDJI_1_1OSDK_1_1HotPointSettings.html" title="HotPoint Mission Initialization settings.">HotPointSettings</a> </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="aa997b14e21eba4a8fc73a8b1a346d724"></a>
+<a id="aa997b14e21eba4a8fc73a8b1a346d724"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa997b14e21eba4a8fc73a8b1a346d724">&#9670;&nbsp;</a></span>setHotPoint() <span class="overload">[1/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -796,7 +825,9 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a2946e47508f5ec822f4795eb811afc12"></a>
+<a id="a2946e47508f5ec822f4795eb811afc12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2946e47508f5ec822f4795eb811afc12">&#9670;&nbsp;</a></span>setHotPoint() <span class="overload">[2/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -820,7 +851,9 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a4c292d437ea5af86b87f3e621935e56d"></a>
+<a id="a4c292d437ea5af86b87f3e621935e56d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c292d437ea5af86b87f3e621935e56d">&#9670;&nbsp;</a></span>setHotpointCallback()</h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -855,7 +888,9 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a277d36e0e8107e819360e9cf1049713e"></a>
+<a id="a277d36e0e8107e819360e9cf1049713e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a277d36e0e8107e819360e9cf1049713e">&#9670;&nbsp;</a></span>setRadius()</h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -879,7 +914,9 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a105c0713ebe5d11e0242e00baf52639e"></a>
+<a id="a105c0713ebe5d11e0242e00baf52639e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a105c0713ebe5d11e0242e00baf52639e">&#9670;&nbsp;</a></span>setYawMode()</h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -903,7 +940,9 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af8583e764f9097c6d67dd257d2263ae7"></a>
+<a id="af8583e764f9097c6d67dd257d2263ae7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8583e764f9097c6d67dd257d2263ae7">&#9670;&nbsp;</a></span>setYawRate()</h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -927,7 +966,9 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a4a0151215ad6204133361bd81e87f44c"></a>
+<a id="a4a0151215ad6204133361bd81e87f44c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a0151215ad6204133361bd81e87f44c">&#9670;&nbsp;</a></span>start() <span class="overload">[1/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -972,7 +1013,9 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a03b7adf6cbac5a91101a578ee5ff8fd5"></a>
+<a id="a03b7adf6cbac5a91101a578ee5ff8fd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03b7adf6cbac5a91101a578ee5ff8fd5">&#9670;&nbsp;</a></span>start() <span class="overload">[2/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -997,7 +1040,7 @@ Additional Inherited Members</h2></td></tr>
 <p>start the hotpoint mission </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">timer</td><td>timeout to wait for <a class="el" href="classDJI_1_1OSDK_1_1ACK.html" title="Class for handling acknowledgements from the aircraft. ">ACK</a> </td></tr>
+    <tr><td class="paramname">timer</td><td>timeout to wait for <a class="el" href="classDJI_1_1OSDK_1_1ACK.html" title="Class for handling acknowledgements from the aircraft.">ACK</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -1006,7 +1049,9 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="afb0c8327e444a78a49c03b3bf0946730"></a>
+<a id="afb0c8327e444a78a49c03b3bf0946730"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb0c8327e444a78a49c03b3bf0946730">&#9670;&nbsp;</a></span>startCallback()</h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1049,7 +1094,9 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac32563e7bc146fa96831237773280b36"></a>
+<a id="ac32563e7bc146fa96831237773280b36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac32563e7bc146fa96831237773280b36">&#9670;&nbsp;</a></span>stop() <span class="overload">[1/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1094,7 +1141,9 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ae91b0d3ca7da7ddb083cf1f678355ff8"></a>
+<a id="ae91b0d3ca7da7ddb083cf1f678355ff8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae91b0d3ca7da7ddb083cf1f678355ff8">&#9670;&nbsp;</a></span>stop() <span class="overload">[2/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1119,7 +1168,7 @@ Additional Inherited Members</h2></td></tr>
 <p>stop the hotpoint mission </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">timer</td><td>timeout to wait for <a class="el" href="classDJI_1_1OSDK_1_1ACK.html" title="Class for handling acknowledgements from the aircraft. ">ACK</a> </td></tr>
+    <tr><td class="paramname">timer</td><td>timeout to wait for <a class="el" href="classDJI_1_1OSDK_1_1ACK.html" title="Class for handling acknowledgements from the aircraft.">ACK</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -1128,7 +1177,9 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a23db500bffe71b0dca90c70b10e751d4"></a>
+<a id="a23db500bffe71b0dca90c70b10e751d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23db500bffe71b0dca90c70b10e751d4">&#9670;&nbsp;</a></span>updateRadius() <span class="overload">[1/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1170,7 +1221,9 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aafa97568c631a714657f6ec94694f792"></a>
+<a id="aafa97568c631a714657f6ec94694f792"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafa97568c631a714657f6ec94694f792">&#9670;&nbsp;</a></span>updateRadius() <span class="overload">[2/2]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1198,14 +1251,16 @@ Additional Inherited Members</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">meter</td><td>radius </td></tr>
-    <tr><td class="paramname">timer</td><td>timeout to wait for <a class="el" href="classDJI_1_1OSDK_1_1ACK.html" title="Class for handling acknowledgements from the aircraft. ">ACK</a> </td></tr>
+    <tr><td class="paramname">timer</td><td>timeout to wait for <a class="el" href="classDJI_1_1OSDK_1_1ACK.html" title="Class for handling acknowledgements from the aircraft.">ACK</a> </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="aa73b985636b20e5449c2da4eaf98517c"></a>
+<a id="aa73b985636b20e5449c2da4eaf98517c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa73b985636b20e5449c2da4eaf98517c">&#9670;&nbsp;</a></span>updateYawRate() <span class="overload">[1/3]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1247,7 +1302,9 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a2649be5171a2e6f02ff96022423a7f32"></a>
+<a id="a2649be5171a2e6f02ff96022423a7f32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2649be5171a2e6f02ff96022423a7f32">&#9670;&nbsp;</a></span>updateYawRate() <span class="overload">[2/3]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1275,14 +1332,16 @@ Additional Inherited Members</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">Data</td><td>specified yaw rate and orientation </td></tr>
-    <tr><td class="paramname">timer</td><td>timeout to wait for <a class="el" href="classDJI_1_1OSDK_1_1ACK.html" title="Class for handling acknowledgements from the aircraft. ">ACK</a> </td></tr>
+    <tr><td class="paramname">timer</td><td>timeout to wait for <a class="el" href="classDJI_1_1OSDK_1_1ACK.html" title="Class for handling acknowledgements from the aircraft.">ACK</a> </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="a2999fe48791ddefe9c75a98ef7f58996"></a>
+<a id="a2999fe48791ddefe9c75a98ef7f58996"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2999fe48791ddefe9c75a98ef7f58996">&#9670;&nbsp;</a></span>updateYawRate() <span class="overload">[3/3]</span></h2>
+
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1323,7 +1382,7 @@ Additional Inherited Members</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">yawRate</td><td>specified yaw rate </td></tr>
     <tr><td class="paramname">isClockwise</td><td>specified orientation </td></tr>
-    <tr><td class="paramname">timer</td><td>timeout to wait for <a class="el" href="classDJI_1_1OSDK_1_1ACK.html" title="Class for handling acknowledgements from the aircraft. ">ACK</a> </td></tr>
+    <tr><td class="paramname">timer</td><td>timeout to wait for <a class="el" href="classDJI_1_1OSDK_1_1ACK.html" title="Class for handling acknowledgements from the aircraft.">ACK</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -1369,4 +1428,5 @@ Additional Inherited Members</h2></td></tr>
   </footer>
 </small></address>
 </body>
+<script type="text/javascript" src="doxy-boot.js"></script>
 </html>
