@@ -1,7 +1,7 @@
 ---
 title: Software Environment Setup Guide
-date: 2019-02-20
-version: 3.4
+date: 2019-06-17
+version: 3.8.1
 keywords: [hardware setup，M100 UART Connector, A3 UART Connector, N3 UART]
 ---
 
@@ -114,6 +114,8 @@ mkdir src
 cd src
 catkin_init_workspace
 ```
+* What should be emphasized is that the baudrate between the ROS device and the drone OSDK uart should be greater than 921600. Because many subscription topics are subscribed by ROS by default and they need more communication bandwidth.
+* If you are using the ttyTHS2 of Manifold 2-G to communicate with the drone, the baudrate is recommended as 1000000 but not 921600. Because the baudrate 921600 of Manifold 2-G have a little deviation from the actual value. You can ref to the [Manifold 2 User Guide] for more details.(https://dl.djicdn.com/downloads/manifold-2/20190528/Manifold_2_User_Guide_v1.0_EN.pdf)
 
 ##### Permissions
 
