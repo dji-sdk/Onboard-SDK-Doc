@@ -1,7 +1,7 @@
 ---
 title: Hardware Setup Guide
-date: 2019-02-20
-version: 3.4
+date: 2019-06-17
+version: 3.8.1
 keywords: [hardware setup，M100 UART Connector, A3 UART Connector, N3 UART]
 ---
 
@@ -64,7 +64,7 @@ The diagram below shows the hardware connection between an M100 and Manifold. No
 The diagram below shows the hardware connection between an M100 and a PC or Linux machine. Note that: 
 
 - M100 UART cable is provided in the box and is also [sold](http://store.dji.com/product/matrice-100-uart-cable) separately. 
-- USB to TTL cable can be purchased on [Amazon](https://www.amazon.com/ADAFRUIT-INDUSTRIES-954-SERIAL-RASPBERRY/dp/B00DJUHGHI/ref=sr_1_5?s=electronics&ie=UTF8&qid=1466208644&sr=1-5&keywords=usb+to+ttl).
+- The recommended choice of USB to TTL cable is FT232 module which can be purchased on [Amazon](https://www.amazon.com/DIYmall-Adapter-Chipset-Arduino-ESP8266/dp/B014GZTCC6/ref=sr_1_3?keywords=usb+to+ttl+FT232&qid=1560518042&s=gateway&sr=8-3).
 - The two cables need to be connected on the TTL end to establish communication between M100 and PC/Linux. 
 - M100 to PC connection is used to run DJI Assistant 2. 
 - With DJI Assistant you can enable the OSDK API, set baud rate and/or run the Simulator.
@@ -78,7 +78,7 @@ The diagram below shows the hardware connection between an M100 and a PC or Linu
 The diagram below shows the hardware connection between an M100 and STM32. Note that: 
 
 - M100 UART cable is provided in the box and is also [sold](http://store.dji.com/product/matrice-100-uart-cable) separately. 
-- USB to TTL cable can be purchased on [Amazon](https://www.amazon.com/ADAFRUIT-INDUSTRIES-954-SERIAL-RASPBERRY/dp/B00DJUHGHI/ref=sr_1_5?s=electronics&ie=UTF8&qid=1466208644&sr=1-5&keywords=usb+to+ttl).
+- The recommended choice of USB to TTL cable is FT232 module which can be purchased on [Amazon](https://www.amazon.com/DIYmall-Adapter-Chipset-Arduino-ESP8266/dp/B014GZTCC6/ref=sr_1_3?keywords=usb+to+ttl+FT232&qid=1560518042&s=gateway&sr=8-3).
 - M100 UART cable connects to USART3 connector on STM32. 
 - USB-TTL cable connects to USART2 connector on STM32. 
 - PC is used for STM32 development. 
@@ -106,7 +106,7 @@ The diagram below shows the hardware connection between an A3/N3 and Manifold. N
 
 The diagram below shows the hardware connection between an A3/N3 and a PC or Linux machine. Note that:
 
-- USB to TTL cable can be purchased on [Amazon](https://www.amazon.com/ADAFRUIT-INDUSTRIES-954-SERIAL-RASPBERRY/dp/B00DJUHGHI/ref=sr_1_5?s=electronics&ie=UTF8&qid=1466208644&sr=1-5&keywords=usb+to+ttl).
+- The recommended choice of USB to TTL cable is FT232 module which can be purchased on [Amazon](https://www.amazon.com/DIYmall-Adapter-Chipset-Arduino-ESP8266/dp/B014GZTCC6/ref=sr_1_3?keywords=usb+to+ttl+FT232&qid=1560518042&s=gateway&sr=8-3).
 - A3/N3 to PC connection is used to run DJI Assistant 2.
 - With DJI Assistant you can enable OSDK API, set baud rate and/or run the Simulator. 
 
@@ -118,7 +118,7 @@ The diagram below shows the hardware connection between an A3/N3 and a PC or Lin
 The diagram below shows the hardware connection between an A3/N3 and STM32. Note that:
 
 - UART cable can be made using 0.1 inch female headers on both sides going from Tx port on A3/N3 to Rx port on the STM32 and vice-versa.
-- USB to TTL cable can be purchased on [Amazon](https://www.amazon.com/ADAFRUIT-INDUSTRIES-954-SERIAL-RASPBERRY/dp/B00DJUHGHI/ref=sr_1_5?s=electronics&ie=UTF8&qid=1466208644&sr=1-5&keywords=usb+to+ttl).
+- The recommended choice of USB to TTL cable is FT232 module which can be purchased on [Amazon](https://www.amazon.com/DIYmall-Adapter-Chipset-Arduino-ESP8266/dp/B014GZTCC6/ref=sr_1_3?keywords=usb+to+ttl+FT232&qid=1560518042&s=gateway&sr=8-3).
 - UART cable betweenn A3/N3 and STM32 connects to USART3 connector on STM32.
 - USB-TTL cable connects to USART2 connector on STM32. 
 - PC is used for STM32 development. 
@@ -132,7 +132,7 @@ The diagram below shows the hardware connection between an A3/N3 and STM32. Note
 
 The diagram below shows the hardware connection between a M210 and an Onbaord Computer without [Advanced Sensing](../guides/component-guide-advanced-sensing-stereo-camera.html). Note that:
 
-- USB to TTL cable can be purchased on [Amazon](https://www.amazon.com/ADAFRUIT-INDUSTRIES-954-SERIAL-RASPBERRY/dp/B00DJUHGHI/ref=sr_1_5?s=electronics&ie=UTF8&qid=1466208644&sr=1-5&keywords=usb+to+ttl).
+- The recommended choice of USB to TTL cable is FT232 module which can be purchased on [Amazon](https://www.amazon.com/DIYmall-Adapter-Chipset-Arduino-ESP8266/dp/B014GZTCC6/ref=sr_1_3?keywords=usb+to+ttl+FT232&qid=1560518042&s=gateway&sr=8-3).
 - To run DJI Assistant 2, please use the USB port to connect to PC/Mac.
 - With DJI Assistant you can enable OSDK API, set baud rate and/or run the Simulator.
 
@@ -143,7 +143,7 @@ The diagram below shows the hardware connection between a M210 and an Onbaord Co
 
 The diagram below shows the hardware connection between a M210 and an Onbaord Computer with [Advanced Sensing](../guides/component-guide-advanced-sensing-stereo-camera.html). Note that:
 
-- USB to TTL cable can be purchased on [Amazon](https://www.amazon.com/ADAFRUIT-INDUSTRIES-954-SERIAL-RASPBERRY/dp/B00DJUHGHI/ref=sr_1_5?s=electronics&ie=UTF8&qid=1466208644&sr=1-5&keywords=usb+to+ttl).
+- The recommended choice of USB to TTL cable is FT232 module which can be purchased on [Amazon](https://www.amazon.com/DIYmall-Adapter-Chipset-Arduino-ESP8266/dp/B014GZTCC6/ref=sr_1_3?keywords=usb+to+ttl+FT232&qid=1560518042&s=gateway&sr=8-3).
 - For [Advanced Sensing](../guides/component-guide-advanced-sensing-stereo-camera.html), please connect the USB port of M210 to another USB port of your computer via the included DJI USB cable.
 - With DJI Assistant 2 you can enable the OSDK API, set baud rate and/or run the Simulator.
 - To run DJI Assistant 2, please use the same USB port to connect to PC/Mac. To prevent conflict between two different computers talking to the same USB port on M210, please see [M210 simulation checklist](../M210-Docs/simulation-checklist.html).
