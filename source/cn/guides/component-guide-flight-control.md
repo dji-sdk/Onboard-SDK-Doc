@@ -272,6 +272,7 @@ The horizontal movement of the aircraft can either be set with X/Y velocities, o
 
 Yaw can be changed by either angle or velocity. Yaw settings are independent of the coordinate system. Positive yaw velocity will always rotate clockwise, and yaw angle is always relative to North.
 
+>**Note** : If the drone ever searched for satellites after startup, yaw angle's reference is the geographic north for the magnetic declination is automatically calculated. Otherwise, the yaw angle's reference will be geomagnetic north.
 ##### Vertical Throttle Control Mode: 
 
 Vertical movement can be achieved either using velocity or position. Position is an altitude relative to the take-off location. Velocity is always relative to the aircraft, and does not follow typical coordinate system convention (positive vertical velocity results in the aircraft ascending). 

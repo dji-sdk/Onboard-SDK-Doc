@@ -1,7 +1,7 @@
 ---
 title: Software Environment Setup Guide
-date: 2019-02-20
-version: 3.4
+date: 2019-06-17
+version: 3.8.1
 keywords: [hardware setup，M100 UART Connector, A3 UART Connector, N3 UART]
 ---
 
@@ -30,7 +30,7 @@ The OSDK API needs to be enabled to allow communication between the onboard comp
 
 #### Onboard SDK Application Registration
 
-- You must register as a developer with DJI and create an OSDK application ID and Key pair. Please go to <a href="https://developer.dji.com/register/" target="_blank">https://developer.dji.com/register/</a> to complete registration.
+- You must register as a developer with DJI and create an OSDK application ID and Key pair. Please go to <a href="https://developer.dji.com/user/apps/#onboard" target="_blank">https://developer.dji.com/user/apps/#onboard</a> to complete registration.
 - After registration, you need to create the APP to get APP ID and Key in the developer center.
 
 ![Enable API Control](../images/common/APP_ID.png)
@@ -68,7 +68,7 @@ For M210 users interested in the [Advanced Sensing](../sample-doc/advanced-sensi
 2. Add `SUBSYSTEM=="usb", ATTRS{idVendor}=="2ca3", MODE="0666"` to this file
 3. Reboot your computer
 
-To make sure your Linux environment is ready to run OSDK applications, follow the [Linux Platform Guide](../sample-doc/sample-setup.html#linux-oes) on the Sample Setup page and run a sample app.
+To make sure your Linux environment is ready to run OSDK applications, follow the [Linux Platform Guide](../development-workflow/sample-setup.html#linux-onboard-computer) on the Sample Setup page and run a sample app.
 
 ## STM32
 
@@ -92,7 +92,7 @@ The user can view the output of the program through the USART2 port of the STM32
 
 ![Keil_PackInstall](../images/STM32/STM32_Keil_PackInstall.png)
 
-To make sure your STM32 environment is ready to run OSDK applications, follow the [STM32 Platform Guide](../sample-doc/sample-setup.html#stm32-oes) on the Sample Setup page and run a sample app.
+To make sure your STM32 environment is ready to run OSDK applications, follow the [STM32 Platform Guide](../development-workflow/sample-setup.html#stm32-onboard-computer) on the Sample Setup page and run a sample app.
 
 ## Linux with ROS
 
@@ -114,6 +114,8 @@ mkdir src
 cd src
 catkin_init_workspace
 ```
+* What should be emphasized is that the baudrate between the ROS device and the drone OSDK uart should be greater than 921600. Because many subscription topics are subscribed by ROS by default and they need more communication bandwidth.
+* If you are using the ttyTHS2 of Manifold 2-G to communicate with the drone, the baudrate is recommended as 1000000 but not 921600. Because the baudrate 921600 of Manifold 2-G have a little deviation from the actual value. You can ref to the [Manifold 2 User Guide] for more details.(https://dl.djicdn.com/downloads/manifold-2/20190528/Manifold_2_User_Guide_v1.0_EN.pdf)
 
 ##### Permissions
 
@@ -128,7 +130,7 @@ For M210 users interested in the [Advanced Sensing](../sample-doc/advanced-sensi
 2. Add `SUBSYSTEM=="usb", ATTRS{idVendor}=="2ca3", MODE="0666"` to this file
 3. Reboot your computer
 
-To make sure your ROS environment is ready to run OSDK applications, follow the [ROS Platform Guide](../sample-doc/sample-setup.html#ros-oes) on the Sample Setup page and run a sample app.
+To make sure your ROS environment is ready to run OSDK applications, follow the [ROS Platform Guide](../development-workflow/sample-setup.html#ros-onboard-computer) on the Sample Setup page and run a sample app.
 
 ## Qt
 
