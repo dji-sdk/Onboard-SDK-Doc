@@ -149,8 +149,7 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ad81592fd267d625603b6c1b55b0b2047"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac99d0744ad17e2147fcd342fce73fd8"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1Gimbal_1_1AngleData.html#aac99d0744ad17e2147fcd342fce73fd8">pitch</a></td></tr>
 <tr class="separator:aac99d0744ad17e2147fcd342fce73fd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac14dcd2fdb2c7049ebd0b539e03f578"><td class="memItemLeft" align="right" valign="top"><a id="aac14dcd2fdb2c7049ebd0b539e03f578"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>mode</b></td></tr>
+<tr class="memitem:aac14dcd2fdb2c7049ebd0b539e03f578"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1Gimbal_1_1AngleData.html#aac14dcd2fdb2c7049ebd0b539e03f578">mode</a></td></tr>
 <tr class="separator:aac14dcd2fdb2c7049ebd0b539e03f578"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8cf75831267af18858ae325553316eb"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1Gimbal_1_1AngleData.html#ab8cf75831267af18858ae325553316eb">duration</a></td></tr>
 <tr class="separator:ab8cf75831267af18858ae325553316eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -184,7 +183,25 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>mode</b></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>&lt; Mode is 1 byte size: </p><table class="markdownTable">
+<p>Command completion time.</p><ul>
+<li>Unit 0.1s, for example 20 means gimbal will reach the commended postition in 2 seconds.</li>
+<li>Rotate rate beyond 400º/s is not recommand </li>
+</ul>
+
+</div>
+</div>
+<a id="aac14dcd2fdb2c7049ebd0b539e03f578"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac14dcd2fdb2c7049ebd0b539e03f578">&#9670;&nbsp;</a></span>mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t DJI::OSDK::Gimbal::AngleData::mode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Mode is 1 byte size: </p><table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Bit #:  </th><th class="markdownTableHeadNone">Set to 0:  </th><th class="markdownTableHeadNone">Set to 1:   </th></tr>
 <tr class="markdownTableRowOdd">
@@ -198,10 +215,6 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>mode</b></td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">bit [4:7]  </td><td class="markdownTableBodyNone">bit [4:7]: reserved, set to be 0  </td><td class="markdownTableBodyNone"></td></tr>
 </table>
-<p>Command completion time.</p><ul>
-<li>Unit 0.1s, for example 20 means gimbal will reach the commended postition in 2 seconds.</li>
-<li>Rotate rate beyond 400º/s is not recommand </li>
-</ul>
 
 </div>
 </div>

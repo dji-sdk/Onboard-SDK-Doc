@@ -998,3 +998,9 @@ label {
       font-size: 20px;
       margin-bottom: 8px;
       color: #44a8f2; }
+
+.guidance-sdk_documentation .site-header .container,
+.guidance-sdk_documentation .sub-nav .container,
+.guidance-sdk_documentation .documentation-page .container {
+  width: 100%;
+  max-width: 1430px; }

@@ -1,7 +1,7 @@
 <map id="osdk&#45;core/hal/inc/dji_log.hpp" name="osdk&#45;core/hal/inc/dji_log.hpp">
-<area shape="rect" id="node1" title="Logging mechanism for printing status and error messages to the screen." alt="" coords="187,5,326,44"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,92,121,117"/>
-<area shape="rect" id="node3" title=" " alt="" coords="144,92,238,117"/>
-<area shape="rect" id="node4" title=" " alt="" coords="261,92,382,117"/>
-<area shape="rect" id="node5" title=" " alt="" coords="406,92,571,117"/>
+<area shape="rect" id="node1" title="Logging mechanism for printing status and error messages to the screen." alt="" coords="185,5,324,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,95,120,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="145,95,237,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="261,95,379,121"/>
+<area shape="rect" id="node5" title=" " alt="" coords="403,95,563,121"/>
 </map>

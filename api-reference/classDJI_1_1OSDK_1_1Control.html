@@ -977,15 +977,16 @@ Public Attributes</h2></td></tr>
 <p><a class="el" href="classDJI_1_1OSDK_1_1Control.html" title="Flight control API: high-level actions and low-level control modes.">Control</a> Advanced Byte</p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
-<th class="markdownTableHeadNone">bit 7  </th><th class="markdownTableHeadNone">bit 6  </th><th class="markdownTableHeadNone">bit 5  </th><th class="markdownTableHeadNone">bit 4  </th><th class="markdownTableHeadNone">bit 3:0   </th></tr>
+<th class="markdownTableHeadNone">bit 7  </th><th class="markdownTableHeadNone">bit 6  </th><th class="markdownTableHeadNone">bit 5  </th><th class="markdownTableHeadNone">bit 4:3  </th><th class="markdownTableHeadNone">bit 2:0   </th></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">adv flag  </td><td class="markdownTableBodyNone">brake_flag  </td><td class="markdownTableBodyNone">yaw_ctrl_flag  </td><td class="markdownTableBodyNone">avoid_atti_limit_enable  </td><td class="markdownTableBodyNone">reserved   </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">(1 for ON, 0 for OFF)  </td><td class="markdownTableBodyNone">(1 for ON, 0 for OFF)  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">(1 for ON, 0 for OFF)  </td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone">(1 for ON, 0 for OFF)  </td><td class="markdownTableBodyNone">(1 for ON, 0 for OFF)  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">(1 for ON, 2 for OFF)  </td><td class="markdownTableBodyNone"></td></tr>
 </table>
 <p>If adv_flag is ON, feedforward of x axis and y axis will work in horiz_vel</p>
 <p>If brake_flag is ON, emergency brake will work when you use joystick.</p>
-<p>If avoid_atti_limit_enable is ON, the atti limit will be ignored. </p>
+<p>If avoid_atti_limit_enable is ON, copter's atti limit will use avoid_atti_limit, that means the camera could not see the propeller.</p>
+<p>If avoid_atti_limit_enable is OFF, copter's atti limit won't use avoid_atti_limit, that means the camera may see the propeller. </p>
 
 </div>
 </div>
