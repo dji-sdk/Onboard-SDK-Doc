@@ -12,5 +12,6 @@ var searchData=
   ['subscribeack',['SubscribeACK',['../classDJI_1_1OSDK_1_1ErrorCode_1_1SubscribeACK.html',1,'DJI::OSDK::ErrorCode']]],
   ['subscriptionpackage',['SubscriptionPackage',['../classDJI_1_1OSDK_1_1SubscriptionPackage.html',1,'DJI::OSDK']]],
   ['syncstamp',['SyncStamp',['../structDJI_1_1OSDK_1_1Telemetry_1_1SyncStamp.html',1,'DJI::OSDK::Telemetry']]],
-  ['synctimestamp',['SyncTimestamp',['../structDJI_1_1OSDK_1_1Telemetry_1_1SyncTimestamp.html',1,'DJI::OSDK::Telemetry']]]
+  ['synctimestamp',['SyncTimestamp',['../structDJI_1_1OSDK_1_1Telemetry_1_1SyncTimestamp.html',1,'DJI::OSDK::Telemetry']]],
+  ['syscommonerr',['SysCommonErr',['../classDJI_1_1OSDK_1_1ErrorCode_1_1SysCommonErr.html',1,'DJI::OSDK::ErrorCode']]]
 ];

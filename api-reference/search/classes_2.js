@@ -1,6 +1,8 @@
 var searchData=
 [
   ['camera',['Camera',['../classDJI_1_1OSDK_1_1Camera.html',1,'DJI::OSDK']]],
+  ['cameracommonerr',['CameraCommonErr',['../classDJI_1_1OSDK_1_1ErrorCode_1_1CameraCommonErr.html',1,'DJI::OSDK::ErrorCode']]],
+  ['cameramanager',['CameraManager',['../classDJI_1_1OSDK_1_1CameraManager.html',1,'DJI::OSDK']]],
   ['cmd_5fsetsupportmatrix',['CMD_SETSupportMatrix',['../structDJI_1_1OSDK_1_1CMD__SETSupportMatrix.html',1,'DJI::OSDK']]],
   ['common',['Common',['../structDJI_1_1OSDK_1_1ErrorCode_1_1MissionACK_1_1Common.html',1,'DJI::OSDK::ErrorCode::MissionACK']]],
   ['commonack',['CommonACK',['../classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html',1,'DJI::OSDK::ErrorCode']]],

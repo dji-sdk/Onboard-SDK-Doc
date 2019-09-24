@@ -2,6 +2,10 @@ var searchData=
 [
   ['packageaddsuccesshandler',['packageAddSuccessHandler',['../classDJI_1_1OSDK_1_1SubscriptionPackage.html#a0ba8730ebee7c0d05b654d79ded399b2',1,'DJI::OSDK::SubscriptionPackage']]],
   ['packageremovesuccesshandler',['packageRemoveSuccessHandler',['../classDJI_1_1OSDK_1_1SubscriptionPackage.html#a858dfe31ddba393923d11c8055ca7a2d',1,'DJI::OSDK::SubscriptionPackage']]],
+  ['paramack',['ParamAck',['../structDJI_1_1OSDK_1_1ACK_1_1ParamAck.html',1,'DJI::OSDK::ACK::ParamAck'],['../classDJI_1_1OSDK_1_1ACK.html#a887a7f838c7f8e0959aaf076a227cde8',1,'DJI::OSDK::ACK::ParamAck()']]],
+  ['parameter_5fget_5ffailed',['PARAMETER_GET_FAILED',['../classDJI_1_1OSDK_1_1ErrorCode.html#a4d4bc0bf4a5ea4bbb295c41d41ebb528abf193a1a673827bd0690782adbfe972f',1,'DJI::OSDK::ErrorCode']]],
+  ['parameter_5fset_5ffailed',['PARAMETER_SET_FAILED',['../classDJI_1_1OSDK_1_1ErrorCode.html#a4d4bc0bf4a5ea4bbb295c41d41ebb528aba03b92eb00e42cff483e6aef506d97c',1,'DJI::OSDK::ErrorCode']]],
+  ['parameter_5ftotal_5ftoo_5flong',['PARAMETER_TOTAL_TOO_LONG',['../classDJI_1_1OSDK_1_1ErrorCode.html#a4d4bc0bf4a5ea4bbb295c41d41ebb528a2d07e5ac01eb2f1494f12cf570c610f3',1,'DJI::OSDK::ErrorCode']]],
   ['parsedroneversioninfo',['parseDroneVersionInfo',['../classDJI_1_1OSDK_1_1Vehicle.html#a06b82bc6cb9110540e4239c071a8112a',1,'DJI::OSDK::Vehicle']]],
   ['pause',['pause',['../classDJI_1_1OSDK_1_1HotpointMission.html#ae84f9c568ce391508eb125140e93345b',1,'DJI::OSDK::HotpointMission::pause(VehicleCallBack callback=0, UserData userData=0)'],['../classDJI_1_1OSDK_1_1HotpointMission.html#aed544cba624572e7afb2fae017f908ad',1,'DJI::OSDK::HotpointMission::pause(int timer)'],['../classDJI_1_1OSDK_1_1WaypointMission.html#a7311c2d6b04983dda49e2854f264e6a4',1,'DJI::OSDK::WaypointMission::pause(VehicleCallBack callback=0, UserData userData=0)'],['../classDJI_1_1OSDK_1_1WaypointMission.html#a7709f4ecd43da64d4ec109d5652fb18c',1,'DJI::OSDK::WaypointMission::pause(int timer)']]],
   ['payloaddevice',['PayloadDevice',['../classDJI_1_1OSDK_1_1PayloadDevice.html',1,'DJI::OSDK']]],
@@ -23,6 +27,10 @@ var searchData=
   ['posixthread',['PosixThread',['../classDJI_1_1OSDK_1_1PosixThread.html',1,'DJI::OSDK']]],
   ['posixthreadmanager',['PosixThreadManager',['../classDJI_1_1OSDK_1_1PosixThreadManager.html',1,'DJI::OSDK']]],
   ['prevcalibrationgresult',['prevCalibrationgResult',['../structDJI_1_1OSDK_1_1Telemetry_1_1GimbalStatus.html#a035ef1f00c893906f8ade39ad1c895ca',1,'DJI::OSDK::Telemetry::GimbalStatus']]],
+  ['printerrorcodemsg',['printErrorCodeMsg',['../classDJI_1_1OSDK_1_1ErrorCode.html#aae21f01482928635435de71b5ce580d9',1,'DJI::OSDK::ErrorCode']]],
   ['printinfo',['printInfo',['../classDJI_1_1OSDK_1_1MissionManager.html#ad1fcbb1152e6569c4774113f10ed79ae',1,'DJI::OSDK::MissionManager']]],
-  ['processreceiveddata',['processReceivedData',['../classDJI_1_1OSDK_1_1Vehicle.html#a56b4ac2babcc7a55f43312fb1f43e0df',1,'DJI::OSDK::Vehicle']]]
+  ['processreceiveddata',['processReceivedData',['../classDJI_1_1OSDK_1_1Vehicle.html#a56b4ac2babcc7a55f43312fb1f43e0df',1,'DJI::OSDK::Vehicle']]],
+  ['psdkcommonerr',['PSDKCommonErr',['../classDJI_1_1OSDK_1_1ErrorCode_1_1PSDKCommonErr.html',1,'DJI::OSDK::ErrorCode']]],
+  ['psdkfunctionid',['PSDKFunctionID',['../classDJI_1_1OSDK_1_1ErrorCode.html#a7cdee95f815c08fac26a42b0e4447720',1,'DJI::OSDK::ErrorCode']]],
+  ['psdkmanager',['PSDKManager',['../classDJI_1_1OSDK_1_1PSDKManager.html',1,'DJI::OSDK']]]
 ];

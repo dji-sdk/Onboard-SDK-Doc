@@ -8,5 +8,6 @@ var searchData=
   ['flightstatus',['flightStatus',['../structDJI_1_1OSDK_1_1Telemetry_1_1SDKInfo.html#ad99206592b30334f12e9ff6c598b5527',1,'DJI::OSDK::Telemetry::SDKInfo']]],
   ['front',['front',['../structDJI_1_1OSDK_1_1Telemetry_1_1RelativePosition.html#a533cecb0b4a52dde663d0e35b649bbd7',1,'DJI::OSDK::Telemetry::RelativePosition']]],
   ['fronthealth',['frontHealth',['../structDJI_1_1OSDK_1_1Telemetry_1_1RelativePosition.html#a4dd2678d0e53be264431e23d0534ada0',1,'DJI::OSDK::Telemetry::RelativePosition']]],
+  ['functionmaxcnt',['functionMaxCnt',['../classDJI_1_1OSDK_1_1ErrorCode.html#a03f99e8e1548968fc7f6d7afe4e10f5a',1,'DJI::OSDK::ErrorCode']]],
   ['fwupdating',['FWUpdating',['../structDJI_1_1OSDK_1_1Telemetry_1_1GimbalStatus.html#a2745230586517cc6f42b5678b00e16a1',1,'DJI::OSDK::Telemetry::GimbalStatus']]]
 ];

@@ -1,12 +1,13 @@
 <map id="osdk&#45;core/api/inc/dji_ack.hpp" name="osdk&#45;core/api/inc/dji_ack.hpp">
-<area shape="rect" id="node1" title="All DJI OSDK ACK parsing." alt="" coords="168,5,307,47"/>
-<area shape="rect" id="node2" href="$dji__command_8hpp.html" title="All DJI OSDK OpenProtocol Command IDs." alt="" coords="175,169,299,196"/>
-<area shape="rect" id="node5" href="$dji__mission__type_8hpp.html" title="Mission related data struct for DJI OSDK library." alt="" coords="5,95,149,121"/>
-<area shape="rect" id="node6" href="$dji__type_8hpp.html" title="Data type and Data Structure definitions for use throughout DJI OSDK." alt="" coords="45,169,137,196"/>
-<area shape="rect" id="node8" href="$dji__version_8hpp.html" title="Drone/SDK Version definition for DJI onboardSDK library." alt="" coords="275,95,384,121"/>
-<area shape="rect" id="node10" title=" " alt="" coords="409,95,455,121"/>
-<area shape="rect" id="node3" href="$dji__error_8hpp.html" title="All DJI OSDK OpenProtocol ACK Error Codes." alt="" coords="168,244,261,271"/>
-<area shape="rect" id="node4" title=" " alt="" coords="182,319,247,345"/>
-<area shape="rect" id="node7" title=" " alt="" coords="86,244,143,271"/>
-<area shape="rect" id="node9" title=" " alt="" coords="324,169,385,196"/>
+<area shape="rect" id="node1" title="All DJI OSDK ACK parsing." alt="" coords="225,5,364,47"/>
+<area shape="rect" id="node2" href="$dji__command_8hpp.html" title="All DJI OSDK OpenProtocol Command IDs." alt="" coords="111,169,235,196"/>
+<area shape="rect" id="node6" title=" " alt="" coords="249,319,295,345"/>
+<area shape="rect" id="node8" href="$dji__mission__type_8hpp.html" title="Mission related data struct for DJI OSDK library." alt="" coords="332,95,476,121"/>
+<area shape="rect" id="node9" href="$dji__type_8hpp.html" title="Data type and Data Structure definitions for use throughout DJI OSDK." alt="" coords="358,169,450,196"/>
+<area shape="rect" id="node11" href="$dji__version_8hpp.html" title="Drone/SDK Version definition for DJI onboardSDK library." alt="" coords="97,95,207,121"/>
+<area shape="rect" id="node3" href="$dji__error_8hpp.html" title="All DJI OSDK OpenProtocol ACK Error Codes." alt="" coords="73,244,167,271"/>
+<area shape="rect" id="node7" title=" " alt="" coords="191,244,257,271"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,319,67,345"/>
+<area shape="rect" id="node5" title=" " alt="" coords="91,319,202,345"/>
+<area shape="rect" id="node10" title=" " alt="" coords="375,244,433,271"/>
 </map>

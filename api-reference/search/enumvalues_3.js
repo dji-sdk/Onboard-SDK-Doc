@@ -1,9 +1,6 @@
 var searchData=
 [
-  ['horizontal_5fangle',['HORIZONTAL_ANGLE',['../classDJI_1_1OSDK_1_1Control.html#a7a7cab0e2d2c9415556837880ddf9e86afa13fb0e7f44b2bf531191496c5c1258',1,'DJI::OSDK::Control']]],
-  ['horizontal_5fangular_5frate',['HORIZONTAL_ANGULAR_RATE',['../classDJI_1_1OSDK_1_1Control.html#a7a7cab0e2d2c9415556837880ddf9e86a95f1aae2ad3952dd330c45a1ce217dd7',1,'DJI::OSDK::Control']]],
-  ['horizontal_5fbody',['HORIZONTAL_BODY',['../classDJI_1_1OSDK_1_1Control.html#aa89e5fd518382c94fb6149a5b9a6183bab9c7a8be9631f7f67145aa60b4ac6de2',1,'DJI::OSDK::Control']]],
-  ['horizontal_5fground',['HORIZONTAL_GROUND',['../classDJI_1_1OSDK_1_1Control.html#aa89e5fd518382c94fb6149a5b9a6183ba4577f4a941fbd773df320edc70f01cf2',1,'DJI::OSDK::Control']]],
-  ['horizontal_5fposition',['HORIZONTAL_POSITION',['../classDJI_1_1OSDK_1_1Control.html#a7a7cab0e2d2c9415556837880ddf9e86afcd1f8678a31d8fc8b3d7eb761f97bf4',1,'DJI::OSDK::Control']]],
-  ['horizontal_5fvelocity',['HORIZONTAL_VELOCITY',['../classDJI_1_1OSDK_1_1Control.html#a7a7cab0e2d2c9415556837880ddf9e86ae7874e310fad4f148bb466f5d4395b9c',1,'DJI::OSDK::Control']]]
+  ['enable',['ENABLE',['../classDJI_1_1OSDK_1_1Control.html#a2d81493e9c6b0246811cbe71d8825db6ab19b561650e5df7ca2ae81cb3361c383',1,'DJI::OSDK::Control']]],
+  ['exceeded_5finput_5ftime_5flimit',['EXCEEDED_INPUT_TIME_LIMIT',['../classDJI_1_1OSDK_1_1ErrorCode.html#a4d4bc0bf4a5ea4bbb295c41d41ebb528a8593602336c1d49d9052957dfcad5ffe',1,'DJI::OSDK::ErrorCode']]],
+  ['executing_5fhigher_5fpriority_5ftask',['EXECUTING_HIGHER_PRIORITY_TASK',['../classDJI_1_1OSDK_1_1ErrorCode.html#a4d4bc0bf4a5ea4bbb295c41d41ebb528ad3d1e3cfd997581735ba06eb35871f50',1,'DJI::OSDK::ErrorCode']]]
 ];

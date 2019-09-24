@@ -2,6 +2,7 @@ var searchData=
 [
   ['hacc',['hacc',['../structDJI_1_1OSDK_1_1Telemetry_1_1GPSDetail.html#a418a72af184e14df5577b96f345dccb4',1,'DJI::OSDK::Telemetry::GPSDetail']]],
   ['hardsyncdata',['HardSyncData',['../structDJI_1_1OSDK_1_1Telemetry_1_1HardSyncData.html',1,'DJI::OSDK::Telemetry::HardSyncData'],['../namespaceDJI_1_1OSDK_1_1Telemetry.html#a3a7a0e798f8be5e0c208338672c5b26e',1,'DJI::OSDK::Telemetry::HardSyncData()']]],
+  ['hardware_5ferror',['HARDWARE_ERROR',['../classDJI_1_1OSDK_1_1ErrorCode.html#a4d4bc0bf4a5ea4bbb295c41d41ebb528a27dd4a36e41cd0ef326721291602f849',1,'DJI::OSDK::ErrorCode']]],
   ['hardwaresync',['HardwareSync',['../classDJI_1_1OSDK_1_1HardwareSync.html',1,'DJI::OSDK']]],
   ['hasaction',['hasAction',['../structDJI_1_1OSDK_1_1WayPointSettings.html#a564c5830fe54d69e091e52f862042240',1,'DJI::OSDK::WayPointSettings']]],
   ['hdop',['hdop',['../structDJI_1_1OSDK_1_1Telemetry_1_1GPSDetail.html#a350fc2c4ccc64b8f0ee76a3115ba42a0',1,'DJI::OSDK::Telemetry::GPSDetail']]],

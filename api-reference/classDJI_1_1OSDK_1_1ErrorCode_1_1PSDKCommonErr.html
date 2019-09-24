@@ -1,0 +1,284 @@
+<!-- HTML header for doxygen 1.8.8-->
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- For Mobile Devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta name="generator" content="Doxygen 1.8.15" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <title>DJI Onboard SDK: DJI::OSDK::ErrorCode::PSDKCommonErr Class Reference</title>
+    <!-- <link href="tabs.css" rel="stylesheet" type="text/css"/> -->
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link href="jquery.smartmenus.bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap-theme.css">
+    <script src="bootstrap.min.js"></script>
+    <link href="jquery.smartmenus.bootstrap.css" rel="stylesheet">
+    <!-- SmartMenus jQuery plugin -->
+    <script type="text/javascript" src="jquery.smartmenus.min.js"></script>
+    <!-- SmartMenus jQuery Bootstrap Addon -->
+    <script type="text/javascript" src="jquery.smartmenus.bootstrap.min.js"></script>
+    <style>
+        .has-submenu {
+            position: relative;
+        }
+        #main-nav {
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+    <nav id="site-header" class="site-header navbar">
+        <div class="container">
+            <div class="navbar-header"><a href="/" class="logo"><img src="dji-logo@2x.png">Developer</a></div>
+            <div id="header-navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/mobile-sdk">Mobile SDK</a></li>
+                    <li><a href="/ux-sdk">UX SDK</a></li>
+                    <li><a href="/onboard-sdk">Onboard SDK</a></li>
+                    <li><a href="/payload-sdk">Payload SDK</a></li>
+                    <li><a href="/windows-sdk">Windows SDK</a></li>
+                </ul>
+                <ul v-cloak="" v-show="!loggedIn" class="nav navbar-nav navbar-right nav-user">
+                    <li><a
+                            href="https://account.dji.com/login?appId=dji_sdk&backUrl=https%3A%2F%2Fdeveloper.dji.com%2Fuser&locale=en_US">Login</a>
+                    </li>
+                    <li><a href="https://account.dji.com/register?appId=dji_sdk&backUrl=https%3A%2F%2Fdeveloper.dji.com%2Fuser&locale=en_US"
+                            class="head-cta">Register</a></li>
+                </ul>
+                <ul v-cloak="" v-show="loggedIn" class="nav navbar-nav navbar-right nav-user">
+                    <li class="hovedown"><a href="javascript:void(0);" class="hovedown-toggle"><i
+                                class="fa fa-user"></i></a>
+                        <ul class="hovedown-menu hovedown-menu-right">
+                            <li><a href="/user">User Center</a></li>
+                            <li><a href="javascript:void(0);" v-on="click: logout">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div data-offset-top="60" data-spy="affix" class="sub-nav">
+        <div class="container">
+            <h1 class="logo">Onboard SDK</h1>
+            <nav><a href="/onboard-sdk">Overview</a><a href="/onboard-sdk/documentation">Documentation</a><a
+                    href="/onboard-api-reference/index.html" class="active">API Reference</a><a
+                    href="/onboard-sdk/downloads">Downloads</a>
+            </nav>
+        </div>
+    </div>
+    <!--<nav class="navbar navbar-default" role="navigation">-->
+    <!--<div class="container">-->
+    <!--<div class="navbar-header">-->
+    <!--<a href="#" class="navbar-left"><img src="dji_logo_gray_small.png" alt="DJI OSDK API Documentation" width="32px"/></a>-->
+    <!--<a class="navbar-brand" href="index.html">ONBOARD SDK 3.3</a>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</nav>-->
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div class="content" id="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 panel " style="padding-bottom: 15px;">
+                        <div style="margin-bottom: 15px;">
+                            <!-- end header part --><!-- Generated by Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceDJI.html">DJI</a></li><li class="navelem"><a class="el" href="namespaceDJI_1_1OSDK.html">OSDK</a></li><li class="navelem"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html">ErrorCode</a></li><li class="navelem"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode_1_1PSDKCommonErr.html">PSDKCommonErr</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="classDJI_1_1OSDK_1_1ErrorCode_1_1PSDKCommonErr-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">DJI::OSDK::ErrorCode::PSDKCommonErr Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>camera api error code  
+ <a href="classDJI_1_1OSDK_1_1ErrorCode_1_1PSDKCommonErr.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="dji__error_8hpp_source.html">dji_error.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a02d10b71961ab29ec8c56dccacd91cdd"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode_1_1PSDKCommonErr.html#a02d10b71961ab29ec8c56dccacd91cdd">InvalidCMD</a> = <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#a3d7b37898d6918673f51208108b285a8">ErrorCode::getErrorCode</a>(PSDKModule, PSDKCommon, DJI_CMD_RETURN_CODE::UNSUPPORTED_COMMAND)</td></tr>
+<tr class="separator:a02d10b71961ab29ec8c56dccacd91cdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c970c7d7dd364a88011c7738cd0f2cf"><td class="memItemLeft" align="right" valign="top"><a id="a7c970c7d7dd364a88011c7738cd0f2cf"></a>
+static const <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Timeout</b> = <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#a3d7b37898d6918673f51208108b285a8">ErrorCode::getErrorCode</a>(PSDKModule, PSDKCommon, DJI_CMD_RETURN_CODE::TIMEOUT)</td></tr>
+<tr class="separator:a7c970c7d7dd364a88011c7738cd0f2cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea3e47022e857d0057cbebd697ac7cc2"><td class="memItemLeft" align="right" valign="top"><a id="aea3e47022e857d0057cbebd697ac7cc2"></a>
+static const <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>OutOfMemory</b> = <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#a3d7b37898d6918673f51208108b285a8">ErrorCode::getErrorCode</a>(PSDKModule, PSDKCommon, DJI_CMD_RETURN_CODE::RAM_ALLOCATION_FAILED)</td></tr>
+<tr class="separator:aea3e47022e857d0057cbebd697ac7cc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1017fd5622dbfd4c9ba1d040e15a3388"><td class="memItemLeft" align="right" valign="top"><a id="a1017fd5622dbfd4c9ba1d040e15a3388"></a>
+static const <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>InvalidParam</b> = <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#a3d7b37898d6918673f51208108b285a8">ErrorCode::getErrorCode</a>(PSDKModule, PSDKCommon, DJI_CMD_RETURN_CODE::INVALID_COMMAND_PARAMETER)</td></tr>
+<tr class="separator:a1017fd5622dbfd4c9ba1d040e15a3388"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9f7d588ca0425e1cae078994c0a3197"><td class="memItemLeft" align="right" valign="top"><a id="aa9f7d588ca0425e1cae078994c0a3197"></a>
+static const <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>InvalidState</b> = <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#a3d7b37898d6918673f51208108b285a8">ErrorCode::getErrorCode</a>(PSDKModule, PSDKCommon, DJI_CMD_RETURN_CODE::UNSUPPORTED_COMMAND_IN_CUR_STATE)</td></tr>
+<tr class="separator:aa9f7d588ca0425e1cae078994c0a3197"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b53c702bb4b6cb52e52de394ff4a9fa"><td class="memItemLeft" align="right" valign="top"><a id="a4b53c702bb4b6cb52e52de394ff4a9fa"></a>
+static const <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>TimeNotSync</b> = <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#a3d7b37898d6918673f51208108b285a8">ErrorCode::getErrorCode</a>(PSDKModule, PSDKCommon, DJI_CMD_RETURN_CODE::CAMERA_TIME_NOT_SYNCHRONIZED)</td></tr>
+<tr class="separator:a4b53c702bb4b6cb52e52de394ff4a9fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23131d545a86dd8878184974afb568ab"><td class="memItemLeft" align="right" valign="top"><a id="a23131d545a86dd8878184974afb568ab"></a>
+static const <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ParamSetFailed</b> = <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#a3d7b37898d6918673f51208108b285a8">ErrorCode::getErrorCode</a>(PSDKModule, PSDKCommon, DJI_CMD_RETURN_CODE::PARAMETER_SET_FAILED)</td></tr>
+<tr class="separator:a23131d545a86dd8878184974afb568ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b24ee11a3b3cba5c70f0416ef8c20f4"><td class="memItemLeft" align="right" valign="top"><a id="a2b24ee11a3b3cba5c70f0416ef8c20f4"></a>
+static const <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ParamGetFailed</b> = <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#a3d7b37898d6918673f51208108b285a8">ErrorCode::getErrorCode</a>(PSDKModule, PSDKCommon, DJI_CMD_RETURN_CODE::PARAMETER_GET_FAILED)</td></tr>
+<tr class="separator:a2b24ee11a3b3cba5c70f0416ef8c20f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f9943fb83877a91ff0401840062cad2"><td class="memItemLeft" align="right" valign="top"><a id="a0f9943fb83877a91ff0401840062cad2"></a>
+static const <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SDCardMISSING</b> = <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#a3d7b37898d6918673f51208108b285a8">ErrorCode::getErrorCode</a>(PSDKModule, PSDKCommon, DJI_CMD_RETURN_CODE::SD_CARD_MISSING)</td></tr>
+<tr class="separator:a0f9943fb83877a91ff0401840062cad2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0862dbbe1221c2106429deacc5374cbb"><td class="memItemLeft" align="right" valign="top"><a id="a0862dbbe1221c2106429deacc5374cbb"></a>
+static const <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SDCardFull</b> = <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#a3d7b37898d6918673f51208108b285a8">ErrorCode::getErrorCode</a>(PSDKModule, PSDKCommon, DJI_CMD_RETURN_CODE::SD_CARD_FULL)</td></tr>
+<tr class="separator:a0862dbbe1221c2106429deacc5374cbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaecad63f6f6733c3ca543c2613cff4fc"><td class="memItemLeft" align="right" valign="top"><a id="aaecad63f6f6733c3ca543c2613cff4fc"></a>
+static const <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SDCardError</b> = <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#a3d7b37898d6918673f51208108b285a8">ErrorCode::getErrorCode</a>(PSDKModule, PSDKCommon, DJI_CMD_RETURN_CODE::SD_CARD_ERROR)</td></tr>
+<tr class="separator:aaecad63f6f6733c3ca543c2613cff4fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12f2de148d5685c64ef0fb420992d4b8"><td class="memItemLeft" align="right" valign="top"><a id="a12f2de148d5685c64ef0fb420992d4b8"></a>
+static const <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SensorError</b> = <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#a3d7b37898d6918673f51208108b285a8">ErrorCode::getErrorCode</a>(PSDKModule, PSDKCommon, DJI_CMD_RETURN_CODE::SENSOR_ERROR)</td></tr>
+<tr class="separator:a12f2de148d5685c64ef0fb420992d4b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afba11c7a2acee07fbbf78e95a2da4847"><td class="memItemLeft" align="right" valign="top"><a id="afba11c7a2acee07fbbf78e95a2da4847"></a>
+static const <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SystemError</b> = <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#a3d7b37898d6918673f51208108b285a8">ErrorCode::getErrorCode</a>(PSDKModule, PSDKCommon, DJI_CMD_RETURN_CODE::SYSTEM_ERROR)</td></tr>
+<tr class="separator:afba11c7a2acee07fbbf78e95a2da4847"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f41be26db909cfe35223a3f7f479f43"><td class="memItemLeft" align="right" valign="top"><a id="a1f41be26db909cfe35223a3f7f479f43"></a>
+static const <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ParamLenTooLong</b> = <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#a3d7b37898d6918673f51208108b285a8">ErrorCode::getErrorCode</a>(PSDKModule, PSDKCommon, DJI_CMD_RETURN_CODE::PARAMETER_TOTAL_TOO_LONG)</td></tr>
+<tr class="separator:a1f41be26db909cfe35223a3f7f479f43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5454cabe10299403db61b3191005ee5b"><td class="memItemLeft" align="right" valign="top"><a id="a5454cabe10299403db61b3191005ee5b"></a>
+static const <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ModuleInactivated</b> = <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#a3d7b37898d6918673f51208108b285a8">ErrorCode::getErrorCode</a>(PSDKModule, PSDKCommon, DJI_CMD_RETURN_CODE::MODULE_INACTIVATED)</td></tr>
+<tr class="separator:a5454cabe10299403db61b3191005ee5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71eca0d3386f0b7b55dca2f7f49d6f38"><td class="memItemLeft" align="right" valign="top"><a id="a71eca0d3386f0b7b55dca2f7f49d6f38"></a>
+static const <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FWSeqNumNotInOrder</b> = <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#a3d7b37898d6918673f51208108b285a8">ErrorCode::getErrorCode</a>(PSDKModule, PSDKCommon, DJI_CMD_RETURN_CODE::FIRMWARE_DATA_NUM_DISCONTINUOUS)</td></tr>
+<tr class="separator:a71eca0d3386f0b7b55dca2f7f49d6f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac5608c8326e87f33636e1b49a380472"><td class="memItemLeft" align="right" valign="top"><a id="aac5608c8326e87f33636e1b49a380472"></a>
+static const <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FWCheckErr</b> = <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#a3d7b37898d6918673f51208108b285a8">ErrorCode::getErrorCode</a>(PSDKModule, PSDKCommon, DJI_CMD_RETURN_CODE::FIRMWARE_VERIFICATION_ERROR)</td></tr>
+<tr class="separator:aac5608c8326e87f33636e1b49a380472"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2bc2b253649314dd95e6f557fc4e82f"><td class="memItemLeft" align="right" valign="top"><a id="ac2bc2b253649314dd95e6f557fc4e82f"></a>
+static const <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FlashWriteError</b> = <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#a3d7b37898d6918673f51208108b285a8">ErrorCode::getErrorCode</a>(PSDKModule, PSDKCommon, DJI_CMD_RETURN_CODE::FLASH_WRITE_ERROR)</td></tr>
+<tr class="separator:ac2bc2b253649314dd95e6f557fc4e82f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a179f631c9811beda88f84f1cf9b3b009"><td class="memItemLeft" align="right" valign="top"><a id="a179f631c9811beda88f84f1cf9b3b009"></a>
+static const <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FWInvalidType</b> = <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#a3d7b37898d6918673f51208108b285a8">ErrorCode::getErrorCode</a>(PSDKModule, PSDKCommon, DJI_CMD_RETURN_CODE::FIRMWARE_TYPE_MISMATCH)</td></tr>
+<tr class="separator:a179f631c9811beda88f84f1cf9b3b009"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0865879b6866838e2cf887c64fcbc52"><td class="memItemLeft" align="right" valign="top"><a id="ab0865879b6866838e2cf887c64fcbc52"></a>
+static const <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>RCDisconnect</b> = <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#a3d7b37898d6918673f51208108b285a8">ErrorCode::getErrorCode</a>(PSDKModule, PSDKCommon, DJI_CMD_RETURN_CODE::REMOTE_CONTROL_UNCONNECTED)</td></tr>
+<tr class="separator:ab0865879b6866838e2cf887c64fcbc52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ff56ca6d7c77ae647bff70116f9fd78"><td class="memItemLeft" align="right" valign="top"><a id="a7ff56ca6d7c77ae647bff70116f9fd78"></a>
+static const <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>HardwareErr</b> = <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#a3d7b37898d6918673f51208108b285a8">ErrorCode::getErrorCode</a>(PSDKModule, PSDKCommon, DJI_CMD_RETURN_CODE::HARDWARE_ERROR)</td></tr>
+<tr class="separator:a7ff56ca6d7c77ae647bff70116f9fd78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb445a86d8d97167ead88837bce25bbe"><td class="memItemLeft" align="right" valign="top"><a id="acb445a86d8d97167ead88837bce25bbe"></a>
+static const <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>UAVDisconnect</b> = <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#a3d7b37898d6918673f51208108b285a8">ErrorCode::getErrorCode</a>(PSDKModule, PSDKCommon, DJI_CMD_RETURN_CODE::AIRCRAFT_UNCONNECTED)</td></tr>
+<tr class="separator:acb445a86d8d97167ead88837bce25bbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf345e9a9b0e2e5e1a8311f9908bcd00"><td class="memItemLeft" align="right" valign="top"><a id="aaf345e9a9b0e2e5e1a8311f9908bcd00"></a>
+static const <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>UpgradeErrorNow</b> = <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#a3d7b37898d6918673f51208108b285a8">ErrorCode::getErrorCode</a>(PSDKModule, PSDKCommon, DJI_CMD_RETURN_CODE::CANNOT_UPGRADE_IN_CUR_STATE)</td></tr>
+<tr class="separator:aaf345e9a9b0e2e5e1a8311f9908bcd00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ddc2a811e7db233ecdff7b44ce9608c"><td class="memItemLeft" align="right" valign="top"><a id="a3ddc2a811e7db233ecdff7b44ce9608c"></a>
+static const <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>UndefineError</b> = <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#a3d7b37898d6918673f51208108b285a8">ErrorCode::getErrorCode</a>(PSDKModule, PSDKCommon, DJI_CMD_RETURN_CODE::UNDEFINE_ERROR)</td></tr>
+<tr class="separator:a3ddc2a811e7db233ecdff7b44ce9608c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>camera api error code </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a02d10b71961ab29ec8c56dccacd91cdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02d10b71961ab29ec8c56dccacd91cdd">&#9670;&nbsp;</a></span>InvalidCMD</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> ErrorCode::PSDKCommonErr::InvalidCMD = <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#a3d7b37898d6918673f51208108b285a8">ErrorCode::getErrorCode</a>(PSDKModule, PSDKCommon, DJI_CMD_RETURN_CODE::UNSUPPORTED_COMMAND)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>PSDK api error code </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>osdk-core/api/inc/<a class="el" href="dji__error_8hpp_source.html">dji_error.hpp</a></li>
+<li>osdk-core/api/src/<a class="el" href="dji__error_8cpp.html">dji_error.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- HTML footer for doxygen 1.8.8-->
+<!-- start footer part -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr class="footer"/><address class="footer"><small>
+  <footer id="site-footer" class="site-footer">
+    <div class="container">
+      <div class="foot-nav row">
+        <nav class="link-list col-xs-2"><span class="title">SDK</span><a href="/mobile-sdk">Mobile SDK</a><a href="/ux-sdk">UX SDK</a><a href="/onboard-sdk">Onboard SDK</a><a href="/payload-sdk">Payload SDK</a><a href="/windows-sdk">Windows SDK</a></nav>
+        <nav class="link-list col-xs-2"><span class="title">Info</span><a href="/products">Products</a></nav>
+        <nav class="link-list col-xs-2"><span class="title">Community</span><a href="http://stackoverflow.com/questions/tagged/dji-sdk" target="_blank">Stack Overflow</a><a href="https://www.youtube.com/channel/UCPQwN5xsob8zZGIcDhkYqUA" target="_blank">YouTube</a><a href="https://twitter.com/djidevelopers" target="_blank">Twitter</a></nav>
+        <nav class="link-list col-xs-2"><span class="title">Contact Us</span><a href="mailto:dev@dji.com"> dev@dji.com</a></nav>
+        <nav class="link-list col-xs-2"><span class="title">Business Cooperation</span><a href="mailto:dev@dji.com"> dev@dji.com</a></nav>
+        <nav class="link-list col-xs-2"><span class="title">BILLING</span><a href="mailto:billing-dev@dji.com"> billing-dev@dji.com</a></nav>
+      </div>
+      <div class="foot-copyright row">
+        <div class="col-xs-3 foot-logo"><img src="dji-logo-foot.png"></div>
+        <div class="copyright col-xs-7"><span>Copyright © 2018 DJI All Rights Reserved</span><a href="/policies/privacy">Privacy Policy</a><a href="/policies/terms">Terms of Use</a></div>
+        <div class="col-xs-2">
+          <div class="lang-selector">
+            <select dir="rtl" v-model="lang">
+              <option value="en">English</option>
+              <option value="cn">中文</option>
+            </select><i class="fa fa-globe"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</small></address>
+</body>
+<script type="text/javascript" src="doxy-boot.js"></script>
+</html>

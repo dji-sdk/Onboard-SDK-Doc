@@ -1,10 +1,13 @@
 <map id="osdk&#45;core/api/inc/dji_mission_base.hpp" name="osdk&#45;core/api/inc/dji_mission_base.hpp">
-<area shape="rect" id="node1" title="Mission&#45;Base abstract class for DJI OSDK library." alt="" coords="171,5,309,47"/>
-<area shape="rect" id="node2" href="$dji__command_8hpp.html" title="All DJI OSDK OpenProtocol Command IDs." alt="" coords="46,95,170,121"/>
-<area shape="rect" id="node5" href="$dji__type_8hpp.html" title="Data type and Data Structure definitions for use throughout DJI OSDK." alt="" coords="194,95,286,121"/>
-<area shape="rect" id="node7" href="$dji__vehicle__callback_8hpp.html" title="Type definition for new Vehicle&#45;style callbacks." alt="" coords="311,95,473,121"/>
-<area shape="rect" id="node3" href="$dji__error_8hpp.html" title="All DJI OSDK OpenProtocol ACK Error Codes." alt="" coords="5,169,99,196"/>
-<area shape="rect" id="node4" title=" " alt="" coords="103,244,169,271"/>
-<area shape="rect" id="node6" title=" " alt="" coords="225,169,282,196"/>
-<area shape="rect" id="node8" title=" " alt="" coords="318,169,466,196"/>
+<area shape="rect" id="node1" title="Mission&#45;Base abstract class for DJI OSDK library." alt="" coords="253,5,392,47"/>
+<area shape="rect" id="node2" href="$dji__command_8hpp.html" title="All DJI OSDK OpenProtocol Command IDs." alt="" coords="129,95,253,121"/>
+<area shape="rect" id="node8" href="$dji__type_8hpp.html" title="Data type and Data Structure definitions for use throughout DJI OSDK." alt="" coords="277,95,369,121"/>
+<area shape="rect" id="node10" href="$dji__vehicle__callback_8hpp.html" title="Type definition for new Vehicle&#45;style callbacks." alt="" coords="393,95,556,121"/>
+<area shape="rect" id="node3" href="$dji__error_8hpp.html" title="All DJI OSDK OpenProtocol ACK Error Codes." alt="" coords="100,169,193,196"/>
+<area shape="rect" id="node7" title=" " alt="" coords="218,169,283,196"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,244,67,271"/>
+<area shape="rect" id="node5" title=" " alt="" coords="91,244,202,271"/>
+<area shape="rect" id="node6" title=" " alt="" coords="226,244,273,271"/>
+<area shape="rect" id="node9" title=" " alt="" coords="307,169,365,196"/>
+<area shape="rect" id="node11" title=" " alt="" coords="401,169,549,196"/>
 </map>

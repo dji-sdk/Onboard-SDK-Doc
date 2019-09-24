@@ -133,6 +133,7 @@ $(function() {
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">dji_type.hpp File Reference</div>  </div>
@@ -146,8 +147,7 @@ $(function() {
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for dji_type.hpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="dji__type_8hpp__incl.svg" width="158" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="dji__type_8hpp__incl.svg" width="155" height="123"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <p><a href="dji__type_8hpp_source.html">Go to the source code of this file.</a></p>
@@ -199,13 +199,13 @@ typedef float&#160;</td><td class="memItemRight" valign="bottom"><b>DJI::OSDK::f
 <tr class="memitem:a19cb6f93aa0f81f3ebb3e72243f5c139"><td class="memItemLeft" align="right" valign="top"><a id="a19cb6f93aa0f81f3ebb3e72243f5c139"></a>
 typedef double&#160;</td><td class="memItemRight" valign="bottom"><b>DJI::OSDK::float64_t</b></td></tr>
 <tr class="separator:a19cb6f93aa0f81f3ebb3e72243f5c139"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a516293d5bd31dcc42f62375ca91b3971"><td class="memItemLeft" align="right" valign="top"><a id="a516293d5bd31dcc42f62375ca91b3971"></a>
-typedef struct <a class="el" href="structDJI_1_1OSDK_1_1OpenHeader.html">DJI::OSDK::OpenHeader</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#a516293d5bd31dcc42f62375ca91b3971">DJI::OSDK::OpenHeader</a></td></tr>
-<tr class="memdesc:a516293d5bd31dcc42f62375ca91b3971"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Header struct is meant to handle the open protocol header. <br /></td></tr>
-<tr class="separator:a516293d5bd31dcc42f62375ca91b3971"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3bbdc2a08404fc5fda00017949d94f71"><td class="memItemLeft" align="right" valign="top"><a id="a3bbdc2a08404fc5fda00017949d94f71"></a>
+<tr class="memitem:a48c608eb54b7a04fb379db75b92c4c32"><td class="memItemLeft" align="right" valign="top"><a id="a48c608eb54b7a04fb379db75b92c4c32"></a>
+typedef struct <a class="el" href="structDJI_1_1OSDK_1_1OpenHeader.html">DJI::OSDK::OpenHeader</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#a48c608eb54b7a04fb379db75b92c4c32">DJI::OSDK::OpenHeader</a></td></tr>
+<tr class="memdesc:a48c608eb54b7a04fb379db75b92c4c32"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Header struct is meant to handle the open protocol header. <br /></td></tr>
+<tr class="separator:a48c608eb54b7a04fb379db75b92c4c32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2024525b4d10deaf0bd1d87ac6c97861"><td class="memItemLeft" align="right" valign="top"><a id="a2024525b4d10deaf0bd1d87ac6c97861"></a>
 typedef struct DJI::OSDK::Command&#160;</td><td class="memItemRight" valign="bottom"><b>DJI::OSDK::Command</b></td></tr>
-<tr class="separator:a3bbdc2a08404fc5fda00017949d94f71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a2024525b4d10deaf0bd1d87ac6c97861"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58bf19e4e43372f087a4398dc3bd340b"><td class="memItemLeft" align="right" valign="top"><a id="a58bf19e4e43372f087a4398dc3bd340b"></a>
 typedef struct DJI::OSDK::MMU_Tab&#160;</td><td class="memItemRight" valign="bottom"><b>DJI::OSDK::MMU_Tab</b></td></tr>
 <tr class="separator:a58bf19e4e43372f087a4398dc3bd340b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -223,6 +223,99 @@ typedef struct <a class="el" href="structDJI_1_1OSDK_1_1VirtualRCSetting.html">D
 typedef struct <a class="el" href="structDJI_1_1OSDK_1_1VirtualRCData.html">DJI::OSDK::VirtualRCData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#a703ddafe81ca04967f298082a4d59946">DJI::OSDK::VirtualRCData</a></td></tr>
 <tr class="memdesc:a703ddafe81ca04967f298082a4d59946"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual RC data (supported only on Matrice 100) <br /></td></tr>
 <tr class="separator:a703ddafe81ca04967f298082a4d59946"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a1f85f5e20892c73f4c5673c81a6ea31e"><td class="memItemLeft" align="right" valign="top"><a id="a1f85f5e20892c73f4c5673c81a6ea31e"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>DJI_CAMERA_TAKE_PHOTO_TYPE</b> { <br />
+&#160;&#160;<b>DJI_CAMERA_TAKE_PHOTO_TYPE_STOP</b> = 0, 
+<br />
+&#160;&#160;<b>DJI_CAMERA_TAKE_PHOTO_TYPE_NORMAL</b> = 1, 
+<br />
+&#160;&#160;<b>DJI_CAMERA_TAKE_PHOTO_TYPE_HDR</b> = 2, 
+<br />
+&#160;&#160;<b>DJI_CAMERA_TAKE_PHOTO_TYPE_BOKEH</b> = 3, 
+<br />
+&#160;&#160;<b>DJI_CAMERA_TAKE_PHOTO_TYPE_BURST</b> = 4, 
+<br />
+&#160;&#160;<b>DJI_CAMERA_TAKE_PHOTO_TYPE_AEB</b> = 5, 
+<br />
+&#160;&#160;<b>DJI_CAMERA_TAKE_PHOTO_TYPE_TIME_LAPSE</b> = 6, 
+<br />
+&#160;&#160;<b>DJI_CAMERA_TAKE_PHOTO_TYPE_PANO_APP</b> = 7, 
+<br />
+&#160;&#160;<b>DJI_CAMERA_TAKE_PHOTO_TYPE_TRACKING</b> = 8, 
+<br />
+&#160;&#160;<b>DJI_CAMERA_TAKE_PHOTO_TYPE_RAW_BURST</b> = 9, 
+<br />
+&#160;&#160;<b>DJI_CAMERA_TAKE_PHOTO_TYPE_EHDR</b> = 10
+<br />
+ }</td></tr>
+<tr class="separator:a1f85f5e20892c73f4c5673c81a6ea31e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a117463a95ec52badfdc3312463a46864"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#a117463a95ec52badfdc3312463a46864">DJI::OSDK::DJI_CAMERA_ISO_PARAMETER</a> { <br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a117463a95ec52badfdc3312463a46864a3b2148b099d181908e22395a9c5b43a9">DJI::OSDK::DJI_CAMERA_ISO_PARAMETER_AUTO</a> = 0, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a117463a95ec52badfdc3312463a46864af22f8a2a8f50629a38817a6c90bcacd1">DJI::OSDK::DJI_CAMERA_ISO_PARAMETER_AUTO_HIGH_SENSE</a> = 1, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a117463a95ec52badfdc3312463a46864a7314393f9802a0c0a731df43caa3678d">DJI::OSDK::DJI_CAMERA_ISO_PARAMETER_50</a> = 2, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a117463a95ec52badfdc3312463a46864af209738144e1def226a04fb80e9e88c6">DJI::OSDK::DJI_CAMERA_ISO_PARAMETER_100</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a117463a95ec52badfdc3312463a46864ae8c9c160573ac8f35f3e9c990a546526">DJI::OSDK::DJI_CAMERA_ISO_PARAMETER_200</a> = 4, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a117463a95ec52badfdc3312463a46864a08b513fa9cb2aade49d163d4de21aa48">DJI::OSDK::DJI_CAMERA_ISO_PARAMETER_400</a> = 5, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a117463a95ec52badfdc3312463a46864a8f5837d7e064850a97d3db7820659c05">DJI::OSDK::DJI_CAMERA_ISO_PARAMETER_800</a> = 6, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a117463a95ec52badfdc3312463a46864a89147fec884b742afb16e503789a4876">DJI::OSDK::DJI_CAMERA_ISO_PARAMETER_1600</a> = 7, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a117463a95ec52badfdc3312463a46864a31792c2c3eec89f33a1eb076a6c9d5a0">DJI::OSDK::DJI_CAMERA_ISO_PARAMETER_3200</a> = 8, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a117463a95ec52badfdc3312463a46864a1d7000c4418d1ffd3efb53c42dfc3927">DJI::OSDK::DJI_CAMERA_ISO_PARAMETER_6400</a> = 9, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a117463a95ec52badfdc3312463a46864a30ba4858df1de72e423a5ab3cfd4dd4c">DJI::OSDK::DJI_CAMERA_ISO_PARAMETER_12800</a> = 10, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a117463a95ec52badfdc3312463a46864a101c223bbc527785b8d0683cfa8f7b04">DJI::OSDK::DJI_CAMERA_ISO_PARAMETER_25600</a> = 11, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a117463a95ec52badfdc3312463a46864a99d1e38eb8cd11d6bef02c3609f1d8c9">DJI::OSDK::DJI_CAMERA_ISO_PARAMETER_FIXED</a> = 255
+<br />
+ }</td></tr>
+<tr class="separator:a117463a95ec52badfdc3312463a46864"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebebd7771d07ffb2b877e6dd8bd381c5"><td class="memItemLeft" align="right" valign="top"><a id="aebebd7771d07ffb2b877e6dd8bd381c5"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>DJI_CAMERA_RECORDING_TYPE</b> { <br />
+&#160;&#160;<b>DJI_CAMERA_RECORDING_TYPE_COMMON</b> = 0, 
+<br />
+&#160;&#160;<b>DJI_CAMERA_RECORDING_TYPE_DELAY</b> = 1, 
+<br />
+&#160;&#160;<b>DJI_CAMERA_RECORDING_TYPE_SLOW_MOTION</b> = 2, 
+<br />
+&#160;&#160;<b>DJI_CAMERA_RECORDING_TYPE_QUICK_MOVIE</b> = 3, 
+<br />
+&#160;&#160;<b>DJI_CAMERA_RECORDING_TYPE_TIMELAPSE_STATIONARY</b> = 4, 
+<br />
+&#160;&#160;<b>DJI_CAMERA_RECORDING_TYPE_TIMELAPSE_MOTION</b> = 5, 
+<br />
+&#160;&#160;<b>DJI_CAMERA_RECORDING_TYPE_TIMELAPSE_HYPER</b> = 6, 
+<br />
+&#160;&#160;<b>DJI_CAMERA_RECORDING_TYPE_FAST_MOTION</b> = 7, 
+<br />
+&#160;&#160;<b>DJI_CAMERA_RECORDING_TYPE_EMERGENCY_VIDEO</b> = 8, 
+<br />
+&#160;&#160;<b>DJI_CAMERA_RECORDING_TYPE_HYPERLAPSE</b> = 9, 
+<br />
+&#160;&#160;<b>DJI_CAMERA_RECORDING_TYPE_MARK_VIDEO</b> = 10
+<br />
+ }</td></tr>
+<tr class="separator:aebebd7771d07ffb2b877e6dd8bd381c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4383dd44451f27a6dc2d884f03d04522"><td class="memItemLeft" align="right" valign="top"><a id="a4383dd44451f27a6dc2d884f03d04522"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>DJI_CAMERA_RECORDING_CONTROL</b> { <br />
+&#160;&#160;<b>DJI_CAMERA_RECORDING_CONTROL_STOP</b> = 0, 
+<br />
+&#160;&#160;<b>DJI_CAMERA_RECORDING_CONTROL_BEGIN</b> = 1, 
+<br />
+&#160;&#160;<b>DJI_CAMERA_RECORDING_CONTROL_PAUSE</b> = 2, 
+<br />
+&#160;&#160;<b>DJI_CAMERA_RECORDING_CONTROL_RESUME</b> = 3
+<br />
+ }</td></tr>
+<tr class="separator:a4383dd44451f27a6dc2d884f03d04522"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>

@@ -1,11 +1,11 @@
 ---
 title: Onboard SDK Documentation Home
-date: 2019-06-04
-version: 3.8.1
+date: 2019-09-24
+version: 3.9
 keywords: [homepage, key features, hardware overview, registration, enable flight controller API control, safety]
 ---
 
-> OSDK 3.8.1 was released on 4 June 2019. This release fixes build issues for STM32 platform. Additionally, Onboard - Payload SDK communication and more camera supports are also added in this release. Please see the [release notes](../appendix/releaseNotes.html) for more information.
+> OSDK 3.9 was released on 24 September 2019. New APIs about flight controller such as home point setting, confirm landing, some function switches are supported in the version. For the payload device, more APIs about camera functions and parameters are added in the version.  Please see the [release notes](https://developer.dji.com/onboard-sdk/documentation/appendix/releaseNotes.html) for more information.
 
 The DJI Onboard SDK (OSDK) allows you to build powerful, automated drone applications for supported DJI vehicles (<a href="http://www.dji.com/product/matrice100" target="_blank">Matrice 100</a>, <a href="http://www.dji.com/product/matrice600" target="_blank">Matrice 600</a>, <a href="http://www.dji.com/matrice-200-series" target="_blank">Matrice 210/210-RTK</a> or <a href="https://www.dji.com/matrice-200-series-v2" target="_blank">Matrice 210/210-RTK V2</a>) or flight controllers (<a href="http://www.dji.com/product/a3" target="_blank">A3</a> or <a href="http://www.dji.com/product/n3" target="_blank">N3</a>).
 
@@ -34,8 +34,8 @@ This section provides a step-by-step guide taking you through the entire develop
 The features available through the OSDK are detailed in our Feature Guides. These guides provide useful information about various aspects of modules present on DJI vehicles. The guides also help users understand the interaction of the Onboard SDK with the feature set.
 
 - [Telemetry Guide](../guides/component-guide-telemetry.html)
-- [Control authority Guide](../guides/component-guide-flight-control.html)
-- [Flight Control Guide](../guides/component-guide-control-authority.html)
+- [Control authority Guide](../guides/component-guide-control-authority.html)
+- [Flight Control Guide](../guides/component-guide-flight-control.html)
 - [GPS Missions Guide](../guides/component-guide-missions.html)
 - [Camera/Gimbal Guide](../guides/component-guide-camera-and-gimbal.html)
 - [Multi-Function IO Guide](../guides/component-guide-multi-function-io.html)

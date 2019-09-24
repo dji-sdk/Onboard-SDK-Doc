@@ -1,7 +1,9 @@
 var searchData=
 [
   ['radius',['radius',['../structDJI_1_1OSDK_1_1HotPointSettings.html#a5058f6e94f3e454dd3afcbebe0b865ad',1,'DJI::OSDK::HotPointSettings']]],
+  ['ram_5fallocation_5ffailed',['RAM_ALLOCATION_FAILED',['../classDJI_1_1OSDK_1_1ErrorCode.html#a4d4bc0bf4a5ea4bbb295c41d41ebb528ab1ba6353aa156b3499b4a39484742d72',1,'DJI::OSDK::ErrorCode']]],
   ['randomfly',['randomFly',['../structDJI_1_1OSDK_1_1Telemetry_1_1FlightAnomaly.html#a45148078dc88d223d6a4c2eea4690e2a',1,'DJI::OSDK::Telemetry::FlightAnomaly']]],
+  ['rawretcodetype',['RawRetCodeType',['../classDJI_1_1OSDK_1_1ErrorCode.html#a6c06589f252f8cdd11ab426fc1eb809f',1,'DJI::OSDK::ErrorCode']]],
   ['rc',['RC',['../structDJI_1_1OSDK_1_1Telemetry_1_1RC.html',1,'DJI::OSDK::Telemetry::RC'],['../namespaceDJI_1_1OSDK_1_1Telemetry.html#a2115e658a94a872327fa54ca268bb5f2',1,'DJI::OSDK::Telemetry::RC()']]],
   ['rcc1',['rcC1',['../structDJI_1_1OSDK_1_1Telemetry_1_1LB2RcFullRawData.html#a5deea2551100af3f79fe2115d02060aa',1,'DJI::OSDK::Telemetry::LB2RcFullRawData']]],
   ['rcc2',['rcC2',['../structDJI_1_1OSDK_1_1Telemetry_1_1LB2RcFullRawData.html#acc0dd0d06ef112658e77972369c8f9bb',1,'DJI::OSDK::Telemetry::LB2RcFullRawData']]],
@@ -13,10 +15,12 @@ var searchData=
   ['registeruserpackageunpackcallback',['registerUserPackageUnpackCallback',['../classDJI_1_1OSDK_1_1DataSubscription.html#a69bfb721713e8fdd164d1cf065d7a180',1,'DJI::OSDK::DataSubscription']]],
   ['relativeposition',['RelativePosition',['../structDJI_1_1OSDK_1_1Telemetry_1_1RelativePosition.html',1,'DJI::OSDK::Telemetry::RelativePosition'],['../namespaceDJI_1_1OSDK_1_1Telemetry.html#a7d6224f8c2f0f9d992247ceddf888631',1,'DJI::OSDK::Telemetry::RelativePosition()']]],
   ['releasectrlauthority',['releaseCtrlAuthority',['../classDJI_1_1OSDK_1_1Vehicle.html#a42a4c6010022629269d936e03efc8b0c',1,'DJI::OSDK::Vehicle::releaseCtrlAuthority(VehicleCallBack callback=0, UserData userData=0)'],['../classDJI_1_1OSDK_1_1Vehicle.html#a18ec8131563bb63a9dc5166a376a9aac',1,'DJI::OSDK::Vehicle::releaseCtrlAuthority(int timeout)']]],
+  ['remote_5fcontrol_5funconnected',['REMOTE_CONTROL_UNCONNECTED',['../classDJI_1_1OSDK_1_1ErrorCode.html#a4d4bc0bf4a5ea4bbb295c41d41ebb528ae5d5d8e2d6c5d6c78bb6deb27f033844',1,'DJI::OSDK::ErrorCode']]],
   ['removeallexistingpackages',['removeAllExistingPackages',['../classDJI_1_1OSDK_1_1DataSubscription.html#a9afcdd6ce4c8dcc98d759db89632488c',1,'DJI::OSDK::DataSubscription']]],
   ['removeleftoverpackages',['removeLeftOverPackages',['../classDJI_1_1OSDK_1_1DataSubscription.html#a411dd8a2e27e61d846441c3a923d35a9',1,'DJI::OSDK::DataSubscription']]],
   ['removepackage',['removePackage',['../classDJI_1_1OSDK_1_1DataSubscription.html#a9ae1664ca9f58407ce6ae7e4f1bd88a0',1,'DJI::OSDK::DataSubscription::removePackage(int packageID)'],['../classDJI_1_1OSDK_1_1DataSubscription.html#a3f9001747df88da06671f5ddcef9c82b',1,'DJI::OSDK::DataSubscription::removePackage(int packageID, int timeout)']]],
   ['repeat',['repeat',['../structDJI_1_1OSDK_1_1WayPointFinishData.html#a20491a96cf314285264cc2e72d092124',1,'DJI::OSDK::WayPointFinishData']]],
+  ['reqnotsupported',['ReqNotSupported',['../classDJI_1_1OSDK_1_1ErrorCode.html#a79a274922ec9ba6602775cf5f818ab3ea8de45f2e25aa464523cf9e2d87742ed0',1,'DJI::OSDK::ErrorCode']]],
   ['reserved',['reserved',['../structDJI_1_1OSDK_1_1HotPointSettings.html#a5893d6e321e1db79400444efe511b88e',1,'DJI::OSDK::HotPointSettings::reserved()'],['../structDJI_1_1OSDK_1_1WayPointInitSettings.html#a1badda8000095a8add376df1b41c1943',1,'DJI::OSDK::WayPointInitSettings::reserved()'],['../structDJI_1_1OSDK_1_1WayPointSettings.html#a53f18b150e5ce9baff3cbb82e523c15a',1,'DJI::OSDK::WayPointSettings::reserved()'],['../structDJI_1_1OSDK_1_1Telemetry_1_1RelativePosition.html#a8dc48a1cdc8d676b643c3064891dfb78',1,'DJI::OSDK::Telemetry::RelativePosition::reserved()']]],
   ['reserved_5f1',['reserved_1',['../structDJI_1_1OSDK_1_1ACK_1_1WayPointReachedData.html#aea885a6d2cec7cac7a17e822c4d58341',1,'DJI::OSDK::ACK::WayPointReachedData']]],
   ['reset',['reset',['../classDJI_1_1OSDK_1_1DataSubscription.html#a756a7136a09910fed24222d6312edd7d',1,'DJI::OSDK::DataSubscription::reset()'],['../classDJI_1_1OSDK_1_1DataSubscription.html#ab0b76908b80a597513bbb51320a93b84',1,'DJI::OSDK::DataSubscription::reset(int timeout)']]],
@@ -31,5 +35,6 @@ var searchData=
   ['rolllimited',['rollLimited',['../structDJI_1_1OSDK_1_1Telemetry_1_1GimbalStatus.html#ad809b3d8368f8635ab7567c5340569c5',1,'DJI::OSDK::Telemetry::GimbalStatus']]],
   ['rollpitchctrlfail',['rollPitchCtrlFail',['../structDJI_1_1OSDK_1_1Telemetry_1_1FlightAnomaly.html#a80c1bf74a4ac5000516732b5b7d3859c',1,'DJI::OSDK::Telemetry::FlightAnomaly']]],
   ['rtk',['RTK',['../structDJI_1_1OSDK_1_1Telemetry_1_1RTK.html',1,'DJI::OSDK::Telemetry::RTK'],['../namespaceDJI_1_1OSDK_1_1Telemetry.html#a7db716c64fc34cbc8efca4598fe2cc45',1,'DJI::OSDK::Telemetry::RTK()']]],
-  ['rtkconnectstatus',['RTKConnectStatus',['../structDJI_1_1OSDK_1_1Telemetry_1_1RTKConnectStatus.html',1,'DJI::OSDK::Telemetry::RTKConnectStatus'],['../namespaceDJI_1_1OSDK_1_1Telemetry.html#a034d1aa5d5c34f00231dd998fc9250a4',1,'DJI::OSDK::Telemetry::RTKConnectStatus()']]]
+  ['rtkconnectstatus',['RTKConnectStatus',['../structDJI_1_1OSDK_1_1Telemetry_1_1RTKConnectStatus.html',1,'DJI::OSDK::Telemetry::RTKConnectStatus'],['../namespaceDJI_1_1OSDK_1_1Telemetry.html#a034d1aa5d5c34f00231dd998fc9250a4',1,'DJI::OSDK::Telemetry::RTKConnectStatus()']]],
+  ['rtkenabled',['RtkEnabled',['../classDJI_1_1OSDK_1_1FlightController.html#a71abd079541c6a5ac062437a9a78ffdd',1,'DJI::OSDK::FlightController']]]
 ];

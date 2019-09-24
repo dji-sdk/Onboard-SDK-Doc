@@ -1,6 +1,6 @@
 ---
 title: Flight Controller
-date: 2017-08-03
+date: 2019-09-12
 keywords: [flight controller, motor control, flight control, flight orientation, course lock, home lock, aircraft heading, flight limitation, GEO, compass, IMU, RTK, DRTK, Vision System, Obstacle Avoidance, Intelligent Flight Assistant, landing gear, transport mode, battery threshold, Smart RTH, Failsafe RTH, Low Battery RTH, virtual stick, roll pitch control mode, yaw control mode, vertical throttle control mode]
 ---
 
@@ -103,6 +103,16 @@ Some products have pairs of cameras that use stereo vision to determine the dept
 
 The vision system enables users to fly with increased comfort as there is lower probability they will make a mistake and impact an object. However, limitations of the system still need to be understood to fly safely. Objects that are difficult to detect are those that are small, very narrow, too plain in appearance (visual features can't be extracted), not in the field of view of both cameras, or too close or too far from the product (see <a href="http://www.dji.com/product/phantom-4/info#specs" target="_blank"> product page </a>) for specifications). 
 
+What is passive collision avoidance?
+<br>If obstacle is on the flight route, aircraft will brake and stop in front of the obstacle , and if the obstacle is moving toward to aircraft, the aircraft will not actively fly away from it.
+Turn on/off collision avoidance's method is as follows:
+|Flight Mode                                        |Passive Collision Avoidance Switch Status              |Description        |
+|---------------------------------------------------|-------------------------------------------------------|-------------------|
+|Auto landing, Force landing, Sport, Attitude, Watch|Disable                                                |                   |
+|SDK API MODE                                       |Determine by OSDK's collision avoidance switch            |Set by OSDK's api  |
+|Position, Tracking                                 |Determine by APP's collision avoidance switch          |Set by APP         |
+|Go home                                            |Determine by APP's go home collision avoidance switch  |Set by APP         |
+
 ##### Positioning
 
 Downward facing cameras can help determine relative position and velocity more accurately than consumer satellite positioning systems. They can also be used to hover in GPS denied environments such as inside buildings.
@@ -132,41 +142,80 @@ In addition, two manual battery thresholds can be set in DJI Assistant 2 that wi
 * **Return to home**: The threshold is usually set between 25% and 50%, and will automatically initiate a return to home warning if the threshold is crossed. If no action is taken within 10s, then the aircraft will automatically return home. The return home can be cancelled by pressing the **Return Home** button on the remote controller.
 * **Land in place**: The threshold is usually set between 10% and 25%, and will immediately land the aircraft if crossed.
 
-## Returning Home
+## Returning Home and landing
+##### Set home location
+Before returning home, the aircraft must record a position(include latitude and longitude) as home location. Setters like Aircraft, SDK, RC, APP  have the authority to set the home location. The conditions of setting home location by aircraft and SDK are as follows:
+|Setter  |Method to set home location                              |Set condition |Remarks  |
+|--------|---------------------------------------------------------|--------------|---------|
+|Aircraft|Record initial aircraft home location                    |The GPS level of aircraft >=4   |1. Aircraft will record home location automatically when first takeoff after power on.<br>2. Home location could be refreshed after restarted.|
+|SDK     |Record the current position of aircraft as home location |1. Aircraft has recorded initial home location.<br>2. The GPS level of aircraft>=4|Home location could be refreshed after restarted.|
+|SDK     |Record customized position as home location              |1. Aircraft has recorded initial home location.<br>2. Distance between new home location and last home location is less than 20km.|Home location could be refreshed after restarted.|
 
+##### Return home behavior
+
+[![go home behavior](../../images/guides/go_home_behavior.png)](../images/guides/go_home_behavior.png)
+According to different aircraft altitude and distance to home location, there are three kinds of return home behavior.
+|Behavior A                                              |Behavior B                                            |Behavior C                                               |
+|--------------------------------------------------------|------------------------------------------------------|---------------------------------------------------------|
+|Step 1: Switch to auto landing mode.<br>Step 2: Landing with aircraft current position and current altitude (won't climb)|step 1: Climb to setting of go home altitude.<br>step 2:Go home by setting of go home altitude.<br>step 3:Landing with home location setting.|step 1: Go home by aircraft current altitude <br>step 2:Landing with home location setting.|
+
+At the combination of aircraft altitude and distance to home location, the behavior is as follows:
+|Distance between aircraft current position and home location|Aircraft current altitude<=Setting of go home altitude|Aircraft current altitude>Setting of go home altitude|
+|--------------------------------------------------------|------------------------------------------------------|---------------------------------------------------------|
+|0m~20m                                                  |Behavior A                                            |Behavior A                                               |
+|20m~20km                                                |Behavior B<br> After reaching the home position, aircraft will land automatically |Behavior C <br> After reaching the home position, aircraft will land automatically|
+|>20km                                                   |Behavior A                                            |Behavior A                                               |
+##### Landing behavior
+There are two kinds of landing named auto-landing and forced landing. 
+* **Auto-landing**
+<br>Landing protection will activate during auto-landing. 
+1. Landing protection determines whether the ground is suitable for landing. If so, the aircraft will land smoothly. 
+2. If landing protection determines that the ground is not suitable for landing, the aircraft will hover and wait for pilot confirmation. 
+The aircraft will hover if it detects the ground is not appropriate for landing even with a critically low battery warning. 
+Only when the battery level decreases to 0% will the aircraft land. Users retain control of aircraft flight orientation.
+3. If landing protection is inactive, the DJI Pilot app will display a landing prompt when the aircraft descends below 0.7 meters. 
+Tap to confirm or pull down the control stick for 2 seconds to land when the environment is appropriate for landing. 
+  <br>**NOTE**: Landing Protection will not be active in the following circumstances:
+  <br>a. When the user is controlling the pitch/roll/throttle sticks (Landing Protection will re-activate when the control sticks are not in use)
+  <br>b. When the positioning system is not fully functional (e.g. drift position error)
+  <br>c. When the downward vision system needs re-calibration
+  <br>d. When light conditions are not sufficient for the downward vision system 
+  <br>e. If an obstacle is within one meter of the aircraft, the aircraft will descend to 0.7m above the ground and hover.
+* **Force landing**
+<br>Force landing has no landing protection process, aircraft will land directly by fast speed and may make aircraft crash.
+[![landing process](../../images/guides/landing_process.png)](../images/guides/landing_process.png)
+
+Users could use RC throttle’s down command(keep 2 seconds), APP's confirm landing command and SDKs confirm landing API to confirm. Conversely, RC throttle’s up command,
+APP cancel landing or switch flight mode will exit the landing mode(auto-landing and forced landing). 
+##### Return home style
 The aircraft can automatically return-to-home (RTH) in a number of scenarios:
 
 * **Smart RTH**: Commanded to by the pilot through the application or the remote controller
 * **Failsafe RTH**: If the wireless link is lost between the remote controller and aircraft
 * **Low Battery RTH**: If the battery drops below a threshold that is enough to get home, but not enough to require immediate emergency landing
+**Note:** If the GPS signal is not sufficient during take-off to record a home location, the home point will be recorded when the GPS signal is strong enough. When taking off in poor satellite signal environments, developers should ensure the home point being set is within the user's expectations.
 
-When automatically going home, the aircraft will rise to a minimum altitude, fly to the home location (home point) using GPS positioning, then land.
-
-The home point is automatically set as the location the aircraft first takes off from after power on. 
-
-> **Note:** If the GPS signal is not sufficient during take-off to record a home location, the home point will be recorded when the GPS signal is strong enough. When taking off in poor satellite signal environments, developers should ensure the home point being set is within the user's expectations.
-
-##### Smart RTH 
+**Smart RTH**:
 
 Press the **Return Home** button on the remote controller to initiate Smart RTH. The aircraft will then automatically return to the last recorded Home Point. 
 
 The remote controller's control sticks can be used to change the aircraft's position to avoid a collision during the Smart RTH process. Press and hold the button once to start the process, and press the button again to terminate the procedure and regain full control of the aircraft.
 
-Smart RTH can also be initiated and cancelled through the DJI Mobile SDK.
+Smart RTH can also be initiated and canceled through the DJI Mobile SDK.
 
-##### Failsafe RTH 
+**Failsafe RTH**
 
 If the Home Point was successfully recorded and the compass is functioning normally, Failsafe RTH will be automatically activated if the remote controller signal is lost for more than three seconds. The RTH process may be interrupted and the operator may regain control of the aircraft if the remote controller signal connection is re-established.
 
 In some missions, it is not desirable to immediately return home when signal connection is lost. Failsafe behavior can be configured using DJI Assistant 2.
 
-##### Low Battery RTH
+**Low Battery RTH**
 
 When the battery drops below a certain threshold (typically 25% to 50%), the aircraft will not initiate a mission or a single flight. At the same time the remote controller will start beeping.
 
 The RTH procedure can be cancelled by either pressing the home button on the remote controller, or sending a cancel command through the application using the SDK.
 
-##### Loss of Wireless Link
+**Loss of Wireless Link**
 
 The wireless connection between the remote controller and aircraft can sometimes be lost when the distance is too great, or obstacles impede the link.
 

@@ -4,6 +4,7 @@ var searchData=
   ['mandatoryversionbase',['mandatoryVersionBase',['../namespaceDJI_1_1OSDK.html#af1b92aeca3ba6f10371ec3dd7575eda4',1,'DJI::OSDK']]],
   ['max_5fincoming_5fdata_5fsize',['MAX_INCOMING_DATA_SIZE',['../namespaceDJI_1_1OSDK.html#a0278bdc24560401128675003f8cb2ae3',1,'DJI::OSDK']]],
   ['maxvelocity',['maxVelocity',['../structDJI_1_1OSDK_1_1WayPointInitSettings.html#ae47adf4a5537a50ee87f59e954921f7a',1,'DJI::OSDK::WayPointInitSettings']]],
+  ['may_5fcross_5frestricted_5farea',['MAY_CROSS_RESTRICTED_AREA',['../classDJI_1_1OSDK_1_1ErrorCode.html#a4d4bc0bf4a5ea4bbb295c41d41ebb528aec24755cb6692d455c1b0cc9065cd4e4',1,'DJI::OSDK::ErrorCode']]],
   ['mfio',['MFIO',['../classDJI_1_1OSDK_1_1MFIO.html',1,'DJI::OSDK']]],
   ['mfioack',['MFIOACK',['../classDJI_1_1OSDK_1_1ErrorCode_1_1MFIOACK.html',1,'DJI::OSDK::ErrorCode']]],
   ['mfioget',['MFIOGet',['../structDJI_1_1OSDK_1_1ACK_1_1MFIOGet.html',1,'DJI::OSDK::ACK::MFIOGet'],['../classDJI_1_1OSDK_1_1ACK.html#aee5bc1ad935e8a8b6f15a81e99c49934',1,'DJI::OSDK::ACK::MFIOGet()']]],
@@ -26,6 +27,9 @@ var searchData=
   ['mode_5fnavi_5fsdk_5fctrl',['MODE_NAVI_SDK_CTRL',['../namespaceDJI_1_1OSDK_1_1VehicleStatus_1_1DisplayMode.html#a56c83bf02178d81e17502ddde4eb17daa310b15ade5132e1d88d11dcd27dfa303',1,'DJI::OSDK::VehicleStatus::DisplayMode']]],
   ['mode_5fp_5fgps',['MODE_P_GPS',['../namespaceDJI_1_1OSDK_1_1VehicleStatus_1_1DisplayMode.html#a56c83bf02178d81e17502ddde4eb17daa885610290f55be49f6d71ace51d0f82a',1,'DJI::OSDK::VehicleStatus::DisplayMode']]],
   ['mode_5fsearch_5fmode',['MODE_SEARCH_MODE',['../namespaceDJI_1_1OSDK_1_1VehicleStatus_1_1DisplayMode.html#a56c83bf02178d81e17502ddde4eb17daa993627d730bc8555ade2010a55e013f9',1,'DJI::OSDK::VehicleStatus::DisplayMode']]],
+  ['module_5finactivated',['MODULE_INACTIVATED',['../classDJI_1_1OSDK_1_1ErrorCode.html#a4d4bc0bf4a5ea4bbb295c41d41ebb528a0c5d4e6448c5c0f3f6ceb3bb6e96963d',1,'DJI::OSDK::ErrorCode']]],
+  ['moduleid',['ModuleID',['../classDJI_1_1OSDK_1_1ErrorCode.html#a84e779cedbae87e655100001c9b6eb9b',1,'DJI::OSDK::ErrorCode']]],
+  ['moduleidtype',['ModuleIDType',['../classDJI_1_1OSDK_1_1ErrorCode.html#aeb84189f814acbb533b57638856943f7',1,'DJI::OSDK::ErrorCode']]],
   ['motor_5ffail_5fapp_5fnot_5fallow',['MOTOR_FAIL_APP_NOT_ALLOW',['../classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#a442b2ad340f197c7bd90dcd114b17656',1,'DJI::OSDK::ErrorCode::CommonACK']]],
   ['motor_5ffail_5fassistant_5fprotected',['MOTOR_FAIL_ASSISTANT_PROTECTED',['../classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#abc79588c5b42ba90b1d3bd69360a1438',1,'DJI::OSDK::ErrorCode::CommonACK']]],
   ['motor_5ffail_5fauto_5ftakeoff_5flaunch_5ffailed',['MOTOR_FAIL_AUTO_TAKEOFF_LAUNCH_FAILED',['../classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#abd6101976fe4f1a773c9ac0b737825d9',1,'DJI::OSDK::ErrorCode::CommonACK']]],
@@ -104,5 +108,6 @@ var searchData=
   ['motor_5ffail_5ftopology_5fabnormal',['MOTOR_FAIL_TOPOLOGY_ABNORMAL',['../classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#a1522582e51750c18863b7dd8806c1bca',1,'DJI::OSDK::ErrorCode::CommonACK']]],
   ['motor_5ffail_5fupgrading',['MOTOR_FAIL_UPGRADING',['../classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#abd2acb170c3121fdd12cce42bd13140f',1,'DJI::OSDK::ErrorCode::CommonACK']]],
   ['motor_5ffail_5fwrong_5faircraft_5ftype',['MOTOR_FAIL_WRONG_AIRCRAFT_TYPE',['../classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#a596c437880578f82a20f0b15baf99a23',1,'DJI::OSDK::ErrorCode::CommonACK']]],
+  ['motor_5fnot_5fstopped',['MOTOR_NOT_STOPPED',['../classDJI_1_1OSDK_1_1ErrorCode.html#a4d4bc0bf4a5ea4bbb295c41d41ebb528a81ae1c439e8f37d0e814ae06656104a3',1,'DJI::OSDK::ErrorCode']]],
   ['mountstatus',['mountStatus',['../structDJI_1_1OSDK_1_1Telemetry_1_1GimbalStatus.html#ac88f90816c5e608701a897f7950acf68',1,'DJI::OSDK::Telemetry::GimbalStatus']]]
 ];

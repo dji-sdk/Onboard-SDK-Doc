@@ -1,16 +1,38 @@
 ---
-title: Release Notes for Onboard SDK 3.8.1
-version: 3.8.1
-date: 2019-06-04
+title: Release Notes for Onboard SDK 3.9
+version: 3.9
+date: 2019-09-24
 keywords: [SDK, M210, Point Cloud, Camera, Disparity Map, collision avoidance, GPS-denied]
 ---
+
+## OSDK 3.9 Highlights
+
+<span style="font-size:larger;">Release Date: <strong>2019-09-24</strong></span>
+
+- **Home Point Information:** Add new API of getting and updating home point and go home altitude.
+- **Obstacles Distance Information:** Add new API of getting obstacles distance information.
+- **Auto Landing:** Add more API of auto landing process.
+- **More Function Switches:** Add more function switches, such as RTK switch.
+- **Camera Settings:** Add new API of getting and updating camera parameters, such as ISO, aperture, shutter.
+- **Camera Zooming and Focusing:** Add new API of camera zooming and focusing.
+- **TapZoom:** Add new API for DJI Z30 TapZoom.
+- **PSDK Support:** Add new API of PSDK widget trigger.
+
+##Bug Fixes
+
+- **Battery Information ROS Topic:** Fix bug and implement the battery information of ROS topic.
+
+Improvements
+
+- **Document of Landing:** Add more details to the landing process document.
+
 
 ## OSDK 3.8.1 Highlights
 
 <span style="font-size:larger;">Release Date: <strong>2019-06-04</strong></span>
 
 - **Onboard - Payload SDK communication:** Add Onboard - Payload SDK communication APIs (with Payload SDK v1.4.0+).
-- **Camera zooming:** Add camera zooming API for Matrice 210 V2 and Matrice 210 RTK V2(with firmware V 01.00.0450).
+- **Camera zooming:** Add camera zooming API for Matrice 210 V2 and Matrice 210 RTK V2 (with firmware V 01.00.0450).
 - **STM32 TimeSync sample:** Add TimeSync sample in STM32 platform for Matrice 210 V2 and Matrice 210 RTK V2.
 
 ## Bug Fixes

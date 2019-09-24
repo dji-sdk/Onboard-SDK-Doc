@@ -1,8 +1,11 @@
 <map id="osdk&#45;core/api/inc/dji_gimbal.hpp" name="osdk&#45;core/api/inc/dji_gimbal.hpp">
-<area shape="rect" id="node1" title="Gimbal API for OSDK library." alt="" coords="84,5,223,47"/>
-<area shape="rect" id="node2" href="$dji__command_8hpp.html" title="All DJI OSDK OpenProtocol Command IDs." alt="" coords="26,95,150,121"/>
-<area shape="rect" id="node5" href="$dji__type_8hpp.html" title="Data type and Data Structure definitions for use throughout DJI OSDK." alt="" coords="174,95,266,121"/>
-<area shape="rect" id="node3" href="$dji__error_8hpp.html" title="All DJI OSDK OpenProtocol ACK Error Codes." alt="" coords="5,169,99,196"/>
-<area shape="rect" id="node4" title=" " alt="" coords="103,244,169,271"/>
-<area shape="rect" id="node6" title=" " alt="" coords="225,169,282,196"/>
+<area shape="rect" id="node1" title="Gimbal API for OSDK library." alt="" coords="171,5,309,47"/>
+<area shape="rect" id="node2" href="$dji__command_8hpp.html" title="All DJI OSDK OpenProtocol Command IDs." alt="" coords="113,95,237,121"/>
+<area shape="rect" id="node8" href="$dji__type_8hpp.html" title="Data type and Data Structure definitions for use throughout DJI OSDK." alt="" coords="261,95,353,121"/>
+<area shape="rect" id="node3" href="$dji__error_8hpp.html" title="All DJI OSDK OpenProtocol ACK Error Codes." alt="" coords="100,169,193,196"/>
+<area shape="rect" id="node7" title=" " alt="" coords="218,169,283,196"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,244,67,271"/>
+<area shape="rect" id="node5" title=" " alt="" coords="91,244,202,271"/>
+<area shape="rect" id="node6" title=" " alt="" coords="226,244,273,271"/>
+<area shape="rect" id="node9" title=" " alt="" coords="307,169,365,196"/>
 </map>

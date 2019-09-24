@@ -2,6 +2,7 @@ var searchData=
 [
   ['w',['w',['../structDJI_1_1OSDK_1_1Telemetry_1_1HardSyncData.html#af187a95c6dbc7eb2aa5098518d5aac81',1,'DJI::OSDK::Telemetry::HardSyncData']]],
   ['waitforack',['waitForACK',['../classDJI_1_1OSDK_1_1Vehicle.html#a529c358d1e3df914f1b638dbad68c5b9',1,'DJI::OSDK::Vehicle']]],
+  ['waiting_5fclient_5fupgrade_5fstatus',['WAITING_CLIENT_UPGRADE_STATUS',['../classDJI_1_1OSDK_1_1ErrorCode.html#a4d4bc0bf4a5ea4bbb295c41d41ebb528a3e01b38bcff8a85f8de481d6c6ba8a5d',1,'DJI::OSDK::ErrorCode']]],
   ['waypoint',['WayPoint',['../structDJI_1_1OSDK_1_1ErrorCode_1_1MissionACK_1_1WayPoint.html',1,'DJI::OSDK::ErrorCode::MissionACK::WayPoint'],['../classDJI_1_1OSDK_1_1ErrorCode_1_1MissionACK.html#a455ab7172af807ba6d0bc64fc0d7e448',1,'DJI::OSDK::ErrorCode::MissionACK::WayPoint()']]],
   ['waypoint_5findex',['waypoint_index',['../structDJI_1_1OSDK_1_1ACK_1_1WayPointReachedData.html#a8ad787efb300a1ffa662bb0e013df540',1,'DJI::OSDK::ACK::WayPointReachedData::waypoint_index()'],['../structDJI_1_1OSDK_1_1ACK_1_1WayPointStatusPushData.html#a79279becbda8be8aa943874d81de3323',1,'DJI::OSDK::ACK::WayPointStatusPushData::waypoint_index()']]],
   ['waypointaddpoint',['WayPointAddPoint',['../structDJI_1_1OSDK_1_1ACK_1_1WayPointAddPoint.html',1,'DJI::OSDK::ACK::WayPointAddPoint'],['../classDJI_1_1OSDK_1_1ACK.html#a53dd92219f528e568fbfcceb470dbd38',1,'DJI::OSDK::ACK::WayPointAddPoint()']]],

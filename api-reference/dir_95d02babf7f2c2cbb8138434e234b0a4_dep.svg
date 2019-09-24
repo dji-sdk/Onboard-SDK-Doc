@@ -19,14 +19,14 @@
 <!-- dir_95d02babf7f2c2cbb8138434e234b0a4 -->
 <g id="node1" class="node">
 <title>dir_95d02babf7f2c2cbb8138434e234b0a4</title>
-<text text-anchor="middle" x="118" y="-175" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">osdk&#45;core</text>
+<text text-anchor="middle" x="118" y="-175.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">osdk&#45;core</text>
 </g>
 <!-- dir_ef926edda2a887b065db034fc3005c14 -->
 <g id="node2" class="node">
 <title>dir_ef926edda2a887b065db034fc3005c14</title>
 <g id="a_node2"><a xlink:href="dir_ef926edda2a887b065db034fc3005c14.html" target="_top" xlink:title="api">
 <polygon fill="#ffffff" stroke="#ff0000" points="70,-124 16,-124 16,-88 70,-88 70,-124"/>
-<text text-anchor="middle" x="43" y="-103" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">api</text>
+<text text-anchor="middle" x="43" y="-103.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">api</text>
 </a>
 </g>
 </g>
@@ -35,7 +35,7 @@
 <title>dir_8d9255a88efd7d3d96544da8319c49d3</title>
 <g id="a_node3"><a xlink:href="dir_8d9255a88efd7d3d96544da8319c49d3.html" target="_top" xlink:title="hal">
 <polygon fill="#ffffff" stroke="#ff0000" points="93,-52 39,-52 39,-16 93,-16 93,-52"/>
-<text text-anchor="middle" x="66" y="-31" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">hal</text>
+<text text-anchor="middle" x="66" y="-31.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">hal</text>
 </a>
 </g>
 </g>
@@ -44,8 +44,8 @@
 <title>dir_ef926edda2a887b065db034fc3005c14&#45;&gt;dir_8d9255a88efd7d3d96544da8319c49d3</title>
 <path fill="none" stroke="#000000" d="M48.8039,-87.8314C51.2908,-80.0463 54.2531,-70.7729 57.0125,-62.1347"/>
 <polygon fill="#000000" stroke="#000000" points="60.409,-63.0041 60.118,-52.4133 53.7409,-60.874 60.409,-63.0041"/>
-<g id="a_edge1&#45;headlabel"><a xlink:href="dir_000003_000006.html" target="_top" xlink:title="1">
-<text text-anchor="middle" x="62.0199" y="-64.2922" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">1</text>
+<g id="a_edge1&#45;headlabel"><a xlink:href="dir_000003_000006.html" target="_top" xlink:title="2">
+<text text-anchor="middle" x="62.0199" y="-64.7922" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">2</text>
 </a>
 </g>
 </g>
@@ -54,7 +54,7 @@
 <title>dir_50faeb5d8d1628bfd79a767c77d47f2b</title>
 <g id="a_node4"><a xlink:href="dir_50faeb5d8d1628bfd79a767c77d47f2b.html" target="_top" xlink:title="platform">
 <polygon fill="#ffffff" stroke="#ff0000" points="70,-196 16,-196 16,-160 70,-160 70,-196"/>
-<text text-anchor="middle" x="43" y="-175" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">platform</text>
+<text text-anchor="middle" x="43" y="-175.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">platform</text>
 </a>
 </g>
 </g>
@@ -64,7 +64,7 @@
 <path fill="none" stroke="#000000" d="M43,-159.8314C43,-152.131 43,-142.9743 43,-134.4166"/>
 <polygon fill="#000000" stroke="#000000" points="46.5001,-134.4132 43,-124.4133 39.5001,-134.4133 46.5001,-134.4132"/>
 <g id="a_edge2&#45;headlabel"><a xlink:href="dir_000009_000003.html" target="_top" xlink:title="1">
-<text text-anchor="middle" x="49.3393" y="-135.0079" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">1</text>
+<text text-anchor="middle" x="49.3393" y="-135.5079" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">1</text>
 </a>
 </g>
 </g>
@@ -74,7 +74,7 @@
 <path fill="none" stroke="#000000" d="M58.9905,-159.9169C66.6538,-150.0371 75.0166,-137.1563 79,-124 85.1475,-103.6963 81.2595,-79.9105 76.1776,-61.8922"/>
 <polygon fill="#000000" stroke="#000000" points="79.502,-60.7952 73.2013,-52.2775 72.815,-62.8653 79.502,-60.7952"/>
 <g id="a_edge3&#45;headlabel"><a xlink:href="dir_000009_000006.html" target="_top" xlink:title="1">
-<text text-anchor="middle" x="83.2771" y="-60.3895" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">1</text>
+<text text-anchor="middle" x="83.2771" y="-60.8895" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">1</text>
 </a>
 </g>
 </g>

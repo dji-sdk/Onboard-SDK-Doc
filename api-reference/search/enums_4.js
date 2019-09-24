@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['verticallogic',['VerticalLogic',['../classDJI_1_1OSDK_1_1Control.html#a91f574c79c663ed6c1e1514a6feb86b4',1,'DJI::OSDK::Control']]]
+  ['killswitch',['KillSwitch',['../classDJI_1_1OSDK_1_1Control.html#a2d81493e9c6b0246811cbe71d8825db6',1,'DJI::OSDK::Control']]]
 ];

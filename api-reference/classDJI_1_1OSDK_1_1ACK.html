@@ -167,6 +167,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1MFIOGet.html">MFIOGet</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct is returned from the <a class="el" href="classDJI_1_1OSDK_1_1MFIO.html#ad64c03a68764d310202a15ed85454ab6" title="Non-blocking call for getting data from an MFIO channel.">DJI::OSDK::MFIO::getValue</a> blocking API.  <a href="structDJI_1_1OSDK_1_1ACK_1_1MFIOGet.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1ParamAck.html">ParamAck</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct is returned from the DJI::OSDK::Control::writeParameterByHash blocking API.  <a href="structDJI_1_1OSDK_1_1ACK_1_1ParamAck.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1StereoImgData.html">StereoImgData</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct captures PushData when subscribe to QVGA images.  <a href="structDJI_1_1OSDK_1_1ACK_1_1StereoImgData.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -212,6 +215,9 @@ typedef struct DJI::OSDK::ACK::WayPointIndexInternal&#160;</td><td class="memIte
 <tr class="memitem:a958a24f0502c0afce6c4e1e194331da1"><td class="memItemLeft" align="right" valign="top"><a id="a958a24f0502c0afce6c4e1e194331da1"></a>
 typedef struct DJI::OSDK::ACK::WayPoint2CommonRsp&#160;</td><td class="memItemRight" valign="bottom"><b>WayPoint2CommonRsp</b></td></tr>
 <tr class="separator:a958a24f0502c0afce6c4e1e194331da1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e3be9afc0e195fda33fd1e5010137be"><td class="memItemLeft" align="right" valign="top"><a id="a4e3be9afc0e195fda33fd1e5010137be"></a>
+typedef struct DJI::OSDK::ACK::ExtendedFunctionRsp&#160;</td><td class="memItemRight" valign="bottom"><b>ExtendedFunctionRsp</b></td></tr>
+<tr class="separator:a4e3be9afc0e195fda33fd1e5010137be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bb4b5e7616ce1256781a0775aa51f5d"><td class="memItemLeft" align="right" valign="top"><a id="a5bb4b5e7616ce1256781a0775aa51f5d"></a>
 typedef struct DJI::OSDK::ACK::WayPointVelocityInternal&#160;</td><td class="memItemRight" valign="bottom"><b>WayPointVelocityInternal</b></td></tr>
 <tr class="separator:a5bb4b5e7616ce1256781a0775aa51f5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -221,9 +227,16 @@ typedef struct DJI::OSDK::ACK::WayPointInitInternal&#160;</td><td class="memItem
 <tr class="memitem:af913acf75ca1ccc15e0ed225c9b81456"><td class="memItemLeft" align="right" valign="top"><a id="af913acf75ca1ccc15e0ed225c9b81456"></a>
 typedef struct DJI::OSDK::ACK::MFIOGetInternal&#160;</td><td class="memItemRight" valign="bottom"><b>MFIOGetInternal</b></td></tr>
 <tr class="separator:af913acf75ca1ccc15e0ed225c9b81456"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e6cb6888bf320b943f6527786debd38"><td class="memItemLeft" align="right" valign="top"><a id="a1e6cb6888bf320b943f6527786debd38"></a>
+typedef struct DJI::OSDK::ACK::ParamAckInternal&#160;</td><td class="memItemRight" valign="bottom"><b>ParamAckInternal</b></td></tr>
+<tr class="separator:a1e6cb6888bf320b943f6527786debd38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90cacf11be695fd26fecb00b8a0a24f3"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1ErrorCode.html">DJI::OSDK::ACK::ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ACK.html#a90cacf11be695fd26fecb00b8a0a24f3">ErrorCode</a></td></tr>
 <tr class="memdesc:a90cacf11be695fd26fecb00b8a0a24f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct is returned from all blocking calls, except certain mission calls that have explicit types defined later in this file.  <a href="#a90cacf11be695fd26fecb00b8a0a24f3">More...</a><br /></td></tr>
 <tr class="separator:a90cacf11be695fd26fecb00b8a0a24f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a887a7f838c7f8e0959aaf076a227cde8"><td class="memItemLeft" align="right" valign="top"><a id="a887a7f838c7f8e0959aaf076a227cde8"></a>
+typedef struct <a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1ParamAck.html">DJI::OSDK::ACK::ParamAck</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ACK.html#a887a7f838c7f8e0959aaf076a227cde8">ParamAck</a></td></tr>
+<tr class="memdesc:a887a7f838c7f8e0959aaf076a227cde8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct is returned from the DJI::OSDK::Control::writeParameterByHash blocking API. <br /></td></tr>
+<tr class="separator:a887a7f838c7f8e0959aaf076a227cde8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee5bc1ad935e8a8b6f15a81e99c49934"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1MFIOGet.html">DJI::OSDK::ACK::MFIOGet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1ACK.html#aee5bc1ad935e8a8b6f15a81e99c49934">MFIOGet</a></td></tr>
 <tr class="memdesc:aee5bc1ad935e8a8b6f15a81e99c49934"><td class="mdescLeft">&#160;</td><td class="mdescRight">This struct is returned from the <a class="el" href="classDJI_1_1OSDK_1_1MFIO.html#ad64c03a68764d310202a15ed85454ab6" title="Non-blocking call for getting data from an MFIO channel.">DJI::OSDK::MFIO::getValue</a> blocking API.  <a href="#aee5bc1ad935e8a8b6f15a81e99c49934">More...</a><br /></td></tr>
 <tr class="separator:aee5bc1ad935e8a8b6f15a81e99c49934"><td class="memSeparator" colspan="2">&#160;</td></tr>

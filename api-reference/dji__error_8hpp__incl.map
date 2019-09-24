@@ -1,4 +1,6 @@
 <map id="osdk&#45;core/api/inc/dji_error.hpp" name="osdk&#45;core/api/inc/dji_error.hpp">
-<area shape="rect" id="node1" title="All DJI OSDK OpenProtocol ACK Error Codes." alt="" coords="5,5,144,47"/>
-<area shape="rect" id="node2" title=" " alt="" coords="42,95,107,121"/>
+<area shape="rect" id="node1" title="All DJI OSDK OpenProtocol ACK Error Codes." alt="" coords="77,5,216,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,95,67,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="91,95,202,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="226,95,273,121"/>
 </map>

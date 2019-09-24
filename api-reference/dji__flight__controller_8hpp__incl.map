@@ -1,0 +1,9 @@
+<map id="osdk&#45;core/api/inc/dji_flight_controller.hpp" name="osdk&#45;core/api/inc/dji_flight_controller.hpp">
+<area shape="rect" id="node1" title="Implementation of flight controller." alt="" coords="141,5,284,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,95,124,136"/>
+<area shape="rect" id="node3" title=" " alt="" coords="147,95,278,136"/>
+<area shape="rect" id="node4" href="$dji__telemetry_8hpp.html" title="Enumeration of all telemetry data types, structures and maps." alt="" coords="303,102,424,129"/>
+<area shape="rect" id="node5" href="$dji__type_8hpp.html" title="Data type and Data Structure definitions for use throughout DJI OSDK." alt="" coords="317,184,409,211"/>
+<area shape="rect" id="node6" title=" " alt="" coords="292,259,349,285"/>
+<area shape="rect" id="node7" title=" " alt="" coords="373,259,439,285"/>
+</map>

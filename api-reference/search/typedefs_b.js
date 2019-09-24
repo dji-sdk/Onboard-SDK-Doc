@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['openheader',['OpenHeader',['../namespaceDJI_1_1OSDK.html#a516293d5bd31dcc42f62375ca91b3971',1,'DJI::OSDK']]]
+  ['openheader',['OpenHeader',['../namespaceDJI_1_1OSDK.html#a48c608eb54b7a04fb379db75b92c4c32',1,'DJI::OSDK']]]
 ];
