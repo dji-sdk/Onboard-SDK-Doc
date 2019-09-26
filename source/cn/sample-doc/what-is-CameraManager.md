@@ -41,8 +41,8 @@ a choice to initialize an instance of them in the implementation and quickly get
 The camera samples are only available on Linux and STM32 platform.
 
 Here are two typical sample tutorials:<br>
-[Camera function - tap zoom](/cn/sample-doc/CameraManager-operational-function.html)<br>
-[Camera parameter setting - aperture](/cn/sample-doc/CameraManager-parameter-setting.html)<br>
+[Camera function - tap zoom](./CameraManager-operational-function.html)<br>
+[Camera parameter setting - aperture](./CameraManager-parameter-setting.html)<br>
 
 
 ## Camera Functions Support List
@@ -52,7 +52,7 @@ Here are two typical sample tutorials:<br>
 |  Set/Get Camera Focus Mode             |   √    |   √    |   √    |   √    |    ×   |   ×    |
 |  Set/Get Exposure Mode                 |   √    |   √    |   √    |   ×    |    ×   |   ×    |
 |  Set/Get ISO                           |   √    |   √    |   √    |   √    |    ×   |   ×    |
-|  Set/Get Aperture                      |   √    |   √    |   √    |   ×    |    ×   |   ×    |
+|  Set/Get Aperture                      |   √    |   √    |   √    |   √    |    ×   |   ×    |
 |  Set/Get Shutter                       |   √    |   √    |   √    |   ×    |    ×   |   ×    |
 |  Set/Get EV(Exposure Compensation)     |   √    |   √    |   √    |   ×    |    ×   |   ×    |
 |  Set/Get Tap Zoom Parameters           |   ×    |   ×    |   ×    |   √    |    ×   |   ×    |

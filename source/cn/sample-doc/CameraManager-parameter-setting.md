@@ -334,4 +334,4 @@ The log of the camera manager async sample a is as shown below.
 The target camera support aperture setting and the exposure mode must be in `MANUAL` or `APERTURE_PRIORITY`.
 
 ##### Which camera can support parameters setting and getting by OSDK?
-Please refer to the "Camera Functions Support List" in [what-is-CameraManager.html](/cn/sample-doc/what-is-CameraManager.html)
+Please refer to the "Camera Functions Support List" in [what-is-CameraManager.html](./what-is-CameraManager.html)

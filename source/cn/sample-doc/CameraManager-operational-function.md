@@ -364,4 +364,4 @@ The log of the camera manager async sample f is as shown below.
 The target payload index should match Z30 Camera.
 
 ##### Which camera can support operational functions by OSDK?
-Please refer to the "Camera Functions Support List" in [what-is-CameraManager.html](/cn/sample-doc/what-is-CameraManager.html)
+Please refer to the "Camera Functions Support List" in [what-is-CameraManager.html](./what-is-CameraManager.html)
