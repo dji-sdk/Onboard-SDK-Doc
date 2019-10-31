@@ -803,7 +803,7 @@ Due to the consideration of safety, all requests of obtain control and release c
 
 #### CMD ID 0x03 Movement Control
 
-For more info about Movement Control, please refer to [Control mode byte part in Appendix](../appendix/index.html#Control-mode-byte).
+For more info about Movement Control, please refer to the Onboard SDK source code files. 
 
 <table>
 <tr>
@@ -1134,7 +1134,7 @@ For more info about Movement Control, please refer to [Control mode byte part in
 #### CMD ID 0x00 Flight Data
 
 The flight data from the  Autopilot can be configured by the DJI  assistant software.
-More info about Flight Data, please refer to [Flight Data part in Appendix](../appendix/index.html#Flight-Data).
+More info about Flight Data, please refer to the Onboard SDK source code files. 
 
 <table>
 <tr>
@@ -1284,7 +1284,8 @@ OES has the lowerest control priority. Its control authorization can be taken ov
 
 #### CMD ID 0x03 Ground Station State
 
-For more info about Ground Station, please refer to [Ground Station Protocol](../introduction/ground-station-protocol.html).    
+For more info about Ground Station, please refer to the Onboard SDK source code files. 
+
 <table>
 <tr>
   <th>Data Type</th>
@@ -1311,7 +1312,8 @@ For more info about Ground Station, please refer to [Ground Station Protocol](..
 
 #### CMD ID 0x04 Waypoint Event
 
-For more info about Ground Station, please refer to [Ground Station Protocol](../introduction/ground-station-protocol.html).    
+For more info about Ground Station, please refer to the Onboard SDK source code files. 
+
 <table>
 <tr>
   <th>Data Type</th>
@@ -1338,7 +1340,7 @@ For more info about Ground Station, please refer to [Ground Station Protocol](..
 
 ### CMD Set 0x03 Ground Station CMD Set
 
-For more info about Ground Station, please refer to [Ground Station Protocol](../introduction/ground-station-protocol.html).  
+For more info about Ground Station, please refer to the Onboard SDK source code files. 
 
 #### CMD ID 0x10 Upload Waypoint Mission Settings
 
@@ -2094,8 +2096,7 @@ For more info about Ground Station, please refer to [Ground Station Protocol](..
 
 ### Set 0x05 Virtual RC CMD set
 
-For more info about virual RC, please refer to [Virtual RC Protocol](../introduction/virtual-rc-protocol.html).  
-
+For more info about virual RC, please refer to the Onboard SDK source code files. 
 #### CMD ID 0x00 Virual RC request
 
 <table>
