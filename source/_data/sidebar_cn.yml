@@ -41,6 +41,9 @@
       title: Flight Control
       path: /cn/guides/component-guide-flight-control.html
     -
+      title: Flight Altitude
+      path: /guides/component-guide-altitude.html
+    -
       title: Control Authority
       path: /cn/guides/component-guide-control-authority.html
     -

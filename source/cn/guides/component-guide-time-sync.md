@@ -61,7 +61,8 @@ for developers to subscribe to the data or to check the availability and obtain 
 ```
 void subscribeNMEAMsgs(VehicleCallBack cb, void *userData);
 void unsubscribeNMEAMsgs();
-bool getNMEAMsg(NMEAType type, NMEAData &nmea);
+bool getGNRMCMsg(NMEAData &nmea);
+bool getGNGSAMsg(GNGSAPackage &GNGSA);
 
 void subscribeUTCTime(VehicleCallBack cb, void *userData);
 void unsubscribeUTCTime();
@@ -75,6 +76,7 @@ void subscribePPSSource(VehicleCallBack cb, void *userData);
 void unsubscribePPSSource();
 bool getPPSSource(PPSSource &source);
 ```
+GNGSA and GNRMC data could reference to NMEA-0183 protocol.
 
 Through these APIs, developers have two ways to access these data
  1. Developer provides a callback function, this function will be automatically called whenever new data is available
