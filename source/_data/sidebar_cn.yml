@@ -1,0 +1,84 @@
+-
+  title: " "
+  list:
+    -
+      title: "最新公告"
+      path: "/cn/introduction/announcement.html"
+-
+  title: 介绍
+  list:
+    -
+      title: 什么是OSDK ?
+      path: /cn/introduction/homepage.html
+    -
+      title: 如何使用OSDK ?
+      path: /cn/introduction/how-to-use-OSDK.html
+    -
+      title: OSDK 提供了哪些功能 ？
+      path: /cn/introduction/feature-list.html
+-
+  title: 选购指南
+  list:
+    -
+      title: 选购硬件产品
+      path: /cn/purchaseguide/hardware.html
+    -
+      title: 选择开发平台
+      path: /cn/purchaseguide/development-platform.html
+-
+  title: 快速入门
+  list:
+    -
+      title: 安全须知
+      path: /cn/quickstart/safety.html
+    -
+      title: 开发须知
+      path: /cn/quickstart/attention.html
+    -
+      title: 配置开发环境
+      path: /cn/quickstart/development-environment.html
+    -
+      title: 设备连接
+      path: /cn/quickstart/device-connection.html
+    -
+      title: 运行示例程序
+      path: /cn/quickstart/run-the-sample.html
+    -
+      title: 开始使用OSDK
+      path: /cn/quickstart/integrateOSDK.html
+    -
+      title: 跨平台移植
+      path: /cn/quickstart/porting.html
+-
+  title: 实践教程
+  list:
+    -
+      title: 基础控制
+      path: /cn/tutorial/basic-control.html
+    -
+      title: 广播与订阅
+      path: /cn/tutorial/massage-manager.html
+    -
+      title: 时间同步
+      path: /cn/tutorial/synchronization.html
+    -
+      title: SDK 互联互通
+      path: /cn/tutorial/SDK-mop.html
+    -
+      title: 云台管理
+      path: /cn/tutorial/gimbal-manager.html
+    -
+      title: 相机管理
+      path: /cn/tutorial/camera-manager.html
+    -
+      title: 运动规划
+      path: /cn/tutorial/motion-planning.html
+    -
+      title: 高级视觉功能
+      path: /cn/tutorial/advanced-sensing.html
+-
+  title: 附录
+  list:
+    -
+      title: 版本声明
+      path: /cn/appendix/firmware.html
