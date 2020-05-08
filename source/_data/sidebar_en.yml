@@ -1,39 +1,54 @@
 -
-  title: INTRODUCTION
+  title: " "
   list:
     -
-      title: Documentation Home
+      title: "Announcement"
+      path: "/introduction/announcement.html"
+-
+  title: Introduction
+  list:
+    -
+      title: What is OSDK ?
       path: /introduction/homepage.html
     -
-      title: Hardware Introduction
-      path: /introduction/osdk-hardware-introduction.html
+      title: How to use OSDK ?
+      path: /introduction/how-to-use-OSDK.html
     -
-      title: Onboard SDK Introduction
-      path: /introduction/onboard-sdk-introduction.html
-    -
-      title: SDK Architectural Overview
-      path: /introduction/sdk-architectural-overview.html
+      title: Feature List
+      path: /introduction/feature-list.html
 -
-  title: DEVELOPMENT WORKFLOW
+  title: Onboard Computer Guide
   list:
     -
-      title: Prerequisites
-      path: /development-workflow/workflow-prereq.html
+      title: Development Hardware 
+      path: /purchaseguide/hardware.html
     -
-      title: Hardware Setup
-      path: /development-workflow/hardware-setup.html
+      title: Development Platform
+      path: /purchaseguide/development-platform.html
+-
+  title: Quick Start
+  list:
     -
-      title: Software Setup
-      path: /development-workflow/environment-setup.html
+      title: Safety
+      path: /quickstart/safety.html
     -
-      title: Checklist
-      path: /development-workflow/run-application.html
+      title: Attention
+      path: /quickstart/attention.html
     -
-      title: Sample Setup
-      path: /development-workflow/sample-setup.html
+      title: Device Connection
+      path: /quickstart/device-connection.html
     -
-      title: Integrate SDK into your Application
-      path: /development-workflow/integrate-sdk.html
+      title: Development Environment
+      path: /quickstart/development-environment.html
+    -
+      title: Run The Sample
+      path: /quickstart/run-the-sample.html
+    -
+      title: Integrate OSDK
+      path: /quickstart/integrateOSDK.html
+    -
+      title: Porting
+      path: /quickstart/porting.html
 -
   title: GUIDES
   list:
@@ -131,54 +146,8 @@
       title: Advanced Sensing - Object Detection
       path: /sample-doc/advanced-sensing-object-detection.html
 -
-  title: M210 Checklist
-  list:
-    -
-      title: Introduction
-      path: /M210-Docs/main.html
-    -
-      title: Onboard Computer Checklist
-      path: /M210-Docs/oes-checklist.html
-    -
-      title: Aircraft Checklist
-      path: /M210-Docs/aircraft-checklist.html
-    -
-      title: Simulation Checklist
-      path: /M210-Docs/simulation-checklist.html
-    -
-      title: Real-world Tests Checklist
-      path: /M210-Docs/real-world-test-checklist.html
--
-  title: M100 Protocol
-  list:
-    -
-      title: Introduction
-      path: /Protocol-Documents/main.html
-    -
-      title: Onboard SDK OPEN Protocol
-      path: /protocol-doc/open-protocol.html
-    -
-      title: Data Transparent Transmission
-      path: /M100-Docs/application-development-guides/data-transparent-transmission.html
-    -
-      title: Ground Station Protocol
-      path: /protocol-doc/ground-station-protocol.html
-    -
-      title: Virtual RC Protocol
-      path: /Protocol-Documents/virtual-rc-protocol.html
--
   title: APPENDIX
   list:
     -
-      title: FAQ
-      path: /appendix/FAQ.html
-    -
-      title: Release Notes
-      path: /appendix/releaseNotes.html
-    -
-      title: Versioning
-      path: /appendix/versioning.html
-    -
-      title: Mobile-Onboard APIs
-      path: /appendix/mobile-onboard-APIs.html
-
+      title: Firmware
+      path: /appendix/firmware.html

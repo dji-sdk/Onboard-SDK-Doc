@@ -1,39 +1,54 @@
 -
-  title: INTRODUCTION
+  title: " "
   list:
     -
-      title: Documentation Home
+      title: "最新公告"
+      path: "/cn/introduction/announcement.html"
+-
+  title: 介绍
+  list:
+    -
+      title: 什么是OSDK ?
       path: /cn/introduction/homepage.html
     -
-      title: Hardware Introduction
-      path: /cn/introduction/osdk-hardware-introduction.html
+      title: 如何使用OSDK ?
+      path: /cn/introduction/how-to-use-OSDK.html
     -
-      title: Onboard SDK Introduction
-      path: /cn/introduction/onboard-sdk-introduction.html
-    -
-      title: SDK Architectural Overview
-      path: /cn/introduction/sdk-architectural-overview.html
+      title: OSDK 提供了哪些功能 ？
+      path: /cn/introduction/feature-list.html
 -
-  title: DEVELOPMENT WORKFLOW
+  title: 选购指南
   list:
     -
-      title: Prerequisites
-      path: /cn/development-workflow/workflow-prereq.html
+      title: 选购硬件产品
+      path: /cn/purchaseguide/hardware.html
     -
-      title: Hardware Setup
-      path: /cn/development-workflow/hardware-setup.html
+      title: 选择开发平台
+      path: /cn/purchaseguide/development-platform.html
+-
+  title: 快速入门
+  list:
     -
-      title: Software Setup
-      path: /cn/development-workflow/environment-setup.html
+      title: 安全须知
+      path: /cn/quickstart/safety.html
     -
-      title: Checklist
-      path: /cn/development-workflow/run-application.html
+      title: 开发须知
+      path: /cn/quickstart/attention.html
     -
-      title: Sample Setup
-      path: /cn/development-workflow/sample-setup.html
+      title: 配置开发环境
+      path: /cn/quickstart/development-environment.html
     -
-      title: Integrate SDK into your Application
-      path: /cn/development-workflow/integrate-sdk.html
+      title: 设备连接
+      path: /cn/quickstart/device-connection.html
+    -
+      title: 运行示例程序
+      path: /cn/quickstart/run-the-sample.html
+    -
+      title: 开始使用OSDK
+      path: /cn/quickstart/integrateOSDK.html
+    -
+      title: 跨平台移植
+      path: /cn/quickstart/porting.html
 -
   title: GUIDES
   list:
@@ -131,54 +146,8 @@
       title: Advanced Sensing - Object Detection
       path: /cn/sample-doc/advanced-sensing-object-detection.html
 -
-  title: M210 Checklist
+  title: 附录
   list:
     -
-      title: Introduction
-      path: /cn/M210-Docs/main.html
-    -
-      title: Onboard Computer Checklist
-      path: /cn/M210-Docs/oes-checklist.html
-    -
-      title: Aircraft Checklist
-      path: /cn/M210-Docs/aircraft-checklist.html
-    -
-      title: Simulation Checklist
-      path: /cn/M210-Docs/simulation-checklist.html
-    -
-      title: Real-world Tests Checklist
-      path: /cn/M210-Docs/real-world-test-checklist.html
--
-  title: M100 Protocol
-  list:
-    -
-      title: Introduction
-      path: /cn/Protocol-Documents/main.html
-    -
-      title: Onboard SDK OPEN Protocol
-      path: /cn/protocol-doc/open-protocol.html
-    -
-      title: Data Transparent Transmission
-      path: /cn/M100-Docs/application-development-guides/data-transparent-transmission.html
-    -
-      title: Ground Station Protocol
-      path: /cn/protocol-doc/ground-station-protocol.html
-    -
-      title: Virtual RC Protocol
-      path: /cn/Protocol-Documents/virtual-rc-protocol.html
--
-  title: APPENDIX
-  list:
-    -
-      title: FAQ
-      path: /cn/appendix/FAQ.html
-    -
-      title: Release Notes
-      path: /cn/appendix/releaseNotes.html
-    -
-      title: Versioning
-      path: /cn/appendix/versioning.html
-    -
-      title: Mobile-Onboard APIs
-      path: /cn/appendix/mobile-onboard-APIs.html
-
+      title: 版本声明
+      path: /cn/appendix/firmware.html

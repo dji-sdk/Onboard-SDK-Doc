@@ -1,81 +1,48 @@
 ---
-title: Onboard SDK Documentation Home
-date: 2019-09-24
-version: 3.9
-keywords: [homepage, key features, hardware overview, registration, enable flight controller API control, safety]
+title: What is OSDK ?
+date: 2020-05-08
+version: 4.0.0
+keywords: [OSDK, quick start, standardization, guidance, DJI OSDK]
 ---
+> **NOTE** 
+> * This article is **Machine-Translated**. If you have any questions about this article, please send an <a href="mailto:dev@dji.com">E-mail </a>to DJI, we will correct it in time. DJI appreciates your support and attention.
+> * This series of documentation introduces the functions of **OSDK V4.0.0**, as well as the steps and methods of developing software using OSDK V4.0.0. If you are still using OSDK V3.9.x, please download the documentation of [OSDK V3.9.x](https://terra-1-g.djicdn.com/71a7d383e71a4fb8887a310eb746b47f/osdk/OSDK-3.9.0.zip).
 
-> OSDK 3.9 was released on 24 September 2019. New APIs about flight controller such as home point setting, confirm landing, some function switches are supported in the version. For the payload device, more APIs about camera functions and parameters are added in the version.  Please see the [release notes](https://developer.dji.com/onboard-sdk/documentation/appendix/releaseNotes.html) for more information.
+OSDK is a development toolkit for developing applications, which could run in the onboard computer(such as Manifold 2). Developers can obtain the information on the drone by calling the interface specified in OSDK. According to the software logic and algorithm framework designed by the developer, developers could control the drone to perform actions they need, such as **Automated Flight**, **Payload Control** And **Video Image Analysis**,etc.
+        
+<div style="text-align: center"> <p> <span>
+      <img src="../images/OSDK-Features-en.png" width="650" style="vertical-align: middle" alt/> </span> </p>
+</div>
 
-The DJI Onboard SDK (OSDK) allows you to build powerful, automated drone applications for supported DJI vehicles (<a href="http://www.dji.com/product/matrice100" target="_blank">Matrice 100</a>, <a href="http://www.dji.com/product/matrice600" target="_blank">Matrice 600</a>, <a href="http://www.dji.com/matrice-200-series" target="_blank">Matrice 210/210-RTK</a> or <a href="https://www.dji.com/matrice-200-series-v2" target="_blank">Matrice 210/210-RTK V2</a>) or flight controllers (<a href="http://www.dji.com/product/a3" target="_blank">A3</a> or <a href="http://www.dji.com/product/n3" target="_blank">N3</a>).
+## Main advantages
+* **High Compatible**
+Applications developed using OSDK can run on mainstream embedded hardware platforms, such as STM32, etc., and can also run on mainstream embedded operating systems and software architectures, such as Linux, ROS, and RTOS. Developers follow [Porting](../quickstart/porting.html) in the tutorial, after that developers could run the applications on the different hardware and software platforms.
 
-This document helps you get started with the various aspects of building OSDK applications.
+* **Easy Control**
+Calling the OSDK open interface, the drone can implement application functions such as Autonomous Flight, Object Recognition, and cloud collaboration in extreme environments according to the specified control logic.
 
-## Introduction
+* **Rich Expansion**
+OSDK provides rich interfaces for developers to use third-party applications and algorithm frameworks develop the professional application to Recognition Object, Autonomous Cruise, and 3D Modeling. In addition, it also easy for developers to access third-party sensors to collects the information,etc. to meet the user's personalized application functions and control needs.
 
-This section introduces and compares the products compatible with the DJI OSDK, and outlines the SDK itself.
+## Typical features
 
-- [Hardware Support](osdk-hardware-introduction.html)
-- [Onboard SDK Introduction](onboard-sdk-introduction.html)
-- [OSDK Architectural Overview](sdk-architectural-overview.html)
+* <a href="../tutorial/gimbal-manager.html"> <b> Gimbal Management </b> </a>
+* <a href="../tutorial/camera-manager.html"> <b> Camera Management </b> </a>
+* <a href="../tutorial/SDK-mop.html"> <b> SDK Interconnection </b> </a>
+* <a href="../tutorial/motion-planning.html"> <b> Sports Planning </b> </a>
+* <a href="../tutorial/advanced-sensing.html"> <b> Advanced Vision </b> </a>
 
-## Development Workflow
+## Application Scenarios
+The application developed based on OSDK, could control the drone to perform complex flight tasks, such as autonomous flight, and using the payload developed based on the PSDK, the perception camera and algorithm framework could achieve Object Recognition and Obstacle Avoidance and Cloud collaboration.
 
-This section provides a step-by-step guide taking you through the entire development process.
+#### [Flight Platform(See Details)](https://www.dji.com/cn/products/compare-m200-series?site=brandsite&from=nav)
+DJI's drone condense DJI's reliable control technology and advanced application algorithms, it is widely compatible with third-party development platforms, carrying the payload and onboard computer that developers need to use, help developers to complete the tasks they need to achieve smoothly and efficiently.
 
-- [Prerequisites](../development-workflow/workflow-prereq.html)
-- [Hardware Setup](../development-workflow/hardware-setup.html)
-- [Environment Setup](../development-workflow/environment-setup.html)
-- [Integrating the OSDK into your Application](../development-workflow/integrate-sdk.html)
-- [Running your OSDK Application](../development-workflow/run-application.html)
+#### [Computer platform(See Details)](https://www.dji.com/cn/manifold-2)
+To help developers control DJI's drones to automatically perform flight missions and process data information generated by drones and paylaod, DJI provides a high-performance onboard computer Manifold 2:
+* Manifold 2-G: equipped with NVIDIA Jetson TX2, 128GB SATA-SSD, suitable for Artificial Intelligence, Object Recognition and Motion Planning.
+* Manifold 2-C: equipped with Intel Core i7-8550U, SATA-SSD is 256GB, suitable for High-Performance data processing, Machine Control and Station Applications.
 
-## Guides
+## Disclaimer
+Before using the application developed by OSDK, please check the laws and regulations of the region where the flight is located. **The safety issues or legal disputes caused by the use of OSDK are not related to DJI. DJI does not assume any responsibility for any use of OSDK Legal risks and responsibilities**.
 
-The features available through the OSDK are detailed in our Feature Guides. These guides provide useful information about various aspects of modules present on DJI vehicles. The guides also help users understand the interaction of the Onboard SDK with the feature set.
-
-- [Telemetry Guide](../guides/component-guide-telemetry.html)
-- [Control authority Guide](../guides/component-guide-control-authority.html)
-- [Flight Control Guide](../guides/component-guide-flight-control.html)
-- [GPS Missions Guide](../guides/component-guide-missions.html)
-- [Camera/Gimbal Guide](../guides/component-guide-camera-and-gimbal.html)
-- [Multi-Function IO Guide](../guides/component-guide-multi-function-io.html)
-- [Time Synchronization](../guides/component-guide-time-sync.html)
-- [Mobile SDK Commmunication Guide](../guides/component-guide-mobile-communication.html)
-- [Hardware Synchronization Guide](../guides/component-guide-hardware-sync.html)
-- [Advanced Sensing - Stereo Camera Guide](../guides/component-guide-advanced-sensing-stereo-camera.html)
-- [Advanced Sensing - Camera Stream Guide](../guides/component-guide-advanced-sensing-camera-stream.html)
-
-## Sample Code
-
-We provide a number of samples designed to showcase example end-to-end implementations of various OSDK modules. Each sample application has implementations as standalone Linux programs, ROS nodes and STM32 applications.
-
-- [Telemetry Sample](../sample-doc/telemetry.html)
-- [Flight Control Sample](../sample-doc/flight-control.html)
-- [GPS Missions Sample](../sample-doc/missions.html)
-- [Camera/Gimbal Control Sample](../sample-doc/camera-gimbal-control.html)
-- [What Is Camera Manager](../sample-doc/what-is-CameraManager.html)
-- [Camera Manager - Parameter Setting](../sample-doc/CameraManager-parameter-setting.html)
-- [Camera Manager - Operation](../sample-doc/CameraManager-operational-function.html)
-- [Multi-Function IO Sample](../sample-doc/mfio.html)
-- [Time Synchronization](/sample-doc/time-sync.html)
-- [Waypoint Mission V2 (beta)](../sample-doc/wp2.html)
-- [Mobile SDK Communication Sample](../sample-doc/msdk-comm.html)
-- [Advanced Sensing - Stereo Images Sample](../sample-doc/advanced-sensing-stereo-images.html)
-- [Advanced Sensing - Depth Perception Sample](../sample-doc/advanced-sensing-stereo-depth-perception.html)
-- [Advanced Sensing - Camera stream Sample](../sample-doc/advanced-sensing-camera-stream.html)
-- [Advanced Sensing - Target Tracking Sample](../sample-doc/advanced-sensing-target-tracking.html)
-- [Advanced Sensing - Object Detection Sample](../sample-doc/advanced-sensing-object-detection.html)
-
-## API Reference
-
-Detailed reference for OSDK APIs can be found in the [API Reference](https://developer.dji.com/onboard-api-reference/index.html) section.
-
-## Appendix
-
-- [Release Notes](../appendix/releaseNotes.html)
-- [FAQ](../appendix/FAQ.html)
-- [Abbreviations](../appendix/Abbreviations.html)
-
-## Safety
-
-Please comply with local regulations during the development of your application. Please refer to <a href="http://flysafe.dji.com/" target="_blank">http://flysafe.dji.com/</a> for more information. ***The operator must maintain sole responsibility for the safe operation of the vehicle, including maintaining the ability to take manual control of the vehicle at all times to maintain safety in the event of a malfunction of any aspect of the Onboard SDK modules.***
