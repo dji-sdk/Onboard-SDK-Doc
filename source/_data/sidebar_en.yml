@@ -50,101 +50,32 @@
       title: Porting
       path: /quickstart/porting.html
 -
-  title: GUIDES
+  title: Tutorial
   list:
     -
-      title: Flight Control
-      path: /guides/component-guide-flight-control.html
+      title: Basic Control
+      path: /tutorial/basic-control.html
     -
-      title: Flight Altitude
-      path: /guides/component-guide-altitude.html
+      title: Broadcast and Subscription
+      path: /tutorial/massage-manager.html
     -
-      title: Control Authority
-      path: /guides/component-guide-control-authority.html
+      title: Time Sync
+      path: /tutorial/synchronization.html
     -
-      title: Camera And Gimbal
-      path: /guides/component-guide-camera-and-gimbal.html
+      title: SDK Interconnection
+      path: /tutorial/SDK-mop.html
     -
-      title: Missions
-      path: /guides/component-guide-missions.html
+      title: Gimbal Manager
+      path: /tutorial/gimbal-manager.html
     -
-      title: Telemetry
-      path: /guides/component-guide-telemetry.html
+      title: Camera Manager
+      path: /tutorial/camera-manager.html
     -
-      title: Hardware Synchronization
-      path: /guides/component-guide-hardware-sync.html
+      title: Motion Planning
+      path: /tutorial/motion-planning.html
     -
-      title: Time Synchronization
-      path: /guides/component-guide-time-sync.html
-    -
-      title: MSDK and OSDK Communication
-      path: /guides/component-guide-mobile-communication.html
-    -
-      title: PSDK and OSDK Communication
-      path: /guides/component-guide-payload-communication.html
-    -
-      title: Multi-Function IO
-      path: /guides/component-guide-multi-function-io.html
-    -
-      title: Advanced Sensing - Stereo Vision
-      path: /guides/component-guide-advanced-sensing-stereo-camera.html
-    -
-      title: Advanced Sensing - Camera Stream
-      path: /guides/component-guide-advanced-sensing-camera-stream.html
--
-  title: SAMPLE APPLICATIONS
-  list:
-    -
-      title: Telemetry
-      path: /sample-doc/telemetry.html
-    -
-      title: Flight Control
-      path: /sample-doc/flight-control.html
-    -
-      title: Camera + Gimbal Control
-      path: /sample-doc/camera-gimbal-control.html
-    -
-      title: What Is Camera Manager
-      path: /sample-doc/what-is-CameraManager.html
-    -
-      title: Camera Manager - Parameter Setting
-      path: /sample-doc/CameraManager-parameter-setting.html
-    -
-      title: Camera Manager - Operation
-      path: /sample-doc/CameraManager-operational-function.html
-    -
-      title: GPS Missions
-      path: /sample-doc/missions.html
-    -
-      title: Waypoint Mission V2 (beta)
-      path: /sample-doc/wp2.html
-    -
-      title: Mobile SDK Communication
-      path: /sample-doc/msdk-comm.html
-    -
-      title: Payload SDK Communication
-      path: /sample-doc/psdk-comm.html
-    -
-      title: Multi-Function IO
-      path: /sample-doc/mfio.html
-    -
-      title: Time Synchronization
-      path: /sample-doc/time-sync.html
-    -
-      title: Advanced Sensing - Stereo Images
-      path: /sample-doc/advanced-sensing-stereo-images.html
-    -
-      title: Advanced Sensing - Depth Perception
-      path: /sample-doc/advanced-sensing-stereo-depth-perception.html
-    -
-      title: Advanced Sensing - Camera Stream
-      path: /sample-doc/advanced-sensing-camera-stream.html
-    -
-      title: Advanced Sensing - Target Tracking
-      path: /sample-doc/advanced-sensing-target-tracking.html
-    -
-      title: Advanced Sensing - Object Detection
-      path: /sample-doc/advanced-sensing-object-detection.html
+      title: Advanced Sensing
+      path: /tutorial/advanced-sensing.html
 -
   title: APPENDIX
   list:

@@ -50,101 +50,32 @@
       title: 跨平台移植
       path: /cn/quickstart/porting.html
 -
-  title: GUIDES
+  title: 实践教程
   list:
     -
-      title: Flight Control
-      path: /cn/guides/component-guide-flight-control.html
+      title: 基础控制
+      path: /cn/tutorial/basic-control.html
     -
-      title: Flight Altitude
-      path: /guides/component-guide-altitude.html
+      title: 广播与订阅
+      path: /cn/tutorial/massage-manager.html
     -
-      title: Control Authority
-      path: /cn/guides/component-guide-control-authority.html
+      title: 时间同步
+      path: /cn/tutorial/synchronization.html
     -
-      title: Camera And Gimbal
-      path: /cn/guides/component-guide-camera-and-gimbal.html
+      title: SDK 互联互通
+      path: /cn/tutorial/SDK-mop.html
     -
-      title: Missions
-      path: /cn/guides/component-guide-missions.html
+      title: 云台管理
+      path: /cn/tutorial/gimbal-manager.html
     -
-      title: Telemetry
-      path: /cn/guides/component-guide-telemetry.html
+      title: 相机管理
+      path: /cn/tutorial/camera-manager.html
     -
-      title: Hardware Synchronization
-      path: /cn/guides/component-guide-hardware-sync.html
+      title: 运动规划
+      path: /cn/tutorial/motion-planning.html
     -
-      title: Time Synchronization
-      path: /cn/guides/component-guide-time-sync.html
-    -
-      title: MSDK and OSDK Communication
-      path: /cn/guides/component-guide-mobile-communication.html
-    -
-      title: PSDK and OSDK Communication
-      path: /cn/guides/component-guide-payload-communication.html
-    -
-      title: Multi-Function IO
-      path: /cn/guides/component-guide-multi-function-io.html
-    -
-      title: Advanced Sensing - Stereo Vision
-      path: /cn/guides/component-guide-advanced-sensing-stereo-camera.html
-    -
-      title: Advanced Sensing - Camera Stream
-      path: /cn/guides/component-guide-advanced-sensing-camera-stream.html
--
-  title: SAMPLE APPLICATIONS
-  list:
-    -
-      title: Telemetry
-      path: /cn/sample-doc/telemetry.html
-    -
-      title: Flight Control
-      path: /cn/sample-doc/flight-control.html
-    -
-      title: Camera + Gimbal Control
-      path: /cn/sample-doc/camera-gimbal-control.html
-    -
-      title: GPS Missions
-      path: /cn/sample-doc/missions.html
-    -
-      title: Waypoint Mission V2 (beta)
-      path: /cn/sample-doc/wp2.html
-    -
-      title: Mobile SDK Communication
-      path: /cn/sample-doc/msdk-comm.html
-    -
-      title: Payload SDK Communication
-      path: /cn/sample-doc/psdk-comm.html
-    -
-      title: What Is Camera Manager
-      path: /cn/sample-doc/what-is-CameraManager.html
-    -
-      title: Camera Manager - Parameter Setting
-      path: /cn/sample-doc/CameraManager-parameter-setting.html
-    -
-      title: Camera Manager - Operation
-      path: /cn/sample-doc/CameraManager-operational-function.html
-    -
-      title: Multi-Function IO
-      path: /cn/sample-doc/mfio.html
-    -
-      title: Time Synchronization
-      path: /cn/sample-doc/time-sync.html
-    -
-      title: Advanced Sensing - Stereo Images
-      path: /cn/sample-doc/advanced-sensing-stereo-images.html
-    -
-      title: Advanced Sensing - Depth Perception
-      path: /cn/sample-doc/advanced-sensing-stereo-depth-perception.html
-    -
-      title: Advanced Sensing - Camera Stream
-      path: /cn/sample-doc/advanced-sensing-camera-stream.html
-    -
-      title: Advanced Sensing - Target Tracking
-      path: /cn/sample-doc/advanced-sensing-target-tracking.html
-    -
-      title: Advanced Sensing - Object Detection
-      path: /cn/sample-doc/advanced-sensing-object-detection.html
+      title: 高级视觉功能
+      path: /cn/tutorial/advanced-sensing.html
 -
   title: 附录
   list:
