@@ -4,8 +4,7 @@ date: 2020-05-08
 version: 4.0.0
 keywords: [OSDK, feature overview]
 ---
-> **NOTE** This article is **Machine-Translated**. If you have any questions about this article, please send an <a href="mailto:dev@dji.com">E-mail </a>to DJI, we will correct it in time. DJI appreciates your support and attention.
-
+> **NOTE** This article is **Machine-Translated**. If you have any questions about this article, please send an <a href="mailto:dev@dji.com">E-mail </a>to DJI, we will correct it in time. DJI appreciates your support and attention.     
 
 It is convenience for developers to use the latest version of the OSDK, use that could help you to use the new features to develop the program, please pay attention to the release information of the DJI OSDK.
 
@@ -15,22 +14,22 @@ It is convenience for developers to use the latest version of the OSDK, use that
 > * The Payload is a device developed by PSDK.
 > * The onboard computer is a computing device, such as Manifold, running the program based on OSDK.
 
-## Control functions
-#### Time synchronization
+## Control Functions
+#### Time Synchronization
 * Obtain NMEA data: Obtain the data of the positioning system used by the drone, such as GPS, Galileo, Beidou and GLONASS, etc.
 * Get PPS data: get the hardware trigger pulse signal of the drone
 * Obtain UTC time: Obtain uniform UTC time
 
-#### Basic control
+#### Basic Control
 * Set or obtain parameters of drone's flight controller, such as return altitude, obstacle avoidance status, etc.
 * Perform basic flight tasks, such as take-off, landing and return
 * Basic drone control functions, such as speed control, attitude control and position control
 
-#### Sports Planning
+#### Motion Planning
 * Waypoint Mission: control the DJI drone to achieve autonomous flight according to preset multiple waypoints
 * Hotspot Mission: control the drone to fly around the set points of interest
 
-## Management functions
+## Management Functions
 #### Message Management
 * Broadcast: The application developed by OSDK can receive the data actively pushed by the drone to other modules, and at the same time broadcast the data of the third-party sensor to the third-party information receiving device
 * Message subscription: applications developed using OSDK can record the data that users need to subscribe
@@ -45,7 +44,7 @@ It is convenience for developers to use the latest version of the OSDK, use that
 * Stream acquisition: Obtain the RGB stream and H.264 stream of the camera
 
 
-## Expanding functions
+## Expanding Functions
 
 #### SDK Interconnection
 * Communicate with mobile APP developed based on MSDK

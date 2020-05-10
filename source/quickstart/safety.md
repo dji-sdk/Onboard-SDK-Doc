@@ -4,6 +4,8 @@ date: 2020-05-08
 version: 4.0.0
 keywords: [OSDK, Safety]
 ---
+> **NOTE** This article is **Machine-Translated**. If you have any questions about this article, please send an <a href="mailto:dev@dji.com">E-mail </a>to DJI, we will correct it in time. DJI appreciates your support and attention.     
+
 Before using the sample provided by DJI OSDK or using applications developed based on OSDK, please read the content in this document carefully to avoid damaging the drone or causing unnecessary safety problems due to illegal operations.
 
 ## Disclaimer
@@ -21,19 +23,19 @@ When using OSDK to develop applications, to protect developers from accidents, p
 
 ## Inspection
 In order to prevent the application of sudden failures, emergencies, and illegal operations from damaging the drone or generating security incidents, before executing the application, **please check the following configuration information**:
-* **Check the Key Configuration**
-      1. Please set the **baud rate and port name** of the program in the onboard computer or the third-party development platform correctly;
-      2. Please set the **APP ID** and **APP KEY** in the `UserConfig.txt` file correctly.
+* **Check The Key Configuration**
+      1. Please set the **baud rate and port name** of the program in the onboard computer or the third-party onboard computer correctly;
+      2. Please set the **APP ID** and **APP KEY** for Application activation.
 * **Check Device Status**
       1. Make sure that the battery power of the drone and remote control exceeds 50%;
       2. Make sure that the baud rate of DJI Assistant 2, the application and the terminal tool are the same.
-      > **NOTE** To change the baud rate, please restart the flight platform, remote control and computing platform.
+   > **NOTE** To change the baud rate, please restart the flight platform, remote control and computing platform.
 * **Check Device Connection**
-      1. Please follow the steps and requirements in [Device Connection] (./device-connection.html) to connect the onboard computer or third-party development platform to the drone or multi-rotor flight control system;
-      2. The drone remote control is turned on (you need to open the remote control software to ensure that the software can access the Internet), the remote control ** must ** be connected to the drone.
+      1. Please follow the steps and requirements in [Device Connection](./device-connection.html) to connect the onboard computer or third-party onboard computer to the drone or multi-rotor flight control system;
+      2. The drone remote control is turned on (you need to open the remote control software to ensure that the software can access the Internet), the remote control **must** be connected to the drone.
       3. When activating the application for the first time or changing the information in the application, such as the APP ID and APP KEY, please connect to DJI Assistant 2 and activate the application when connected to the network.
 
-## Flight environment
+## Flight Environment
 * Do not use DJI's drones and applications developed using OSDK in extreme weather conditions such as high winds, rain, and snow.
 * Do not use the drone in a dense floor and crowded environment.
 * Please do not fly in areas with high voltage lines, communication base stations or transmission towers to avoid the interference of the remote control with wireless signals.

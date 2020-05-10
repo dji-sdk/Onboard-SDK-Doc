@@ -87,7 +87,7 @@ GimbalModule::Rotation rotation;
         g->rotateSyncSample(PAYLOAD_INDEX_0, rotation);
 ```
 
-### 4. 控制云台回中
+### 4. 云台回中
 使用OSDK 开发的应用程序支持将云台的俯仰轴和偏航轴转动至中位。
 
 ```c++

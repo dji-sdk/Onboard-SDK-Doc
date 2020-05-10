@@ -2,8 +2,10 @@
 title: Integrate OSDK 
 date: 2020-05-08
 version: 4.0.0
-keywords: [write apps, developemtn, SDK, integrate, DJI]
+keywords: [write apps, developemt, SDK, integrate, DJI]
 ---
+> **NOTE** This article is **Machine-Translated**. If you have any questions about this article, please send an <a href="mailto:dev@dji.com">E-mail </a>to DJI, we will correct it in time. DJI appreciates your support and attention.     
+
 ## Overview
 OSDK provides lots of modules that developers could use, the specific architecture is as follows:
 <div>
@@ -14,11 +16,11 @@ OSDK provides lots of modules that developers could use, the specific architectu
 ## Integrate OSDK         
 The application developed based on the OSDK use the `Vehicle` to call the interface or executed functions, so the developers need integrate the OSDK in their objects, as shown in Figure 1.      
 
-* **Integrate OSDK header files**          
+* **Integrate OSDK Header Files**          
 After integrate the OSDK header file into the program using the following statement.           
 `#include <dji_vehicle.hpp>`
         
-* **Integrate OSDK help file**         
+* **Integrate OSDK Help File**         
 After integrated the OSDK help file in the program using the following statement, the application which developed based on the OSDK could read the user's configuration file and activate DJI's drone.           
 `#include <dji_linux_helpers.hpp>`
 
@@ -45,10 +47,12 @@ Using CMake:
 
 ## Call The Interfaces
 OSDK provides developers with interfaces for synchronous and asynchronous:
-* Synchronous: when the developer *calls* the interface, the *interface* will obtain the corresponding return value according to the actual situation of the application. The *caller* needs to wait for the *called interface* to send the return value, so this calling method It also becomes a blocking call.
-* Asynchronous: when the developer calls the interface, the *interface* will get the corresponding return value according to the actual situation of the application, but the developer may not get the corresponding result immediately. When the *called interface* gets the result After that, the interface will inform the developer of the result through status or notification. The developer can process the result of the call through the callback function, so the calling method also becomes a non-blocking call.
+* Synchronous      
+When the developer *calls* the interface, the *interface* will obtain the corresponding return value according to the actual situation of the application. The *caller* needs to wait for the *called interface* to send the return value, so this calling method It also becomes a blocking call.
+* Asynchronous      
+When the developer calls the interface, the *interface* will get the corresponding return value according to the actual situation of the application, but the developer may not get the corresponding result immediately. When the *called interface* gets the result After that, the interface will inform the developer of the result through status or notification. The developer can process the result of the call through the callback function, so the calling method also becomes a non-blocking call.
 
-#### Synchronously
+#### Synchronous
 When the developer *calls* the interface, the *interface* will obtain the corresponding return value according to the actual situation of the application. The *caller* needs to wait for the *called interface* to send the return value.     
 
 Set the camera mode by the synchronous:
@@ -66,11 +70,11 @@ Set the camera mode by the synchronous:
     }
 ```
 
-#### Asynchronously
-Asynchronous interface call, when the developer * calls * the interface, the * interface * will get the corresponding return value according to the actual situation of the application, but the developer may not get the corresponding result immediately. When the * calling interface * gets the result , The interface will inform the developer of the result through status or notification, and the developer can process the result of the call through the callback function.
+#### Asynchronous
+Asynchronous interface call, when the developer *calls* the interface, the *interface* will get the corresponding return value according to the actual situation of the application, but the developer may not get the corresponding result immediately. When the *calling interface* gets the result , The interface will inform the developer of the result through status or notification, and the developer can process the result of the call through the callback function.
 Set the camera mode by the asynchronous:
 
-* Construct callback function
+* Construct Callback Function
 ```c++
    /*set camera work mode as RECORD_VIDEO*/
     DSTATUS("set camera mode to RECORD_VIDEO");
@@ -107,7 +111,7 @@ Set the camera mode by the asynchronous:
 }
 ```
 
-* Register callback function
+* Register Callback Function     
 After call the asynchronous interface in the OSDK, the corresponding data will be received, and the developer needs to register a callback function to handle the received data.   
 Subscribe the data in the drone by registering the callback function:
 
@@ -125,13 +129,13 @@ void NMEA Callback(Vehicle* vehiclePtr, RecvContainer recvFrame, UserData userda
 #### 1. `vehicle` Instantiation
 When using OSDK to develop the application, the application need to read the environment configuration parameters, initialize the drone, and create an instance object `vehicle`.
      
-1. Read the environment configuration parameters (Userconfig.txt)
+1. Read the environment configuration parameters (Userconfig.txt)       
 When compiling the sample code provided by OSDK, the application developed based on OSDK need to read environment configuration parameters such as third-party libraries, baud rate, and driver permissions.
 ```c++
   LinuxSetup linuxEnvironment (argc, argv);
 ```
 
-2. Create an instance object `vehicle`
+2. Create an instance object `vehicle`      
 Create an instance object `vehicle` and complete initialization.
 ```c++
   Vehicle *vehicle = linuxEnvironment.getVehicle(); 

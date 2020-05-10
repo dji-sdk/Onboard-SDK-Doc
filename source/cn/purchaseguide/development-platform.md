@@ -44,7 +44,7 @@ keywords: [开发须知, 硬件选购, 软件版本, 固件版本]
      <td>✓</td>
      <td>✓</td>
      <td>✓</td>
-     <td> M300 RTK</br>M200 V2</br>M200 V1</td>
+     <td> M300 RTK</br>M200 RTK V2</br>M200 V2</td>
      <td rowspan="6">-</td>
     </tr>
     <tr>
@@ -53,7 +53,7 @@ keywords: [开发须知, 硬件选购, 软件版本, 固件版本]
      <td>✓</td>
      <td>✓</td>
      <td>✓</td>
-     <td>M300 RTK</br>M200 V2</br>M200 V1</td>
+     <td>M300 RTK</br>M200 RTK V2</br>M200 V2</td>
     </tr>
       <tr>
       <td>运动规划</td>
@@ -61,7 +61,7 @@ keywords: [开发须知, 硬件选购, 软件版本, 固件版本]
       <td>✓</td>
       <td>✓</td>
       <td>✓</td>
-      <td>M300 RTK</br>M200 V2</br>M200 V1</td>
+      <td>M300 RTK</br>M200 RTK V2</br>M200 V2</td>
     </tr>
     <tr>
       <th rowspan="3">管理类</th>
@@ -70,7 +70,7 @@ keywords: [开发须知, 硬件选购, 软件版本, 固件版本]
       <td>✓</td>
       <td>✓</td>
       <td>✓</td>
-      <td>M300 RTK</br>M200 V2</br>M200 V1</td>
+      <td>M300 RTK</br>M200 RTK V2</br>M200 V2</td>
     </tr>
     <tr>
      <td>云台管理</td>
@@ -78,7 +78,7 @@ keywords: [开发须知, 硬件选购, 软件版本, 固件版本]
      <td>✓</td>
      <td>✓</td>
      <td>✓</td>
-     <td>M300 RTK</br>M200 V2</br>M200 V1</td>
+     <td>M300 RTK</br>M200 RTK V2</br>M200 V2</td>
     </tr>
     <tr>
      <td>相机管理</td>
@@ -86,7 +86,7 @@ keywords: [开发须知, 硬件选购, 软件版本, 固件版本]
      <td>✓</td>
      <td>✓</td>
      <td>✓</td>
-     <td> M300 RTK</br>M200 V2</br></td>
+     <td> M300 RTK</br>M200 RTK V2</br>M200 V2</td>
     </tr>
     <tr>
       <th rowspan="3">拓展类</th>
@@ -95,8 +95,8 @@ keywords: [开发须知, 硬件选购, 软件版本, 固件版本]
       <td>✓</td>
       <td>-</td>
       <td>✓</td>
-      <td> M300 RTK</br>M200 V2</br>M200 V1</td>
-      <td>M200 V2 和M200 V1 系列无人机仅支持获取主相机原码流及H.264 码流</td>
+      <td> M300 RTK</br>M200 RTK V2</br>M200 V2</td>
+      <td>M200 RTK V2 和M200 V2 无人机仅支持获取主相机原码流及H.264 码流</td>
     </tr>
         <tr>
       <td>SDK 互联互通</td>
@@ -104,7 +104,7 @@ keywords: [开发须知, 硬件选购, 软件版本, 固件版本]
       <td>✓</td>
       <td>✓</td>
       <td>将要支持</td>
-      <td>M300 RTK</br>M200 V2</br></td>
+      <td>M300 RTK</br>M200 RTK V2</br></td>
       <td >-</td>
     </tr>
 </tbody>

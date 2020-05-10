@@ -8,7 +8,7 @@ keywords: [drone, Onboard Computer, M300 RTK]
 > * This article is **Machine-Translated**. If you have any questions about this article, please send an <a href="mailto:dev@dji.com">E-mail </a>to DJI, we will correct it in time. DJI appreciates your support and attention.
 > *  M600 and A3/N3 only support OSDK 3.9 or below; M210 V2 series drones support OSDK 3.9 and above; M300 RTK only support OSDK 4.0 and above.
 
-## Purchase Drones
+## Drones
 > **NOTE** The details of the drone please refer to the User's manual.
 
 <table>
@@ -70,7 +70,7 @@ keywords: [drone, Onboard Computer, M300 RTK]
       <td style="border-left: none; text-align: left; border-right: none;"> <br> <b> Features</b></td>
       <td style="border-right: none; border-left: none; text-align: center"> Three-paddle Landing </br> Intelligent Positioning Tracking </br> Intelligent Patrol </br> Super Clear Matrix Photo </td>
       <td style="border-right: none; border-left: none; text-align: center"> OcuSync 2.0 </br> RTK Precise Positioning </br> Data Protection </br> Automatic Obstacle Avoidance</td>
-      <td style="border-right: none; border-left: none; text-align: center"> 8Km Ultra-long-distance Flight </br> DJI AirSense </br> Data Protection </br> Automatic Obstacle Avoidance </br> </td>
+      <td style="border-right: none; border-left: none; text-align: center"> 8Km Distance </br> DJI AirSense </br> Data Protection </br> Automatic Obstacle Avoidance </br> </td>
     </tr>
     <tr style="text-align: center">
       <td style="border-left: none; text-align: left; border-right: none;"> <br> <b> SDK Support</b> </br>（Least Version)</td>
@@ -81,34 +81,35 @@ keywords: [drone, Onboard Computer, M300 RTK]
   </tbody>
 </table>
 
-## Purchase computing platforms
+## Onboard Computer
 
 #### [Manifold 2-C(See details)](https://www.dji.com/cn/manifold-2?site=brandsite&from=nav)
 Uses Intel® Core ™ i7-8550U processor(x86).
-  * Weight: about 205 g
-  * Memory: 8GB 64 bit, DDR4 2400 MHz
-  * SATA-SSD: 256 GB
-  * Input and output: USB 3.0 interface(Type A) × 2, USB 3.0 interface(Micro-B) × 1; UART interface x 1
+   * Weight: about 205 g
+   * Memory: 8GB 64 bit, DDR4 2400 MHz
+   * SATA-SSD: 256 GB
+   * Input and output: USB 3.0 interface(Type A) × 2, USB 3.0 interface(Micro-B) × 1; UART interface x 1
 
 
 #### [Manifold 2-G(See details)](https://www.dji.com/cn/manifold-2?site=brandsite&from=nav)
 Use NVIDIA Jetson TX2 processor(armv8).
-  * Weight: about 230 g
-  * Memory: 8GB 128 bit, DDR4 1333 MHz
-  * eMMC: 32 GB(approximately 28 GB available)
-  * SATA-SSD: 128 GB
-  * Input and output: USB 3.0 interface(Type A) × 2, USB 3.0 interface(Micro-B) × 1; CAN interface 2, UART interface 2, I2C interface 1, SPI interface UART interface 1
+   * Weight: about 230 g
+   * Memory: 8GB 128 bit, DDR4 1333 MHz
+   * eMMC: 32 GB(approximately 28 GB available)
+   * SATA-SSD: 128 GB
+   * Input and output: USB 3.0 interface(Type A) × 2, USB 3.0 interface(Micro-B) × 1; CAN interface 2, UART interface 2, I2C interface 1, SPI interface UART interface 1
 
-#### Third-party Onboard computer
-The following takes the purchase of the STM32 platform as an example to introduce the precautions when purchasing a third-party onboard computer:
+#### Third-Party Onboard Computer
+The following introduced the matters when developers choose the STM32's board, if developer need purchase others, please refer to those informations.
 * Memory: Support SRAM, 16 Mbit and above
 * Interface
     * I2C bus interface, need to be compatible with 64-Kbit EEPROMs, ST MEMSs and I / O expanders
     * Support USB 2.0, with USB-OTG function, support high-speed and full-speed data transmission
     * Power interface: power jack, USB-FS connector, USB-HS connector, through ST-LINK / V2 or daughter board
-* Other functions
+* Other Functions
     * Boot from Flash, system memory or SRAM
     * Four-way control selector with control function
     * Support JTAG and SW Support trace debugging
     * Support ST-LINK / V2
+    
 > **NOTE** DJI OSDK uses the STM3241G-EVAL (STM32F417IG) to develop and debug samples. For details, please refer to [STM3241G-EVAL (STM32F417IG) ](https://www.st.com/en/evaluation-tools/stm3241g-eval.html)introduction document.

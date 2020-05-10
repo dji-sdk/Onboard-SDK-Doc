@@ -15,23 +15,23 @@ Before using OSDK to develop the application, developers need to register a acco
 <tbody>
   <tr>
    <td style="border-right: none; border-left: none;"> <div> <p> <span>
-      <img src="../../images/how-to-use/1.png" width="90" style="vertical-align: middle" alt/> </span> </p> </div> </td> </td>
+      <img src="../images/how-to-use/1.png" width="90" style="vertical-align: middle" alt/> </span> </p> </div> </td> </td>
        <td style="border-right: none; border-left: none;"> <div> <p> <span>
-      <img src="../../images/how-to-use/2.png" width="70" style="vertical-align: middle" alt/> </span> </p> </div> </td> </td>
+      <img src="../images/how-to-use/2.png" width="70" style="vertical-align: middle" alt/> </span> </p> </div> </td> </td>
         <td style="border-right: none; border-left: none;"> <div> <p> <span>
-      <img src="../../images/how-to-use/3.png" width="70" style="vertical-align: middle" alt/> </span> </p> </div> </td> </td>
+      <img src="../images/how-to-use/3.png" width="70" style="vertical-align: middle" alt/> </span> </p> </div> </td> </td>
          <td style="border-right: none; border-left: none;"> <div> <p> <span>
-      <img src="../../images/how-to-use/4.png" width="70" style="vertical-align: middle" alt/> </span> </p> </div> </td> </td>
+      <img src="../images/how-to-use/4.png" width="70" style="vertical-align: middle" alt/> </span> </p> </div> </td> </td>
          <td style="border-right: none; border-left: none;"> <div> <p> <span>
-      <img src="../../images/how-to-use/5.png" width="70" style="vertical-align: middle" alt/> </span> </p> </div> </td> </td>
+      <img src="../images/how-to-use/5.png" width="70" style="vertical-align: middle" alt/> </span> </p> </div> </td> </td>
          <td style="border-right: none; border-left: none;"> <div> <p> <span>
-      <img src="../../images/how-to-use/6.png" height="90" width="90" style="vertical-align: middle" alt/> </span> </p> </div> </td> </td>
+      <img src="../images/how-to-use/6.png" height="90" width="90" style="vertical-align: middle" alt/> </span> </p> </div> </td> </td>
   </tr>
   <tr>
    <td style="text-align: center"> <a href="https://account.dji.com/register?appId=dji_sdk&backUrl=https%3A%2F%2Fdeveloper.dji.com%2Fuser&locale=en_US" target="_ blank"> Sign Up</a> </td>
    <td style="text-align: center"> <a href="https://www.dji.com/cn/products/compare-m200-series?site=brandsite&from=nav" target="_blank">Purchase Drones </a> </td>
    <td style="text-align: center"> <a href="../purchaseguide/hardware.html"> Purchase Hardware Platform </a> </td>
-   <td style="text-align: center"> <a href="https://developer.dji.com/user/apps/#allhtml">Register App</a> </td>
+   <td style="text-align: center"> <a href="https://developer.dji.com/user/apps/#allhtml">Register Application</a> </td>
    <td style="text-align: center"> <a href="../quickstart/run-the-sample.html"> Run the sample </a> </td>
    <td style="text-align: center"> <a href="../quickstart/simulate-and-debug.html"> Simulation and Debugging </a> </td>
   </tr>
@@ -50,7 +50,7 @@ Before using OSDK to develop the application, developers need to register a acco
 * [Development Hardware](../purchaseguide/hardware.html)
 * [Development Platform](../purchaseguide/development-platform.html)
 
-## 3. Develop the application
+## 3. Develop The Application
 #### Preparation
 Before using OSDK to develop the application, it is recommended to learn the basic knowledge, understand the features of OSDK, purchase the drone and onboard computer according to actual development needs, select the appropriate development platform.
 
@@ -59,20 +59,20 @@ Before using OSDK to develop the application, it is recommended to learn the bas
 * Purchase [Drone](../purchaseguide/hardware.html) and [Onboard Computer](../purchaseguide/hardware.html)
 * Select [Development Platform](../purchaseguide/development-platform.html)
 
-#### Start Develop the application
+#### Start Develop The Application
 When using OSDK to develop the application, please connect the drone, onboard computer and third-party sensing equipment, configure the application development environment, and compile Programs, learn how to use OSDK to develop the application.
 
 * Before using OSDK to develop the application, please read the contents of [Attention](../quickstart/attention.html) avoid improper operation Damage the drone or onboard computer;
 * [Connection](../quickstart/device-connection.html) drone, onboard computer, third-party sensing equipment and computer;
 * [Install](../quickstart/development-environment.html) software, prepare related tool chains and libraries;
+* [Porting](../quickstart/porting.html)(Optional) the application developed based on OSDK to different hardware and software platforms.
 * [Compile](../quickstart/run-the-sample.html) sample code, running the sample to learn how to use various features provided by OSDK.
-* [Porting](../quickstart/porting.html) the application developed based on OSDK to different hardware and software platforms.
-* According to the documents in [Development Guide](../quickstart/integrateOSDK.html) to know the working principle and interface calling method of OSDK, quickly realize the application functions.
 
-#### Develop the application
+According to the documents in [Development Guide](../quickstart/integrateOSDK.html) to know the working principle and interface calling method of OSDK, quickly realize the application functions.
 
+#### Develop The Application
 
-* Develop the application according to the [tutorials](../tutorial/basic-control.html) and OSDK API documentation.
+* Develop the application according to the [Tutorials](../tutorial/basic-control.html) and OSDK API Documentation.
 * Use [DJI Assistant 2](https://www.dji.com/cn/downloads) and other tools to debug the application.
 
 

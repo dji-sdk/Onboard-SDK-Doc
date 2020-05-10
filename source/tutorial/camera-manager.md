@@ -4,16 +4,248 @@ date: 2020-05-08
 version: 4.0.0
 keywords: [相机, ISO, EV, 快门, 曝光, 变焦]
 ---
-## 概述
-为方便开发者在OSDK 的基础上快速开发出控制DJI 无人机上相机的功能，DJI OSDK 提供了相机管理功能，即`CameraManager`类。开发者使用OSDK 中的`CameraManager`类，能够同时设置并获取无人机上多个相机的感光度、光圈、快门和曝光等参数的值，控制相机实现拍照、录像及指点变焦等功能。      
+> **NOTE** This article is **Machine-Translated**. If you have any questions about this article, please send an <a href="mailto:dev@dji.com">E-mail </a>to DJI, we will correct it in time. DJI appreciates your support and attention.     
+
+## Overview
+In order to help developers develop functions to control cameras on DJI's drones based on OSDK quickly, DJI OSDK provides camera management functions, the class `CameraManager`. Using the `CameraManager` in the OSDK, developers can simultaneously set and obtain the values of parameters such as sensitivity, aperture, shutter, and exposure of multiple cameras on the drone, and control the cameras to taking pictures, recording, and pointing zoom.
 
 ## CameraManager
-在使用相机管理功能时，开发者需要先**初始化**OSDK 中的相机模块，**创建实例化对象**`CameraManager`，再根据实际的使用需要**设置相机的模式**，最后根据用户的使用逻辑实现所需使用的功能，如设置相机的参数、检查功能的状态或参数对比等。
+When using the camera Management, the developer needs to **initialize** the camera module in the OSDK, **create an instantiated object** `CameraManager`, and then **set the camera mode**, according to the user's need to design the logic to control the camera, such as setting parameters, checking status, etc.
+<div>
+<div style="text-align: center"> <p> Table 1. CameraManager's functions </p>
+</div>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>X4S</th>
+<th>X5S</th>
+<th>X7</th>
+<th>Z30</th>
+<th>XTS</th>
+<th>XT2</th>
+<th>H20/H20T</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Set/Get Camera Work Mode</td>
+<td>√</td>
+<td>√</td>
+<td>√</td>
+<td>√</td>
+<td>√</td>
+<td>√</td>
+<td>√</td>
+</tr>
+<tr>
+<td>Set/Get Camera Focus Mode</td>
+<td>√</td>
+<td>√</td>
+<td>√</td>
+<td>√</td>
+<td>×</td>
+<td>×</td>
+<td>√</td>
+</tr>
+<tr>
+<td>Set/Get Exposure Mode</td>
+<td>√</td>
+<td>√</td>
+<td>√</td>
+<td>×</td>
+<td>×</td>
+<td>×</td>
+<td>√</td>
+</tr>
+<tr>
+<td>Set/Get ISO	</td>
+<td>√</td>
+<td>√</td>
+<td>√</td>
+<td>√</td>
+<td>×</td>
+<td>×</td>
+<td>√</td>
+</tr>
+<tr>
+<td>Set/Get Aperture</td>
+<td>√</td>
+<td>√</td>
+<td>√</td>
+<td>√</td>
+<td>×</td>
+<td>×</td>
+<td>√</td>
+</tr>
+<tr>
+<td>Set/Get Shutter	</td>
+<td>√</td>
+<td>√</td>
+<td>√</td>
+<td>×</td>
+<td>×</td>
+<td>×</td>
+<td>√</td>
+</tr>
+<tr>
+<td>Set/Get EV(Exposure Compensation)	</td>
+<td>√</td>
+<td>√</td>
+<td>√</td>
+<td>×</td>
+<td>×</td>
+<td>×</td>
+<td>√</td>
+</tr>
+<tr>
+<td>Set/Get  Zoom Parameters</td>
+<td>×</td>
+<td>×</td>
+<td>×</td>
+<td>√</td>
+<td>×</td>
+<td>×</td>
+<td>√</td>
+</tr>
+<tr>
+<td>Set Tap Zoom Point</td>
+<td>×</td>
+<td>×</td>
+<td>×</td>
+<td>√</td>
+<td>×</td>
+<td>×</td>
+<td>√</td>
+</tr>
+<tr>
+<td>Set/Get Focus Point	</td>
+<td>√</td>
+<td>√</td>
+<td>√</td>
+<td>×</td>
+<td>×</td>
+<td>×</td>
+<td>√</td>
+</tr>
+<tr>
+<td>Set/Get Shoot-Photo Mode</td>
+<td>√</td>
+<td>√</td>
+<td>√</td>
+<td>×</td>
+<td>×</td>
+<td>×</td>
+<td>√</td>
+</tr>
+<tr>
+<td>Shoot Single Photo</td>
+<td>√</td>
+<td>√</td>
+<td>√</td>
+<td>√</td>
+<td>√</td>
+<td>√</td>
+<td>√</td>
+</tr>
+<tr>
+<td>Set/Get Interval Shooting Parameters</td>
+<td>√</td>
+<td>√</td>
+<td>√</td>
+<td>×</td>
+<td>×</td>
+<td>×</td>
+<td>×</td>
+</tr>
+<tr>
+<td>Shoot Interval Photo</td>
+<td>√</td>
+<td>√</td>
+<td>√</td>
+<td>√</td>
+<td>√</td>
+<td>√</td>
+<td>×</td>
+</tr>
+<tr>
+<td>Set/Get AEB Shooting Parameters</td>
+<td>√</td>
+<td>√</td>
+<td>√</td>
+<td>×</td>
+<td>×</td>
+<td>×</td>
+<td>×</td>
+</tr>
+<tr>
+<td>Shoot AEB Photo</td>
+<td>√</td>
+<td>√</td>
+<td>√</td>
+<td>×</td>
+<td>×</td>
+<td>×</td>
+<td>×</td>
+</tr>
+<tr>
+<td>Set/Get Burst Shooting Parameters</td>
+<td>√</td>
+<td>√</td>
+<td>√</td>
+<td>×</td>
+<td>×</td>
+<td>×</td>
+<td>×</td>
+</tr>
+<tr>
+<td>Shoot Burst Photo</td>
+<td>√</td>
+<td>√</td>
+<td>√</td>
+<td>√</td>
+<td>×</td>
+<td>×</td>
+<td>×</td>
+</tr>
+<tr>
+<td>Record Video</td>
+<td>√</td>
+<td>√</td>
+<td>√</td>
+<td>√</td>
+<td>√</td>
+<td>√</td>
+<td>√</td>
+</tr>
+<tr>
+<td>Download FileList (M300 Only)</td>
+<td>×</td>
+<td>×</td>
+<td>×</td>
+<td>√</td>
+<td>√</td>
+<td>√</td>
+<td>√（beta）</td>
+</tr>
+<tr>
+<td>Download FIledata (M300 Only)</td>
+<td>×</td>
+<td>×</td>
+<td>×</td>
+<td>√</td>
+<td>√</td>
+<td>√</td>
+<td>√（beta）</td>
+</tr>
+</tbody>
+</table>
+</div>
 
-## 使用CameraManager 的功能
+## Develop with CameraManager
 
-#### 1. 相机模块初始化
-无人机初始化后，需初始化无人机上的相机模块，并将所需控制的相机注册到`vehicle->cameraManager`中，如下为初始化无人机I 号云台和II 号云台上的相机模块。
+#### 1. Initialization
+After initialized the drone, developer need initialize the camera module, registered the camera module in `vehicle-> cameraManager`.
 
 ```c++
 ErrorCode::ErrorCodeType 
@@ -29,23 +261,26 @@ ret = vehicle->cameraManager->initCameraModule(PAYLOAD_INDEX_1,"Sample_camera_2"
   }
 ```
 
-#### 2. CameraManager 对象实例化   
-如需使用OSDK `CameraManager` 中功能，请创建`CameraManager`实例。   
-##### 以同步的方式创建实例
-`CameraManagerSyncSample *p = new CameraManagerSyncSample(vehicle);`  
-##### 以异步的方式创建实例
-`CameraManagerAsyncSample *p = new CameraManagerAsyncSample(vehicle);`   
+#### 2. CameraManager Instantiation
+If you want to use the functions in OSDK `CameraManager`, please create` CameraManager` instance.
+* Synchronous
+`CameraManagerSyncSample * p = new CameraManagerSyncSample (vehicle);`
+* Asynchronous
+`CameraManagerAsyncSample * p = new CameraManagerAsyncSample (vehicle);`
 
-#### 3. 设置或获取相机参数
-CameraManager 对象实例化后，开发者需根据使用相机功能的逻辑，设置或获取相机的模式，如设置相机的光圈模式前需先设置相机的曝光模式，详情请参见OSDK API 文档，如下以同步和异步的方法介绍获取相机光圈值的方法。
+#### 3. Set or Get Camera's Parameters
+After instantiated the CameraManager, developer could to set or obtain the camera mode according to the logic of the camera function. For example, before setting the camera's aperture mode, developer need to set the camera's exposure mode for details please refer to API Documentation. The content below is show the method of obtaining the aperture value use synchronous and asynchronous methods.
 
-##### 以同步的方式获取相机的光圈模式     
+###### Synchronous
+Obtain the aperture mode of the camera in a synchronized manner.    
 ```c++
   retCode = pm->getApertureSync(index, apertureGet, 1);
 ```
 
-##### 以异步的方式获取相机的光圈模式   
-* 构造回调函数
+###### Asynchronous
+Get the aperture mode of the camera in a synchronous manner.
+
+* Construct the callback
 
 ```c++
 void CameraManagerAsyncSample::getApertureCb(ErrorCode::ErrorCodeType retCode,
@@ -89,17 +324,17 @@ void CameraManagerAsyncSample::getApertureCb(ErrorCode::ErrorCodeType retCode,
 }
 ```
 
-* 注册回调函数
+* Register the callback
 ```c++
   DSTATUS("Get aperture now ...");
   pm->getApertureAsync(index, getApertureCb, &uData);
 }
 ```
 
-#### 4. 控制相机执行指定的动作
-开发者通过CameraManager 能够控制相机执行指定的动作，如指点变焦等，详情请参见OSDK API 文档，如下以同步和异步的方法介绍控制相机执行指点变焦功能的方法。
+#### 4. Control The Camera
+Developers can use CameraManager control the camera to perform specified actions, such as pointing zoom, etc. For details, please refer to the OSDK API documentation. The method of controlling the camera to perform Pointing Zoom is introduced in the following.
 
-##### 以同步的方式控制相机指点变焦
+###### Synchronous
 ```c
  ErrorCode::ErrorCodeType CameraManagerSyncSample::setTapZoomPointSyncSample(
     PayloadIndexType index, uint8_t multiplier, float x, float y) {
@@ -110,7 +345,7 @@ void CameraManagerAsyncSample::getApertureCb(ErrorCode::ErrorCodeType retCode,
   ErrorCode::ErrorCodeType retCode;
   CameraManager *pm = vehicle->cameraManager;
 
-  /*开启指点变焦功能*/
+  /*Enable the Pointing Zoom*/
   DSTATUS("Set tap zoom enable  = %d", true);
   retCode = pm->setTapZoomEnabledSync(index, true, 1);
   if (retCode != ErrorCode::SysCommonErr::Success) {
@@ -120,7 +355,7 @@ void CameraManagerAsyncSample::getApertureCb(ErrorCode::ErrorCodeType retCode,
     return retCode;
   }
 
-  /*设置指点变焦参数*/
+  /*Set the parameters of the pointing zoom*/
   DSTATUS("Set tap zoom multiplier = %d", multiplier);
   retCode = pm->setTapZoomMultiplierSync(index, multiplier, 1);
   if (retCode != ErrorCode::SysCommonErr::Success) {
@@ -130,7 +365,7 @@ void CameraManagerAsyncSample::getApertureCb(ErrorCode::ErrorCodeType retCode,
     return retCode;
   }
 
-  /*设置指点变焦对象*/
+  /*Set Pointing Zoom's object*/
   DSTATUS("Set tap zoom target point : (%f,%f)", x, y);
   retCode = pm->tapZoomAtTargetSync(index, {x, y}, 1);
   if (retCode != ErrorCode::SysCommonErr::Success) {
@@ -149,10 +384,11 @@ void CameraManagerAsyncSample::getApertureCb(ErrorCode::ErrorCodeType retCode,
 }
 ```
 
-##### 以异步的方式控制相机指点变焦
-* 构造回调函数
+###### Asynchronous
+* Construct the callback
+
 ```c
-/*设置指点变焦系数*/
+/*Set The Pointing Zoom’s Factor*/
 void CameraManagerAsyncSample::setTapZoomMultiplierCb(
     ErrorCode::ErrorCodeType retCode, UserData userData) {
   AsyncSampleData *uData = (AsyncSampleData *)userData;
@@ -165,7 +401,7 @@ void CameraManagerAsyncSample::setTapZoomMultiplierCb(
   if (retCode == ErrorCode::SysCommonErr::Success) {
     DSTATUS("Set tap zoom multiplier successfully ");
     if (uData->pm) {
-      /*注册开启指点变焦功能的函数*/
+      /*Register the function to enable the Pointing Zoom*/
       uData->pm->setTapZoomEnabledAsync(uData->index, true, setTapZoomEnableCb,
                                         uData);
     }
@@ -180,7 +416,7 @@ void CameraManagerAsyncSample::setTapZoomMultiplierCb(
   }
 }
 
-/*开启指点变焦功能*/
+/*Enable the Pointing Zoom*/
 void CameraManagerAsyncSample::setTapZoomEnableCb(
     ErrorCode::ErrorCodeType retCode, UserData userData) {
   AsyncSampleData *uData = (AsyncSampleData *)userData;
@@ -193,7 +429,7 @@ void CameraManagerAsyncSample::setTapZoomEnableCb(
   if (retCode == ErrorCode::SysCommonErr::Success) {
     DSTATUS("Set tap zoom enable successfully ");
     if (uData->pm) {
-      /* 设置指点变焦的对象 */
+      /* Set Pointing Zoom's object */
       uData->pm->tapZoomAtTargetAsync(
           uData->index, *(CameraModule::TapZoomPosData *)uData->dataTarget,
           (void (*)(ErrorCode::ErrorCodeType, UserData))uData->userCallBack,
@@ -211,217 +447,12 @@ void CameraManagerAsyncSample::setTapZoomEnableCb(
 }
 ```
 
-* 注册回调函数
+* Register the callback
 ```c++
   DSTATUS("Set tap zoom multiplier = %d", multiplier);
   pm->setTapZoomMultiplierAsync(index, multiplier, setTapZoomMultiplierCb, &uData);
 }
 ```
 
-## 产品适配
-<table>
-<thead>
-<tr>
-<th></th>
-<th>X4S</th>
-<th>X5S</th>
-<th>X7</th>
-<th>Z30</th>
-<th>XTS</th>
-<th>XT2</th>
-<th>H20/H20T</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>设置/获取相机工作模式</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>设置/获取相机对焦模式</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-<td>×</td>
-<td>×</td>
-</tr>
-<tr>
-<td>设置/获取曝光模式</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-<td>×</td>
-<td>×</td>
-<td>×</td>
-</tr>
-<tr>
-<td>设置/获取ISO</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-<td>×</td>
-<td>×</td>
-</tr>
-<tr>
-<td>设置/获取光圈</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-<td>×</td>
-<td>×</td>
-</tr>
-<tr>
-<td>设置/获取快门</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-<td>×</td>
-<td>×</td>
-<td>×</td>
-</tr>
-<tr>
-<td>设置/获取EV（曝光补偿）</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-<td>×</td>
-<td>×</td>
-<td>×</td>
-</tr>
-<tr>
-<td>设置/获取分接缩放参数</td>
-<td>×</td>
-<td>×</td>
-<td>×</td>
-<td>√</td>
-<td>×</td>
-<td>×</td>
-</tr>
-<tr>
-<td>设置/获取分接缩放点</td>
-<td>×</td>
-<td>×</td>
-<td>×</td>
-<td>√</td>
-<td>×</td>
-<td>×</td>
-</tr>
-<tr>
-<td>设置/获取焦点</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-<td>×</td>
-<td>×</td>
-<td>×</td>
-</tr>
-<tr>
-<td>设置/获取拍摄照片模式</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-<td>×</td>
-<td>×</td>
-<td>×</td>
-</tr>
-<tr>
-<td>拍摄单张照片</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>设置/获取间隔拍摄参数</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-<td>×</td>
-<td>×</td>
-<td>×</td>
-</tr>
-<tr>
-<td>拍摄间隔照片</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>设置/获取自动包围曝光拍摄参数</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-<td>×</td>
-<td>×</td>
-<td>×</td>
-</tr>
-<tr>
-<td>拍摄自动包围曝光照片</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-<td>×</td>
-<td>×</td>
-<td>×</td>
-</tr>
-<tr>
-<td>设置/获取连拍参数</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-<td>×</td>
-<td>×</td>
-<td>×</td>
-</tr>
-<tr>
-<td>拍摄连拍照片</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-<td>×</td>
-<td>×</td>
-</tr>
-<tr>
-<td>录视频</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>下载文件列表（仅M300 RTK）</td>
-<td>×</td>
-<td>×</td>
-<td>×</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-</tr>
-<tr>
-<td>下载媒体文件（仅M300 RTK）</td>
-<td>×</td>
-<td>×</td>
-<td>×</td>
-<td>√</td>
-<td>√</td>
-<td>√</td>
-</tr>
-</tbody>
-</table>
+
 

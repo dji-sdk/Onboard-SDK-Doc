@@ -78,11 +78,11 @@ OSDK 开放了设置无人机基础参数的接口，开发者通过设置并获
 
 
 ### Joystick 功能     
-Joystick 是一个无人机综合控制功能，使用Joystick 功能时，开发者根据实际的应用需要，通过调用Joystick 中的接口，**同时设置**无人机使用的坐标系、水平控制的模式、垂直控制的模式、yaw角度控制的模式和自稳模式，才能设计出满足使用需求的无人机飞行控制逻辑。
+Joystick 是一个无人机综合控制功能，使用Joystick 功能时，开发者根据实际的应用需要，通过调用Joystick 中的接口，**同时设置无人机使用的坐标系、水平控制的模式、垂直控制的模式、yaw角度控制的模式和悬停模式**，才能设计出满足使用需求的无人机飞行控制逻辑。
 
 #### 设置坐标系
 * 机体坐标系  
-机体坐标系以飞行器的重心为原点，无人机机头前进的方向为X轴，机头前进方向的右侧为Y轴，Z轴与X轴、Y轴相互垂直交于重心且指向无人机下方（遵循“右手法则”）。在机体坐标下，无人机围绕X轴、Y轴和Z轴旋转时的飞行动作，可称为横滚（无人机仅绕X轴旋转）、俯仰（无人机仅绕Y轴旋转）和偏航（无人机仅绕Z轴旋转）。  
+机体坐标系以无人机的重心为原点，无人机机头前进的方向为X轴，机头前进方向的右侧为Y轴，Z轴与X轴、Y轴相互垂直交于重心且指向无人机下方（遵循“右手法则”）。在机体坐标下，无人机围绕X轴、Y轴和Z轴旋转时的飞行动作，可称为横滚（无人机仅绕X轴旋转）、俯仰（无人机仅绕Y轴旋转）和偏航（无人机仅绕Z轴旋转）。  
 
 * 大地坐标系  
 大地坐标系也称世界坐标系或当地水平坐标系，在该坐标系中，无人机指向地球正北的方向为X轴，正东的方向为Y轴，X轴与Y轴相互垂直，Z轴竖直指向无人机下方，在满足“右手法则”的前提下，Z轴将根据无人机飞行的实际情况调节角度，因此该坐标系也称为“北-东-地（N-E-D）坐标系”。
@@ -223,29 +223,29 @@ FlightSample* flightSample = new FlightSample(vehicle);
 > **说明：** 为方便开发者快速设置无人机的基础参数，OSDK 将`flightController` 中的接口封装在 `flightSample`
 中，使用`flightController` 或 `flightSample` 中的接口均可设置无人机的基础参数。
 
-```
+```c
 flightSample->monitoredTakeoff();
 vehicle->flightController->setCollisionAvoidanceEnabledSync(
   FlightController::AvoidEnable::AVOID_ENABLE, 1);
 
-/*! Move to higher altitude */
+/*! 飞行较长的距离 */
 flightSample->moveByPositionOffset((FlightSample::Vector3f){0, 0, 30}, 0);
 
-/*! Move a short distance*/
+/*! 飞行较短的距离 */
 flightSample->moveByPositionOffset((FlightSample::Vector3f){10, 0, 0}, 0);
 
-/*! Set aircraft current position as new home location */
+/*!设置无人机当前位置为返航点 */
 flightSample->setNewHomeLocation();
 
-/*! Set new go home altitude */
+/*! 设置无人机返航高度 */
 flightSample->setGoHomeAltitude(50);
 
-/*! Move to another position */
+/*! 飞至另一个位置 */
 flightSample->moveByPositionOffset((FlightSample::Vector3f){20, 0, 0}, 0);
 
 vehicle->flightController->setCollisionAvoidanceEnabledSync(
 FlightController::AvoidEnable::AVOID_DISABLE, 1);
-/*! go home and confirm landing */
+/*! 返航并确认降落*/
 flightSample->goHomeAndConfirmLanding();
 
 vehicle->flightController->setCollisionAvoidanceEnabledSync(
@@ -256,7 +256,7 @@ FlightController::AvoidEnable::AVOID_ENABLE, 1);
 使用Joystick 功能需要先设置Joystick 的模式和对应的控制指令，再执行Joystick 指令，实现对无人机的控制。如下代码以在`flightSample->moveByPositionOffset()`中，使用Joystick 功能控制无人机在水平和垂直方向上运动到指定的位置。
 
 1. 设置joystick的模式
-```
+```c
   FlightController::JoystickMode joystickMode = {
     FlightController::HorizontalLogic::HORIZONTAL_POSITION,
     FlightController::VerticalLogic::VERTICAL_POSITION,
@@ -265,12 +265,11 @@ FlightController::AvoidEnable::AVOID_ENABLE, 1);
     FlightController::StableMode::STABLE_ENABLE,
   };
   vehicle->flightController->setJoystickMode(joystickMode);
-  
 ```
 > **说明：** 若在无人机飞行的过程中不改变Joystick 中的设置项，则仅在无人机开始执行飞行任务时设置Joystick 模式即可。
 
 2. 设置Joystick 控制指令并执行Joystick 功能   
-> **说明：** `joystickCommand`中z方向的位置是相对于起飞点高度的绝对高度。
+> **说明：** `joystickCommand`中z轴方向的位置是相对于起飞点高度的绝对高度。
 
 ```c
 while (elapsedTimeInMs < timeoutInMilSec) {

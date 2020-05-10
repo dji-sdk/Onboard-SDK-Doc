@@ -8,12 +8,12 @@ keywords: [attention, hardware purchase, software version, firmware version]
 > * This article is **Machine-Translated**. If you have any questions about this article, please send an <a href="mailto:dev@dji.com">E-mail </a>to DJI, we will correct it in time. DJI appreciates your support and attention.
 > * This series of documentation introduces the functions of **OSDK V4.0.0**, as well as the steps and methods of developing software using OSDK V4.0.0. If you are still using OSDK V3.9.x, please download the documentation of [OSDK V3.9.x](https://terra-1-g.djicdn.com/71a7d383e71a4fb8887a310eb746b47f/osdk/OSDK-3.9.0.zip).
 
-Before using OSDK to develop the application, please read this document carefully to avoid improper operation and accidental damage to the aircraft or onboard computer.
+Before using OSDK to develop the application, please read this document carefully to avoid improper operation and accidental damage to the drone or onboard computer.
 
-## Firmware Upgrade
+##vFirmware Upgrade 
 Before to develop the application, please use **DJI Assistant 2** to upgrade the firmware of the drone and hardware platform, for details please refer to[Firmware Release](../appendix/firmware.html)。
 
-## Enable OSDK control function
+## Enable OSDK Control
 In order to allow programs developed based on OSDK to communicate normally with the flight platform, please enable the OSDK API control function in DJI Assistant2, as shown in Figure 1.
 
 <div>
@@ -23,7 +23,7 @@ In order to allow programs developed based on OSDK to communicate normally with 
       <img src="../images/common/N1UI.png" width="500" alt /> </span> </p>
 </div> </div>
 
-## Permission statement
+## Permission Statement
 The DJI drone;s flight controller can adjust the controlled subject according to the actual flight status and user's need. The level of drone control authority is in order from remote controlle, Mobile APP based on MSDK and the applications developed based on OSDK.
 
 #### Remote Controller
@@ -59,7 +59,7 @@ When DJI's drone is in flight, if disconnected from the remote controller or onb
       <img src="../images/guides/sdk-failsafe.png" width="500" alt /> </span> </p>
 </div> </div>
 
-## Simulation And Debugging
+## Simulate and Debug
 In order to reduce the occurrence of damage to the drone or accidents due to internal failures of applications developed based on OSDK, DJI strongly requires developers to use the simulator in DJI Assistant 2 to simulate the flight status of the drone , And according to the data and log information in the simulator **debug** application, reduce the risk of drone damage or accidents, and avoid unnecessary losses.
 * Before using OSDK to develop applications, please obey the laws of the local please. **The safety issues or legal disputes caused by the use of OSDK are not related to DJI**. DJI does not assume any responsibility for any use of OSDK legal risks and responsibilities.
 * Before using flight mission, please simulate the application in DJI Assistant 2.

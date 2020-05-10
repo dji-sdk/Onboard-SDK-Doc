@@ -294,7 +294,7 @@ T_PsdkReturnCode PsdkMopChannel_Bind(T_PsdkMopChannelHandle channelHandle, uint1
 ```c
 T_PsdkReturnCode PsdkMopChannel_Accept(T_PsdkMopChannelHandle channelHandle, T_PsdkMopChannelHandle *outChannelHandle);
 ```
-> **说明：** 该接口为阻塞式的接口，当基于PSDK 的负载设备作为服务器端时，为方便同时与多个客户端建立连接，请在单独的线程中调用该接口。
+> **说明：** 该接口为阻塞式的接口，当基于PSDK 的负载设备作为服务器端时，为能够同时与多个客户端建立连接，请在单独的线程中调用该接口。
 
 #### 4. 数据接收
 创建信道后，开发者可在该信道上接收对端传输的数据。

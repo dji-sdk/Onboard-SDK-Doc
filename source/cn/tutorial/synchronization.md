@@ -22,55 +22,59 @@ OSDK 提供了时间同步功能，方便开发者通过使用基于OSDK 开发�
 时间同步是一种使用PPS 信号，通过与**GPS 卫星**通信，实现**无人机与GPS 系统时间同步**的功能；具有“时间同步”功能的应用程序，不仅方便用户快速分析传感器采样的数据，还能提高相机曝光时间的精准度，以及实现获取精准定位信息等高级功能；时间同步功能支持以1Hz 的频率获取RTK 数据，支持以5Hz 的频率获取GPS 数据。     
 
 OSDK 时间同步的流程如下所示：    
-1. 无人机通过指定的硬件接口发送PPS 信号，用于同步机载计算机和传感器上的时间，同时发送UTC 时间戳；
+1. 无人机通过指定的硬件接口发送PPS 信号和UTC 时间戳，用于同步机载计算机和传感器上的时间；
 2. 无人机与RTK 或GPS 卫星在通信状态良好的情况下，无人机将以1Hz 的频率发送RTK 数据包，以5Hz 的频率发送GPS 数据包，其中包含NMEA 数据。
 
 > **说明：** 无人机脉冲在上升沿处（从0V上升到3.3V）产生UTC 时间戳。
 
 ## 使用时间同步功能
-#### 以异步的方式实现时间同步功能
-* 获取NMEA 信息
+
+#### 获取NMEA 信息
+
+* 以异步的方式获取NMEA 信息
 ```c++
 void subscribeNMEAMsgs(VehicleCallBack cb, void *userData);
 void unsubscribeNMEAMsgs();
 ```
 
-* 获取UTC 时间戳
+* 以同步的方式获取NMEA 信息
+```c++
+bool getNMEAMsg(NMEAType type, NMEAData &nmea);
+```
+
+#### 获取UTC 时间戳
+* 以异步的方式
 
 ```c++
 void subscribeUTCTime(VehicleCallBack cb, void *userData);
 void unsubscribeUTCTime();
 ```
 
-* 获取无人机上的时间
-```c++
-void subscribeFCTimeInUTCRef(VehicleCallBack cb, void *userData);
-void unsubscribeFCTimeInUTCRef();
-```
+* 以同步的方式获取UTC 时间戳
 
-* 获取无人机的PPS 信息
-```c++
-void subscribePPSSource(VehicleCallBack cb, void *userData);
-void unsubscribePPSSource();
-```
-
-#### 以同步的方式实现时间同步功能 
-* 获取NMEA 信息
-```c++
-bool getNMEAMsg(NMEAType type, NMEAData &nmea);
-```
-
-* 获取UTC 时间戳
 ```c++
 bool getUTCTime(NMEAData &utc);
 ```
 
-* 获取无人机上的时间
+#### 获取无人机上的时间
+* 以异步的方式获取无人机上的时间
+```c++
+void subscribeFCTimeInUTCRef(VehicleCallBack cb, void *userData);
+void unsubscribeFCTimeInUTCRef();
+```
+* 以同步的方式获取无人机上的时间
 ```c++
 bool getFCTimeInUTCRef(DJI::OSDK::ACK::FCTimeInUTC &fcTimeInUTC);
 ```
 
-* 获取无人机的PPS 信息
+#### 获取无人机上的PPS 信息
+* 以异步的方式获取无人机上的PPS 信息
+```c++
+void subscribePPSSource(VehicleCallBack cb, void *userData);
+void unsubscribePPSSource();
+```
+* 以同步的方式获取无人机上的PPS 信息
+
 ```c++
 bool getPPSSource(PPSSource &source);
 ```

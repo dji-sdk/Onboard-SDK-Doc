@@ -1,135 +1,139 @@
 ---
-title: 高级感知功能
+title: Advanced Sensing
 date: 2020-05-08
 version: 4.0.0
-keywords: [目标识别, CNN]
+keywords: [target identification, CNN]
 ---
-## 概述
-为帮助开发者在没有GPS 或RTK 卫星等应用场景中实现无人机的自动化飞行控制，实现如精准悬停和避障等功能，DJI 开放了无人机视觉感知系统，开发者通过使用OSDK 提供的API 即可获取DJI 无人机视觉感知系统的码流数据，并生成时差图以及点云图，结合图像识别算法，开发出满足特定使用场景需求的应用程序。
+> **NOTE** This article is **Machine-Translated**. If you have any questions about this article, please send an <a href="mailto:dev@dji.com">E-mail </a>to DJI, we will correct it in time. DJI appreciates your support and attention.     
 
-> **说明**
-> * 仅使用Linux 和ROS 系统开发的应用程序支持开发者使用DJI 的高级感知功能。
-> * 使用DJI OSDK 的高级感知功能时，需使用USB 线接收无人机视觉感知系统的原始图像数据。
+## Overview
+To help developers use automatic flight control in application scenarios without GPS or RTK satellites, use Precise Hovering and Obstacle Avoidance, DJI has opened the drone's visual perception system. Developers use API in OSDK can obtain the camera’s stream of the DJI drone's visual perception system, generate time-diff-maps and cloud-maps, combined with image recognition algorithms, developer could develop the applications that meet the specific needs.
 
-## 基础概念
+> **NOTE**
+> * Applications developed on Linux and ROS systems allow developers use DJI's advanced perception features.
+> * When using the advanced perception function of DJI OSDK, developer need to use a USB cable to receive the raw image data from the drone's visual perception system.
 
-### 获取相机码流
-为满足开发者使用OSDK 开发的应用程序对获取相机码流的功能，OSDK 提供了获取相机码流的功能，支持获取FPV 相机或获取I 号云台相机H.264 码流和RGB 图像。
+## Concepts
 
-> **说明**
-> * M210 系列无人机支持获取FPV 相机和I 号云台上相机的H.264 码流或RGB 图像；M300 RTK 无人机**支持获取FPV 相机和所有云台相机的H.264 码流**。
-> * 由于获取FPV 相机码流和获取I 号云台上相机码流的回调函数在各自独立的线程中运行，OpenCV 的imshow 模块仅支持在一个线程中运行，因此仅支持开发者获取FPV 相机或获取I 号云台相机H.264 码流和RGB 图像。
-> * 获取相机码流后，请安装FFmpeg 等解码器解码。
+### Camera‘s Stream
+In order to satisfy the function of developers using OSDK to obtain the camera’s stream, OSDK provides the function to obtaining the camera’s stream, supports obtaining the FPV camera and main camera's H.264 tream and RGB images.
 
-#### 分辨率和帧频
-OSDK 支持开发者获取M210 系列和M300 RTK 无人机上I 号云台上相机的码流，开发者或用户可根据实际的使用需求挂载不同型号的相机，根据相机的型号以及相机的工作模式，指定帧速率，获取所需的码流。
-* 拍照模式：
-  * FPV 相机码流：支持获取分辨率为608x448 的图像。   
-  * 相机模式：支持获取分辨率为1440x1080（1080p）、960x720（720p）的图像。   
-* 视频模式：支持获取分辨率为1920x1080（1080p）、1280x720（720p）的视频。    
-> **说明：** 获取FPV 相机和主相机码流的帧速率均为30 FPS。
+> **NOTE**
+> * M210 series support H.264 bitstream or RGB images of FPV cameras and main cameras; M300 RTK **support H.264 bitstreams of FPV cameras and others cameras**.
+> * The callback functions for obtaining the FPV camera's stream and obtaining the main camera's stream run in separate threads, OpenCV's module imshow only supports running in one thread, so developers are allowed to obtain FPV cameras or main camera's H.264 stream and RGB images.
+> * After obtaining the camera’s stream, please install a decoder such as FFmpeg for decoding.
 
-#### 获取相机H.264 码流
-获取M210 系列和M300 RTK 无人机上相机H.264 码流的流程如下所示：   
-1. 使用获取相机H.264 码流的功能前，**请开发者根据实际的使用需要先实现**`liveViewSampleCb`函数，用于获取并处理相机H.264 码流。   
-2. 调用`startH264Stream()`接口，指定所需获取码流的相机、接收相机H.264 码流的回调函数和用户信息；    
-3. 开启无人机和机载计算机，运行使用基于OSDK 开发的应用程序，此时无人机将会向机载计算机推送H.264 码流；    
-4. 机载计算机接收到H.264 码流的数据后，将触发（作为入参传入开发者设置的回调函数中）基于OSDK 开发的应用程序；    
-5. **开发者根据实际需求设计的函数**`liveViewSampleCb`在获取相机H.264 码流后，将对所获得的H.264 码流执行存储、解码及转发等相应的操作。   
+#### Resolution And Frame Rate
+OSDK supports developers to obtain the main camera’s stream which on the M210 series and M300 RTK. Developers or users can mount different models of cameras and specified the frame rate, obtain the required code stream according the mode and module of the camera.
+* Shut Mode:
+  * FPV Camera code stream: support to obtain images with a resolution of 608x448.
+  * Camera Mode: Support to obtain images with resolutions of 1440x1080 (1080p) and 960x720 (720p).
+* Video Mode: Support to obtain videos with resolutions of 1920x1080 (1080p) and 1280x720 (720p).
+> **NOTE** The frame rate of both FPV camera and main camera’s stream is 30 FPS.
 
-### 无人机视觉感知系统
-DJI 无人机的视觉感知系统主要由无人机视感知传感器和视觉感知算法构成，在无人机飞行的过程中，感知传感器能够获取周围环境的状态，协助无人机刹车、避障和精确悬停。
-* Matrice 210 V2 系列无人机仅支持开发者获取无人机前视感知传感器和下视感知传感器的码流数据；
-* Matrice 300 RTK 支持开发者获取无人机上所有感知传感器的码流数据。
+#### Get H.264 Stream
+The process of obtaining the H.264 stream of the camera on the M210 series and M300 RTK is as follows:
+1. Before using the function of obtaining the camera H.264 stream, **Please implement the liveViewSampleCb` function**, which is used to obtain and process the camera H.264 stream.
+2. Call the interface `startH264Stream ()` to specify the camera that the stream, the callback function, the H.264 stream and user's information needs to receive which from the camera;
+3. Turn on the drone and onboard computer, run the application developed based on OSDK. At this time, the drone will push the H.264 stream to the onboard computer;
+4. After received the data of the H.264 stream, onboard computer will trigger (as an input to the callback function set by the developer) an application which developed based on OSDK;
+5. After obtaining the camera H.264 code stream, `liveViewSampleCb` which designed by developer will perform corresponding operations such as storage, decoding and forwarding works.
 
-> **说明** 
-> * 在悬停期间若无人机受到外部干扰，无人机将会返回到原悬停点。
-> * 使用立体感知功能时，若无人机与无人机遥控器断开连接，无人机将会悬停。
+### Visual Perception System
+The visual perception system of the DJI's drone is composed of the visual perception sensor and visual perception algorithm. During the flight of the drone, the perception sensor can obtain the state of the surrounding environment, assist drone to brake, avoid obstacle and accuracy hover.
+* Matrice 210 V2 series only supports developers to obtain the code stream data of the drone's forward-looking sensor and downward-looking sensor;
+* Matrice 300 RTK supports developers to obtain the bitstream data of all sensory sensors.
 
-##### 图像类型
-立体感知功能支持开发者获取的图像类型和分辨率如下所示：
-* M300 RTK：支持开发者以20 FPS，640x480 的分辨率，获取VGA 灰度图像。
-* M210 V2：
-   * 前视视觉传感器：以10 FPS 或20 FPS，640x480 的分辨率，获取VGA 灰度图像；以20 FPS，320x240的分辨率获取灰度图像；以10 FPS，320x240 的分辨率获取视差图。
-   * 下视视觉传感器：以20 FPS，320x240 的分辨率获取QVGA 灰度图。
+> **NOTE**
+> * If the drone is disturbed by external interference during hovering, the drone will return to the original hovering point.
+> * When using the stereo perception function, if the drone is disconnected from the drone remote control, the drone will hover.
 
-##### 元数据
-无人机视觉传感器产生的图像主要包含帧索引和时间戳两种元数据。
-* 时间戳：无人机上的视觉传感器同时共享一个计时器，该计时器与M210 V2 系列无人机上的时钟同步，有关时间同步的详细说明请参见[时间同步](../tutorial/synchronization.html)。
-* 帧索引：开发者订阅感知灰度图后，无人机感知灰度图将会附带帧索引。订阅或取消订阅感知灰度图，将不会改变或中断帧索引的序号。
+##### Image Type
+The image types that the stereoscopic perception function supports is as follows:
+* M300 RTK: Support developers to obtain VGA grayscale images at 20 FPS and 640x480 resolution.
+* M210 V2:
+   * Forward-looking vision sensor: obtain VGA grayscale image at 10 FPS or 20 FPS, 640x480 resolution; obtain grayscale image at 20 FPS, 320x240 resolution; obtain disparity map at 10 FPS, 320x240 resolution.
+   * Downward vision sensor: obtain QVGA grayscale image at 20 FPS, 320x240 resolution.
 
+##### Metadata
+The image generated by the drone's visual sensor contains two metadata: frame index and time stamp.
+* Timestamp: The visual sensors on the drone share a timer at the same time, which is synchronized with the clock on the M210 V2 series drone. For details about time synchronization, please refer to [Time Synchronization](./synchronization.html).
+* Frame Index: After subscribe the perception grayscale image, the drone's perception grayscale image will be accompanied by the frame index. Subscribing or unsubscribing to the perceptual grayscale image will not change or interrupt the frame index sequence number.
 
-### 获取无人机的图像
-使用高级视觉功能时，开发者需要调用指定的API 通过USB 接口在应用程序运行的周期内订阅（或退订）相机视觉传感器的图像，并使用回调函数**在专用的读取线程内**获取订阅的图像。
-> **说明**
-> * 获取无人机视觉传感器图像时，建议安装OpenCV 以显示图像。
-> * 为避免处理视觉传感器图像的工作阻塞主线程，请创建一个独立的线程处理无人机视觉传感器的图像。
-> 在ROS 系统上使用高级视觉功能时，请使用`ROS services`订阅并通过`image_view`显示视觉传感器的图像。   
+### Get The Image
+When using Advanced Sensing functions, developers need to call the specified API to subscribe (or unsubscribe) the image of the camera through the USB during the application execution, and use the callback function **in the dedicated reading thread** to get subscribed images.
 
-## 使用目标跟踪功能
-下文以使用KCFcpp 库实现目标跟踪功能的步骤，介绍使用DJI 无人机视觉传感器或相机的图像数据，控制云台的流程和方法，开发者可在合法的使用范围内使用第三方库开发出更为完善的应用程序。
+> **NOTE**
+> * It is recommended to install OpenCV to display the image when acquiring the image of drone's vision sensor.
+> * In order to blocking the main thread, please create a separate thread to process the image of the visual sensor of the drone.
+> When using Advanced Sensing functions on the ROS system, please using `ROS services` and `image_view`to subscribe and display the image.
 
-> **说明** 
-> * 使用KCFcpp 库编译目标跟踪的示例代码时，请使用命令 `cmake -DADVANCED_SENSING=ON -DTARGET_TRACKING_SAMPLE=ON  
-make` 编译该程序。
-> * 从键盘中输入g 后，即可创建KCF跟踪器；选择跟踪新的对象时请输入s，如需退出该程序，请按ESC 键。
-#### 1. 指定跟踪目标
-为了方便用户指定所需跟踪的目标，OSDK 提供了`TrackingUtility`类，用于获取目标对象和跟踪状态。
+## Target Tracking
+The following steps to use the KCFcpp library to achieve the Target Tracking.
+
+> **NOTE**
+> * When using the KCFcpp library to compile sample code for target tracking, please use the command `cmake -DADVANCED_SENSING=ON -DTARGET_TRACKING_SAMPLE=ON
+make` to compile the program.
+> * After entering g from the keyboard, developer can create a KCF tracker; enter s choose the object to track, ESC for exit.
+
+#### 1. Specify The Target
+In order to specify the target easily, OSDK provides the `TrackingUtility` class, which is used to obtain the target object and tracking status.
 
 ```c++
-tracker = new KCFTracker(true, true, false, false);
-tracker->init(roi, frame);
+tracker = new KCFTracker (true, true, false, false);
+tracker-> init (roi, frame);
 ```
 
-#### 2. 获取目标对象 
-目标跟踪算法根据视觉传感器或相机每一帧的图像，确定目标图像的位置并计算目标对象移动的距离（单位：1 px）。
+#### 2. Get The Object
+The target tracking algorithm calculates the distance based on the position of the image (unit: 1 px).
+
 ```c++
-/*获取目标对象*/
-roi = tracker->update(frame);
-/*确定目标对象移动的位置*/
-dx = (int)(roi.x + roi.width/2  - mainImg.width/2);
-dy = (int)(roi.y + roi.height/2 - mainImg.height/2);
+/* Get the object */
+roi = tracker-> update (frame);
+/* Calculates the distance */
+dx = (int) (roi.x + roi.width / 2-mainImg.width / 2);
+dy = (int) (roi.y + roi.height / 2-mainImg.height / 2);
 ```
 
-#### 3. 计算云台转动角度
-根据目标对象移动的状态，计算云台所需改变的偏航角度和俯仰角度，并将该角度发送给`DJI::OSDK::Gimbal::SpeedData gimbalSpeed;
-`。
-* 目标对象每变化10个像素的位置，无人机云台转动1度/秒。
-* 若目标对象变动的距离小于10像素，无人机的云台将不会转动。      
+#### 3. Calculate The Rotation
+According to the moving state of the target object, calculate the yaw angle and pitch angle that the gimbal needs to change, and send the angle to `DJI::OSDK::Gimbal::SpeedData gimbalSpeed;`.
+
+* 1 degree/second for 10 pixels
+* If less than 10 pixels, the drone's gimbal will not rotate.
 
 ```c++
-DJI::OSDK::Gimbal::SpeedData gimbalSpeed;
-gimbalSpeed.roll     = 0;
-gimbalSpeed.pitch    = pitchRate;
-gimbalSpeed.yaw      = yawRate;
+DJI :: OSDK :: Gimbal :: SpeedData gimbalSpeed;
+gimbalSpeed.roll = 0;
+gimbalSpeed.pitch = pitchRate;
+gimbalSpeed.yaw = yawRate;
 gimbalSpeed.gimbal_control_authority = 1;
-vehicle->gimbal->setSpeed(&gimbalSpeed);
+vehicle-> gimbal-> setSpeed ​​(& gimbalSpeed);
 ```
 
 
-## 使用获取相机RGB 图像的功能
-#### 以轮询的方式获取RGB 图像
-在主线程中以轮询的方式获取RGB 图像。
-* 1. 创建主线程
-调用`vehicle->advancedSensing->startFPVCameraStream()`接口创建一个线程，用于读取相机原始的码流并解码成图像。
+## Get The RGB Image
+#### Polling
+Obtain RGB images by polling in the main thread.
+* 1. Create the main thread     
+Call the `vehicle-> advancedSensing-> startFPVCameraStream ()` interface to create a thread for reading the original code stream of the camera and decoding it into an image.
 
-* 2. 检查码流状态    
-开发者在主循环中，需调用`vehicle->advancedSensing->newFPVCameraImageIsReady()`接口，检查相机码流的状态，若相机中有可用的码流，则调用`vehicle->advancedSensing->getFPVCameraImage(fpvImage)` 获取该图像。
->**说明：** 若开发者安装了OpenCV 库，则可通过`show_rgb`函数调用`cv::imshow()`接口显示解码后的RGB 图像。
+* 2. Check the stream status      
+In the main loop, the developer needs to call the `vehicle-> advancedSensing-> newFPVCameraImageIsReady ()` interface to check the status of the camera’s stream. If there is a stream available in the camera, then call `vehicle-> advancedSensing-> getFPVCameraImage (fpvImage ) `Get the image.
+> **NOTE** If the developer installs the OpenCV library, the `cv::imshow ()` interface can be called through the `show_rgb` function to display the RGB Image which decoded.
 
-* 3. 销毁线程    
-调用`vehicle->advancedSensing->stopFPVCameraStream()` 接口，断开与相机的链接，销毁读取相机码流的线程。
+* 3. Destroy the thread     
+Call the `vehicle-> advancedSensing-> stopFPVCameraStream ()` interface to disconnect the camera and destroy the thread that reads the camera code stream.
 
-#### 以回调函数的方式获取RGB 图像
-通过回调函数的方式获取RGB 图像。
-* 1. 创建获取相机码流的线程   
-调用`vehicle->advancedSensing->startFPVCameraStream(&show_rgb, NULL)`接口，创建获取相机码流的线程，同时在该接口中注册回调函数`show_rgb`，用于处理接收到的码流。
-* 2. 销毁线程     
-调用`vehicle->advancedSensing->stopFPVCameraStream()`接口，断开与相机的连接，销毁读取相机码流的线程。     
+#### Callback
+Get the RGB image through the callback function.
+* 1. Create a thread to get the camera’s stream     
+Call the `vehicle-> advancedSensing-> startFPVCameraStream (& show_rgb, NULL)` interface to create a thread to get the camera code stream, and register the callback function `show_rgb` in this interface to process the received code stream.
+* 2. Destroy the thread    
+Call the `vehicle-> advancedSensing-> stopFPVCameraStream ()` interface to disconnect from the camera and destroy the thread that reads the camera code stream.
 
-## 使用获取相机H.264 码流的功能
-#### 1. 控制应用程序获取相机H.264 码流
-控制应用程序接收指定相机的H.264 码流。
+## Get the H.264 Stream
+#### 1. Get the camera H.264 stream  
+Control the application to receive the H.264 stream of the specified camera.
 
 ```C++
 switch (inputChar) {
@@ -174,8 +178,8 @@ switch (inputChar) {
 }
 ```
 
-#### 2. 保存或处理H.264 码流
-基于OSDK 开发的应用程序获取H.264 码流后，即可将获得的码流保存在机载计算机本地，文件名为`userData`，用户可对保存在机载计算机中的H.264 码流执行所需的操作。
+#### 2. Save or Process H.264 stream
+After obtaining the H.264 stream, the application developed based on OSDK would save the H.264 stream and the file name is `userData` for developer to perform.
 
 ```c++
 void liveViewSampleCb(uint8_t* buf, int bufLen, void* userData) {
@@ -188,15 +192,15 @@ void liveViewSampleCb(uint8_t* buf, int bufLen, void* userData) {
 }
 ```
 
-开发者获取指定相机的H.264 码流后，使用`ffplay FPV.h264`命令即可播放所获取的H.264 文件。
+After obtains the H.264 stream, developer could use `ffplay FPV.h264` to play the H.264 file which obtained.
 
-## 常见问题
-#### 解码器解码时出现错误。
-受计算平台算力的制约，基于OSDK 开发的应用程序在编解码时可能会出现如下问题：
-* 解码速度较慢：解码器在解码第一帧时需要一段时间时间
-* 帧丢失：计算平台算力不足
-* 使用FFmpeg 解码时出现报错：请在Ubuntu 16.04 上尝试解码，且确认运行解码器的应用程序正确安装了RNDIS、USB及网口驱动，确保应用程序能够正确识别M210 系列和M300 RTK 的无人机。
+## FAQ
+#### An error occurred while the decoder was decoding.
+Restricted by the computing power of the computing platform, the applications developed based on OSDK may have the following problems when encoding and decoding:
+* Slow decoding speed: the decoder takes a while to decode the first frame
+* Frame loss: insufficient computing power on the computing platform
+* An error occurs when decoding using FFmpeg: Please try to decode on Ubuntu 16.04, and make sure that the application running the decoder is correctly installed with RNDIS, US B and network port drivers to ensure that the application can correctly identify the M210 series and M300 RTK. Man-machine.
 
-## 适用产品
-* Matrice 300 RTK 
-* Matrice 210 V2 系列
+## Products
+* Matrice 300 RTK
+* Matrice 210 V2 series

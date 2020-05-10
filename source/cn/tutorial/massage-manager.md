@@ -184,7 +184,7 @@ keywords: [广播, 广播频率, 消息订阅, 订阅]
 
 ## 使用消息订阅功能
 #### 1. 验证消息订阅功能
-```c+
+```c++
     ACK::ErrorCode subscribeStatus;
     subscribeStatus = vehicle->subscribe->verify(timeout);
     if (ACK::getError(subscribeStatus) != ACK::SUCCESS) {
@@ -194,7 +194,7 @@ keywords: [广播, 广播频率, 消息订阅, 订阅]
 ```
 
 #### 2. 消息订阅功能初始化
-指定订阅项、订阅频率、包编号、数据大小
+初始化消息订阅功能后，开发者需指定订阅项、订阅频率、包编号、数据大小。
 ```c+
     bool enableTimestamp = false;
     bool pkgStatus = vehicle->subscribe->initPackageFromTopicList(
@@ -228,9 +228,12 @@ keywords: [广播, 广播频率, 消息订阅, 订阅]
   }
 ```
 
+开发者可选择一组“主题”或“订阅”数据集，将它们添加到“订阅”包中，并配置相应的订阅频率。用户可以通过DJI Onboard API配置五个数据包。同时可为每个数据包设置单独的频率，OSDK 为开发者提供了300 字节的缓冲区，允许用户根据需要为每个软件包添加较多的订阅项。
 
-您可以选择一组“主题”或“订阅”数据集，将它们添加到“订阅”包中，并配置该包以达到订阅频率。用户可以通过DJI Onboard API配置五个软件包。每个软件包可以设置为单独的频率，并具有300字节的固定大小的缓冲区，允许用户根据需要为每个软件包添加尽可能多的订阅项。
-
-Output 
-[![Telemetry output](../../images/samples/telemetry_output.png)](../../images/samples/telemetry_output.png)
+<div>
+<div style ="text-align: center"> <p> 图1. 消息订阅 </p>
+</div>
+<div style ="text-align: center"> <p> <span>
+      <img src ="../../images/samples/telemetry_output.png"width ="600"style ="vertical-align: middle"alt /> </span> </p>
+</div> </div>
 

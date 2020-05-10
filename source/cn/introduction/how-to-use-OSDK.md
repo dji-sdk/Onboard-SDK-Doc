@@ -65,8 +65,8 @@ keywords: [注册, 选购, 入门, 学习, 进阶, 高级]
 * 在使用OSDK 开发应用程序前，请先阅读[开发须知](../quickstart/attention.html)中的内容，避免因操作不当损毁飞行平台或计算平台；
 * [连接](../quickstart/device-connection.html)飞行平台、计算平台、第三方传感设备和计算机；
 * [安装](../quickstart/development-environment.html)开发OSDK 的软件，准备相关工具链和库；
+* 通过[跨平台移植](../quickstart/porting.html)(如有需要)，将基于OSDK 开发的应用程序移植到不同的软硬件平台上；
 * [编译](../quickstart/run-the-sample.html)示例代码，通过运行示例程序，了解使用OSDK 的方法；
-* 通过[跨平台移植](../quickstart/porting.html)，将基于OSDK 开发的应用程序移植到不同的软硬件平台上；
 * 根据[开发引导](../quickstart/integrateOSDK.html)中的文档，了解OSDK 的工作原理和接口调用方式，快速实现所需使用的应用功能。
 
 #### 开发功能完善的应用程序

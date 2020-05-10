@@ -34,10 +34,10 @@ When not using advanced vision functions, the onboard computer only needs to com
 When using advanced vision functions, the onboard computer needs to obtain the image data of the drone camera through the USB interface. Developers need to follow the function prototype in the `OsdkPlatform_RegHalUSBBulkHandler()` to implement and register the function that fits the Hal layer into the application.
 
 ### Osal
-Osal (Operating System Abstraction Layer) is an OSDK operating system abstraction layer, located between the the application and the operating system. Developers need to follow the function prototype in the `PsdkPlatform_RegOsalHandler()` interface to implement and register the functions that adapt the Osal layer to the application, so that applications developed based on OSDK can directly access the operating system and operating system kernel resources through the Osal layer To port applications to different operating systems.
+Osal (Operating System Abstraction Layer) is an OSDK operating system abstraction layer, located between the application and the operating system. Developers need to follow the function prototype in the `PsdkPlatform_RegOsalHandler()` interface to implement and register the functions that adapt the Osal layer to the application, so that applications developed based on OSDK can directly access the operating system and operating system kernel resources through the Osal layer To port applications to different operating systems.
 
-#### Thread function
-To use the thread mechanism to manage the the application to perform the corresponding tasks, developers need to implement the functions of creating threads, destroying threads, and thread sleep.
+#### Thread
+To use the thread mechanism to manage the application to perform the corresponding tasks, developers need to implement the functions of creating threads, destroying threads, and thread sleep.
 
 * Create thread:
 
@@ -50,7 +50,7 @@ E_OsdkStat (*TaskCreate)(T_OsdkTaskHandle *task,
 * Destruction thread: `E_OsdkStat (*TaskDestroy)(T_OsdkTaskHandle task)`
 * Thread sleep: `E_OsdkStat (*TaskSleepMs)(uint32_t timeMs)`
 
-#### Mutually exclusive lock
+#### Mutex
 Mutex is a mechanism used to prevent multiple threads from reading and writing to common resources (such as shared memory, etc.) on the same queue, counter, and interrupt handler at the same time. Use the mutex mechanism to manage the payload control program，developer needs to develop functions such as the mutex create, mutex destroys, mutex lock, and unlock.
 
 * Mutex Create:`E_OsdkStat (*MutexCreate)(T_OsdkMutexHandle *mutex)`  
@@ -78,7 +78,7 @@ Get the time of the system (ms):`E_OsdkStat OsdkOsal_GetTimeMs(uint32_t *ms);`
 * Apply：`void *OsdkOsal_Malloc(uint32_t size);`
 * Free：`void OsdkOsal_Free(void *ptr)`
 
-## Develop with the Porting
+## Develop With The Porting
 ### 1. Initialization
 After creating the project file, please call the following interface to register the interface functions of the hardware platform and operating system to the application developed based on OSDK, **otherwise** the application developed using OSDK **will not be portable to other hardware platforms And on the operating system**.
 
@@ -91,7 +91,7 @@ E_OsdkStat OsdkPlatform_RegHalUSBBulkHandler(const T_OsdkHalUSBBulkHandler *halU
 ```
 
 
-### 2. Load files
+### 2. Load Files
 #### Hal
 * Linux/ROS：osdkhal_linux.c  
 * STM32F4：osdkhal_stm32.c
@@ -99,7 +99,7 @@ E_OsdkStat OsdkPlatform_RegHalUSBBulkHandler(const T_OsdkHalUSBBulkHandler *halU
 * Linux/ROS：osdkosal_linux.c  
 * STM32F4：osdkosal_stm32.c
 
-### 3. Register the port module
+### 3. Register The Port Module
 #### Hal 
 ```c++
 #ifdef ADVANCED_SENSING
@@ -119,28 +119,50 @@ if(DJI_REG_OSAL_HANDLER(&osalHandler) != true) {
 ## FreeRTOS
 To port applications developed based on OSDK to the FreeRTOS platform, you need to obtain the kernel source code of FreeRTOS first.
 
-#### 1. Get the porting code
+#### 1. Get The Porting Code
 
-* Download and unzip the FreeRTOS compressed package [V10.2.1](https://www.freertos.org/a00104.html), the main directory after the code is decompressed is shown below:
-![FreeRTOS_code_Main Directory](../images/FreeRTOS_code1.png)
+* Download and unzip the FreeRTOS compressed package [V10.2.1](https://www.freertos.org/a00104.html), the main directory after the code is decompressed is shown below.
+<div>
+<div style="text-align: center"><p>Figure 2.FreeRTOS Main Directory  </p>
+</div>
+<div style="text-align: center"><p><span>
+      <img src="../images/FreeRTOS_code1.png" width="500" alt/></span></p>
+</div></div>
+
 
 * Key files
-   * Porting FreeRTOS core code: Copy all files under `/FreeRTOS/Source/` to `onboard-sdk/sample/platform/STM32/OnBoardSDK_STM32/OS/FreeRTOS/`.        
-
-   File contents of `/FreeRTOS/Source/`:     
-   ![FreeRTOS transplant file screenshot](../images/FreeRTOS1.png)
+   * Porting FreeRTOS core code     
+   Copy all files under `/FreeRTOS/Source/` to `onboard-sdk/sample/platform/STM32/OnBoardSDK_STM32/OS/FreeRTOS/`.        
+   <div>
+<div style="text-align: center"><p>Figure 3. FreeRTOS Transplant File   </p>
+</div>
+<div style="text-align: center"><p><span>
+      <img src="../images/FreeRTOS1.png" width="500" alt/></span></p>
+</div></div>
     
-   * Migrating key configuration files: copy the `FreeRTOSConfig.h` file in`/FreeRTOS/Demo/CORTEX_M4F_STM32F407ZG-SK/`to` onboard-sdk/sample/platform/STM32/OnBoardSDK_STM32/OS/FreeRTOS/include` directory.       
+   * Copy the configuration files       
+    copy the `FreeRTOSConfig.h` file in`/FreeRTOS/Demo/CORTEX_M4F_STM32F407ZG-SK/`to` onboard-sdk/sample/platform/STM32/OnBoardSDK_STM32/OS/FreeRTOS/include` directory.       
    The file location of `FreeRTOSConfig.h`:     
-   ![FreeRTOS_config_file location](../images/FreeRTOS_config1.png)
-  
+<div>
+<div style="text-align: center"><p>Figure 4. FreeRTOS Config File</p>
+</div>
+<div style="text-align: center"><p><span>
+      <img src="../images/FreeRTOS_config1.png" width="500" alt/></span></p>
+</div></div>
 
-#### 2. Modify key configuration information
-Modify key information in `FreeRTOSConfig.h` file
+
+#### 2. Modify Key Config Information
+Modify key information in `FreeRTOSConfig.h`   
   * Change`#ifdef __ICCARM__` to `#if defined (__ICCARM__) || defined (__CC_ARM) || defined (__GNUC__)`     
   * Change`#defined configUSE_IDLE_HOOK    2`to`#defined configUSE_IDLE_HOOK    2`     
   * Change`#define configTOTAL_HEAP_SIZE     ((size_t)(75*1024))`to`#define configTOTAL_HEAP_SIZE      ((size_t)(60*1024))`   
   * Change`#define configCHECK_FOR_STACK_OVERFLOW      2`to`#define configCHECK_FOR_STACK_OVERFLOW      0`    
   * Change`#define configUSE_MALLOC_FAILED_HOOK       1`to`#define configUSE_MALLOC_FAILED_HOOK       0`    
   The comparison of the FreeRTOSConfig.h is as below:
-  ![FreeRTOSConfig modification comparison](../../images/FreeRTOSConfig1.png)
+        <div>
+<div style="text-align: center"><p>Figure 5. Modification Comparison
+</p>
+</div>
+<div style="text-align: center"><p><span>
+      <img src="../images/FreeRTOSConfig1.png" width="500" alt/></span></p>
+</div></div>

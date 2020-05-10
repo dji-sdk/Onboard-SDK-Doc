@@ -1,133 +1,136 @@
 ---
-title: SDK 互联互通
+title: SDK Interconnection
 date: 2020-05-08
 version: 4.0.0
-keywords: [PSDK, OSDK, 通信, SDK 互联互通, MOP, SDK 互联互通]
+keywords: [PSDK, OSDK, communication, SDK interconnection, MOP]
 ---
-## 概述
-基于DJI OSDK 开发的应用程序能够与基于MSDK 开发的移动端APP 和基于PSDK 开发的负载设备相互通信，如用户从基于MSDK 开发的移动端APP 向无人机发送控制指令，控制负载设备和机载计算机执行指定的任务；基于OSDK 开发的应用程序控制负载设备执行所需的动作，向基于MSDK 开发的移动端APP 发送状态信息；基于PSDK 开发的负载设备向基于MSDK 开发的移动端APP 和基于OSDK 开发的应用程序发送视频码流或文件等类型的数据，如 图1.SDK 互联互通 所示。    
+> **NOTE** This article is **Machine-Translated**. If you have any questions about this article, please send an <a href="mailto:dev@dji.com">E-mail </a>to DJI, we will correct it in time. DJI appreciates your support and attention.     
+
+## Overview
+The application developed based on DJI OSDK can communicate with the Mobile App and the Payload, for example, user sends commands to the drone from the Mobile App to control the payload, and onboard computer; the application could control the payload and sends status to the Mobile app; the payload could send the data to Mobile App and the application such as video streams or files, as shown in Figure 1.
 
 <div>
-<div style="text-align: center"><p>图1.SDK 互联互通 </p>
+<div style="text-align: center"><p>Figure1. SDK Interconnection. </p>
 </div>
 <div style="text-align: center"><p><span>
-      <img src="../../images/MOP.png" width="500" alt/></span></p>
+      <img src="../../images/MOP-en.png" width="500" alt/></span></p>
 </div></div>
 
-使用SDK 互联互通功能，开发者能够：
-* 按需动态创建所需使用的传输通道
-* 根据业务需求，创建信道传输指定业务的数据
-* 全双工通信，数据收发同步
+Using SDK Interconnection, developers could:
+* Create the transmission channels required dynamically
+* Create the channel transmit the specified data
+* Full-duplex communication
 
-## 基础概念
-> **本文所指**
-> * 客户端：根据指定的信道ID，发起信道连接的一端，如基于MSDK 开发的移动端APP。
-> * 服务器端：根据用户的实际需求，创建信道并指定信道类型ID 的一端，如基于OSDK 开发的应用程序。
+## Concept
+> **NOTE**
+> * Client: According to the channel ID, connect to the Others, such as Mobile App.
+> * Server: Create channel and specify the channel type and ID, such as Payload.
 
-#### 传输方式
-* 可靠传输
-为确保基于不同SDK 开发的应用程序和设备间能够实现可靠传输，DJI SDK 为开发者提供可靠传输的传输方式，在该方式下，DJI SDK 内部采用了丢包重传、超时重发及错误检验等机制，确保不同SDK 间收发的数据准确可靠。
-  * 数据可靠：以可靠传输的方式传输数据的双方，在发送和接收数据时需使用校验函数检验传输数据的正确性，同时DJI SDK 使用加密算法加密所传输的数据，确保传输数据的安全性。
-  * 传输可靠：使用DJI SDK 的数据传输功能拥有计时器和ACK 机制，能够在数据传输超时后将重发该数据，确保对端能够正常接收所发送的数据，防止数据意外丢失；此外，以可靠传输的方式传输数据时，发送端将为所发送的数据编号，接收端依靠数据编号能够重排接收到的乱序数据，确保数据传输的可靠性。
-* 不可靠传输
-以不可靠的传输方式传输数据时，使用不同SDK 所开发的应用程序和设备间能够以更快的速度传输数据，但无法保证可靠地传输数据。
+#### Transfer Method
+* Reliable Transmission
+In order to translate the data reliable between the applications which developed based on different SDK, DJI SDK provide the reliable transmission method. In this mode, DJI SDK adopts retransmission、detection and other mechanisms to ensure that the data is accurate and reliable.
+   * Content reliable: Use the check and encryption algorithm mechanism to encrypt the data transmitted.
+   * Transmission reliable: The data transmission using the timer and ACK mechanism, which can retransmit the data after times out, the sender will send the data number, and the receiver can rearrange the received data depending the data number make the data transmission reliable.
+* Unreliable Transmission
+When transmitting data in an unreliable transmission mode, data can be transmitted at a faster speed between applications, but cannot guarante transmission‘s reliable .
 
-#### 对象指定
-DJI SDK 的互联互通功能，通过设备类型和设备槽位能够准确指定无人机上所需通信的设备或模块。
-* 设备类型：为方便开发者识别对端的身份和类型，更好地区分数据传输的对象，数据传输功能根据DJI SDK 提供了MSDK、OSDK和PSDK 三种设备类型。
-> **说明：** 在SDK 互联互通功能中，仅基于OSDK 开发的应用程序和基于PSDK 开发的负载设备可对外开放信道供基于MSDK 开发的移动端APP 连接和使用，或相互连接以传输数据。
+#### Object Specified
+The interconnection function of the DJI SDK can accurately specify the devices or modules that need to communicate on the drone through the device type and device slot.
+* Device type: In order to facilitate developers to identify the identity and type of the peer end, and better distinguish the data transmission objects, the data transmission function provides three device types of MSDK, OSDK and PSDK according to the DJI SDK.
 
-* 设备槽位：DJI 的无人机具有强大的扩展能力，开发者能够以多种拓展方式接入三台负载设备、双控以及机载计算机等设备，因此可使用不同的槽位区分移动端APP、负载设备和机载计算机当前所处的位置。
+> **NOTE** In the SDK interconnection, only applications developed based on OSDK and payload developed based on PSDK can creat the channels, the Mobile APP based on MSDK only can receive the data that connect to the peer.
 
-* 信道ID：为方便开发者选择和使用通信信道，区分同一个设备上的不同信道，DJI SDK 为互联互通功能提供了设置信道ID的功能，开发者创建信道时可为创建的信道指定ID。
-> **说明** 
-> * 仅基于OSDK 开发的应用程序和基于PSDK 开发的负载设备在使用数据传输功能时，需要为创建的信道指定信道ID。
-> * 开发者可以根据实际的使用需求，在创建信道时，为所创建的信道指定信道ID，最大支持设置65535 个信道。
+* Device Slots: DJI's drones have powerful expansion capabilities. Developers can access more than three payload, the Mobile App has two method, and onboard computer has variety expansion methods. so different slots can be used to distinguish Mobile APP, payload, and onboard computer.
 
-#### 信道管理
-为方便开发者快速开发出功能强大且可靠的应用程序和设备，无需关注SDK 互联互通功能底层的工作逻辑，DJI SDK 为互联互通功能赋予了强大的通信管理能力：
-* 链路管理：管理链路的接入、关闭、销毁、重连及拥塞管理等
-* 数据管理：数据转发、数据读写、流量控制、数据校验、乱序重排及丢包重传等
-> **说明：** 为方便开发者使用SDK 互联互通功能，与现有的接口区分，DJI MSDK 使用“Pipeline” 表示信道管理功能。
+* Channel ID: In order to help developers select and use communication channels with different channels on the same object, DJI SDK use the channel ID for distinguished. Developers can specify the ID for the created channel when creating the channel.
 
-#### 信道带宽
-* 可靠传输
-  * MSDK 上行（向服务器端发送数据）为3KB/S；下行（从服务器端接收数据）为250KB/S 
-  * OSDK 与PSDK 间的数据传输速率为500KB/S 
-  
-## 使用SDK 互联互通功能(MSDK 端)
-使用MSDK 开发的移动端APP 使用SDK 互联互通功能时，能够根据用户的使用需求，与指定的信道建立连接，实现数据的接收和发送；无需使用SDK 互联互通功能时，可断开已连接的信道。
+> **NOTE**
+> * Only applications developed based on OSDK and payload developed based on PSDK could specify the channel ID for the created channel.
+> * Developers can specify the channel ID for the created channel, the maximum is 65535.
 
-> **说明：** 基于MSDK 开发的移动端APP 仅能作为客户端，通过信道ID 与指定的信道建立连接。
+#### Channel Manager
+In order to help developer develop the powerful and reliable applications and devices without paying attention to the underlying working logic of the SDK interconnection, the DJI SDK provides powerful communication management mechanism:
+* Link management: link access, close, destroy, reconnect and congestion management, etc.
+* Data management: data forwarding, reading and writing, data verification, out-of-order reordering and packet loss retransmission, etc.
+> **NOTE** In order to help developers to use the SDK interconnection, to distinguish it from existing interfaces, DJI MSDK uses "Pipeline" to indicate channel management function.
 
-#### 1. 信道连接
-信道连接时，请使用如下接口指定信道传输方式和所需连接的信道ID 与指定的信道建立连接，并以阻塞回调的方式接收传输的数据。     
+#### Bandwidth
+* Reliable transmission
+   * MSDK upstream (sending data to server) is 3KB/S; downstream (receiving data from server) is 250KB/S
+   * The data transfer rate between OSDK and PSDK is 500KB/S
+  
+## Develop with SDK Interconnection (MSDK)
+Mobile App developed based on MSDK could use the SDK Interconnection to establish the connect with the specified channel ID.
 
-* iOS
+> **NOTE** The Mobile App developed based on MSDK can only used as the client to establish a connection with the specified channel by the channel ID.
+
+#### 1. Channel Connection
+When creating the channel, developer need use the following interface to specify the channel transmission mode and the channel ID to establish the connection with the specified channel, and receive the transmitted data in the blocking callback manner.
+
+* For iOS
 ```c
 - (void)connect:(uint16_t)Id pipelineType:(DJITransmissionControlType)transferType withCompletion:(void (^_Nullable)(DJIPipeline *_Nullable pipeline, NSError *_Nullable error))completion;
 ```
 
-* Java
+* For Android
 ```java
     void connect(int id, @NonNull TransmissionControlType transmissionType, @Nullable CommonCallbacks.CompletionCallback<PipelineError> callback);
 ```
 
-#### 2. 数据接收
-信道建立连接后，基于MSDK 开发的移动端APP 使用如下接口接收对端发送数据。     
+#### 2. Receive Data 
+After connected the channel , the Mobile App developed based on MSDK uses the following interface to receive data sent by the peer.
 
-* iOS
+* For iOS
 ```c
 - (NSData *)readData:(uint32_t)readLength error:(NSError **)error;
 ```
 
-* Java
+* For Android
 ```java
 int readData(byte[] buff, int length);
 ```
 
-#### 3. 数据发送
-信道建立连接后，基于MSDK 开发的移动端APP 使用如下接口向对端发送数据。  
->**说明：** 为实现良好的数据传输效果，建议每次传输的数据不超过1KB。
-* iOS
+#### 3. Send Data 
+After connected the channel, the mobile APP developed based on MSDK uses the following interface send data to the peer.
+> **NOTE** It is recommended that the size of the transmitted data wouldn't exceed 1KB.
+
+* For iOS
 ```c
 - (int32_t)writeData:(NSData *)data error:(NSError **)error;
 ```
-* Java
+* For Android
 ```java
 int writeData(byte[] data);
 ```
 
-#### 4. 关闭信道
-通信结束后，请使用如下接口断开已连接的信道。
-> **说明** 
-> * 执行信道关闭的操作后，基于MSDK 开发的移动端APP 将清除本地的缓存信息。
-> * 信道关闭后，DJI SDK 将自动销毁已创建的信道，释放信道所占用的系统资源。
+#### 4. Close
+After the communication, please use the following interface to disconnect the connected channel.
+> **NOTE**
+> * After closing the channel, the mobile APP developed based on MSDK will clear the local cache.
+> * After close the channel, the DJI SDK will automatically destroy the created channel and release the system resources occupied.
 
-* iOS
+* For iOS
 ```c
 - (void)disconnect:(uint16_t)Id withCompletion:(DJICompletionBlock)completion;
 ```
 
-* Java
+* For Android
 ```java
     void disconnect(int id, @Nullable CommonCallbacks.CompletionCallback<PipelineError> callback);
 ```
 
-## 使用SDK 互联互通功能(OSDK 端)
-仅使用Linux 平台的机载计算机支持开发者基于OSDK 开发互联互通功能。       
-基于OSDK 开发的应用程序既能作为客户端，也可作为服务器端：
-* 作为客户端时，用户可通过信道ID 与指定的信道建立连接。
-* 作为服务端时，基于OSDK 开发的应用程序可根据用户的使用需求创建信道并指定信道ID，仅当服务器端与客户端建立连接后，服务器端方可读写数据。
+## Develop with SDK Interconnection (OSDK)
+Only the application which developed based on the OSDK execute on the Linux supports developer develop with SDK Interconnection and to be the client and server:
+* As a client, the user can establish the connection with the specified channel by the channel ID.
+* As a server, an application developed based on OSDK can create the channel and specify a channel ID. After establish the connection, the application could read or write data.
 
+#### 1. Initialization
+If the application developed based on OSDK deveoped with the SDK Interconnection, developer should initialize the SDK Interconnection module at first.
 
-#### 1. 初始化
-基于OSDK 开发的应用程序如需使用SDK 互联互通功能，需要先初始化SDK 互联互通模块。
+##### For Client
+When the application developed based on OSDK as the client, the onboard computer can be regarded as a payload of the drone, so please use the `PSDKManager` class in the DJI Payload SDK to initialize the SDK Interconnection.
 
-##### 作为客户端
-当基于OSDK 开发的应用程序作为客户端时，可将该机载计算机视为无人机的负载设备，因此，请使用DJI Payload SDK 中的PSDKManager 类初始化SDK 互联互通功能。
-
-```c
+```c++
 ErrorCode::ErrorCodeType ret = vehicle->psdkManager->initPSDKModule(
     PAYLOAD_INDEX_0, "Main_psdk_device");
 if (ret != ErrorCode::SysCommonErr::Success) {
@@ -136,8 +139,8 @@ if (ret != ErrorCode::SysCommonErr::Success) {
 }
 ```
 
-##### 作为服务器端
-当基于OSDK 开发的应用程序作为服务器端时，需要先初始化Vehicle 类，并通过调用vehicle->mopServer 中的accept 接口阻塞指定的信道ID。
+##### For Server
+When the application developed based on the OSDK is used as the server, developer need initialize the Vehicle class first, and block the specified channel ID by calling the accept interface in `vehicle->mopServer`.
 
 ```c
 #define TEST_MO_PIPELINE_ID 20
@@ -152,9 +155,8 @@ if (ret != ErrorCode::SysCommonErr::Success) {
 ......
 ```
 
-#### 2. 获取客户端对象的指针
-**仅当基于OSDK 开发的应用程序作为客户端时**，需获取使用SDK 互联互通功能客户端的指针，并通过该指针创建数据传输的信道或读写所需传输的数据。
-      
+#### 2. Get The Pointer Of The Client
+**Only the application developed based on OSDK is used as the client**, developer need obtain the pointer of the client, and use this pointer to create the channel to read and write the data.   
 ```c
 MopClient *mopClient = NULL;
 ret = vehicle->psdkManager->getMopClient(PAYLOAD_INDEX_0, mopClient);
@@ -170,8 +172,8 @@ if (!mopClient) {
 }
 ```
 
-#### 3. 信道连接
-**仅当基于OSDK 开发的应用程序作为客户端时**，需指定所需连接的信道ID 和信道类型，与指定的信道建立连接。
+#### 3. Channel Connection
+**Only the application developed based on OSDK is used as the client**, developer need specify the channel ID and channel type to establish the connection with the specified channel.
 
 ```c
 #define TEST_OP_PIPELINE_ID 15
@@ -186,11 +188,11 @@ if ((mopClient->connect(TEST_OP_PIPELINE_ID, RELIABLE, OP_Pipeline)
 }
 ```
 
-#### 4. 数据接收
-创建信道后，开发者可在该信道上以阻塞回调（同步回调）的方式接收对端传输的数据。
+#### 4. Receive Data 
+After created the channel, developer could receive data transmitted by the peer in the blocking callback (synchronous callback) on the channel.
 
-##### 客户端接收数据
-仅当基于OSDK 开发的应用程序作为客户端时，请使用如下接口接收服务器端发送的数据。
+##### For Client
+Only the application developed based on OSDK as the client, please use the following interface to receive the data sent by the server.
 
 ```c
 MopErrCode mopRet;
@@ -200,9 +202,8 @@ MopPipeline::DataPackType readPack = {recvBuf, 1024};
 mopRet = OP_Pipeline->recvData(readPack, &readPack.length);
 ......
 ```
-
-##### 服务器端接收数据
-仅当基于OSDK 开发的应用程序作为服务器端时，请使用如下接口读取客户端发送的数据。
+##### For Server
+Only the application developed based on OSDK as the server, please use the following interface to receive the data sent by the client.
 
 ```c
 MopErrCode mopRet;
@@ -214,11 +215,11 @@ mopRet = MO_Pipeline->recvData(readPack, &readPack.length);
 
 ```
 
-#### 5. 数据发送
-创建信道后，开发者可在该信道上向对端发送数据。
+#### 5. Send Data 
+After creating the channel, developers could send data to the peer.
 
-##### 客户端发送数据
-仅当基于OSDK 开发的应用程序作为客户端时，请使用如下接口向服务器端发送数据。
+##### For Client
+Only the application developed based on OSDK as the client, please use the following interface send data to the peer.
 
 ```c
 MopErrCode mopRet;
@@ -229,8 +230,9 @@ mopRet = OP_Pipeline->sendData(reqPack, &reqPack.length);
 ......
 ```
 
-##### 服务器端发送数据
-仅当基于OSDK 开发的应用程序作为服务器端时，请使用如下接口向客户端发送数据。
+##### For Server
+Only the application developed based on OSDK as the server, please use the following interface send data to the peer.
+
 
 ```c
 MopErrCode mopRet;
@@ -240,12 +242,11 @@ MopPipeline::DataPackType reqPack = {sendBuf, 1024};
 mopRet = MO_Pipeline->sendData(reqPack, &reqPack.length);
 ......
 ```
+#### 6. Close
+After the communication, please use the following interface to disconnect the connected channel and release the system resources occupied by the channel.
 
-#### 6. 关闭信道
-通信结束后，请使用如下接口断开与指定信道的连接，释放信道占用的系统资源。
-
-##### 客户端关闭信道
-仅当基于OSDK 开发的应用程序作为客户端时，请使用如下接口关闭已创建的信道。
+##### For Client
+Only the application developed based on OSDK as the client, please use the following interface to close the created channel.
 
 ```c
 if (mopClient->disconnect(TEST_OP_PIPELINE_ID) != MOP_PASSED) {
@@ -254,8 +255,10 @@ if (mopClient->disconnect(TEST_OP_PIPELINE_ID) != MOP_PASSED) {
   DSTATUS("Disconnect mop pipeline id(%d) successfully", TEST_OP_PIPELINE_ID);
 }
 ```
-##### 服务器端关闭信道
-仅当基于OSDK 开发的应用程序作为服务器端时，请使用如下接口关闭已创建的信道。
+
+##### For Server
+Only the application developed based on OSDK as the server, please use the following interface to close the created channel.
+
 ```c
 if (vehicle->mopServer->close(TEST_MO_PIPELINE_ID) != MOP_PASSED) {
   DERROR("MOP Pipeline disconnect pipeline(%d) failed", TEST_MO_PIPELINE_ID);
@@ -264,63 +267,68 @@ if (vehicle->mopServer->close(TEST_MO_PIPELINE_ID) != MOP_PASSED) {
 }
 ```
 
-## 使用SDK 互联互通功能(PSDK 端)
-仅使用Linux 平台开发的负载设备支持开发者基于PSDK 开发互联互通功能。       
-基于PSDK 开发的应用程序只可作为服务器端，可根据用户的使用需求创建信道并指定信道ID，仅当与客户端创建连接后，方可读写数据。
+## Develop with SDK Interconnection (PSDK)
+Only the payload which developed based on the OSDK execute on the Linux supports developer develop with SDK Interconnection and to be the server.
 
-#### 1. SDK 互联互通功能初始化
-基于PSDK 开发的负载设备如需使用SDK 互联互通功能，需要先初始化SDK 互联互通模块。
+> **NOTE** The sample of the PSDK developed on the Manifold 2-C/G, with the network port, make ensure that the network port of the development board is avilible.
+
+#### 1. Initialization
+If the application developed based on PSDK deveoped with the SDK Interconnection, developer should initialize the SDK Interconnection module at first.
 
 ```c
 T_PsdkReturnCode PsdkMopChannel_Init(void);
 ```
 
-#### 2. 创建信道
-基于PSDK 开发的负载设备根据用户指定的需求，创建相应的信道类型：可靠传输和不可靠传输。
+#### 2. Creat The Channel
+The payload developed based on PSDK creates channel will specified the channel's type: reliable or unreliable.
       
 ```c
 T_PsdkReturnCode PsdkMopChannel_Create(T_PsdkMopChannelHandle *channelHandle, E_PsdkMopChannelTransType trans);
 ```
 
-#### 3. 信道连接
-基于PSDK 开发的负载设备作为服务器端，在与对端建立连接时，需指定信道的ID，供客户端绑定；为方便同时与多个客户端建立连接，PSDK 提供了outChannelHandle 句柄。    
-1. 信道绑定    
-基于PSDK 开发的负载设备通过指定的ID 与客户端通信。        
+#### 3. Channel Connection    
+The payload developed based on PSDK as the server establish the connection with the peer, need specified the channel ID for the client to bind. To establishment the connection with multiple clients at the same time, PSDK provides the handle outChannelHandle.
+ 
+1. Channel Binding
+The payload developed based on PSDK use the channel ID to communicate with the client.
+
 ```c
 T_PsdkReturnCode PsdkMopChannel_Bind(T_PsdkMopChannelHandle channelHandle, uint16_t channelId);
 ```
-2. 接受连接        
-基于PSDK 开发的负载设备通过如下接口，接受对端发送的连接请求。  
+2. Accept The Connection
+The payload device developed based on PSDK accepts the connection request sent by the peer in the following interface.
+
 ```c
 T_PsdkReturnCode PsdkMopChannel_Accept(T_PsdkMopChannelHandle channelHandle, T_PsdkMopChannelHandle *outChannelHandle);
 ```
-> **说明：** 该接口为阻塞式的接口，当基于PSDK 的负载设备作为服务器端时，为方便同时与多个客户端建立连接，请在单独的线程中调用该接口。
+> **NOTE** This interface is the blocking interface. When the payload as the server to establishment the connection with multiple clients at the same time, please call this interface in a separate thread.
 
-#### 4. 数据接收
-创建信道后，开发者可在该信道上接收对端传输的数据。
+#### 4. Receive Data
+After created the channel, developer could receive the data sent by the peer。
+
 ```c
 T_PsdkReturnCode PsdkMopChannel_RecvData(T_PsdkMopChannelHandle channelHandle, uint8_t *data,  uint32_t len,  uint32_t *realLen);
 ```
 
-#### 5. 数据发送
-创建信道后，开发者可在该信道上向对端发送数据。
+#### 5. Send Data
+After created the channel, developer could send the data to the peer.
 
 ```c
 T_PsdkReturnCode PsdkMopChannel_SendData(T_PsdkMopChannelHandle channelHandle, uint8_t *data, uint32_t len, uint32_t *realLen);
 ```
 
-#### 6. 关闭信道
-通信结束后，请使用如下接口断开与指定信道的连接，释放信道占用的系统资源。
+#### 6. Close
+After the communication, please use the following interface to disconnect the connected channel and release the system resources occupied by the channel.
 
-* 关闭信道
-调用如下接口关闭已创建的信道，关闭后，该信道将无法收发数据，但可使与其他信道重新建立连接。
+* Close Channel
+Call the following interface to close the created channel. After that, the channel couldn’t send or receive data, but it can be re-established with other channels.
 
 ```c
 T_PsdkReturnCode PsdkMopChannel_Close(T_PsdkMopChannelHandle channelHandle);
 ```
 
-* 销毁信道
-调用如下接口销毁指定的信道。
+* Destroy The Channel
+Call the following interface to destroy the specified channel.
 ```c
 T_PsdkReturnCode PsdkMopChannel_Destroy(T_PsdkMopChannelHandle channelHandle);
 ```

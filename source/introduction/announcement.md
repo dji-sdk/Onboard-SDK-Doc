@@ -3,7 +3,6 @@ title: Announcement
 date: 2020-05-08
 keywords: [OSDK]
 ---
-
 ## OSDK 4.0 Released
 #### Hightlights
 * SDK Interconnection: Add MSDK/OSDK/PSDK interconnection feature to satisfy the needs of massive data communication.

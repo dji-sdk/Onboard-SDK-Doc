@@ -1,54 +1,62 @@
 ---
-title: 云台管理
+title: Gimbal Control
 date: 2020-05-08
 version: 4.0.0
-keywords: [云台管理, 欧拉角, 关节角, 云台状态, 云台姿态, 云台模式, 限位, 最大速度百分比, 角度控制, 速度控制]
+keywords: [Gimbal Control]
 ---
 
-## 概述
-使用OSDK开发的应用程序能够在**无人机飞行的过程中**，按照指定的逻辑控制云台的角度。
+> **NOTE** This article is **Machine-Translated**. If you have any questions about this article, please send an <a href="mailto:dev@dji.com">E-mail </a>to DJI, we will correct it in time. DJI appreciates your support and attention.     
 
-## 基础概念
-### 云台角度
-#### 云台关节与云台关节角  
-云台的关节如图1.云台关节 所示，云台关节是云台上带动负载设备转动的结构件：云台电机，云台关节角即云台电机转动的角度。本教程使用机体坐标系描述云台的关节角。    
+## Overview
+Using the "Gimbal Control" function of the OSDK, developers could control the gimbal execute the action according to the logic designed by developers.
+
+## Concept
+### Gimbal Angle
+#### Joint angle and attitude angle
+Figure 1 shows the joints of the gimbal. The joint of the gimbal is the motor to drive the payload. This tutorial uses the body coordinate system to describe the joint angle of the gimbal.  
 
 <div>
-<div style="text-align: center"><p>图1.云台关节 </p>
+<div style="text-align: center"><p>Figure1. Joint Angle  </p>
 </div>
 <div style="text-align: center"><p><span>
       <img src="../../images/joint-angle.png" width="220" alt/></span></p>
 </div></div>
   
-#### 云台姿态与云台姿态角
-云台的姿态如 图2.云台姿态 所示，根据用户的控制指令，云台能够调整姿态；云台姿态角即使用大地坐标系（NED，北东地坐标系）描述云台上**负载设备**的角度，该角度也称为欧拉角。
+#### Attitude and attitude angle
+Figure 2 shows the attitude of the payload, according to the control command, the gimbal could spin the payload to a different position. This tutorial uses the geodetic coordinate system (NED, North East Coordinate System) to describe the attitude angle of the payload, this angle is also called Euler-Angle.
 
 <div>
-<div style="text-align: center"><p>图2.云台姿态  </p>
+<div style="text-align: center"><p>Figure 2 Attitude Angle  </p>
 </div>
 <div style="text-align: center"><p><span>
       <img src="../../images/gimbal_up.png" width="500" alt/></span></p>
 </div></div>
    
 
-### 云台控制
-* 控制方式
-  * 绝对角度控制：使用OSDK 开发的云台根据用户的指令，在规定的时间内，从**当前的位置**转动到指定的位置。
-  * 速度控制：用户可控制使用OSDK 开发的云台的转动速度。  
+
+### Gimbal Control 
+#### Control Method 
+There are three control methods:
+* Absolute Angle Control     
+ According to the user's command, the gimbal will rotate from the current position to the specified position within a specified time.
+* Speed ​​Control     
+Users could control the rotation speed of the gimbal. 
   
-  > **说明** 
-  > * 在角度控制模式下，云台转动的时间受云台最大旋转速度和最大加速度限制，实际的转动角度受云台限位角度的限制。   
-  > * 在速度控制模式下，云台根据用户指定的速度转动0.5s，当云台转动到限位角时，将会停止转动。   
+  > **NOTE**
+    >* In the Angle Control, the rotation time of the gimbal is limited by the maximum rotation speed and maximum acceleration of the gimbal, and the actual rotation angle is limited by the limit angle of the gimbal.
+    > * In the Speed Control, the gimbal rotates for 0.5s according to the speed specified by the user. When the gimbal rotates to the limit angle, it will stop.
 
-* 云台模式：目前OSDK 的云台控制功能**仅支持**自由模式，在该模式下，当无人机的姿态改变时，云台将不会转动。
+* Gimbal mode     
+The current gimbal control function of OSDK **only supports** free mode, in this mode, when the drone's attitude changes, the gimbal will not rotate.
 
-### 云台状态信息
-使用OSDK 开发的应用程序能够获取指定云台当前的信息，详细信息请参见**OSDK API 文档**。
 
-## 使用云台管理功能
+### Gimbal’s Information
+Applications developed based on the OSDK can obtain the current information of the specified Gimbal. For details, please refer to **OSDK API Documentation**.
 
-#### 1. 云台控制功能模块初始化
-使用“云台控制”功能前，需要调用云台控制功能的类`GimbalManagerSyncSample`，创建云台控制功能的对象并初始化指定的云台。
+## Develop With GimbalManager
+
+#### 1. Initialization
+Befor using GimbalManager developer need call the class `GimbalManagerSyncSample` to create the object of the GimbalManager and initialize the gimbal specified.
 
 ```c++
 GimbalManagerSyncSample *g = new GimbalManagerSyncSample(vehicle);
@@ -64,8 +72,8 @@ ret = vehicle->gimbalManager->initGimbalModule(PAYLOAD_INDEX_1,
                                                 "Sample_gimbal_2");
 ```
 
-#### 2. 获取云台的状态信息
-创建云台控制功能的对象并初始化指定的云台后，即可获取用户指定的云台的信息。
+#### 2. Obtain The Information 
+After initial the GimbalManager developer could obtain the information of the gimbal.
 
 ```c++
 DSTATUS("Current gimbal %d angle (p,r,y) = (%0.2f°, %0.2f°, %0.2f°)", PAYLOAD_INDEX_0,
@@ -74,8 +82,8 @@ DSTATUS("Current gimbal %d angle (p,r,y) = (%0.2f°, %0.2f°, %0.2f°)", PAYLOAD
       g->getGimbalData(PAYLOAD_INDEX_0).yaw);
 ```
 
-### 3. 控制云台转动
-通过`GimbalManagerSyncSample`中指定的接口控制云台的姿态。
+### 3. Route The Gimbal
+Using the interface `GimbalManagerSyncSample` to control the attitude of the gimbal.
 
 ```c++
 GimbalModule::Rotation rotation;
@@ -87,8 +95,8 @@ GimbalModule::Rotation rotation;
         g->rotateSyncSample(PAYLOAD_INDEX_0, rotation);
 ```
 
-### 4. 控制云台回中
-使用OSDK 开发的应用程序支持将云台的俯仰轴和偏航轴转动至中位。
+### 4. Gimbal Reset
+The application developed based on OSDK support reset the pitch and yaw axes of the gimbal.
 
 ```c++
 g->resetSyncSample(PAYLOAD_INDEX_0);

@@ -1,84 +1,86 @@
 ---
-title: 时间同步
+title: Time Synchronization
 date: 2020-05-08
 version: 4.0.0
-keywords: [同步, 时间戳, IMU, INS, PPS, sync, shutter, GPS, RTK, NMEA]
+keywords: [Sync, Timestamp, IMU, INS, PPS, sync, shutter, GPS, RTK, NMEA]
 ---
+> **NOTE** This article is **Machine-Translated**. If you have any questions about this article, please send an <a href="mailto:dev@dji.com">E-mail </a>to DJI, we will correct it in time. DJI appreciates your support and attention.     
 
-## 概述
-OSDK 提供了时间同步功能，方便开发者通过使用基于OSDK 开发的应用程序同步传感器、记载计算机及无人机上的时间，实现传感器数据融合等功能；还支持同步无人机与GPS 系统的时间，实现精准定位等功能。
+## Overview
+OSDK provides the time synchronization for developers to synchronize the time in the sensors, onboard computer and the drone. It also supports the synchronization of time between drones and GPS systems.
 
->**说明** 
-> * 仅**具有RTK 功能的无人机**支持使用时间同步功能。
-> * 使用时间同步功能前，请通过移动端APP 确认无人机与RTK 或GPS 卫星间保持良好的通信状态，该移动端APP 可为DJI 发布的APP，如DJI Pilot，也可为基于MSDK 开发的移动端APP，如 图1.查看卫星通信状态 所示，若无人机与RTK 或GPS 卫星间的通信状态较差，基于OSDK 开发的应用程序将无法实现时间同步功能。  
+>**NOTE** 
+> * Only the **drone with RTK** support Time Synchronization.
+> * Before using the time synchronization function, please keep the communication status between the drone and the RTK satellite in the good condition from DJI Pilot or a Mobile APP developed based on MSDK APP, as shown in Figure 1.    
 <div>
-<div style="text-align: center"><p>图1.查看卫星通信状态 </p>
+<div style="text-align: center"><p>Figure 1 Communication Status </p>
 </div>
 <div style="text-align: center"><p><span>
       <img src="../../images/positioning_prerequisites.png" width="500" alt/></span></p>
 </div></div>
 
-## 时间同步
-时间同步是一种使用PPS 信号，通过与**GPS 卫星**通信，实现**无人机与GPS 系统时间同步**的功能；具有“时间同步”功能的应用程序，不仅方便用户快速分析传感器采样的数据，还能提高相机曝光时间的精准度，以及实现获取精准定位信息等高级功能；时间同步功能支持以1Hz 的频率获取RTK 数据，支持以5Hz 的频率获取GPS 数据。     
+## Time Synchronization
+Time synchronization is the function that uses PPS signals to synchronize with GPS satellites; the application developed with the "time synchronization" could improve the accuracy of the camera's exposure time and achieve precise positioning ，etc. this function support Developers obtain the RTK data in 1 Hz and GPS data in 5 Hz.
 
-OSDK 时间同步的流程如下所示：    
-1. 无人机通过指定的硬件接口发送PPS 信号，用于同步机载计算机和传感器上的时间，同时发送UTC 时间戳；
-2. 无人机与RTK 或GPS 卫星在通信状态良好的情况下，无人机将以1Hz 的频率发送RTK 数据包，以5Hz 的频率发送GPS 数据包，其中包含NMEA 数据。
+The process of the Time Synchronization is as follows:
+1. The drone sends the PPS and UTC time stamp through the hardware, which is used to synchronize the time with the onboard computer and the sensor;
+2. When the communication status between the drone and the RTK or GPS satellite is good, the drone will send the RTK data packet at a frequency in 1 Hz and the GPS data packet in 5 Hz, which contain the NMEA data.
 
-> **说明：** 无人机脉冲在上升沿处（从0V上升到3.3V）产生UTC 时间戳。
+> **NOTE** The UTC time stamps generated from the drone on the pulses rising edge (from 0V to 3.3V).
 
-## 使用时间同步功能
-#### 以异步的方式实现时间同步功能
-* 获取NMEA 信息
+## Develop With Time Synchronization
+#### Subscribe NMEA's Information
+* Asynchronous
 ```c++
 void subscribeNMEAMsgs(VehicleCallBack cb, void *userData);
 void unsubscribeNMEAMsgs();
 ```
 
-* 获取UTC 时间戳
+* Synchronize
+```c++
+bool getNMEAMsg(NMEAType type, NMEAData &nmea);
+```
 
+#### Subscribe the time stamp of the UTC
+* Asynchronous
 ```c++
 void subscribeUTCTime(VehicleCallBack cb, void *userData);
 void unsubscribeUTCTime();
 ```
 
-* 获取无人机上的时间
+* Synchronize
+
+```c++
+bool getUTCTime(NMEAData &utc);
+```
+
+#### Subscribe the time of the drone
+* Asynchronous
 ```c++
 void subscribeFCTimeInUTCRef(VehicleCallBack cb, void *userData);
 void unsubscribeFCTimeInUTCRef();
 ```
+* Synchronize
+```c++
+bool getFCTimeInUTCRef(DJI::OSDK::ACK::FCTimeInUTC &fcTimeInUTC);
+```
 
-* 获取无人机的PPS 信息
+#### Subscribe the PPS of the drone
+* Asynchronous
 ```c++
 void subscribePPSSource(VehicleCallBack cb, void *userData);
 void unsubscribePPSSource();
 ```
 
-#### 以同步的方式实现时间同步功能 
-* 获取NMEA 信息
-```c++
-bool getNMEAMsg(NMEAType type, NMEAData &nmea);
-```
-
-* 获取UTC 时间戳
-```c++
-bool getUTCTime(NMEAData &utc);
-```
-
-* 获取无人机上的时间
-```c++
-bool getFCTimeInUTCRef(DJI::OSDK::ACK::FCTimeInUTC &fcTimeInUTC);
-```
-
-* 获取无人机的PPS 信息
+* Synchronize
 ```c++
 bool getPPSSource(PPSSource &source);
 ```
 
-实现无人机、传感器与机载计算机的时间同步后，无人机所输出的PPS 硬件脉冲，如 图2.时间同步信号 所示。
+After synchronize the time of the drone, sensor and onboard computer, the PPS hardware pulse output by the deone is as shown in Figure 2. 
 
 <div>
-<div style="text-align: center"><p>图2.时间同步信号</p>
+<div style="text-align: center"><p>Figure 2.Time Synchronization Signal</p>
 </div>
 <div style="text-align: center"><p><span>
       <img src="../../images/samples/pps-uart-logic-analyzer.png" width="550" style="vertical-align:middle" alt/></span></p>
