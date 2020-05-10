@@ -1,4 +1,27 @@
 var searchData=
 [
-  ['fcfunctionid',['FCFunctionID',['../classDJI_1_1OSDK_1_1ErrorCode.html#aeb7e14e85a12e2b459a593492692db9f',1,'DJI::OSDK::ErrorCode']]]
+  ['dji_5fcamera_5fiso_5fparameter',['DJI_CAMERA_ISO_PARAMETER',['../namespaceDJI_1_1OSDK.html#a117463a95ec52badfdc3312463a46864',1,'DJI::OSDK']]],
+  ['dji_5fcmd_5freturn_5fcode',['DJI_CMD_RETURN_CODE',['../classDJI_1_1OSDK_1_1ErrorCode.html#a4d4bc0bf4a5ea4bbb295c41d41ebb528',1,'DJI::OSDK::ErrorCode']]],
+  ['djibatteryclosedreasonimpl',['DJIBatteryClosedReasonImpl',['../namespaceDJI_1_1OSDK.html#a2b69dc0dcd8f79e067091fe082171eeb',1,'DJI::OSDK']]],
+  ['djibatteryfirmwareabnormalimpl',['DJIBatteryFirmwareAbnormalImpl',['../namespaceDJI_1_1OSDK.html#aefd794c7bb5b36be7aa0204d8c951fd8',1,'DJI::OSDK']]],
+  ['djismartbatteryheatstate',['DJISmartBatteryHeatState',['../namespaceDJI_1_1OSDK.html#a75ee13d92e8dc0640c3a9d090eff49be',1,'DJI::OSDK']]],
+  ['djismartbatteryselfcheck',['DJISmartBatterySelfCheck',['../namespaceDJI_1_1OSDK.html#a4edad5b23d62c0cc43d47d004bb96ec1',1,'DJI::OSDK']]],
+  ['djismartbatterysocwarning',['DJISmartBatterySocWarning',['../namespaceDJI_1_1OSDK.html#a6b1f1378aa2d05e1e73114ef3abd6be7',1,'DJI::OSDK']]],
+  ['djismartbatterysohstate',['DJISmartBatterySohState',['../namespaceDJI_1_1OSDK.html#ae1415bca5083778504a214f48d691ab4',1,'DJI::OSDK']]],
+  ['djiwaypointv2actionactuatoraircraftcontroloperationtype',['DJIWaypointV2ActionActuatorAircraftControlOperationType',['../namespaceDJI_1_1OSDK.html#a652ecf66bb2a5ed16b9d1f229fbae9f3',1,'DJI::OSDK']]],
+  ['djiwaypointv2actionactuatorcameraoperationtype',['DJIWaypointV2ActionActuatorCameraOperationType',['../namespaceDJI_1_1OSDK.html#a8c7187c86c36341c4ccd6d2992c5119e',1,'DJI::OSDK']]],
+  ['djiwaypointv2actionactuatorgimbaloperationtype',['DJIWaypointV2ActionActuatorGimbalOperationType',['../namespaceDJI_1_1OSDK.html#aba5b6d6a0c6285ca7e7050ea85cd0deb',1,'DJI::OSDK']]],
+  ['djiwaypointv2actionactuatortype',['DJIWaypointV2ActionActuatorType',['../namespaceDJI_1_1OSDK.html#afe8b307ba1940bbc99b2b8d1862efe0f',1,'DJI::OSDK']]],
+  ['djiwaypointv2actionexecutionevent',['DJIWaypointV2ActionExecutionEvent',['../namespaceDJI_1_1OSDK.html#a8afeb3deb26339887c8388da0a744f37',1,'DJI::OSDK']]],
+  ['djiwaypointv2actionintervaltype',['DJIWaypointV2ActionIntervalType',['../namespaceDJI_1_1OSDK.html#a9a0c4c8cd45949fee8fc294d43447135',1,'DJI::OSDK']]],
+  ['djiwaypointv2actiontriggertype',['DJIWaypointV2ActionTriggerType',['../namespaceDJI_1_1OSDK.html#a839ae5dc01deddf8d2d2e77c3682a947',1,'DJI::OSDK']]],
+  ['djiwaypointv2flightpathmode',['DJIWaypointV2FlightPathMode',['../namespaceDJI_1_1OSDK.html#a83dd32c35fb51687561f992d9d303604',1,'DJI::OSDK']]],
+  ['djiwaypointv2headingmode',['DJIWaypointV2HeadingMode',['../namespaceDJI_1_1OSDK.html#ac4724285e46cb2e9a321076562c6edbc',1,'DJI::OSDK']]],
+  ['djiwaypointv2missionexecutionstate',['DJIWaypointV2MissionExecutionState',['../namespaceDJI_1_1OSDK.html#ad90906264bca35a8fd1e7b47023efa6d',1,'DJI::OSDK']]],
+  ['djiwaypointv2missionfinishedaction',['DJIWaypointV2MissionFinishedAction',['../namespaceDJI_1_1OSDK.html#a1f440c04969bebda950e919986dc8cd9',1,'DJI::OSDK']]],
+  ['djiwaypointv2missiongotofirstwaypointmode',['DJIWaypointV2MissionGotoFirstWaypointMode',['../namespaceDJI_1_1OSDK.html#af98d5597ac36b9a086d357a56bb00042',1,'DJI::OSDK']]],
+  ['djiwaypointv2missionstate',['DJIWaypointV2MissionState',['../namespaceDJI_1_1OSDK.html#a017211f46775544a35da4e6bd1cc732a',1,'DJI::OSDK']]],
+  ['djiwaypointv2missionv2rclostaction',['DJIWaypointV2MissionV2RCLostAction',['../namespaceDJI_1_1OSDK.html#a891b30a58c726ec3829cd648b691b717',1,'DJI::OSDK']]],
+  ['djiwaypointv2triggerassociatedtimingtype',['DJIWaypointV2TriggerAssociatedTimingType',['../namespaceDJI_1_1OSDK.html#ab89bddb3fd931529057544a31e6d6ff8',1,'DJI::OSDK']]],
+  ['djiwaypointv2turnmode',['DJIWaypointV2TurnMode',['../namespaceDJI_1_1OSDK.html#ac28cc2649770d22ac097831ac32ab348',1,'DJI::OSDK']]]
 ];

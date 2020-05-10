@@ -1,14 +1,22 @@
 var searchData=
 [
   ['empty',['empty',['../structDJI_1_1OSDK_1_1Telemetry_1_1ESCStatusIndividual.html#a879a16640a56f92c02e643877327c79b',1,'DJI::OSDK::Telemetry::ESCStatusIndividual']]],
+  ['endindex',['endIndex',['../structDJI_1_1OSDK_1_1UploadMissionRawAck.html#ae908517394346a0ecefc0e857c241d2e',1,'DJI::OSDK::UploadMissionRawAck::endIndex()'],['../structDJI_1_1OSDK_1_1DownloadMissionAck.html#a4f88d647669f8e50eb765bdc4ad4df98',1,'DJI::OSDK::DownloadMissionAck::endIndex()'],['../structDJI_1_1OSDK_1_1DJIWaypointV2TrajectoryTriggerParam.html#a38a3807185cb50344d7b48550c87c11e',1,'DJI::OSDK::DJIWaypointV2TrajectoryTriggerParam::endIndex()']]],
+  ['errlist',['errList',['../structDJI_1_1OSDK_1_1HMSPushData.html#a221bcc04641131d43e609572a5373f35',1,'DJI::OSDK::HMSPushData']]],
   ['error',['error',['../structDJI_1_1OSDK_1_1Telemetry_1_1Status.html#a5388a8d0d5a2eda8b716fa9731250b30',1,'DJI::OSDK::Telemetry::Status']]],
   ['error_5fnotification',['error_notification',['../structDJI_1_1OSDK_1_1ACK_1_1WayPointStatusPushData.html#ae17cf2e5aa7540d7ade0a5ba1471f91c',1,'DJI::OSDK::ACK::WayPointStatusPushData']]],
+  ['erroractionid',['errorActionId',['../structDJI_1_1OSDK_1_1UploadActionsRawAck.html#a7ece78d92756a29745df28fb7d14c9d5',1,'DJI::OSDK::UploadActionsRawAck']]],
   ['escdisconnected',['escDisconnected',['../structDJI_1_1OSDK_1_1Telemetry_1_1ESCStatusIndividual.html#ac5c4a00dcee82de959d7d653192c3868',1,'DJI::OSDK::Telemetry::ESCStatusIndividual']]],
   ['escpitchstatus',['escPitchStatus',['../structDJI_1_1OSDK_1_1Telemetry_1_1GimbalStatus.html#a258a00e80c323b3c08226c0be7d93f51',1,'DJI::OSDK::Telemetry::GimbalStatus']]],
   ['escrollstatus',['escRollStatus',['../structDJI_1_1OSDK_1_1Telemetry_1_1GimbalStatus.html#a5f4701555431d97958fe09acc3bedcb0',1,'DJI::OSDK::Telemetry::GimbalStatus']]],
   ['esctemperaturehigh',['escTemperatureHigh',['../structDJI_1_1OSDK_1_1Telemetry_1_1FlightAnomaly.html#ae3ec85b00766a26eac8579664124551b',1,'DJI::OSDK::Telemetry::FlightAnomaly']]],
   ['escyawstatus',['escYawStatus',['../structDJI_1_1OSDK_1_1Telemetry_1_1GimbalStatus.html#ae35565f69325031249fdc25644d17efb',1,'DJI::OSDK::Telemetry::GimbalStatus']]],
+  ['ev',['ev',['../structDJI_1_1OSDK_1_1CameraModule_1_1ExposureCompensationReq.html#ac3e9bf5af4eb9a83f9467e44fe60a164',1,'DJI::OSDK::CameraModule::ExposureCompensationReq']]],
+  ['ev_5fparam',['ev_param',['../structDJI_1_1OSDK_1_1CameraModule_1_1ExposureCompensationAck.html#ad20ad57ec363e47f30ba4ab987080cd7',1,'DJI::OSDK::CameraModule::ExposureCompensationAck']]],
   ['executivetimes',['executiveTimes',['../structDJI_1_1OSDK_1_1WayPointInitSettings.html#a9f2f9b99ad53fc8c75830d52697c6e42',1,'DJI::OSDK::WayPointInitSettings']]],
+  ['exitmissiononrcsignallost',['exitMissionOnRCSignalLost',['../structDJI_1_1OSDK_1_1WayPointV2InitSettings.html#a7e0f3818e4f5f221a87818b4e3f8775f',1,'DJI::OSDK::WayPointV2InitSettings']]],
+  ['exposuremode',['exposureMode',['../structDJI_1_1OSDK_1_1CameraModule_1_1ExposureModeAck.html#aed394f36ed55b58b10f4f11753c623e5',1,'DJI::OSDK::CameraModule::ExposureModeAck']]],
+  ['exposuremodemode',['exposureModeMode',['../structDJI_1_1OSDK_1_1CameraModule_1_1ExposureModeReq.html#a962de8ac842c77358646c97a95150a18',1,'DJI::OSDK::CameraModule::ExposureModeReq']]],
   ['extend_5fcontrol_5frange',['extend_control_range',['../structDJI_1_1OSDK_1_1Gimbal_1_1SpeedData.html#af6c9d02c018418d08a94864af60c9ec9',1,'DJI::OSDK::Gimbal::SpeedData']]],
   ['extendedversionbase',['extendedVersionBase',['../namespaceDJI_1_1OSDK.html#a0d2ad9adfdf62e6d7123e2ef73cdff88',1,'DJI::OSDK']]]
 ];

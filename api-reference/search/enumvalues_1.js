@@ -1,11 +1,13 @@
 var searchData=
 [
-  ['camera_5ftime_5fnot_5fsynchronized',['CAMERA_TIME_NOT_SYNCHRONIZED',['../classDJI_1_1OSDK_1_1ErrorCode.html#a4d4bc0bf4a5ea4bbb295c41d41ebb528a4ddd120e6a202b53b5c560edca1bc068',1,'DJI::OSDK::ErrorCode']]],
-  ['cannot_5fstart_5ftask_5fvlotage_5falarm',['CANNOT_START_TASK_VLOTAGE_ALARM',['../classDJI_1_1OSDK_1_1ErrorCode.html#a4d4bc0bf4a5ea4bbb295c41d41ebb528ac36673d9ed5604635652d903146f39fd',1,'DJI::OSDK::ErrorCode']]],
-  ['cannot_5fstart_5ftask_5fweak_5fgps',['CANNOT_START_TASK_WEAK_GPS',['../classDJI_1_1OSDK_1_1ErrorCode.html#a4d4bc0bf4a5ea4bbb295c41d41ebb528aa96b43257d427ef1e4e3ace056d5d18f',1,'DJI::OSDK::ErrorCode']]],
-  ['cannot_5fupgrade_5fin_5fcur_5fstate',['CANNOT_UPGRADE_IN_CUR_STATE',['../classDJI_1_1OSDK_1_1ErrorCode.html#a4d4bc0bf4a5ea4bbb295c41d41ebb528a522cbdf0ddd65d20fcb9daba915f78de',1,'DJI::OSDK::ErrorCode']]],
-  ['ctrl_5fmode_5fatti_5fctrl_5fyaw_5frate',['CTRL_MODE_ATTI_CTRL_YAW_RATE',['../namespaceDJI_1_1OSDK_1_1VehicleStatus_1_1CtlrMode.html#a6681a2e13cdc55848b9ceebdb3174287a8f2439166dd3829df5272c06e869f067',1,'DJI::OSDK::VehicleStatus::CtlrMode']]],
-  ['ctrl_5fmode_5fgps_5fatii_5fctrl_5fcl_5fyaw_5frate',['CTRL_MODE_GPS_ATII_CTRL_CL_YAW_RATE',['../namespaceDJI_1_1OSDK_1_1VehicleStatus_1_1CtlrMode.html#a6681a2e13cdc55848b9ceebdb3174287a173e2b6c7dc359263300dc5a85d1b17c',1,'DJI::OSDK::VehicleStatus::CtlrMode']]],
-  ['ctrl_5fmode_5fgps_5fatti_5fctrl_5fyaw_5frate',['CTRL_MODE_GPS_ATTI_CTRL_YAW_RATE',['../namespaceDJI_1_1OSDK_1_1VehicleStatus_1_1CtlrMode.html#a6681a2e13cdc55848b9ceebdb3174287aabf3a03dd93ef9f6ebe88d0ddc8f0f97',1,'DJI::OSDK::VehicleStatus::CtlrMode']]],
-  ['ctrl_5fmode_5fmode_5fnot_5fsupported',['CTRL_MODE_MODE_NOT_SUPPORTED',['../namespaceDJI_1_1OSDK_1_1VehicleStatus_1_1CtlrMode.html#a6681a2e13cdc55848b9ceebdb3174287ae8abd8ea48c003cbb50a6434f3cc6984',1,'DJI::OSDK::VehicleStatus::CtlrMode']]]
+  ['broadcast',['BROADCAST',['../classDJI_1_1OSDK_1_1CameraModule.html#aa5c2a7ff6d98001244cd7ea482018e94a94d1ee6f42289a80374396c9edb34329',1,'DJI::OSDK::CameraModule']]],
+  ['burst',['BURST',['../classDJI_1_1OSDK_1_1CameraModule.html#a998b0c7f990299f3d640001a7b9e7afca9b65b1ab873074b1d415aa72071b0a25',1,'DJI::OSDK::CameraModule']]],
+  ['burst_5fcount_5f10',['BURST_COUNT_10',['../classDJI_1_1OSDK_1_1CameraModule.html#a524d99e411710572b45cb64bb447df27adbd8d5a6cf1bf2c7bc9750cf5087c6a8',1,'DJI::OSDK::CameraModule']]],
+  ['burst_5fcount_5f14',['BURST_COUNT_14',['../classDJI_1_1OSDK_1_1CameraModule.html#a524d99e411710572b45cb64bb447df27a5706f5b0b4b1d8685566ded8723368f8',1,'DJI::OSDK::CameraModule']]],
+  ['burst_5fcount_5f2',['BURST_COUNT_2',['../classDJI_1_1OSDK_1_1CameraModule.html#a524d99e411710572b45cb64bb447df27a5dfe77a7c2a852e0b962566474d35656',1,'DJI::OSDK::CameraModule']]],
+  ['burst_5fcount_5f3',['BURST_COUNT_3',['../classDJI_1_1OSDK_1_1CameraModule.html#a524d99e411710572b45cb64bb447df27af006413a76ad5e388fb001f24253f112',1,'DJI::OSDK::CameraModule']]],
+  ['burst_5fcount_5f5',['BURST_COUNT_5',['../classDJI_1_1OSDK_1_1CameraModule.html#a524d99e411710572b45cb64bb447df27a91a9f9f93a22e5d2d1a3f8c56f267e96',1,'DJI::OSDK::CameraModule']]],
+  ['burst_5fcount_5f7',['BURST_COUNT_7',['../classDJI_1_1OSDK_1_1CameraModule.html#a524d99e411710572b45cb64bb447df27a3fd801e3edab012e4fe6a3cb9f9ec3fb',1,'DJI::OSDK::CameraModule']]],
+  ['burst_5fcount_5fknown',['BURST_COUNT_KNOWN',['../classDJI_1_1OSDK_1_1CameraModule.html#a524d99e411710572b45cb64bb447df27a9ef81e6560f5cb39eab654d639dd4781',1,'DJI::OSDK::CameraModule']]],
+  ['button',['BUTTON',['../classDJI_1_1OSDK_1_1PSDKModule.html#acda4ae37662bc7fafe6d5d2cc8c18ef6a0c92531fc1975e5ae5f055d3d0bff978',1,'DJI::OSDK::PSDKModule']]]
 ];

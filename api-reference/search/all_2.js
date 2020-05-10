@@ -3,5 +3,19 @@ var searchData=
   ['back',['back',['../structDJI_1_1OSDK_1_1Telemetry_1_1RelativePosition.html#aaf102a1a7e31ca6f22f499994bed7278',1,'DJI::OSDK::Telemetry::RelativePosition']]],
   ['backhealth',['backHealth',['../structDJI_1_1OSDK_1_1Telemetry_1_1RelativePosition.html#a04b5d3a13fa32423830bfaa30e3de995',1,'DJI::OSDK::Telemetry::RelativePosition']]],
   ['bad_5fgps',['BAD_GPS',['../structDJI_1_1OSDK_1_1ErrorCode_1_1MissionACK_1_1Common.html#ab0c1598be1377d7a67c946fa82188928',1,'DJI::OSDK::ErrorCode::MissionACK::Common']]],
-  ['battery',['Battery',['../structDJI_1_1OSDK_1_1Telemetry_1_1Battery.html',1,'DJI::OSDK::Telemetry::Battery'],['../namespaceDJI_1_1OSDK_1_1Telemetry.html#ab8627e735286fa269ccd69b4d6598945',1,'DJI::OSDK::Telemetry::Battery()']]]
+  ['battery',['Battery',['../structDJI_1_1OSDK_1_1Telemetry_1_1Battery.html',1,'DJI::OSDK::Telemetry::Battery'],['../namespaceDJI_1_1OSDK_1_1Telemetry.html#ab8627e735286fa269ccd69b4d6598945',1,'DJI::OSDK::Telemetry::Battery()']]],
+  ['batterycapacitypercentage',['batteryCapacityPercentage',['../structDJI_1_1OSDK_1_1BatteryWholeInfo.html#a9122f45d22c5d7320e4bd6489bdeb805',1,'DJI::OSDK::BatteryWholeInfo::batteryCapacityPercentage()'],['../structDJI_1_1OSDK_1_1BatteryWholeInfoImpl.html#ab80f91182b82b01d8febaf936d962c51',1,'DJI::OSDK::BatteryWholeInfoImpl::batteryCapacityPercentage()']]],
+  ['batterystate',['batteryState',['../structDJI_1_1OSDK_1_1BatteryWholeInfo.html#a5c10525008e02c48ddbd9580d3cae004',1,'DJI::OSDK::BatteryWholeInfo::batteryState()'],['../structDJI_1_1OSDK_1_1BatteryWholeInfoImpl.html#aa75dcda7f879cc09ed592722f61eaefb',1,'DJI::OSDK::BatteryWholeInfoImpl::batteryState()']]],
+  ['batterywholeinfo',['BatteryWholeInfo',['../structDJI_1_1OSDK_1_1BatteryWholeInfo.html',1,'DJI::OSDK::BatteryWholeInfo'],['../namespaceDJI_1_1OSDK.html#a763dc856a1d110b24f5ca89d6ef4a164',1,'DJI::OSDK::BatteryWholeInfo()']]],
+  ['batterywholeinfoimpl',['BatteryWholeInfoImpl',['../structDJI_1_1OSDK_1_1BatteryWholeInfoImpl.html',1,'DJI::OSDK::BatteryWholeInfoImpl'],['../namespaceDJI_1_1OSDK.html#a6cb16ea73d8392afd826a2c96fe78be7',1,'DJI::OSDK::BatteryWholeInfoImpl()']]],
+  ['broadcast',['BROADCAST',['../classDJI_1_1OSDK_1_1CameraModule.html#aa5c2a7ff6d98001244cd7ea482018e94a94d1ee6f42289a80374396c9edb34329',1,'DJI::OSDK::CameraModule']]],
+  ['burst',['BURST',['../classDJI_1_1OSDK_1_1CameraModule.html#a998b0c7f990299f3d640001a7b9e7afca9b65b1ab873074b1d415aa72071b0a25',1,'DJI::OSDK::CameraModule']]],
+  ['burst_5fcount_5f10',['BURST_COUNT_10',['../classDJI_1_1OSDK_1_1CameraModule.html#a524d99e411710572b45cb64bb447df27adbd8d5a6cf1bf2c7bc9750cf5087c6a8',1,'DJI::OSDK::CameraModule']]],
+  ['burst_5fcount_5f14',['BURST_COUNT_14',['../classDJI_1_1OSDK_1_1CameraModule.html#a524d99e411710572b45cb64bb447df27a5706f5b0b4b1d8685566ded8723368f8',1,'DJI::OSDK::CameraModule']]],
+  ['burst_5fcount_5f2',['BURST_COUNT_2',['../classDJI_1_1OSDK_1_1CameraModule.html#a524d99e411710572b45cb64bb447df27a5dfe77a7c2a852e0b962566474d35656',1,'DJI::OSDK::CameraModule']]],
+  ['burst_5fcount_5f3',['BURST_COUNT_3',['../classDJI_1_1OSDK_1_1CameraModule.html#a524d99e411710572b45cb64bb447df27af006413a76ad5e388fb001f24253f112',1,'DJI::OSDK::CameraModule']]],
+  ['burst_5fcount_5f5',['BURST_COUNT_5',['../classDJI_1_1OSDK_1_1CameraModule.html#a524d99e411710572b45cb64bb447df27a91a9f9f93a22e5d2d1a3f8c56f267e96',1,'DJI::OSDK::CameraModule']]],
+  ['burst_5fcount_5f7',['BURST_COUNT_7',['../classDJI_1_1OSDK_1_1CameraModule.html#a524d99e411710572b45cb64bb447df27a3fd801e3edab012e4fe6a3cb9f9ec3fb',1,'DJI::OSDK::CameraModule']]],
+  ['burst_5fcount_5fknown',['BURST_COUNT_KNOWN',['../classDJI_1_1OSDK_1_1CameraModule.html#a524d99e411710572b45cb64bb447df27a9ef81e6560f5cb39eab654d639dd4781',1,'DJI::OSDK::CameraModule']]],
+  ['button',['BUTTON',['../classDJI_1_1OSDK_1_1PSDKModule.html#acda4ae37662bc7fafe6d5d2cc8c18ef6a0c92531fc1975e5ae5f055d3d0bff978',1,'DJI::OSDK::PSDKModule']]]
 ];

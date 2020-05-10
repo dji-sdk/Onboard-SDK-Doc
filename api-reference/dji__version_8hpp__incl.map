@@ -1,9 +1,10 @@
-<map id="osdk&#45;core/api/inc/dji_version.hpp" name="osdk&#45;core/api/inc/dji_version.hpp">
-<area shape="rect" id="node1" title="Drone/SDK Version definition for DJI onboardSDK library." alt="" coords="194,5,333,47"/>
-<area shape="rect" id="node2" href="$dji__command_8hpp.html" title="All DJI OSDK OpenProtocol Command IDs." alt="" coords="152,95,276,121"/>
-<area shape="rect" id="node4" title=" " alt="" coords="259,244,321,271"/>
-<area shape="rect" id="node3" href="$dji__error_8hpp.html" title="All DJI OSDK OpenProtocol ACK Error Codes." alt="" coords="93,169,186,196"/>
-<area shape="rect" id="node7" title=" " alt="" coords="211,169,276,196"/>
-<area shape="rect" id="node5" title=" " alt="" coords="5,244,116,271"/>
-<area shape="rect" id="node6" title=" " alt="" coords="140,244,187,271"/>
+<map id="osdk&#45;lib/x86/osdk&#45;core/inc/dji_version.hpp" name="osdk&#45;lib/x86/osdk&#45;core/inc/dji_version.hpp">
+<area shape="rect" id="node1" title="Drone/SDK Version definition for DJI onboardSDK library." alt="" coords="139,5,292,47"/>
+<area shape="rect" id="node2" href="$dji__command_8hpp.html" title="All DJI OSDK OpenProtocol Command IDs." alt="" coords="104,95,228,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="246,244,307,271"/>
+<area shape="rect" id="node3" href="$dji__error_8hpp.html" title="All DJI OSDK OpenProtocol ACK Error Codes." alt="" coords="119,169,213,196"/>
+<area shape="rect" id="node8" title=" " alt="" coords="5,319,71,345"/>
+<area shape="rect" id="node5" title=" " alt="" coords="40,244,87,271"/>
+<area shape="rect" id="node6" href="$osdk__typedef_8h_source.html" title=" " alt="" coords="111,244,221,271"/>
+<area shape="rect" id="node7" title=" " alt="" coords="131,319,201,345"/>
 </map>

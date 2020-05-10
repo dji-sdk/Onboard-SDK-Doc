@@ -1,0 +1,22 @@
+<map id="osdk&#45;lib/x86/osdk&#45;core/inc/dji_flight_actions_module.hpp" name="osdk&#45;lib/x86/osdk&#45;core/inc/dji_flight_actions_module.hpp">
+<area shape="rect" id="node1" title="Implementation of flight actions module." alt="" coords="188,5,341,61"/>
+<area shape="rect" id="node2" href="$dji__vehicle__callback_8hpp.html" title="Type definition for new Vehicle&#45;style callbacks." alt="" coords="183,109,346,136"/>
+<area shape="rect" id="node3" href="$dji__ack_8hpp.html" title="All DJI OSDK ACK parsing." alt="" coords="221,184,309,211"/>
+<area shape="rect" id="node13" href="$dji__type_8hpp.html" title="Data type and Data Structure definitions for use throughout DJI OSDK." alt="" coords="5,333,97,360"/>
+<area shape="rect" id="node16" href="$dji__log_8hpp.html" title="Logging mechanism for printing status and error messages to the screen." alt="" coords="539,259,623,285"/>
+<area shape="rect" id="node4" href="$dji__command_8hpp.html" title="All DJI OSDK OpenProtocol Command IDs." alt="" coords="371,333,495,360"/>
+<area shape="rect" id="node7" title=" " alt="" coords="255,483,301,509"/>
+<area shape="rect" id="node11" href="$dji__mission__type_8hpp.html" title="Mission related data struct for DJI OSDK library." alt="" coords="83,259,227,285"/>
+<area shape="rect" id="node15" href="$dji__version_8hpp.html" title="Drone/SDK Version definition for DJI onboardSDK library." alt="" coords="302,259,411,285"/>
+<area shape="rect" id="node5" href="$dji__error_8hpp.html" title="All DJI OSDK OpenProtocol ACK Error Codes." alt="" coords="353,408,446,435"/>
+<area shape="rect" id="node10" title=" " alt="" coords="451,557,516,584"/>
+<area shape="rect" id="node6" title=" " alt="" coords="341,483,402,509"/>
+<area shape="rect" id="node8" href="$osdk__typedef_8h_source.html" title=" " alt="" coords="591,483,701,509"/>
+<area shape="rect" id="node9" title=" " alt="" coords="611,557,681,584"/>
+<area shape="rect" id="node12" title=" " alt="" coords="126,333,185,360"/>
+<area shape="rect" id="node14" title=" " alt="" coords="89,408,147,435"/>
+<area shape="rect" id="node17" href="$dji__singleton_8hpp.html" title="Singleton Template Class implementation for use with the DJI OSDK." alt="" coords="521,408,640,435"/>
+<area shape="rect" id="node18" href="$dji__platform_8hpp.html" title="Vehicle API for DJI onboardSDK library." alt="" coords="638,333,753,360"/>
+<area shape="rect" id="node19" href="$osdk__platform_8h.html" title="This is the header file for define OSDK platform interfaces." alt="" coords="791,408,906,435"/>
+<area shape="rect" id="node20" href="$osdk__logger_8h.html" title="This is the header file for &quot;osdk_logger.c&quot;, defining the structure and (exported) function prototype..." alt="" coords="664,408,767,435"/>
+</map>

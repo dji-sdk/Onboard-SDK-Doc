@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['yaw_5fangle',['YAW_ANGLE',['../classDJI_1_1OSDK_1_1Control.html#aa0e638a43e9de3fe82dcb369e798b604a6f6ccb42dcbab49794c1f0e6cc3cd505',1,'DJI::OSDK::Control']]],
-  ['yaw_5frate',['YAW_RATE',['../classDJI_1_1OSDK_1_1Control.html#aa0e638a43e9de3fe82dcb369e798b604ad91380b605d1d747a29e27ff87b2b7f3',1,'DJI::OSDK::Control']]]
+  ['vertical_5fposition',['VERTICAL_POSITION',['../classDJI_1_1OSDK_1_1Control.html#a91f574c79c663ed6c1e1514a6feb86b4ade41ada954074bde5034d0cbe8922df7',1,'DJI::OSDK::Control']]],
+  ['vertical_5fthrust',['VERTICAL_THRUST',['../classDJI_1_1OSDK_1_1Control.html#a91f574c79c663ed6c1e1514a6feb86b4a2890b616ae5f29b86190484418525af3',1,'DJI::OSDK::Control']]],
+  ['vertical_5fvelocity',['VERTICAL_VELOCITY',['../classDJI_1_1OSDK_1_1Control.html#a91f574c79c663ed6c1e1514a6feb86b4a0f2b954b107697ef0440b12fe8e2971d',1,'DJI::OSDK::Control']]]
 ];

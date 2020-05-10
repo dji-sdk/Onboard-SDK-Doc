@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['emergencybrake',['emergencyBrake',['../classDJI_1_1OSDK_1_1Control.html#afdf111f752a36ccf541198ca7212331a',1,'DJI::OSDK::Control']]],
-  ['enabledebuglogging',['enableDebugLogging',['../classDJI_1_1OSDK_1_1Log.html#aa961f62ab0484946ea87187f4b35905d',1,'DJI::OSDK::Log']]],
-  ['enableerrorlogging',['enableErrorLogging',['../classDJI_1_1OSDK_1_1Log.html#abdfa25ae5bf1b5f62e16c2de7109e4a2',1,'DJI::OSDK::Log']]],
-  ['enablestatuslogging',['enableStatusLogging',['../classDJI_1_1OSDK_1_1Log.html#a6cbaeb5adfb215dcade1d0bcd0b7b13e',1,'DJI::OSDK::Log']]]
+  ['emergencybrake',['emergencyBrake',['../classDJI_1_1OSDK_1_1Control.html#aedea0a097cb4b05f860dc4c0ec5f15eb',1,'DJI::OSDK::Control']]],
+  ['enabledebuglogging',['enableDebugLogging',['../classDJI_1_1OSDK_1_1Log.html#ac71db3b6258c4636e0277ff0f8bd477b',1,'DJI::OSDK::Log']]],
+  ['enableerrorlogging',['enableErrorLogging',['../classDJI_1_1OSDK_1_1Log.html#a923e69ce385fe5520e1ea71dad25527e',1,'DJI::OSDK::Log']]],
+  ['enablestatuslogging',['enableStatusLogging',['../classDJI_1_1OSDK_1_1Log.html#a85641d4212b841403f5c096aca7117cd',1,'DJI::OSDK::Log']]]
 ];

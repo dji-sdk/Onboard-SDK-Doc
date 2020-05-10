@@ -1,98 +1,36 @@
-<!-- HTML header for doxygen 1.8.8-->
-<!DOCTYPE html
-    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- For Mobile Devices -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
-    <meta name="generator" content="Doxygen 1.8.15" />
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <title>DJI Onboard SDK: osdk-core/api/inc/dji_mission_type.hpp File Reference</title>
-    <!-- <link href="tabs.css" rel="stylesheet" type="text/css"/> -->
-    <script type="text/javascript" src="dynsections.js"></script>
-    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DJI Onboard SDK: osdk-lib/x86/osdk-core/inc/dji_mission_type.hpp File Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-    <link href="doxygen.css" rel="stylesheet" type="text/css" />
-    <link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <link href="jquery.smartmenus.bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="bootstrap-theme.css">
-    <script src="bootstrap.min.js"></script>
-    <link href="jquery.smartmenus.bootstrap.css" rel="stylesheet">
-    <!-- SmartMenus jQuery plugin -->
-    <script type="text/javascript" src="jquery.smartmenus.min.js"></script>
-    <!-- SmartMenus jQuery Bootstrap Addon -->
-    <script type="text/javascript" src="jquery.smartmenus.bootstrap.min.js"></script>
-    <style>
-        .has-submenu {
-            position: relative;
-        }
-        #main-nav {
-            margin-top: 60px;
-        }
-    </style>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <nav id="site-header" class="site-header navbar">
-        <div class="container">
-            <div class="navbar-header"><a href="/" class="logo"><img src="dji-logo@2x.png">Developer</a></div>
-            <div id="header-navbar" class="collapse navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="/mobile-sdk">Mobile SDK</a></li>
-                    <li><a href="/ux-sdk">UX SDK</a></li>
-                    <li><a href="/onboard-sdk">Onboard SDK</a></li>
-                    <li><a href="/payload-sdk">Payload SDK</a></li>
-                    <li><a href="/windows-sdk">Windows SDK</a></li>
-                </ul>
-                <ul v-cloak="" v-show="!loggedIn" class="nav navbar-nav navbar-right nav-user">
-                    <li><a
-                            href="https://account.dji.com/login?appId=dji_sdk&backUrl=https%3A%2F%2Fdeveloper.dji.com%2Fuser&locale=en_US">Login</a>
-                    </li>
-                    <li><a href="https://account.dji.com/register?appId=dji_sdk&backUrl=https%3A%2F%2Fdeveloper.dji.com%2Fuser&locale=en_US"
-                            class="head-cta">Register</a></li>
-                </ul>
-                <ul v-cloak="" v-show="loggedIn" class="nav navbar-nav navbar-right nav-user">
-                    <li class="hovedown"><a href="javascript:void(0);" class="hovedown-toggle"><i
-                                class="fa fa-user"></i></a>
-                        <ul class="hovedown-menu hovedown-menu-right">
-                            <li><a href="/user">User Center</a></li>
-                            <li><a href="javascript:void(0);" v-on="click: logout">Logout</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <div data-offset-top="60" data-spy="affix" class="sub-nav">
-        <div class="container">
-            <h1 class="logo">Onboard SDK</h1>
-            <nav><a href="/onboard-sdk">Overview</a><a href="/onboard-sdk/documentation">Documentation</a><a
-                    href="/onboard-api-reference/index.html" class="active">API Reference</a><a
-                    href="/onboard-sdk/downloads">Downloads</a>
-            </nav>
-        </div>
-    </div>
-    <!--<nav class="navbar navbar-default" role="navigation">-->
-    <!--<div class="container">-->
-    <!--<div class="navbar-header">-->
-    <!--<a href="#" class="navbar-left"><img src="dji_logo_gray_small.png" alt="DJI OSDK API Documentation" width="32px"/></a>-->
-    <!--<a class="navbar-brand" href="index.html">ONBOARD SDK 3.3</a>-->
-    <!--</div>-->
-    <!--</div>-->
-    <!--</nav>-->
-    <div id="top">
-        <!-- do not remove this div, it is closed by doxygen! -->
-        <div class="content" id="content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 panel " style="padding-bottom: 15px;">
-                        <div style="margin-bottom: 15px;">
-                            <!-- end header part --><!-- Generated by Doxygen 1.8.15 -->
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">DJI Onboard SDK
+   &#160;<span id="projectnumber">4.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.8.15 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 var searchBox = new SearchBox("searchBox", "search",false,'Search');
@@ -124,7 +62,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_95d02babf7f2c2cbb8138434e234b0a4.html">osdk-core</a></li><li class="navelem"><a class="el" href="dir_ef926edda2a887b065db034fc3005c14.html">api</a></li><li class="navelem"><a class="el" href="dir_0fb058e33548cd6e720172c5f012eda8.html">inc</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_951cd5b3893e43b241adb4bd1560b570.html">osdk-lib</a></li><li class="navelem"><a class="el" href="dir_5db447f86adfc6ae24b4688f8f31760a.html">x86</a></li><li class="navelem"><a class="el" href="dir_bec76b0e4baf579159cf4e02aa2f7ab1.html">osdk-core</a></li><li class="navelem"><a class="el" href="dir_30ce5e36efcf97fd4dd71022202456da.html">inc</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -132,19 +70,21 @@ $(function() {
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">dji_mission_type.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Mission related data struct for <a class="el" href="namespaceDJI.html">DJI</a> OSDK library.  
+<p>Mission related data struct for <a class="el" href="namespaceDJI.html" title="handle array of characters">DJI</a> OSDK library.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="dji__type_8hpp_source.html">dji_type.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;<a class="el" href="dji__type_8hpp_source.html">dji_type.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for dji_mission_type.hpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="dji__mission__type_8hpp__incl.svg" width="155" height="196"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="dji__mission__type_8hpp__incl.svg" width="222" height="202"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <p><a href="dji__mission__type_8hpp_source.html">Go to the source code of this file.</a></p>
@@ -163,10 +103,47 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1WayPointFinishData.html">DJI::OSDK::WayPointFinishData</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waypoint Mission Finish Event Push Data.  <a href="structDJI_1_1OSDK_1_1WayPointFinishData.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1UploadMissionRawAck.html">DJI::OSDK::UploadMissionRawAck</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1UploadActionsRawAck.html">DJI::OSDK::UploadActionsRawAck</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1DownloadMissionRsp.html">DJI::OSDK::DownloadMissionRsp</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1DownloadMissionAck.html">DJI::OSDK::DownloadMissionAck</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1GetGlobalCruiseVelAck.html">DJI::OSDK::GetGlobalCruiseVelAck</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1GetRemainRamAck.html">DJI::OSDK::GetRemainRamAck</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1GetWaypontStartEndIndexAck.html">DJI::OSDK::GetWaypontStartEndIndexAck</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1MissionStateCommanData.html">DJI::OSDK::MissionStateCommanData</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1MissionStatePushAck.html">DJI::OSDK::MissionStatePushAck</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionDJI_1_1OSDK_1_1Eventdata.html">DJI::OSDK::Eventdata</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1MissionEventPushAck.html">DJI::OSDK::MissionEventPushAck</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1WayPointV2InitSettingsInternal.html">DJI::OSDK::WayPointV2InitSettingsInternal</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waypoint V2 Mission Initialization Settings Internal User have no need to use it.  <a href="structDJI_1_1OSDK_1_1WayPointV2InitSettingsInternal.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1RelativePosition.html">DJI::OSDK::RelativePosition</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1WaypointV2Config.html">DJI::OSDK::WaypointV2Config</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1WaypointV2Internal.html">DJI::OSDK::WaypointV2Internal</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1WaypointV2.html">DJI::OSDK::WaypointV2</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1WayPointV2InitSettings.html">DJI::OSDK::WayPointV2InitSettings</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waypoint V2 Mission Initialization settings.  <a href="structDJI_1_1OSDK_1_1WayPointV2InitSettings.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceDJI"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI.html">DJI</a></td></tr>
+<tr class="memdesc:namespaceDJI"><td class="mdescLeft">&#160;</td><td class="mdescRight">handle array of characters <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceDJI_1_1OSDK"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html">DJI::OSDK</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -193,6 +170,63 @@ typedef enum <a class="el" href="namespaceDJI_1_1OSDK.html#a1f8f5930646e3b3fb408
 typedef struct <a class="el" href="structDJI_1_1OSDK_1_1WayPointFinishData.html">DJI::OSDK::WayPointFinishData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#adde3d427e6840acde772d2f41986cad6">DJI::OSDK::WayPointFinishData</a></td></tr>
 <tr class="memdesc:adde3d427e6840acde772d2f41986cad6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waypoint Mission Finish Event Push Data. <br /></td></tr>
 <tr class="separator:adde3d427e6840acde772d2f41986cad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f2c788a7708bb63f1e23d0f344dd9b9"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="namespaceDJI_1_1OSDK.html#a83dd32c35fb51687561f992d9d303604">DJI::OSDK::DJIWaypointV2FlightPathMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#a7f2c788a7708bb63f1e23d0f344dd9b9">DJI::OSDK::DJIWaypointV2FlightPathMode</a></td></tr>
+<tr class="separator:a7f2c788a7708bb63f1e23d0f344dd9b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a258361aefa6168cd6f1f4c50dfb4238e"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="namespaceDJI_1_1OSDK.html#ac4724285e46cb2e9a321076562c6edbc">DJI::OSDK::DJIWaypointV2HeadingMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#a258361aefa6168cd6f1f4c50dfb4238e">DJI::OSDK::DJIWaypointV2HeadingMode</a></td></tr>
+<tr class="separator:a258361aefa6168cd6f1f4c50dfb4238e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7de352a66f79c853d54deec32307038"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="namespaceDJI_1_1OSDK.html#ac28cc2649770d22ac097831ac32ab348">DJI::OSDK::DJIWaypointV2TurnMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#ab7de352a66f79c853d54deec32307038">DJI::OSDK::DJIWaypointV2TurnMode</a></td></tr>
+<tr class="separator:ab7de352a66f79c853d54deec32307038"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93cfa5a558e58bd0036ade2ce45904b5"><td class="memItemLeft" align="right" valign="top"><a id="a93cfa5a558e58bd0036ade2ce45904b5"></a>
+typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>DJI::OSDK::RetCodeType</b></td></tr>
+<tr class="separator:a93cfa5a558e58bd0036ade2ce45904b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3065efab35a661d0b04ff555275a4685"><td class="memItemLeft" align="right" valign="top"><a id="a3065efab35a661d0b04ff555275a4685"></a>
+typedef uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>DJI::OSDK::WaypointV2CommonAck</b></td></tr>
+<tr class="separator:a3065efab35a661d0b04ff555275a4685"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd3c81fd2dfa18ee085d0ffec8fe94f0"><td class="memItemLeft" align="right" valign="top">typedef float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#acd3c81fd2dfa18ee085d0ffec8fe94f0">DJI::OSDK::GlobalCruiseSpeed</a></td></tr>
+<tr class="separator:acd3c81fd2dfa18ee085d0ffec8fe94f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a308d632b9ff163034ed6ccaba3ccf7a1"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structDJI_1_1OSDK_1_1UploadMissionRawAck.html">DJI::OSDK::UploadMissionRawAck</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#a308d632b9ff163034ed6ccaba3ccf7a1">DJI::OSDK::UploadMissionRawAck</a></td></tr>
+<tr class="separator:a308d632b9ff163034ed6ccaba3ccf7a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85dd15311f1984bbd5f47dac05714cef"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structDJI_1_1OSDK_1_1UploadActionsRawAck.html">DJI::OSDK::UploadActionsRawAck</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#a85dd15311f1984bbd5f47dac05714cef">DJI::OSDK::UploadActionsRawAck</a></td></tr>
+<tr class="separator:a85dd15311f1984bbd5f47dac05714cef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad07d9ffa9684270c5aa8bea5c7bbad84"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structDJI_1_1OSDK_1_1DownloadMissionRsp.html">DJI::OSDK::DownloadMissionRsp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#ad07d9ffa9684270c5aa8bea5c7bbad84">DJI::OSDK::DownloadMissionRsp</a></td></tr>
+<tr class="separator:ad07d9ffa9684270c5aa8bea5c7bbad84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d611fe460b60ab63404991f639d8196"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structDJI_1_1OSDK_1_1DownloadMissionAck.html">DJI::OSDK::DownloadMissionAck</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#a9d611fe460b60ab63404991f639d8196">DJI::OSDK::DownloadMissionAck</a></td></tr>
+<tr class="separator:a9d611fe460b60ab63404991f639d8196"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa04751b6f2a059aad9dd4a7369f16e3d"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structDJI_1_1OSDK_1_1GetGlobalCruiseVelAck.html">DJI::OSDK::GetGlobalCruiseVelAck</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#aa04751b6f2a059aad9dd4a7369f16e3d">DJI::OSDK::GetGlobalCruiseVelAck</a></td></tr>
+<tr class="separator:aa04751b6f2a059aad9dd4a7369f16e3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11dbb6d8f6ee05f468b5093baeba5f8a"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structDJI_1_1OSDK_1_1GetRemainRamAck.html">DJI::OSDK::GetRemainRamAck</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#a11dbb6d8f6ee05f468b5093baeba5f8a">DJI::OSDK::getRemainRamAck</a></td></tr>
+<tr class="separator:a11dbb6d8f6ee05f468b5093baeba5f8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6476d82de2ea0220c4ee10de4ef888f"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structDJI_1_1OSDK_1_1GetWaypontStartEndIndexAck.html">DJI::OSDK::GetWaypontStartEndIndexAck</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#af6476d82de2ea0220c4ee10de4ef888f">DJI::OSDK::GetWaypontStartEndIndexAck</a></td></tr>
+<tr class="separator:af6476d82de2ea0220c4ee10de4ef888f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46c28d94d23fb8e46ce1ce7037be850f"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structDJI_1_1OSDK_1_1MissionStateCommanData.html">DJI::OSDK::MissionStateCommanData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#a46c28d94d23fb8e46ce1ce7037be850f">DJI::OSDK::MissionStateCommanData</a></td></tr>
+<tr class="separator:a46c28d94d23fb8e46ce1ce7037be850f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70b03cb950bc56582c574d2d93cd03be"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structDJI_1_1OSDK_1_1MissionStatePushAck.html">DJI::OSDK::MissionStatePushAck</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#a70b03cb950bc56582c574d2d93cd03be">DJI::OSDK::MissionStatePushAck</a></td></tr>
+<tr class="separator:a70b03cb950bc56582c574d2d93cd03be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0376a85e7d2c403f52f6d2128f05e19"><td class="memItemLeft" align="right" valign="top">typedef union <a class="el" href="unionDJI_1_1OSDK_1_1Eventdata.html">DJI::OSDK::Eventdata</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#ac0376a85e7d2c403f52f6d2128f05e19">DJI::OSDK::Eventdata</a></td></tr>
+<tr class="separator:ac0376a85e7d2c403f52f6d2128f05e19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3137113d6de935872e0437f21406305"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structDJI_1_1OSDK_1_1MissionEventPushAck.html">DJI::OSDK::MissionEventPushAck</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#ae3137113d6de935872e0437f21406305">DJI::OSDK::MissionEventPushAck</a></td></tr>
+<tr class="separator:ae3137113d6de935872e0437f21406305"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed3c1e081dff3fc5f59a55d702cf3704"><td class="memItemLeft" align="right" valign="top"><a id="aed3c1e081dff3fc5f59a55d702cf3704"></a>
+typedef struct <a class="el" href="structDJI_1_1OSDK_1_1WayPointV2InitSettingsInternal.html">DJI::OSDK::WayPointV2InitSettingsInternal</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#aed3c1e081dff3fc5f59a55d702cf3704">DJI::OSDK::WayPointV2InitSettingsInternal</a></td></tr>
+<tr class="memdesc:aed3c1e081dff3fc5f59a55d702cf3704"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waypoint V2 Mission Initialization Settings Internal User have no need to use it. <br /></td></tr>
+<tr class="separator:aed3c1e081dff3fc5f59a55d702cf3704"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae56b642e678343372970ae1a9a55f84c"><td class="memItemLeft" align="right" valign="top"><a id="ae56b642e678343372970ae1a9a55f84c"></a>
+typedef struct DJI::OSDK::DownloadInitSettingRawAck&#160;</td><td class="memItemRight" valign="bottom"><b>DJI::OSDK::DownloadInitSettingRawAck</b></td></tr>
+<tr class="separator:ae56b642e678343372970ae1a9a55f84c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab407e2cd57369f56dfc4d9eda01bf32b"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structDJI_1_1OSDK_1_1RelativePosition.html">DJI::OSDK::RelativePosition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#ab407e2cd57369f56dfc4d9eda01bf32b">DJI::OSDK::RelativePosition</a></td></tr>
+<tr class="separator:ab407e2cd57369f56dfc4d9eda01bf32b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3d7d18c976b4e1490465dedf90f9c25"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structDJI_1_1OSDK_1_1WaypointV2Config.html">DJI::OSDK::WaypointV2Config</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#ad3d7d18c976b4e1490465dedf90f9c25">DJI::OSDK::WaypointV2Config</a></td></tr>
+<tr class="separator:ad3d7d18c976b4e1490465dedf90f9c25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44f9856bd4923a36e188ea09dc5a9418"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structDJI_1_1OSDK_1_1WaypointV2Internal.html">DJI::OSDK::WaypointV2Internal</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#a44f9856bd4923a36e188ea09dc5a9418">DJI::OSDK::WaypointV2Internal</a></td></tr>
+<tr class="separator:a44f9856bd4923a36e188ea09dc5a9418"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae52be875a9db21ec127c1474ef39c69f"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structDJI_1_1OSDK_1_1WaypointV2.html">DJI::OSDK::WaypointV2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#ae52be875a9db21ec127c1474ef39c69f">DJI::OSDK::WaypointV2</a></td></tr>
+<tr class="separator:ae52be875a9db21ec127c1474ef39c69f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a918170fae24a79928a5e74416eb6e237"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structDJI_1_1OSDK_1_1WayPointV2InitSettings.html">DJI::OSDK::WayPointV2InitSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#a918170fae24a79928a5e74416eb6e237">DJI::OSDK::WayPointV2InitSettings</a></td></tr>
+<tr class="memdesc:a918170fae24a79928a5e74416eb6e237"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waypoint V2 Mission Initialization settings.  <a href="namespaceDJI_1_1OSDK.html#a918170fae24a79928a5e74416eb6e237">More...</a><br /></td></tr>
+<tr class="separator:a918170fae24a79928a5e74416eb6e237"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a33db7f9622b579cf78f644f7ecd65c"><td class="memItemLeft" align="right" valign="top"><a id="a9a33db7f9622b579cf78f644f7ecd65c"></a>
+typedef struct DJI::OSDK::FCGroundStationDataPush&#160;</td><td class="memItemRight" valign="bottom"><b>DJI::OSDK::FCGroundStationDataPush</b></td></tr>
+<tr class="separator:a9a33db7f9622b579cf78f644f7ecd65c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -220,49 +254,219 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a1f8f5930646e3b3fb40892c689b68730"><td class="mdescLeft">&#160;</td><td class="mdescRight">WayPoint Push Data Incident Type enumerator. <br /></td></tr>
 <tr class="separator:a1f8f5930646e3b3fb40892c689b68730"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a891b30a58c726ec3829cd648b691b717"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#a891b30a58c726ec3829cd648b691b717">DJI::OSDK::DJIWaypointV2MissionV2RCLostAction</a> : uint8_t { <br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a891b30a58c726ec3829cd648b691b717ab30d79f2bc9e829c0b97876600b238dc">DJI::OSDK::DJIWaypointV2MissionV2RCLostActionStopMission</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a891b30a58c726ec3829cd648b691b717a81660f9540d90c8bacdbffb6b9b34b4c">DJI::OSDK::DJIWaypointV2MissionV2RCLostActionContinue</a>
+<br />
+ }</td></tr>
+<tr class="separator:a891b30a58c726ec3829cd648b691b717"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f440c04969bebda950e919986dc8cd9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#a1f440c04969bebda950e919986dc8cd9">DJI::OSDK::DJIWaypointV2MissionFinishedAction</a> : uint8_t { <br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a1f440c04969bebda950e919986dc8cd9a9d8fbfe97bd6a0c0d432717e37dbb87f">DJI::OSDK::DJIWaypointV2MissionFinishedNoAction</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a1f440c04969bebda950e919986dc8cd9a9bfdf308c86961383e093f608795eb55">DJI::OSDK::DJIWaypointV2MissionFinishedGoHome</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a1f440c04969bebda950e919986dc8cd9a19367dd00f9658f3984dc7eea7f801e3">DJI::OSDK::DJIWaypointV2MissionFinishedAutoLanding</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a1f440c04969bebda950e919986dc8cd9af0a4e71c1021084197b546c98b182dc0">DJI::OSDK::DJIWaypointV2MissionFinishedGoToFirstWaypoint</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a1f440c04969bebda950e919986dc8cd9ac4b0d31d3fc74c1f7ad97387c0fef41a">DJI::OSDK::DJIWaypointV2MissionFinishedContinueUntilStop</a>
+<br />
+ }</td></tr>
+<tr class="separator:a1f440c04969bebda950e919986dc8cd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af98d5597ac36b9a086d357a56bb00042"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#af98d5597ac36b9a086d357a56bb00042">DJI::OSDK::DJIWaypointV2MissionGotoFirstWaypointMode</a> : uint8_t { <br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#af98d5597ac36b9a086d357a56bb00042a81fb20cfd8b3b28c177bee0e68bf442c">DJI::OSDK::DJIWaypointV2MissionGotoFirstWaypointModeSafely</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#af98d5597ac36b9a086d357a56bb00042a48b817985d2cb20a8b366e55e9a85896">DJI::OSDK::DJIWaypointV2MissionGotoFirstWaypointModePointToPoint</a>
+<br />
+ }</td></tr>
+<tr class="separator:af98d5597ac36b9a086d357a56bb00042"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab89bddb3fd931529057544a31e6d6ff8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#ab89bddb3fd931529057544a31e6d6ff8">DJI::OSDK::DJIWaypointV2TriggerAssociatedTimingType</a> : uint8_t { <br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#ab89bddb3fd931529057544a31e6d6ff8a388812a13f5e2d6e62de1e365afbd07d">DJI::OSDK::DJIWaypointV2TriggerAssociatedTimingTypeSimultaneously</a> = 1, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#ab89bddb3fd931529057544a31e6d6ff8ad831aab7c52edc296cf81668af3e5572">DJI::OSDK::DJIWaypointV2TriggerAssociatedTimingTypeAfterFinised</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#ab89bddb3fd931529057544a31e6d6ff8a0d3102964a8ff493568d7b5c0eb69f61">DJI::OSDK::DJIWaypointV2TriggerAssociatedTimingTypeUnknown</a> = 0xFF
+<br />
+ }</td></tr>
+<tr class="separator:ab89bddb3fd931529057544a31e6d6ff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a0c4c8cd45949fee8fc294d43447135"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#a9a0c4c8cd45949fee8fc294d43447135">DJI::OSDK::DJIWaypointV2ActionIntervalType</a> : uint8_t { <br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a9a0c4c8cd45949fee8fc294d43447135a12257428b4ce7288964831fc903eb498">DJI::OSDK::DJIWaypointV2ActionIntervalTypeTime</a> = 1, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a9a0c4c8cd45949fee8fc294d43447135ad6bcc0b488ba6288bb90b5c328652d97">DJI::OSDK::DJIWaypointV2ActionIntervalTypeDistance</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a9a0c4c8cd45949fee8fc294d43447135af7cb4daa755b2068bc34869677189b05">DJI::OSDK::DJIWaypointV2ActionIntervalTypeUnknown</a> = 0xFF
+<br />
+ }</td></tr>
+<tr class="separator:a9a0c4c8cd45949fee8fc294d43447135"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a839ae5dc01deddf8d2d2e77c3682a947"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#a839ae5dc01deddf8d2d2e77c3682a947">DJI::OSDK::DJIWaypointV2ActionTriggerType</a> : uint8_t { <br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a839ae5dc01deddf8d2d2e77c3682a947a2058ed7fb233a9ab2619ac04c5b9db57">DJI::OSDK::DJIWaypointV2ActionTriggerTypeReachPoint</a> = 1, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a839ae5dc01deddf8d2d2e77c3682a947a97278350bbacd4d0393b48addd3368bd">DJI::OSDK::DJIWaypointV2ActionTriggerTypeActionAssociated</a> = 2, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a839ae5dc01deddf8d2d2e77c3682a947a0be98ee3c4377e95e132c16c4756848d">DJI::OSDK::DJIWaypointV2ActionTriggerTypeTrajectory</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a839ae5dc01deddf8d2d2e77c3682a947a81b96a6a2b287f6f4e0dddf4c62d2cfb">DJI::OSDK::DJIWaypointV2ActionTriggerTypeInterval</a>, 
+<br />
+&#160;&#160;<b>DJIWaypointV2ActionTriggerTypeSampleReachPoint</b>, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a839ae5dc01deddf8d2d2e77c3682a947a7517987a53012616c7097594e50c15e1">DJI::OSDK::DJIWaypointV2ActionTriggerTypeUnknown</a> = 0xFF
+<br />
+ }</td></tr>
+<tr class="separator:a839ae5dc01deddf8d2d2e77c3682a947"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe8b307ba1940bbc99b2b8d1862efe0f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#afe8b307ba1940bbc99b2b8d1862efe0f">DJI::OSDK::DJIWaypointV2ActionActuatorType</a> : uint8_t { <br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#afe8b307ba1940bbc99b2b8d1862efe0fab95d5d2691bee37df78364ba5ee32451">DJI::OSDK::DJIWaypointV2ActionActuatorTypeCamera</a> = 1, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#afe8b307ba1940bbc99b2b8d1862efe0fa9180996d470086504ec6d85cb7fd76f6">DJI::OSDK::DJIWaypointV2ActionActuatorTypeGimbal</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#afe8b307ba1940bbc99b2b8d1862efe0fa3e55ac586f2f52eb6022ca78a6b57b70">DJI::OSDK::DJIWaypointV2ActionActuatorTypeAircraftControl</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#afe8b307ba1940bbc99b2b8d1862efe0facbcb802246ee9c3db035cde26946703a">DJI::OSDK::DJIWaypointV2ActionActuatorTypeUnknown</a> = 0xFF
+<br />
+ }</td></tr>
+<tr class="separator:afe8b307ba1940bbc99b2b8d1862efe0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba5b6d6a0c6285ca7e7050ea85cd0deb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#aba5b6d6a0c6285ca7e7050ea85cd0deb">DJI::OSDK::DJIWaypointV2ActionActuatorGimbalOperationType</a> : uint8_t { <br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#aba5b6d6a0c6285ca7e7050ea85cd0deba51ec4522f98416a4c276be369dfaa6bd">DJI::OSDK::DJIWaypointV2ActionActuatorGimbalOperationTypeRotateGimbal</a> = 1, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#aba5b6d6a0c6285ca7e7050ea85cd0deba1f5c1b46864c08b1bfe998358625458e">DJI::OSDK::DJIWaypointV2ActionActuatorGimbalOperationTypeUnknown</a> = 0xFF
+<br />
+ }</td></tr>
+<tr class="separator:aba5b6d6a0c6285ca7e7050ea85cd0deb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c7187c86c36341c4ccd6d2992c5119e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#a8c7187c86c36341c4ccd6d2992c5119e">DJI::OSDK::DJIWaypointV2ActionActuatorCameraOperationType</a> : uint16_t { <br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a8c7187c86c36341c4ccd6d2992c5119ea8d545d70d996855c6e35a49189e4f639">DJI::OSDK::DJIWaypointV2ActionActuatorCameraOperationTypeTakePhoto</a> = 1, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a8c7187c86c36341c4ccd6d2992c5119eae97eae370f1d12f9e7fbbba3523a89b9">DJI::OSDK::DJIWaypointV2ActionActuatorCameraOperationTypeStartRecordVideo</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a8c7187c86c36341c4ccd6d2992c5119eaac4871fe35c8f0ebecf765a39d040e0f">DJI::OSDK::DJIWaypointV2ActionActuatorCameraOperationTypeStopRecordVideo</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a8c7187c86c36341c4ccd6d2992c5119ea95e3064ce4caaf3174d301d8232b2fd1">DJI::OSDK::DJIWaypointV2ActionActuatorCameraOperationTypeFocus</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a8c7187c86c36341c4ccd6d2992c5119eac7bc29acdf56f40a54b0b5419c4dffb3">DJI::OSDK::DJIWaypointV2ActionActuatorCameraOperationTypeFocalLength</a>
+<br />
+ }</td></tr>
+<tr class="separator:a8c7187c86c36341c4ccd6d2992c5119e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a652ecf66bb2a5ed16b9d1f229fbae9f3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#a652ecf66bb2a5ed16b9d1f229fbae9f3">DJI::OSDK::DJIWaypointV2ActionActuatorAircraftControlOperationType</a> : uint8_t { <br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a652ecf66bb2a5ed16b9d1f229fbae9f3ade5c3fc8c40daeacb563bc56e1a7767e">DJI::OSDK::DJIWaypointV2ActionActuatorAircraftControlOperationTypeRotateYaw</a> = 1, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a652ecf66bb2a5ed16b9d1f229fbae9f3a7006f5c722430b636a0a724947b1abdb">DJI::OSDK::DJIWaypointV2ActionActuatorAircraftControlOperationTypeFlyingControl</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a652ecf66bb2a5ed16b9d1f229fbae9f3aed97162c9d54d24f64b2c4fa7331d754">DJI::OSDK::DJIWaypointV2ActionActuatorAircraftControlOperationTypeUnknown</a> = 0xFF
+<br />
+ }</td></tr>
+<tr class="separator:a652ecf66bb2a5ed16b9d1f229fbae9f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad90906264bca35a8fd1e7b47023efa6d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#ad90906264bca35a8fd1e7b47023efa6d">DJI::OSDK::DJIWaypointV2MissionExecutionState</a> : uint8_t { <br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#ad90906264bca35a8fd1e7b47023efa6daeb0f2d0e3b315d37c80e80ea37580352">DJI::OSDK::DJIWaypointV2MissionExecutionStateInitializing</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#ad90906264bca35a8fd1e7b47023efa6da36a4cc30b295cfc4468f3bff22e8c872">DJI::OSDK::DJIWaypointV2MissionExecutionStateGoToFirstWaypoint</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#ad90906264bca35a8fd1e7b47023efa6da60cebd5fcd007e2a80876a9eb556db2e">DJI::OSDK::DJIWaypointV2MissionExecutionStateMoving</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#ad90906264bca35a8fd1e7b47023efa6da8a40b32a7f5dbe64ce566c0e542202f4">DJI::OSDK::DJIWaypointV2MissionExecutionStateInterrupted</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#ad90906264bca35a8fd1e7b47023efa6dae2969aec42b005631d17371502f646e0">DJI::OSDK::DJIWaypointV2MissionExecutionStateFinished</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#ad90906264bca35a8fd1e7b47023efa6daa344151a721d1875f5a4068a65982d15">DJI::OSDK::DJIWaypointV2MissionExecutionStateGoHome</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#ad90906264bca35a8fd1e7b47023efa6da89d6a53c9a8c11a82bcf606e36471ce6">DJI::OSDK::DJIWaypointV2MissionExecutionStateLanding</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#ad90906264bca35a8fd1e7b47023efa6dad2c2bd34ec55a73b384d45035083c07b">DJI::OSDK::DJIWaypointV2MissionExecutionStateReturnToFirstWaypoint</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#ad90906264bca35a8fd1e7b47023efa6daf95bb002072cd1cc859efebc15bea3f6">DJI::OSDK::DJIWaypointV2MissionExecutionStateUnknown</a> = 0xFF
+<br />
+ }</td></tr>
+<tr class="separator:ad90906264bca35a8fd1e7b47023efa6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8afeb3deb26339887c8388da0a744f37"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#a8afeb3deb26339887c8388da0a744f37">DJI::OSDK::DJIWaypointV2ActionExecutionEvent</a> : uint8_t { <br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a8afeb3deb26339887c8388da0a744f37a2b6e960af36f8cf2022384c0a23e02c6">DJI::OSDK::DJIWaypointV2ActionExecutionEventBeginAction</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a8afeb3deb26339887c8388da0a744f37abfbcf38ac652c8b9a6d81b8544e9b084">DJI::OSDK::DJIWaypointV2ActionExecutionEventFinishedAction</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a8afeb3deb26339887c8388da0a744f37ad87b3f43dfb9bc6af4bfbbeac09c9b29">DJI::OSDK::DJIWaypointV2ActionExecutionEventUnknown</a> = 0xFF
+<br />
+ }</td></tr>
+<tr class="separator:a8afeb3deb26339887c8388da0a744f37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83dd32c35fb51687561f992d9d303604"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#a83dd32c35fb51687561f992d9d303604">DJI::OSDK::DJIWaypointV2FlightPathMode</a> : uint8_t { <br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a83dd32c35fb51687561f992d9d303604a9cd18ef43aa13130abe26c05e74ae110">DJI::OSDK::DJIWaypointV2FlightPathModeGoToPointAlongACurve</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a83dd32c35fb51687561f992d9d303604a524abe5eae72598c5f0dcf59df772fb2">DJI::OSDK::DJIWaypointV2FlightPathModeGoToPointAlongACurveAndStop</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a83dd32c35fb51687561f992d9d303604a52e06f34a084605a4190fc5e119b02b2">DJI::OSDK::DJIWaypointV2FlightPathModeGoToPointInAStraightLineAndStop</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a83dd32c35fb51687561f992d9d303604a7fdd5b89df4ab24ad8c24d034e71d82f">DJI::OSDK::DJIWaypointV2FlightPathModeCoordinateTurn</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a83dd32c35fb51687561f992d9d303604aba0c7fc146c3ffb6a8efda9315474ecc">DJI::OSDK::DJIWaypointV2FlightPathModeGoToFirstPointAlongAStraightLine</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a83dd32c35fb51687561f992d9d303604ac92b2f6ac9a55e2ae9cf9382d6401b8c">DJI::OSDK::DJIWaypointV2FlightPathModeStraightOut</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a83dd32c35fb51687561f992d9d303604a76d44eaedeac351c3084043f9cd4619b">DJI::OSDK::DJIWaypointV2FlightPathModeUnknown</a> = 0xFF
+<br />
+ }</td></tr>
+<tr class="separator:a83dd32c35fb51687561f992d9d303604"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4724285e46cb2e9a321076562c6edbc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#ac4724285e46cb2e9a321076562c6edbc">DJI::OSDK::DJIWaypointV2HeadingMode</a> : uint8_t { <br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#ac4724285e46cb2e9a321076562c6edbca1a595f09761088e36f99805972262046">DJI::OSDK::DJIWaypointV2HeadingModeAuto</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#ac4724285e46cb2e9a321076562c6edbca1a4d82756698f0781f64096b3adcb7f5">DJI::OSDK::DJIWaypointV2HeadingFixed</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#ac4724285e46cb2e9a321076562c6edbca0927554d03e55078c161256f522e3c21">DJI::OSDK::DJIWaypointV2HeadingManual</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#ac4724285e46cb2e9a321076562c6edbca0d829f092157f534964ff4a3b142fd7a">DJI::OSDK::DJIWaypointV2HeadingWaypointCustom</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#ac4724285e46cb2e9a321076562c6edbcad3ecbc19d2ca4b10333bb6f7db245698">DJI::OSDK::DJIWaypointV2HeadingTowardPointOfInterest</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#ac4724285e46cb2e9a321076562c6edbca52205630d7a86c3ebe9ef0a44e08baa7">DJI::OSDK::DJIWaypointV2HeadingGimbalYawFollow</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#ac4724285e46cb2e9a321076562c6edbca81511193bea9d20cad3c5d767a877233">DJI::OSDK::DJIWaypointV2HeadingUnknown</a> = 0xFF
+<br />
+ }</td></tr>
+<tr class="separator:ac4724285e46cb2e9a321076562c6edbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac28cc2649770d22ac097831ac32ab348"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#ac28cc2649770d22ac097831ac32ab348">DJI::OSDK::DJIWaypointV2TurnMode</a> : uint8_t { <br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#ac28cc2649770d22ac097831ac32ab348a705e59ca581562135d7636eb0b1b748a">DJI::OSDK::DJIWaypointV2TurnModeClockwise</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#ac28cc2649770d22ac097831ac32ab348af01ee1fef2306e11e7dd01182ea50e3c">DJI::OSDK::DJIWaypointV2TurnModeCounterClockwise</a>, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#ac28cc2649770d22ac097831ac32ab348a7c130fa5ac0c7c65a6479eb67ab827f2">DJI::OSDK::DJIWaypointV2TurnModeUnknown</a> = 0xFF
+<br />
+ }</td></tr>
+<tr class="separator:ac28cc2649770d22ac097831ac32ab348"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a017211f46775544a35da4e6bd1cc732a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#a017211f46775544a35da4e6bd1cc732a">DJI::OSDK::DJIWaypointV2MissionState</a> { <br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a017211f46775544a35da4e6bd1cc732aac356f99e0cb98b75f506da7aa8820380">DJI::OSDK::DJIWaypointV2MissionStateUnWaypointActionActuatorknown</a> = -1, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a017211f46775544a35da4e6bd1cc732aaa9b33ae7e768ae46e72bb0ef0b239149">DJI::OSDK::DJIWaypointV2MissionStateDisconnected</a> = 0, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a017211f46775544a35da4e6bd1cc732aaff13159604d5c6ba61d49dc42d16f9d1">DJI::OSDK::DJIWaypointV2MissionStateReadyToExecute</a> = 1, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a017211f46775544a35da4e6bd1cc732aa7646ab6d2721654dcd7e6ce59c74242e">DJI::OSDK::DJIWaypointV2MissionStateExecuting</a> = 2, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a017211f46775544a35da4e6bd1cc732aa614a85d5c2bed95be222dbf6ebfb8338">DJI::OSDK::DJIWaypointV2MissionStateInterrupted</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a017211f46775544a35da4e6bd1cc732aabe3147fa6e27a2f08f2f96921cb2637d">DJI::OSDK::DJIWaypointV2MissionStateResumeAfterInterrupted</a> = 4, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a017211f46775544a35da4e6bd1cc732aaddd7725e4dd1875d3f4e3aa3e5f58165">DJI::OSDK::DJIWaypointV2MissionStateExitMission</a> = 5, 
+<br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a017211f46775544a35da4e6bd1cc732aa8f0a2c0687082c2fddb9db7a1f4b3fbc">DJI::OSDK::DJIWaypointV2MissionStateFinishedMission</a> = 6
+<br />
+ }</td></tr>
+<tr class="separator:a017211f46775544a35da4e6bd1cc732a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a918c296233e0650cc3f222b82d4c1042"><td class="memItemLeft" align="right" valign="top"><a id="a918c296233e0650cc3f222b82d4c1042"></a>
+const float32_t&#160;</td><td class="memItemRight" valign="bottom"><b>DJI::OSDK::EARTH_RADIUS</b> = 6378137.0</td></tr>
+<tr class="separator:a918c296233e0650cc3f222b82d4c1042"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Mission related data struct for <a class="el" href="namespaceDJI.html">DJI</a> OSDK library. </p>
+<div class="textblock"><p>Mission related data struct for <a class="el" href="namespaceDJI.html" title="handle array of characters">DJI</a> OSDK library. </p>
 <dl class="section version"><dt>Version</dt><dd>3.3 </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>April 2017</dd></dl>
-<p>@Copyright (c) 2017 <a class="el" href="namespaceDJI.html">DJI</a></p>
+<p>@Copyright (c) 2017 <a class="el" href="namespaceDJI.html" title="handle array of characters">DJI</a></p>
 <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
 <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
 <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. </p>
 </div></div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
-</div>
-</div>
-</div>
-</div>
-</div>
 <hr class="footer"/><address class="footer"><small>
-  <footer id="site-footer" class="site-footer">
-    <div class="container">
-      <div class="foot-nav row">
-        <nav class="link-list col-xs-2"><span class="title">SDK</span><a href="/mobile-sdk">Mobile SDK</a><a href="/ux-sdk">UX SDK</a><a href="/onboard-sdk">Onboard SDK</a><a href="/payload-sdk">Payload SDK</a><a href="/windows-sdk">Windows SDK</a></nav>
-        <nav class="link-list col-xs-2"><span class="title">Info</span><a href="/products">Products</a></nav>
-        <nav class="link-list col-xs-2"><span class="title">Community</span><a href="http://stackoverflow.com/questions/tagged/dji-sdk" target="_blank">Stack Overflow</a><a href="https://www.youtube.com/channel/UCPQwN5xsob8zZGIcDhkYqUA" target="_blank">YouTube</a><a href="https://twitter.com/djidevelopers" target="_blank">Twitter</a></nav>
-        <nav class="link-list col-xs-2"><span class="title">Contact Us</span><a href="mailto:dev@dji.com"> dev@dji.com</a></nav>
-        <nav class="link-list col-xs-2"><span class="title">Business Cooperation</span><a href="mailto:dev@dji.com"> dev@dji.com</a></nav>
-        <nav class="link-list col-xs-2"><span class="title">BILLING</span><a href="mailto:billing-dev@dji.com"> billing-dev@dji.com</a></nav>
-      </div>
-      <div class="foot-copyright row">
-        <div class="col-xs-3 foot-logo"><img src="dji-logo-foot.png"></div>
-        <div class="copyright col-xs-7"><span>Copyright © 2018 DJI All Rights Reserved</span><a href="/policies/privacy">Privacy Policy</a><a href="/policies/terms">Terms of Use</a></div>
-        <div class="col-xs-2">
-          <div class="lang-selector">
-            <select dir="rtl" v-model="lang">
-              <option value="en">English</option>
-              <option value="cn">中文</option>
-            </select><i class="fa fa-globe"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
+Generated on Thu Apr 30 2020 21:56:46 for DJI Onboard SDK by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
 </small></address>
 </body>
-<script type="text/javascript" src="doxy-boot.js"></script>
 </html>

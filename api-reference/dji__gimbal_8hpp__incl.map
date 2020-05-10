@@ -1,11 +1,12 @@
-<map id="osdk&#45;core/api/inc/dji_gimbal.hpp" name="osdk&#45;core/api/inc/dji_gimbal.hpp">
-<area shape="rect" id="node1" title="Gimbal API for OSDK library." alt="" coords="171,5,309,47"/>
-<area shape="rect" id="node2" href="$dji__command_8hpp.html" title="All DJI OSDK OpenProtocol Command IDs." alt="" coords="113,95,237,121"/>
-<area shape="rect" id="node8" href="$dji__type_8hpp.html" title="Data type and Data Structure definitions for use throughout DJI OSDK." alt="" coords="261,95,353,121"/>
-<area shape="rect" id="node3" href="$dji__error_8hpp.html" title="All DJI OSDK OpenProtocol ACK Error Codes." alt="" coords="100,169,193,196"/>
-<area shape="rect" id="node7" title=" " alt="" coords="218,169,283,196"/>
+<map id="osdk&#45;lib/x86/osdk&#45;core/inc/dji_gimbal.hpp" name="osdk&#45;lib/x86/osdk&#45;core/inc/dji_gimbal.hpp">
+<area shape="rect" id="node1" title="Gimbal API for OSDK library." alt="" coords="251,5,405,47"/>
+<area shape="rect" id="node2" href="$dji__command_8hpp.html" title="All DJI OSDK OpenProtocol Command IDs." alt="" coords="201,95,325,121"/>
+<area shape="rect" id="node9" href="$dji__type_8hpp.html" title="Data type and Data Structure definitions for use throughout DJI OSDK." alt="" coords="349,95,441,121"/>
+<area shape="rect" id="node3" href="$dji__error_8hpp.html" title="All DJI OSDK OpenProtocol ACK Error Codes." alt="" coords="120,169,213,196"/>
+<area shape="rect" id="node8" title=" " alt="" coords="278,319,343,345"/>
 <area shape="rect" id="node4" title=" " alt="" coords="5,244,67,271"/>
-<area shape="rect" id="node5" title=" " alt="" coords="91,244,202,271"/>
-<area shape="rect" id="node6" title=" " alt="" coords="226,244,273,271"/>
-<area shape="rect" id="node9" title=" " alt="" coords="307,169,365,196"/>
+<area shape="rect" id="node5" title=" " alt="" coords="91,244,138,271"/>
+<area shape="rect" id="node6" href="$osdk__typedef_8h_source.html" title=" " alt="" coords="162,244,273,271"/>
+<area shape="rect" id="node7" title=" " alt="" coords="183,319,252,345"/>
+<area shape="rect" id="node10" title=" " alt="" coords="399,169,457,196"/>
 </map>

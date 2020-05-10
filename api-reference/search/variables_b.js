@@ -2,7 +2,10 @@ var searchData=
 [
   ['mandatoryversionbase',['mandatoryVersionBase',['../namespaceDJI_1_1OSDK.html#af1b92aeca3ba6f10371ec3dd7575eda4',1,'DJI::OSDK']]],
   ['max_5fincoming_5fdata_5fsize',['MAX_INCOMING_DATA_SIZE',['../namespaceDJI_1_1OSDK.html#a0278bdc24560401128675003f8cb2ae3',1,'DJI::OSDK']]],
+  ['maxflightspeed',['maxFlightSpeed',['../structDJI_1_1OSDK_1_1WaypointV2Internal.html#a90a0d18eb63299b6745cd0a158660b5f',1,'DJI::OSDK::WaypointV2Internal::maxFlightSpeed()'],['../structDJI_1_1OSDK_1_1WaypointV2.html#af66eb55a8fdf4cd4b4d53b3f967a0770',1,'DJI::OSDK::WaypointV2::maxFlightSpeed()'],['../structDJI_1_1OSDK_1_1WayPointV2InitSettings.html#a33ce209bd9795ebd36d0a0b9f350a583',1,'DJI::OSDK::WayPointV2InitSettings::maxFlightSpeed()']]],
   ['maxvelocity',['maxVelocity',['../structDJI_1_1OSDK_1_1WayPointInitSettings.html#ae47adf4a5537a50ee87f59e954921f7a',1,'DJI::OSDK::WayPointInitSettings']]],
+  ['missionid',['missionID',['../structDJI_1_1OSDK_1_1WayPointV2InitSettings.html#aa7f1166301f5c7f7ff0186ac3d5ba797',1,'DJI::OSDK::WayPointV2InitSettings']]],
+  ['misstotallen',['missTotalLen',['../structDJI_1_1OSDK_1_1WayPointV2InitSettings.html#a15314de6369d720afe67c14571638a63',1,'DJI::OSDK::WayPointV2InitSettings']]],
   ['mode',['mode',['../structDJI_1_1OSDK_1_1Gimbal_1_1AngleData.html#aac14dcd2fdb2c7049ebd0b539e03f578',1,'DJI::OSDK::Gimbal::AngleData::mode()'],['../structDJI_1_1OSDK_1_1Telemetry_1_1RC.html#a9e69e1b32599986319ad3312ca5723de',1,'DJI::OSDK::Telemetry::RC::mode()'],['../structDJI_1_1OSDK_1_1Telemetry_1_1Status.html#a6aa798eda003af8ab473ba4899c750a7',1,'DJI::OSDK::Telemetry::Status::mode()'],['../structDJI_1_1OSDK_1_1Telemetry_1_1LB2RcFullRawData.html#a460f0063ce23e3d6471e2cdea744573a',1,'DJI::OSDK::Telemetry::LB2RcFullRawData::mode()']]],
   ['motor_5ffail_5fapp_5fnot_5fallow',['MOTOR_FAIL_APP_NOT_ALLOW',['../classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#a442b2ad340f197c7bd90dcd114b17656',1,'DJI::OSDK::ErrorCode::CommonACK']]],
   ['motor_5ffail_5fassistant_5fprotected',['MOTOR_FAIL_ASSISTANT_PROTECTED',['../classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#abc79588c5b42ba90b1d3bd69360a1438',1,'DJI::OSDK::ErrorCode::CommonACK']]],
@@ -82,5 +85,8 @@ var searchData=
   ['motor_5ffail_5ftopology_5fabnormal',['MOTOR_FAIL_TOPOLOGY_ABNORMAL',['../classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#a1522582e51750c18863b7dd8806c1bca',1,'DJI::OSDK::ErrorCode::CommonACK']]],
   ['motor_5ffail_5fupgrading',['MOTOR_FAIL_UPGRADING',['../classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#abd2acb170c3121fdd12cce42bd13140f',1,'DJI::OSDK::ErrorCode::CommonACK']]],
   ['motor_5ffail_5fwrong_5faircraft_5ftype',['MOTOR_FAIL_WRONG_AIRCRAFT_TYPE',['../classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html#a596c437880578f82a20f0b15baf99a23',1,'DJI::OSDK::ErrorCode::CommonACK']]],
-  ['mountstatus',['mountStatus',['../structDJI_1_1OSDK_1_1Telemetry_1_1GimbalStatus.html#ac88f90816c5e608701a897f7950acf68',1,'DJI::OSDK::Telemetry::GimbalStatus']]]
+  ['mountstatus',['mountStatus',['../structDJI_1_1OSDK_1_1Telemetry_1_1GimbalStatus.html#ac88f90816c5e608701a897f7950acf68',1,'DJI::OSDK::Telemetry::GimbalStatus']]],
+  ['msgend',['msgEnd',['../structDJI_1_1OSDK_1_1HMSPushData.html#a8b7a609334279b11cf67b222b6707dd5',1,'DJI::OSDK::HMSPushData']]],
+  ['msgindex',['msgIndex',['../structDJI_1_1OSDK_1_1HMSPushData.html#a1a59cdee519ec6c0c09cf6c3d8091817',1,'DJI::OSDK::HMSPushData']]],
+  ['multiplier',['multiplier',['../structDJI_1_1OSDK_1_1CameraModule_1_1TapZoomEnableReq.html#ab110b840a56acca31a91101c43709c46',1,'DJI::OSDK::CameraModule::TapZoomEnableReq::multiplier()'],['../structDJI_1_1OSDK_1_1CameraModule_1_1TapZoomEnableAck.html#acca90adab4e97fd14188a245c8d65b49',1,'DJI::OSDK::CameraModule::TapZoomEnableAck::multiplier()']]]
 ];

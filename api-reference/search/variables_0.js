@@ -1,11 +1,21 @@
 var searchData=
 [
   ['a',['a',['../structDJI_1_1OSDK_1_1Telemetry_1_1HardSyncData.html#a76ef8557f15517b1837e026664de92b7',1,'DJI::OSDK::Telemetry::HardSyncData']]],
+  ['absyawmoderef',['absYawModeRef',['../structDJI_1_1OSDK_1_1DJIGimbalRotation.html#a414207b25025754a4cd8cfe6a1db9e38',1,'DJI::OSDK::DJIGimbalRotation']]],
+  ['actionassociatedtype',['actionAssociatedType',['../structDJI_1_1OSDK_1_1DJIWaypointV2AssociateTriggerParam.html#a7aa4decf7040abb87516ed591349e5e2',1,'DJI::OSDK::DJIWaypointV2AssociateTriggerParam']]],
+  ['actionid',['actionId',['../structDJI_1_1OSDK_1_1DJIWaypointV2Action.html#a7e89e1616734e9b7a9cb711ce24088bc',1,'DJI::OSDK::DJIWaypointV2Action']]],
+  ['actionidassociated',['actionIdAssociated',['../structDJI_1_1OSDK_1_1DJIWaypointV2AssociateTriggerParam.html#a65ea3860753579fb1e3bc02d880ceac1',1,'DJI::OSDK::DJIWaypointV2AssociateTriggerParam']]],
+  ['actionintervaltype',['actionIntervalType',['../structDJI_1_1OSDK_1_1DJIWaypointV2IntervalTriggerParam.html#a1a3c696145d383a929c799fef7f2c3cf',1,'DJI::OSDK::DJIWaypointV2IntervalTriggerParam']]],
   ['actionnumber',['actionNumber',['../structDJI_1_1OSDK_1_1WayPointSettings.html#ae914160163df13a0c9997f5becab7483',1,'DJI::OSDK::WayPointSettings']]],
   ['actionrepeat',['actionRepeat',['../structDJI_1_1OSDK_1_1WayPointSettings.html#a35263cc37ebc3830d95e170029b69d16',1,'DJI::OSDK::WayPointSettings']]],
   ['actiontimelimit',['actionTimeLimit',['../structDJI_1_1OSDK_1_1WayPointSettings.html#a7c2c0e46d2771cdacdb91973fefe13f3',1,'DJI::OSDK::WayPointSettings']]],
+  ['actuator',['actuator',['../structDJI_1_1OSDK_1_1DJIWaypointV2Action.html#a6699ba5d68c9a717f28924711eed314a',1,'DJI::OSDK::DJIWaypointV2Action']]],
+  ['actuatorindex',['actuatorIndex',['../structDJI_1_1OSDK_1_1DJIWaypointV2Actuator.html#af309766e8c8f40431036dc6cef007d46',1,'DJI::OSDK::DJIWaypointV2Actuator']]],
+  ['actuatortype',['actuatorType',['../structDJI_1_1OSDK_1_1DJIWaypointV2Actuator.html#a81c488958279944a5023c88a8a805a2f',1,'DJI::OSDK::DJIWaypointV2Actuator']]],
+  ['aircraftcontrolactuatorparam',['aircraftControlActuatorParam',['../structDJI_1_1OSDK_1_1DJIWaypointV2Actuator.html#a85d67c69e4f8351812dbabe23d3e8fd8',1,'DJI::OSDK::DJIWaypointV2Actuator']]],
   ['aircraftisfalling',['aircraftIsFalling',['../structDJI_1_1OSDK_1_1Telemetry_1_1FlightAnomaly.html#afff22e5e2e9cf3a2d52ddd8ecea97186',1,'DJI::OSDK::Telemetry::FlightAnomaly']]],
   ['altitude',['altitude',['../structDJI_1_1OSDK_1_1WayPointInitSettings.html#a3334bd64b197662bb493d2ee175ae8d8',1,'DJI::OSDK::WayPointInitSettings::altitude()'],['../structDJI_1_1OSDK_1_1WayPointSettings.html#a90322682ce4d8c7acd1eedb68aab3b03',1,'DJI::OSDK::WayPointSettings::altitude()'],['../structDJI_1_1OSDK_1_1Telemetry_1_1GlobalPosition.html#a286228357e39e31e976eedfe5dbfde6f',1,'DJI::OSDK::Telemetry::GlobalPosition::altitude()'],['../structDJI_1_1OSDK_1_1Telemetry_1_1GPSFused.html#a25883c16a54db30d755d667bc09146cd',1,'DJI::OSDK::Telemetry::GPSFused::altitude()']]],
   ['appconnected',['appConnected',['../structDJI_1_1OSDK_1_1Telemetry_1_1RCWithFlagData.html#add585606e453f7d0e9f38ce5f0adbe71',1,'DJI::OSDK::Telemetry::RCWithFlagData']]],
-  ['atleastoneescdisconnected',['atLeastOneEscDisconnected',['../structDJI_1_1OSDK_1_1Telemetry_1_1FlightAnomaly.html#ab16e0b3447a8c688c9c64ceb0aafed7c',1,'DJI::OSDK::Telemetry::FlightAnomaly']]]
+  ['atleastoneescdisconnected',['atLeastOneEscDisconnected',['../structDJI_1_1OSDK_1_1Telemetry_1_1FlightAnomaly.html#ab16e0b3447a8c688c9c64ceb0aafed7c',1,'DJI::OSDK::Telemetry::FlightAnomaly']]],
+  ['autoflightspeed',['autoFlightSpeed',['../structDJI_1_1OSDK_1_1WaypointV2Internal.html#a6fbfd7f1b71c3a524ad924b6773b8ad4',1,'DJI::OSDK::WaypointV2Internal::autoFlightSpeed()'],['../structDJI_1_1OSDK_1_1WaypointV2.html#aba8da63ee1a8d59e903d3cbf748e44e4',1,'DJI::OSDK::WaypointV2::autoFlightSpeed()'],['../structDJI_1_1OSDK_1_1WayPointV2InitSettings.html#aa427f10b62ac611236e0ba063e023ff0',1,'DJI::OSDK::WayPointV2InitSettings::autoFlightSpeed()']]]
 ];

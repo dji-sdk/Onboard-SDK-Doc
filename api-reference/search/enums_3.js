@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['horizontalcoordinate',['HorizontalCoordinate',['../classDJI_1_1OSDK_1_1Control.html#aa89e5fd518382c94fb6149a5b9a6183b',1,'DJI::OSDK::Control']]],
-  ['horizontallogic',['HorizontalLogic',['../classDJI_1_1OSDK_1_1Control.html#a7a7cab0e2d2c9415556837880ddf9e86',1,'DJI::OSDK::Control']]]
+  ['exposurecompensation',['ExposureCompensation',['../classDJI_1_1OSDK_1_1CameraModule.html#a1a7e2dd17bbd6b38a77eea0046bf08f1',1,'DJI::OSDK::CameraModule']]],
+  ['exposuremode',['ExposureMode',['../classDJI_1_1OSDK_1_1CameraModule.html#aaa4d8900197935fc9457273997106976',1,'DJI::OSDK::CameraModule']]]
 ];

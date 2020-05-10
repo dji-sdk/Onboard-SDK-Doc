@@ -13,5 +13,10 @@ var searchData=
   ['info',['info',['../structDJI_1_1OSDK_1_1Telemetry_1_1Velocity.html#a2af2c023b3336b27e58c74d288972444',1,'DJI::OSDK::Telemetry::Velocity']]],
   ['initunfinished',['initUnfinished',['../structDJI_1_1OSDK_1_1Telemetry_1_1GimbalStatus.html#aa598105a3af78aa76d600596a4092fa1',1,'DJI::OSDK::Telemetry::GimbalStatus']]],
   ['installeddirection',['installedDirection',['../structDJI_1_1OSDK_1_1Telemetry_1_1GimbalStatus.html#ae3f4056d4a09bc040257ab61fbb57f16',1,'DJI::OSDK::Telemetry::GimbalStatus']]],
-  ['invalidcmd',['InvalidCMD',['../classDJI_1_1OSDK_1_1ErrorCode_1_1CameraCommonErr.html#a26e4acee6a07423dee2f3c6ee560238f',1,'DJI::OSDK::ErrorCode::CameraCommonErr::InvalidCMD()'],['../classDJI_1_1OSDK_1_1ErrorCode_1_1PSDKCommonErr.html#a02d10b71961ab29ec8c56dccacd91cdd',1,'DJI::OSDK::ErrorCode::PSDKCommonErr::InvalidCMD()']]]
+  ['integer_5fpart',['integer_part',['../structDJI_1_1OSDK_1_1CameraModule_1_1ShutterParamType.html#a29186096d0679aaed3e186e00908ac87',1,'DJI::OSDK::CameraModule::ShutterParamType']]],
+  ['interval',['interval',['../structDJI_1_1OSDK_1_1DJIWaypointV2IntervalTriggerParam.html#ab50f1b6e700fe9ba0c49d65b0522aae6',1,'DJI::OSDK::DJIWaypointV2IntervalTriggerParam']]],
+  ['intervalsetting',['intervalSetting',['../structDJI_1_1OSDK_1_1CameraModule_1_1CaptureParamData.html#aba184b7055fae7016e6707f4b6880074',1,'DJI::OSDK::CameraModule::CaptureParamData']]],
+  ['iso',['iso',['../structDJI_1_1OSDK_1_1CameraModule_1_1ISOParamReq.html#a5dadbce5ed9f14a6627c9c89b2798846',1,'DJI::OSDK::CameraModule::ISOParamReq::iso()'],['../structDJI_1_1OSDK_1_1CameraModule_1_1ISOParamAck.html#ab59a5b416aca3312b02ae35f29aca823',1,'DJI::OSDK::CameraModule::ISOParamAck::iso()']]],
+  ['isrelative',['isRelative',['../structDJI_1_1OSDK_1_1DJIWaypointV2AircraftControlRotateHeadingParam.html#ab54b6f78661eebf5edbba2e5c238021d',1,'DJI::OSDK::DJIWaypointV2AircraftControlRotateHeadingParam']]],
+  ['isstartflying',['isStartFlying',['../structDJI_1_1OSDK_1_1DJIWaypointV2AircraftControlFlyingParam.html#a19ea429ff8a9876a844f95a7f489b0ee',1,'DJI::OSDK::DJIWaypointV2AircraftControlFlyingParam']]]
 ];

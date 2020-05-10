@@ -1,98 +1,36 @@
-<!-- HTML header for doxygen 1.8.8-->
-<!DOCTYPE html
-    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- For Mobile Devices -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
-    <meta name="generator" content="Doxygen 1.8.15" />
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <title>DJI Onboard SDK: DJI::OSDK::FlightController Class Reference</title>
-    <!-- <link href="tabs.css" rel="stylesheet" type="text/css"/> -->
-    <script type="text/javascript" src="dynsections.js"></script>
-    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DJI Onboard SDK: DJI::OSDK::FlightController Class Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-    <link href="doxygen.css" rel="stylesheet" type="text/css" />
-    <link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <link href="jquery.smartmenus.bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="bootstrap-theme.css">
-    <script src="bootstrap.min.js"></script>
-    <link href="jquery.smartmenus.bootstrap.css" rel="stylesheet">
-    <!-- SmartMenus jQuery plugin -->
-    <script type="text/javascript" src="jquery.smartmenus.min.js"></script>
-    <!-- SmartMenus jQuery Bootstrap Addon -->
-    <script type="text/javascript" src="jquery.smartmenus.bootstrap.min.js"></script>
-    <style>
-        .has-submenu {
-            position: relative;
-        }
-        #main-nav {
-            margin-top: 60px;
-        }
-    </style>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <nav id="site-header" class="site-header navbar">
-        <div class="container">
-            <div class="navbar-header"><a href="/" class="logo"><img src="dji-logo@2x.png">Developer</a></div>
-            <div id="header-navbar" class="collapse navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="/mobile-sdk">Mobile SDK</a></li>
-                    <li><a href="/ux-sdk">UX SDK</a></li>
-                    <li><a href="/onboard-sdk">Onboard SDK</a></li>
-                    <li><a href="/payload-sdk">Payload SDK</a></li>
-                    <li><a href="/windows-sdk">Windows SDK</a></li>
-                </ul>
-                <ul v-cloak="" v-show="!loggedIn" class="nav navbar-nav navbar-right nav-user">
-                    <li><a
-                            href="https://account.dji.com/login?appId=dji_sdk&backUrl=https%3A%2F%2Fdeveloper.dji.com%2Fuser&locale=en_US">Login</a>
-                    </li>
-                    <li><a href="https://account.dji.com/register?appId=dji_sdk&backUrl=https%3A%2F%2Fdeveloper.dji.com%2Fuser&locale=en_US"
-                            class="head-cta">Register</a></li>
-                </ul>
-                <ul v-cloak="" v-show="loggedIn" class="nav navbar-nav navbar-right nav-user">
-                    <li class="hovedown"><a href="javascript:void(0);" class="hovedown-toggle"><i
-                                class="fa fa-user"></i></a>
-                        <ul class="hovedown-menu hovedown-menu-right">
-                            <li><a href="/user">User Center</a></li>
-                            <li><a href="javascript:void(0);" v-on="click: logout">Logout</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <div data-offset-top="60" data-spy="affix" class="sub-nav">
-        <div class="container">
-            <h1 class="logo">Onboard SDK</h1>
-            <nav><a href="/onboard-sdk">Overview</a><a href="/onboard-sdk/documentation">Documentation</a><a
-                    href="/onboard-api-reference/index.html" class="active">API Reference</a><a
-                    href="/onboard-sdk/downloads">Downloads</a>
-            </nav>
-        </div>
-    </div>
-    <!--<nav class="navbar navbar-default" role="navigation">-->
-    <!--<div class="container">-->
-    <!--<div class="navbar-header">-->
-    <!--<a href="#" class="navbar-left"><img src="dji_logo_gray_small.png" alt="DJI OSDK API Documentation" width="32px"/></a>-->
-    <!--<a class="navbar-brand" href="index.html">ONBOARD SDK 3.3</a>-->
-    <!--</div>-->
-    <!--</div>-->
-    <!--</nav>-->
-    <div id="top">
-        <!-- do not remove this div, it is closed by doxygen! -->
-        <div class="content" id="content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 panel " style="padding-bottom: 15px;">
-                        <div style="margin-bottom: 15px;">
-                            <!-- end header part --><!-- Generated by Doxygen 1.8.15 -->
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">DJI Onboard SDK
+   &#160;<span id="projectnumber">4.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.8.15 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 var searchBox = new SearchBox("searchBox", "search",false,'Search');
@@ -144,106 +82,185 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a4e2e07a5d1a7fd408c0174c370f624d4"><td class="memItemLeft" align="right" valign="top"><a id="a4e2e07a5d1a7fd408c0174c370f624d4"></a>
-typedef struct Telemetry::HomeLocationData&#160;</td><td class="memItemRight" valign="bottom"><b>HomeLocation</b></td></tr>
-<tr class="separator:a4e2e07a5d1a7fd408c0174c370f624d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6c6e72a8efefcbcdc833f87c3a298bd"><td class="memItemLeft" align="right" valign="top">typedef bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#ad6c6e72a8efefcbcdc833f87c3a298bd">CollisionAvoidanceSwitch</a></td></tr>
-<tr class="separator:ad6c6e72a8efefcbcdc833f87c3a298bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b074a098432d74bcfce845c3ead52fa"><td class="memItemLeft" align="right" valign="top"><a id="a8b074a098432d74bcfce845c3ead52fa"></a>
+typedef Telemetry::HomeLocationData&#160;</td><td class="memItemRight" valign="bottom"><b>HomeLocation</b></td></tr>
+<tr class="separator:a8b074a098432d74bcfce845c3ead52fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71abd079541c6a5ac062437a9a78ffdd"><td class="memItemLeft" align="right" valign="top">typedef FlightAssistant::RtkEnableData&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a71abd079541c6a5ac062437a9a78ffdd">RtkEnabled</a></td></tr>
 <tr class="separator:a71abd079541c6a5ac062437a9a78ffdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa17357f6a164db8efaae4a3035d9fe85"><td class="memItemLeft" align="right" valign="top"><a id="aa17357f6a164db8efaae4a3035d9fe85"></a>
+typedef FlightAssistant::AvoidEnable&#160;</td><td class="memItemRight" valign="bottom"><b>AvoidEnable</b></td></tr>
+<tr class="separator:aa17357f6a164db8efaae4a3035d9fe85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ae4f1494353fdb6f90aa23c59cbaee9"><td class="memItemLeft" align="right" valign="top"><a id="a9ae4f1494353fdb6f90aa23c59cbaee9"></a>
+typedef FlightAssistant::UpwardsAvoidEnable&#160;</td><td class="memItemRight" valign="bottom"><b>UpwardsAvoidEnable</b></td></tr>
+<tr class="separator:a9ae4f1494353fdb6f90aa23c59cbaee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01b8e59cbdae526f59fdd82ce982e7ed"><td class="memItemLeft" align="right" valign="top">typedef FlightAssistant::GoHomeAltitude&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a01b8e59cbdae526f59fdd82ce982e7ed">GoHomeHeight</a></td></tr>
 <tr class="separator:a01b8e59cbdae526f59fdd82ce982e7ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70ada775dcb3e9a2a9c4315675de9bf1"><td class="memItemLeft" align="right" valign="top"><a id="a70ada775dcb3e9a2a9c4315675de9bf1"></a>
+typedef <a class="el" href="structDJI_1_1OSDK_1_1FlightJoystick_1_1ControlCommand.html">FlightJoystick::ControlCommand</a>&#160;</td><td class="memItemRight" valign="bottom"><b>JoystickCommand</b></td></tr>
+<tr class="separator:a70ada775dcb3e9a2a9c4315675de9bf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba3c1cb682e333fa17de5c4960fa2cdf"><td class="memItemLeft" align="right" valign="top"><a id="aba3c1cb682e333fa17de5c4960fa2cdf"></a>
+typedef enum FlightJoystick::HorizontalLogic&#160;</td><td class="memItemRight" valign="bottom"><b>HorizontalLogic</b></td></tr>
+<tr class="separator:aba3c1cb682e333fa17de5c4960fa2cdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afeb7acff57a131d177ae6baa3875be61"><td class="memItemLeft" align="right" valign="top"><a id="afeb7acff57a131d177ae6baa3875be61"></a>
+typedef enum FlightJoystick::VerticalLogic&#160;</td><td class="memItemRight" valign="bottom"><b>VerticalLogic</b></td></tr>
+<tr class="separator:afeb7acff57a131d177ae6baa3875be61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a819be0e84bccd7997c7ba054e5c77881"><td class="memItemLeft" align="right" valign="top"><a id="a819be0e84bccd7997c7ba054e5c77881"></a>
+typedef enum FlightJoystick::YawLogic&#160;</td><td class="memItemRight" valign="bottom"><b>YawLogic</b></td></tr>
+<tr class="separator:a819be0e84bccd7997c7ba054e5c77881"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cc5e8a8742531f89e50267d0c3603f6"><td class="memItemLeft" align="right" valign="top"><a id="a0cc5e8a8742531f89e50267d0c3603f6"></a>
+typedef enum FlightJoystick::HorizontalCoordinate&#160;</td><td class="memItemRight" valign="bottom"><b>HorizontalCoordinate</b></td></tr>
+<tr class="separator:a0cc5e8a8742531f89e50267d0c3603f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45a74a50a5991b009ae1c5306d248a74"><td class="memItemLeft" align="right" valign="top"><a id="a45a74a50a5991b009ae1c5306d248a74"></a>
+typedef enum FlightJoystick::StableMode&#160;</td><td class="memItemRight" valign="bottom"><b>StableMode</b></td></tr>
+<tr class="separator:a45a74a50a5991b009ae1c5306d248a74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa28d8612956cf06c7e3c5065fa478979"><td class="memItemLeft" align="right" valign="top"><a id="aa28d8612956cf06c7e3c5065fa478979"></a>
+typedef enum FlightActions::KillSwitch&#160;</td><td class="memItemRight" valign="bottom"><b>KillSwitch</b></td></tr>
+<tr class="separator:aa28d8612956cf06c7e3c5065fa478979"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c9e21264e5136f5be9a3fcac91e7d11"><td class="memItemLeft" align="right" valign="top"><a id="a0c9e21264e5136f5be9a3fcac91e7d11"></a>
+typedef struct DJI::OSDK::FlightController::JoystickMode&#160;</td><td class="memItemRight" valign="bottom"><b>JoystickMode</b></td></tr>
+<tr class="separator:a0c9e21264e5136f5be9a3fcac91e7d11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0b9d5dc7b64df100cf7c8dc3ef7b4c2b"><td class="memItemLeft" align="right" valign="top"><a id="a0b9d5dc7b64df100cf7c8dc3ef7b4c2b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>FlightController</b> (<a class="el" href="classDJI_1_1OSDK_1_1Vehicle.html">Vehicle</a> *vehicle)</td></tr>
-<tr class="separator:a0b9d5dc7b64df100cf7c8dc3ef7b4c2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b806f7dc703be8f89f5d643a90539c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a4b806f7dc703be8f89f5d643a90539c7">setRtkEnableSync</a> (<a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a71abd079541c6a5ac062437a9a78ffdd">RtkEnabled</a> rtkEnable, int timeout)</td></tr>
-<tr class="memdesc:a4b806f7dc703be8f89f5d643a90539c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set RTK enable or disable, blocking calls.  <a href="#a4b806f7dc703be8f89f5d643a90539c7">More...</a><br /></td></tr>
-<tr class="separator:a4b806f7dc703be8f89f5d643a90539c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a361e9ccc0d545739890a3a71de65c863"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a361e9ccc0d545739890a3a71de65c863">setRtkEnableAsync</a> (<a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a71abd079541c6a5ac062437a9a78ffdd">RtkEnabled</a> rtkEnable, void(*UserCallBack)(<a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> retCode, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData), <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)</td></tr>
-<tr class="memdesc:a361e9ccc0d545739890a3a71de65c863"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set RTK enable or disable, non-blocking calls.  <a href="#a361e9ccc0d545739890a3a71de65c863">More...</a><br /></td></tr>
-<tr class="separator:a361e9ccc0d545739890a3a71de65c863"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd22ffb1ae2911db9826ed26f33a1857"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#abd22ffb1ae2911db9826ed26f33a1857">getRtkEnableSync</a> (<a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a71abd079541c6a5ac062437a9a78ffdd">RtkEnabled</a> &amp;rtkEnable, int timeout)</td></tr>
-<tr class="memdesc:abd22ffb1ae2911db9826ed26f33a1857"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get rtk enable or disable, blocking calls.  <a href="#abd22ffb1ae2911db9826ed26f33a1857">More...</a><br /></td></tr>
-<tr class="separator:abd22ffb1ae2911db9826ed26f33a1857"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3dac00051d2df4c19a3feb0962c70fd7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a3dac00051d2df4c19a3feb0962c70fd7">getRtkEnableAsync</a> (void(*UserCallBack)(<a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> retCode, <a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a71abd079541c6a5ac062437a9a78ffdd">RtkEnabled</a> rtkEnable, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData), <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)</td></tr>
-<tr class="memdesc:a3dac00051d2df4c19a3feb0962c70fd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get RTK enable or disable, non-blocking calls.  <a href="#a3dac00051d2df4c19a3feb0962c70fd7">More...</a><br /></td></tr>
-<tr class="separator:a3dac00051d2df4c19a3feb0962c70fd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18e380f619128fc06b7dbd186e0f7218"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a18e380f619128fc06b7dbd186e0f7218">setGoHomeAltitudeSync</a> (<a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a01b8e59cbdae526f59fdd82ce982e7ed">GoHomeHeight</a> altitude, int timeout)</td></tr>
-<tr class="memdesc:a18e380f619128fc06b7dbd186e0f7218"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set go home altitude, blocking calls.  <a href="#a18e380f619128fc06b7dbd186e0f7218">More...</a><br /></td></tr>
-<tr class="separator:a18e380f619128fc06b7dbd186e0f7218"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32908e2be079b3a2dfd53eac04fc1bfa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a32908e2be079b3a2dfd53eac04fc1bfa">setGoHomeAltitudeAsync</a> (<a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a01b8e59cbdae526f59fdd82ce982e7ed">GoHomeHeight</a> altitude, void(*UserCallBack)(<a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> retCode, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData), <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)</td></tr>
-<tr class="memdesc:a32908e2be079b3a2dfd53eac04fc1bfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set go home altitude, non-blocking calls.  <a href="#a32908e2be079b3a2dfd53eac04fc1bfa">More...</a><br /></td></tr>
-<tr class="separator:a32908e2be079b3a2dfd53eac04fc1bfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ff324ed7feea98fda11c11205b7696d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a7ff324ed7feea98fda11c11205b7696d">getGoHomeAltitudeSync</a> (<a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a01b8e59cbdae526f59fdd82ce982e7ed">GoHomeHeight</a> &amp;altitude, int timeout)</td></tr>
-<tr class="memdesc:a7ff324ed7feea98fda11c11205b7696d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get go home altitude, blocking calls.  <a href="#a7ff324ed7feea98fda11c11205b7696d">More...</a><br /></td></tr>
-<tr class="separator:a7ff324ed7feea98fda11c11205b7696d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af891e1e8345341b8d3bec4fcfeca3906"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#af891e1e8345341b8d3bec4fcfeca3906">getGoHomeAltitudeAsync</a> (void(*UserCallBack)(<a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> retCode, <a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a01b8e59cbdae526f59fdd82ce982e7ed">GoHomeHeight</a> altitude, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData), <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)</td></tr>
-<tr class="memdesc:af891e1e8345341b8d3bec4fcfeca3906"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get go home altitude, non-blocking calls.  <a href="#af891e1e8345341b8d3bec4fcfeca3906">More...</a><br /></td></tr>
-<tr class="separator:af891e1e8345341b8d3bec4fcfeca3906"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd1dba0ec1a3d406b53d511b6dc7285f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#acd1dba0ec1a3d406b53d511b6dc7285f">setHomeLocationSync</a> (HomeLocation homeLocation, int timeout)</td></tr>
-<tr class="memdesc:acd1dba0ec1a3d406b53d511b6dc7285f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set customized home location, blocking calls.  <a href="#acd1dba0ec1a3d406b53d511b6dc7285f">More...</a><br /></td></tr>
-<tr class="separator:acd1dba0ec1a3d406b53d511b6dc7285f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab82fd02fcabfa7beb18cfc95af259ade"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#ab82fd02fcabfa7beb18cfc95af259ade">setHomeLocationAsync</a> (HomeLocation homeLocation, void(*UserCallBack)(<a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> retCode, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData), <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)</td></tr>
-<tr class="memdesc:ab82fd02fcabfa7beb18cfc95af259ade"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set customized home location, non-blocking calls.  <a href="#ab82fd02fcabfa7beb18cfc95af259ade">More...</a><br /></td></tr>
-<tr class="separator:ab82fd02fcabfa7beb18cfc95af259ade"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83520c78c7019b3ae1a2bec538c1ca7e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a83520c78c7019b3ae1a2bec538c1ca7e">setHomeLocationUsingCurrentAircraftLocationSync</a> (int timeout)</td></tr>
-<tr class="memdesc:a83520c78c7019b3ae1a2bec538c1ca7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set home location using current aircraft location, blocking calls.  <a href="#a83520c78c7019b3ae1a2bec538c1ca7e">More...</a><br /></td></tr>
-<tr class="separator:a83520c78c7019b3ae1a2bec538c1ca7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04917e7e481eac1c504574453b320d31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a04917e7e481eac1c504574453b320d31">setHomeLocationUsingCurrentAircraftLocationAsync</a> (void(*UserCallBack)(<a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> retCode, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData), <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)</td></tr>
-<tr class="memdesc:a04917e7e481eac1c504574453b320d31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set home location using current aircraft location, non-blocking calls.  <a href="#a04917e7e481eac1c504574453b320d31">More...</a><br /></td></tr>
-<tr class="separator:a04917e7e481eac1c504574453b320d31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a2503120060a960893b36ef745d6956"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a4a2503120060a960893b36ef745d6956">setCollisionAvoidanceEnabledSync</a> (<a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#ad6c6e72a8efefcbcdc833f87c3a298bd">CollisionAvoidanceSwitch</a> collisionAvoidanceSwitch, int timeout)</td></tr>
-<tr class="memdesc:a4a2503120060a960893b36ef745d6956"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set collision avoidance enable or disable, blocking calls.  <a href="#a4a2503120060a960893b36ef745d6956">More...</a><br /></td></tr>
-<tr class="separator:a4a2503120060a960893b36ef745d6956"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbcae20743342976508d00a76679761f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#adbcae20743342976508d00a76679761f">setCollisionAvoidanceEnabledAsync</a> (<a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#ad6c6e72a8efefcbcdc833f87c3a298bd">CollisionAvoidanceSwitch</a> collisionAvoidanceSwitch, void(*UserCallBack)(<a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> retCode, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData), <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)</td></tr>
-<tr class="memdesc:adbcae20743342976508d00a76679761f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set collision avoidance enable or disable, non-blocking calls.  <a href="#adbcae20743342976508d00a76679761f">More...</a><br /></td></tr>
-<tr class="separator:adbcae20743342976508d00a76679761f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aebea11fe5a77f9ab3f4751066ae3d892"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#aebea11fe5a77f9ab3f4751066ae3d892">startTakeoffSync</a> (int timeout)</td></tr>
-<tr class="memdesc:aebea11fe5a77f9ab3f4751066ae3d892"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper function for aircraft takeoff, blocking calls.  <a href="#aebea11fe5a77f9ab3f4751066ae3d892">More...</a><br /></td></tr>
-<tr class="separator:aebea11fe5a77f9ab3f4751066ae3d892"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa755b3bbceea1b9d8803ffdc1e15fa98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#aa755b3bbceea1b9d8803ffdc1e15fa98">startTakeoffAsync</a> (void(*UserCallBack)(<a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> retCode, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData), <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)</td></tr>
-<tr class="memdesc:aa755b3bbceea1b9d8803ffdc1e15fa98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper function for aircraft takeoff, non-blocking calls.  <a href="#aa755b3bbceea1b9d8803ffdc1e15fa98">More...</a><br /></td></tr>
-<tr class="separator:aa755b3bbceea1b9d8803ffdc1e15fa98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6db3360aaca675e95494274d54b5aa55"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a6db3360aaca675e95494274d54b5aa55">startForceLandingSync</a> (int timeout)</td></tr>
-<tr class="memdesc:a6db3360aaca675e95494274d54b5aa55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper function for aircraft force landing, blocking calls.  <a href="#a6db3360aaca675e95494274d54b5aa55">More...</a><br /></td></tr>
-<tr class="separator:a6db3360aaca675e95494274d54b5aa55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c125df1cfc28fc122501cd7e040f49b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a2c125df1cfc28fc122501cd7e040f49b">startForceLandingAsync</a> (void(*UserCallBack)(<a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> retCode, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData), <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)</td></tr>
-<tr class="memdesc:a2c125df1cfc28fc122501cd7e040f49b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper function for aircraft force landing, non-blocking calls.  <a href="#a2c125df1cfc28fc122501cd7e040f49b">More...</a><br /></td></tr>
-<tr class="separator:a2c125df1cfc28fc122501cd7e040f49b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8baf1a121226109973f6bb2dea08cc1d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a8baf1a121226109973f6bb2dea08cc1d">startConfirmLandingSync</a> (int timeout)</td></tr>
-<tr class="memdesc:a8baf1a121226109973f6bb2dea08cc1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper function for aircraft confirm landing and avoid ground, blocking calls.  <a href="#a8baf1a121226109973f6bb2dea08cc1d">More...</a><br /></td></tr>
-<tr class="separator:a8baf1a121226109973f6bb2dea08cc1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afccef259458c22368144d0e321dd03ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#afccef259458c22368144d0e321dd03ba">startConfirmLandingAsync</a> (void(*UserCallBack)(<a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> retCode, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData), <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)</td></tr>
-<tr class="memdesc:afccef259458c22368144d0e321dd03ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper function for aircraft confirm landing and avoid ground, non-blocking calls.  <a href="#afccef259458c22368144d0e321dd03ba">More...</a><br /></td></tr>
-<tr class="separator:afccef259458c22368144d0e321dd03ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30d9adac394d7eb82e30c1cd9e812b8b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a30d9adac394d7eb82e30c1cd9e812b8b">startGoHomeSync</a> (int timeout)</td></tr>
-<tr class="memdesc:a30d9adac394d7eb82e30c1cd9e812b8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper function for go home action, blocking calls.  <a href="#a30d9adac394d7eb82e30c1cd9e812b8b">More...</a><br /></td></tr>
-<tr class="separator:a30d9adac394d7eb82e30c1cd9e812b8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abddd4bf193acaa8a3ad72a5631a3cd7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#abddd4bf193acaa8a3ad72a5631a3cd7d">startGoHomeAsync</a> (void(*UserCallBack)(<a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> retCode, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData), <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)</td></tr>
-<tr class="memdesc:abddd4bf193acaa8a3ad72a5631a3cd7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper function for go home action, non-blocking calls.  <a href="#abddd4bf193acaa8a3ad72a5631a3cd7d">More...</a><br /></td></tr>
-<tr class="separator:abddd4bf193acaa8a3ad72a5631a3cd7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa0286c9cfa9484e4f22a54f9820013b"><td class="memItemLeft" align="right" valign="top"><a id="aaa0286c9cfa9484e4f22a54f9820013b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>FlightController</b> (Vehicle *vehicle)</td></tr>
+<tr class="separator:aaa0286c9cfa9484e4f22a54f9820013b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3140d620369753ba5067913e5b76680b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a3140d620369753ba5067913e5b76680b">setRtkEnableSync</a> (<a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a71abd079541c6a5ac062437a9a78ffdd">RtkEnabled</a> rtkEnable, int timeout)</td></tr>
+<tr class="memdesc:a3140d620369753ba5067913e5b76680b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set RTK enable or disable, blocking calls.  <a href="#a3140d620369753ba5067913e5b76680b">More...</a><br /></td></tr>
+<tr class="separator:a3140d620369753ba5067913e5b76680b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaac47e3123ee67c013026e53fbec996"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#abaac47e3123ee67c013026e53fbec996">setRtkEnableAsync</a> (<a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a71abd079541c6a5ac062437a9a78ffdd">RtkEnabled</a> rtkEnable, void(*UserCallBack)(<a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> retCode, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData), <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)</td></tr>
+<tr class="memdesc:abaac47e3123ee67c013026e53fbec996"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set RTK enable or disable, non-blocking calls.  <a href="#abaac47e3123ee67c013026e53fbec996">More...</a><br /></td></tr>
+<tr class="separator:abaac47e3123ee67c013026e53fbec996"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d45ab6e784dbb50ca191d3278276c2a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a5d45ab6e784dbb50ca191d3278276c2a">getRtkEnableSync</a> (<a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a71abd079541c6a5ac062437a9a78ffdd">RtkEnabled</a> &amp;rtkEnable, int timeout)</td></tr>
+<tr class="memdesc:a5d45ab6e784dbb50ca191d3278276c2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get rtk enable or disable, blocking calls.  <a href="#a5d45ab6e784dbb50ca191d3278276c2a">More...</a><br /></td></tr>
+<tr class="separator:a5d45ab6e784dbb50ca191d3278276c2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1354c3f7a99109fd8f07ffcdfee4ad3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#af1354c3f7a99109fd8f07ffcdfee4ad3">getRtkEnableAsync</a> (void(*UserCallBack)(<a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> retCode, <a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a71abd079541c6a5ac062437a9a78ffdd">RtkEnabled</a> rtkEnable, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData), <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)</td></tr>
+<tr class="memdesc:af1354c3f7a99109fd8f07ffcdfee4ad3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get RTK enable or disable, non-blocking calls.  <a href="#af1354c3f7a99109fd8f07ffcdfee4ad3">More...</a><br /></td></tr>
+<tr class="separator:af1354c3f7a99109fd8f07ffcdfee4ad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad278294577e6ce21b2ef9943253243f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#ad278294577e6ce21b2ef9943253243f3">setGoHomeAltitudeSync</a> (<a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a01b8e59cbdae526f59fdd82ce982e7ed">GoHomeHeight</a> altitude, int timeout)</td></tr>
+<tr class="memdesc:ad278294577e6ce21b2ef9943253243f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set go home altitude, blocking calls.  <a href="#ad278294577e6ce21b2ef9943253243f3">More...</a><br /></td></tr>
+<tr class="separator:ad278294577e6ce21b2ef9943253243f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa292acde18eb93e54717b034a507490f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#aa292acde18eb93e54717b034a507490f">setGoHomeAltitudeAsync</a> (<a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a01b8e59cbdae526f59fdd82ce982e7ed">GoHomeHeight</a> altitude, void(*UserCallBack)(<a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> retCode, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData), <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)</td></tr>
+<tr class="memdesc:aa292acde18eb93e54717b034a507490f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set go home altitude, non-blocking calls.  <a href="#aa292acde18eb93e54717b034a507490f">More...</a><br /></td></tr>
+<tr class="separator:aa292acde18eb93e54717b034a507490f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67501b4ccc5f4eb91339582b85fcba50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a67501b4ccc5f4eb91339582b85fcba50">getGoHomeAltitudeSync</a> (<a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a01b8e59cbdae526f59fdd82ce982e7ed">GoHomeHeight</a> &amp;altitude, int timeout)</td></tr>
+<tr class="memdesc:a67501b4ccc5f4eb91339582b85fcba50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get go home altitude, blocking calls.  <a href="#a67501b4ccc5f4eb91339582b85fcba50">More...</a><br /></td></tr>
+<tr class="separator:a67501b4ccc5f4eb91339582b85fcba50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2d7fb01665f02ef8cb8f7e105183381"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#ad2d7fb01665f02ef8cb8f7e105183381">getGoHomeAltitudeAsync</a> (void(*UserCallBack)(<a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> retCode, <a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a01b8e59cbdae526f59fdd82ce982e7ed">GoHomeHeight</a> altitude, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData), <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)</td></tr>
+<tr class="memdesc:ad2d7fb01665f02ef8cb8f7e105183381"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get go home altitude, non-blocking calls.  <a href="#ad2d7fb01665f02ef8cb8f7e105183381">More...</a><br /></td></tr>
+<tr class="separator:ad2d7fb01665f02ef8cb8f7e105183381"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92243d640d2577f65380f381ea58b512"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a92243d640d2577f65380f381ea58b512">setCollisionAvoidanceEnabledSync</a> (AvoidEnable avoidEnable, int timeout)</td></tr>
+<tr class="memdesc:a92243d640d2577f65380f381ea58b512"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set collision avoidance enable or disable, blocking calls.  <a href="#a92243d640d2577f65380f381ea58b512">More...</a><br /></td></tr>
+<tr class="separator:a92243d640d2577f65380f381ea58b512"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad0c614d8c4615bc93826cec53132226"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#aad0c614d8c4615bc93826cec53132226">setCollisionAvoidanceEnabledAsync</a> (AvoidEnable avoidEnable, void(*UserCallBack)(<a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> retCode, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData), <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)</td></tr>
+<tr class="memdesc:aad0c614d8c4615bc93826cec53132226"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set collision avoidance enable or disable, non-blocking calls.  <a href="#aad0c614d8c4615bc93826cec53132226">More...</a><br /></td></tr>
+<tr class="separator:aad0c614d8c4615bc93826cec53132226"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa737c484d847abcbbb22f00d62d4f88e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#aa737c484d847abcbbb22f00d62d4f88e">getCollisionAvoidanceEnabledSync</a> (AvoidEnable &amp;avoidEnable, int timeout)</td></tr>
+<tr class="memdesc:aa737c484d847abcbbb22f00d62d4f88e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get collision avoidance enable or disable, blocking calls.  <a href="#aa737c484d847abcbbb22f00d62d4f88e">More...</a><br /></td></tr>
+<tr class="separator:aa737c484d847abcbbb22f00d62d4f88e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4ddd44b71010f8368e7c63d3aa0cc4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#aa4ddd44b71010f8368e7c63d3aa0cc4e">getCollisionAvoidanceEnabledAsync</a> (void(*UserCallBack)(<a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> retCode, AvoidEnable avoidEnable, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData), <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)</td></tr>
+<tr class="memdesc:aa4ddd44b71010f8368e7c63d3aa0cc4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get collision avoidance enable or disable, non-blocking calls.  <a href="#aa4ddd44b71010f8368e7c63d3aa0cc4e">More...</a><br /></td></tr>
+<tr class="separator:aa4ddd44b71010f8368e7c63d3aa0cc4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc7e1f4bf0a21ddad7ec5857c4579967"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#afc7e1f4bf0a21ddad7ec5857c4579967">setUpwardsAvoidanceEnabledSync</a> (UpwardsAvoidEnable upwardsAvoidEnable, int timeout)</td></tr>
+<tr class="memdesc:afc7e1f4bf0a21ddad7ec5857c4579967"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set upwards avoidance enable or disable, blocking calls.  <a href="#afc7e1f4bf0a21ddad7ec5857c4579967">More...</a><br /></td></tr>
+<tr class="separator:afc7e1f4bf0a21ddad7ec5857c4579967"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4563141ea006e86b0625e1d1b25a575"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#ab4563141ea006e86b0625e1d1b25a575">setUpwardsAvoidanceEnabledAsync</a> (UpwardsAvoidEnable upwardsAvoidEnable, void(*UserCallBack)(<a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> retCode, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData), <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)</td></tr>
+<tr class="memdesc:ab4563141ea006e86b0625e1d1b25a575"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set upwards avoidance enable or disable, non-blocking calls.  <a href="#ab4563141ea006e86b0625e1d1b25a575">More...</a><br /></td></tr>
+<tr class="separator:ab4563141ea006e86b0625e1d1b25a575"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23ab251ac202a25b531d499d5a146696"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a23ab251ac202a25b531d499d5a146696">getUpwardsAvoidanceEnabledSync</a> (UpwardsAvoidEnable &amp;upwardsAvoidEnable, int timeout)</td></tr>
+<tr class="memdesc:a23ab251ac202a25b531d499d5a146696"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get upwards avoidance enable or disable, blocking calls.  <a href="#a23ab251ac202a25b531d499d5a146696">More...</a><br /></td></tr>
+<tr class="separator:a23ab251ac202a25b531d499d5a146696"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a0375b6f76e11097d603ff0f5111459"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a6a0375b6f76e11097d603ff0f5111459">getUpwardsAvoidanceEnabledAsync</a> (void(*UserCallBack)(<a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> retCode, UpwardsAvoidEnable upwardsEnable, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData), <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)</td></tr>
+<tr class="memdesc:a6a0375b6f76e11097d603ff0f5111459"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get upwards avoidance enable or disable, non-blocking calls.  <a href="#a6a0375b6f76e11097d603ff0f5111459">More...</a><br /></td></tr>
+<tr class="separator:a6a0375b6f76e11097d603ff0f5111459"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedc476569fd0ba04ffd45e18047b6416"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#aedc476569fd0ba04ffd45e18047b6416">setHomeLocationSync</a> (HomeLocation homeLocation, int timeout)</td></tr>
+<tr class="memdesc:aedc476569fd0ba04ffd45e18047b6416"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set customized GPS(not RTK) home location, blocking calls.  <a href="#aedc476569fd0ba04ffd45e18047b6416">More...</a><br /></td></tr>
+<tr class="separator:aedc476569fd0ba04ffd45e18047b6416"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac93ccb2c3bb2f226d15eae15c156a392"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#ac93ccb2c3bb2f226d15eae15c156a392">setHomeLocationAsync</a> (HomeLocation homeLocation, void(*UserCallBack)(<a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> retCode, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData), <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)</td></tr>
+<tr class="memdesc:ac93ccb2c3bb2f226d15eae15c156a392"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set customized GPS(not RTK) home location, non-blocking calls.  <a href="#ac93ccb2c3bb2f226d15eae15c156a392">More...</a><br /></td></tr>
+<tr class="separator:ac93ccb2c3bb2f226d15eae15c156a392"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a496aba7525bc38dce7594be5f27a3335"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a496aba7525bc38dce7594be5f27a3335">setHomeLocationUsingCurrentAircraftLocationSync</a> (int timeout)</td></tr>
+<tr class="memdesc:a496aba7525bc38dce7594be5f27a3335"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set home location using current aircraft GPS(not RTK) location, blocking calls.  <a href="#a496aba7525bc38dce7594be5f27a3335">More...</a><br /></td></tr>
+<tr class="separator:a496aba7525bc38dce7594be5f27a3335"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59bd7679194df7ae05b15483f03f639c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a59bd7679194df7ae05b15483f03f639c">setHomeLocationUsingCurrentAircraftLocationAsync</a> (void(*UserCallBack)(<a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> retCode, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData), <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)</td></tr>
+<tr class="memdesc:a59bd7679194df7ae05b15483f03f639c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set home location using current aircraft GPS(not RTK) location, non-blocking calls.  <a href="#a59bd7679194df7ae05b15483f03f639c">More...</a><br /></td></tr>
+<tr class="separator:a59bd7679194df7ae05b15483f03f639c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6fa10fcb0c5a09368f91b69250bdde2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#af6fa10fcb0c5a09368f91b69250bdde2">turnOnMotorsSync</a> (int timeout)</td></tr>
+<tr class="memdesc:af6fa10fcb0c5a09368f91b69250bdde2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper function for turn on motors, blocking calls.  <a href="#af6fa10fcb0c5a09368f91b69250bdde2">More...</a><br /></td></tr>
+<tr class="separator:af6fa10fcb0c5a09368f91b69250bdde2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d0ae47f352803de400e1647943d352a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a1d0ae47f352803de400e1647943d352a">turnOnMotorsAsync</a> (void(*UserCallBack)(<a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> retCode, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData), <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)</td></tr>
+<tr class="memdesc:a1d0ae47f352803de400e1647943d352a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper function for turn on motors, non-blocking calls.  <a href="#a1d0ae47f352803de400e1647943d352a">More...</a><br /></td></tr>
+<tr class="separator:a1d0ae47f352803de400e1647943d352a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaec8c0f3bd87240b4c63cac052a4e37b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#aaec8c0f3bd87240b4c63cac052a4e37b">turnOffMotorsSync</a> (int timeout)</td></tr>
+<tr class="memdesc:aaec8c0f3bd87240b4c63cac052a4e37b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper function for turn off motors, blocking calls.  <a href="#aaec8c0f3bd87240b4c63cac052a4e37b">More...</a><br /></td></tr>
+<tr class="separator:aaec8c0f3bd87240b4c63cac052a4e37b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50afc92828b107a4a41c800e72410428"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a50afc92828b107a4a41c800e72410428">turnOffMotorsAsync</a> (void(*UserCallBack)(<a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> retCode, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData), <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)</td></tr>
+<tr class="memdesc:a50afc92828b107a4a41c800e72410428"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper function for turn off motors, non-blocking calls.  <a href="#a50afc92828b107a4a41c800e72410428">More...</a><br /></td></tr>
+<tr class="separator:a50afc92828b107a4a41c800e72410428"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eaa29c82a94cd4391c133a33e0a2ff7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a7eaa29c82a94cd4391c133a33e0a2ff7">startTakeoffSync</a> (int timeout)</td></tr>
+<tr class="memdesc:a7eaa29c82a94cd4391c133a33e0a2ff7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper function for aircraft takeoff, blocking calls.  <a href="#a7eaa29c82a94cd4391c133a33e0a2ff7">More...</a><br /></td></tr>
+<tr class="separator:a7eaa29c82a94cd4391c133a33e0a2ff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3307850a7ad2f3244dea00bb2583495"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#ac3307850a7ad2f3244dea00bb2583495">startTakeoffAsync</a> (void(*UserCallBack)(<a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> retCode, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData), <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)</td></tr>
+<tr class="memdesc:ac3307850a7ad2f3244dea00bb2583495"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper function for aircraft takeoff, non-blocking calls.  <a href="#ac3307850a7ad2f3244dea00bb2583495">More...</a><br /></td></tr>
+<tr class="separator:ac3307850a7ad2f3244dea00bb2583495"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acadcd6d89b864a552bccafb8e6a4ca5f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#acadcd6d89b864a552bccafb8e6a4ca5f">startLandingSync</a> (int timeout)</td></tr>
+<tr class="memdesc:acadcd6d89b864a552bccafb8e6a4ca5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper function for aircraft landing, blocking calls.  <a href="#acadcd6d89b864a552bccafb8e6a4ca5f">More...</a><br /></td></tr>
+<tr class="separator:acadcd6d89b864a552bccafb8e6a4ca5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad355b7b07d628cc5da17377a7053ee54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#ad355b7b07d628cc5da17377a7053ee54">startLandingAsync</a> (void(*UserCallBack)(<a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> retCode, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData), <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)</td></tr>
+<tr class="memdesc:ad355b7b07d628cc5da17377a7053ee54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper function for aircraft landing, non-blocking calls.  <a href="#ad355b7b07d628cc5da17377a7053ee54">More...</a><br /></td></tr>
+<tr class="separator:ad355b7b07d628cc5da17377a7053ee54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0498e0b68d1d40d72eba4f9819950969"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a0498e0b68d1d40d72eba4f9819950969">cancelLandingSync</a> (int timeout)</td></tr>
+<tr class="memdesc:a0498e0b68d1d40d72eba4f9819950969"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper function for cancel aircraft landing, blocking calls.  <a href="#a0498e0b68d1d40d72eba4f9819950969">More...</a><br /></td></tr>
+<tr class="separator:a0498e0b68d1d40d72eba4f9819950969"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a4f803ac64b6b7dd669e21391cc6a82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a3a4f803ac64b6b7dd669e21391cc6a82">cancelLandingAsync</a> (void(*UserCallBack)(<a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> retCode, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData), <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)</td></tr>
+<tr class="memdesc:a3a4f803ac64b6b7dd669e21391cc6a82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper function for cancel aircraft landing, non-blocking calls.  <a href="#a3a4f803ac64b6b7dd669e21391cc6a82">More...</a><br /></td></tr>
+<tr class="separator:a3a4f803ac64b6b7dd669e21391cc6a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a812952a5d08b23464817836f05318a61"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a812952a5d08b23464817836f05318a61">startForceLandingSync</a> (int timeout)</td></tr>
+<tr class="memdesc:a812952a5d08b23464817836f05318a61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper function for aircraft force landing, blocking calls.  <a href="#a812952a5d08b23464817836f05318a61">More...</a><br /></td></tr>
+<tr class="separator:a812952a5d08b23464817836f05318a61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69d028ce116c5b9de8efce7060e17532"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a69d028ce116c5b9de8efce7060e17532">startForceLandingAsync</a> (void(*UserCallBack)(<a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> retCode, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData), <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)</td></tr>
+<tr class="memdesc:a69d028ce116c5b9de8efce7060e17532"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper function for aircraft force landing, non-blocking calls.  <a href="#a69d028ce116c5b9de8efce7060e17532">More...</a><br /></td></tr>
+<tr class="separator:a69d028ce116c5b9de8efce7060e17532"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abde92d10a29436f30cf3e564fd3fef27"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#abde92d10a29436f30cf3e564fd3fef27">startConfirmLandingSync</a> (int timeout)</td></tr>
+<tr class="memdesc:abde92d10a29436f30cf3e564fd3fef27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper function for aircraft confirm landing and avoid ground, blocking calls.  <a href="#abde92d10a29436f30cf3e564fd3fef27">More...</a><br /></td></tr>
+<tr class="separator:abde92d10a29436f30cf3e564fd3fef27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c882eea206d600c79506df8ada04d59"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a2c882eea206d600c79506df8ada04d59">startConfirmLandingAsync</a> (void(*UserCallBack)(<a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> retCode, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData), <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)</td></tr>
+<tr class="memdesc:a2c882eea206d600c79506df8ada04d59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper function for aircraft confirm landing and avoid ground, non-blocking calls.  <a href="#a2c882eea206d600c79506df8ada04d59">More...</a><br /></td></tr>
+<tr class="separator:a2c882eea206d600c79506df8ada04d59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2838eef11c5b31db18d2206089f7737"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#aa2838eef11c5b31db18d2206089f7737">startGoHomeSync</a> (int timeout)</td></tr>
+<tr class="memdesc:aa2838eef11c5b31db18d2206089f7737"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper function for go home action, blocking calls.  <a href="#aa2838eef11c5b31db18d2206089f7737">More...</a><br /></td></tr>
+<tr class="separator:aa2838eef11c5b31db18d2206089f7737"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49ef7863a6ae51d695dae3aec6956104"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a49ef7863a6ae51d695dae3aec6956104">startGoHomeAsync</a> (void(*UserCallBack)(<a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> retCode, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData), <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)</td></tr>
+<tr class="memdesc:a49ef7863a6ae51d695dae3aec6956104"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper function for go home action, non-blocking calls.  <a href="#a49ef7863a6ae51d695dae3aec6956104">More...</a><br /></td></tr>
+<tr class="separator:a49ef7863a6ae51d695dae3aec6956104"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeca6caee7e67cdde2ae9c727422f1373"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#aeca6caee7e67cdde2ae9c727422f1373">cancelGoHomeSync</a> (int timeout)</td></tr>
+<tr class="memdesc:aeca6caee7e67cdde2ae9c727422f1373"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper function for stop go home action, blocking calls.  <a href="#aeca6caee7e67cdde2ae9c727422f1373">More...</a><br /></td></tr>
+<tr class="separator:aeca6caee7e67cdde2ae9c727422f1373"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08cd40f14fe171b5e1a6d406e669b124"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a08cd40f14fe171b5e1a6d406e669b124">cancelGoHomeAsync</a> (void(*UserCallBack)(<a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> retCode, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData), <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)</td></tr>
+<tr class="memdesc:a08cd40f14fe171b5e1a6d406e669b124"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper function for stop go home action, non-blocking calls.  <a href="#a08cd40f14fe171b5e1a6d406e669b124">More...</a><br /></td></tr>
+<tr class="separator:a08cd40f14fe171b5e1a6d406e669b124"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68178ce8dc708bc4e443202f57b49966"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a68178ce8dc708bc4e443202f57b49966">setJoystickMode</a> (const JoystickMode &amp;joystickMode)</td></tr>
+<tr class="memdesc:a68178ce8dc708bc4e443202f57b49966"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper function for set joystick mode, non-blocking calls.  <a href="#a68178ce8dc708bc4e443202f57b49966">More...</a><br /></td></tr>
+<tr class="separator:a68178ce8dc708bc4e443202f57b49966"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a626309475a63183198a225a51a027388"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a626309475a63183198a225a51a027388">setJoystickCommand</a> (const <a class="el" href="structDJI_1_1OSDK_1_1FlightJoystick_1_1ControlCommand.html">JoystickCommand</a> &amp;<a class="el" href="structDJI_1_1OSDK_1_1FlightJoystick_1_1ControlCommand.html">JoystickCommand</a>)</td></tr>
+<tr class="memdesc:a626309475a63183198a225a51a027388"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper function for set joystick command, non-blocking calls.  <a href="#a626309475a63183198a225a51a027388">More...</a><br /></td></tr>
+<tr class="separator:a626309475a63183198a225a51a027388"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada0bdbac3076c59af556c1e1fbb382bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#ada0bdbac3076c59af556c1e1fbb382bb">joystickAction</a> ()</td></tr>
+<tr class="memdesc:ada0bdbac3076c59af556c1e1fbb382bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper function for set joystick action, non-blocking calls.  <a href="#ada0bdbac3076c59af556c1e1fbb382bb">More...</a><br /></td></tr>
+<tr class="separator:ada0bdbac3076c59af556c1e1fbb382bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af28fa9983e4ac925559c95f493c3533c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#af28fa9983e4ac925559c95f493c3533c">getJoystickMode</a> (FlightJoystick::ControlMode &amp;joystickMode)</td></tr>
+<tr class="memdesc:af28fa9983e4ac925559c95f493c3533c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper function for get joystick mode, non-blocking calls.  <a href="#af28fa9983e4ac925559c95f493c3533c">More...</a><br /></td></tr>
+<tr class="separator:af28fa9983e4ac925559c95f493c3533c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a271be24692603d0369a53e736d3909ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a271be24692603d0369a53e736d3909ab">getJoystickCommand</a> (<a class="el" href="structDJI_1_1OSDK_1_1FlightJoystick_1_1ControlCommand.html">JoystickCommand</a> &amp;joystickCommand)</td></tr>
+<tr class="memdesc:a271be24692603d0369a53e736d3909ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper function for get joystick command, non-blocking calls.  <a href="#a271be24692603d0369a53e736d3909ab">More...</a><br /></td></tr>
+<tr class="separator:a271be24692603d0369a53e736d3909ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86bc5ffbd69dc183ca6cc04b0cfab109"><td class="memItemLeft" align="right" valign="top"><a id="a86bc5ffbd69dc183ca6cc04b0cfab109"></a>
+<a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>killSwitch</b> (KillSwitch cmd, int wait_timeout, char debugMsg[10])</td></tr>
+<tr class="separator:a86bc5ffbd69dc183ca6cc04b0cfab109"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Flight controller API: set or get parameter, execute flight actions. </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="ad6c6e72a8efefcbcdc833f87c3a298bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6c6e72a8efefcbcdc833f87c3a298bd">&#9670;&nbsp;</a></span>CollisionAvoidanceSwitch</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef bool <a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#ad6c6e72a8efefcbcdc833f87c3a298bd">DJI::OSDK::FlightController::CollisionAvoidanceSwitch</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>true: enable collision avoidance, false: disable collision avoidance </p>
-
-</div>
-</div>
 <a id="a01b8e59cbdae526f59fdd82ce982e7ed"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a01b8e59cbdae526f59fdd82ce982e7ed">&#9670;&nbsp;</a></span>GoHomeHeight</h2>
 
@@ -266,7 +283,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef FlightAssistant::RtkEnableData <a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a71abd079541c6a5ac062437a9a78ffdd">DJI::OSDK::FlightController::RtkEnabled</a></td>
+          <td class="memname">typedef FlightAssistant::RtkEnableData DJI::OSDK::FlightController::RtkEnabled</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -275,14 +292,230 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="af891e1e8345341b8d3bec4fcfeca3906"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af891e1e8345341b8d3bec4fcfeca3906">&#9670;&nbsp;</a></span>getGoHomeAltitudeAsync()</h2>
+<a id="a08cd40f14fe171b5e1a6d406e669b124"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08cd40f14fe171b5e1a6d406e669b124">&#9670;&nbsp;</a></span>cancelGoHomeAsync()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void FlightController::getGoHomeAltitudeAsync </td>
+          <td class="memname">void DJI::OSDK::FlightController::cancelGoHomeAsync </td>
+          <td>(</td>
+          <td class="paramtype">void(*)(<a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> retCode, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)&#160;</td>
+          <td class="paramname"><em>UserCallBack</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a>&#160;</td>
+          <td class="paramname"><em>userData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wrapper function for stop go home action, non-blocking calls. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">UserCallBack</td><td>callback function defined by user <ul>
+<li><b>retCode</b> <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933" title="Unified error type.">ErrorCode::ErrorCodeType</a> error code </li>
+<li><b>userData</b> the interface to transfer userData in when the callback is called </li>
+</ul>
+</td></tr>
+    <tr><td class="paramname">userData</td><td>when UserCallBack is called, used in UserCallBack </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aeca6caee7e67cdde2ae9c727422f1373"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeca6caee7e67cdde2ae9c727422f1373">&#9670;&nbsp;</a></span>cancelGoHomeSync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> DJI::OSDK::FlightController::cancelGoHomeSync </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timeout</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wrapper function for stop go home action, blocking calls. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timeout</td><td>blocking timeout in seconds </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933" title="Unified error type.">ErrorCode::ErrorCodeType</a> error code </dd></dl>
+
+</div>
+</div>
+<a id="a3a4f803ac64b6b7dd669e21391cc6a82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a4f803ac64b6b7dd669e21391cc6a82">&#9670;&nbsp;</a></span>cancelLandingAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DJI::OSDK::FlightController::cancelLandingAsync </td>
+          <td>(</td>
+          <td class="paramtype">void(*)(<a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> retCode, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)&#160;</td>
+          <td class="paramname"><em>UserCallBack</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a>&#160;</td>
+          <td class="paramname"><em>userData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wrapper function for cancel aircraft landing, non-blocking calls. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">UserCallBack</td><td>callback function defined by user <ul>
+<li><b>retCode</b> <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933" title="Unified error type.">ErrorCode::ErrorCodeType</a> error code </li>
+<li><b>userData</b> the interface to transfer userData in when the callback is called </li>
+</ul>
+</td></tr>
+    <tr><td class="paramname">userData</td><td>when UserCallBack is called, used in UserCallBack </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0498e0b68d1d40d72eba4f9819950969"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0498e0b68d1d40d72eba4f9819950969">&#9670;&nbsp;</a></span>cancelLandingSync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> DJI::OSDK::FlightController::cancelLandingSync </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timeout</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wrapper function for cancel aircraft landing, blocking calls. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timeout</td><td>blocking timeout in seconds </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933" title="Unified error type.">ErrorCode::ErrorCodeType</a> error code </dd></dl>
+
+</div>
+</div>
+<a id="aa4ddd44b71010f8368e7c63d3aa0cc4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4ddd44b71010f8368e7c63d3aa0cc4e">&#9670;&nbsp;</a></span>getCollisionAvoidanceEnabledAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DJI::OSDK::FlightController::getCollisionAvoidanceEnabledAsync </td>
+          <td>(</td>
+          <td class="paramtype">void(*)(<a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> retCode, AvoidEnable avoidEnable, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)&#160;</td>
+          <td class="paramname"><em>UserCallBack</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a>&#160;</td>
+          <td class="paramname"><em>userData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get collision avoidance enable or disable, non-blocking calls. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">UserCallBack</td><td>callback function defined by user <ul>
+<li><b>retCode</b> the <a class="el" href="namespaceDJI_1_1OSDK.html">OSDK</a> <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933" title="Unified error type.">ErrorCode::ErrorCodeType</a> error code </li>
+<li><b>avoidEnable</b> AvoidEnable, AVOID_DISABLE: disable, AVOID_ENABLE: enable </li>
+<li><b>userData</b> the interface to pass userData in when the callback is called </li>
+</ul>
+</td></tr>
+    <tr><td class="paramname">userData</td><td>when UserCallBack is called, used in UserCallBack </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa737c484d847abcbbb22f00d62d4f88e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa737c484d847abcbbb22f00d62d4f88e">&#9670;&nbsp;</a></span>getCollisionAvoidanceEnabledSync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> DJI::OSDK::FlightController::getCollisionAvoidanceEnabledSync </td>
+          <td>(</td>
+          <td class="paramtype">AvoidEnable &amp;&#160;</td>
+          <td class="paramname"><em>avoidEnable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get collision avoidance enable or disable, blocking calls. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">avoidEnable</td><td>AvoidEnable, AVOID_DISABLE: disable, AVOID_ENABLE: enable </td></tr>
+    <tr><td class="paramname">timeout</td><td>blocking timeout in seconds </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespaceDJI_1_1OSDK.html">OSDK</a> <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933" title="Unified error type.">ErrorCode::ErrorCodeType</a> error code </dd></dl>
+
+</div>
+</div>
+<a id="ad2d7fb01665f02ef8cb8f7e105183381"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2d7fb01665f02ef8cb8f7e105183381">&#9670;&nbsp;</a></span>getGoHomeAltitudeAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DJI::OSDK::FlightController::getGoHomeAltitudeAsync </td>
           <td>(</td>
           <td class="paramtype">void(*)(<a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> retCode, <a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a01b8e59cbdae526f59fdd82ce982e7ed">GoHomeHeight</a> altitude, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)&#160;</td>
           <td class="paramname"><em>UserCallBack</em>, </td>
@@ -317,14 +550,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a7ff324ed7feea98fda11c11205b7696d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ff324ed7feea98fda11c11205b7696d">&#9670;&nbsp;</a></span>getGoHomeAltitudeSync()</h2>
+<a id="a67501b4ccc5f4eb91339582b85fcba50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67501b4ccc5f4eb91339582b85fcba50">&#9670;&nbsp;</a></span>getGoHomeAltitudeSync()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> FlightController::getGoHomeAltitudeSync </td>
+          <td class="memname"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> DJI::OSDK::FlightController::getGoHomeAltitudeSync </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a01b8e59cbdae526f59fdd82ce982e7ed">GoHomeHeight</a> &amp;&#160;</td>
           <td class="paramname"><em>altitude</em>, </td>
@@ -355,14 +588,66 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a3dac00051d2df4c19a3feb0962c70fd7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3dac00051d2df4c19a3feb0962c70fd7">&#9670;&nbsp;</a></span>getRtkEnableAsync()</h2>
+<a id="a271be24692603d0369a53e736d3909ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a271be24692603d0369a53e736d3909ab">&#9670;&nbsp;</a></span>getJoystickCommand()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void FlightController::getRtkEnableAsync </td>
+          <td class="memname">void DJI::OSDK::FlightController::getJoystickCommand </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structDJI_1_1OSDK_1_1FlightJoystick_1_1ControlCommand.html">JoystickCommand</a> &amp;&#160;</td>
+          <td class="paramname"><em>joystickCommand</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wrapper function for get joystick command, non-blocking calls. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">JoystickCommand</td><td>FlightController::JoystickCommand include x, y, z and yaw's command. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af28fa9983e4ac925559c95f493c3533c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af28fa9983e4ac925559c95f493c3533c">&#9670;&nbsp;</a></span>getJoystickMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DJI::OSDK::FlightController::getJoystickMode </td>
+          <td>(</td>
+          <td class="paramtype">FlightJoystick::ControlMode &amp;&#160;</td>
+          <td class="paramname"><em>joystickMode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wrapper function for get joystick mode, non-blocking calls. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">JoystickMode</td><td>FlightController::JoystickMode include horizontal logic,vertical logic,yaw logic, horizontal coordinate, stable mode. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af1354c3f7a99109fd8f07ffcdfee4ad3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1354c3f7a99109fd8f07ffcdfee4ad3">&#9670;&nbsp;</a></span>getRtkEnableAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DJI::OSDK::FlightController::getRtkEnableAsync </td>
           <td>(</td>
           <td class="paramtype">void(*)(<a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> retCode, <a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a71abd079541c6a5ac062437a9a78ffdd">RtkEnabled</a> rtkEnable, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)&#160;</td>
           <td class="paramname"><em>UserCallBack</em>, </td>
@@ -397,14 +682,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="abd22ffb1ae2911db9826ed26f33a1857"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd22ffb1ae2911db9826ed26f33a1857">&#9670;&nbsp;</a></span>getRtkEnableSync()</h2>
+<a id="a5d45ab6e784dbb50ca191d3278276c2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d45ab6e784dbb50ca191d3278276c2a">&#9670;&nbsp;</a></span>getRtkEnableSync()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> FlightController::getRtkEnableSync </td>
+          <td class="memname"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> DJI::OSDK::FlightController::getRtkEnableSync </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a71abd079541c6a5ac062437a9a78ffdd">RtkEnabled</a> &amp;&#160;</td>
           <td class="paramname"><em>rtkEnable</em>, </td>
@@ -435,17 +720,117 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="adbcae20743342976508d00a76679761f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adbcae20743342976508d00a76679761f">&#9670;&nbsp;</a></span>setCollisionAvoidanceEnabledAsync()</h2>
+<a id="a6a0375b6f76e11097d603ff0f5111459"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a0375b6f76e11097d603ff0f5111459">&#9670;&nbsp;</a></span>getUpwardsAvoidanceEnabledAsync()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void FlightController::setCollisionAvoidanceEnabledAsync </td>
+          <td class="memname">void DJI::OSDK::FlightController::getUpwardsAvoidanceEnabledAsync </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#ad6c6e72a8efefcbcdc833f87c3a298bd">CollisionAvoidanceSwitch</a>&#160;</td>
-          <td class="paramname"><em>collisionAvoidanceSwitch</em>, </td>
+          <td class="paramtype">void(*)(<a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> retCode, UpwardsAvoidEnable upwardsEnable, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)&#160;</td>
+          <td class="paramname"><em>UserCallBack</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a>&#160;</td>
+          <td class="paramname"><em>userData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get upwards avoidance enable or disable, non-blocking calls. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">UserCallBack</td><td>callback function defined by user <ul>
+<li><b>retCode</b> the <a class="el" href="namespaceDJI_1_1OSDK.html">OSDK</a> <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933" title="Unified error type.">ErrorCode::ErrorCodeType</a> error code </li>
+<li><b>upwardsEnable</b> UpwardsAvoidEnable, UPWARDS_AVOID_DISABLE: disable, UPWARDS_AVOID_ENABLE: enable </li>
+<li><b>userData</b> the interface to pass userData in when the callback is called </li>
+</ul>
+</td></tr>
+    <tr><td class="paramname">userData</td><td>when UserCallBack is called, used in UserCallBack </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a23ab251ac202a25b531d499d5a146696"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23ab251ac202a25b531d499d5a146696">&#9670;&nbsp;</a></span>getUpwardsAvoidanceEnabledSync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> DJI::OSDK::FlightController::getUpwardsAvoidanceEnabledSync </td>
+          <td>(</td>
+          <td class="paramtype">UpwardsAvoidEnable &amp;&#160;</td>
+          <td class="paramname"><em>upwardsAvoidEnable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get upwards avoidance enable or disable, blocking calls. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">upwardsAvoidEnable</td><td>UpwardsAvoidEnable UPWARDS_AVOID_DISABLE: disable, UPWARDS_AVOID_ENABLE: enable </td></tr>
+    <tr><td class="paramname">timeout</td><td>blocking timeout in seconds </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespaceDJI_1_1OSDK.html">OSDK</a> <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933" title="Unified error type.">ErrorCode::ErrorCodeType</a> error code </dd></dl>
+
+</div>
+</div>
+<a id="ada0bdbac3076c59af556c1e1fbb382bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada0bdbac3076c59af556c1e1fbb382bb">&#9670;&nbsp;</a></span>joystickAction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DJI::OSDK::FlightController::joystickAction </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wrapper function for set joystick action, non-blocking calls. </p>
+<dl class="section note"><dt>Note</dt><dd>User must set the joystick mode and command before using this function to execute the command. </dd></dl>
+
+</div>
+</div>
+<a id="aad0c614d8c4615bc93826cec53132226"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad0c614d8c4615bc93826cec53132226">&#9670;&nbsp;</a></span>setCollisionAvoidanceEnabledAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DJI::OSDK::FlightController::setCollisionAvoidanceEnabledAsync </td>
+          <td>(</td>
+          <td class="paramtype">AvoidEnable&#160;</td>
+          <td class="paramname"><em>avoidEnable</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -470,9 +855,9 @@ Public Member Functions</h2></td></tr>
 <p>Set collision avoidance enable or disable, non-blocking calls. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">collisionAvoidanceSwitch</td><td>reference in CollisionAvoidanceSwitch </td></tr>
+    <tr><td class="paramname">avoidEnable</td><td>AvoidEnable, AVOID_DISABLE: disable, AVOID_ENABLE: enable </td></tr>
     <tr><td class="paramname">UserCallBack</td><td>callback function defined by user <ul>
-<li><b>retCode</b> <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933" title="Unified error type.">ErrorCode::ErrorCodeType</a> error code </li>
+<li><b>retCode</b> <a class="el" href="namespaceDJI_1_1OSDK.html">OSDK</a> <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933" title="Unified error type.">ErrorCode::ErrorCodeType</a> error code </li>
 <li><b>userData</b> the interface to transfer userData in when the callback is called </li>
 </ul>
 </td></tr>
@@ -483,17 +868,17 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a4a2503120060a960893b36ef745d6956"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a2503120060a960893b36ef745d6956">&#9670;&nbsp;</a></span>setCollisionAvoidanceEnabledSync()</h2>
+<a id="a92243d640d2577f65380f381ea58b512"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92243d640d2577f65380f381ea58b512">&#9670;&nbsp;</a></span>setCollisionAvoidanceEnabledSync()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> FlightController::setCollisionAvoidanceEnabledSync </td>
+          <td class="memname"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> DJI::OSDK::FlightController::setCollisionAvoidanceEnabledSync </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#ad6c6e72a8efefcbcdc833f87c3a298bd">CollisionAvoidanceSwitch</a>&#160;</td>
-          <td class="paramname"><em>collisionAvoidanceSwitch</em>, </td>
+          <td class="paramtype">AvoidEnable&#160;</td>
+          <td class="paramname"><em>avoidEnable</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -512,7 +897,7 @@ Public Member Functions</h2></td></tr>
 <p>Set collision avoidance enable or disable, blocking calls. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">collisionAvoidanceSwitch</td><td>reference in CollisionAvoidanceSwitch </td></tr>
+    <tr><td class="paramname">avoidEnable</td><td>AvoidEnable, AVOID_DISABLE: disable, AVOID_ENABLE: enable </td></tr>
     <tr><td class="paramname">timeout</td><td>blocking timeout in seconds </td></tr>
   </table>
   </dd>
@@ -521,14 +906,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a32908e2be079b3a2dfd53eac04fc1bfa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a32908e2be079b3a2dfd53eac04fc1bfa">&#9670;&nbsp;</a></span>setGoHomeAltitudeAsync()</h2>
+<a id="aa292acde18eb93e54717b034a507490f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa292acde18eb93e54717b034a507490f">&#9670;&nbsp;</a></span>setGoHomeAltitudeAsync()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void FlightController::setGoHomeAltitudeAsync </td>
+          <td class="memname">void DJI::OSDK::FlightController::setGoHomeAltitudeAsync </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a01b8e59cbdae526f59fdd82ce982e7ed">GoHomeHeight</a>&#160;</td>
           <td class="paramname"><em>altitude</em>, </td>
@@ -570,14 +955,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a18e380f619128fc06b7dbd186e0f7218"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a18e380f619128fc06b7dbd186e0f7218">&#9670;&nbsp;</a></span>setGoHomeAltitudeSync()</h2>
+<a id="ad278294577e6ce21b2ef9943253243f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad278294577e6ce21b2ef9943253243f3">&#9670;&nbsp;</a></span>setGoHomeAltitudeSync()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> FlightController::setGoHomeAltitudeSync </td>
+          <td class="memname"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> DJI::OSDK::FlightController::setGoHomeAltitudeSync </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a01b8e59cbdae526f59fdd82ce982e7ed">GoHomeHeight</a>&#160;</td>
           <td class="paramname"><em>altitude</em>, </td>
@@ -609,14 +994,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ab82fd02fcabfa7beb18cfc95af259ade"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab82fd02fcabfa7beb18cfc95af259ade">&#9670;&nbsp;</a></span>setHomeLocationAsync()</h2>
+<a id="ac93ccb2c3bb2f226d15eae15c156a392"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac93ccb2c3bb2f226d15eae15c156a392">&#9670;&nbsp;</a></span>setHomeLocationAsync()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void FlightController::setHomeLocationAsync </td>
+          <td class="memname">void DJI::OSDK::FlightController::setHomeLocationAsync </td>
           <td>(</td>
           <td class="paramtype">HomeLocation&#160;</td>
           <td class="paramname"><em>homeLocation</em>, </td>
@@ -641,7 +1026,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set customized home location, non-blocking calls. </p>
+<p>Set customized GPS(not RTK) home location, non-blocking calls. </p>
 <dl class="section note"><dt>Note</dt><dd>Set customized home location failed reasons may as follows:<ol type="1">
 <li>The distance between new home location and last home location is larger than MAX_FLY_RADIUS(20km)</li>
 <li>Set init home location failed after start aircraft. </li>
@@ -662,14 +1047,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="acd1dba0ec1a3d406b53d511b6dc7285f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd1dba0ec1a3d406b53d511b6dc7285f">&#9670;&nbsp;</a></span>setHomeLocationSync()</h2>
+<a id="aedc476569fd0ba04ffd45e18047b6416"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedc476569fd0ba04ffd45e18047b6416">&#9670;&nbsp;</a></span>setHomeLocationSync()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> FlightController::setHomeLocationSync </td>
+          <td class="memname"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> DJI::OSDK::FlightController::setHomeLocationSync </td>
           <td>(</td>
           <td class="paramtype">HomeLocation&#160;</td>
           <td class="paramname"><em>homeLocation</em>, </td>
@@ -688,7 +1073,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set customized home location, blocking calls. </p>
+<p>Set customized GPS(not RTK) home location, blocking calls. </p>
 <dl class="section note"><dt>Note</dt><dd>Set customized home location failed reason may as follows:<ol type="1">
 <li>The distance between new home location and last home location is larger than MAX_FLY_RADIUS(20km).</li>
 <li>Set init home location failed after start aircraft. </li>
@@ -705,14 +1090,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a04917e7e481eac1c504574453b320d31"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a04917e7e481eac1c504574453b320d31">&#9670;&nbsp;</a></span>setHomeLocationUsingCurrentAircraftLocationAsync()</h2>
+<a id="a59bd7679194df7ae05b15483f03f639c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59bd7679194df7ae05b15483f03f639c">&#9670;&nbsp;</a></span>setHomeLocationUsingCurrentAircraftLocationAsync()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void FlightController::setHomeLocationUsingCurrentAircraftLocationAsync </td>
+          <td class="memname">void DJI::OSDK::FlightController::setHomeLocationUsingCurrentAircraftLocationAsync </td>
           <td>(</td>
           <td class="paramtype">void(*)(<a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> retCode, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)&#160;</td>
           <td class="paramname"><em>UserCallBack</em>, </td>
@@ -731,7 +1116,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set home location using current aircraft location, non-blocking calls. </p>
+<p>Set home location using current aircraft GPS(not RTK) location, non-blocking calls. </p>
 <dl class="section note"><dt>Note</dt><dd>Set home location failed reasons may as follows:<ol type="1">
 <li>Aircraft's gps level can't reach the condition of recording home location.</li>
 <li>There's no init home location before you set. </li>
@@ -751,14 +1136,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a83520c78c7019b3ae1a2bec538c1ca7e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83520c78c7019b3ae1a2bec538c1ca7e">&#9670;&nbsp;</a></span>setHomeLocationUsingCurrentAircraftLocationSync()</h2>
+<a id="a496aba7525bc38dce7594be5f27a3335"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a496aba7525bc38dce7594be5f27a3335">&#9670;&nbsp;</a></span>setHomeLocationUsingCurrentAircraftLocationSync()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> FlightController::setHomeLocationUsingCurrentAircraftLocationSync </td>
+          <td class="memname"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> DJI::OSDK::FlightController::setHomeLocationUsingCurrentAircraftLocationSync </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>timeout</em></td><td>)</td>
@@ -767,7 +1152,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set home location using current aircraft location, blocking calls. </p>
+<p>Set home location using current aircraft GPS(not RTK) location, blocking calls. </p>
 <dl class="section note"><dt>Note</dt><dd>Set home location failed reasons may as follows:<ol type="1">
 <li>Aircraft's gps level can't reach the condition of recording home location.</li>
 <li>Set init home location failed after start aircraft. </li>
@@ -782,14 +1167,66 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a361e9ccc0d545739890a3a71de65c863"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a361e9ccc0d545739890a3a71de65c863">&#9670;&nbsp;</a></span>setRtkEnableAsync()</h2>
+<a id="a626309475a63183198a225a51a027388"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a626309475a63183198a225a51a027388">&#9670;&nbsp;</a></span>setJoystickCommand()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void FlightController::setRtkEnableAsync </td>
+          <td class="memname">void DJI::OSDK::FlightController::setJoystickCommand </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structDJI_1_1OSDK_1_1FlightJoystick_1_1ControlCommand.html">JoystickCommand</a> &amp;&#160;</td>
+          <td class="paramname"><em>JoystickCommand</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wrapper function for set joystick command, non-blocking calls. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">JoystickCommand</td><td>FlightController::JoystickCommand include x, y, z and yaw's command. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a68178ce8dc708bc4e443202f57b49966"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68178ce8dc708bc4e443202f57b49966">&#9670;&nbsp;</a></span>setJoystickMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DJI::OSDK::FlightController::setJoystickMode </td>
+          <td>(</td>
+          <td class="paramtype">const JoystickMode &amp;&#160;</td>
+          <td class="paramname"><em>joystickMode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wrapper function for set joystick mode, non-blocking calls. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">JoystickMode</td><td>FlightController::JoystickMode include horizontal logic,vertical logic,yaw logic, horizontal coordinate, stable mode. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abaac47e3123ee67c013026e53fbec996"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abaac47e3123ee67c013026e53fbec996">&#9670;&nbsp;</a></span>setRtkEnableAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DJI::OSDK::FlightController::setRtkEnableAsync </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a71abd079541c6a5ac062437a9a78ffdd">RtkEnabled</a>&#160;</td>
           <td class="paramname"><em>rtkEnable</em>, </td>
@@ -830,14 +1267,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a4b806f7dc703be8f89f5d643a90539c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b806f7dc703be8f89f5d643a90539c7">&#9670;&nbsp;</a></span>setRtkEnableSync()</h2>
+<a id="a3140d620369753ba5067913e5b76680b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3140d620369753ba5067913e5b76680b">&#9670;&nbsp;</a></span>setRtkEnableSync()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> FlightController::setRtkEnableSync </td>
+          <td class="memname"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> DJI::OSDK::FlightController::setRtkEnableSync </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a71abd079541c6a5ac062437a9a78ffdd">RtkEnabled</a>&#160;</td>
           <td class="paramname"><em>rtkEnable</em>, </td>
@@ -868,14 +1305,100 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="afccef259458c22368144d0e321dd03ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afccef259458c22368144d0e321dd03ba">&#9670;&nbsp;</a></span>startConfirmLandingAsync()</h2>
+<a id="ab4563141ea006e86b0625e1d1b25a575"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4563141ea006e86b0625e1d1b25a575">&#9670;&nbsp;</a></span>setUpwardsAvoidanceEnabledAsync()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void FlightController::startConfirmLandingAsync </td>
+          <td class="memname">void DJI::OSDK::FlightController::setUpwardsAvoidanceEnabledAsync </td>
+          <td>(</td>
+          <td class="paramtype">UpwardsAvoidEnable&#160;</td>
+          <td class="paramname"><em>upwardsAvoidEnable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(*)(<a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> retCode, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)&#160;</td>
+          <td class="paramname"><em>UserCallBack</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a>&#160;</td>
+          <td class="paramname"><em>userData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set upwards avoidance enable or disable, non-blocking calls. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">upwardsAvoidEnable</td><td>UpwardsAvoidEnable UPWARDS_AVOID_DISABLE: disable, UPWARDS_AVOID_ENABLE: enable </td></tr>
+    <tr><td class="paramname">UserCallBack</td><td>callback function defined by user <ul>
+<li><b>retCode</b> <a class="el" href="namespaceDJI_1_1OSDK.html">OSDK</a> <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933" title="Unified error type.">ErrorCode::ErrorCodeType</a> error code </li>
+<li><b>userData</b> the interface to transfer userData in when the callback is called </li>
+</ul>
+</td></tr>
+    <tr><td class="paramname">userData</td><td>when UserCallBack is called, used in UserCallBack </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afc7e1f4bf0a21ddad7ec5857c4579967"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc7e1f4bf0a21ddad7ec5857c4579967">&#9670;&nbsp;</a></span>setUpwardsAvoidanceEnabledSync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> DJI::OSDK::FlightController::setUpwardsAvoidanceEnabledSync </td>
+          <td>(</td>
+          <td class="paramtype">UpwardsAvoidEnable&#160;</td>
+          <td class="paramname"><em>upwardsAvoidEnable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set upwards avoidance enable or disable, blocking calls. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">UpwardsAvoidEnable</td><td>UpwardsAvoidEnable UPWARDS_AVOID_DISABLE: disable, UPWARDS_AVOID_ENABLE: enable </td></tr>
+    <tr><td class="paramname">timeout</td><td>blocking timeout in seconds </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933" title="Unified error type.">ErrorCode::ErrorCodeType</a> error code </dd></dl>
+
+</div>
+</div>
+<a id="a2c882eea206d600c79506df8ada04d59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c882eea206d600c79506df8ada04d59">&#9670;&nbsp;</a></span>startConfirmLandingAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DJI::OSDK::FlightController::startConfirmLandingAsync </td>
           <td>(</td>
           <td class="paramtype">void(*)(<a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> retCode, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)&#160;</td>
           <td class="paramname"><em>UserCallBack</em>, </td>
@@ -910,14 +1433,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a8baf1a121226109973f6bb2dea08cc1d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8baf1a121226109973f6bb2dea08cc1d">&#9670;&nbsp;</a></span>startConfirmLandingSync()</h2>
+<a id="abde92d10a29436f30cf3e564fd3fef27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abde92d10a29436f30cf3e564fd3fef27">&#9670;&nbsp;</a></span>startConfirmLandingSync()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> FlightController::startConfirmLandingSync </td>
+          <td class="memname"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> DJI::OSDK::FlightController::startConfirmLandingSync </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>timeout</em></td><td>)</td>
@@ -938,14 +1461,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a2c125df1cfc28fc122501cd7e040f49b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c125df1cfc28fc122501cd7e040f49b">&#9670;&nbsp;</a></span>startForceLandingAsync()</h2>
+<a id="a69d028ce116c5b9de8efce7060e17532"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69d028ce116c5b9de8efce7060e17532">&#9670;&nbsp;</a></span>startForceLandingAsync()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void FlightController::startForceLandingAsync </td>
+          <td class="memname">void DJI::OSDK::FlightController::startForceLandingAsync </td>
           <td>(</td>
           <td class="paramtype">void(*)(<a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> retCode, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)&#160;</td>
           <td class="paramname"><em>UserCallBack</em>, </td>
@@ -980,14 +1503,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a6db3360aaca675e95494274d54b5aa55"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6db3360aaca675e95494274d54b5aa55">&#9670;&nbsp;</a></span>startForceLandingSync()</h2>
+<a id="a812952a5d08b23464817836f05318a61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a812952a5d08b23464817836f05318a61">&#9670;&nbsp;</a></span>startForceLandingSync()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> FlightController::startForceLandingSync </td>
+          <td class="memname"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> DJI::OSDK::FlightController::startForceLandingSync </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>timeout</em></td><td>)</td>
@@ -1008,14 +1531,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="abddd4bf193acaa8a3ad72a5631a3cd7d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abddd4bf193acaa8a3ad72a5631a3cd7d">&#9670;&nbsp;</a></span>startGoHomeAsync()</h2>
+<a id="a49ef7863a6ae51d695dae3aec6956104"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49ef7863a6ae51d695dae3aec6956104">&#9670;&nbsp;</a></span>startGoHomeAsync()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void FlightController::startGoHomeAsync </td>
+          <td class="memname">void DJI::OSDK::FlightController::startGoHomeAsync </td>
           <td>(</td>
           <td class="paramtype">void(*)(<a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> retCode, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)&#160;</td>
           <td class="paramname"><em>UserCallBack</em>, </td>
@@ -1049,14 +1572,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a30d9adac394d7eb82e30c1cd9e812b8b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30d9adac394d7eb82e30c1cd9e812b8b">&#9670;&nbsp;</a></span>startGoHomeSync()</h2>
+<a id="aa2838eef11c5b31db18d2206089f7737"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2838eef11c5b31db18d2206089f7737">&#9670;&nbsp;</a></span>startGoHomeSync()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> FlightController::startGoHomeSync </td>
+          <td class="memname"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> DJI::OSDK::FlightController::startGoHomeSync </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>timeout</em></td><td>)</td>
@@ -1076,14 +1599,82 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aa755b3bbceea1b9d8803ffdc1e15fa98"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa755b3bbceea1b9d8803ffdc1e15fa98">&#9670;&nbsp;</a></span>startTakeoffAsync()</h2>
+<a id="ad355b7b07d628cc5da17377a7053ee54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad355b7b07d628cc5da17377a7053ee54">&#9670;&nbsp;</a></span>startLandingAsync()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void FlightController::startTakeoffAsync </td>
+          <td class="memname">void DJI::OSDK::FlightController::startLandingAsync </td>
+          <td>(</td>
+          <td class="paramtype">void(*)(<a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> retCode, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)&#160;</td>
+          <td class="paramname"><em>UserCallBack</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a>&#160;</td>
+          <td class="paramname"><em>userData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wrapper function for aircraft landing, non-blocking calls. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">UserCallBack</td><td>callback function defined by user <ul>
+<li><b>retCode</b> <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933" title="Unified error type.">ErrorCode::ErrorCodeType</a> error code </li>
+<li><b>userData</b> the interface to transfer userData in when the callback is called </li>
+</ul>
+</td></tr>
+    <tr><td class="paramname">userData</td><td>when UserCallBack is called, used in UserCallBack </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acadcd6d89b864a552bccafb8e6a4ca5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acadcd6d89b864a552bccafb8e6a4ca5f">&#9670;&nbsp;</a></span>startLandingSync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> DJI::OSDK::FlightController::startLandingSync </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timeout</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wrapper function for aircraft landing, blocking calls. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timeout</td><td>blocking timeout in seconds </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933" title="Unified error type.">ErrorCode::ErrorCodeType</a> error code </dd></dl>
+
+</div>
+</div>
+<a id="ac3307850a7ad2f3244dea00bb2583495"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3307850a7ad2f3244dea00bb2583495">&#9670;&nbsp;</a></span>startTakeoffAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DJI::OSDK::FlightController::startTakeoffAsync </td>
           <td>(</td>
           <td class="paramtype">void(*)(<a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> retCode, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)&#160;</td>
           <td class="paramname"><em>UserCallBack</em>, </td>
@@ -1117,14 +1708,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aebea11fe5a77f9ab3f4751066ae3d892"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aebea11fe5a77f9ab3f4751066ae3d892">&#9670;&nbsp;</a></span>startTakeoffSync()</h2>
+<a id="a7eaa29c82a94cd4391c133a33e0a2ff7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7eaa29c82a94cd4391c133a33e0a2ff7">&#9670;&nbsp;</a></span>startTakeoffSync()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> FlightController::startTakeoffSync </td>
+          <td class="memname"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> DJI::OSDK::FlightController::startTakeoffSync </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>timeout</em></td><td>)</td>
@@ -1144,44 +1735,151 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>osdk-core/api/inc/<a class="el" href="dji__flight__controller_8hpp_source.html">dji_flight_controller.hpp</a></li>
-<li>osdk-core/api/src/<a class="el" href="dji__flight__controller_8cpp.html">dji_flight_controller.cpp</a></li>
+<a id="a50afc92828b107a4a41c800e72410428"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50afc92828b107a4a41c800e72410428">&#9670;&nbsp;</a></span>turnOffMotorsAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DJI::OSDK::FlightController::turnOffMotorsAsync </td>
+          <td>(</td>
+          <td class="paramtype">void(*)(<a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> retCode, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)&#160;</td>
+          <td class="paramname"><em>UserCallBack</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a>&#160;</td>
+          <td class="paramname"><em>userData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wrapper function for turn off motors, non-blocking calls. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">UserCallBack</td><td>callback function defined by user <ul>
+<li><b>retCode</b> <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933" title="Unified error type.">ErrorCode::ErrorCodeType</a> error code </li>
+<li><b>userData</b> the interface to transfer userData in when the callback is called </li>
+</ul>
+</td></tr>
+    <tr><td class="paramname">userData</td><td>when UserCallBack is called, used in UserCallBack </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aaec8c0f3bd87240b4c63cac052a4e37b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaec8c0f3bd87240b4c63cac052a4e37b">&#9670;&nbsp;</a></span>turnOffMotorsSync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> DJI::OSDK::FlightController::turnOffMotorsSync </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timeout</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wrapper function for turn off motors, blocking calls. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timeout</td><td>blocking timeout in seconds </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933" title="Unified error type.">ErrorCode::ErrorCodeType</a> error code </dd></dl>
+
+</div>
+</div>
+<a id="a1d0ae47f352803de400e1647943d352a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d0ae47f352803de400e1647943d352a">&#9670;&nbsp;</a></span>turnOnMotorsAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DJI::OSDK::FlightController::turnOnMotorsAsync </td>
+          <td>(</td>
+          <td class="paramtype">void(*)(<a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> retCode, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)&#160;</td>
+          <td class="paramname"><em>UserCallBack</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a>&#160;</td>
+          <td class="paramname"><em>userData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wrapper function for turn on motors, non-blocking calls. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">UserCallBack</td><td>callback function defined by user <ul>
+<li><b>retCode</b> <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933" title="Unified error type.">ErrorCode::ErrorCodeType</a> error code </li>
+<li><b>userData</b> the interface to transfer userData in when the callback is called </li>
+</ul>
+</td></tr>
+    <tr><td class="paramname">userData</td><td>when UserCallBack is called, used in UserCallBack </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af6fa10fcb0c5a09368f91b69250bdde2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6fa10fcb0c5a09368f91b69250bdde2">&#9670;&nbsp;</a></span>turnOnMotorsSync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> DJI::OSDK::FlightController::turnOnMotorsSync </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timeout</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wrapper function for turn on motors, blocking calls. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timeout</td><td>blocking timeout in seconds </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933" title="Unified error type.">ErrorCode::ErrorCodeType</a> error code </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>osdk-lib/x86/osdk-core/inc/<a class="el" href="dji__flight__controller_8hpp_source.html">dji_flight_controller.hpp</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
-</div>
-</div>
-</div>
-</div>
-</div>
 <hr class="footer"/><address class="footer"><small>
-  <footer id="site-footer" class="site-footer">
-    <div class="container">
-      <div class="foot-nav row">
-        <nav class="link-list col-xs-2"><span class="title">SDK</span><a href="/mobile-sdk">Mobile SDK</a><a href="/ux-sdk">UX SDK</a><a href="/onboard-sdk">Onboard SDK</a><a href="/payload-sdk">Payload SDK</a><a href="/windows-sdk">Windows SDK</a></nav>
-        <nav class="link-list col-xs-2"><span class="title">Info</span><a href="/products">Products</a></nav>
-        <nav class="link-list col-xs-2"><span class="title">Community</span><a href="http://stackoverflow.com/questions/tagged/dji-sdk" target="_blank">Stack Overflow</a><a href="https://www.youtube.com/channel/UCPQwN5xsob8zZGIcDhkYqUA" target="_blank">YouTube</a><a href="https://twitter.com/djidevelopers" target="_blank">Twitter</a></nav>
-        <nav class="link-list col-xs-2"><span class="title">Contact Us</span><a href="mailto:dev@dji.com"> dev@dji.com</a></nav>
-        <nav class="link-list col-xs-2"><span class="title">Business Cooperation</span><a href="mailto:dev@dji.com"> dev@dji.com</a></nav>
-        <nav class="link-list col-xs-2"><span class="title">BILLING</span><a href="mailto:billing-dev@dji.com"> billing-dev@dji.com</a></nav>
-      </div>
-      <div class="foot-copyright row">
-        <div class="col-xs-3 foot-logo"><img src="dji-logo-foot.png"></div>
-        <div class="copyright col-xs-7"><span>Copyright © 2018 DJI All Rights Reserved</span><a href="/policies/privacy">Privacy Policy</a><a href="/policies/terms">Terms of Use</a></div>
-        <div class="col-xs-2">
-          <div class="lang-selector">
-            <select dir="rtl" v-model="lang">
-              <option value="en">English</option>
-              <option value="cn">中文</option>
-            </select><i class="fa fa-globe"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
+Generated on Thu Apr 30 2020 21:56:46 for DJI Onboard SDK by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
 </small></address>
 </body>
-<script type="text/javascript" src="doxy-boot.js"></script>
 </html>

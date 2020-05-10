@@ -1,12 +1,22 @@
 var searchData=
 [
-  ['readidlevelocity',['readIdleVelocity',['../classDJI_1_1OSDK_1_1WaypointMission.html#a881cc37e0cba5752a17565915b39c4c8',1,'DJI::OSDK::WaypointMission::readIdleVelocity(VehicleCallBack callback=0, UserData userData=0)'],['../classDJI_1_1OSDK_1_1WaypointMission.html#a50bedf0aa7e02fca19b28354089d2520',1,'DJI::OSDK::WaypointMission::readIdleVelocity(int timeout)']]],
-  ['registeruserpackageunpackcallback',['registerUserPackageUnpackCallback',['../classDJI_1_1OSDK_1_1DataSubscription.html#a69bfb721713e8fdd164d1cf065d7a180',1,'DJI::OSDK::DataSubscription']]],
-  ['releasectrlauthority',['releaseCtrlAuthority',['../classDJI_1_1OSDK_1_1Vehicle.html#a42a4c6010022629269d936e03efc8b0c',1,'DJI::OSDK::Vehicle::releaseCtrlAuthority(VehicleCallBack callback=0, UserData userData=0)'],['../classDJI_1_1OSDK_1_1Vehicle.html#a18ec8131563bb63a9dc5166a376a9aac',1,'DJI::OSDK::Vehicle::releaseCtrlAuthority(int timeout)']]],
-  ['removeallexistingpackages',['removeAllExistingPackages',['../classDJI_1_1OSDK_1_1DataSubscription.html#a9afcdd6ce4c8dcc98d759db89632488c',1,'DJI::OSDK::DataSubscription']]],
-  ['removeleftoverpackages',['removeLeftOverPackages',['../classDJI_1_1OSDK_1_1DataSubscription.html#a411dd8a2e27e61d846441c3a923d35a9',1,'DJI::OSDK::DataSubscription']]],
-  ['removepackage',['removePackage',['../classDJI_1_1OSDK_1_1DataSubscription.html#a9ae1664ca9f58407ce6ae7e4f1bd88a0',1,'DJI::OSDK::DataSubscription::removePackage(int packageID)'],['../classDJI_1_1OSDK_1_1DataSubscription.html#a3f9001747df88da06671f5ddcef9c82b',1,'DJI::OSDK::DataSubscription::removePackage(int packageID, int timeout)']]],
-  ['reset',['reset',['../classDJI_1_1OSDK_1_1DataSubscription.html#a756a7136a09910fed24222d6312edd7d',1,'DJI::OSDK::DataSubscription::reset()'],['../classDJI_1_1OSDK_1_1DataSubscription.html#ab0b76908b80a597513bbb51320a93b84',1,'DJI::OSDK::DataSubscription::reset(int timeout)']]],
-  ['resetyaw',['resetYaw',['../classDJI_1_1OSDK_1_1HotpointMission.html#a610bf9468597c4e2da987b9419715f76',1,'DJI::OSDK::HotpointMission::resetYaw(VehicleCallBack callback=0, UserData userData=0)'],['../classDJI_1_1OSDK_1_1HotpointMission.html#ab04d05cdaea0ca14bf7ca6cfa14550da',1,'DJI::OSDK::HotpointMission::resetYaw(int timer)']]],
-  ['resume',['resume',['../classDJI_1_1OSDK_1_1HotpointMission.html#a1fc73550ee5bcc36ca1b42550a5a693b',1,'DJI::OSDK::HotpointMission::resume(VehicleCallBack callback=0, UserData userData=0)'],['../classDJI_1_1OSDK_1_1HotpointMission.html#a5b472af0da9c1370dae19d3e586ef00a',1,'DJI::OSDK::HotpointMission::resume(int timer)'],['../classDJI_1_1OSDK_1_1WaypointMission.html#ab890e43b9ba152e5d48fc052c7676156',1,'DJI::OSDK::WaypointMission::resume(VehicleCallBack callback=0, UserData userData=0)'],['../classDJI_1_1OSDK_1_1WaypointMission.html#a9e27f4ffafb9f63222e8ef224e1c88a5',1,'DJI::OSDK::WaypointMission::resume(int timer)']]]
+  ['obtainctrlauthority',['obtainCtrlAuthority',['../classDJI_1_1OSDK_1_1Control.html#a6de837ceec43b35e7dddf948e63cfda5',1,'DJI::OSDK::Control::obtainCtrlAuthority(VehicleCallBack callback=0, UserData userData=0)'],['../classDJI_1_1OSDK_1_1Control.html#a84fa471cd78f7376aa58fd838bd103cd',1,'DJI::OSDK::Control::obtainCtrlAuthority(int timeout)']]],
+  ['obtaindownloadrightsync',['obtainDownloadRightSync',['../classDJI_1_1OSDK_1_1CameraModule.html#ac758dd371b5a8b01e3fef6ef684640da',1,'DJI::OSDK::CameraModule']]],
+  ['osdkosal_5ffree',['OsdkOsal_Free',['../osdk__platform_8h.html#a3c3f28508f7dc28b8887e53d28816094',1,'osdk_platform.h']]],
+  ['osdkosal_5fgettimems',['OsdkOsal_GetTimeMs',['../osdk__platform_8h.html#a41d41350cb71045beda4dff64ec219f6',1,'osdk_platform.h']]],
+  ['osdkosal_5fmalloc',['OsdkOsal_Malloc',['../osdk__platform_8h.html#a4b71a696a0d839cd9a4fce2b94f2a14e',1,'osdk_platform.h']]],
+  ['osdkosal_5fmutexcreate',['OsdkOsal_MutexCreate',['../osdk__platform_8h.html#a22e44eab78321e2a895946689e107fe5',1,'osdk_platform.h']]],
+  ['osdkosal_5fmutexdestroy',['OsdkOsal_MutexDestroy',['../osdk__platform_8h.html#afee4ed69900e6f6e2c25f20e89307c62',1,'osdk_platform.h']]],
+  ['osdkosal_5fmutexlock',['OsdkOsal_MutexLock',['../osdk__platform_8h.html#aa6514b7524ee55a99bbe6a2bab35d4e9',1,'osdk_platform.h']]],
+  ['osdkosal_5fmutexunlock',['OsdkOsal_MutexUnlock',['../osdk__platform_8h.html#a5e95d93ea394603c6401f344b6094def',1,'osdk_platform.h']]],
+  ['osdkosal_5fsemaphorecreate',['OsdkOsal_SemaphoreCreate',['../osdk__platform_8h.html#ad98e7638a6d167c66020f1479e323559',1,'osdk_platform.h']]],
+  ['osdkosal_5fsemaphoredestroy',['OsdkOsal_SemaphoreDestroy',['../osdk__platform_8h.html#a186fdb3629f2bc17fbf592031f3565bd',1,'osdk_platform.h']]],
+  ['osdkosal_5fsemaphorepost',['OsdkOsal_SemaphorePost',['../osdk__platform_8h.html#a28706d6e2e160c1cd6b54562f9808180',1,'osdk_platform.h']]],
+  ['osdkosal_5fsemaphoretimedwait',['OsdkOsal_SemaphoreTimedWait',['../osdk__platform_8h.html#a0d9f1b71660c43fa5ca2cb708e747d1c',1,'osdk_platform.h']]],
+  ['osdkosal_5fsemaphorewait',['OsdkOsal_SemaphoreWait',['../osdk__platform_8h.html#a57057f1fc6ee2cfd4d121867cbcae2c7',1,'osdk_platform.h']]],
+  ['osdkosal_5ftaskcreate',['OsdkOsal_TaskCreate',['../osdk__platform_8h.html#a012cc9046a89b88520b750448a5b006e',1,'osdk_platform.h']]],
+  ['osdkosal_5ftaskdestroy',['OsdkOsal_TaskDestroy',['../osdk__platform_8h.html#a3c3073b1604d953f5d9e5e59d6398d65',1,'osdk_platform.h']]],
+  ['osdkosal_5ftasksleepms',['OsdkOsal_TaskSleepMs',['../osdk__platform_8h.html#a1ac2573d98829cd674b9578172914290',1,'osdk_platform.h']]],
+  ['osdkplatform_5freghaluarthandler',['OsdkPlatform_RegHalUartHandler',['../osdk__platform_8h.html#a4b9bd752e9d24ad2ce101369532338bd',1,'osdk_platform.h']]],
+  ['osdkplatform_5fregosalhandler',['OsdkPlatform_RegOsalHandler',['../osdk__platform_8h.html#abdf47b95e610af193cc7fd9b2da9232a',1,'osdk_platform.h']]]
 ];

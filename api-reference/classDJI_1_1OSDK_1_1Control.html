@@ -1,98 +1,36 @@
-<!-- HTML header for doxygen 1.8.8-->
-<!DOCTYPE html
-    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- For Mobile Devices -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
-    <meta name="generator" content="Doxygen 1.8.15" />
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <title>DJI Onboard SDK: DJI::OSDK::Control Class Reference</title>
-    <!-- <link href="tabs.css" rel="stylesheet" type="text/css"/> -->
-    <script type="text/javascript" src="dynsections.js"></script>
-    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DJI Onboard SDK: DJI::OSDK::Control Class Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-    <link href="doxygen.css" rel="stylesheet" type="text/css" />
-    <link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <link href="jquery.smartmenus.bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="bootstrap-theme.css">
-    <script src="bootstrap.min.js"></script>
-    <link href="jquery.smartmenus.bootstrap.css" rel="stylesheet">
-    <!-- SmartMenus jQuery plugin -->
-    <script type="text/javascript" src="jquery.smartmenus.min.js"></script>
-    <!-- SmartMenus jQuery Bootstrap Addon -->
-    <script type="text/javascript" src="jquery.smartmenus.bootstrap.min.js"></script>
-    <style>
-        .has-submenu {
-            position: relative;
-        }
-        #main-nav {
-            margin-top: 60px;
-        }
-    </style>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <nav id="site-header" class="site-header navbar">
-        <div class="container">
-            <div class="navbar-header"><a href="/" class="logo"><img src="dji-logo@2x.png">Developer</a></div>
-            <div id="header-navbar" class="collapse navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="/mobile-sdk">Mobile SDK</a></li>
-                    <li><a href="/ux-sdk">UX SDK</a></li>
-                    <li><a href="/onboard-sdk">Onboard SDK</a></li>
-                    <li><a href="/payload-sdk">Payload SDK</a></li>
-                    <li><a href="/windows-sdk">Windows SDK</a></li>
-                </ul>
-                <ul v-cloak="" v-show="!loggedIn" class="nav navbar-nav navbar-right nav-user">
-                    <li><a
-                            href="https://account.dji.com/login?appId=dji_sdk&backUrl=https%3A%2F%2Fdeveloper.dji.com%2Fuser&locale=en_US">Login</a>
-                    </li>
-                    <li><a href="https://account.dji.com/register?appId=dji_sdk&backUrl=https%3A%2F%2Fdeveloper.dji.com%2Fuser&locale=en_US"
-                            class="head-cta">Register</a></li>
-                </ul>
-                <ul v-cloak="" v-show="loggedIn" class="nav navbar-nav navbar-right nav-user">
-                    <li class="hovedown"><a href="javascript:void(0);" class="hovedown-toggle"><i
-                                class="fa fa-user"></i></a>
-                        <ul class="hovedown-menu hovedown-menu-right">
-                            <li><a href="/user">User Center</a></li>
-                            <li><a href="javascript:void(0);" v-on="click: logout">Logout</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <div data-offset-top="60" data-spy="affix" class="sub-nav">
-        <div class="container">
-            <h1 class="logo">Onboard SDK</h1>
-            <nav><a href="/onboard-sdk">Overview</a><a href="/onboard-sdk/documentation">Documentation</a><a
-                    href="/onboard-api-reference/index.html" class="active">API Reference</a><a
-                    href="/onboard-sdk/downloads">Downloads</a>
-            </nav>
-        </div>
-    </div>
-    <!--<nav class="navbar navbar-default" role="navigation">-->
-    <!--<div class="container">-->
-    <!--<div class="navbar-header">-->
-    <!--<a href="#" class="navbar-left"><img src="dji_logo_gray_small.png" alt="DJI OSDK API Documentation" width="32px"/></a>-->
-    <!--<a class="navbar-brand" href="index.html">ONBOARD SDK 3.3</a>-->
-    <!--</div>-->
-    <!--</div>-->
-    <!--</nav>-->
-    <div id="top">
-        <!-- do not remove this div, it is closed by doxygen! -->
-        <div class="content" id="content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 panel " style="padding-bottom: 15px;">
-                        <div style="margin-bottom: 15px;">
-                            <!-- end header part --><!-- Generated by Doxygen 1.8.15 -->
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">DJI Onboard SDK
+   &#160;<span id="projectnumber">4.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.8.15 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 var searchBox = new SearchBox("searchBox", "search",false,'Search');
@@ -228,83 +166,95 @@ typedef struct DJI::OSDK::Control::KillSwitchData&#160;</td><td class="memItemRi
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aecb15efca84a63d32c20bd27e8a1d3c1"><td class="memItemLeft" align="right" valign="top"><a id="aecb15efca84a63d32c20bd27e8a1d3c1"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Control</b> (<a class="el" href="classDJI_1_1OSDK_1_1Vehicle.html">Vehicle</a> *vehicle=0)</td></tr>
-<tr class="separator:aecb15efca84a63d32c20bd27e8a1d3c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29a7c4aab568fb82dd372bc758885a2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Control.html#a29a7c4aab568fb82dd372bc758885a2a">action</a> (const int cmd, <a class="el" href="namespaceDJI_1_1OSDK.html#a20a68c21abe449cf5f133f7d398055d3">VehicleCallBack</a> callback=0, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData=0)</td></tr>
-<tr class="memdesc:a29a7c4aab568fb82dd372bc758885a2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Basic action command for the vehicle, see <a class="el" href="classDJI_1_1OSDK_1_1Control_1_1FlightCommand.html" title="Flight control commands.">FlightCommand</a> for cmd choices.  <a href="#a29a7c4aab568fb82dd372bc758885a2a">More...</a><br /></td></tr>
-<tr class="separator:a29a7c4aab568fb82dd372bc758885a2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e8df1234fe307c01d209b67f34c9efe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1ErrorCode.html">ACK::ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Control.html#a5e8df1234fe307c01d209b67f34c9efe">action</a> (const int cmd, int timeout)</td></tr>
-<tr class="memdesc:a5e8df1234fe307c01d209b67f34c9efe"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDJI_1_1OSDK_1_1Control.html" title="Flight control API: high-level actions and low-level control modes.">Control</a> the vehicle using user-specified mode, see <a class="el" href="classDJI_1_1OSDK_1_1Control_1_1FlightCommand.html" title="Flight control commands.">FlightCommand</a> for cmd choices.  <a href="#a5e8df1234fe307c01d209b67f34c9efe">More...</a><br /></td></tr>
-<tr class="separator:a5e8df1234fe307c01d209b67f34c9efe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4742f9e7155e0bf4651cde4ee39b116"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1ErrorCode.html">ACK::ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Control.html#ac4742f9e7155e0bf4651cde4ee39b116">armMotors</a> (int wait_timeout)</td></tr>
-<tr class="memdesc:ac4742f9e7155e0bf4651cde4ee39b116"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper function for arming the motors.  <a href="#ac4742f9e7155e0bf4651cde4ee39b116">More...</a><br /></td></tr>
-<tr class="separator:ac4742f9e7155e0bf4651cde4ee39b116"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56e045b5e4acf33fc785099541d11b03"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Control.html#a56e045b5e4acf33fc785099541d11b03">armMotors</a> (<a class="el" href="namespaceDJI_1_1OSDK.html#a20a68c21abe449cf5f133f7d398055d3">VehicleCallBack</a> callback=0, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData=0)</td></tr>
-<tr class="memdesc:a56e045b5e4acf33fc785099541d11b03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper function for arming the motors.  <a href="#a56e045b5e4acf33fc785099541d11b03">More...</a><br /></td></tr>
-<tr class="separator:a56e045b5e4acf33fc785099541d11b03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97b2f4d031f4b6898310c220f72eece0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1ErrorCode.html">ACK::ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Control.html#a97b2f4d031f4b6898310c220f72eece0">disArmMotors</a> (int wait_timeout)</td></tr>
-<tr class="memdesc:a97b2f4d031f4b6898310c220f72eece0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper function for disarming the motors.  <a href="#a97b2f4d031f4b6898310c220f72eece0">More...</a><br /></td></tr>
-<tr class="separator:a97b2f4d031f4b6898310c220f72eece0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a716f34f3eaaa19834fadf314cfef8a66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Control.html#a716f34f3eaaa19834fadf314cfef8a66">disArmMotors</a> (<a class="el" href="namespaceDJI_1_1OSDK.html#a20a68c21abe449cf5f133f7d398055d3">VehicleCallBack</a> callback=0, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData=0)</td></tr>
-<tr class="memdesc:a716f34f3eaaa19834fadf314cfef8a66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper function for disarming the motors.  <a href="#a716f34f3eaaa19834fadf314cfef8a66">More...</a><br /></td></tr>
-<tr class="separator:a716f34f3eaaa19834fadf314cfef8a66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f79c6ed6e9c399fff2354d0403be6f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1ErrorCode.html">ACK::ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Control.html#a7f79c6ed6e9c399fff2354d0403be6f5">takeoff</a> (int wait_timeout)</td></tr>
-<tr class="memdesc:a7f79c6ed6e9c399fff2354d0403be6f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper function for take off.  <a href="#a7f79c6ed6e9c399fff2354d0403be6f5">More...</a><br /></td></tr>
-<tr class="separator:a7f79c6ed6e9c399fff2354d0403be6f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ffefbdc320fde5d8403f1d20d82a192"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Control.html#a4ffefbdc320fde5d8403f1d20d82a192">takeoff</a> (<a class="el" href="namespaceDJI_1_1OSDK.html#a20a68c21abe449cf5f133f7d398055d3">VehicleCallBack</a> callback=0, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData=0)</td></tr>
-<tr class="memdesc:a4ffefbdc320fde5d8403f1d20d82a192"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper function for take off.  <a href="#a4ffefbdc320fde5d8403f1d20d82a192">More...</a><br /></td></tr>
-<tr class="separator:a4ffefbdc320fde5d8403f1d20d82a192"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5fda2b2c0466333328c364b29200a153"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1ErrorCode.html">ACK::ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Control.html#a5fda2b2c0466333328c364b29200a153">goHome</a> (int wait_timeout)</td></tr>
-<tr class="memdesc:a5fda2b2c0466333328c364b29200a153"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper function for go Home.  <a href="#a5fda2b2c0466333328c364b29200a153">More...</a><br /></td></tr>
-<tr class="separator:a5fda2b2c0466333328c364b29200a153"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac333a960007373badfc7426d3fa985f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Control.html#ac333a960007373badfc7426d3fa985f9">goHome</a> (<a class="el" href="namespaceDJI_1_1OSDK.html#a20a68c21abe449cf5f133f7d398055d3">VehicleCallBack</a> callback=0, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData=0)</td></tr>
-<tr class="memdesc:ac333a960007373badfc7426d3fa985f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper function for go Home.  <a href="#ac333a960007373badfc7426d3fa985f9">More...</a><br /></td></tr>
-<tr class="separator:ac333a960007373badfc7426d3fa985f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a9092bb63a1c309a54841f851bb16d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1ErrorCode.html">ACK::ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Control.html#a4a9092bb63a1c309a54841f851bb16d7">land</a> (int wait_timeout)</td></tr>
-<tr class="memdesc:a4a9092bb63a1c309a54841f851bb16d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper function for landing.  <a href="#a4a9092bb63a1c309a54841f851bb16d7">More...</a><br /></td></tr>
-<tr class="separator:a4a9092bb63a1c309a54841f851bb16d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a1a72ce8eadafd1412fb05fd659d369"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Control.html#a5a1a72ce8eadafd1412fb05fd659d369">land</a> (<a class="el" href="namespaceDJI_1_1OSDK.html#a20a68c21abe449cf5f133f7d398055d3">VehicleCallBack</a> callback=0, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData=0)</td></tr>
-<tr class="memdesc:a5a1a72ce8eadafd1412fb05fd659d369"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper function for landing.  <a href="#a5a1a72ce8eadafd1412fb05fd659d369">More...</a><br /></td></tr>
-<tr class="separator:a5a1a72ce8eadafd1412fb05fd659d369"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f2c5a277f091fb5fb5b39baf6f6fa0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Control.html#a1f2c5a277f091fb5fb5b39baf6f6fa0f">flightCtrl</a> (<a class="el" href="structDJI_1_1OSDK_1_1Control_1_1CtrlData.html">CtrlData</a> data)</td></tr>
-<tr class="memdesc:a1f2c5a277f091fb5fb5b39baf6f6fa0f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDJI_1_1OSDK_1_1Control.html" title="Flight control API: high-level actions and low-level control modes.">Control</a> the vehicle using user-specified mode.  <a href="#a1f2c5a277f091fb5fb5b39baf6f6fa0f">More...</a><br /></td></tr>
-<tr class="separator:a1f2c5a277f091fb5fb5b39baf6f6fa0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bc141f314b7ac82e93f56660bfa3681"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Control.html#a6bc141f314b7ac82e93f56660bfa3681">flightCtrl</a> (<a class="el" href="structDJI_1_1OSDK_1_1Control_1_1AdvancedCtrlData.html">AdvancedCtrlData</a> data)</td></tr>
-<tr class="memdesc:a6bc141f314b7ac82e93f56660bfa3681"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDJI_1_1OSDK_1_1Control.html" title="Flight control API: high-level actions and low-level control modes.">Control</a> the vehicle using user-specified mode (overloaded)  <a href="#a6bc141f314b7ac82e93f56660bfa3681">More...</a><br /></td></tr>
-<tr class="separator:a6bc141f314b7ac82e93f56660bfa3681"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ed4bc74691c3e4fb0d5b30bcb67d6f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Control.html#a6ed4bc74691c3e4fb0d5b30bcb67d6f5">positionAndYawCtrl</a> (float32_t x, float32_t y, float32_t z, float32_t yaw)</td></tr>
-<tr class="memdesc:a6ed4bc74691c3e4fb0d5b30bcb67d6f5"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDJI_1_1OSDK_1_1Control.html" title="Flight control API: high-level actions and low-level control modes.">Control</a> the position and yaw angle of the vehicle. The reference frame is the <a class="el" href="classDJI_1_1OSDK_1_1Control.html#aa89e5fd518382c94fb6149a5b9a6183ba4577f4a941fbd773df320edc70f01cf2">DJI::OSDK::Control::HORIZONTAL_GROUND</a> (NEU).  <a href="#a6ed4bc74691c3e4fb0d5b30bcb67d6f5">More...</a><br /></td></tr>
-<tr class="separator:a6ed4bc74691c3e4fb0d5b30bcb67d6f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24c02f8db0ce0ae10a784c3c998e979f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Control.html#a24c02f8db0ce0ae10a784c3c998e979f">velocityAndYawRateCtrl</a> (float32_t Vx, float32_t Vy, float32_t Vz, float32_t yawRate)</td></tr>
-<tr class="memdesc:a24c02f8db0ce0ae10a784c3c998e979f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDJI_1_1OSDK_1_1Control.html" title="Flight control API: high-level actions and low-level control modes.">Control</a> the velocity and yaw rate of the vehicle. The reference frame is the <a class="el" href="classDJI_1_1OSDK_1_1Control.html#aa89e5fd518382c94fb6149a5b9a6183ba4577f4a941fbd773df320edc70f01cf2">DJI::OSDK::Control::HORIZONTAL_GROUND</a> (NEU).  <a href="#a24c02f8db0ce0ae10a784c3c998e979f">More...</a><br /></td></tr>
-<tr class="separator:a24c02f8db0ce0ae10a784c3c998e979f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70947186cffb7d0047a02db237afd19e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Control.html#a70947186cffb7d0047a02db237afd19e">attitudeAndVertPosCtrl</a> (float32_t roll, float32_t pitch, float32_t yaw, float32_t z)</td></tr>
-<tr class="memdesc:a70947186cffb7d0047a02db237afd19e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDJI_1_1OSDK_1_1Control.html" title="Flight control API: high-level actions and low-level control modes.">Control</a> the attitude and vertical position of the vehicle.  <a href="#a70947186cffb7d0047a02db237afd19e">More...</a><br /></td></tr>
-<tr class="separator:a70947186cffb7d0047a02db237afd19e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3c9ebc4484a235549ea5c85589757bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Control.html#ab3c9ebc4484a235549ea5c85589757bc">angularRateAndVertPosCtrl</a> (float32_t rollRate, float32_t pitchRate, float32_t yawRate, float32_t z)</td></tr>
-<tr class="memdesc:ab3c9ebc4484a235549ea5c85589757bc"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDJI_1_1OSDK_1_1Control.html" title="Flight control API: high-level actions and low-level control modes.">Control</a> the attitude rate and vertical position of the vehicle.  <a href="#ab3c9ebc4484a235549ea5c85589757bc">More...</a><br /></td></tr>
-<tr class="separator:ab3c9ebc4484a235549ea5c85589757bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afdf111f752a36ccf541198ca7212331a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Control.html#afdf111f752a36ccf541198ca7212331a">emergencyBrake</a> ()</td></tr>
-<tr class="memdesc:afdf111f752a36ccf541198ca7212331a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop the vehicle in horiz velocity, vert velocity, yaw rate mode (body frame)  <a href="#afdf111f752a36ccf541198ca7212331a">More...</a><br /></td></tr>
-<tr class="separator:afdf111f752a36ccf541198ca7212331a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a70c775ac5032cd3ea9e7ef8eb4fc41"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1ErrorCode.html">ACK::ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Control.html#a2a70c775ac5032cd3ea9e7ef8eb4fc41">killSwitch</a> (<a class="el" href="classDJI_1_1OSDK_1_1Control.html#a2d81493e9c6b0246811cbe71d8825db6">KillSwitch</a> cmd, int wait_timeout=10, char debugMsg[10]=(char *)&quot;OSDK_API&quot;)</td></tr>
-<tr class="memdesc:a2a70c775ac5032cd3ea9e7ef8eb4fc41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn on or off the kill switch.  <a href="#a2a70c775ac5032cd3ea9e7ef8eb4fc41">More...</a><br /></td></tr>
-<tr class="separator:a2a70c775ac5032cd3ea9e7ef8eb4fc41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ec01e6bc9bd8f113581860a0a5debc4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Control.html#a7ec01e6bc9bd8f113581860a0a5debc4">killSwitch</a> (<a class="el" href="classDJI_1_1OSDK_1_1Control.html#a2d81493e9c6b0246811cbe71d8825db6">KillSwitch</a> cmd, char debugMsg[10]=(char *)&quot;OSDK_API&quot;, VehicleCallBack callback=0, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData=0)</td></tr>
-<tr class="memdesc:a7ec01e6bc9bd8f113581860a0a5debc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn on or off the kill switch.  <a href="#a7ec01e6bc9bd8f113581860a0a5debc4">More...</a><br /></td></tr>
-<tr class="separator:a7ec01e6bc9bd8f113581860a0a5debc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62d7b90ca723c21769e8c5f0298b39b9"><td class="memItemLeft" align="right" valign="top"><a id="a62d7b90ca723c21769e8c5f0298b39b9"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Control</b> (Vehicle *vehicle=0)</td></tr>
+<tr class="separator:a62d7b90ca723c21769e8c5f0298b39b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6de837ceec43b35e7dddf948e63cfda5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Control.html#a6de837ceec43b35e7dddf948e63cfda5">obtainCtrlAuthority</a> (<a class="el" href="namespaceDJI_1_1OSDK.html#a20a68c21abe449cf5f133f7d398055d3">VehicleCallBack</a> callback=0, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData=0)</td></tr>
+<tr class="memdesc:a6de837ceec43b35e7dddf948e63cfda5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the control authority of the api (non-blocking call)  <a href="#a6de837ceec43b35e7dddf948e63cfda5">More...</a><br /></td></tr>
+<tr class="separator:a6de837ceec43b35e7dddf948e63cfda5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84fa471cd78f7376aa58fd838bd103cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1ErrorCode.html">ACK::ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Control.html#a84fa471cd78f7376aa58fd838bd103cd">obtainCtrlAuthority</a> (int timeout)</td></tr>
+<tr class="memdesc:a84fa471cd78f7376aa58fd838bd103cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the control authority of the api (blocking call)  <a href="#a84fa471cd78f7376aa58fd838bd103cd">More...</a><br /></td></tr>
+<tr class="separator:a84fa471cd78f7376aa58fd838bd103cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bb0a12e2314acc418975deff602a122"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Control.html#a2bb0a12e2314acc418975deff602a122">releaseCtrlAuthority</a> (<a class="el" href="namespaceDJI_1_1OSDK.html#a20a68c21abe449cf5f133f7d398055d3">VehicleCallBack</a> callback=0, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData=0)</td></tr>
+<tr class="memdesc:a2bb0a12e2314acc418975deff602a122"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release the control authority of the api (non-blocking call)  <a href="#a2bb0a12e2314acc418975deff602a122">More...</a><br /></td></tr>
+<tr class="separator:a2bb0a12e2314acc418975deff602a122"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbd2b5d520ae199af8fb3fef5383a5e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1ErrorCode.html">ACK::ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Control.html#adbd2b5d520ae199af8fb3fef5383a5e1">releaseCtrlAuthority</a> (int timeout)</td></tr>
+<tr class="memdesc:adbd2b5d520ae199af8fb3fef5383a5e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release the control authority of the api (blocking call)  <a href="#adbd2b5d520ae199af8fb3fef5383a5e1">More...</a><br /></td></tr>
+<tr class="separator:adbd2b5d520ae199af8fb3fef5383a5e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d8501b1e8af82e9c27587c837ddf4c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Control.html#a3d8501b1e8af82e9c27587c837ddf4c9">action</a> (const int cmd, <a class="el" href="namespaceDJI_1_1OSDK.html#a20a68c21abe449cf5f133f7d398055d3">VehicleCallBack</a> callback=0, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData=0)</td></tr>
+<tr class="memdesc:a3d8501b1e8af82e9c27587c837ddf4c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Basic action command for the vehicle, see <a class="el" href="classDJI_1_1OSDK_1_1Control_1_1FlightCommand.html" title="Flight control commands.">FlightCommand</a> for cmd choices.  <a href="#a3d8501b1e8af82e9c27587c837ddf4c9">More...</a><br /></td></tr>
+<tr class="separator:a3d8501b1e8af82e9c27587c837ddf4c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65f6818e211e5820d667757f27304dd4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1ErrorCode.html">ACK::ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Control.html#a65f6818e211e5820d667757f27304dd4">action</a> (const int cmd, int timeout)</td></tr>
+<tr class="memdesc:a65f6818e211e5820d667757f27304dd4"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDJI_1_1OSDK_1_1Control.html" title="Flight control API: high-level actions and low-level control modes.">Control</a> the vehicle using user-specified mode, see <a class="el" href="classDJI_1_1OSDK_1_1Control_1_1FlightCommand.html" title="Flight control commands.">FlightCommand</a> for cmd choices.  <a href="#a65f6818e211e5820d667757f27304dd4">More...</a><br /></td></tr>
+<tr class="separator:a65f6818e211e5820d667757f27304dd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada3ce4e7895428becffb0b08dd3820f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1ErrorCode.html">ACK::ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Control.html#ada3ce4e7895428becffb0b08dd3820f3">armMotors</a> (int wait_timeout)</td></tr>
+<tr class="memdesc:ada3ce4e7895428becffb0b08dd3820f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper function for arming the motors.  <a href="#ada3ce4e7895428becffb0b08dd3820f3">More...</a><br /></td></tr>
+<tr class="separator:ada3ce4e7895428becffb0b08dd3820f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a860fc783726a7dc79afc20bed5106929"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Control.html#a860fc783726a7dc79afc20bed5106929">armMotors</a> (<a class="el" href="namespaceDJI_1_1OSDK.html#a20a68c21abe449cf5f133f7d398055d3">VehicleCallBack</a> callback=0, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData=0)</td></tr>
+<tr class="memdesc:a860fc783726a7dc79afc20bed5106929"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper function for arming the motors.  <a href="#a860fc783726a7dc79afc20bed5106929">More...</a><br /></td></tr>
+<tr class="separator:a860fc783726a7dc79afc20bed5106929"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaed64ae07104344d8d5cbdd9b1bc79e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1ErrorCode.html">ACK::ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Control.html#aaed64ae07104344d8d5cbdd9b1bc79e2">disArmMotors</a> (int wait_timeout)</td></tr>
+<tr class="memdesc:aaed64ae07104344d8d5cbdd9b1bc79e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper function for disarming the motors.  <a href="#aaed64ae07104344d8d5cbdd9b1bc79e2">More...</a><br /></td></tr>
+<tr class="separator:aaed64ae07104344d8d5cbdd9b1bc79e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17e8b90673d6b395ad348dba45388db4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Control.html#a17e8b90673d6b395ad348dba45388db4">disArmMotors</a> (<a class="el" href="namespaceDJI_1_1OSDK.html#a20a68c21abe449cf5f133f7d398055d3">VehicleCallBack</a> callback=0, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData=0)</td></tr>
+<tr class="memdesc:a17e8b90673d6b395ad348dba45388db4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper function for disarming the motors.  <a href="#a17e8b90673d6b395ad348dba45388db4">More...</a><br /></td></tr>
+<tr class="separator:a17e8b90673d6b395ad348dba45388db4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41269b8e72f24e6040e7a89496f9700c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1ErrorCode.html">ACK::ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Control.html#a41269b8e72f24e6040e7a89496f9700c">takeoff</a> (int wait_timeout)</td></tr>
+<tr class="memdesc:a41269b8e72f24e6040e7a89496f9700c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper function for take off.  <a href="#a41269b8e72f24e6040e7a89496f9700c">More...</a><br /></td></tr>
+<tr class="separator:a41269b8e72f24e6040e7a89496f9700c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af37cfc5d3f926beb04feb9fdbf88595f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Control.html#af37cfc5d3f926beb04feb9fdbf88595f">takeoff</a> (<a class="el" href="namespaceDJI_1_1OSDK.html#a20a68c21abe449cf5f133f7d398055d3">VehicleCallBack</a> callback=0, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData=0)</td></tr>
+<tr class="memdesc:af37cfc5d3f926beb04feb9fdbf88595f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper function for take off.  <a href="#af37cfc5d3f926beb04feb9fdbf88595f">More...</a><br /></td></tr>
+<tr class="separator:af37cfc5d3f926beb04feb9fdbf88595f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab108301fbe2bad6db79e5c0020dc4255"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1ErrorCode.html">ACK::ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Control.html#ab108301fbe2bad6db79e5c0020dc4255">goHome</a> (int wait_timeout)</td></tr>
+<tr class="memdesc:ab108301fbe2bad6db79e5c0020dc4255"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper function for go Home.  <a href="#ab108301fbe2bad6db79e5c0020dc4255">More...</a><br /></td></tr>
+<tr class="separator:ab108301fbe2bad6db79e5c0020dc4255"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a526aaccf81fa7acfca7a8dbffaf1eac2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Control.html#a526aaccf81fa7acfca7a8dbffaf1eac2">goHome</a> (<a class="el" href="namespaceDJI_1_1OSDK.html#a20a68c21abe449cf5f133f7d398055d3">VehicleCallBack</a> callback=0, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData=0)</td></tr>
+<tr class="memdesc:a526aaccf81fa7acfca7a8dbffaf1eac2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper function for go Home.  <a href="#a526aaccf81fa7acfca7a8dbffaf1eac2">More...</a><br /></td></tr>
+<tr class="separator:a526aaccf81fa7acfca7a8dbffaf1eac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f5dab0cfa464bbee342acd2d72ee347"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1ErrorCode.html">ACK::ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Control.html#a3f5dab0cfa464bbee342acd2d72ee347">land</a> (int wait_timeout)</td></tr>
+<tr class="memdesc:a3f5dab0cfa464bbee342acd2d72ee347"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper function for landing.  <a href="#a3f5dab0cfa464bbee342acd2d72ee347">More...</a><br /></td></tr>
+<tr class="separator:a3f5dab0cfa464bbee342acd2d72ee347"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7911f42938d38741992ce7d265505a53"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Control.html#a7911f42938d38741992ce7d265505a53">land</a> (<a class="el" href="namespaceDJI_1_1OSDK.html#a20a68c21abe449cf5f133f7d398055d3">VehicleCallBack</a> callback=0, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData=0)</td></tr>
+<tr class="memdesc:a7911f42938d38741992ce7d265505a53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper function for landing.  <a href="#a7911f42938d38741992ce7d265505a53">More...</a><br /></td></tr>
+<tr class="separator:a7911f42938d38741992ce7d265505a53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08428076b39d925ce06c877b66c0e172"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Control.html#a08428076b39d925ce06c877b66c0e172">flightCtrl</a> (<a class="el" href="structDJI_1_1OSDK_1_1Control_1_1CtrlData.html">CtrlData</a> data)</td></tr>
+<tr class="memdesc:a08428076b39d925ce06c877b66c0e172"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDJI_1_1OSDK_1_1Control.html" title="Flight control API: high-level actions and low-level control modes.">Control</a> the vehicle using user-specified mode.  <a href="#a08428076b39d925ce06c877b66c0e172">More...</a><br /></td></tr>
+<tr class="separator:a08428076b39d925ce06c877b66c0e172"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b5b4164c423647f6c10065249cb088e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Control.html#a7b5b4164c423647f6c10065249cb088e">flightCtrl</a> (<a class="el" href="structDJI_1_1OSDK_1_1Control_1_1AdvancedCtrlData.html">AdvancedCtrlData</a> data)</td></tr>
+<tr class="memdesc:a7b5b4164c423647f6c10065249cb088e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDJI_1_1OSDK_1_1Control.html" title="Flight control API: high-level actions and low-level control modes.">Control</a> the vehicle using user-specified mode (overloaded)  <a href="#a7b5b4164c423647f6c10065249cb088e">More...</a><br /></td></tr>
+<tr class="separator:a7b5b4164c423647f6c10065249cb088e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8346822e308707e6916f9a4af0845d87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Control.html#a8346822e308707e6916f9a4af0845d87">positionAndYawCtrl</a> (float32_t x, float32_t y, float32_t z, float32_t yaw)</td></tr>
+<tr class="memdesc:a8346822e308707e6916f9a4af0845d87"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDJI_1_1OSDK_1_1Control.html" title="Flight control API: high-level actions and low-level control modes.">Control</a> the position and yaw angle of the vehicle. The reference frame is the <a class="el" href="classDJI_1_1OSDK_1_1Control.html#aa89e5fd518382c94fb6149a5b9a6183ba4577f4a941fbd773df320edc70f01cf2">DJI::OSDK::Control::HORIZONTAL_GROUND</a> (NEU).  <a href="#a8346822e308707e6916f9a4af0845d87">More...</a><br /></td></tr>
+<tr class="separator:a8346822e308707e6916f9a4af0845d87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6f1430c852dafafe2f73c70008a0a9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Control.html#ab6f1430c852dafafe2f73c70008a0a9a">velocityAndYawRateCtrl</a> (float32_t Vx, float32_t Vy, float32_t Vz, float32_t yawRate)</td></tr>
+<tr class="memdesc:ab6f1430c852dafafe2f73c70008a0a9a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDJI_1_1OSDK_1_1Control.html" title="Flight control API: high-level actions and low-level control modes.">Control</a> the velocity and yaw rate of the vehicle. The reference frame is the <a class="el" href="classDJI_1_1OSDK_1_1Control.html#aa89e5fd518382c94fb6149a5b9a6183ba4577f4a941fbd773df320edc70f01cf2">DJI::OSDK::Control::HORIZONTAL_GROUND</a> (NEU).  <a href="#ab6f1430c852dafafe2f73c70008a0a9a">More...</a><br /></td></tr>
+<tr class="separator:ab6f1430c852dafafe2f73c70008a0a9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b99007e0b2a5740991c822e7a489d34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Control.html#a9b99007e0b2a5740991c822e7a489d34">attitudeAndVertPosCtrl</a> (float32_t roll, float32_t pitch, float32_t yaw, float32_t z)</td></tr>
+<tr class="memdesc:a9b99007e0b2a5740991c822e7a489d34"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDJI_1_1OSDK_1_1Control.html" title="Flight control API: high-level actions and low-level control modes.">Control</a> the attitude and vertical position of the vehicle.  <a href="#a9b99007e0b2a5740991c822e7a489d34">More...</a><br /></td></tr>
+<tr class="separator:a9b99007e0b2a5740991c822e7a489d34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab1b1c577c6fa9eba49987d1e3f25ec5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Control.html#aab1b1c577c6fa9eba49987d1e3f25ec5">angularRateAndVertPosCtrl</a> (float32_t rollRate, float32_t pitchRate, float32_t yawRate, float32_t z)</td></tr>
+<tr class="memdesc:aab1b1c577c6fa9eba49987d1e3f25ec5"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classDJI_1_1OSDK_1_1Control.html" title="Flight control API: high-level actions and low-level control modes.">Control</a> the attitude rate and vertical position of the vehicle.  <a href="#aab1b1c577c6fa9eba49987d1e3f25ec5">More...</a><br /></td></tr>
+<tr class="separator:aab1b1c577c6fa9eba49987d1e3f25ec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedea0a097cb4b05f860dc4c0ec5f15eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Control.html#aedea0a097cb4b05f860dc4c0ec5f15eb">emergencyBrake</a> ()</td></tr>
+<tr class="memdesc:aedea0a097cb4b05f860dc4c0ec5f15eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop the vehicle in horiz velocity, vert velocity, yaw rate mode (body frame)  <a href="#aedea0a097cb4b05f860dc4c0ec5f15eb">More...</a><br /></td></tr>
+<tr class="separator:aedea0a097cb4b05f860dc4c0ec5f15eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f0dbeb93d80586ce7626eef3c9dc228"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1ErrorCode.html">ACK::ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Control.html#a5f0dbeb93d80586ce7626eef3c9dc228">killSwitch</a> (<a class="el" href="classDJI_1_1OSDK_1_1Control.html#a2d81493e9c6b0246811cbe71d8825db6">KillSwitch</a> cmd, int wait_timeout=10, char debugMsg[10]=(char *)&quot;OSDK_API&quot;)</td></tr>
+<tr class="memdesc:a5f0dbeb93d80586ce7626eef3c9dc228"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn on or off the kill switch.  <a href="#a5f0dbeb93d80586ce7626eef3c9dc228">More...</a><br /></td></tr>
+<tr class="separator:a5f0dbeb93d80586ce7626eef3c9dc228"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae71f5615c594eb6e3a9c19d91b9b753a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Control.html#ae71f5615c594eb6e3a9c19d91b9b753a">killSwitch</a> (<a class="el" href="classDJI_1_1OSDK_1_1Control.html#a2d81493e9c6b0246811cbe71d8825db6">KillSwitch</a> cmd, char debugMsg[10]=(char *)&quot;OSDK_API&quot;, VehicleCallBack callback=0, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData=0)</td></tr>
+<tr class="memdesc:ae71f5615c594eb6e3a9c19d91b9b753a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn on or off the kill switch.  <a href="#ae71f5615c594eb6e3a9c19d91b9b753a">More...</a><br /></td></tr>
+<tr class="separator:ae71f5615c594eb6e3a9c19d91b9b753a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ad1cf1aeed4e91f03634895ce151ff4d7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Control.html#ad1cf1aeed4e91f03634895ce151ff4d7">actionCallback</a> (<a class="el" href="classDJI_1_1OSDK_1_1Vehicle.html">Vehicle</a> *vehiclePtr, RecvContainer recvFrame, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)</td></tr>
-<tr class="memdesc:ad1cf1aeed4e91f03634895ce151ff4d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">A callback function for action non-blocking calls.  <a href="#ad1cf1aeed4e91f03634895ce151ff4d7">More...</a><br /></td></tr>
-<tr class="separator:ad1cf1aeed4e91f03634895ce151ff4d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67f2236dc673ea8686d2e7e5f1432a73"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1Control.html#a67f2236dc673ea8686d2e7e5f1432a73">actionCallback</a> (Vehicle *vehiclePtr, <a class="el" href="structDJI_1_1OSDK_1_1RecvContainer.html">RecvContainer</a> recvFrame, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)</td></tr>
+<tr class="memdesc:a67f2236dc673ea8686d2e7e5f1432a73"><td class="mdescLeft">&#160;</td><td class="mdescRight">A callback function for action non-blocking calls.  <a href="#a67f2236dc673ea8686d2e7e5f1432a73">More...</a><br /></td></tr>
+<tr class="separator:a67f2236dc673ea8686d2e7e5f1432a73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a56456826ca6b4551467a1726bdfda303"><td class="memItemLeft" align="right" valign="top"><a id="a56456826ca6b4551467a1726bdfda303"></a>
-<a class="el" href="classDJI_1_1OSDK_1_1Vehicle.html">Vehicle</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>vehicle</b></td></tr>
+Vehicle *&#160;</td><td class="memItemRight" valign="bottom"><b>vehicle</b></td></tr>
 <tr class="separator:a56456826ca6b4551467a1726bdfda303"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -382,7 +332,7 @@ Public Attributes</h2></td></tr>
 <p>bit 7:6 of the 8-bit (7:0) <a class="el" href="structDJI_1_1OSDK_1_1Control_1_1CtrlData.html#a5f683c6c69478dc720245c9c2b79cf5e">CtrlData.flag</a> </p>
 <dl class="section note"><dt>Note</dt><dd><ul>
 <li>Only when the GPS signal is good (health_flag &gt;=3)，horizontal position control (HORIZONTAL_POSITION) related control modes can be used.</li>
-<li>Only when GPS signal is good (health_flag &gt;=3)，or when AdvancedSensing system is working properly with Autopilot， horizontal velocity control（HORIZONTAL_VELOCITY）related control modes can be used. </li>
+<li>Only when GPS signal is good (health_flag &gt;=3)，or when <a class="el" href="classDJI_1_1OSDK_1_1AdvancedSensing.html">AdvancedSensing</a> system is working properly with Autopilot， horizontal velocity control（HORIZONTAL_VELOCITY）related control modes can be used. </li>
 </ul>
 </dd></dl>
 <table class="fieldtable">
@@ -525,14 +475,14 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a29a7c4aab568fb82dd372bc758885a2a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a29a7c4aab568fb82dd372bc758885a2a">&#9670;&nbsp;</a></span>action() <span class="overload">[1/2]</span></h2>
+<a id="a3d8501b1e8af82e9c27587c837ddf4c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d8501b1e8af82e9c27587c837ddf4c9">&#9670;&nbsp;</a></span>action() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Control::action </td>
+          <td class="memname">void DJI::OSDK::Control::action </td>
           <td>(</td>
           <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>cmd</em>, </td>
@@ -569,14 +519,14 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a5e8df1234fe307c01d209b67f34c9efe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e8df1234fe307c01d209b67f34c9efe">&#9670;&nbsp;</a></span>action() <span class="overload">[2/2]</span></h2>
+<a id="a65f6818e211e5820d667757f27304dd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65f6818e211e5820d667757f27304dd4">&#9670;&nbsp;</a></span>action() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1ErrorCode.html">ACK::ErrorCode</a> Control::action </td>
+          <td class="memname"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1ErrorCode.html">ACK::ErrorCode</a> DJI::OSDK::Control::action </td>
           <td>(</td>
           <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>cmd</em>, </td>
@@ -607,8 +557,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ad1cf1aeed4e91f03634895ce151ff4d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad1cf1aeed4e91f03634895ce151ff4d7">&#9670;&nbsp;</a></span>actionCallback()</h2>
+<a id="a67f2236dc673ea8686d2e7e5f1432a73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67f2236dc673ea8686d2e7e5f1432a73">&#9670;&nbsp;</a></span>actionCallback()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -617,15 +567,15 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Control::actionCallback </td>
+          <td class="memname">static void DJI::OSDK::Control::actionCallback </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classDJI_1_1OSDK_1_1Vehicle.html">Vehicle</a> *&#160;</td>
+          <td class="paramtype">Vehicle *&#160;</td>
           <td class="paramname"><em>vehiclePtr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">RecvContainer&#160;</td>
+          <td class="paramtype"><a class="el" href="structDJI_1_1OSDK_1_1RecvContainer.html">RecvContainer</a>&#160;</td>
           <td class="paramname"><em>recvFrame</em>, </td>
         </tr>
         <tr>
@@ -658,14 +608,14 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ab3c9ebc4484a235549ea5c85589757bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab3c9ebc4484a235549ea5c85589757bc">&#9670;&nbsp;</a></span>angularRateAndVertPosCtrl()</h2>
+<a id="aab1b1c577c6fa9eba49987d1e3f25ec5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab1b1c577c6fa9eba49987d1e3f25ec5">&#9670;&nbsp;</a></span>angularRateAndVertPosCtrl()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Control::angularRateAndVertPosCtrl </td>
+          <td class="memname">void DJI::OSDK::Control::angularRateAndVertPosCtrl </td>
           <td>(</td>
           <td class="paramtype">float32_t&#160;</td>
           <td class="paramname"><em>rollRate</em>, </td>
@@ -706,18 +656,17 @@ Public Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>218 is the flag value of this mode </dd></dl>
 
 </div>
 </div>
-<a id="ac4742f9e7155e0bf4651cde4ee39b116"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac4742f9e7155e0bf4651cde4ee39b116">&#9670;&nbsp;</a></span>armMotors() <span class="overload">[1/2]</span></h2>
+<a id="ada3ce4e7895428becffb0b08dd3820f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada3ce4e7895428becffb0b08dd3820f3">&#9670;&nbsp;</a></span>armMotors() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1ErrorCode.html">ACK::ErrorCode</a> Control::armMotors </td>
+          <td class="memname"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1ErrorCode.html">ACK::ErrorCode</a> DJI::OSDK::Control::armMotors </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>wait_timeout</em></td><td>)</td>
@@ -731,14 +680,14 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a56e045b5e4acf33fc785099541d11b03"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a56e045b5e4acf33fc785099541d11b03">&#9670;&nbsp;</a></span>armMotors() <span class="overload">[2/2]</span></h2>
+<a id="a860fc783726a7dc79afc20bed5106929"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a860fc783726a7dc79afc20bed5106929">&#9670;&nbsp;</a></span>armMotors() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Control::armMotors </td>
+          <td class="memname">void DJI::OSDK::Control::armMotors </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespaceDJI_1_1OSDK.html#a20a68c21abe449cf5f133f7d398055d3">VehicleCallBack</a>&#160;</td>
           <td class="paramname"><em>callback</em> = <code>0</code>, </td>
@@ -762,14 +711,14 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a70947186cffb7d0047a02db237afd19e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70947186cffb7d0047a02db237afd19e">&#9670;&nbsp;</a></span>attitudeAndVertPosCtrl()</h2>
+<a id="a9b99007e0b2a5740991c822e7a489d34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b99007e0b2a5740991c822e7a489d34">&#9670;&nbsp;</a></span>attitudeAndVertPosCtrl()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Control::attitudeAndVertPosCtrl </td>
+          <td class="memname">void DJI::OSDK::Control::attitudeAndVertPosCtrl </td>
           <td>(</td>
           <td class="paramtype">float32_t&#160;</td>
           <td class="paramname"><em>roll</em>, </td>
@@ -810,18 +759,17 @@ Public Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>18 is the flag value of this mode </dd></dl>
 
 </div>
 </div>
-<a id="a97b2f4d031f4b6898310c220f72eece0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97b2f4d031f4b6898310c220f72eece0">&#9670;&nbsp;</a></span>disArmMotors() <span class="overload">[1/2]</span></h2>
+<a id="aaed64ae07104344d8d5cbdd9b1bc79e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaed64ae07104344d8d5cbdd9b1bc79e2">&#9670;&nbsp;</a></span>disArmMotors() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1ErrorCode.html">ACK::ErrorCode</a> Control::disArmMotors </td>
+          <td class="memname"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1ErrorCode.html">ACK::ErrorCode</a> DJI::OSDK::Control::disArmMotors </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>wait_timeout</em></td><td>)</td>
@@ -835,14 +783,14 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a716f34f3eaaa19834fadf314cfef8a66"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a716f34f3eaaa19834fadf314cfef8a66">&#9670;&nbsp;</a></span>disArmMotors() <span class="overload">[2/2]</span></h2>
+<a id="a17e8b90673d6b395ad348dba45388db4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17e8b90673d6b395ad348dba45388db4">&#9670;&nbsp;</a></span>disArmMotors() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Control::disArmMotors </td>
+          <td class="memname">void DJI::OSDK::Control::disArmMotors </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespaceDJI_1_1OSDK.html#a20a68c21abe449cf5f133f7d398055d3">VehicleCallBack</a>&#160;</td>
           <td class="paramname"><em>callback</em> = <code>0</code>, </td>
@@ -866,14 +814,14 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="afdf111f752a36ccf541198ca7212331a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afdf111f752a36ccf541198ca7212331a">&#9670;&nbsp;</a></span>emergencyBrake()</h2>
+<a id="aedea0a097cb4b05f860dc4c0ec5f15eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedea0a097cb4b05f860dc4c0ec5f15eb">&#9670;&nbsp;</a></span>emergencyBrake()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Control::emergencyBrake </td>
+          <td class="memname">void DJI::OSDK::Control::emergencyBrake </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -882,18 +830,17 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Stop the vehicle in horiz velocity, vert velocity, yaw rate mode (body frame) </p>
-<dl class="section note"><dt>Note</dt><dd>75 is the flag value of this mode </dd></dl>
 
 </div>
 </div>
-<a id="a1f2c5a277f091fb5fb5b39baf6f6fa0f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f2c5a277f091fb5fb5b39baf6f6fa0f">&#9670;&nbsp;</a></span>flightCtrl() <span class="overload">[1/2]</span></h2>
+<a id="a08428076b39d925ce06c877b66c0e172"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08428076b39d925ce06c877b66c0e172">&#9670;&nbsp;</a></span>flightCtrl() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Control::flightCtrl </td>
+          <td class="memname">void DJI::OSDK::Control::flightCtrl </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structDJI_1_1OSDK_1_1Control_1_1CtrlData.html">CtrlData</a>&#160;</td>
           <td class="paramname"><em>data</em></td><td>)</td>
@@ -950,14 +897,14 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a6bc141f314b7ac82e93f56660bfa3681"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6bc141f314b7ac82e93f56660bfa3681">&#9670;&nbsp;</a></span>flightCtrl() <span class="overload">[2/2]</span></h2>
+<a id="a7b5b4164c423647f6c10065249cb088e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b5b4164c423647f6c10065249cb088e">&#9670;&nbsp;</a></span>flightCtrl() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Control::flightCtrl </td>
+          <td class="memname">void DJI::OSDK::Control::flightCtrl </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structDJI_1_1OSDK_1_1Control_1_1AdvancedCtrlData.html">AdvancedCtrlData</a>&#160;</td>
           <td class="paramname"><em>data</em></td><td>)</td>
@@ -990,14 +937,14 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a5fda2b2c0466333328c364b29200a153"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5fda2b2c0466333328c364b29200a153">&#9670;&nbsp;</a></span>goHome() <span class="overload">[1/2]</span></h2>
+<a id="ab108301fbe2bad6db79e5c0020dc4255"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab108301fbe2bad6db79e5c0020dc4255">&#9670;&nbsp;</a></span>goHome() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1ErrorCode.html">ACK::ErrorCode</a> Control::goHome </td>
+          <td class="memname"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1ErrorCode.html">ACK::ErrorCode</a> DJI::OSDK::Control::goHome </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>wait_timeout</em></td><td>)</td>
@@ -1011,14 +958,14 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ac333a960007373badfc7426d3fa985f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac333a960007373badfc7426d3fa985f9">&#9670;&nbsp;</a></span>goHome() <span class="overload">[2/2]</span></h2>
+<a id="a526aaccf81fa7acfca7a8dbffaf1eac2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a526aaccf81fa7acfca7a8dbffaf1eac2">&#9670;&nbsp;</a></span>goHome() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Control::goHome </td>
+          <td class="memname">void DJI::OSDK::Control::goHome </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespaceDJI_1_1OSDK.html#a20a68c21abe449cf5f133f7d398055d3">VehicleCallBack</a>&#160;</td>
           <td class="paramname"><em>callback</em> = <code>0</code>, </td>
@@ -1042,14 +989,14 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a2a70c775ac5032cd3ea9e7ef8eb4fc41"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a70c775ac5032cd3ea9e7ef8eb4fc41">&#9670;&nbsp;</a></span>killSwitch() <span class="overload">[1/2]</span></h2>
+<a id="a5f0dbeb93d80586ce7626eef3c9dc228"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f0dbeb93d80586ce7626eef3c9dc228">&#9670;&nbsp;</a></span>killSwitch() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1ErrorCode.html">ACK::ErrorCode</a> Control::killSwitch </td>
+          <td class="memname"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1ErrorCode.html">ACK::ErrorCode</a> DJI::OSDK::Control::killSwitch </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classDJI_1_1OSDK_1_1Control.html#a2d81493e9c6b0246811cbe71d8825db6">KillSwitch</a>&#160;</td>
           <td class="paramname"><em>cmd</em>, </td>
@@ -1087,14 +1034,14 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a7ec01e6bc9bd8f113581860a0a5debc4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ec01e6bc9bd8f113581860a0a5debc4">&#9670;&nbsp;</a></span>killSwitch() <span class="overload">[2/2]</span></h2>
+<a id="ae71f5615c594eb6e3a9c19d91b9b753a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae71f5615c594eb6e3a9c19d91b9b753a">&#9670;&nbsp;</a></span>killSwitch() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Control::killSwitch </td>
+          <td class="memname">void DJI::OSDK::Control::killSwitch </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classDJI_1_1OSDK_1_1Control.html#a2d81493e9c6b0246811cbe71d8825db6">KillSwitch</a>&#160;</td>
           <td class="paramname"><em>cmd</em>, </td>
@@ -1139,14 +1086,14 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a4a9092bb63a1c309a54841f851bb16d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a9092bb63a1c309a54841f851bb16d7">&#9670;&nbsp;</a></span>land() <span class="overload">[1/2]</span></h2>
+<a id="a3f5dab0cfa464bbee342acd2d72ee347"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f5dab0cfa464bbee342acd2d72ee347">&#9670;&nbsp;</a></span>land() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1ErrorCode.html">ACK::ErrorCode</a> Control::land </td>
+          <td class="memname"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1ErrorCode.html">ACK::ErrorCode</a> DJI::OSDK::Control::land </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>wait_timeout</em></td><td>)</td>
@@ -1160,14 +1107,14 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a5a1a72ce8eadafd1412fb05fd659d369"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a1a72ce8eadafd1412fb05fd659d369">&#9670;&nbsp;</a></span>land() <span class="overload">[2/2]</span></h2>
+<a id="a7911f42938d38741992ce7d265505a53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7911f42938d38741992ce7d265505a53">&#9670;&nbsp;</a></span>land() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Control::land </td>
+          <td class="memname">void DJI::OSDK::Control::land </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespaceDJI_1_1OSDK.html#a20a68c21abe449cf5f133f7d398055d3">VehicleCallBack</a>&#160;</td>
           <td class="paramname"><em>callback</em> = <code>0</code>, </td>
@@ -1191,14 +1138,77 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a6ed4bc74691c3e4fb0d5b30bcb67d6f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ed4bc74691c3e4fb0d5b30bcb67d6f5">&#9670;&nbsp;</a></span>positionAndYawCtrl()</h2>
+<a id="a6de837ceec43b35e7dddf948e63cfda5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6de837ceec43b35e7dddf948e63cfda5">&#9670;&nbsp;</a></span>obtainCtrlAuthority() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Control::positionAndYawCtrl </td>
+          <td class="memname">void DJI::OSDK::Control::obtainCtrlAuthority </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceDJI_1_1OSDK.html#a20a68c21abe449cf5f133f7d398055d3">VehicleCallBack</a>&#160;</td>
+          <td class="paramname"><em>callback</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a>&#160;</td>
+          <td class="paramname"><em>userData</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Obtain the control authority of the api (non-blocking call) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>callback function </td></tr>
+    <tr><td class="paramname">userData</td><td>user data (void ptr) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a84fa471cd78f7376aa58fd838bd103cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84fa471cd78f7376aa58fd838bd103cd">&#9670;&nbsp;</a></span>obtainCtrlAuthority() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1ErrorCode.html">ACK::ErrorCode</a> DJI::OSDK::Control::obtainCtrlAuthority </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timeout</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Obtain the control authority of the api (blocking call) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timeout</td><td>time to wait for <a class="el" href="classDJI_1_1OSDK_1_1ACK.html" title="Class for handling acknowledgements from the aircraft.">ACK</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8346822e308707e6916f9a4af0845d87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8346822e308707e6916f9a4af0845d87">&#9670;&nbsp;</a></span>positionAndYawCtrl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DJI::OSDK::Control::positionAndYawCtrl </td>
           <td>(</td>
           <td class="paramtype">float32_t&#160;</td>
           <td class="paramname"><em>x</em>, </td>
@@ -1239,18 +1249,80 @@ Public Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>145 is the flag value of this mode </dd></dl>
 
 </div>
 </div>
-<a id="a7f79c6ed6e9c399fff2354d0403be6f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f79c6ed6e9c399fff2354d0403be6f5">&#9670;&nbsp;</a></span>takeoff() <span class="overload">[1/2]</span></h2>
+<a id="a2bb0a12e2314acc418975deff602a122"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bb0a12e2314acc418975deff602a122">&#9670;&nbsp;</a></span>releaseCtrlAuthority() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1ErrorCode.html">ACK::ErrorCode</a> Control::takeoff </td>
+          <td class="memname">void DJI::OSDK::Control::releaseCtrlAuthority </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceDJI_1_1OSDK.html#a20a68c21abe449cf5f133f7d398055d3">VehicleCallBack</a>&#160;</td>
+          <td class="paramname"><em>callback</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a>&#160;</td>
+          <td class="paramname"><em>userData</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Release the control authority of the api (non-blocking call) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>callback function </td></tr>
+    <tr><td class="paramname">userData</td><td>user data (void ptr) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adbd2b5d520ae199af8fb3fef5383a5e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbd2b5d520ae199af8fb3fef5383a5e1">&#9670;&nbsp;</a></span>releaseCtrlAuthority() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1ErrorCode.html">ACK::ErrorCode</a> DJI::OSDK::Control::releaseCtrlAuthority </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timeout</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Release the control authority of the api (blocking call) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timeout</td><td>time to wait for <a class="el" href="classDJI_1_1OSDK_1_1ACK.html" title="Class for handling acknowledgements from the aircraft.">ACK</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a41269b8e72f24e6040e7a89496f9700c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41269b8e72f24e6040e7a89496f9700c">&#9670;&nbsp;</a></span>takeoff() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structDJI_1_1OSDK_1_1ACK_1_1ErrorCode.html">ACK::ErrorCode</a> DJI::OSDK::Control::takeoff </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>wait_timeout</em></td><td>)</td>
@@ -1264,14 +1336,14 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a4ffefbdc320fde5d8403f1d20d82a192"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ffefbdc320fde5d8403f1d20d82a192">&#9670;&nbsp;</a></span>takeoff() <span class="overload">[2/2]</span></h2>
+<a id="af37cfc5d3f926beb04feb9fdbf88595f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af37cfc5d3f926beb04feb9fdbf88595f">&#9670;&nbsp;</a></span>takeoff() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Control::takeoff </td>
+          <td class="memname">void DJI::OSDK::Control::takeoff </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespaceDJI_1_1OSDK.html#a20a68c21abe449cf5f133f7d398055d3">VehicleCallBack</a>&#160;</td>
           <td class="paramname"><em>callback</em> = <code>0</code>, </td>
@@ -1295,14 +1367,14 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a24c02f8db0ce0ae10a784c3c998e979f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a24c02f8db0ce0ae10a784c3c998e979f">&#9670;&nbsp;</a></span>velocityAndYawRateCtrl()</h2>
+<a id="ab6f1430c852dafafe2f73c70008a0a9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6f1430c852dafafe2f73c70008a0a9a">&#9670;&nbsp;</a></span>velocityAndYawRateCtrl()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Control::velocityAndYawRateCtrl </td>
+          <td class="memname">void DJI::OSDK::Control::velocityAndYawRateCtrl </td>
           <td>(</td>
           <td class="paramtype">float32_t&#160;</td>
           <td class="paramname"><em>Vx</em>, </td>
@@ -1343,48 +1415,18 @@ Public Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>72 is the flag value of this mode </dd></dl>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>osdk-core/api/inc/<a class="el" href="dji__control_8hpp_source.html">dji_control.hpp</a></li>
-<li>osdk-core/api/src/<a class="el" href="dji__control_8cpp.html">dji_control.cpp</a></li>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>osdk-lib/x86/osdk-core/inc/<a class="el" href="dji__control_8hpp_source.html">dji_control.hpp</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
-</div>
-</div>
-</div>
-</div>
-</div>
 <hr class="footer"/><address class="footer"><small>
-  <footer id="site-footer" class="site-footer">
-    <div class="container">
-      <div class="foot-nav row">
-        <nav class="link-list col-xs-2"><span class="title">SDK</span><a href="/mobile-sdk">Mobile SDK</a><a href="/ux-sdk">UX SDK</a><a href="/onboard-sdk">Onboard SDK</a><a href="/payload-sdk">Payload SDK</a><a href="/windows-sdk">Windows SDK</a></nav>
-        <nav class="link-list col-xs-2"><span class="title">Info</span><a href="/products">Products</a></nav>
-        <nav class="link-list col-xs-2"><span class="title">Community</span><a href="http://stackoverflow.com/questions/tagged/dji-sdk" target="_blank">Stack Overflow</a><a href="https://www.youtube.com/channel/UCPQwN5xsob8zZGIcDhkYqUA" target="_blank">YouTube</a><a href="https://twitter.com/djidevelopers" target="_blank">Twitter</a></nav>
-        <nav class="link-list col-xs-2"><span class="title">Contact Us</span><a href="mailto:dev@dji.com"> dev@dji.com</a></nav>
-        <nav class="link-list col-xs-2"><span class="title">Business Cooperation</span><a href="mailto:dev@dji.com"> dev@dji.com</a></nav>
-        <nav class="link-list col-xs-2"><span class="title">BILLING</span><a href="mailto:billing-dev@dji.com"> billing-dev@dji.com</a></nav>
-      </div>
-      <div class="foot-copyright row">
-        <div class="col-xs-3 foot-logo"><img src="dji-logo-foot.png"></div>
-        <div class="copyright col-xs-7"><span>Copyright © 2018 DJI All Rights Reserved</span><a href="/policies/privacy">Privacy Policy</a><a href="/policies/terms">Terms of Use</a></div>
-        <div class="col-xs-2">
-          <div class="lang-selector">
-            <select dir="rtl" v-model="lang">
-              <option value="en">English</option>
-              <option value="cn">中文</option>
-            </select><i class="fa fa-globe"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
+Generated on Thu Apr 30 2020 21:56:46 for DJI Onboard SDK by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
 </small></address>
 </body>
-<script type="text/javascript" src="doxy-boot.js"></script>
 </html>

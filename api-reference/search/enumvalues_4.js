@@ -1,11 +1,9 @@
 var searchData=
 [
-  ['file_5ftransfer_5fbusy',['FILE_TRANSFER_BUSY',['../classDJI_1_1OSDK_1_1ErrorCode.html#a4d4bc0bf4a5ea4bbb295c41d41ebb528a6216d772f279c9b4d146e38d4d24fd0a',1,'DJI::OSDK::ErrorCode']]],
-  ['firmware_5fdata_5fnum_5fdiscontinuous',['FIRMWARE_DATA_NUM_DISCONTINUOUS',['../classDJI_1_1OSDK_1_1ErrorCode.html#a4d4bc0bf4a5ea4bbb295c41d41ebb528a6b159484f09daaa1ae13f843a0a279b7',1,'DJI::OSDK::ErrorCode']]],
-  ['firmware_5fdata_5foverload_5fflash',['FIRMWARE_DATA_OVERLOAD_FLASH',['../classDJI_1_1OSDK_1_1ErrorCode.html#a4d4bc0bf4a5ea4bbb295c41d41ebb528a213f545a2603179e4b9976f8c3062b98',1,'DJI::OSDK::ErrorCode']]],
-  ['firmware_5ftype_5fmismatch',['FIRMWARE_TYPE_MISMATCH',['../classDJI_1_1OSDK_1_1ErrorCode.html#a4d4bc0bf4a5ea4bbb295c41d41ebb528a0b3bfbc5b02515b2019132646f05370f',1,'DJI::OSDK::ErrorCode']]],
-  ['firmware_5fverification_5ferror',['FIRMWARE_VERIFICATION_ERROR',['../classDJI_1_1OSDK_1_1ErrorCode.html#a4d4bc0bf4a5ea4bbb295c41d41ebb528a355eb598b4c1f5d7eefd2b5d79b7cea3',1,'DJI::OSDK::ErrorCode']]],
-  ['flash_5ferase_5ferror',['FLASH_ERASE_ERROR',['../classDJI_1_1OSDK_1_1ErrorCode.html#a4d4bc0bf4a5ea4bbb295c41d41ebb528ac0842ca537d1bc39d892406ba234a580',1,'DJI::OSDK::ErrorCode']]],
-  ['flash_5fis_5ferasing',['FLASH_IS_ERASING',['../classDJI_1_1OSDK_1_1ErrorCode.html#a4d4bc0bf4a5ea4bbb295c41d41ebb528a6e0c72fbe4a60f28c950d0490413fe9d',1,'DJI::OSDK::ErrorCode']]],
-  ['flash_5fwrite_5ferror',['FLASH_WRITE_ERROR',['../classDJI_1_1OSDK_1_1ErrorCode.html#a4d4bc0bf4a5ea4bbb295c41d41ebb528a068d15ba164c6d7855a2bb3f7937a9a2',1,'DJI::OSDK::ErrorCode']]]
+  ['ehdr',['EHDR',['../classDJI_1_1OSDK_1_1CameraModule.html#a998b0c7f990299f3d640001a7b9e7afca9f0115a5c96c377c99a6b41f44b93f43',1,'DJI::OSDK::CameraModule']]],
+  ['enable',['ENABLE',['../classDJI_1_1OSDK_1_1Control.html#a2d81493e9c6b0246811cbe71d8825db6ab19b561650e5df7ca2ae81cb3361c383',1,'DJI::OSDK::Control']]],
+  ['exceeded_5finput_5ftime_5flimit',['EXCEEDED_INPUT_TIME_LIMIT',['../classDJI_1_1OSDK_1_1ErrorCode.html#a4d4bc0bf4a5ea4bbb295c41d41ebb528a8593602336c1d49d9052957dfcad5ffe',1,'DJI::OSDK::ErrorCode']]],
+  ['executing_5fhigher_5fpriority_5ftask',['EXECUTING_HIGHER_PRIORITY_TASK',['../classDJI_1_1OSDK_1_1ErrorCode.html#a4d4bc0bf4a5ea4bbb295c41d41ebb528ad3d1e3cfd997581735ba06eb35871f50',1,'DJI::OSDK::ErrorCode']]],
+  ['exposure_5fmanual',['EXPOSURE_MANUAL',['../classDJI_1_1OSDK_1_1CameraModule.html#aaa4d8900197935fc9457273997106976a55bf1b03b4b9ab646110f14038bd1f74',1,'DJI::OSDK::CameraModule']]],
+  ['exposure_5funknown',['EXPOSURE_UNKNOWN',['../classDJI_1_1OSDK_1_1CameraModule.html#aaa4d8900197935fc9457273997106976ad7154b3f8cbbd22ee04145edda5aef82',1,'DJI::OSDK::CameraModule']]]
 ];

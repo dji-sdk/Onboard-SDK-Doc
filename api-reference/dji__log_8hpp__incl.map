@@ -1,7 +1,10 @@
-<map id="osdk&#45;core/hal/inc/dji_log.hpp" name="osdk&#45;core/hal/inc/dji_log.hpp">
-<area shape="rect" id="node1" title="Logging mechanism for printing status and error messages to the screen." alt="" coords="187,5,326,44"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,92,121,117"/>
-<area shape="rect" id="node3" title=" " alt="" coords="144,92,238,117"/>
-<area shape="rect" id="node4" title=" " alt="" coords="261,92,382,117"/>
-<area shape="rect" id="node5" title=" " alt="" coords="406,92,571,117"/>
+<map id="osdk&#45;lib/x86/osdk&#45;core/inc/dji_log.hpp" name="osdk&#45;lib/x86/osdk&#45;core/inc/dji_log.hpp">
+<area shape="rect" id="node1" title="Logging mechanism for printing status and error messages to the screen." alt="" coords="57,5,211,47"/>
+<area shape="rect" id="node2" href="$dji__singleton_8hpp.html" title="Singleton Template Class implementation for use with the DJI OSDK." alt="" coords="5,169,124,196"/>
+<area shape="rect" id="node3" href="$dji__platform_8hpp.html" title="Vehicle API for DJI onboardSDK library." alt="" coords="137,95,251,121"/>
+<area shape="rect" id="node4" href="$osdk__platform_8h.html" title="This is the header file for define OSDK platform interfaces." alt="" coords="149,169,263,196"/>
+<area shape="rect" id="node8" href="$osdk__logger_8h.html" title="This is the header file for &quot;osdk_logger.c&quot;, defining the structure and (exported) function prototype..." alt="" coords="288,169,391,196"/>
+<area shape="rect" id="node5" href="$osdk__typedef_8h_source.html" title=" " alt="" coords="217,244,328,271"/>
+<area shape="rect" id="node6" title=" " alt="" coords="193,319,262,345"/>
+<area shape="rect" id="node7" title=" " alt="" coords="287,319,352,345"/>
 </map>

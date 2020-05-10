@@ -1,8 +1,12 @@
 var searchData=
 [
-  ['velocityandyawratectrl',['velocityAndYawRateCtrl',['../classDJI_1_1OSDK_1_1Control.html#a24c02f8db0ce0ae10a784c3c998e979f',1,'DJI::OSDK::Control']]],
-  ['verify',['verify',['../classDJI_1_1OSDK_1_1DataSubscription.html#a6a3cf7624e29d3a6ccb1b524d40c3b3f',1,'DJI::OSDK::DataSubscription::verify()'],['../classDJI_1_1OSDK_1_1DataSubscription.html#a5d05e8d87cb82b8a9f3cd12fe1d16e7d',1,'DJI::OSDK::DataSubscription::verify(int timeout)']]],
-  ['verifycallback',['verifyCallback',['../classDJI_1_1OSDK_1_1DataSubscription.html#ab8612b27a4c74b40a065517130450ea7',1,'DJI::OSDK::DataSubscription']]],
-  ['videostart',['videoStart',['../classDJI_1_1OSDK_1_1Camera.html#a450c3423ab27048d57713286e04deadf',1,'DJI::OSDK::Camera']]],
-  ['videostop',['videoStop',['../classDJI_1_1OSDK_1_1Camera.html#a7a1de3ac2882382f81333deb575afb9d',1,'DJI::OSDK::Camera']]]
+  ['takeoff',['takeoff',['../classDJI_1_1OSDK_1_1Control.html#a41269b8e72f24e6040e7a89496f9700c',1,'DJI::OSDK::Control::takeoff(int wait_timeout)'],['../classDJI_1_1OSDK_1_1Control.html#af37cfc5d3f926beb04feb9fdbf88595f',1,'DJI::OSDK::Control::takeoff(VehicleCallBack callback=0, UserData userData=0)']]],
+  ['tapzoomattargetasync',['tapZoomAtTargetAsync',['../classDJI_1_1OSDK_1_1CameraManager.html#a7aa95d26fa88e758714db8e6e51c8c32',1,'DJI::OSDK::CameraManager::tapZoomAtTargetAsync()'],['../classDJI_1_1OSDK_1_1CameraModule.html#a580560f7bba4811b780a0b33373f73f9',1,'DJI::OSDK::CameraModule::tapZoomAtTargetAsync()']]],
+  ['tapzoomattargetsync',['tapZoomAtTargetSync',['../classDJI_1_1OSDK_1_1CameraManager.html#a957afe697a3f88b3a9f653639c9f2108',1,'DJI::OSDK::CameraManager::tapZoomAtTargetSync()'],['../classDJI_1_1OSDK_1_1CameraModule.html#a7fe2d936c384d662f49f9a16c39b3053',1,'DJI::OSDK::CameraModule::tapZoomAtTargetSync()']]],
+  ['title',['title',['../classDJI_1_1OSDK_1_1Log.html#a942a0691defdca85d134ec72b61ddf9c',1,'DJI::OSDK::Log::title(int level, const char *prefix, const char *func, int line)'],['../classDJI_1_1OSDK_1_1Log.html#a23c3f18e19e732de61eda36437360691',1,'DJI::OSDK::Log::title(int level, const char *prefix)']]],
+  ['triggerstereocamparamspushing',['triggerStereoCamParamsPushing',['../classDJI_1_1OSDK_1_1AdvancedSensing.html#aa2cf3ee87808bd67bf647c0290bcc861',1,'DJI::OSDK::AdvancedSensing']]],
+  ['turnoffmotorsasync',['turnOffMotorsAsync',['../classDJI_1_1OSDK_1_1FlightController.html#a50afc92828b107a4a41c800e72410428',1,'DJI::OSDK::FlightController']]],
+  ['turnoffmotorssync',['turnOffMotorsSync',['../classDJI_1_1OSDK_1_1FlightController.html#aaec8c0f3bd87240b4c63cac052a4e37b',1,'DJI::OSDK::FlightController']]],
+  ['turnonmotorsasync',['turnOnMotorsAsync',['../classDJI_1_1OSDK_1_1FlightController.html#a1d0ae47f352803de400e1647943d352a',1,'DJI::OSDK::FlightController']]],
+  ['turnonmotorssync',['turnOnMotorsSync',['../classDJI_1_1OSDK_1_1FlightController.html#af6fa10fcb0c5a09368f91b69250bdde2',1,'DJI::OSDK::FlightController']]]
 ];
