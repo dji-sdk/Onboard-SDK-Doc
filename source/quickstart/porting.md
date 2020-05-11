@@ -164,5 +164,5 @@ Modify key information in `FreeRTOSConfig.h`
 </p>
 </div>
 <div style="text-align: center"><p><span>
-      <img src="../images/FreeRTOSConfig1.png" alt/></span></p>
+      <img src="../images/porting1.png" alt/></span></p>
 </div></div>

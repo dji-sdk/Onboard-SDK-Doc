@@ -158,6 +158,6 @@ if(DJI_REG_OSAL_HANDLER(&osalHandler) != true) {
 <div style="text-align: center"><p>图5.修改配置对比  </p>
 </div>
 <div style="text-align: center"><p><span>
-      <img src="../../images/FreeRTOSConfig1.png" alt/></span></p>
+      <img src="../../images/porting1.png" alt/></span></p>
 </div></div>
 

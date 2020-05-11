@@ -5,14 +5,14 @@ version: 4.0.0
 keywords: [OSDK, Safety]
 ---
 > **NOTE** This article is **Machine-Translated**. If you have any questions about this article, please send an <a href="mailto:dev@dji.com">E-mail </a>to DJI, we will correct it in time. DJI appreciates your support and attention.     
-
+          
 Before using the sample provided by DJI OSDK or using applications developed based on OSDK, please read the content in this document carefully to avoid damaging the drone or causing unnecessary safety problems due to illegal operations.
 
 ## Disclaimer
-* Before using the application developed by OSDK, please check the laws and regulations of the region where the flight is located, **The safety issues or legal disputes caused by the use of OSDK are not related to DJI, and DJI will not be responsible for all the consequences of using OSDK Any legal risks and liabilities**.
+* Before using the application developed by OSDK, please check the laws and regulations of the region where the flight is located, **The safety issues or legal disputes caused by the use of OSDK are not related to DJI, and DJI will not be responsible for all the consequences for using OSDK**.
 * Before using flight mission, please simulate the application developed with DJI OSDK in DJI Assistant 2.
 * When using the application developed by OSDK to perform tasks, please follow the User's manual to ensure that the drone is in a well state when performing the task.
-* **DJI will not obtain private data of third-party users in any way and for any reason.** Developers should use DJI OSDK's advanced visual function interface to develop applications with object recognition and other functions, and should develop **functions to protect user privacy data, such as data encryption and obfuscation**, where no one uses DJI DJI will not be held responsible for any incidents involving user privacy data leakage.
+* **DJI will not obtain private data of third-party users in any way and for any reason**, and developer should develop **the functions that protect user’s privacy data, such as data encryption and obfuscation**, DJI will not bear any legal responsibility for the leakage of user ’s privacy data.
 
 ## Development and Testing
 When using OSDK to develop applications, to protect developers from accidents, please note the following:
