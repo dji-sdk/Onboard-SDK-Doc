@@ -5,18 +5,25 @@ keywords: [OSDK, 功能概览]
 ---
 
 ## OSDK 4.0 正式发布
-#### 亮点功能
-* SDK互联互通：新增MSDK/OSDK/PSDK互联互通功能，满足大数据传输需求。
-* Waypoints 2.0：Waypoints 功能升级，满足海量航点需求和灵活动作配置需求（需配合Matrice 300 RTK机型）。
-* 相机媒体文件下载：新增相机照片/视频文件下载功能。
-* 相机H264码流：新增相机H264码流获取接口。
-#### 其它新功能
-* 感知数据获取：新增API支持获取6向双目灰度图和相机内外参（需配合Matrice 300 RTK机型）。
-* 避障开关：新增水平避障以及顶部避障开关API（需配合Matrice 300 RTK机型）。
-* 云台功能：新增GimbalManager,支持多云台控制/云台回中功能。
+#### 新增功能
+* <a href="../tutorial/SDK-mop.html"><b>SDK互联互通</b></a>
+  * MSDK、OSDK、PSDK 跨平台无缝通信
+  * 支持M300 RTK 
+* <a href="../tutorial/gimbal-manager.html"><b>多云台控制与管理</b></a>
+* <a href="../tutorial/advanced-sensing.html"><b>获取相机的H.264 码流</b></a>
+* 相机媒体文件下载
+* 获取Matrice 300 RTK 感知数据
+* 设置Matrice 300 RTK 的避障开关
+
+#### 功能升级
+* 航点任务（需使用Matrice 300 RTK） 
+  * 海量航点，最多支持65535 个航点
+  * 动作灵活配置需求
+
 #### 问题修复
-* 云台控制失效：修复经纬M210 V2系列飞行时OSDK云台控制失效问题。
-* 避障开关失效：修复经纬M210 V2系列在速度控制飞行时避障开关失效的问题。
+* 云台控制失效：修复M210 V2系列无人机在飞行时OSDK 对云台控制失效的问题
+* 避障开关失效：修复M210 V2系列无人机在速度控制模式下飞行时，避障开关失效的问题
+
 #### 平台支持
 * STM32 Platform：支持FreeRTOS移植。
 * Qt: 终止Qt平台支持。

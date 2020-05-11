@@ -4,21 +4,22 @@ date: 2020-05-08
 keywords: [OSDK]
 ---
 ## OSDK 4.0 Released
-#### Hightlights
-* SDK Interconnection: Add MSDK/OSDK/PSDK interconnection feature to satisfy the needs of massive data communication.
-* Waypoints 2.0: Add Waypionts 2.0 basic feature to satisfy the needs of large-scale waypoints and flexible actions configuration (only supported by Matrice 300 RTK).
-* Camera Media FIles Downloading: Add camera photo and video files downloading feature. 
-* Camera H264 Stream: Add camera H264 stream acquisition API.
 
-#### Other New Features
-* Perception Data: Add APIs for getting gray scale images and camera internal/external parameters (only supported by Matrice 300 RTK).
-* Obstacle Avoidance Switches: Add APIs for Obstacle Avoidance enable/disable switches (only supported by Matrice 300 RTK).
-* Gimbal Function: Add GimbalManager Class to support multiple gimbal control.
+#### What's new
+* <a href="../tutorial/SDK-mop.html"><b>SDK Interconnection</b></a>
+  * MSDK、OSDK、PSDK communication seamlessly
+  * Support M300 RTK 
+  * Massive data communication
+* <a href="../tutorial/gimbal-manager.html"><b>Multiple gimbal control</b></a>
+* <a href="../tutorial/advanced-sensing.html"><b>Obtain camera’s H264 Stream</b></a>
+* Camera's media fIles downloading
+* Get gray scale images and camera internal/external parameters (only support Matrice 300 RTK)
+* Obstacle Avoidance enable/disable switches (only support Matrice 300 RTK)
 
-#### Supported Products（Firmware）
-* Matrice 300 RTK : v01.00.01.07
-* Matrice 210 RTK V2 : v01.00.0670
-* Matrice 210 V2 : v01.00.0670
+#### Upgrade
+* Waypoints 2.0（Only support Matrice 300 RTK） 
+  * large-scale waypoints (65535)
+  * flexible actions configuration
 
 #### Bug Fixes
 * Gimbal Control Bug: Fix the failure of gimbal control in Matrice 210 V2 Series while flying.

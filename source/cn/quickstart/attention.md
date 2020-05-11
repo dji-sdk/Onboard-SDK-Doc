@@ -11,7 +11,6 @@ keywords: [开发须知, 硬件选购, 软件版本, 固件版本]
 ## 固件升级
 使用OSDK 开发应用程序时，需先使用**DJI Assistant2** 升级无人机的固件，有关固件版本的详细说明，请参见[版本声明](../appendix/firmware.html)。
 
-
 ## 启用OSDK 控制功能
 为使基于OSDK 开发的程序能够与飞行平台间正常通信，请在DJI Assistant2 中启用OSDK API 控制功能，如 图1.开启OSDK 控制功能 所示。
 
@@ -64,3 +63,9 @@ DJI 的无人机在飞行时，若与遥控器或机载计算机断连，将按�
 * 在实际测试或执行飞行任务前，请您先在DJI Assistant 2 中模拟该应用程序。
 
 > **说明：** 使用DJI Assistant 2 模拟应用程序是产生的数据为应用程序模拟时的测试数据，开发者无法在模拟中获取无人机的原始数据。
+
+#### 使用DJI Pilot 
+> **说明：** 当Matrice 200 V2 和Matrice 200 系列无人机搭载 记载计算机飞行时，需使用DJI Pilot 模拟基于OSDK 开发的应用程序。
+
+
+#### 使用DJI Assistant 2
