@@ -14,7 +14,6 @@ In order to improve the safety of applications when controlling drones perform t
 ### Subscription
 According to the actual flight status of the drone, various components and third-party sensors will generate a large amount of data information in real-time and pushed to other modules by the drone. The application with subscription could record the data user need.
 
-#### Workflow
 #### Topic
 Table1 Shows the topic that the data could be subscribed from the drone.
 

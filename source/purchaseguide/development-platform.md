@@ -25,8 +25,10 @@ According to the features、resource usage and toolchain to choose the OS and th
    * Onboard Computer: STM32F4 Series
 
 ## Feature
+
 <div>
 <div style="text-align: center"><p>Table1. Features Suppport </p></div>
+<div>
 <table>
 <thead>
    <th>Class</th>
@@ -112,4 +114,4 @@ According to the features、resource usage and toolchain to choose the OS and th
     </tr>
 </tbody>
 </table>
-</div>
+</div></div>

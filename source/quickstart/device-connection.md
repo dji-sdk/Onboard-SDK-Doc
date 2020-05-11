@@ -13,7 +13,7 @@ keywords: [connection, onboard computer, drones, M210, M300 RTK, SDK]
 Figure 1 display the method of device connection.
 
 <div>
-<div style="text-align: center"> <p> Figure 1. Device Connection </p>
+<div style="text-align: center"> <p> Figure1. Device Connection </p>
 </div>
 <div style="text-align: center"> <p> <span>
       <img src="../images/device-connection-en.png" width="550" style="vertical-align: middle" alt/> </span> </p>
@@ -127,7 +127,7 @@ In order to facilitate developers to fix the onboard computer Manifold 2 or a th
 <table>
 <tbody>
 <tr>
-<th> A side </th>
+<th> Side A  </th>
 <td> A1 </td>
 <td> A2 </td>
 <td> A3 </td>
@@ -142,7 +142,7 @@ In order to facilitate developers to fix the onboard computer Manifold 2 or a th
 <td> A12 </td>
 </tr>
 <tr>
-<th> Interface name </th>
+<th> Name </th>
 <td> GND </td>
 <td> NC </td>
 <td> NC </td>
@@ -157,7 +157,7 @@ In order to facilitate developers to fix the onboard computer Manifold 2 or a th
 <td> GND </td>
 </tr>
 <tr>
-<th> B side </th>
+<th> Side B  </th>
 <td> B12 </td>
 <td> B11 </td>
 <td> B10 </td>
@@ -172,7 +172,7 @@ In order to facilitate developers to fix the onboard computer Manifold 2 or a th
 <td> B1 </td>
 </tr>
 <tr>
-<th> Interface name </th>
+<th> Name </th>
 <td> GND </td>
 <td> NC </td>
 <td> NC </td>

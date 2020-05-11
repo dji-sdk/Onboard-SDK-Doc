@@ -65,10 +65,10 @@
       title: SDK Interconnection
       path: /tutorial/SDK-mop.html
     -
-      title: Gimbal Manager
+      title: Gimbal Management
       path: /tutorial/gimbal-manager.html
     -
-      title: Camera Manager
+      title: Camera Management
       path: /tutorial/camera-manager.html
     -
       title: Motion Planning

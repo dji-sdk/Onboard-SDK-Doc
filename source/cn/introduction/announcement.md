@@ -21,6 +21,6 @@ keywords: [OSDK, 功能概览]
 * STM32 Platform：支持FreeRTOS移植。
 * Qt: 终止Qt平台支持。
 
-## <a href="https://terra-1-g.djicdn.com/71a7d383e71a4fb8887a310eb746b47f/general/DJI_Media_File_Metadata_WhitePaper.zip">DJI 媒体文件白皮书</a> 正式发布
-DJI 相机元数据白皮书正式发布，该文档描述了存储媒体文件元数据的格式和各个字段的描述。
+## <a href="https://terra-1-g.djicdn.com/71a7d383e71a4fb8887a310eb746b47f/general/DJI_Media_File_Metadata_WhitePaper.zip">DJI 媒体文件元数据白皮书</a> 正式发布
+DJI 相机媒体文件元数据白皮书正式发布，该文档描述了存储媒体文件元数据的格式和各个字段的含义。
 开发者通过使用该白皮书，能够了解媒体文件中各个元数据以及相应字段的信息，在利用媒体文件元数据的基础上实现图像分析或建模等行业应用。

@@ -33,7 +33,7 @@ Before using OSDK to develop the application, developers need to register a acco
    <td style="text-align: center"> <a href="../purchaseguide/hardware.html"> Purchase Hardware Platform </a> </td>
    <td style="text-align: center"> <a href="https://developer.dji.com/user/apps/#allhtml">Register Application</a> </td>
    <td style="text-align: center"> <a href="../quickstart/run-the-sample.html"> Run the sample </a> </td>
-   <td style="text-align: center"> <a href="../quickstart/simulate-and-debug.html"> Simulation and Debugging </a> </td>
+   <td style="text-align: center"> <a href="https://www.dji.com/downloads/softwares/assistant-dji-2-for-matrice"> Simulation and Debugging </a> </td>
   </tr>
 </tbody>
 </table>

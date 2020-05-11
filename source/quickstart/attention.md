@@ -11,7 +11,7 @@ keywords: [attention, hardware purchase, software version, firmware version]
 Before using OSDK to develop the application, please read this document carefully to avoid improper operation and accidental damage to the drone or onboard computer.
 
 ##vFirmware Upgrade 
-Before to develop the application, please use **DJI Assistant 2** to upgrade the firmware of the drone and hardware platform, for details please refer to[Firmware Release](../appendix/firmware.html)。
+Before to develop the application, please use **DJI Assistant 2** to upgrade the firmware of the drone and hardware platform, for details please refer to [Firmware Release](../appendix/firmware.html)。
 
 ## Enable OSDK Control
 In order to allow programs developed based on OSDK to communicate normally with the flight platform, please enable the OSDK API control function in DJI Assistant2, as shown in Figure 1.

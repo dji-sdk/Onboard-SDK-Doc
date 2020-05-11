@@ -7,11 +7,12 @@ keywords: [write apps, developemtn, SDK, integrate, DJI]
 
 ## 概述
 OSDK 为开发者提供了所需使用的模块，具体架构如下所示：
-<div>
+  <div>
+<div style="text-align: center"><p>图1.OSDK 架构 </p>
 <div style="text-align: center"><p><span>
       <img src="../../images/OSDK.png" width="400" style="vertical-align:middle" alt/></span></p>
-</div></div>
-
+</div></div></div>
+        
 ## 引入OSDK 开发包
 应用程序通过DJI Onboard SDK 中的`Vehicle `类调用DJI OSDK 的功能，因此使用OSDK 开发应用程序时，请先引入OSDK 开发包，如 图1. 引入OSDK 开发包所示，详细步骤如下所示：
 * **引入OSDK 头文件**       
@@ -23,7 +24,7 @@ OSDK 为开发者提供了所需使用的模块，具体架构如下所示：
 `#include <dji_linux_helpers.hpp>`
 
 <div>
-<div style="text-align: center"><p>图1.引入OSDK 开发包 </p>
+<div style="text-align: center"><p>图2.引入OSDK 开发包 </p>
 </div>
 <div style="text-align: center"><p><span>
       <img src="../../images/workflow/integrate_sdk_includes.png" width="650" alt/></span></p>
@@ -40,8 +41,12 @@ OSDK 为开发者提供了所需使用的模块，具体架构如下所示：
 4. 包含所需头文件的路径    
 5. 生成并链接可执行文件    
    
-![integrate-sdk-cmakelists](../../images/workflow/integrate_sdk_cmakelists.png)
-
+<div>
+<div style="text-align: center"><p>图3.配置依赖项 </p>
+</div>
+<div style="text-align: center"><p><span>
+      <img src="../../images/workflow/integrate_sdk_cmakelists.png" width="650" alt/></span></p>
+</div></div>
 
 ## OSDK 接口调用
 OSDK 为开发者提供了同步和异步调用的接口。
@@ -118,7 +123,7 @@ void NMEA Callback(Vehicle* vehiclePtr, RecvContainer recvFrame, UserData userda
 }
 ```
 
-## Vehicle 类介绍
+## 使用 Vehicle
 #### 1. “无人机”对象实例化
 使用OSDK 开发应用程序时，应用程序需要先读取环境配置参数、初始化无人机并创建实例对象`vehicle`。
 1. 读取环境配置参数（Userconfig.txt）     

@@ -14,7 +14,7 @@ keywords: [移植, OSDK, STM32 ,FreeRTOS ]
 <div style="text-align: center"><p>图1.代码移植  </p>
 </div>
 <div style="text-align: center"><p><span>
-      <img src="../../images/OSDK.png" width="300" alt/></span></p>
+      <img src="../../images/OSDK.png" width="500" alt/></span></p>
 </div></div>
 
 > **说明**
@@ -119,28 +119,45 @@ if(DJI_REG_OSAL_HANDLER(&osalHandler) != true) {
 
 #### 1. 获取移植代码
 
-* 下载并解压缩FreeRTOS 压缩包 [V10.2.1](https://www.freertos.org/a00104.html)，代码解压后主目录如下图所示：
-![FreeRTOS_code_主目录](../../images/FreeRTOS_code1.png)
+* 下载并解压缩FreeRTOS 压缩包 [V10.2.1](https://www.freertos.org/a00104.html)，代码解压后主目录如 图2.FreeRTOS 文件列表 所示：
+<div>
+<div style="text-align: center"><p>图2.FreeRTOS 文件列表  </p>
+</div>
+<div style="text-align: center"><p><span>
+      <img src="../../images/FreeRTOS_code1.png" width="500" alt/></span></p>
+</div></div>
 
 * 关键文件移植       
   * 移植FreeRTOS 核心代码： 将`/FreeRTOS/Source/`下的所有文件复制到`onboard-sdk/sample/platform/STM32/OnBoardSDK_STM32/OS/FreeRTOS/`目录下。
-  
-  `/FreeRTOS/Source/`的文件内容:
-  ![FreeRTOS移植文件截图](../../images/FreeRTOS1.png)
+  <div>
+<div style="text-align: center"><p>图3.FreeRTOS 关键文件列表  </p>
+</div>
+<div style="text-align: center"><p><span>
+      <img src="../../images/FreeRTOS1.png" width="500" alt/></span></p>
+</div></div>
 
   * 移植关键配置文件：将`/FreeRTOS/Demo/CORTEX_M4F_STM32F407ZG-SK/`中的文件`FreeRTOSConfig.h`复制到`onboard-sdk/sample/platform/STM32/OnBoardSDK_STM32/OS/FreeRTOS/include`目录下。
 
-    `FreeRTOSConfig.h`的文件位置:
-  ![FreeRTOS_config_文件位置](../../images/FreeRTOS_config1.png)
+  <div>
+<div style="text-align: center"><p>图4.FreeRTOSConfig.h 文件  </p>
+</div>
+<div style="text-align: center"><p><span>
+      <img src="../../images/FreeRTOS_config1.png" width="500" alt/></span></p>
+</div></div>
   
 
 #### 2. 修改关键配置信息    
-修改`FreeRTOSConfig.h` 文件中的关键信息
+修改`FreeRTOSConfig.h` 文件中的关键信息。
   * 将`#ifdef __ICCARM__` 改为 `#if defined (__ICCARM__) || defined (__CC_ARM) || defined (__GNUC__)`     
   * 将`#defined configUSE_IDLE_HOOK    2`改为`#defined configUSE_IDLE_HOOK    2`     
   * 将`#define configTOTAL_HEAP_SIZE     ((size_t)(75*1024))`改为`#define configTOTAL_HEAP_SIZE      ((size_t)(60*1024))`   
   * 将`#define configCHECK_FOR_STACK_OVERFLOW      2`改为`#define configCHECK_FOR_STACK_OVERFLOW      0`    
   * 将`#define configUSE_MALLOC_FAILED_HOOK       1`改为`#define configUSE_MALLOC_FAILED_HOOK       0`    
 
-  FreeRTOSConfig.h 修改配置对比图: 
-  ![FreeRTOSConfig修改对比](../../images/FreeRTOSConfig1.png)
+  <div>
+<div style="text-align: center"><p>图5.修改配置对比  </p>
+</div>
+<div style="text-align: center"><p><span>
+      <img src="../../images/FreeRTOSConfig1.png" alt/></span></p>
+</div></div>
+

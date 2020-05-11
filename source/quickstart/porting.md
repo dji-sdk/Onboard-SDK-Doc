@@ -134,7 +134,7 @@ To port applications developed based on OSDK to the FreeRTOS platform, you need 
    * Porting FreeRTOS core code     
    Copy all files under `/FreeRTOS/Source/` to `onboard-sdk/sample/platform/STM32/OnBoardSDK_STM32/OS/FreeRTOS/`.        
    <div>
-<div style="text-align: center"><p>Figure 3. FreeRTOS Transplant File   </p>
+<div style="text-align: center"><p>Figure 3. FreeRTOS Porting Files   </p>
 </div>
 <div style="text-align: center"><p><span>
       <img src="../images/FreeRTOS1.png" width="500" alt/></span></p>
@@ -164,5 +164,5 @@ Modify key information in `FreeRTOSConfig.h`
 </p>
 </div>
 <div style="text-align: center"><p><span>
-      <img src="../images/FreeRTOSConfig1.png" width="500" alt/></span></p>
+      <img src="../images/FreeRTOSConfig1.png" alt/></span></p>
 </div></div>

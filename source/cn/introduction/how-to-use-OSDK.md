@@ -32,7 +32,7 @@ keywords: [注册, 选购, 入门, 学习, 进阶, 高级]
    <td style="text-align:center"><a href="../purchaseguide/hardware.html">选购硬件平台</a></td>
    <td style="text-align:center"><a href="https://developer.dji.com/user/apps/#allhtml">应用注册</a></td>
    <td style="text-align:center"><a href="../quickstart/run-the-sample.html">运行示例程序</a></td>
-   <td style="text-align:center"><a href="../quickstart/simulate-and-debug.html">模拟与调试</a></td>
+   <td style="text-align:center"><a href="https://www.dji.com/cn/downloads/softwares/assistant-dji-2-for-matrice">模拟与调试</a></td>
   </tr>
 </tbody>
 </table>

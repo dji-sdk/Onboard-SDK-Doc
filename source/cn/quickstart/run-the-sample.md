@@ -69,12 +69,14 @@ acm_port :                //ACM 端口号
 `./djiosdk-flightcontrol-sample UserConfig.txt UserConfig.txt`
 
 ##### 3. 运行示例程序
-输入b 运行示例程序
-
-  <div>
+从键盘中输入B 运行示例程序
+<div>
+<div style="text-align: center"><p>图2.运行示例程序(Linux) </p>
+</div>
 <div style="text-align: center"><p><span>
-      <img src="../../images/quick-start/QuickStart_successful.png" width="550" style="vertical-align:middle" alt/></span></p>
+      <img src="../../images/quick-start/QuickStart_successful.png" width="650" alt/></span></p>
 </div></div>
+
 
 ## 运行ROS 示例代码
 
@@ -157,6 +159,9 @@ userActivate()
 2. 在Project 选项卡中，选择Project Target；
 3. 在C/C++ 选项卡中选择所需编译的示例代码，`-DXXXX_XXXXX_XXXXX`。
 
+<div>
+<div style="text-align: center"><p>图3.编译示例代码 </p>
+</div>
 <div style="text-align: center"><p><span>
       <img src="../../images/STM32/stm32_sample_macro.png" width="550" style="vertical-align:middle" alt/></span></p>
 </div></div>

@@ -8,9 +8,12 @@ keywords: [write apps, developemt, SDK, integrate, DJI]
 
 ## Overview
 OSDK provides lots of modules that developers could use, the specific architecture is as follows:
+
 <div>
+<div style="text-align: center"> <p> Figure 1. Overview</p>
+</div>
 <div style="text-align: center"> <p> <span>
-      <img src="../images/OSDK-en.png" width="400" style="vertical-align: middle" alt/> </span> </p>
+      <img  src="../images/OSDK-en.png" width="440" style="vertical-align: middle" alt/> </span> </p>
 </div> </div>
       
 ## Integrate OSDK         
@@ -25,7 +28,7 @@ After integrated the OSDK help file in the program using the following statement
 `#include <dji_linux_helpers.hpp>`
 
 <div>
-<div style="text-align: center"> <p> Figure 1. Integrate OSDK </p>
+<div style="text-align: center"> <p> Figure 2. Integrate OSDK </p>
 </div>
 <div style="text-align: center"> <p> <span>
       <img src="../images/workflow/integrate_sdk_includes.png" width="650" alt/> </span> </p>
@@ -42,8 +45,12 @@ Using CMake:
 4. The path containing the required header files
 5. Generate and link executable files
 
-![integrate-sdk-cmakelists](../images/workflow/integrate_sdk_cmakelists.png)
-
+<div>
+<div style="text-align: center"> <p> Figure 3. Cmake Lists </p>
+</div>
+<div style="text-align: center"> <p> <span>
+      <img src="../images/workflow/integrate_sdk_cmakelists.png" width="650" alt/> </span> </p>
+</div> </div>
 
 ## Call The Interfaces
 OSDK provides developers with interfaces for synchronous and asynchronous:

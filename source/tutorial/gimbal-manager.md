@@ -1,5 +1,5 @@
 ---
-title: Gimbal Control
+title: Gimbal Management
 date: 2020-05-08
 version: 4.0.0
 keywords: [Gimbal Control]
@@ -19,7 +19,7 @@ Figure 1 shows the joints of the gimbal. The joint of the gimbal is the motor to
 <div style="text-align: center"><p>Figure1. Joint Angle  </p>
 </div>
 <div style="text-align: center"><p><span>
-      <img src="../../images/joint-angle.png" width="220" alt/></span></p>
+      <img src="../../images/joint-angle-en.png" width="220" alt/></span></p>
 </div></div>
   
 #### Attitude and attitude angle
@@ -29,7 +29,7 @@ Figure 2 shows the attitude of the payload, according to the control command, th
 <div style="text-align: center"><p>Figure 2 Attitude Angle  </p>
 </div>
 <div style="text-align: center"><p><span>
-      <img src="../../images/gimbal_up.png" width="500" alt/></span></p>
+      <img src="../../images/gimbal_up-en.png" width="500" alt/></span></p>
 </div></div>
    
 

@@ -1,8 +1,8 @@
 ---
-title: 相机管理
+title: Camera Management
 date: 2020-05-08
 version: 4.0.0
-keywords: [相机, ISO, EV, 快门, 曝光, 变焦]
+keywords: [Camera, ISO, EV, shutter, exposure, shutter]
 ---
 > **NOTE** This article is **Machine-Translated**. If you have any questions about this article, please send an <a href="mailto:dev@dji.com">E-mail </a>to DJI, we will correct it in time. DJI appreciates your support and attention.     
 
@@ -10,7 +10,7 @@ keywords: [相机, ISO, EV, 快门, 曝光, 变焦]
 In order to help developers develop functions to control cameras on DJI's drones based on OSDK quickly, DJI OSDK provides camera management functions, the class `CameraManager`. Using the `CameraManager` in the OSDK, developers can simultaneously set and obtain the values of parameters such as sensitivity, aperture, shutter, and exposure of multiple cameras on the drone, and control the cameras to taking pictures, recording, and pointing zoom.
 
 ## CameraManager
-When using the camera Management, the developer needs to **initialize** the camera module in the OSDK, **create an instantiated object** `CameraManager`, and then **set the camera mode**, according to the user's need to design the logic to control the camera, such as setting parameters, checking status, etc.
+When using the Camera Management, the developer needs to **initialize** the camera module in the OSDK, **create the instantiated object** `CameraManager`, and then **set the camera mode**, according to the user's need to design the logic to control the camera, such as setting parameters, checking status, etc.
 <div>
 <div style="text-align: center"> <p> Table 1. CameraManager's functions </p>
 </div>

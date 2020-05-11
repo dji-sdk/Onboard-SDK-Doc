@@ -70,11 +70,13 @@ The following is execute the "Flight Control":
 `./djiosdk-flightcontrol-sample UserConfig.txt UserConfig.txt`
 
 ##### 3. Run The Sample
-Enter b to run the sample program
+Enter B from the keyboard to run the sample program
 
-  <div>
+<div>
+<div style="text-align: center"> <p> Figure 2. Run The Sample(Linux)</p>
+</div>
 <div style="text-align: center"> <p> <span>
-      <img src="../../images/quick-start/QuickStart_successful.png" width="550" style="vertical-align: middle" alt/> </span> </p>
+      <img src="../images/quick-start/QuickStart_successful.png" width="440" style="vertical-align: middle" alt/> </span> </p>
 </div> </div>
 
 ## Run The Sample On The ROS
@@ -152,8 +154,11 @@ userActivate()
 2. Open the Project tab, select Project Target;
 3. In the C/C ++ tab, select the sample code to be compiled, `-DXXXX_XXXXX_XXXXX`.
 
+<div>
+<div style="text-align: center"> <p> Figure 3. Run The Sample(STM32)</p>
+</div>
 <div style="text-align: center"> <p> <span>
-      <img src="../images/STM32/stm32_sample_macro.png" width="550" style="vertical-align: middle" alt/> </span> </p>
+      <img  src="../images/STM32/stm32_sample_macro.png" width="440" style="vertical-align: middle" alt/> </span> </p>
 </div> </div>
 
 #### Execute The Sample Program

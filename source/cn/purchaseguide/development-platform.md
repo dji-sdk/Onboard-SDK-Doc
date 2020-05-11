@@ -24,6 +24,7 @@ keywords: [开发须知, 硬件选购, 软件版本, 固件版本]
 
 ## 功能支持对比
 <div>
+<div style="text-align: center"><p>表1. 不同平台对OSDK 功能的支持 </p></div>
 <table>
 <thead>
    <th>功能分类</th>

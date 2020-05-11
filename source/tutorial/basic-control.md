@@ -21,8 +21,10 @@ The application with [Message Subscription](./massage-manager.html) could help u
 * Back home point and altitude
 
 ### Basic Action
-The basic flying actions of drones include three types: lock, takeoff and landing, and back to home.     Developers can use the interface provided by OSDK to control the drone perform the specified flight action.
+The basic flying actions of drones include three types: lock, takeoff and landing, and back to home. Developers can use the interface provided by OSDK to control the drone perform the specified flight action.
+
 <div>
+<div style="text-align: center"> <p> Table 1. Basic Action </div>
   <table>
     <thead>
       <tr>
@@ -112,10 +114,10 @@ Only in the speed control mode in the **Horizontal mode**, the developer can set
 * Angular rate control mode: In this mode, the command rotate the drone in the yaw direction is the angular rate of the yaw
 
 ### Drone Height
-The basic height concept of DJI's drone during the flight is shown in Table 1.
+The basic height concept of DJI's drone during the flight is shown in Table 2.
 
 <div>
-<div style="text-align: center"> <p> Table 1. Drone height Concept </div>
+<div style="text-align: center"> <p> Table 2. Concept Of The Height  </div>
 <table>
 <thead>
 <th style="border-left: none;"> </th>

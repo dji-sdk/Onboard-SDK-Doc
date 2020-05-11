@@ -111,7 +111,7 @@ To use the vision function in OSDK on the M210 series of drones to enable the Li
 There are relatively many topics subscribed by ROS by default. In order to ensure sufficient communication bandwidth between ROS and applications developed based on OSDK, the baud rate of UART should be greater than 921600.
 
 > **NOTE**
-> * Since the baud rate of Manifold 2-G may deviate slightly from the actual value, please set the baud rate to 1000000. For details, please refer to Manifold 2 <a href ="https://dl.djicdn.com/downloads /manifold-2/20190528/Manifold_2_Production_Information_v1.0_Multi.pdf">Instruction Manual </a>.
+> * Since the baud rate of Manifold 2-G may deviate slightly from the actual value, please set the baud rate to 1000000. For details, please refer to Manifold 2 <a href ="https://dl.djicdn.com/downloads/manifold-2/20190528/Manifold_2_User_Guide_v1.0_EN.pdf">User's Manual </a>.
 > * Only Linux and ROS systems support the use of DJI's advanced vision features.
 > * When using the vision function of the DJI drone to implement advanced applications, please add the driver and the third dependency library required by the application.
 > * The following installation steps take Manifold 2 as an example to introduce the steps to configure the development environment for developing applications using OSDK.
