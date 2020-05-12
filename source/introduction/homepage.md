@@ -6,7 +6,7 @@ keywords: [OSDK, quick start, standardization, guidance, DJI OSDK]
 ---
 > **NOTE** 
 > * This article is **Machine-Translated**. If you have any questions about this article, please send an <a href="mailto:dev@dji.com">E-mail </a>to DJI, we will correct it in time. DJI appreciates your support and attention.
-> * This series of documentation introduces the functions of **OSDK V4.0.0**, as well as the steps and methods of developing software using OSDK V4.0.0. If you are still using OSDK V3.9.x, please download the documentation of [OSDK V3.9.x](https://terra-1-g.djicdn.com/71a7d383e71a4fb8887a310eb746b47f/osdk/OSDK-3.9.0.zip).
+> * This series of documentation introduces the functions of **OSDK V4.0.0**, as well as the steps and methods of developing program using OSDK V4.0.0. If you are still using OSDK V3.9.x, please download the documentation of [OSDK V3.9.x](https://terra-1-g.djicdn.com/71a7d383e71a4fb8887a310eb746b47f/osdk/OSDK-3.9.0.zip).
 
 OSDK is a development toolkit for developing applications, which could run in the onboard computer(such as Manifold 2). Developers can obtain the information on the drone by calling the interface specified in OSDK. According to the software logic and algorithm framework designed by the developer, developers could control the drone to perform actions they need, such as **Automated Flight**, **Payload Control** And **Video Image Analysis**,etc.
         

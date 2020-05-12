@@ -5,28 +5,26 @@ keywords: [OSDK, 功能概览]
 ---
 
 ## OSDK 4.0 正式发布
-#### 新增功能
-* <a href="../tutorial/SDK-mop.html"><b>SDK互联互通</b></a>
+* 支持[Matrice 300 RTK](https://www.dji.com/cn/matrice-300)
+   * 获取[Matrice 300 RTK](https://www.dji.com/cn/matrice-300) 的感知数据
+   * 设置[Matrice 300 RTK](https://www.dji.com/cn/matrice-300) 的避障开关
+* 新增<a href="../tutorial/SDK-mop.html"><b>SDK互联互通</b></a>功能
   * MSDK、OSDK、PSDK 跨平台无缝通信
-  * 支持M300 RTK 
-* <a href="../tutorial/gimbal-manager.html"><b>多云台控制与管理</b></a>
-* <a href="../tutorial/advanced-sensing.html"><b>获取相机的H.264 码流</b></a>
-* 相机媒体文件下载
-* 获取Matrice 300 RTK 感知数据
-* 设置Matrice 300 RTK 的避障开关
-
-#### 功能升级
-* 航点任务（需使用Matrice 300 RTK） 
+  * 支持大量数据的高速传输
+* 新增<a href="../tutorial/gimbal-manager.html"><b>多云台控制与管理</b></a>功能
+* 新增<a href="../tutorial/advanced-sensing.html"><b>获取相机的H.264 码流</b></a>功能
+* 新增相机媒体文件下载功能
+* [航点任务](../tutorial/motion-planning.html)功能升级（需使用[Matrice 300 RTK](https://www.dji.com/cn/matrice-300)）
   * 海量航点，最多支持65535 个航点
   * 动作灵活配置需求
+* 修复M210 V2系列无人机在飞行时OSDK 对云台控制失效的问题
+* 修复M210 V2系列无人机在速度控制模式下飞行时，避障开关失效的问题
 
-#### 问题修复
-* 云台控制失效：修复M210 V2系列无人机在飞行时OSDK 对云台控制失效的问题
-* 避障开关失效：修复M210 V2系列无人机在速度控制模式下飞行时，避障开关失效的问题
+> **说明：** 若您仍使用OSDK V3.9.0 开发应用程序，请下载[OSDK V3.9.x](https://terra-1-g.djicdn.com/71a7d383e71a4fb8887a310eb746b47f/osdk/OSDK-3.9.0.zip) 的文档。
 
 #### 平台支持
-* STM32 Platform：支持FreeRTOS移植。
-* Qt: 终止Qt平台支持。
+* STM32 Platform：支持将基于OSDK 开发的应用程序移植到FreeRTOS 上
+* QT: 终止对Qt 平台的支持
 
 ## <a href="https://terra-1-g.djicdn.com/71a7d383e71a4fb8887a310eb746b47f/general/DJI_Media_File_Metadata_WhitePaper.zip">DJI 媒体文件元数据白皮书</a> 正式发布
 DJI 相机媒体文件元数据白皮书正式发布，该文档描述了存储媒体文件元数据的格式和各个字段的含义。

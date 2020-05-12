@@ -6,7 +6,7 @@ keywords: [OSDK, feature overview]
 ---
 > **NOTE** This article is **Machine-Translated**. If you have any questions about this article, please send an <a href="mailto:dev@dji.com">E-mail </a>to DJI, we will correct it in time. DJI appreciates your support and attention.     
 
-It is convenience for developers to use the latest version of the OSDK, use that could help you to use the new features to develop the program, please pay attention to the release information of the DJI OSDK.
+It is convenience for developers to use the latest version of the OSDK, it could help developer use the newest features, please pay attention to the released information of the DJI OSDK.
 
 > **NOTE**
 > * This article is **Machine-Translated**. If you have any questions about this article, please send an <a href="mailto:dev@dji.com">E-mail </a>to DJI, we will correct it in time. DJI appreciates your support and attention.
