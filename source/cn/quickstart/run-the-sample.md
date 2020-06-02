@@ -51,7 +51,7 @@ acm_port :                //ACM 端口号
 ##### 1. 确认串口访问权限     
 编译示例代码前，请在终端上使用`ls -l /dev/xxx` 命令查看硬件平台串口（UART接口）的访问权限，若访问权限不足，请在终端中使用 `sudo chmod 777 /dev/xxx`命令获取串口设备访问权限。
 
->**说明：** xxx为串口的名称。
+> **说明：** xxx为串口的名称。
 
 ##### 2. 编译示例代码     
 进入示例代码的目录：`onboard-sdk`，使用如下命令将示例代码编译为示例程序：     
@@ -111,7 +111,7 @@ acm_port :                //ACM 端口号
    `/path/to/catkin_ws/src/Onboard-SDK-ROS/launch/dji_vehicle_node.launch`
 > * OSDK ROS 3.8 节点配置文件的路径：
    `/path/to/catkin_ws/src/Onboard-SDK-ROS/launch/dji_sdk_node.launch`   </br>
-> 若使用3.8版本接口的dji_sdk_node，需将`UserConfig.txt`文件放置于指定的路径下：      
+> 若使用3.8版本接口的dji_sdk_node，需将开发包中的`UserConfig.txt`文件放置于指定的路径下：      
 > * 若使用`rosrun`命令，`UserConfig.txt`文件需被放置在当前运行目录下;
 > * 若使用`roslaunch`命令，`UserConfig.txt`文件需被放置在`/home/{user}/.ros`目录下.
 
@@ -136,11 +136,11 @@ acm_port :                //ACM 端口号
 ## 运行STM32 示例代码
 
 #### 补充应用信息
->**说明：** RTOS 的示例代码以**STM32F407IGH6-EVAL** 开发板为应用程序。
+> **说明：** RTOS 的示例代码以**STM32F407IGH6-EVAL** 开发板为应用程序。
 
 1. 使用Keil 打开位于`sample/platform/STM32/OnBoardSDK_STM32/Project/`目录下的工程文件`OnBoardSDK_STM32.uvprojx`。
 
-2. 在`OnboardSDK_STM32/User/Activate.cpp` 文件中替换应用的名称、ID、Key和用户账号：
+2. 在`OnboardSDK_STM32/User/Activate.cpp` 文件中替换应用ID 和Key：
 
 ```c
 void
@@ -156,7 +156,7 @@ userActivate()
 
 #### 编译示例代码     
 1. 使用Keil 打开位于`sample/STM32/OnBoardSDK_STM32/Project/`目录下的工程文件`OnBoardSDK_STM32.uvprojx`。  
-2. 在Project 选项卡中，选择Project Target；
+2. 在Project 选项卡中，选择“Options for Target”；
 3. 在C/C++ 选项卡中选择所需编译的示例代码，`-DXXXX_XXXXX_XXXXX`。
 
 <div>
@@ -170,10 +170,10 @@ userActivate()
   * 在`Project` 选项卡中，选择`Build Target`
   * 选择Flash-Download 选项，将编译后的程序**烧录**到第三方开发平台（如STM32F407IGH6-EVAL）中。
 
->**说明：** 如需调试示例程序，请设置串口调试工具的波特率，USART3 端口的波特率默认为921600；USART2 端口的波特率默认为115200。
+> **说明：** 如需调试示例程序，请设置串口调试工具的波特率，USART3 端口的波特率默认为921600；USART2 端口的波特率默认为115200。
 
 ## 激活与授权
-用户首次使用开发者基于OSDK 开发的应用程序时，应用程序将通过无人机或遥控器获取DJI 的授权许可，以此激活应用程序。
+用户首次使用开发者基于OSDK 开发的应用程序时，需在DJI Assistant 2 联网的状态下，登录开发者账号，使基于OSDK 开发的应用程序获取DJI 的授权许可，以此激活应用程序。     
 * 激活应用程序：使用DJI Assistant 2  
 * 激活故障排查
    * 请对照[设备连接](./device-connection.html) 中的内容正确地连接无人机和第三方开发平台；请确认UART 线的电压为3.3V。

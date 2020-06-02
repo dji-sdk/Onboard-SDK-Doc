@@ -64,8 +64,17 @@ DJI 的无人机在飞行时，若与遥控器或机载计算机断连，将按�
 
 > **说明：** 使用DJI Assistant 2 模拟应用程序是产生的数据为应用程序模拟时的测试数据，开发者无法在模拟中获取无人机的原始数据。
 
-#### 使用DJI Pilot 
-> **说明：** 当Matrice 200 V2 和Matrice 200 系列无人机搭载 记载计算机飞行时，需使用DJI Pilot 模拟基于OSDK 开发的应用程序。
-
+#### 使用DJI Pilot
+当无人机Matrice 210 V2 和Matrice 210 RTK V2 搭载机载计算机飞行时，需使用DJI Pilot 模拟基于OSDK 开发的应用程序，具体步骤如下所示：
+1. 将OSDK 开发包中对应平台文件夹(/onboard-sdk/sample/platform)中的配置文件 **"UserConfig.txt"** 拷贝至“执行应用程序的目录下”；
+2. 将OSDK 开发包中对应平台文件夹(/utility/bin)中的配置工具**M210ConfigTool** 拷贝至“执行应用程序的目录下”；
+3. 执行如下命令
+```c
+./M210ConfigTool --usb-port /dev/ttyACM0 --config-file UserConfig.txt --usb-connected-flight on
+```
+> **说明** 
+> * 该命令将在无人机重启或开发平台重启后失效，请在使用模拟功能前，先使用如上命令开启无人机的模拟功能。
+> * 由于DJI Pilot 没有可视化的模拟界面，开发者仅能通过观察地图、姿态、高度和飞行速度等数据，查看应用程序控制无人机的状态。
 
 #### 使用DJI Assistant 2
+M300 RTK 支持开发者使用DJI Assistant 2 中的模拟器模拟基于OSDK 开发的应用程序。

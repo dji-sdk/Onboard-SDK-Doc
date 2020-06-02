@@ -3,7 +3,7 @@ title: Version Release
 date: 2020-05-08
 keywords: [attention, hardware purchase, software version, firmware version]
 ---
-It is recommended that use the following specified firmware or the version was no less than the belows when developing the application.
+When developing the application with OSDK, please use the firmware specified or higher.
 
 ## OSDK 4.0.0
 <div><table>
@@ -25,7 +25,7 @@ It is recommended that use the following specified firmware or the version was n
 </tr>
 <tr>
 <td>M210 V2</td>
-<td>01.00.0670</td>
+<td>01.00.0680</td>
 <td>3.4.3.37</td>
 </tr>
 </tr>

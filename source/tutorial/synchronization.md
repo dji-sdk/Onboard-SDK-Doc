@@ -9,7 +9,7 @@ keywords: [Sync, Timestamp, IMU, INS, PPS, sync, shutter, GPS, RTK, NMEA]
 ## Overview
 OSDK provides the time synchronization for developers to synchronize the time in the sensors, onboard computer and the drone. It also supports the synchronization of time between drones and GPS systems.
 
->**NOTE** 
+> **NOTE** 
 > * Only the **drone with RTK** support Time Synchronization.
 > * Before using the time synchronization function, please keep the communication status between the drone and the RTK satellite in the good condition from DJI Pilot or a Mobile APP developed based on MSDK APP, as shown in Figure 1.    
 <div>

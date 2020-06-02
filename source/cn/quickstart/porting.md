@@ -6,7 +6,7 @@ keywords: [移植, OSDK, STM32 ,FreeRTOS ]
 ---
 基于OSDK 开发的应用程序能够运行在Linux 和ROS 系统上，为满足开发者在不同的操作系统和开发平台上使用OSDK 开发应用程序，OSDK 提供了Hal 层和Osal 层库。
 
->**说明：** 本教程提供的[示例代码](https://github.com/dji-sdk/Onboard-SDK)，是以<a href="https://www.stmicroelectronics.com.cn/en/evaluation-tools/stm3241g-eval.html"><b>STM3241G-EVAL</b></a> 开发板为例，介绍将基于OSDK 开发的应用程序移植到FreeRTOS 平台上的步骤。
+> **说明：** 本教程提供的[示例代码](https://github.com/dji-sdk/Onboard-SDK)，是以<a href="https://www.stmicroelectronics.com.cn/en/evaluation-tools/stm3241g-eval.html"><b>STM3241G-EVAL</b></a> 开发板为例，介绍将基于OSDK 开发的应用程序移植到FreeRTOS 平台上的步骤。
 
 ## 概述
 为能使基于OSDK 开发的应用程序移植到不同的软硬件平台，需要通过Hal（Hardware Abstraction Layer，硬件接口层）适配不同的硬件平台，通过Osal（Operating System Abstraction Layer，操作系统抽象层）实现与不同操作系统的兼容，如 图1.代码移植 所示。     
@@ -61,11 +61,11 @@ E_OsdkStat (*TaskCreate)(T_OsdkTaskHandle *task,
 信号量是一种用于防止多线程同时操作相同代码段的机制。开发者使用该机制时，需要实现创建信号量、销毁信号量、等待信号量、释放信号量和等待超时信号量函数。
 
 * 创建信号量：`E_OsdkStat (*SemaphoreCreate)(T_OsdkSemHandle *semaphore, uint32_t initValue)`
-    >**说明：** 使用该接口时，请设置`initValue`信号量的初始值。
+    > **说明：** 使用该接口时，请设置`initValue`信号量的初始值。
 
 * 销毁信号量：`E_OsdkStat OsdkOsal_SemaphoreDestroy(T_OsdkSemHandle semaphore)`
 * 等待信号量：`E_OsdkStat OsdkOsal_SemaphoreWait(T_OsdkSemHandle semaphore);`
-   >**说明：** 等待信号量接口等待时间的**最大值**为**32767 ms**。
+   > **说明：** 等待信号量接口等待时间的**最大值**为**32767 ms**。
 
 * 等待超时信号量：`E_OsdkStat OsdkOsal_SemaphoreTimedWait(T_OsdkSemHandle semaphore, uint32_t waitTimeMs)`
 * 释放信号量：`E_OsdkStat OsdkOsal_SemaphorePost(T_OsdkSemHandle semaphore)`
@@ -149,7 +149,7 @@ if(DJI_REG_OSAL_HANDLER(&osalHandler) != true) {
 #### 2. 修改关键配置信息    
 修改`FreeRTOSConfig.h` 文件中的关键信息。
   * 将`#ifdef __ICCARM__` 改为 `#if defined (__ICCARM__) || defined (__CC_ARM) || defined (__GNUC__)`     
-  * 将`#defined configUSE_IDLE_HOOK    2`改为`#defined configUSE_IDLE_HOOK    2`     
+  * 将`#defined configUSE_IDLE_HOOK    1`改为`#defined configUSE_IDLE_HOOK    2`     
   * 将`#define configTOTAL_HEAP_SIZE     ((size_t)(75*1024))`改为`#define configTOTAL_HEAP_SIZE      ((size_t)(60*1024))`   
   * 将`#define configCHECK_FOR_STACK_OVERFLOW      2`改为`#define configCHECK_FOR_STACK_OVERFLOW      0`    
   * 将`#define configUSE_MALLOC_FAILED_HOOK       1`改为`#define configUSE_MALLOC_FAILED_HOOK       0`    

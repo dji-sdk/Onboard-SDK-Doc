@@ -115,7 +115,7 @@ vehicle->gimbal->setSpeed(&gimbalSpeed);
 
 * 2. 检查码流状态    
 开发者在主循环中，需调用`vehicle->advancedSensing->newFPVCameraImageIsReady()`接口，检查相机码流的状态，若相机中有可用的码流，则调用`vehicle->advancedSensing->getFPVCameraImage(fpvImage)` 获取该图像。
->**说明：** 若开发者安装了OpenCV 库，则可通过`show_rgb`函数调用`cv::imshow()`接口显示解码后的RGB 图像。
+> **说明：** 若开发者安装了OpenCV 库，则可通过`show_rgb`函数调用`cv::imshow()`接口显示解码后的RGB 图像。
 
 * 3. 销毁线程    
 调用`vehicle->advancedSensing->stopFPVCameraStream()` 接口，断开与相机的链接，销毁读取相机码流的线程。
@@ -198,5 +198,6 @@ void liveViewSampleCb(uint8_t* buf, int bufLen, void* userData) {
 * 使用FFmpeg 解码时出现报错：请在Ubuntu 16.04 上尝试解码，且确认运行解码器的应用程序正确安装了RNDIS、USB及网口驱动，确保应用程序能够正确识别M210 系列和M300 RTK 的无人机。
 
 ## 适用产品
-* Matrice 300 RTK 
-* Matrice 210 V2 系列
+* Matrice 300 RTK：支持挂载Z30、XTS、XT2、H20、H20T（开发者无需使用遥控器即可获取视频流）
+* Matrice 210 V2 系列：仅支持在主云台上挂载X4S、X5S、X7、Z30、XTS、XT2、H20、H20T （开发者无需使用遥控器即可获取视频流）
+> **说明：** OSDK暂不支持同时获取和切换支持多种光源的相机的图像，如需切换，请在DJI Pilot 中设置切换相机的图像。

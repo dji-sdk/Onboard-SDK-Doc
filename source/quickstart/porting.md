@@ -154,7 +154,7 @@ To port applications developed based on OSDK to the FreeRTOS platform, you need 
 #### 2. Modify Key Config Information
 Modify key information in `FreeRTOSConfig.h`   
   * Change`#ifdef __ICCARM__` to `#if defined (__ICCARM__) || defined (__CC_ARM) || defined (__GNUC__)`     
-  * Change`#defined configUSE_IDLE_HOOK    2`to`#defined configUSE_IDLE_HOOK    2`     
+  * Change`#defined configUSE_IDLE_HOOK    1`to`#defined configUSE_IDLE_HOOK    2`     
   * Change`#define configTOTAL_HEAP_SIZE     ((size_t)(75*1024))`to`#define configTOTAL_HEAP_SIZE      ((size_t)(60*1024))`   
   * Change`#define configCHECK_FOR_STACK_OVERFLOW      2`to`#define configCHECK_FOR_STACK_OVERFLOW      0`    
   * Change`#define configUSE_MALLOC_FAILED_HOOK       1`to`#define configUSE_MALLOC_FAILED_HOOK       0`    

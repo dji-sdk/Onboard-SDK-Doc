@@ -3,9 +3,16 @@ title: 最新公告
 date: 2020-05-08
 keywords: [OSDK, 功能概览]
 ---
+## OSDK 内测固件申请说明
+Onboard SDK 4.0.0 已正式发布，在Matrice 200 V2 系列无人机上开发应用程序时，需使用最新的无人机固件，但该固件仍在测试阶段，尚未正式发布。
+如需使用最新的固件，请向<a href="mailto:dev@dji.com"> DJI SDK 团队 </a>申请内测权限，获取Matrice 200 V2 系列无人机的内测固件。
+
+> **说明**
+> * 申请内测固件时，请提供登录DJI Assistant 2 的账号。
+> * 内测固件目前还在内测阶段，请在安全范围内使用内测固件，因使用内测固件而导致无人机损坏不在保修范围内。
 
 ## OSDK 4.0 正式发布
-* 支持[Matrice 300 RTK](https://www.dji.com/cn/matrice-300)
+* 新增支持[Matrice 300 RTK](https://www.dji.com/cn/matrice-300)
    * 获取[Matrice 300 RTK](https://www.dji.com/cn/matrice-300) 的感知数据
    * 设置[Matrice 300 RTK](https://www.dji.com/cn/matrice-300) 的避障开关
 * 新增<a href="../tutorial/SDK-mop.html"><b>SDK互联互通</b></a>功能

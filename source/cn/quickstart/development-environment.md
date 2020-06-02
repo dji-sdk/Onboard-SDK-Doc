@@ -107,7 +107,7 @@ sudo apt-get install libavcodec-dev libswresample-dev
 #### 4. 设置波特率
 ROS 默认订阅的主题相对较多，为保证ROS 与基于OSDK 开发的应用程序间有足够的通信带宽，UART 的波特率应大于921600。
 
->**说明** 
+> **说明** 
 > * 由于Manifold 2-G 的波特率可能与实际值略有偏差，因此请将波特率设置为1000000，详情请参见Manifold 2 <a href="https://dl.djicdn.com/downloads/manifold-2/20190528/Manifold_2_Production_Information_v1.0_Multi.pdf">使用说明书</a>。 
 > * 仅Linux 和ROS 系统支持使用DJI 的高级视觉功能。
 > * 使用DJI 无人机的视觉功能实现高级应用时，请添加应用程序所需的驱动程序和第三依赖库。

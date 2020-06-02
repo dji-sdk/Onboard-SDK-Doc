@@ -202,5 +202,6 @@ Restricted by the computing power of the computing platform, the applications de
 * An error occurs when decoding using FFmpeg: Please try to decode on Ubuntu 16.04, and make sure that the application running the decoder is correctly installed with RNDIS, US B and network port drivers to ensure that the application can correctly identify the M210 series and M300 RTK. Man-machine.
 
 ## Products
-* Matrice 300 RTK
-* Matrice 210 V2 series
+* Matrice 300 RTK: Support Z30、XTS、XT2、H20、H20T and don't need use controller could get the video stream.
+* Matrice 210 V2 Series: Only support mount X4S、X5S、X7、Z30、XTS、XT2、H20、H20T on the Gimbal I, and don't need use controller could get the video stream.
+> **NOTE** OSDK doesn't support obtain and switch the camera images of the camera which has multiple light sources. If you want to switch it, please switch it on the DJI Pilot.

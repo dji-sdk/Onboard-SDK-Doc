@@ -4,6 +4,7 @@ date: 2020-05-08
 version: 4.0.0
 keywords: [OSDK, quick start, standardization, guidance, DJI OSDK]
 ---
+
 > **NOTE** 
 > * This article is **Machine-Translated**. If you have any questions about this article, please send an <a href="mailto:dev@dji.com">E-mail </a>to DJI, we will correct it in time. DJI appreciates your support and attention.
 > * This series of documentation introduces the functions of **OSDK V4.0.0**, as well as the steps and methods of developing program using OSDK V4.0.0. If you are still using OSDK V3.9.x, please download the documentation of [OSDK V3.9.x](https://terra-1-g.djicdn.com/71a7d383e71a4fb8887a310eb746b47f/osdk/OSDK-3.9.0.zip).
@@ -28,12 +29,12 @@ Before using OSDK to develop the application, developers need to register a acco
       <img src="../images/how-to-use/6.png" height="90" width="90" style="vertical-align: middle" alt/> </span> </p> </div> </td> </td>
   </tr>
   <tr>
-   <td style="text-align: center"> <a href="https://account.dji.com/register?appId=dji_sdk&backUrl=https%3A%2F%2Fdeveloper.dji.com%2Fuser&locale=en_US" target="_ blank"> Sign Up</a> </td>
-   <td style="text-align: center"> <a href="https://www.dji.com/cn/products/compare-m200-series?site=brandsite&from=nav" target="_blank">Purchase Drones </a> </td>
-   <td style="text-align: center"> <a href="../purchaseguide/hardware.html"> Purchase Hardware Platform </a> </td>
-   <td style="text-align: center"> <a href="https://developer.dji.com/user/apps/#allhtml">Register Application</a> </td>
-   <td style="text-align: center"> <a href="../quickstart/run-the-sample.html"> Run the sample </a> </td>
-   <td style="text-align: center"> <a href="https://www.dji.com/downloads/softwares/assistant-dji-2-for-matrice"> Simulation and Debugging </a> </td>
+   <td style="text-align: center"> <a href="https://account.dji.com/register?appId=dji_sdk&backUrl=https%3A%2F%2Fdeveloper.dji.com%2Fuser&locale=en_US" target="_ blank">1.Sign Up</a> </td>
+   <td style="text-align: center"> <a href="https://www.dji.com/cn/products/compare-m200-series?site=brandsite&from=nav" target="_blank">2.Purchase Drones </a> </td>
+   <td style="text-align: center"> <a href="../purchaseguide/hardware.html"> 3.Purchase Hardware Platform </a> </td>
+   <td style="text-align: center"> <a href="https://developer.dji.com/user/apps/#allhtml">4.Register Application</a> </td>
+   <td style="text-align: center"> <a href="../quickstart/run-the-sample.html"> 5.Run the sample </a> </td>
+   <td style="text-align: center"> <a href="https://www.dji.com/downloads/softwares/assistant-dji-2-for-matrice">6.Simulation and Debugging </a> </td>
   </tr>
 </tbody>
 </table>

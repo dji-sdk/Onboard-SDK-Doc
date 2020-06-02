@@ -8,7 +8,7 @@ keywords: [Gimbal Control]
 > **NOTE** This article is **Machine-Translated**. If you have any questions about this article, please send an <a href="mailto:dev@dji.com">E-mail </a>to DJI, we will correct it in time. DJI appreciates your support and attention.     
 
 ## Overview
-Using the "Gimbal Control" function of the OSDK, developers could control the gimbal execute the action according to the logic designed by developers.
+Using the "Gimbal Control" function of the OSDK, developers could control the gimbal execute the action according to the logic designed by developer.
 
 ## Concept
 ### Gimbal Angle

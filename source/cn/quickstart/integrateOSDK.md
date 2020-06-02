@@ -30,7 +30,7 @@ OSDK 为开发者提供了所需使用的模块，具体架构如下所示：
       <img src="../../images/workflow/integrate_sdk_includes.png" width="650" alt/></span></p>
 </div></div>
 
->**说明：** L17～19 行为开发者自己编写的代码。
+> **说明：** L17～19 行为开发者自己编写的代码。
 
 ## 配置依赖项
 在Linux上使用CMake 开发基于OSDK 的应用程序时，请配置相应的依赖项：

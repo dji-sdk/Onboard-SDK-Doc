@@ -27,12 +27,12 @@ keywords: [注册, 选购, 入门, 学习, 进阶, 高级]
       <img src="../../images/how-to-use/6.png" height="90" width="90" style="vertical-align:middle" alt/></span></p></div></td></td>
   </tr>
   <tr>
-   <td style="text-align:center"><a href="https://account.dji.com/register?appId=dji_sdk&backUrl=https%3A%2F%2Fdeveloper.dji.com%2Fuser&locale=en_US" target="_blank">注册账号</a></td>
-   <td style="text-align:center"><a href="https://www.dji.com/cn/products/compare-m200-series?site=brandsite&from=nav" target="_blank" >选购无人机</a></td>
-   <td style="text-align:center"><a href="../purchaseguide/hardware.html">选购硬件平台</a></td>
-   <td style="text-align:center"><a href="https://developer.dji.com/user/apps/#allhtml">应用注册</a></td>
-   <td style="text-align:center"><a href="../quickstart/run-the-sample.html">运行示例程序</a></td>
-   <td style="text-align:center"><a href="https://www.dji.com/cn/downloads/softwares/assistant-dji-2-for-matrice">模拟与调试</a></td>
+   <td style="text-align:center"><a href="https://account.dji.com/register?appId=dji_sdk&backUrl=https%3A%2F%2Fdeveloper.dji.com%2Fuser&locale=en_US" target="_blank">1.注册账号</a></td>
+   <td style="text-align:center"><a href="https://www.dji.com/cn/products/compare-m200-series?site=brandsite&from=nav" target="_blank" >2.选购无人机</a></td>
+   <td style="text-align:center"><a href="../purchaseguide/hardware.html">3.选购硬件平台</a></td>
+   <td style="text-align:center"><a href="https://developer.dji.com/user/apps/#allhtml">4.应用注册</a></td>
+   <td style="text-align:center"><a href="../quickstart/run-the-sample.html">5.运行示例程序</a></td>
+   <td style="text-align:center"><a href="https://www.dji.com/cn/downloads/softwares/assistant-dji-2-for-matrice">6.模拟与调试</a></td>
   </tr>
 </tbody>
 </table>
@@ -45,8 +45,7 @@ keywords: [注册, 选购, 入门, 学习, 进阶, 高级]
 * 为方便您获得便捷高效的服务，请**正确地**填写注册信息。
 
 ## 2. 选用开发工具
-选购开发应用程序时所需使用的飞行平台和计算平台。
-
+选购开发应用程序时所需使用的飞行平台和计算平台：
 * [选购硬件产品](../purchaseguide/hardware.html)
 * [选购开发平台](../purchaseguide/development-platform.html)
 

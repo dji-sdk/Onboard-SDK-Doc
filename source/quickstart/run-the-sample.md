@@ -108,9 +108,10 @@ Edit the configuration file `XXXX.launch` and replace the ID, Key, and baud rate
 > **NOTE**
 > * OSDK ROS 4.0 node configuration file path is `/path/to/catkin_ws/src/Onboard-SDK-ROS/launch/dji_vehicle_node.launch`
 > * OSDK ROS 3.8 node configuration file path is `/path/to/catkin_ws/src/Onboard-SDK-ROS/launch/dji_sdk_node.launch` </br>
-> If you use the dji_sdk_node version 3.8.0, you need to place the `UserConfig.txt` in the specified path:
-> * If you use the command `rosrun`, the` UserConfig.txt` file needs to be placed in the current running directory;
-> * If you use the command `roslaunch`, the` UserConfig.txt` file needs to be placed in the `/home/{user}/. Ros`.
+
+If you use the dji_sdk_node version 3.8.0, you need to place the `UserConfig.txt`which in the OSDK package to the specified path:
+> * If you use the command `rosrun`, the` UserConfig.txt` file needs to be placed to the current running directory;
+> * If you use the command `roslaunch`, the` UserConfig.txt` file needs to be placed to the `/home/{user}/. Ros`.
 
 ##### 2. Run The Master Node
    * OSDK ROS 4.0.0    
@@ -135,7 +136,7 @@ Edit the configuration file `XXXX.launch` and replace the ID, Key, and baud rate
 
 1. Use Keil to open the project file `OnBoardSDK_STM32.uvprojx` located in the` sample/platform/STM32/OnBoardSDK_STM32/Project/`.
 
-2. Replace the Application Name, ID, key and User's Account in the `OnboardSDK_STM32/User/Activate.cpp`:
+2. Replace the ID and key of the application in the `OnboardSDK_STM32/User/Activate.cpp`:
 
 ```c
 void
@@ -151,7 +152,7 @@ userActivate()
 
 #### Compile
 1. Use Keil to open the project file `OnBoardSDK_STM32.uvprojx` located in the` sample/STM32/OnBoardSDK_STM32/Project/`directory.
-2. Open the Project tab, select Project Target;
+2. Open the Project tab, select “Options for Target”;
 3. In the C/C ++ tab, select the sample code to be compiled, `-DXXXX_XXXXX_XXXXX`.
 
 <div>
@@ -168,8 +169,8 @@ userActivate()
 > **NOTE** If you need to debug the sample program, please set the baud rate of the serial debugging tool. The default baud rate of USART3 port is 921600; the default baud rate of USART2 port is 115200.
 
 ## Activation And Authorization
-When a user uses the application developed  based on OSDK for the first time, the application will obtain a DJI license through the drone or remote control to activate the application.
-* Activate the application:  DJI Assistant 2
+When executing the application which develope based on OSDK on the first time, developer need log in the DJI Assistant 2 with developer’s account and obtain the authorization license from DJI's server to activate the application.
+* Activate the application: DJI Assistant 2
 * Activate troubleshooting
    * Please refer to [Device Connection](./device-connection.html) and connect the drone, the third-party onboard computer; please confirm that the voltage of the UART line is 3.3V.
    * Please check that the devices running DJI GO and other Mobile Apps could access the Internet.

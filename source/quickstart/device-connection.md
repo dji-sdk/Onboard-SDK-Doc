@@ -29,7 +29,7 @@ M210 V2 series include M210 V2 and M210 RTK V2. For details, please refer to [Us
 > * It is recommended to use [Onboard Computer Mounting Bracket](https://store.dji.comproduct/manifold-2-mounting-bracket) to make the safety and reliability of the onboard computer.
 
 #### Connected To Manifold 2
-When connecting the onboard computer Manifold 2 to the M210 V2 series, please use the **USB to TTL cable (FT232BL) or use a double-headed USB cable** as shows in Figure 2.
+When connecting the onboard computer Manifold 2 to the M210 V2 series, please use the **USB to TTL cable (FT232BL) and the double-headed USB cable** as shows in Figure 2.
 
 <div>
 <div style="text-align: center"> <p> Figure 2. Connect the onboard computer to the M210 V2 series </p>
@@ -48,7 +48,9 @@ When connecting the onboard computer Manifold 2 to the M210 V2 series, please us
     * Set the power interface on or off in `utility/bin/` (reset the power switch after the drone restarts);
 `./M210ConfigTool --usb-port/dev/ttyACM0 --config-file UserConfig.txt --power-supply on`
 
-> **NOTE** If developer want to use Matrice 210 RTK for time synchronization, please use a cable to connect the SYNC Line interface on Manifold 2 to the PPS and GND pins on the rear of the drone.
+> **NOTE** 
+> * The voltage of M210 V2 Series is 3.3V;
+> * If developer want to use Matrice 210 RTK for Time Synchronization, please use the cable connect the interface SYNC Line on Manifold 2 to the PPS and GND pins on the rear of the drone.
 
 #### Connected To Third-Party Onboard Computer
 According to the situation of the third-party onboard computer, connect the M210 V2 series to the third-party onboard computer:
@@ -60,12 +62,15 @@ Communicate with the drone through the **dual USB cable**.
 * Power Output     
 When using an external power supply to power a third-party onboard computer, please ensure that it does not interfere with the normal operation of the drone.
 
-> **NOTE** Don't use the VCC pin to power the third-party onboard computer, otherwise the drone or the third-party onboard computer may be damaged.
+> **NOTE** 
+> * Please use USB cable and serial port cable connect the third-party development platform to M210 V2 series at same time;
+> * Don't use the VCC pin to power the third-party onboard computer, otherwise the drone or the third-party onboard computer may be damaged.
 
 ## Using M300 RTK
 
 > **NOTE**
-> * When installing Manifold 2 or a third-party onboard computer on the Matrice 300 RTK, please use the OSDK adapter board.
+> * The voltage of the serial port on the M300 RTK and OSDK adapter board is 3.3V;
+> * When installing Manifold 2 or a third-party onboard computer on the Matrice 300 RTK, please use the OSDK adapter board;
 > * When using a third-party platform as an onboard computer, please avoid generating magnetic fields.
 
 In order to facilitate developers to fix the onboard computer Manifold 2 or a third-party onboard computer on the M300 RTK, DJI provides an onboard computer adapter board, which provides the XT30 24V power port, OSDK serial port and OSDK USB 2.0 port, developers can design the onboard computer adapter board according to the structure and interface of the adapter board. To avoid accidents such as burning the adapter board or onboard computer, please read the following carefully.
@@ -194,14 +199,13 @@ In order to facilitate developers to fix the onboard computer Manifold 2 or a th
 * Power Output
     * If you need to power the onboard computer, please use the VCC pin (the rated voltage is 24V 4A, the total power output by the drone is 96w).
     * RSVD1, RSVD2 are reserved pins, RSVD1 pin **must be** floating; RSVD2 pin **must** is GND.
+    * Developer **must** use the ON_DET pin, and the opposite connected to the ON_DET's pin **must** is **GND**.
 * Data Communication
     * If you want to use the USB 2.0 function, please use the DP and DM pins.
     * If you want to use the PWM signal output by the drone, please use the PWM pin.
     * To use the serial port on the drone to communicate with the onboard computer, please use the UART_RX and UART_TX pins.
         * UART_RX: This pin that receives the drone output signal **through the connecting line** of the onboard computer adapter board, this pin corresponds to the signal output pin TX of the drone OSDK expansion interface.
         * UART_TX: This pin is used to send the signal from the drone to the onboard computer with adapter board, corresponding the receiving pin UART_RX.
-* Application Function
-     * If you need to use the synchronization signal output by the drone, please use the SYNC (PPS) pin.
-     * Using an onboard computer, developer **must** use the ON_DET pin, and the opposite connected to the ON_DET's pin **must** is **GND**.
+* Time Synchronization: If you need to use the synchronization signal output by the drone, please use the SYNC (PPS) pin.
 
 > **NOTE** After connecting to the onboard computer, please set the baud rate of the OSDK interface on the M300 RTK in Assistant 2.
