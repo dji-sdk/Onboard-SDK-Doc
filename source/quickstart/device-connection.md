@@ -197,7 +197,10 @@ In order to facilitate developers to fix the onboard computer Manifold 2 or a th
 
 ##### Interface Function
 * Power Output
-    * If you need to power the onboard computer, please use the VCC pin (the rated voltage is 24V 4A, the total power output by the drone is 96w).
+    * If you need to power the onboard computer, please use the VCC pin
+       > **NOTE** 
+          > * the rated voltage of this interface is 24V 4A, and the total power output by the drone is 96w;
+          > * Those VCC pins are on the same network, developer could connect the VCC pins according to actual requirements. But in order to ensure the drone output the current continuously and steadily, please connect 4 VCC pins at the same time.
     * RSVD1, RSVD2 are reserved pins, RSVD1 pin **must be** floating; RSVD2 pin **must** is GND.
     * Developer **must** use the ON_DET pin, and the opposite connected to the ON_DET's pin **must** is **GND**.
 * Data Communication

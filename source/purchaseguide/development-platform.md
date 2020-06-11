@@ -1,5 +1,5 @@
 ---
-title: Hardware Platform
+title: Development Platform
 date: 2020-05-08
 version: 4.0.0
 keywords: [development kit, linux, freertos]

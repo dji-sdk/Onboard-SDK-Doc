@@ -20,6 +20,7 @@ keywords: [目标识别, CNN]
 > * M210 系列无人机支持获取FPV 相机和I 号云台上相机的H.264 码流或RGB 图像；M300 RTK 无人机**支持获取FPV 相机和所有云台相机的H.264 码流**。
 > * 由于获取FPV 相机码流和获取I 号云台上相机码流的回调函数在各自独立的线程中运行，OpenCV 的imshow 模块仅支持在一个线程中运行，因此仅支持开发者获取FPV 相机或获取I 号云台相机H.264 码流和RGB 图像。
 > * 获取相机码流后，请安装FFmpeg 等解码器解码。
+> * 有关H.264 标准码流的相关参考请参见<a href="https://www.itu.int/rec/T-REC-H.264-201906-I/en">H.264 码流标准</a> 。
 
 #### 分辨率和帧频
 OSDK 支持开发者获取M210 系列和M300 RTK 无人机上I 号云台上相机的码流，开发者或用户可根据实际的使用需求挂载不同型号的相机，根据相机的型号以及相机的工作模式，指定帧速率，获取所需的码流。
@@ -128,67 +129,195 @@ vehicle->gimbal->setSpeed(&gimbalSpeed);
 调用`vehicle->advancedSensing->stopFPVCameraStream()`接口，断开与相机的连接，销毁读取相机码流的线程。     
 
 ## 使用获取相机H.264 码流的功能
-#### 1. 控制应用程序获取相机H.264 码流
+#### 1. 开始获取相机H.264 码流
 控制应用程序接收指定相机的H.264 码流。
 
 ```C++
-switch (inputChar) {
-  case 'a':
-    vehicle->advancedSensing->startH264Stream(LiveView::OSDK_CAMERA_POSITION_FPV,
-                                       liveViewSampleCb,
-                                       (void *) "FPV.h264");
-    break;
-  case 'b':
-    vehicle->advancedSensing->startH264Stream(LiveView::OSDK_CAMERA_POSITION_NO_1,
-                                       liveViewSampleCb,
-                                       (void *) "MainCam.h264");
-    break;
-  case 'c':
-    vehicle->advancedSensing->startH264Stream(LiveView::OSDK_CAMERA_POSITION_NO_2,
-                                       liveViewSampleCb,
-                                       (void *) "ViceCam.h264");
-    break;
-  case 'd':
-    vehicle->advancedSensing->startH264Stream(LiveView::OSDK_CAMERA_POSITION_NO_3,
-                                       liveViewSampleCb,
-                                       (void *) "TopCam.h264");
-    break;
-}
- 
-DSTATUS("Wait 10 second to record stream");
-sleep(10);
- 
-switch (inputChar) {
-  case 'a':
-    vehicle->advancedSensing->stopH264Stream(LiveView::OSDK_CAMERA_POSITION_FPV);
-    break;
-  case 'b':
-    vehicle->advancedSensing->stopH264Stream(LiveView::OSDK_CAMERA_POSITION_NO_1);
-    break;
-  case 'c':
-    vehicle->advancedSensing->stopH264Stream(LiveView::OSDK_CAMERA_POSITION_NO_2);
-    break;
-  case 'd':
-    vehicle->advancedSensing->stopH264Stream(LiveView::OSDK_CAMERA_POSITION_NO_3);
-    break;
-}
+LiveView::LiveViewErrCode startH264Stream(LiveView::LiveViewCameraPosition pos, H264Callback cb, void *userData);
 ```
-
-#### 2. 保存或处理H.264 码流
-基于OSDK 开发的应用程序获取H.264 码流后，即可将获得的码流保存在机载计算机本地，文件名为`userData`，用户可对保存在机载计算机中的H.264 码流执行所需的操作。
+#### 2. 停止获取H.264 码流
+控制应用程序停止接收相机的H.264 码流。
 
 ```c++
-void liveViewSampleCb(uint8_t* buf, int bufLen, void* userData) {
-  if (userData) {
-    const char *filename = (const char *) userData;
-    writeStreamData(filename, buf, bufLen);
-  } else {
-  DERROR("userData is a null value (should be a file name to log h264 stream).");
-  }
-}
+LiveView::LiveViewErrCode stopH264Stream(LiveView::LiveViewCameraPosition pos);
 ```
 
-开发者获取指定相机的H.264 码流后，使用`ffplay FPV.h264`命令即可播放所获取的H.264 文件。
+#### 3. 保存或处理H.264 码流
+基于OSDK 开发的应用程序获取H.264 码流后，开发者即可对所获取的H.264 码流执行所需的操作。
+
+```c++
+typedef void (*H264Callback)(uint8_t* buf, int bufLen, void* userData);
+```
+
+> **说明** 
+> * 开发者获取指定相机的H.264 码流后，使用`ffplay FPV.h264`命令即可播放所获取的H.264 文件。   
+> * 借助OSDK 提供的Sample (djiosdk-liveview-sample) 获取H.264 码流数据，并将接收到的H.264 码流数据以H.264 文件的形式记录在本地，该文件名为`userData`。
+> * 使用Sample camera-stream-callback-sample和camera-stream-poll-sample 可借助FFMpeg 对H.264 码流解码。开发者可借助Sample 实现所需的功能。
+
+#### H.264 码流解析
+开发者使用Elecard StreamEye Tools，H264Visa等H.264 解码软件，即可解码和分析使用OSDK 获取的H.264 码流，如下为使用Sample djiosdk-liveview-sample 获取DJI 无人机上相机码流的分析结果，该视频均在室内录制，时长为9~10秒。
+
+<div>
+<div style="text-align: center"><p>表1.相机H.264 码流分析结果</p></div>
+<table>
+<tbody>
+ <tr> 
+  <th colspan="2" ><br></th><th>M300 FPV</th><th>M210 V2 FPV</th><th>Z30</th><th>XTS</th><th colspan="1" >X7</th><th colspan="1" >H20T</th></tr>
+ <tr> 
+  <th colspan="2" >Video Stream Type</th><td>AVC/H.264</td>
+     <td>AVC/H.264</td>
+     <td>AVC/H.264</td>
+     <td>AVC/H.264</td>
+     <td>AVC/H.264</td>
+     <td>AVC/H.264</td></tr>
+ <tr> 
+  <th colspan="2" >Resolution</th><td>608 x 448</td>
+     <td>608 x 448</td>
+     <td>1280 x 720</td>
+     <td>640 x 512</td>
+     <td>1280 x 720</td>
+     <td>1920 x 1080</td></tr>
+ <tr> 
+  <th colspan="2" >Profile</th><td>Main:4.1</td>
+     <td>Main:4.1</td>
+     <td>Main:4.1</td>
+     <td>High:5.0</td>
+     <td>High:4.0</td>
+     <td>High:4.0</td></tr>
+ <tr> 
+  <th colspan="2" >Aspect Ratio</th><td>4 x 3</td>
+     <td>4 x 3</td>
+     <td>16 x 9</td>
+     <td>5 x 4</td>
+     <td>16 x 9</td>
+     <td>16 x 9</td></tr>
+ <tr> 
+  <th colspan="2" >Interlaced</th><td>No</td>
+     <td>No</td>
+     <td>No</td>
+     <td>No</td>
+     <td>No</td>
+     <td>No</td></tr>
+ <tr> 
+  <th colspan="2" >File Size (Bytes)</th><td>867619</td>
+     <td>877819</td>
+     <td>4559469</td>
+     <td>5472872</td>
+     <td>8765755</td>
+     <td>17243162</td></tr>
+ <tr> 
+  <th colspan="2" >Frames Count</th><td>271</td>
+     <td>274</td>
+     <td>300</td>
+     <td>240</td>
+     <td>294</td>
+     <td>299</td></tr>
+ <tr> 
+  <th rowspan="3" ><p>Frame Size</p></th><td>Max</td>
+     <td><p>5095</p></td>
+     <td>5875</td>
+     <td>34848</td>
+     <td>53368</td>
+     <td>45846</td>
+     <td>71881</td></tr>
+ <tr><td>Avg</td>
+     <td>3201</td>
+     <td>3203</td>
+     <td>15198</td>
+     <td>22803</td>
+     <td>29815</td>
+     <td>57669</td></tr>
+ <tr><td>Min</td>
+     <td>1990</td>
+     <td>1456</td>
+     <td>4164</td>
+     <td>11025</td>
+     <td>18532</td>
+     <td>51506</td></tr>
+ <tr> 
+  <th rowspan="2" ><p>I Frame</p></th><td>Max</td>
+     <td><p>4802</p></td>
+     <td>4641</td>
+     <td>0</td>
+     <td>51729</td>
+     <td>0</td>
+     <td>0</td></tr>
+ <tr><td>Avg</td>
+     <td>4243</td>
+     <td>4117</td>
+     <td>0</td>
+     <td>37054</td>
+     <td>0</td>
+     <td>0</td></tr>
+ <tr> 
+  <th rowspan="2" ><p>P Frame</p></th><td>Max</td>
+     <td><p>5095</p></td>
+     <td>5875</td>
+     <td>34848</td>
+     <td>53368</td>
+     <td>45846</td>
+     <td>71881</td></tr>
+ <tr><td>Avg</td>
+     <td>3177</td>
+     <td>3183</td>
+     <td>15198</td>
+     <td>22312</td>
+     <td>29815</td>
+     <td>57669</td></tr>
+ <tr> 
+  <th rowspan="2" ><p>B Frame</p></th><td>Max</td>
+     <td><p>0</p></td>
+     <td>0</td>
+     <td>0</td>
+     <td>0</td>
+     <td>0</td>
+     <td>0</td></tr>
+ <tr><td>AVG</td>
+     <td>0</td>
+     <td>0</td>
+     <td>0</td>
+     <td>0</td>
+     <td>0</td>
+     <td>0</td></tr>
+ <tr> 
+  <th rowspan="2" ><p>FrameRate</p></th><td>Declared</td>
+     <td><p>30.00</p></td>
+     <td>30.00</td>
+     <td>0.00</td>
+     <td>25.00</td>
+     <td>25.00</td>
+     <td>30.00</td></tr>
+ <tr><td>Real</td>
+     <td>30.00</td>
+     <td>30.00</td>
+     <td>30.00</td>
+     <td>25.37</td>
+     <td>25.39</td>
+     <td>30.00</td></tr>
+ <tr> 
+  <th rowspan="3" ><p>BitRate (bit/s)</p></th><td>Max</td>
+     <td>846960</td>
+     <td>835680</td>
+     <td>3988324</td>
+     <td>5367808</td>
+     <td>6789069</td>
+     <td>14462654</td></tr>
+ <tr><td>Avg</td>
+     <td>768240</td>
+     <td>768720</td>
+     <td>3647523</td>
+     <td>4628379</td>
+     <td>6056010</td>
+     <td>13840574</td></tr>
+ <tr><td>Min</td>
+     <td>731040</td>
+     <td>709920</td>
+     <td>3070083</td>
+     <td>4179404</td>
+     <td>5401762</td>
+     <td>13307293</td></tr></tbody></table>
+</div>
+
 
 ## 常见问题
 #### 解码器解码时出现错误。
@@ -196,6 +325,9 @@ void liveViewSampleCb(uint8_t* buf, int bufLen, void* userData) {
 * 解码速度较慢：解码器在解码第一帧时需要一段时间时间
 * 帧丢失：计算平台算力不足
 * 使用FFmpeg 解码时出现报错：请在Ubuntu 16.04 上尝试解码，且确认运行解码器的应用程序正确安装了RNDIS、USB及网口驱动，确保应用程序能够正确识别M210 系列和M300 RTK 的无人机。
+
+#### 无法解析相机Z30 的H.264 码流数据 
+由于Z30 采用Main Profile技术，使用GDR 编码格式，因此开发者使用OSDK 提供的Sample，无法通过FFMpeg 解码方式解码相机Z30 的H.264 视频流，但开发者可根据实际的开发环境选用其他解码器，如硬件解码器或JM 解码器等对相机Z30 的H.264 码流数据解码。
 
 ## 适用产品
 * Matrice 300 RTK：支持挂载Z30、XTS、XT2、H20、H20T（开发者无需使用遥控器即可获取视频流）

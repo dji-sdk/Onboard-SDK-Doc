@@ -17,31 +17,31 @@ It is convenience for developers to use the latest version of the OSDK, it could
 ## Control Functions
 #### Time Synchronization
 * Obtain NMEA data: Obtain the data of the positioning system used by the drone, such as GPS, Galileo, Beidou and GLONASS, etc.
-* Get PPS data: get the hardware trigger pulse signal of the drone
-* Obtain UTC time: Obtain uniform UTC time
+* Get PPS data: get the hardware trigger pulse signal of the drone.
+* Obtain UTC time: Obtain uniform UTC time.
 
 #### Basic Control
 * Set or obtain parameters of drone's flight controller, such as return altitude, obstacle avoidance status, etc.
-* Perform basic flight tasks, such as take-off, landing and return
-* Basic drone control functions, such as speed control, attitude control and position control
+* Perform basic flight tasks, such as take-off, landing and return.
+* Basic drone control functions, such as speed control, attitude control and position control.
 
 #### Motion Planning
-* Waypoint Mission: control the DJI drone to achieve autonomous flight according to preset multiple waypoints
-* Hotspot Mission: control the drone to fly around the set points of interest
+* Waypoint Mission: control the DJI drone to achieve autonomous flight according to preset multiple waypoints.
+* Hotspot Mission: control the drone to fly around the set points of interest.
 
 ## Management Functions
 #### Message Management
-* Broadcast: The application developed by OSDK can receive the data actively pushed by the drone to other modules, and at the same time broadcast the data of the third-party sensor to the third-party information receiving device
-* Message subscription: applications developed using OSDK can record the data that users need to subscribe
+* Broadcast: The application developed by OSDK can receive the data actively pushed by the drone to other modules, and at the same time broadcast the data of the third-party sensor to the third-party information receiving device.
+* Message subscription: applications developed using OSDK can record the data that users need to subscribe.
 
 #### Gimbal Management
-* Gimbal control: control the rotation angle and angular velocity of the gimbal
-* Information acquisition: Obtain the current angle and angular velocity of the gimbal
+* Gimbal control: control the rotation angle and angular velocity of the gimbal.
+* Information acquisition: Obtain the current angle and angular velocity of the gimbal.
 
 #### Camera Management
-* Parameter setting: set the camera parameters such as aperture, exposure time and resolution
-* Camera control: control the camera to realize functions such as taking pictures, recording videos and pointing zoom
-* Stream acquisition: Obtain the RGB stream and H.264 stream of the camera
+* Parameter setting: set the camera parameters such as aperture, exposure time and resolution.
+* Camera control: control the camera to realize functions such as taking pictures, recording videos and pointing zoom.
+* Stream acquisition: Obtain the RGB stream and H.264 stream of the camera.
 
 
 ## Expanding Functions
@@ -54,4 +54,4 @@ It is convenience for developers to use the latest version of the OSDK, it could
 * Object recognition
 * Get perceptual grayscale image
 
-> **NOTE** The OSDK functions supported by different operating systems and development platforms are different. For details, please refer to [Development Platform](../purchaseguide/development-platform.html)
+> **NOTE** The OSDK functions supported by different operating systems and development platforms are different. For details, please refer to [Development Platform](../purchaseguide/development-platform.html).

@@ -22,6 +22,7 @@ In order to satisfy the function of developers using OSDK to obtain the camera�
 > * M210 series support H.264 bitstream or RGB images of FPV cameras and main cameras; M300 RTK **support H.264 bitstreams of FPV cameras and others cameras**.
 > * The callback functions for obtaining the FPV camera's stream and obtaining the main camera's stream run in separate threads, OpenCV's module imshow only supports running in one thread, so developers are allowed to obtain FPV cameras or main camera's H.264 stream and RGB images.
 > * After obtaining the camera’s stream, please install a decoder such as FFmpeg for decoding.
+> * The details of the H.264 criterion please refer to <a href="https://www.itu.int/rec/T-REC-H.264-201906-I/en">H.264 Criterion</a>.
 
 #### Resolution And Frame Rate
 OSDK supports developers to obtain the main camera’s stream which on the M210 series and M300 RTK. Developers or users can mount different models of cameras and specified the frame rate, obtain the required code stream according the mode and module of the camera.
@@ -132,74 +133,206 @@ Call the `vehicle-> advancedSensing-> startFPVCameraStream (& show_rgb, NULL)` i
 Call the `vehicle-> advancedSensing-> stopFPVCameraStream ()` interface to disconnect from the camera and destroy the thread that reads the camera code stream.
 
 ## Get the H.264 Stream
-#### 1. Get the camera H.264 stream  
+#### 1. Start to get the camera H.264 stream  
 Control the application to receive the H.264 stream of the specified camera.
 
 ```C++
-switch (inputChar) {
-  case 'a':
-    vehicle->advancedSensing->startH264Stream(LiveView::OSDK_CAMERA_POSITION_FPV,
-                                       liveViewSampleCb,
-                                       (void *) "FPV.h264");
-    break;
-  case 'b':
-    vehicle->advancedSensing->startH264Stream(LiveView::OSDK_CAMERA_POSITION_NO_1,
-                                       liveViewSampleCb,
-                                       (void *) "MainCam.h264");
-    break;
-  case 'c':
-    vehicle->advancedSensing->startH264Stream(LiveView::OSDK_CAMERA_POSITION_NO_2,
-                                       liveViewSampleCb,
-                                       (void *) "ViceCam.h264");
-    break;
-  case 'd':
-    vehicle->advancedSensing->startH264Stream(LiveView::OSDK_CAMERA_POSITION_NO_3,
-                                       liveViewSampleCb,
-                                       (void *) "TopCam.h264");
-    break;
-}
- 
-DSTATUS("Wait 10 second to record stream");
-sleep(10);
- 
-switch (inputChar) {
-  case 'a':
-    vehicle->advancedSensing->stopH264Stream(LiveView::OSDK_CAMERA_POSITION_FPV);
-    break;
-  case 'b':
-    vehicle->advancedSensing->stopH264Stream(LiveView::OSDK_CAMERA_POSITION_NO_1);
-    break;
-  case 'c':
-    vehicle->advancedSensing->stopH264Stream(LiveView::OSDK_CAMERA_POSITION_NO_2);
-    break;
-  case 'd':
-    vehicle->advancedSensing->stopH264Stream(LiveView::OSDK_CAMERA_POSITION_NO_3);
-    break;
-}
+LiveView::LiveViewErrCode startH264Stream(LiveView::LiveViewCameraPosition pos, H264Callback cb, void *userData);
 ```
 
-#### 2. Save or Process H.264 stream
-After obtaining the H.264 stream, the application developed based on OSDK would save the H.264 stream and the file name is `userData` for developer to perform.
+#### 2. Stop getting the H.264 stream
+Control the application stop getting the H.264 stream of the specified camera.
 
 ```c++
-void liveViewSampleCb(uint8_t* buf, int bufLen, void* userData) {
-  if (userData) {
-    const char *filename = (const char *) userData;
-    writeStreamData(filename, buf, bufLen);
-  } else {
-  DERROR("userData is a null value (should be a file name to log h264 stream).");
-  }
-}
+LiveView::LiveViewErrCode stopH264Stream(LiveView::LiveViewCameraPosition pos);
 ```
 
-After obtains the H.264 stream, developer could use `ffplay FPV.h264` to play the H.264 file which obtained.
+#### 3. Save or Process H.264 stream
+After obtaining the H.264 stream, the application developed based on OSDK would option the H.264 stream for developer.
+
+```c++
+typedef void (*H264Callback)(uint8_t* buf, int bufLen, void* userData);
+```
+
+> **NOTE** 
+> * After obtains the H.264 stream, developer could use `ffplay FPV.h264` to play the H.264 file which obtained.
+> * Using the sample (djiosdk-liveview-sample)  offered by the OSDK, developer could obtain the h.264 stream and recorded as the H.264 file, which named 'userData'.    
+> * Using Sample camera-stream-callback-sample and camera-stream-poll-sample. Developer could decode the H.264 stream and implement the required functionality.
+
+#### Parsing
+The developer can use Elecard StreamEye Tools, H264Visa and other H.264 decoding software to decode and analyze the H.264 stream obtained by OSDK.             
+The following is the analysis result of the stream obtained by using Sample djiosdk-liveview-sample, the video is recorded in the room for 9~10 seconds.
+
+<div>
+<div style="text-align: center"><p>Table1.The analysis result of the H.264</p></div>
+<table>
+<tbody>
+ <tr> 
+  <th colspan="2" ><br></th><th>M300 FPV</th><th>M210 V2 FPV</th><th>Z30</th><th>XTS</th><th colspan="1" >X7</th><th colspan="1" >H20T</th></tr>
+ <tr> 
+  <th colspan="2" >Video Stream Type</th><td>AVC/H.264</td>
+     <td>AVC/H.264</td>
+     <td>AVC/H.264</td>
+     <td>AVC/H.264</td>
+     <td>AVC/H.264</td>
+     <td>AVC/H.264</td></tr>
+ <tr> 
+  <th colspan="2" >Resolution</th><td>608 x 448</td>
+     <td>608 x 448</td>
+     <td>1280 x 720</td>
+     <td>640 x 512</td>
+     <td>1280 x 720</td>
+     <td>1920 x 1080</td></tr>
+ <tr> 
+  <th colspan="2" >Profile</th><td>Main:4.1</td>
+     <td>Main:4.1</td>
+     <td>Main:4.1</td>
+     <td>High:5.0</td>
+     <td>High:4.0</td>
+     <td>High:4.0</td></tr>
+ <tr> 
+  <th colspan="2" >Aspect Ratio</th><td>4 x 3</td>
+     <td>4 x 3</td>
+     <td>16 x 9</td>
+     <td>5 x 4</td>
+     <td>16 x 9</td>
+     <td>16 x 9</td></tr>
+ <tr> 
+  <th colspan="2" >Interlaced</th><td>No</td>
+     <td>No</td>
+     <td>No</td>
+     <td>No</td>
+     <td>No</td>
+     <td>No</td></tr>
+ <tr> 
+  <th colspan="2" >File Size (Bytes)</th><td>867619</td>
+     <td>877819</td>
+     <td>4559469</td>
+     <td>5472872</td>
+     <td>8765755</td>
+     <td>17243162</td></tr>
+ <tr> 
+  <th colspan="2" >Frames Count</th><td>271</td>
+     <td>274</td>
+     <td>300</td>
+     <td>240</td>
+     <td>294</td>
+     <td>299</td></tr>
+ <tr> 
+  <th rowspan="3" ><p>Frame Size</p></th><td>Max</td>
+     <td><p>5095</p></td>
+     <td>5875</td>
+     <td>34848</td>
+     <td>53368</td>
+     <td>45846</td>
+     <td>71881</td></tr>
+ <tr><td>Avg</td>
+     <td>3201</td>
+     <td>3203</td>
+     <td>15198</td>
+     <td>22803</td>
+     <td>29815</td>
+     <td>57669</td></tr>
+ <tr><td>Min</td>
+     <td>1990</td>
+     <td>1456</td>
+     <td>4164</td>
+     <td>11025</td>
+     <td>18532</td>
+     <td>51506</td></tr>
+ <tr> 
+  <th rowspan="2" ><p>I Frame</p></th><td>Max</td>
+     <td><p>4802</p></td>
+     <td>4641</td>
+     <td>0</td>
+     <td>51729</td>
+     <td>0</td>
+     <td>0</td></tr>
+ <tr><td>Avg</td>
+     <td>4243</td>
+     <td>4117</td>
+     <td>0</td>
+     <td>37054</td>
+     <td>0</td>
+     <td>0</td></tr>
+ <tr> 
+  <th rowspan="2" ><p>P Frame</p></th><td>Max</td>
+     <td><p>5095</p></td>
+     <td>5875</td>
+     <td>34848</td>
+     <td>53368</td>
+     <td>45846</td>
+     <td>71881</td></tr>
+ <tr><td>Avg</td>
+     <td>3177</td>
+     <td>3183</td>
+     <td>15198</td>
+     <td>22312</td>
+     <td>29815</td>
+     <td>57669</td></tr>
+ <tr> 
+  <th rowspan="2" ><p>B Frame</p></th><td>Max</td>
+     <td><p>0</p></td>
+     <td>0</td>
+     <td>0</td>
+     <td>0</td>
+     <td>0</td>
+     <td>0</td></tr>
+ <tr><td>AVG</td>
+     <td>0</td>
+     <td>0</td>
+     <td>0</td>
+     <td>0</td>
+     <td>0</td>
+     <td>0</td></tr>
+ <tr> 
+  <th rowspan="2" ><p>FrameRate</p></th><td>Declared</td>
+     <td><p>30.00</p></td>
+     <td>30.00</td>
+     <td>0.00</td>
+     <td>25.00</td>
+     <td>25.00</td>
+     <td>30.00</td></tr>
+ <tr><td>Real</td>
+     <td>30.00</td>
+     <td>30.00</td>
+     <td>30.00</td>
+     <td>25.37</td>
+     <td>25.39</td>
+     <td>30.00</td></tr>
+ <tr> 
+  <th rowspan="3" ><p>BitRate (bit/s)</p></th><td>Max</td>
+     <td>846960</td>
+     <td>835680</td>
+     <td>3988324</td>
+     <td>5367808</td>
+     <td>6789069</td>
+     <td>14462654</td></tr>
+ <tr><td>Avg</td>
+     <td>768240</td>
+     <td>768720</td>
+     <td>3647523</td>
+     <td>4628379</td>
+     <td>6056010</td>
+     <td>13840574</td></tr>
+ <tr><td>Min</td>
+     <td>731040</td>
+     <td>709920</td>
+     <td>3070083</td>
+     <td>4179404</td>
+     <td>5401762</td>
+     <td>13307293</td></tr></tbody></table>
+</div>
 
 ## FAQ
 #### An error occurred while the decoder was decoding.
 Restricted by the computing power of the computing platform, the applications developed based on OSDK may have the following problems when encoding and decoding:
 * Slow decoding speed: the decoder takes a while to decode the first frame
 * Frame loss: insufficient computing power on the computing platform
-* An error occurs when decoding using FFmpeg: Please try to decode on Ubuntu 16.04, and make sure that the application running the decoder is correctly installed with RNDIS, US B and network port drivers to ensure that the application can correctly identify the M210 series and M300 RTK. Man-machine.
+* An error occurs when decoding using FFmpeg: Please try to decode on Ubuntu 16.04, and make sure that the application running the decoder is correctly installed with RNDIS, US B and network port drivers to ensure that the application can correctly identify the M210 series and M300 RTK.
+
+#### Unable to analyse the Z30's H.264 stream
+Z30 adopts Main Profile technology and USES GDR encoding format, developers cannot decode the H.264 video stream of camera Z30 by FFMpeg decoding method by using the sample provided by OSDK, but according to the actual development environment, developers can choose other decoders such as hardware decoder or JM decoder to decode the H.264 stream of the Z30.  
 
 ## Products
 * Matrice 300 RTK: Support Z30、XTS、XT2、H20、H20T and don't need use controller could get the video stream.

@@ -2,7 +2,7 @@
 title: 运动规划
 date: 2020-05-08
 version: 4.0.0
-keywords: []
+keywords: [运动规划, 触发器, 动作器, 热点任务, 航点任务]
 ---
 
 ## 概述

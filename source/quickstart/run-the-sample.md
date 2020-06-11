@@ -2,7 +2,7 @@
 title: Run The Sample
 date: 2020-05-08
 version: 2.1.0
-keywords: [Payload SDK]
+keywords: [OSDK, sample, Linux, ros, rtos]
 ---
 > **NOTE** This article is **Machine-Translated**. If you have any questions about this article, please send an <a href="mailto:dev@dji.com">E-mail </a>to DJI, we will correct it in time. DJI appreciates your support and attention.
 

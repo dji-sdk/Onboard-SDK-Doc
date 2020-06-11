@@ -1,5 +1,5 @@
 ---
-title: Hardware Platform
+title: Development Hardware
 date: 2020-05-08
 version: 4.0.0
 keywords: [drone, Onboard Computer, M300 RTK]

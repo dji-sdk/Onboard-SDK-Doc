@@ -2,8 +2,8 @@
   title: " "
   list:
     -
-      title: "最新公告"
-      path: "/cn/introduction/announcement.html"
+      title: 最新公告
+      path: /cn/introduction/announcement.html
 -
   title: 介绍
   list:
