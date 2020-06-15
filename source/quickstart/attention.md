@@ -78,8 +78,5 @@ When Matrice 210 V2 and Matrice 210 RTK V2 ware equipped with Onboard Computer, 
 >* This command will fail after restart the drone and development platform. Please use the command to start the drone's simulation feature before you need.
 >* DJI pilot does not have the visual interface, developer only could view the status of the Application by the Map, Attitude, Altitude, Speed and other data.
 
-#### Using DJI assistant 2
- enables developers to use the emulator in DJI assistant 2 to simulate osdk based applications.
- 
 #### Using DJI Assistant 2
 After connecting the M300 RTK to DJI Assistant 2, developer can use the simulator in DJI Assistant 2 to simulate the flight of the drone.

@@ -49,7 +49,7 @@ acm_port:        //ACM port number
 
 #### Compile
 ##### 1. Confirm Access Permissions
-Before compiling the sample code, please use the `ls -l/dev/xxx` command on the terminal to check the access rights of the serial port (UART interface) of the hardware platform. `Command to gain access to serial device.
+Before compiling the sample code, please use the `ls -l/dev/xxx` command on the terminal to check the access rights of the serial port (UART) of the hardware platform. Otherwise, you can use the command ` sudo chmod 777 /dev/xxx` obtain the access permissions of the hardware.
 
 > **NOTE** xxx is the name of the serial port.
 
@@ -62,8 +62,7 @@ Enter the directory of the sample code: `onboard-sdk`, and use the following com
 #### Execute The Sample Program
 ##### 1. Copy The Configuration File
 Copy the configuration file `UserConfig.txt` to the bin file:
-`cp ../sample/platform/linux/common/UserConfig.txt bin/
-`
+`cp ../sample/platform/linux/common/UserConfig.txt bin/`
 
 ##### 2. Enter The Execute Command
 The following is execute the "Flight Control": 

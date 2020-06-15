@@ -78,5 +78,5 @@ keywords: [注册, 选购, 入门, 学习, 进阶, 高级]
 * 在<a href="https://bbs.dji.com/forum-79-1.html?from=developer">DJI 技术支持社区</a>上寻求帮助
 
 * 获取技术支持服务  
-	* 使用<a herf="https://formcrafts.com/a/dji-developer-feedback-cn">问题反馈</a>表单  
+	* 使用<a href="https://formcrafts.com/a/dji-developer-feedback-cn">问题反馈</a>表单  
 	* 向DJI SDK 团队发送<a href="mailto:dev@dji.com">邮件</a>

@@ -160,60 +160,77 @@ typedef void (*H264Callback)(uint8_t* buf, int bufLen, void* userData);
 <div>
 <div style="text-align: center"><p>表1.相机H.264 码流分析结果</p></div>
 <table>
+<thead>
+<tr> 
+  <th colspan="2" ></th>
+   <th>M300 FPV</th>
+   <th>M210 V2 FPV</th>
+   <th>Z30</th>
+   <th>XTS</th>
+   <th colspan="1" >X7</th>
+   <th colspan="1" >H20T</th>
+  </tr>
+  </thead>
 <tbody>
  <tr> 
-  <th colspan="2" ><br></th><th>M300 FPV</th><th>M210 V2 FPV</th><th>Z30</th><th>XTS</th><th colspan="1" >X7</th><th colspan="1" >H20T</th></tr>
- <tr> 
-  <th colspan="2" >Video Stream Type</th><td>AVC/H.264</td>
+     <td colspan="2" >Video Stream Type</td>
+     <td>AVC/H.264</td>
      <td>AVC/H.264</td>
      <td>AVC/H.264</td>
      <td>AVC/H.264</td>
      <td>AVC/H.264</td>
      <td>AVC/H.264</td></tr>
  <tr> 
-  <th colspan="2" >Resolution</th><td>608 x 448</td>
+     <td colspan="2" >Resolution</td>
+     <td>608 x 448</td>
      <td>608 x 448</td>
      <td>1280 x 720</td>
      <td>640 x 512</td>
      <td>1280 x 720</td>
      <td>1920 x 1080</td></tr>
  <tr> 
-  <th colspan="2" >Profile</th><td>Main:4.1</td>
+     <td colspan="2" >Profile</td>
+     <td>Main:4.1</td>
      <td>Main:4.1</td>
      <td>Main:4.1</td>
      <td>High:5.0</td>
      <td>High:4.0</td>
      <td>High:4.0</td></tr>
  <tr> 
-  <th colspan="2" >Aspect Ratio</th><td>4 x 3</td>
+  <td colspan="2" >Aspect Ratio</td>
+     <td>4 x 3</td>
      <td>4 x 3</td>
      <td>16 x 9</td>
      <td>5 x 4</td>
      <td>16 x 9</td>
      <td>16 x 9</td></tr>
  <tr> 
-  <th colspan="2" >Interlaced</th><td>No</td>
+  <td colspan="2" >Interlaced</td>
+     <td>No</td>
      <td>No</td>
      <td>No</td>
      <td>No</td>
      <td>No</td>
      <td>No</td></tr>
  <tr> 
-  <th colspan="2" >File Size (Bytes)</th><td>867619</td>
+  <td colspan="2" >File Size (Bytes)</td>
+     <td>867619</td>
      <td>877819</td>
      <td>4559469</td>
      <td>5472872</td>
      <td>8765755</td>
      <td>17243162</td></tr>
  <tr> 
-  <th colspan="2" >Frames Count</th><td>271</td>
+  <td colspan="2" >Frames Count</td>
+     <td>271</td>
      <td>274</td>
      <td>300</td>
      <td>240</td>
      <td>294</td>
      <td>299</td></tr>
  <tr> 
-  <th rowspan="3" ><p>Frame Size</p></th><td>Max</td>
+  <td rowspan="3" >Frame Size</td>
+     <td>Max</td>
      <td><p>5095</p></td>
      <td>5875</td>
      <td>34848</td>
