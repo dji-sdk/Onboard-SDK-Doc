@@ -1,6 +1,6 @@
 <map id="DJI::OSDK::PayloadBase" name="DJI::OSDK::PayloadBase">
 <area shape="rect" id="node1" title="PayloadBase." alt="" coords="230,5,405,185"/>
-<area shape="rect" id="node2" href="$classDJI_1_1OSDK_1_1CameraModule.html" title="CameraModule of PayloadNode." alt="" coords="5,248,203,472"/>
-<area shape="rect" id="node3" href="$classDJI_1_1OSDK_1_1GimbalModule.html" title="gimbal module" alt="" coords="227,285,407,435"/>
-<area shape="rect" id="node4" href="$classDJI_1_1OSDK_1_1PSDKModule.html" title="PSDK module." alt="" coords="432,233,672,487"/>
+<area shape="rect" id="node2" href="$classDJI_1_1OSDK_1_1CameraModule.html" title="CameraModule of PayloadNode." alt="" coords="5,255,203,479"/>
+<area shape="rect" id="node3" href="$classDJI_1_1OSDK_1_1GimbalModule.html" title="gimbal module" alt="" coords="227,292,407,443"/>
+<area shape="rect" id="node4" href="$classDJI_1_1OSDK_1_1PSDKModule.html" title="PSDK module." alt="" coords="432,233,672,501"/>
 </map>

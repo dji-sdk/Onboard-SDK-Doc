@@ -1,5 +1,5 @@
-<map id="osdk&#45;lib/x86/advanced&#45;sensing&#45;2.0.3/inc/dji_perception.hpp" name="osdk&#45;lib/x86/advanced&#45;sensing&#45;2.0.3/inc/dji_perception.hpp">
-<area shape="rect" id="node1" title="Camera dji perception API of OSDK." alt="" coords="5,5,157,61"/>
-<area shape="rect" id="node2" title=" " alt="" coords="7,109,68,136"/>
-<area shape="rect" id="node3" title=" " alt="" coords="93,109,158,136"/>
+<map id="osdk&#45;core/advanced&#45;sensing/api/inc/dji_perception.hpp" name="osdk&#45;core/advanced&#45;sensing/api/inc/dji_perception.hpp">
+<area shape="rect" id="node1" title="Camera dji perception API of OSDK." alt="" coords="11,5,149,61"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,109,67,136"/>
+<area shape="rect" id="node3" title=" " alt="" coords="91,109,157,136"/>
 </map>

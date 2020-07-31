@@ -7,8 +7,6 @@ var searchData=
   ['gimbal',['Gimbal',['../structDJI_1_1OSDK_1_1Telemetry_1_1Gimbal.html',1,'DJI::OSDK::Telemetry::Gimbal'],['../classDJI_1_1OSDK_1_1Gimbal.html',1,'DJI::OSDK::Gimbal']]],
   ['gimbalcommonerr',['GimbalCommonErr',['../classDJI_1_1OSDK_1_1ErrorCode_1_1GimbalCommonErr.html',1,'DJI::OSDK::ErrorCode']]],
   ['gimbalmanager',['GimbalManager',['../classDJI_1_1OSDK_1_1GimbalManager.html',1,'DJI::OSDK']]],
-  ['gimbalmanagerasyncsample',['GimbalManagerAsyncSample',['../classGimbalManagerAsyncSample.html',1,'']]],
-  ['gimbalmanagersyncsample',['GimbalManagerSyncSample',['../classGimbalManagerSyncSample.html',1,'']]],
   ['gimbalmodule',['GimbalModule',['../classDJI_1_1OSDK_1_1GimbalModule.html',1,'DJI::OSDK']]],
   ['gimbalstatus',['GimbalStatus',['../structDJI_1_1OSDK_1_1Telemetry_1_1GimbalStatus.html',1,'DJI::OSDK::Telemetry']]],
   ['globalposition',['GlobalPosition',['../structDJI_1_1OSDK_1_1Telemetry_1_1GlobalPosition.html',1,'DJI::OSDK::Telemetry']]],

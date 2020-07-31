@@ -17,6 +17,8 @@ var searchData=
   ['too_5ffar_5ffrom_5fcurrent_5fposition',['TOO_FAR_FROM_CURRENT_POSITION',['../structDJI_1_1OSDK_1_1ErrorCode_1_1MissionACK_1_1Common.html#ad067392db7a273c9e0046522bda0ff84',1,'DJI::OSDK::ErrorCode::MissionACK::Common']]],
   ['too_5fhigh',['TOO_HIGH',['../structDJI_1_1OSDK_1_1ErrorCode_1_1MissionACK_1_1Common.html#a0519571c9c2347b7a7192dad3545c02b',1,'DJI::OSDK::ErrorCode::MissionACK::Common']]],
   ['too_5flow',['TOO_LOW',['../structDJI_1_1OSDK_1_1ErrorCode_1_1MissionACK_1_1Common.html#a2d20032f013ef0e1b613c45a99a97210',1,'DJI::OSDK::ErrorCode::MissionACK::Common']]],
+  ['total_5fdistance_5ftoo_5flong',['TOTAL_DISTANCE_TOO_LONG',['../structDJI_1_1OSDK_1_1ErrorCode_1_1MissionACK_1_1WayPoint.html#a949f6572dd71f332cd4dd3f805d44c3c',1,'DJI::OSDK::ErrorCode::MissionACK::WayPoint']]],
+  ['trace_5ftoo_5flong',['TRACE_TOO_LONG',['../structDJI_1_1OSDK_1_1ErrorCode_1_1MissionACK_1_1WayPoint.html#aa8aaa71ac3a8e1941abd29ff03d8341c',1,'DJI::OSDK::ErrorCode::MissionACK::WayPoint']]],
   ['tracemode',['traceMode',['../structDJI_1_1OSDK_1_1WayPointInitSettings.html#a0f2517fd1775e16675921b8b62b919ef',1,'DJI::OSDK::WayPointInitSettings']]],
   ['trigger',['trigger',['../structDJI_1_1OSDK_1_1DJIWaypointV2Action.html#af4028f84cb68322669cd6fc2f1f8f2ff',1,'DJI::OSDK::DJIWaypointV2Action']]],
   ['ts',['ts',['../structDJI_1_1OSDK_1_1Telemetry_1_1HardSyncData.html#a530cd9835ef1ee2925df861af0a11f50',1,'DJI::OSDK::Telemetry::HardSyncData']]],

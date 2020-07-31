@@ -3,8 +3,6 @@ var searchData=
   ['databroadcast',['DataBroadcast',['../classDJI_1_1OSDK_1_1DataBroadcast.html',1,'DJI::OSDK']]],
   ['datasubscription',['DataSubscription',['../classDJI_1_1OSDK_1_1DataSubscription.html',1,'DJI::OSDK']]],
   ['dispatchinfo',['DispatchInfo',['../structDJI_1_1OSDK_1_1DispatchInfo.html',1,'DJI::OSDK']]],
-  ['dji_5fext_5fp_5ftid',['dji_ext_p_tid',['../structdji__ext__p__tid.html',1,'']]],
-  ['dji_5fgeneral_5ftransfer_5fmsg_5freq',['dji_general_transfer_msg_req',['../structdji__general__transfer__msg__req.html',1,'']]],
   ['djigimbalrotation',['DJIGimbalRotation',['../structDJI_1_1OSDK_1_1DJIGimbalRotation.html',1,'DJI::OSDK']]],
   ['djihms',['DJIHMS',['../classDJI_1_1OSDK_1_1DJIHMS.html',1,'DJI::OSDK']]],
   ['djiwaypointv2action',['DJIWaypointV2Action',['../structDJI_1_1OSDK_1_1DJIWaypointV2Action.html',1,'DJI::OSDK']]],

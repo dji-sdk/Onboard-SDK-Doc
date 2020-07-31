@@ -1,5 +1,5 @@
-<map id="osdk&#45;lib/x86/osdk&#45;core/inc/dji_hms_impl.hpp" name="osdk&#45;lib/x86/osdk&#45;core/inc/dji_hms_impl.hpp">
-<area shape="rect" id="node1" title="Battery API for DJI OSDK implement @Details Provide API to get battery&#39;s Dynamic data." alt="" coords="118,5,271,47"/>
+<map id="osdk&#45;core/api/inc/dji_hms_impl.hpp" name="osdk&#45;core/api/inc/dji_hms_impl.hpp">
+<area shape="rect" id="node1" title="Battery API for DJI OSDK implement @Details Provide API to get battery&#39;s Dynamic data." alt="" coords="125,5,264,47"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,95,77,121"/>
 <area shape="rect" id="node3" title=" " alt="" coords="102,95,157,121"/>
 <area shape="rect" id="node4" href="$dji__type_8hpp.html" title="Data type and Data Structure definitions for use throughout DJI OSDK." alt="" coords="247,169,339,196"/>

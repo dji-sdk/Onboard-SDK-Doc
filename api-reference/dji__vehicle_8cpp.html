@@ -81,7 +81,7 @@
     <!--<div class="container">-->
     <!--<div class="navbar-header">-->
     <!--<a href="#" class="navbar-left"><img src="dji_logo_gray_small.png" alt="DJI OSDK API Documentation" width="32px"/></a>-->
-    <!--<a class="navbar-brand" href="index.html">ONBOARD SDK 3.3</a>-->
+    <!--<a class="navbar-brand" href="index.html">ONBOARD SDK 4.0.1</a>-->
     <!--</div>-->
     <!--</div>-->
     <!--</nav>-->
@@ -128,6 +128,9 @@ $(function() {
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">dji_vehicle.cpp File Reference</div>  </div>
 </div><!--header-->
@@ -136,14 +139,48 @@ $(function() {
 <p>Vehicle API for <a class="el" href="namespaceDJI.html">DJI</a> onboardSDK library.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="dji__vehicle_8hpp_source.html">dji_vehicle.hpp</a>&quot;</code><br />
+<code>#include &quot;osdk_device_id.h&quot;</code><br />
+<code>#include &quot;dji_linker.hpp&quot;</code><br />
+<code>#include &quot;osdk_firewall.hpp&quot;</code><br />
+<code>#include &quot;dji_internal_command.hpp&quot;</code><br />
 <code>#include &lt;new&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for dji_vehicle.cpp:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="dji__vehicle_8cpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="dji__vehicle_8cpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
-</div>
-</div><a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:afa1d3d87eb6423be85431d179cd5ab18"><td class="memItemLeft" align="right" valign="top"><a id="afa1d3d87eb6423be85431d179cd5ab18"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>DJIOSDK_MAJOR_VERSION</b>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:afa1d3d87eb6423be85431d179cd5ab18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac02ec1dfaff98252692a2596c8b8337"><td class="memItemLeft" align="right" valign="top"><a id="aac02ec1dfaff98252692a2596c8b8337"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>DJIOSDK_MINOR_VERSION</b>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:aac02ec1dfaff98252692a2596c8b8337"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b31f4fb89df60c7358e30862632c647"><td class="memItemLeft" align="right" valign="top"><a id="a3b31f4fb89df60c7358e30862632c647"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>DJIOSDK_PATCH_VERSION</b>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a3b31f4fb89df60c7358e30862632c647"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa68d77ea8bbffd0574e9cc02150d1a5"><td class="memItemLeft" align="right" valign="top"><a id="aaa68d77ea8bbffd0574e9cc02150d1a5"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>DJIOSDK_IS_DEBUG</b>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:aaa68d77ea8bbffd0574e9cc02150d1a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb650b2a96bf4e7fd75c048014efc5e7"><td class="memItemLeft" align="right" valign="top"><a id="afb650b2a96bf4e7fd75c048014efc5e7"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>DJIOSDK_HARDWARE_TYPE</b>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:afb650b2a96bf4e7fd75c048014efc5e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6c4bd1705dcbb1ac44034c7477c4c8c"><td class="memItemLeft" align="right" valign="top"><a id="ad6c4bd1705dcbb1ac44034c7477c4c8c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>DJIOSDK_OPERATOR_TYPE</b>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:ad6c4bd1705dcbb1ac44034c7477c4c8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae71449b1cc6e6250b91f539153a7a0d3"><td class="memItemLeft" align="right" valign="top"><a id="ae71449b1cc6e6250b91f539153a7a0d3"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>M_PI</b>&#160;&#160;&#160;3.14159265358979323846</td></tr>
+<tr class="separator:ae71449b1cc6e6250b91f539153a7a0d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a14fa637b668c1ff2d968b9abdb642e2c"><td class="memItemLeft" align="right" valign="top"><a id="a14fa637b668c1ff2d968b9abdb642e2c"></a>
+static uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>osdkConnectFCFlag</b> = 0</td></tr>
+<tr class="separator:a14fa637b668c1ff2d968b9abdb642e2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Vehicle API for <a class="el" href="namespaceDJI.html">DJI</a> onboardSDK library. </p>
 <dl class="section version"><dt>Version</dt><dd>3.3 </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>April 2017</dd></dl>

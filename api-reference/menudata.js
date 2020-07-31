@@ -72,7 +72,8 @@ var menudata={children:[
 {text:"c",url:"namespacemembers_eval.html#index_c"},
 {text:"d",url:"namespacemembers_eval.html#index_d"},
 {text:"m",url:"namespacemembers_eval.html#index_m"},
-{text:"t",url:"namespacemembers_eval.html#index_t"}]}]}]},
+{text:"t",url:"namespacemembers_eval.html#index_t"},
+{text:"w",url:"namespacemembers_eval.html#index_w"}]}]}]},
 {text:"Classes",url:"annotated.html",children:[
 {text:"Class List",url:"annotated.html"},
 {text:"Class Index",url:"classes.html"},
@@ -215,5 +216,4 @@ var menudata={children:[
 {text:"All",url:"globals.html"},
 {text:"Functions",url:"globals_func.html"},
 {text:"Variables",url:"globals_vars.html"},
-{text:"Typedefs",url:"globals_type.html"},
 {text:"Macros",url:"globals_defs.html"}]}]}]}

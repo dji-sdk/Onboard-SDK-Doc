@@ -1,9 +1,8 @@
-<map id="osdk&#45;lib/x86/osdk&#45;core/inc/dji_command.hpp" name="osdk&#45;lib/x86/osdk&#45;core/inc/dji_command.hpp">
-<area shape="rect" id="node1" title="All DJI OSDK OpenProtocol Command IDs." alt="" coords="137,5,290,47"/>
-<area shape="rect" id="node2" href="$dji__error_8hpp.html" title="All DJI OSDK OpenProtocol ACK Error Codes." alt="" coords="120,95,213,121"/>
-<area shape="rect" id="node7" title=" " alt="" coords="277,244,342,271"/>
+<map id="osdk&#45;core/api/inc/dji_command.hpp" name="osdk&#45;core/api/inc/dji_command.hpp">
+<area shape="rect" id="node1" title="All DJI OSDK OpenProtocol Command IDs." alt="" coords="97,5,236,47"/>
+<area shape="rect" id="node2" href="$dji__error_8hpp.html" title="All DJI OSDK OpenProtocol ACK Error Codes." alt="" coords="68,95,161,121"/>
+<area shape="rect" id="node6" title=" " alt="" coords="186,95,251,121"/>
 <area shape="rect" id="node3" title=" " alt="" coords="5,169,67,196"/>
 <area shape="rect" id="node4" title=" " alt="" coords="91,169,138,196"/>
-<area shape="rect" id="node5" href="$osdk__typedef_8h_source.html" title=" " alt="" coords="162,169,273,196"/>
-<area shape="rect" id="node6" title=" " alt="" coords="183,244,252,271"/>
+<area shape="rect" id="node5" title=" " alt="" coords="162,169,273,196"/>
 </map>

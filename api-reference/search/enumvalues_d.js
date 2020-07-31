@@ -83,7 +83,7 @@ var searchData=
   ['slowest',['SLOWEST',['../classDJI_1_1OSDK_1_1CameraModule.html#adebf045152ee2650c30dc640c2c4c511adb6ea23246bc8122a071ff758b95ba42',1,'DJI::OSDK::CameraModule']]],
   ['stable_5fdisable',['STABLE_DISABLE',['../classDJI_1_1OSDK_1_1Control.html#af272070f4394375c6e7bd9b822df4781a0fd217005553a1b639fb4cb88854ac75',1,'DJI::OSDK::Control']]],
   ['stable_5fenable',['STABLE_ENABLE',['../classDJI_1_1OSDK_1_1Control.html#af272070f4394375c6e7bd9b822df4781acf5c565aa23ff2152cf8a09d05e4f334',1,'DJI::OSDK::Control']]],
-  ['success',['Success',['../classDJI_1_1OSDK_1_1ErrorCode.html#a79a274922ec9ba6602775cf5f818ab3eae9fca71bc8f57e137ed32a0fc6d5bf90',1,'DJI::OSDK::ErrorCode::Success()'],['../classDJI_1_1OSDK_1_1ErrorCode.html#a4d4bc0bf4a5ea4bbb295c41d41ebb528af231d3b436f9d4d56bbf39e023fc7e1f',1,'DJI::OSDK::ErrorCode::SUCCESS()']]],
+  ['success',['SUCCESS',['../classDJI_1_1OSDK_1_1ErrorCode.html#a4d4bc0bf4a5ea4bbb295c41d41ebb528af231d3b436f9d4d56bbf39e023fc7e1f',1,'DJI::OSDK::ErrorCode::SUCCESS()'],['../classDJI_1_1OSDK_1_1ErrorCode.html#a79a274922ec9ba6602775cf5f818ab3eae9fca71bc8f57e137ed32a0fc6d5bf90',1,'DJI::OSDK::ErrorCode::Success()']]],
   ['switch',['SWITCH',['../classDJI_1_1OSDK_1_1PSDKModule.html#acda4ae37662bc7fafe6d5d2cc8c18ef6a2cef808360838216b70af62a7baf4664',1,'DJI::OSDK::PSDKModule']]],
   ['system_5ferror',['SYSTEM_ERROR',['../classDJI_1_1OSDK_1_1ErrorCode.html#a4d4bc0bf4a5ea4bbb295c41d41ebb528a4f24f8b09410e916e9c662f620c0f642',1,'DJI::OSDK::ErrorCode']]]
 ];

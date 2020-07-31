@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['hotpointmission',['HotpointMission',['../classDJI_1_1OSDK_1_1HotpointMission.html#ad57274af439433d628de3b962ebfd9a0',1,'DJI::OSDK::HotpointMission']]]
+  ['hotpointmission',['HotpointMission',['../classDJI_1_1OSDK_1_1HotpointMission.html#a2aa16e490d633facbbd5a14bc2e45e60',1,'DJI::OSDK::HotpointMission']]]
 ];

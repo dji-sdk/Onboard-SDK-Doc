@@ -13,6 +13,5 @@ var searchData=
   ['mobiledevice',['MobileDevice',['../classDJI_1_1OSDK_1_1MobileDevice.html',1,'DJI::OSDK']]],
   ['mopclient',['MopClient',['../classDJI_1_1OSDK_1_1MopClient.html',1,'DJI::OSDK']]],
   ['moppipeline',['MopPipeline',['../classDJI_1_1OSDK_1_1MopPipeline.html',1,'DJI::OSDK']]],
-  ['mopserver',['MopServer',['../classDJI_1_1OSDK_1_1MopServer.html',1,'DJI::OSDK']]],
-  ['mutex',['Mutex',['../classDJI_1_1OSDK_1_1Mutex.html',1,'DJI::OSDK']]]
+  ['mopserver',['MopServer',['../classDJI_1_1OSDK_1_1MopServer.html',1,'DJI::OSDK']]]
 ];

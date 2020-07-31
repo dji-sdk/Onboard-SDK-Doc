@@ -1,8 +1,6 @@
-<map id="osdk&#45;lib/x86/osdk&#45;core/inc/dji_error.hpp" name="osdk&#45;lib/x86/osdk&#45;core/inc/dji_error.hpp">
-<area shape="rect" id="node1" title="All DJI OSDK OpenProtocol ACK Error Codes." alt="" coords="38,5,191,47"/>
+<map id="osdk&#45;core/api/inc/dji_error.hpp" name="osdk&#45;core/api/inc/dji_error.hpp">
+<area shape="rect" id="node1" title="All DJI OSDK OpenProtocol ACK Error Codes." alt="" coords="45,5,184,47"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,95,67,121"/>
 <area shape="rect" id="node3" title=" " alt="" coords="91,95,138,121"/>
-<area shape="rect" id="node4" href="$osdk__typedef_8h_source.html" title=" " alt="" coords="162,95,273,121"/>
-<area shape="rect" id="node5" title=" " alt="" coords="136,169,205,196"/>
-<area shape="rect" id="node6" title=" " alt="" coords="230,169,295,196"/>
+<area shape="rect" id="node4" title=" " alt="" coords="162,95,273,121"/>
 </map>

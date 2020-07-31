@@ -1,12 +1,11 @@
-<map id="osdk&#45;lib/x86/osdk&#45;core/inc/dji_camera.hpp" name="osdk&#45;lib/x86/osdk&#45;core/inc/dji_camera.hpp">
-<area shape="rect" id="node1" title="Camera/Gimbal API for DJI onboardSDK library." alt="" coords="251,5,405,47"/>
-<area shape="rect" id="node2" href="$dji__command_8hpp.html" title="All DJI OSDK OpenProtocol Command IDs." alt="" coords="201,95,325,121"/>
-<area shape="rect" id="node9" href="$dji__type_8hpp.html" title="Data type and Data Structure definitions for use throughout DJI OSDK." alt="" coords="349,95,441,121"/>
-<area shape="rect" id="node3" href="$dji__error_8hpp.html" title="All DJI OSDK OpenProtocol ACK Error Codes." alt="" coords="120,169,213,196"/>
-<area shape="rect" id="node8" title=" " alt="" coords="278,319,343,345"/>
+<map id="osdk&#45;core/api/inc/dji_camera.hpp" name="osdk&#45;core/api/inc/dji_camera.hpp">
+<area shape="rect" id="node1" title="Camera/Gimbal API for DJI onboardSDK library." alt="" coords="139,5,277,47"/>
+<area shape="rect" id="node2" href="$dji__command_8hpp.html" title="All DJI OSDK OpenProtocol Command IDs." alt="" coords="81,95,205,121"/>
+<area shape="rect" id="node8" href="$dji__type_8hpp.html" title="Data type and Data Structure definitions for use throughout DJI OSDK." alt="" coords="229,95,321,121"/>
+<area shape="rect" id="node3" href="$dji__error_8hpp.html" title="All DJI OSDK OpenProtocol ACK Error Codes." alt="" coords="68,169,161,196"/>
+<area shape="rect" id="node7" title=" " alt="" coords="186,169,251,196"/>
 <area shape="rect" id="node4" title=" " alt="" coords="5,244,67,271"/>
 <area shape="rect" id="node5" title=" " alt="" coords="91,244,138,271"/>
-<area shape="rect" id="node6" href="$osdk__typedef_8h_source.html" title=" " alt="" coords="162,244,273,271"/>
-<area shape="rect" id="node7" title=" " alt="" coords="183,319,252,345"/>
-<area shape="rect" id="node10" title=" " alt="" coords="399,169,457,196"/>
+<area shape="rect" id="node6" title=" " alt="" coords="162,244,273,271"/>
+<area shape="rect" id="node9" title=" " alt="" coords="275,169,333,196"/>
 </map>

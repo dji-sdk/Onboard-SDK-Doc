@@ -1,10 +1,9 @@
-<map id="osdk&#45;lib/x86/osdk&#45;core/inc/dji_payload_base.hpp" name="osdk&#45;lib/x86/osdk&#45;core/inc/dji_payload_base.hpp">
-<area shape="rect" id="node1" title="Abstract protocol implementation for payload module." alt="" coords="43,5,215,47"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,244,71,271"/>
-<area shape="rect" id="node3" title=" " alt="" coords="69,95,124,121"/>
-<area shape="rect" id="node4" href="$osdk__typedef_8h_source.html" title=" " alt="" coords="80,169,191,196"/>
-<area shape="rect" id="node6" href="$dji__error_8hpp.html" title="All DJI OSDK OpenProtocol ACK Error Codes." alt="" coords="199,95,293,121"/>
-<area shape="rect" id="node5" title=" " alt="" coords="101,244,170,271"/>
-<area shape="rect" id="node7" title=" " alt="" coords="215,169,277,196"/>
-<area shape="rect" id="node8" title=" " alt="" coords="301,169,348,196"/>
+<map id="osdk&#45;core/modules/inc/payload/dji_payload_base.hpp" name="osdk&#45;core/modules/inc/payload/dji_payload_base.hpp">
+<area shape="rect" id="node1" title="Abstract protocol implementation for payload module." alt="" coords="77,5,231,61"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,109,71,136"/>
+<area shape="rect" id="node3" title=" " alt="" coords="95,109,149,136"/>
+<area shape="rect" id="node4" title=" " alt="" coords="125,184,236,211"/>
+<area shape="rect" id="node5" href="$dji__error_8hpp.html" title="All DJI OSDK OpenProtocol ACK Error Codes." alt="" coords="238,109,331,136"/>
+<area shape="rect" id="node6" title=" " alt="" coords="261,184,322,211"/>
+<area shape="rect" id="node7" title=" " alt="" coords="347,184,393,211"/>
 </map>

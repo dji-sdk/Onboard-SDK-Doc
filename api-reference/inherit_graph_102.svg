@@ -12,10 +12,10 @@
 <!-- Node0 -->
 <g id="node1" class="node">
 <title>Node0</title>
-<g id="a_node1"><a xlink:href="structDJI_1_1OSDK_1_1ErrorCode_1_1MissionACK_1_1Follow.html" target="_top" xlink:title="Follow Mission ACK Error Code.">
+<g id="a_node1"><a xlink:href="structDJI_1_1OSDK_1_1ErrorCode_1_1MissionACK_1_1IOC.html" target="_top" xlink:title="IOC ACK Mission Error Code.">
 <polygon fill="#ffffff" stroke="#000000" points="0,-.5 0,-30.5 117,-30.5 117,-.5 0,-.5"/>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">DJI::OSDK::ErrorCode</text>
-<text text-anchor="middle" x="58.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::MissionACK::Follow</text>
+<text text-anchor="middle" x="58.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::MissionACK::IOC</text>
 </a>
 </g>
 </g>

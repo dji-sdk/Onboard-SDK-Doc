@@ -10,7 +10,7 @@ var searchData=
   ['channel_5ferror',['CHANNEL_ERROR',['../structDJI_1_1OSDK_1_1ErrorCode_1_1MFIOACK_1_1set.html#a2c4dd27d79300a3fa03827049957704b',1,'DJI::OSDK::ErrorCode::MFIOACK::set']]],
   ['clockwise',['clockwise',['../structDJI_1_1OSDK_1_1HotPointSettings.html#aac4845a986802ae3df36849cd29e4ffc',1,'DJI::OSDK::HotPointSettings']]],
   ['commandlist',['commandList',['../structDJI_1_1OSDK_1_1WayPointSettings.html#abcfa47c120b10f928ba889449072fc83',1,'DJI::OSDK::WayPointSettings']]],
-  ['commandparameter',['commandParameter',['../structDJI_1_1OSDK_1_1WayPointSettings.html#adc379fe1118ae3f5d993d88645b4f1a8',1,'DJI::OSDK::WayPointSettings']]],
+  ['commandparameter',['commandParameter',['../structDJI_1_1OSDK_1_1WayPointSettings.html#adc5bc3fb8617a82190bbde7571f6939e',1,'DJI::OSDK::WayPointSettings']]],
   ['compassinstallationerror',['compassInstallationError',['../structDJI_1_1OSDK_1_1Telemetry_1_1FlightAnomaly.html#abf5cf4062f9ed4e913dcbb065e44ae94',1,'DJI::OSDK::Telemetry::FlightAnomaly']]],
   ['conditions_5fnot_5fsatisfied',['CONDITIONS_NOT_SATISFIED',['../structDJI_1_1OSDK_1_1ErrorCode_1_1MissionACK_1_1Common.html#a30ecbffd415c4f517d44b1b0dc77853f',1,'DJI::OSDK::ErrorCode::MissionACK::Common']]],
   ['config',['config',['../structDJI_1_1OSDK_1_1WaypointV2Internal.html#a8732a984461dc11e48338532c24df6ab',1,'DJI::OSDK::WaypointV2Internal::config()'],['../structDJI_1_1OSDK_1_1WaypointV2.html#a753b1b14f0bd7344e2491560e8205274',1,'DJI::OSDK::WaypointV2::config()']]],

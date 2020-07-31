@@ -1,22 +1,17 @@
-<map id="osdk&#45;lib/x86/osdk&#45;core/inc/dji_control.hpp" name="osdk&#45;lib/x86/osdk&#45;core/inc/dji_control.hpp">
-<area shape="rect" id="node1" title="Control API for DJI OSDK library." alt="" coords="368,5,522,47"/>
-<area shape="rect" id="node2" href="$dji__ack_8hpp.html" title="All DJI OSDK ACK parsing." alt="" coords="258,169,346,196"/>
-<area shape="rect" id="node12" href="$dji__type_8hpp.html" title="Data type and Data Structure definitions for use throughout DJI OSDK." alt="" coords="364,319,456,345"/>
-<area shape="rect" id="node15" href="$dji__vehicle__callback_8hpp.html" title="Type definition for new Vehicle&#45;style callbacks." alt="" coords="364,95,526,121"/>
-<area shape="rect" id="node3" href="$dji__command_8hpp.html" title="All DJI OSDK OpenProtocol Command IDs." alt="" coords="131,319,255,345"/>
-<area shape="rect" id="node6" title=" " alt="" coords="12,468,59,495"/>
-<area shape="rect" id="node10" href="$dji__mission__type_8hpp.html" title="Mission related data struct for DJI OSDK library." alt="" coords="230,244,374,271"/>
-<area shape="rect" id="node14" href="$dji__version_8hpp.html" title="Drone/SDK Version definition for DJI onboardSDK library." alt="" coords="46,244,156,271"/>
-<area shape="rect" id="node4" href="$dji__error_8hpp.html" title="All DJI OSDK OpenProtocol ACK Error Codes." alt="" coords="133,393,226,420"/>
-<area shape="rect" id="node9" title=" " alt="" coords="370,543,435,569"/>
-<area shape="rect" id="node5" title=" " alt="" coords="108,468,169,495"/>
-<area shape="rect" id="node7" href="$osdk__typedef_8h_source.html" title=" " alt="" coords="440,468,551,495"/>
-<area shape="rect" id="node8" title=" " alt="" coords="461,543,530,569"/>
-<area shape="rect" id="node11" title=" " alt="" coords="280,319,338,345"/>
-<area shape="rect" id="node13" title=" " alt="" coords="307,393,364,420"/>
-<area shape="rect" id="node16" href="$dji__log_8hpp.html" title="Logging mechanism for printing status and error messages to the screen." alt="" coords="602,244,686,271"/>
-<area shape="rect" id="node17" href="$dji__singleton_8hpp.html" title="Singleton Template Class implementation for use with the DJI OSDK." alt="" coords="710,393,828,420"/>
-<area shape="rect" id="node18" href="$dji__platform_8hpp.html" title="Vehicle API for DJI onboardSDK library." alt="" coords="578,319,693,345"/>
-<area shape="rect" id="node19" href="$osdk__platform_8h.html" title="This is the header file for define OSDK platform interfaces." alt="" coords="570,393,685,420"/>
-<area shape="rect" id="node20" href="$osdk__logger_8h.html" title="This is the header file for &quot;osdk_logger.c&quot;, defining the structure and (exported) function prototype..." alt="" coords="443,393,546,420"/>
+<map id="osdk&#45;core/api/inc/dji_control.hpp" name="osdk&#45;core/api/inc/dji_control.hpp">
+<area shape="rect" id="node1" title="Control API for DJI OSDK library." alt="" coords="495,5,633,47"/>
+<area shape="rect" id="node2" href="$dji__ack_8hpp.html" title="All DJI OSDK ACK parsing." alt="" coords="360,169,448,196"/>
+<area shape="rect" id="node11" href="$dji__type_8hpp.html" title="Data type and Data Structure definitions for use throughout DJI OSDK." alt="" coords="467,319,559,345"/>
+<area shape="rect" id="node14" href="$dji__vehicle__callback_8hpp.html" title="Type definition for new Vehicle&#45;style callbacks." alt="" coords="601,95,764,121"/>
+<area shape="rect" id="node3" href="$dji__command_8hpp.html" title="All DJI OSDK OpenProtocol Command IDs." alt="" coords="111,319,235,345"/>
+<area shape="rect" id="node6" title=" " alt="" coords="249,468,295,495"/>
+<area shape="rect" id="node9" href="$dji__mission__type_8hpp.html" title="Mission related data struct for DJI OSDK library." alt="" coords="332,244,476,271"/>
+<area shape="rect" id="node13" href="$dji__version_8hpp.html" title="Drone/SDK Version definition for DJI onboardSDK library." alt="" coords="97,244,207,271"/>
+<area shape="rect" id="node4" href="$dji__error_8hpp.html" title="All DJI OSDK OpenProtocol ACK Error Codes." alt="" coords="73,393,167,420"/>
+<area shape="rect" id="node8" title=" " alt="" coords="191,393,257,420"/>
+<area shape="rect" id="node5" title=" " alt="" coords="5,468,67,495"/>
+<area shape="rect" id="node7" title=" " alt="" coords="91,468,202,495"/>
+<area shape="rect" id="node10" title=" " alt="" coords="375,319,433,345"/>
+<area shape="rect" id="node12" title=" " alt="" coords="485,393,542,420"/>
+<area shape="rect" id="node15" title=" " alt="" coords="653,169,737,196"/>
 </map>

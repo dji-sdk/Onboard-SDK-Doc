@@ -14,6 +14,7 @@ var searchData=
   ['heightctrlfail',['heightCtrlFail',['../structDJI_1_1OSDK_1_1Telemetry_1_1FlightAnomaly.html#a4cd1dad35e6a8db5ec9b753e5b0c80cd',1,'DJI::OSDK::Telemetry::FlightAnomaly']]],
   ['hfsl',['HFSL',['../structDJI_1_1OSDK_1_1Telemetry_1_1PositionData.html#aa81ed7a6ac0ff27d399f42182f86dd7d',1,'DJI::OSDK::Telemetry::PositionData::HFSL()'],['../structDJI_1_1OSDK_1_1Telemetry_1_1GPSInfo.html#a4f91f4aac3aa012f6694b129ef6e8f39',1,'DJI::OSDK::Telemetry::GPSInfo::HFSL()'],['../structDJI_1_1OSDK_1_1Telemetry_1_1LegacyGPSInfo.html#ac50a1e8eb1689b47ffe2a74a636f1b11',1,'DJI::OSDK::Telemetry::LegacyGPSInfo::HFSL()']]],
   ['hmserrcodeinfo',['HMSErrCodeInfo',['../structDJI_1_1OSDK_1_1HMSErrCodeInfo.html',1,'DJI::OSDK::HMSErrCodeInfo'],['../namespaceDJI_1_1OSDK.html#af16819fe88bd3520967ccec0c132061f',1,'DJI::OSDK::HMSErrCodeInfo()']]],
+  ['hmserrcodeinfotbl',['hmsErrCodeInfoTbl',['../namespaceDJI_1_1OSDK.html#aefae9ffa7ff0601045aa9fc1d2c5aec2',1,'DJI::OSDK']]],
   ['hmspushdata',['HMSPushData',['../structDJI_1_1OSDK_1_1HMSPushData.html',1,'DJI::OSDK::HMSPushData'],['../namespaceDJI_1_1OSDK.html#a899b08f18a327db960effbb1b49649fe',1,'DJI::OSDK::HMSPushData()']]],
   ['hmspushpacket',['HMSPushPacket',['../structDJI_1_1OSDK_1_1HMSPushPacket.html',1,'DJI::OSDK::HMSPushPacket'],['../namespaceDJI_1_1OSDK.html#a8217d8af5bdd8bbe21fa97ad1f9bf2e3',1,'DJI::OSDK::HMSPushPacket()']]],
   ['horizontal_5fangle',['HORIZONTAL_ANGLE',['../classDJI_1_1OSDK_1_1Control.html#a7a7cab0e2d2c9415556837880ddf9e86afa13fb0e7f44b2bf531191496c5c1258',1,'DJI::OSDK::Control']]],
@@ -25,7 +26,7 @@ var searchData=
   ['horizontalcoordinate',['HorizontalCoordinate',['../classDJI_1_1OSDK_1_1Control.html#aa89e5fd518382c94fb6149a5b9a6183b',1,'DJI::OSDK::Control']]],
   ['horizontallogic',['HorizontalLogic',['../classDJI_1_1OSDK_1_1Control.html#a7a7cab0e2d2c9415556837880ddf9e86',1,'DJI::OSDK::Control']]],
   ['hotpoint',['HotPoint',['../structDJI_1_1OSDK_1_1ErrorCode_1_1MissionACK_1_1HotPoint.html',1,'DJI::OSDK::ErrorCode::MissionACK::HotPoint'],['../classDJI_1_1OSDK_1_1ErrorCode_1_1MissionACK.html#aa779f2f3b02b1610c5c314615c3dce09',1,'DJI::OSDK::ErrorCode::MissionACK::HotPoint()']]],
-  ['hotpointmission',['HotpointMission',['../classDJI_1_1OSDK_1_1HotpointMission.html',1,'DJI::OSDK::HotpointMission'],['../classDJI_1_1OSDK_1_1HotpointMission.html#ad57274af439433d628de3b962ebfd9a0',1,'DJI::OSDK::HotpointMission::HotpointMission()']]],
+  ['hotpointmission',['HotpointMission',['../classDJI_1_1OSDK_1_1HotpointMission.html',1,'DJI::OSDK::HotpointMission'],['../classDJI_1_1OSDK_1_1HotpointMission.html#a2aa16e490d633facbbd5a14bc2e45e60',1,'DJI::OSDK::HotpointMission::HotpointMission()']]],
   ['hotpointread',['HotPointRead',['../structDJI_1_1OSDK_1_1ACK_1_1HotPointRead.html',1,'DJI::OSDK::ACK::HotPointRead'],['../classDJI_1_1OSDK_1_1ACK.html#aa5ce5bcddd23cc9f338b5f6a5b6639b4',1,'DJI::OSDK::ACK::HotPointRead()']]],
   ['hotpointsettings',['HotPointSettings',['../structDJI_1_1OSDK_1_1HotPointSettings.html',1,'DJI::OSDK::HotPointSettings'],['../namespaceDJI_1_1OSDK.html#ae77ba11af1f90df05889c12732c74317',1,'DJI::OSDK::HotPointSettings()']]],
   ['hotpointstart',['HotPointStart',['../structDJI_1_1OSDK_1_1ACK_1_1HotPointStart.html',1,'DJI::OSDK::ACK::HotPointStart'],['../classDJI_1_1OSDK_1_1ACK.html#ab4f73fdaa9df6637eb60f8834d0965c7',1,'DJI::OSDK::ACK::HotPointStart()']]]

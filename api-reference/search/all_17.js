@@ -5,7 +5,7 @@ var searchData=
   ['waitingtime',['waitingTime',['../structDJI_1_1OSDK_1_1DJIWaypointV2AssociateTriggerParam.html#a6043ac2f4c7b96e5734614f3af6d98a8',1,'DJI::OSDK::DJIWaypointV2AssociateTriggerParam']]],
   ['waypoint',['WayPoint',['../structDJI_1_1OSDK_1_1ErrorCode_1_1MissionACK_1_1WayPoint.html',1,'DJI::OSDK::ErrorCode::MissionACK::WayPoint'],['../classDJI_1_1OSDK_1_1ErrorCode_1_1MissionACK.html#a455ab7172af807ba6d0bc64fc0d7e448',1,'DJI::OSDK::ErrorCode::MissionACK::WayPoint()']]],
   ['waypoint_5findex',['waypoint_index',['../structDJI_1_1OSDK_1_1ACK_1_1WayPointReachedData.html#a8ad787efb300a1ffa662bb0e013df540',1,'DJI::OSDK::ACK::WayPointReachedData::waypoint_index()'],['../structDJI_1_1OSDK_1_1ACK_1_1WayPointStatusPushData.html#a79279becbda8be8aa943874d81de3323',1,'DJI::OSDK::ACK::WayPointStatusPushData::waypoint_index()']]],
-  ['waypoint_5fv2_5fsample_2ehpp',['waypoint_v2_sample.hpp',['../waypoint__v2__sample_8hpp.html',1,'']]],
+  ['waypointactiontypeformat',['WaypointActionTypeFormat',['../namespaceDJI_1_1OSDK.html#aab9277df47011454784b9d492e947fd8',1,'DJI::OSDK']]],
   ['waypointaddpoint',['WayPointAddPoint',['../structDJI_1_1OSDK_1_1ACK_1_1WayPointAddPoint.html',1,'DJI::OSDK::ACK::WayPointAddPoint'],['../classDJI_1_1OSDK_1_1ACK.html#a53dd92219f528e568fbfcceb470dbd38',1,'DJI::OSDK::ACK::WayPointAddPoint()']]],
   ['waypointcounttoterminate',['waypointCountToTerminate',['../structDJI_1_1OSDK_1_1DJIWaypointV2ReachPointTriggerParam.html#a0bfaaae1dfd94b4157b80cee0fa0015e',1,'DJI::OSDK::DJIWaypointV2ReachPointTriggerParam']]],
   ['waypointfinishdata',['WayPointFinishData',['../structDJI_1_1OSDK_1_1WayPointFinishData.html',1,'DJI::OSDK::WayPointFinishData'],['../namespaceDJI_1_1OSDK.html#adde3d427e6840acde772d2f41986cad6',1,'DJI::OSDK::WayPointFinishData()']]],
@@ -37,5 +37,11 @@ var searchData=
   ['workmodeack',['WorkModeAck',['../structDJI_1_1OSDK_1_1CameraModule_1_1WorkModeAck.html',1,'DJI::OSDK::CameraModule::WorkModeAck'],['../classDJI_1_1OSDK_1_1CameraModule.html#a5daf070bd65b61bae0ddf7df54b89c9f',1,'DJI::OSDK::CameraModule::WorkModeAck()']]],
   ['workmodedata',['WorkModeData',['../classDJI_1_1OSDK_1_1CameraModule.html#a797960547955e8480b5c5f1579ee53b6',1,'DJI::OSDK::CameraModule']]],
   ['workmodereq',['WorkModeReq',['../structDJI_1_1OSDK_1_1CameraModule_1_1WorkModeReq.html',1,'DJI::OSDK::CameraModule::WorkModeReq'],['../classDJI_1_1OSDK_1_1CameraModule.html#af5a7874c21d18227a3103777b126271d',1,'DJI::OSDK::CameraModule::WorkModeReq()']]],
-  ['writedata',['writeData',['../classDJI_1_1OSDK_1_1HardwareSync.html#abb57c1c26820452952d82cbb43e6c8c5',1,'DJI::OSDK::HardwareSync']]]
+  ['wp_5faction_5fcraft_5fyaw',['WP_ACTION_CRAFT_YAW',['../namespaceDJI_1_1OSDK.html#aab9277df47011454784b9d492e947fd8ae1e248bb8b62da1409bba7b778d1efc3',1,'DJI::OSDK']]],
+  ['wp_5faction_5fgimbal_5fpitch',['WP_ACTION_GIMBAL_PITCH',['../namespaceDJI_1_1OSDK.html#aab9277df47011454784b9d492e947fd8a7a013b5128677ea07c1845f3d41df54b',1,'DJI::OSDK']]],
+  ['wp_5faction_5fsimple_5fshot',['WP_ACTION_SIMPLE_SHOT',['../namespaceDJI_1_1OSDK.html#aab9277df47011454784b9d492e947fd8aa4fe0de1146ca7e2f9e8418588d9d1b6',1,'DJI::OSDK']]],
+  ['wp_5faction_5fstay',['WP_ACTION_STAY',['../namespaceDJI_1_1OSDK.html#aab9277df47011454784b9d492e947fd8a9173a8059709b744de5865f2e38ad94e',1,'DJI::OSDK']]],
+  ['wp_5faction_5fvideo_5fstart',['WP_ACTION_VIDEO_START',['../namespaceDJI_1_1OSDK.html#aab9277df47011454784b9d492e947fd8ad81d8351f575f53a04dcfe7b01dce0d5',1,'DJI::OSDK']]],
+  ['wp_5faction_5fvideo_5fstop',['WP_ACTION_VIDEO_STOP',['../namespaceDJI_1_1OSDK.html#aab9277df47011454784b9d492e947fd8a4781a4b869c5830dfc44391d97b00bb0',1,'DJI::OSDK']]],
+  ['writedata',['writeData',['../classDJI_1_1OSDK_1_1HardwareSync.html#afcf55570e29b261ab4ab6aa1364f161d',1,'DJI::OSDK::HardwareSync']]]
 ];

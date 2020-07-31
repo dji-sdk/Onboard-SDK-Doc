@@ -12,10 +12,10 @@
 <!-- Node0 -->
 <g id="node1" class="node">
 <title>Node0</title>
-<g id="a_node1"><a xlink:href="structDJI_1_1OSDK_1_1Control_1_1AdvancedCtrlData.html" target="_top" xlink:title="AdvancedCtrlData.">
+<g id="a_node1"><a xlink:href="classDJI_1_1OSDK_1_1Control_1_1FlightCommand.html" target="_top" xlink:title="Flight control commands.">
 <polygon fill="#ffffff" stroke="#000000" points="0,-.5 0,-30.5 104,-30.5 104,-.5 0,-.5"/>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">DJI::OSDK::Control</text>
-<text text-anchor="middle" x="52" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::AdvancedCtrlData</text>
+<text text-anchor="middle" x="52" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::FlightCommand</text>
 </a>
 </g>
 </g>

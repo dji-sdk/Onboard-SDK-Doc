@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['t_5fosdkmutexhandle',['T_OsdkMutexHandle',['../osdk__platform_8h.html#aaaed3e68016c259310dec44b7bcb1d9b',1,'osdk_platform.h']]],
-  ['t_5fosdksemhandle',['T_OsdkSemHandle',['../osdk__platform_8h.html#ae265c40ba9165bd1f166ba6585b5b6f0',1,'osdk_platform.h']]],
-  ['t_5fosdktaskhandle',['T_OsdkTaskHandle',['../osdk__platform_8h.html#a7fda2f88381c8114bb29e5ab5cf01013',1,'osdk_platform.h']]],
   ['tapfocusposack',['TapFocusPosAck',['../classDJI_1_1OSDK_1_1CameraModule.html#a02c05adaa32426307b039fe30d3e9675',1,'DJI::OSDK::CameraModule']]],
   ['tapfocusposdata',['TapFocusPosData',['../classDJI_1_1OSDK_1_1CameraModule.html#af33b9c80feb8e050a955125ec521a0ea',1,'DJI::OSDK::CameraModule']]],
   ['tapfocusposreq',['TapFocusPosReq',['../classDJI_1_1OSDK_1_1CameraModule.html#ae7787579d8e385b97b521e6f08527dd4',1,'DJI::OSDK::CameraModule']]],

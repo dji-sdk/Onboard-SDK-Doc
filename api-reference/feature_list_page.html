@@ -1,0 +1,421 @@
+<!-- HTML header for doxygen 1.8.8-->
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- For Mobile Devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta name="generator" content="Doxygen 1.8.15" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <title>DJI Onboard SDK: $title</title>
+    <!-- <link href="tabs.css" rel="stylesheet" type="text/css"/> -->
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link href="jquery.smartmenus.bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap-theme.css">
+    <script src="bootstrap.min.js"></script>
+    <link href="jquery.smartmenus.bootstrap.css" rel="stylesheet">
+    <!-- SmartMenus jQuery plugin -->
+    <script type="text/javascript" src="jquery.smartmenus.min.js"></script>
+    <!-- SmartMenus jQuery Bootstrap Addon -->
+    <script type="text/javascript" src="jquery.smartmenus.bootstrap.min.js"></script>
+    <style>
+        .has-submenu {
+            position: relative;
+        }
+        #main-nav {
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+    <nav id="site-header" class="site-header navbar">
+        <div class="container">
+            <div class="navbar-header"><a href="/" class="logo"><img src="dji-logo@2x.png">Developer</a></div>
+            <div id="header-navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/mobile-sdk">Mobile SDK</a></li>
+                    <li><a href="/ux-sdk">UX SDK</a></li>
+                    <li><a href="/onboard-sdk">Onboard SDK</a></li>
+                    <li><a href="/payload-sdk">Payload SDK</a></li>
+                    <li><a href="/windows-sdk">Windows SDK</a></li>
+                </ul>
+                <ul v-cloak="" v-show="!loggedIn" class="nav navbar-nav navbar-right nav-user">
+                    <li><a
+                            href="https://account.dji.com/login?appId=dji_sdk&backUrl=https%3A%2F%2Fdeveloper.dji.com%2Fuser&locale=en_US">Login</a>
+                    </li>
+                    <li><a href="https://account.dji.com/register?appId=dji_sdk&backUrl=https%3A%2F%2Fdeveloper.dji.com%2Fuser&locale=en_US"
+                            class="head-cta">Register</a></li>
+                </ul>
+                <ul v-cloak="" v-show="loggedIn" class="nav navbar-nav navbar-right nav-user">
+                    <li class="hovedown"><a href="javascript:void(0);" class="hovedown-toggle"><i
+                                class="fa fa-user"></i></a>
+                        <ul class="hovedown-menu hovedown-menu-right">
+                            <li><a href="/user">User Center</a></li>
+                            <li><a href="javascript:void(0);" v-on="click: logout">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div data-offset-top="60" data-spy="affix" class="sub-nav">
+        <div class="container">
+            <h1 class="logo">Onboard SDK</h1>
+            <nav><a href="/onboard-sdk">Overview</a><a href="/onboard-sdk/documentation">Documentation</a><a
+                    href="/onboard-api-reference/index.html" class="active">API Reference</a><a
+                    href="/onboard-sdk/downloads">Downloads</a>
+            </nav>
+        </div>
+    </div>
+    <!--<nav class="navbar navbar-default" role="navigation">-->
+    <!--<div class="container">-->
+    <!--<div class="navbar-header">-->
+    <!--<a href="#" class="navbar-left"><img src="dji_logo_gray_small.png" alt="DJI OSDK API Documentation" width="32px"/></a>-->
+    <!--<a class="navbar-brand" href="index.html">ONBOARD SDK 4.0.1</a>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</nav>-->
+    <div id="top">
+        <!-- do not remove this div, it is closed by doxygen! -->
+        <div class="content" id="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 panel " style="padding-bottom: 15px;">
+                        <div style="margin-bottom: 15px;">
+                            <!-- end header part --><!-- Generated by Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="index.html">index</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="PageDoc"><div class="contents">
+<div class="textblock"><h2>Feature List</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Component  </th><th class="markdownTableHeadNone">Related API  </th><th class="markdownTableHeadNone">Description  </th><th class="markdownTableHeadNone">Support Platforms   </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone" rowspan="43"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html">FlightController</a>  </td><td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a4b806f7dc703be8f89f5d643a90539c7">setRtkEnableSync</a>  </td><td class="markdownTableBodyNone">Set RTK enable or disable, blocking calls.  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a361e9ccc0d545739890a3a71de65c863">setRtkEnableAsync</a>  </td><td class="markdownTableBodyNone">Set RTK enable or disable, non-blocking calls.  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#abd22ffb1ae2911db9826ed26f33a1857">getRtkEnableSync</a>  </td><td class="markdownTableBodyNone">Get rtk enable or disable, blocking calls.  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a3dac00051d2df4c19a3feb0962c70fd7">getRtkEnableAsync</a>  </td><td class="markdownTableBodyNone">Get RTK enable or disable, non-blocking calls.  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a18e380f619128fc06b7dbd186e0f7218">setGoHomeAltitudeSync</a>  </td><td class="markdownTableBodyNone">Set go home altitude, blocking calls.  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a32908e2be079b3a2dfd53eac04fc1bfa">setGoHomeAltitudeAsync</a>  </td><td class="markdownTableBodyNone">Set go home altitude, non-blocking calls.  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a7ff324ed7feea98fda11c11205b7696d">getGoHomeAltitudeSync</a>  </td><td class="markdownTableBodyNone">Get go home altitude, blocking calls.  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#af891e1e8345341b8d3bec4fcfeca3906">getGoHomeAltitudeAsync</a>  </td><td class="markdownTableBodyNone">Get go home altitude, non-blocking calls.  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#ae373567ec05ebb9b51afd2b1e3f5ba96">setCollisionAvoidanceEnabledSync</a>  </td><td class="markdownTableBodyNone">Set collision avoidance enable or disable, blocking calls.  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#adf62932f75f6a292a44f454d8f3cbf70">setCollisionAvoidanceEnabledAsync</a>  </td><td class="markdownTableBodyNone">Set collision avoidance enable or disable, non-blocking calls.  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a69b4de512028fbd70add0d65d17736ce">getCollisionAvoidanceEnabledSync</a>  </td><td class="markdownTableBodyNone">Get collision avoidance enable or disable, blocking calls.  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a3162d6f98452701f1f0fa7ffb9cd5fa1">getCollisionAvoidanceEnabledAsync</a>  </td><td class="markdownTableBodyNone">Get collision avoidance enable or disable, non-blocking calls.  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a710e760263948b27f9ecb468c38bb8d5">setUpwardsAvoidanceEnabledSync</a>  </td><td class="markdownTableBodyNone">Set upwards avoidance enable or disable, blocking calls.  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a7128d3794bbc9dab35df1dc4c92932b2">setUpwardsAvoidanceEnabledAsync</a>  </td><td class="markdownTableBodyNone">Set upwards avoidance enable or disable, non-blocking calls.  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#afbfd7d7ed67781dc2f89b83aa49811fa">getUpwardsAvoidanceEnabledSync</a>  </td><td class="markdownTableBodyNone">Get upwards avoidance enable or disable, blocking calls.  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a41bdc411bf82586bca83614e915991b6">getUpwardsAvoidanceEnabledAsync</a>  </td><td class="markdownTableBodyNone">Get upwards avoidance enable or disable, non-blocking calls.  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#acd1dba0ec1a3d406b53d511b6dc7285f">setHomeLocationSync</a>  </td><td class="markdownTableBodyNone">Set customized GPS(not RTK) home location, blocking calls.  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#ab82fd02fcabfa7beb18cfc95af259ade">setHomeLocationAsync</a>  </td><td class="markdownTableBodyNone">Set customized GPS(not RTK) home location, non-blocking calls.  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a83520c78c7019b3ae1a2bec538c1ca7e">setHomeLocationUsingCurrentAircraftLocationSync</a>  </td><td class="markdownTableBodyNone">Set home location using current aircraft GPS(not RTK) location, blocking calls.  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a04917e7e481eac1c504574453b320d31">setHomeLocationUsingCurrentAircraftLocationAsync</a>  </td><td class="markdownTableBodyNone">Set home location using current aircraft GPS(not RTK) location, non-blocking calls.  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a6c92a67df9ca64843cce92472113ce60">turnOnMotorsAsync</a>  </td><td class="markdownTableBodyNone">Wrapper function for turn on motors, non-blocking calls.  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a025df6d8bf36b92f0936ef211074c388">turnOffMotorsSync</a>  </td><td class="markdownTableBodyNone">Wrapper function for turn off motors, blocking calls.  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#afb1f41d23652e8e29a27570e34c1ee12">turnOffMotorsAsync</a>  </td><td class="markdownTableBodyNone">Wrapper function for turn off motors, non-blocking calls.  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#aebea11fe5a77f9ab3f4751066ae3d892">startTakeoffSync</a>  </td><td class="markdownTableBodyNone">Wrapper function for aircraft takeoff, blocking calls.  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#aa755b3bbceea1b9d8803ffdc1e15fa98">startTakeoffAsync</a>  </td><td class="markdownTableBodyNone">Wrapper function for aircraft takeoff, non-blocking calls.  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#aa979c06b8646ba96037c58e7fb212938">startLandingSync</a>  </td><td class="markdownTableBodyNone">Wrapper function for aircraft landing, blocking calls.  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#aec8e51949d943ef5afab40442a67ccd0">startLandingAsync</a>  </td><td class="markdownTableBodyNone">Wrapper function for aircraft landing, non-blocking calls.  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a8349218720ee4edc8f17baeaf722ed57">cancelLandingSync</a>  </td><td class="markdownTableBodyNone">Wrapper function for cancel aircraft landing, blocking calls.  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#ab1a21c7de421fa7fc98f3065ed8a5a90">cancelLandingAsync</a>  </td><td class="markdownTableBodyNone">Wrapper function for cancel aircraft landing, non-blocking calls.  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a6db3360aaca675e95494274d54b5aa55">startForceLandingSync</a>  </td><td class="markdownTableBodyNone">Wrapper function for aircraft force landing, blocking calls.  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a2c125df1cfc28fc122501cd7e040f49b">startForceLandingAsync</a>  </td><td class="markdownTableBodyNone">Wrapper function for aircraft force landing, non-blocking calls.  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a8baf1a121226109973f6bb2dea08cc1d">startConfirmLandingSync</a>  </td><td class="markdownTableBodyNone">Wrapper function for aircraft confirm landing and avoid ground, blocking calls.  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#afccef259458c22368144d0e321dd03ba">startConfirmLandingAsync</a>  </td><td class="markdownTableBodyNone">Wrapper function for aircraft confirm landing and avoid ground, non-blocking calls.  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a30d9adac394d7eb82e30c1cd9e812b8b">startGoHomeSync</a>  </td><td class="markdownTableBodyNone">Wrapper function for go home action, blocking calls.  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#abddd4bf193acaa8a3ad72a5631a3cd7d">startGoHomeAsync</a>  </td><td class="markdownTableBodyNone">Wrapper function for go home action, non-blocking calls.  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a01d8547d60853f56e47a731d5accb909">cancelGoHomeSync</a>  </td><td class="markdownTableBodyNone">Wrapper function for stop go home action, blocking calls.  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a854b0351ee9f2f17a09bd7a9b5f97e45">cancelGoHomeAsync</a>  </td><td class="markdownTableBodyNone">Wrapper function for stop go home action, non-blocking calls.  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#abb4f3152b12e4481fc76ddaa7610a8a6">setJoystickMode</a>  </td><td class="markdownTableBodyNone">Wrapper function for set joystick mode, non-blocking calls.  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#aeb129452f5528d418ad06454cdea7c55">setJoystickCommand</a>  </td><td class="markdownTableBodyNone">Wrapper function for set joystick command, non-blocking calls.  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a7d9f48d996593911c20676b737e7de1a">joystickAction</a>  </td><td class="markdownTableBodyNone">Wrapper function for set joystick action, non-blocking calls.  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a90c7eeb6ed1bcb81d4201b836a00e752">getJoystickMode</a>  </td><td class="markdownTableBodyNone">Wrapper function for get joystick mode, non-blocking calls.  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a4621731709a4fea63f76638ffcaf2dda">getJoystickCommand</a>  </td><td class="markdownTableBodyNone">Wrapper function for get joystick command, non-blocking calls.  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#af1b369caf7711d96b506805245b93e3a">killSwitch</a>  </td><td class="markdownTableBodyNone">Turn on or off the kill switch.  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone" rowspan="81"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html">CameraManager</a>  </td><td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#ad1b0c7d08a96bd7870cff80d19a86272">initCameraModule</a>  </td><td class="markdownTableBodyNone">init the camera module  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#ae1580ef579c57546d7b3d273a3a25566">deinitCameraModule</a>  </td><td class="markdownTableBodyNone">Deinit the camera module. It is a opposite operation to initCameraModule. It means this camera will disable. In the deinit, the camera module will set name to be defaultCameraName and set enable to be false.  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#a19115f5db40881a38086e00b32f2c194">deinitAllCameraModule</a>  </td><td class="markdownTableBodyNone">deinit all the camera modules  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#aa4fdb5239473c8c8ce90bb10b6d28d1b">getCameraModuleName</a>  </td><td class="markdownTableBodyNone">get the name of camera module, searched by index  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#a535c73c270ec3a267a4ab98752e6b991">getCameraModuleIndex</a>  </td><td class="markdownTableBodyNone">get the index of camera module, searched by name  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#a830abcc4ed1518967aa1999cc5daaea8">getCameraModuleEnable</a>  </td><td class="markdownTableBodyNone">get the enable status of camera module, searched by index  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#a83db2db860670e8cf0e088ec4d964553">startShootPhotoAsync</a>  </td><td class="markdownTableBodyNone">start to shoot photo, non-blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#a0e894e3d05eadfcbfd3de0986e437343">startShootPhotoSync</a>  </td><td class="markdownTableBodyNone">start to shoot photo, blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#ae043ecdaa687fa0e0e9338fe4e3830b2">stopShootPhotoAsync</a>  </td><td class="markdownTableBodyNone">stop to shoot photo, non-blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#aa83766209cdac9da5a8a7e39676104ab">stopShootPhotoSync</a>  </td><td class="markdownTableBodyNone">stop to shoot photo, blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#a4a946be6edc1197fd136c4be10118fb9">setShootPhotoModeAsync</a>  </td><td class="markdownTableBodyNone">set the shoot photo mode, non-blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#a73f9739023376373db607d773e964fc1">setShootPhotoModeSync</a>  </td><td class="markdownTableBodyNone">set the shoot photo mode, blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#a5930bd7fe0e207bd9867d66d5ef85746">getShootPhotoModeAsync</a>  </td><td class="markdownTableBodyNone">get the shoot photo mode, non-blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#a90f2447f528751c1f379808e6eee5d8c">getShootPhotoModeSync</a>  </td><td class="markdownTableBodyNone">get the shoot photo mode, blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#a8dd5d733976acb1d4e9863c9c232a61a">setPhotoBurstCountAsync</a>  </td><td class="markdownTableBodyNone">set the burst count in the Burst take-photo mode, non-blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#a51f72c68f1f4b78070eac45343afe849">setPhotoBurstCountSync</a>  </td><td class="markdownTableBodyNone">set the burst count in the Burst take-photo mode, blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#a5a588ff1c07e22f879d2c1a0856e35f4">getPhotoBurstCountAsync</a>  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#af634b04767a3a33f8fba15a8919bbb9f">getPhotoBurstCountSync</a>  </td><td class="markdownTableBodyNone">get the burst count in the Burst take-photo mode, blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#abf89a69d087e250b4e3ac37369b4921e">setPhotoAEBCountAsync</a>  </td><td class="markdownTableBodyNone">set the burst count in the AEB take-photo mode, non-blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#a38dd6b52d195f1ab3ff9dd6900f4f0c8">setPhotoAEBCountSync</a>  </td><td class="markdownTableBodyNone">set the burst count in the AEB take-photo mode, blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#a33a714b8e4623db63aa1686f6e852819">getPhotoAEBCountAsync</a>  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#a71481a90000202ad086b92d00b8dd1d1">getPhotoAEBCountSync</a>  </td><td class="markdownTableBodyNone">get the burst count in the AEB take-photo mode, blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#a675b3142cb9cb15ed2f9eb0786dccb6b">setPhotoTimeIntervalSettingsAsync</a>  </td><td class="markdownTableBodyNone">set the parameters in the INTERVAL take-photo mode, non-blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#a2e4016f030c7629f16b8c4fa18c00c7b">setPhotoTimeIntervalSettingsSync</a>  </td><td class="markdownTableBodyNone">set the parameters in the INTERVAL take-photo mode, blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#acfd4b9d989082bc3b601ff14c5d7a757">getPhotoIntervalDatasAsync</a>  </td><td class="markdownTableBodyNone">get the parameters in the INTERVAL take-photo mode, non-blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#abf705a2d48a75d7eda38d1cb48afd3e2">getPhotoIntervalDatasSync</a>  </td><td class="markdownTableBodyNone">get the parameters in the INTERVAL take-photo mode, blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#a88d03863e9cf6d4d07545a13d9ab5feb">startRecordVideoAsync</a>  </td><td class="markdownTableBodyNone">start to take video, non-blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#a2e6e25662fb24bab238ade92a6c1c6db">startRecordVideoSync</a>  </td><td class="markdownTableBodyNone">start to take video, blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#a2c40a3ba6949f11d2aa648bc35330cc8">stopRecordVideoAsync</a>  </td><td class="markdownTableBodyNone">stop to take video, non-blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#ae750d57ee807dcaa46479096f48537b4">stopRecordVideoSync</a>  </td><td class="markdownTableBodyNone">stop to take video, blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#ad26bb51ba782645e1287eff65cfa2cfd">setModeAsync</a>  </td><td class="markdownTableBodyNone">set camera working mode, non-blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#a9e53c19957d72f5d3133566493a20c44">setModeSync</a>  </td><td class="markdownTableBodyNone">set camera working mode, blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#a303b7b6e0ff633317aad66d1a4256922">getModeAsync</a>  </td><td class="markdownTableBodyNone">get camera working mode, non-blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#adb86a7593c51f9812eca2456f19bd985">getModeSync</a>  </td><td class="markdownTableBodyNone">get camera working mode, blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#af6b8a82e7dc451e8e8147f8b3cfa8030">setFocusModeAsync</a>  </td><td class="markdownTableBodyNone">set camera focus mode, non-blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#a5e50361774120a8b43b7e02e150f553f">setFocusModeSync</a>  </td><td class="markdownTableBodyNone">get camera focus mode, blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#aa6d2a2adc97125dd57293e5bfed62194">getFocusModeAsync</a>  </td><td class="markdownTableBodyNone">get camera focus mode, non-blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#aad5d58d6d003302bf008deb060621e13">getFocusModeSync</a>  </td><td class="markdownTableBodyNone">get camera focus mode, blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#a2450777e5dc53588ee8aea7c57527595">setFocusTargetAsync</a>  </td><td class="markdownTableBodyNone">set camera tap focus target point, non-blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#ab066b3449e0ed7ecdef7e1c83136a4e7">setFocusTargetSync</a>  </td><td class="markdownTableBodyNone">set camera focus point, blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#a37d7138cde6c230f6348062b8d0ba957">getFocusTargetAsync</a>  </td><td class="markdownTableBodyNone">get camera tap focus target point, non-blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#ab4ce28c3455468384692981069d59866">getFocusTargetSync</a>  </td><td class="markdownTableBodyNone">get camera focus point, blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#affc53603654eb231192ea9fdef800e40">startContinuousOpticalZoomAsync</a>  </td><td class="markdownTableBodyNone">start camera optical zooming, non-blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#a10af55e645ad240033b7b14a2b7f2f1b">startContinuousOpticalZoomSync</a>  </td><td class="markdownTableBodyNone">start camera optical zooming, blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#ab55f69f4db12c8d0366a646fd83e7509">setOpticalZoomFactorSync</a>  </td><td class="markdownTableBodyNone">set parameters for camera optical zooming, blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#a55ad44cb9616485f12243d5a4c4ca6e3">getOpticalZoomFactorSync</a>  </td><td class="markdownTableBodyNone">get parameters of camera optical zooming, blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#abfb353ae12f876ab213b64eb735b7518">stopContinuousOpticalZoomAsync</a>  </td><td class="markdownTableBodyNone">stop camera optical zooming, non-blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#a9a2eff712a2e3df887303ff682dd2cd2">stopContinuousOpticalZoomSync</a>  </td><td class="markdownTableBodyNone">stop camera optical zooming, blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#ac073358dbb45f97d656b58934d9e2f51">setTapZoomEnabledAsync</a>  </td><td class="markdownTableBodyNone">set camera tap zoom function parameters, non-blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#ac15672c4e6e03f63b294c462584a6240">setTapZoomEnabledSync</a>  </td><td class="markdownTableBodyNone">set camera tap zoom parameters, blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#a1224ffdf723a96d1419b8345221fdaac">getTapZoomEnabledAsync</a>  </td><td class="markdownTableBodyNone">get camera tap zoom function parameters, non-blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#a401f4f6039a50f637318743ebd13a1ec">getTapZoomEnabledSync</a>  </td><td class="markdownTableBodyNone">get camera tap zoom parameters, blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#a3c1a31f56f0826c0a189da4d7814be39">setTapZoomMultiplierAsync</a>  </td><td class="markdownTableBodyNone">set camera tap zoom function parameters, non-blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#a0516b75fb402a626eba396b631843708">setTapZoomMultiplierSync</a>  </td><td class="markdownTableBodyNone">set camera tap zoom parameters, blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#a95944b2e72f2a03f35588a6b5b92e68d">getTapZoomMultiplierAsync</a>  </td><td class="markdownTableBodyNone">get camera tap zoom function parameters, non-blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#a2466085492ee2a6906461a29f5318fa9">getTapZoomMultiplierSync</a>  </td><td class="markdownTableBodyNone">get camera tap zoom parameters, blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#add977bfd3cab99c7a10f3ea035762545">tapZoomAtTargetAsync</a>  </td><td class="markdownTableBodyNone">set camera tap zoom point, non-blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#abc8db67d245459e2b0a2b76a90d9cd0a">tapZoomAtTargetSync</a>  </td><td class="markdownTableBodyNone">set camera tap zoom point, blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#a14a15e9afdf8a388b32e302a8a31ea3f">setExposureModeAsync</a>  </td><td class="markdownTableBodyNone">set camera exposure mode, non-blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#a495f5042b6a800f37ec6b06d6525258f">setExposureModeSync</a>  </td><td class="markdownTableBodyNone">set camera exposure mode, blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#a1679d60284c37c92090cc9bff05516e1">getExposureModeAsync</a>  </td><td class="markdownTableBodyNone">get camera exposure mode, non-blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#ae385fb8923e0427d3e82382718a3b533">getExposureModeSync</a>  </td><td class="markdownTableBodyNone">get camera exposure mode, blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#adc46c7deb3915537ac79fc4e2a019d58">setISOAsync</a>  </td><td class="markdownTableBodyNone">set camera iso value, non-blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#a73f78ceb87123a1cd02e0b37278ecaa3">setISOSync</a>  </td><td class="markdownTableBodyNone">set camera iso value, blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#a2c6dae0bc2f1eef07722f0439089e439">getISOAsync</a>  </td><td class="markdownTableBodyNone">get camera iso value, non-blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#a83f1b62464f77c9513f26ed3ae98aefd">getISOSync</a>  </td><td class="markdownTableBodyNone">get camera iso value, blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#a3d4da43656339b3396fcd65af3e02935">setApertureAsync</a>  </td><td class="markdownTableBodyNone">set camera aperture size value, non-blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#ab931851ed265ea565e1ab1509192c30c">setApertureSync</a>  </td><td class="markdownTableBodyNone">set camera aperture size value, blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#a057f2f6fdf22582c36e62266cc410653">getApertureAsync</a>  </td><td class="markdownTableBodyNone">get camera aperture size value, non-blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#a745b0941de73d54b8853d63ec039d738">getApertureSync</a>  </td><td class="markdownTableBodyNone">get camera aperture size value, blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#aee344bd92e6b437f4a9bf45ef292f5c3">setShutterSpeedAsync</a>  </td><td class="markdownTableBodyNone">set camera shutter value, non-blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#aadf426aab6ed98b39f971c0fca784d69">setShutterSpeedSync</a>  </td><td class="markdownTableBodyNone">set camera shutter value, blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#ae6cc3603376ae66bfa86ebc0e70f1d62">getShutterSpeedAsync</a>  </td><td class="markdownTableBodyNone">get camera shutter value, non-blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#abfef86052c9510d8fb42c9785cb28a38">getShutterSpeedSync</a>  </td><td class="markdownTableBodyNone">get camera shutter value, blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#a96d11cc5e33299a00c26e11c53e30ddc">setExposureCompensationAsync</a>  </td><td class="markdownTableBodyNone">set camera EV value, non-blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#a6a1396cac2866e8b8fb54b3318a6b104">setExposureCompensationSync</a>  </td><td class="markdownTableBodyNone">set camera EV value, blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#af0c9674eb503d93740cd372908c094ad">getExposureCompensationAsync</a>  </td><td class="markdownTableBodyNone">get camera EV value, non-blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#a79ad086bb94fe32d91e03eaba439bee7">getExposureCompensationSync</a>  </td><td class="markdownTableBodyNone">get camera EV value, blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#a8022cb2ba3c24d9d97c27907f86b702a">obtainDownloadRightSync</a>  </td><td class="markdownTableBodyNone">obtain the download right from camera, blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#a6417bf8246d294394e440565c819cdf7">startReqFileList</a>  </td><td class="markdownTableBodyNone">start to requeset the filelist data of camera, non-blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#aa4381288b2096bdc4353308beda8ff05">startReqFileData</a>  </td><td class="markdownTableBodyNone">start to requeset the files of camera, non-blocking calls  </td><td class="markdownTableBodyNone"></td></tr>
+</table>
+</div></div><!-- PageDoc -->
+</div><!-- contents -->
+<!-- HTML footer for doxygen 1.8.8-->
+<!-- start footer part -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr class="footer"/><address class="footer"><small>
+  <footer id="site-footer" class="site-footer">
+    <div class="container">
+      <div class="foot-nav row">
+        <nav class="link-list col-xs-2"><span class="title">SDK</span><a href="/mobile-sdk">Mobile SDK</a><a href="/ux-sdk">UX SDK</a><a href="/onboard-sdk">Onboard SDK</a><a href="/payload-sdk">Payload SDK</a><a href="/windows-sdk">Windows SDK</a></nav>
+        <nav class="link-list col-xs-2"><span class="title">Info</span><a href="/products">Products</a></nav>
+        <nav class="link-list col-xs-2"><span class="title">Community</span><a href="http://stackoverflow.com/questions/tagged/dji-sdk" target="_blank">Stack Overflow</a><a href="https://www.youtube.com/channel/UCPQwN5xsob8zZGIcDhkYqUA" target="_blank">YouTube</a><a href="https://twitter.com/djidevelopers" target="_blank">Twitter</a></nav>
+        <nav class="link-list col-xs-2"><span class="title">Contact Us</span><a href="mailto:dev@dji.com"> dev@dji.com</a></nav>
+        <nav class="link-list col-xs-2"><span class="title">Business Cooperation</span><a href="mailto:dev@dji.com"> dev@dji.com</a></nav>
+        <nav class="link-list col-xs-2"><span class="title">BILLING</span><a href="mailto:billing-dev@dji.com"> billing-dev@dji.com</a></nav>
+      </div>
+      <div class="foot-copyright row">
+        <div class="col-xs-3 foot-logo"><img src="dji-logo-foot.png"></div>
+        <div class="copyright col-xs-7"><span>Copyright © 2018 DJI All Rights Reserved</span><a href="/policies/privacy">Privacy Policy</a><a href="/policies/terms">Terms of Use</a></div>
+        <div class="col-xs-2">
+          <div class="lang-selector">
+            <select dir="rtl" v-model="lang">
+              <option value="en">English</option>
+              <option value="cn">中文</option>
+            </select><i class="fa fa-globe"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</small></address>
+</body>
+<script type="text/javascript" src="doxy-boot.js"></script>
+</html>

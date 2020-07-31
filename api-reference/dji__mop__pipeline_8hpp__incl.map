@@ -1,13 +1,7 @@
-<map id="osdk&#45;lib/x86/osdk&#45;core/inc/dji_mop_pipeline.hpp" name="osdk&#45;lib/x86/osdk&#45;core/inc/dji_mop_pipeline.hpp">
-<area shape="rect" id="node1" title="Implementation of mop pipeline." alt="" coords="5,5,173,47"/>
-<area shape="rect" id="node2" title=" " alt="" coords="97,468,162,495"/>
-<area shape="rect" id="node3" href="$dji__mop__define_8hpp.html" title="Enumeration of all mop data types, structures." alt="" coords="75,95,210,121"/>
-<area shape="rect" id="node4" href="$mop__entry__osdk_8h_source.html" title=" " alt="" coords="75,244,205,271"/>
-<area shape="rect" id="node5" href="$dji__log_8hpp.html" title="Logging mechanism for printing status and error messages to the screen." alt="" coords="201,169,285,196"/>
-<area shape="rect" id="node6" href="$dji__singleton_8hpp.html" title="Singleton Template Class implementation for use with the DJI OSDK." alt="" coords="167,319,286,345"/>
-<area shape="rect" id="node7" href="$dji__platform_8hpp.html" title="Vehicle API for DJI onboardSDK library." alt="" coords="300,244,415,271"/>
-<area shape="rect" id="node8" href="$osdk__platform_8h.html" title="This is the header file for define OSDK platform interfaces." alt="" coords="311,319,425,345"/>
-<area shape="rect" id="node11" href="$osdk__logger_8h.html" title="This is the header file for &quot;osdk_logger.c&quot;, defining the structure and (exported) function prototype..." alt="" coords="450,319,553,345"/>
-<area shape="rect" id="node9" href="$osdk__typedef_8h_source.html" title=" " alt="" coords="313,393,423,420"/>
-<area shape="rect" id="node10" title=" " alt="" coords="333,468,403,495"/>
+<map id="osdk&#45;core/modules/inc/mop/dji_mop_pipeline.hpp" name="osdk&#45;core/modules/inc/mop/dji_mop_pipeline.hpp">
+<area shape="rect" id="node1" title="Implementation of mop pipeline." alt="" coords="11,5,187,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,95,71,121"/>
+<area shape="rect" id="node3" href="$dji__mop__define_8hpp.html" title="Enumeration of all mop data types, structures." alt="" coords="95,95,229,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="32,169,161,196"/>
+<area shape="rect" id="node5" title=" " alt="" coords="185,169,269,196"/>
 </map>

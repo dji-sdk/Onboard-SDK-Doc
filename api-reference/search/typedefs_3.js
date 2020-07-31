@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['dispatchinfo',['DispatchInfo',['../namespaceDJI_1_1OSDK.html#ae29b96cf80978cd98b1150ac52d38c71',1,'DJI::OSDK']]],
+  ['dispatchinfo',['DispatchInfo',['../namespaceDJI_1_1OSDK.html#a6e1701dde6d5a10a3e0f39a2f9a4080e',1,'DJI::OSDK']]],
   ['djibatteryclosedreasonimpl',['DJIBatteryClosedReasonImpl',['../namespaceDJI_1_1OSDK.html#aa70fd48f6ec4a6f1b1d65984dbacdcb0',1,'DJI::OSDK']]],
   ['djibatteryfirmwareabnormalimpl',['DJIBatteryFirmwareAbnormalImpl',['../namespaceDJI_1_1OSDK.html#a3a80a477e9fe7bf19b7698a13e459c80',1,'DJI::OSDK']]],
   ['djigimbalrotation',['DJIGimbalRotation',['../namespaceDJI_1_1OSDK.html#af18b6f0caffb341762902883a8a0f03e',1,'DJI::OSDK']]],
