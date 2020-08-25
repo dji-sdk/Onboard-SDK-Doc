@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 2378;
+var viewWidth = 2200;
 var viewHeight = 554;
 var sectionId = 'dynsection-0';
 </script>
@@ -54,14 +54,14 @@ var sectionId = 'dynsection-0';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>osdk&#45;core/api/src/dji_mobile_device.cpp</title>
-<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-550 2374.2095,-550 2374.2095,4 -4,4"/>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-550 2196,-550 2196,4 -4,4"/>
 <!-- Node0 -->
 <g id="node1" class="node">
 <title>Node0</title>
 <g id="a_node1"><a xlink:title="Implementation of DJI Mobile Device Abstraction.">
-<polygon fill="#bfbfbf" stroke="#000000" points="401.2095,-515.5 401.2095,-545.5 505.2095,-545.5 505.2095,-515.5 401.2095,-515.5"/>
-<text text-anchor="start" x="409.2095" y="-533.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">osdk&#45;core/api/src/dji</text>
-<text text-anchor="middle" x="453.2095" y="-522.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_mobile_device.cpp</text>
+<polygon fill="#bfbfbf" stroke="#000000" points="853,-515.5 853,-545.5 957,-545.5 957,-515.5 853,-515.5"/>
+<text text-anchor="start" x="861" y="-533.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">osdk&#45;core/api/src/dji</text>
+<text text-anchor="middle" x="905" y="-522.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_mobile_device.cpp</text>
 </a>
 </g>
 </g>
@@ -69,1057 +69,1051 @@ var sectionId = 'dynsection-0';
 <g id="node2" class="node">
 <title>Node1</title>
 <g id="a_node2"><a xlink:href="dji__mobile__device_8hpp.html" target="_top" xlink:title="Implementation of DJI Mobile Device Abstraction.">
-<polygon fill="#ffffff" stroke="#000000" points="29.7095,-403.5 29.7095,-422.5 142.7095,-422.5 142.7095,-403.5 29.7095,-403.5"/>
-<text text-anchor="middle" x="86.2095" y="-410.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_mobile_device.hpp</text>
+<polygon fill="#ffffff" stroke="#000000" points="2012.5,-403.5 2012.5,-422.5 2125.5,-422.5 2125.5,-403.5 2012.5,-403.5"/>
+<text text-anchor="middle" x="2069" y="-410.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_mobile_device.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node0&#45;&gt;Node1 -->
 <g id="edge1" class="edge">
 <title>Node0&#45;&gt;Node1</title>
-<path fill="none" stroke="#191970" d="M406.3559,-515.4992C333.4201,-492.1478 194.0385,-447.5229 125.8126,-425.6795"/>
-<polygon fill="#191970" stroke="#191970" points="126.8702,-422.3431 116.2791,-422.6272 124.7357,-429.0098 126.8702,-422.3431"/>
+<path fill="none" stroke="#191970" d="M957.1348,-526.1533C1114.472,-512.8676 1598.2887,-470.7839 1998,-423 1999.4678,-422.8245 2000.9521,-422.6438 2002.4484,-422.4588"/>
+<polygon fill="#191970" stroke="#191970" points="2002.9701,-425.9207 2012.4466,-421.1829 2002.0839,-418.977 2002.9701,-425.9207"/>
 </g>
 <!-- Node16 -->
 <g id="node15" class="node">
 <title>Node16</title>
 <g id="a_node15"><a xlink:href="dji__vehicle_8hpp.html" target="_top" xlink:title="Vehicle API for DJI onboardSDK library.">
-<polygon fill="#ffffff" stroke="#000000" points="761.7095,-459.5 761.7095,-478.5 842.7095,-478.5 842.7095,-459.5 761.7095,-459.5"/>
-<text text-anchor="middle" x="802.2095" y="-466.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_vehicle.hpp</text>
+<polygon fill="#ffffff" stroke="#000000" points="830.5,-459.5 830.5,-478.5 911.5,-478.5 911.5,-459.5 830.5,-459.5"/>
+<text text-anchor="middle" x="871" y="-466.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_vehicle.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node0&#45;&gt;Node16 -->
 <g id="edge18" class="edge">
 <title>Node0&#45;&gt;Node16</title>
-<path fill="none" stroke="#191970" d="M505.4583,-521.2928C571.8818,-509.5878 685.798,-489.5138 751.4851,-477.9385"/>
-<polygon fill="#191970" stroke="#191970" points="752.3579,-481.3387 761.5987,-476.1563 751.143,-474.445 752.3579,-481.3387"/>
+<path fill="none" stroke="#191970" d="M896.5955,-515.2977C891.9743,-506.9388 886.2031,-496.4997 881.3111,-487.6509"/>
+<polygon fill="#191970" stroke="#191970" points="884.3452,-485.9051 876.4438,-478.8469 878.2191,-489.292 884.3452,-485.9051"/>
 </g>
 <!-- Node2 -->
 <g id="node3" class="node">
 <title>Node2</title>
 <g id="a_node3"><a xlink:href="dji__vehicle__callback_8hpp.html" target="_top" xlink:title="Type definition for new Vehicle&#45;style callbacks.">
-<polygon fill="#ffffff" stroke="#000000" points="823.2095,-224.5 823.2095,-243.5 945.2095,-243.5 945.2095,-224.5 823.2095,-224.5"/>
-<text text-anchor="middle" x="884.2095" y="-231.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_vehicle_callback.hpp</text>
+<polygon fill="#ffffff" stroke="#000000" points="664,-224.5 664,-243.5 786,-243.5 786,-224.5 664,-224.5"/>
+<text text-anchor="middle" x="725" y="-231.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_vehicle_callback.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge2" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="#191970" d="M114.3572,-403.3818C165.792,-385.713 278.3174,-346.6269 372.2095,-311 406.7015,-297.9122 413.3859,-288.8124 449.2095,-280 605.3525,-241.5895 649.4942,-262.6283 809.2095,-244 810.3185,-243.8706 811.4366,-243.7389 812.5619,-243.6049"/>
-<polygon fill="#191970" stroke="#191970" points="813.3332,-247.0368 822.8351,-242.3504 812.4846,-240.0885 813.3332,-247.0368"/>
+<path fill="none" stroke="#191970" d="M2048.9453,-403.4972C2016.8222,-388.7347 1951.4895,-360.5804 1893,-347 1732.922,-309.8322 1684.5317,-350.4469 1525,-311 1489.5869,-302.2435 1484.5571,-288.1521 1449,-280 1326.2469,-251.8568 953.4559,-239.6121 796.1909,-235.601"/>
+<polygon fill="#191970" stroke="#191970" points="796.2335,-232.1011 786.1487,-235.3487 796.0576,-239.0989 796.2335,-232.1011"/>
 </g>
 <!-- Node3 -->
 <g id="node4" class="node">
 <title>Node3</title>
 <g id="a_node4"><a xlink:href="dji__ack_8hpp.html" target="_top" xlink:title="All DJI OSDK ACK parsing.">
-<polygon fill="#ffffff" stroke="#000000" points="743.2095,-168.5 743.2095,-187.5 809.2095,-187.5 809.2095,-168.5 743.2095,-168.5"/>
-<text text-anchor="middle" x="776.2095" y="-175.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_ack.hpp</text>
+<polygon fill="#ffffff" stroke="#000000" points="692,-168.5 692,-187.5 758,-187.5 758,-168.5 692,-168.5"/>
+<text text-anchor="middle" x="725" y="-175.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_ack.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge3" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="#191970" d="M865.3973,-224.2455C848.3622,-215.4125 823.052,-202.2887 803.7413,-192.2758"/>
-<polygon fill="#191970" stroke="#191970" points="805.2948,-189.1388 794.8061,-187.6427 802.0725,-195.353 805.2948,-189.1388"/>
+<path fill="none" stroke="#191970" d="M725,-224.2455C725,-216.9382 725,-206.6944 725,-197.7046"/>
+<polygon fill="#191970" stroke="#191970" points="728.5001,-197.6426 725,-187.6427 721.5001,-197.6427 728.5001,-197.6426"/>
 </g>
 <!-- Node12 -->
 <g id="node9" class="node">
 <title>Node12</title>
 <g id="a_node9"><a xlink:href="dji__type_8hpp.html" target="_top" xlink:title="Data type and Data Structure definitions for use throughout DJI OSDK.">
-<polygon fill="#ffffff" stroke="#000000" points="1164.7095,-56.5 1164.7095,-75.5 1233.7095,-75.5 1233.7095,-56.5 1164.7095,-56.5"/>
-<text text-anchor="middle" x="1199.2095" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_type.hpp</text>
+<polygon fill="#ffffff" stroke="#000000" points="1089.5,-56.5 1089.5,-75.5 1158.5,-75.5 1158.5,-56.5 1089.5,-56.5"/>
+<text text-anchor="middle" x="1124" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_type.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node12 -->
 <g id="edge17" class="edge">
 <title>Node2&#45;&gt;Node12</title>
-<path fill="none" stroke="#191970" d="M901.0641,-224.4122C937.9692,-203.4908 1028.8149,-152.3828 1106.2095,-112 1127.4243,-100.9306 1151.6644,-88.9626 1170.0774,-80.0095"/>
-<polygon fill="#191970" stroke="#191970" points="1171.6557,-83.134 1179.1281,-75.6231 1168.6028,-76.8348 1171.6557,-83.134"/>
+<path fill="none" stroke="#191970" d="M765.2797,-224.4191C798.2033,-216.1309 845.7205,-203.1186 886,-188 940.7246,-167.4595 952.9683,-158.6345 1005,-132 1037.8602,-115.1792 1074.9412,-94.3033 1098.8478,-80.5894"/>
+<polygon fill="#191970" stroke="#191970" points="1100.7108,-83.5555 1107.6311,-75.533 1097.2183,-77.489 1100.7108,-83.5555"/>
 </g>
 <!-- Node15 -->
 <g id="node14" class="node">
 <title>Node15</title>
 <g id="a_node14"><a xlink:title=" ">
-<polygon fill="#ffffff" stroke="#bfbfbf" points="1148.7095,-168.5 1148.7095,-187.5 1211.7095,-187.5 1211.7095,-168.5 1148.7095,-168.5"/>
-<text text-anchor="middle" x="1180.2095" y="-175.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_log.hpp</text>
+<polygon fill="#ffffff" stroke="#bfbfbf" points="814.5,-168.5 814.5,-187.5 877.5,-187.5 877.5,-168.5 814.5,-168.5"/>
+<text text-anchor="middle" x="846" y="-175.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_log.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node15 -->
 <g id="edge16" class="edge">
 <title>Node2&#45;&gt;Node15</title>
-<path fill="none" stroke="#191970" d="M934.7574,-224.4369C992.3076,-213.549 1085.2478,-195.9657 1138.7266,-185.8481"/>
-<polygon fill="#191970" stroke="#191970" points="1139.3797,-189.2867 1148.5548,-183.9887 1138.0784,-182.4087 1139.3797,-189.2867"/>
+<path fill="none" stroke="#191970" d="M745.8006,-224.3733C765.2243,-215.3838 794.4224,-201.8706 816.2964,-191.7471"/>
+<polygon fill="#191970" stroke="#191970" points="817.8656,-194.8776 825.4708,-187.5011 814.9255,-188.5249 817.8656,-194.8776"/>
 </g>
 <!-- Node4 -->
 <g id="node5" class="node">
 <title>Node4</title>
 <g id="a_node5"><a xlink:href="dji__command_8hpp.html" target="_top" xlink:title="All DJI OSDK OpenProtocol Command IDs.">
-<polygon fill="#ffffff" stroke="#ff0000" points="762.7095,-56.5 762.7095,-75.5 855.7095,-75.5 855.7095,-56.5 762.7095,-56.5"/>
-<text text-anchor="middle" x="809.2095" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_command.hpp</text>
+<polygon fill="#ffffff" stroke="#ff0000" points="746.5,-56.5 746.5,-75.5 839.5,-75.5 839.5,-56.5 746.5,-56.5"/>
+<text text-anchor="middle" x="793" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_command.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node4 -->
 <g id="edge4" class="edge">
 <title>Node3&#45;&gt;Node4</title>
-<path fill="none" stroke="#191970" d="M770.0837,-168.2715C762.6204,-155.0975 751.9669,-131.0435 760.2095,-112 765.4432,-99.9081 775.5936,-89.5335 785.305,-81.7139"/>
-<polygon fill="#191970" stroke="#191970" points="787.6766,-84.3109 793.5915,-75.5209 783.486,-78.7038 787.6766,-84.3109"/>
+<path fill="none" stroke="#191970" d="M726.134,-168.396C728.0692,-154.9437 732.9311,-130.1093 744,-112 750.9657,-100.6038 761.4989,-90.202 771.0167,-82.1838"/>
+<polygon fill="#191970" stroke="#191970" points="773.3872,-84.7694 779.0041,-75.786 769.0111,-79.3059 773.3872,-84.7694"/>
 </g>
 <!-- Node10 -->
 <g id="node7" class="node">
 <title>Node10</title>
 <g id="a_node7"><a xlink:href="dji__mission__type_8hpp.html" target="_top" xlink:title="Mission related data struct for DJI OSDK library.">
-<polygon fill="#ffffff" stroke="#000000" points="1693.2095,-112.5 1693.2095,-131.5 1801.2095,-131.5 1801.2095,-112.5 1693.2095,-112.5"/>
-<text text-anchor="middle" x="1747.2095" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_mission_type.hpp</text>
+<polygon fill="#ffffff" stroke="#000000" points="1522,-112.5 1522,-131.5 1630,-131.5 1630,-112.5 1522,-112.5"/>
+<text text-anchor="middle" x="1576" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_mission_type.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node10 -->
 <g id="edge6" class="edge">
 <title>Node3&#45;&gt;Node10</title>
-<path fill="none" stroke="#191970" d="M809.3526,-176.0886C949.5308,-168.0041 1495.1132,-136.539 1683.1162,-125.6964"/>
-<polygon fill="#191970" stroke="#191970" points="1683.3435,-129.1892 1693.1254,-125.1192 1682.9404,-122.2008 1683.3435,-129.1892"/>
+<path fill="none" stroke="#191970" d="M758.0319,-173.3831C772.434,-171.4965 789.529,-169.4269 805,-168 1066.3095,-143.8984 1378.6654,-129.764 1511.3158,-124.4426"/>
+<polygon fill="#191970" stroke="#191970" points="1511.84,-127.9246 1521.6929,-124.0296 1511.5616,-120.9301 1511.84,-127.9246"/>
 </g>
 <!-- Node3&#45;&gt;Node12 -->
 <g id="edge11" class="edge">
 <title>Node3&#45;&gt;Node12</title>
-<path fill="none" stroke="#191970" d="M809.4016,-169.2115C884.9184,-149.2166 1069.6141,-100.3137 1154.8168,-77.7541"/>
-<polygon fill="#191970" stroke="#191970" points="1155.9291,-81.0803 1164.7002,-75.1372 1154.1374,-74.3134 1155.9291,-81.0803"/>
+<path fill="none" stroke="#191970" d="M758.0676,-169.1429C792.1634,-159.9767 846.8513,-145.1808 894,-132 959.6008,-113.6607 1035.5227,-91.7381 1081.632,-78.3459"/>
+<polygon fill="#191970" stroke="#191970" points="1082.6586,-81.6925 1091.2844,-75.5406 1080.7049,-74.9706 1082.6586,-81.6925"/>
 </g>
 <!-- Node14 -->
 <g id="node11" class="node">
 <title>Node14</title>
 <g id="a_node11"><a xlink:href="dji__version_8hpp.html" target="_top" xlink:title="Drone/SDK Version definition for DJI onboardSDK library.">
-<polygon fill="#ffffff" stroke="#000000" points="387.2095,-112.5 387.2095,-131.5 469.2095,-131.5 469.2095,-112.5 387.2095,-112.5"/>
-<text text-anchor="middle" x="428.2095" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_version.hpp</text>
+<polygon fill="#ffffff" stroke="#000000" points="375,-112.5 375,-131.5 457,-131.5 457,-112.5 375,-112.5"/>
+<text text-anchor="middle" x="416" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_version.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node14 -->
 <g id="edge12" class="edge">
 <title>Node3&#45;&gt;Node14</title>
-<path fill="none" stroke="#191970" d="M743.1567,-172.6812C682.2735,-162.8839 552.0209,-141.9237 479.5464,-130.2611"/>
-<polygon fill="#191970" stroke="#191970" points="479.7169,-126.7436 469.2878,-128.6103 478.6047,-133.6547 479.7169,-126.7436"/>
+<path fill="none" stroke="#191970" d="M691.9316,-172.007C637.9903,-162.2312 530.7006,-142.7872 466.9633,-131.2361"/>
+<polygon fill="#191970" stroke="#191970" points="467.5865,-127.7921 457.1226,-129.4526 466.3382,-134.6799 467.5865,-127.7921"/>
 </g>
 <!-- Node7 -->
 <g id="node13" class="node">
 <title>Node7</title>
 <g id="a_node13"><a xlink:title=" ">
-<polygon fill="#ffffff" stroke="#bfbfbf" points="866.7095,-112.5 866.7095,-131.5 901.7095,-131.5 901.7095,-112.5 866.7095,-112.5"/>
-<text text-anchor="middle" x="884.2095" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">map</text>
+<polygon fill="#ffffff" stroke="#bfbfbf" points="850.5,-112.5 850.5,-131.5 885.5,-131.5 885.5,-112.5 850.5,-112.5"/>
+<text text-anchor="middle" x="868" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">map</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node7 -->
 <g id="edge15" class="edge">
 <title>Node3&#45;&gt;Node7</title>
-<path fill="none" stroke="#191970" d="M795.0216,-168.2455C812.3684,-159.2509 838.2957,-145.8071 857.7312,-135.7295"/>
-<polygon fill="#191970" stroke="#191970" points="859.4183,-138.7973 866.6848,-131.0869 856.1961,-132.583 859.4183,-138.7973"/>
+<path fill="none" stroke="#191970" d="M749.5826,-168.3733C775.0738,-158.3907 814.81,-142.8296 841.1195,-132.5266"/>
+<polygon fill="#191970" stroke="#191970" points="842.4526,-135.7635 850.4878,-128.8579 839.9,-129.2454 842.4526,-135.7635"/>
 </g>
 <!-- Node9 -->
 <g id="node6" class="node">
 <title>Node9</title>
 <g id="a_node6"><a xlink:title=" ">
-<polygon fill="#ffffff" stroke="#bfbfbf" points="987.7095,-.5 987.7095,-19.5 1036.7095,-19.5 1036.7095,-.5 987.7095,-.5"/>
-<text text-anchor="middle" x="1012.2095" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">stdint.h</text>
+<polygon fill="#ffffff" stroke="#bfbfbf" points="911.5,-.5 911.5,-19.5 960.5,-19.5 960.5,-.5 911.5,-.5"/>
+<text text-anchor="middle" x="936" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">stdint.h</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node9 -->
 <g id="edge5" class="edge">
 <title>Node4&#45;&gt;Node9</title>
-<path fill="none" stroke="#191970" d="M844.1064,-56.3733C881.5128,-46.0543 940.527,-29.7745 977.76,-19.5033"/>
-<polygon fill="#191970" stroke="#191970" points="978.9388,-22.8089 987.6479,-16.7756 977.0772,-16.061 978.9388,-22.8089"/>
+<path fill="none" stroke="#191970" d="M817.5826,-56.3733C840.9496,-47.2226 876.2862,-33.3844 902.2784,-23.2057"/>
+<polygon fill="#191970" stroke="#191970" points="903.703,-26.4066 911.7382,-19.5011 901.1505,-19.8886 903.703,-26.4066"/>
 </g>
 <!-- Node11 -->
 <g id="node8" class="node">
 <title>Node11</title>
 <g id="a_node8"><a xlink:title=" ">
-<polygon fill="#ffffff" stroke="#bfbfbf" points="2002.2095,-56.5 2002.2095,-75.5 2046.2095,-75.5 2046.2095,-56.5 2002.2095,-56.5"/>
-<text text-anchor="middle" x="2024.2095" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">vector</text>
+<polygon fill="#ffffff" stroke="#bfbfbf" points="1824,-56.5 1824,-75.5 1868,-75.5 1868,-56.5 1824,-56.5"/>
+<text text-anchor="middle" x="1846" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">vector</text>
 </a>
 </g>
 </g>
 <!-- Node10&#45;&gt;Node11 -->
 <g id="edge7" class="edge">
 <title>Node10&#45;&gt;Node11</title>
-<path fill="none" stroke="#191970" d="M1794.5127,-112.4369C1850.8002,-101.0575 1943.2636,-82.3645 1991.9349,-72.5248"/>
-<polygon fill="#191970" stroke="#191970" points="1992.8017,-75.9205 2001.9099,-70.5082 1991.4146,-69.0593 1992.8017,-75.9205"/>
+<path fill="none" stroke="#191970" d="M1622.1079,-112.4369C1676.7178,-101.1104 1766.2625,-82.5382 1813.8767,-72.6626"/>
+<polygon fill="#191970" stroke="#191970" points="1814.8464,-76.0361 1823.9271,-70.5781 1813.4247,-69.1819 1814.8464,-76.0361"/>
 </g>
 <!-- Node10&#45;&gt;Node12 -->
 <g id="edge8" class="edge">
 <title>Node10&#45;&gt;Node12</title>
-<path fill="none" stroke="#191970" d="M1693.0521,-113.7841C1688.3741,-113.1508 1683.7108,-112.5463 1679.2095,-112 1519.4544,-92.6109 1328.9683,-76.403 1243.9832,-69.5315"/>
-<polygon fill="#191970" stroke="#191970" points="1244.1583,-66.0344 1233.9097,-68.7209 1243.5967,-73.0118 1244.1583,-66.0344"/>
+<path fill="none" stroke="#191970" d="M1521.8278,-113.9C1517.1531,-113.2415 1512.4945,-112.5996 1508,-112 1385.4138,-95.6469 1240.4406,-79.0127 1168.7553,-70.9675"/>
+<polygon fill="#191970" stroke="#191970" points="1169.0494,-67.4787 1158.7219,-69.8439 1168.2703,-74.4352 1169.0494,-67.4787"/>
 </g>
 <!-- Node12&#45;&gt;Node9 -->
 <g id="edge10" class="edge">
 <title>Node12&#45;&gt;Node9</title>
-<path fill="none" stroke="#191970" d="M1167.063,-56.3733C1133.4175,-46.2976 1080.7949,-30.539 1046.4031,-20.2398"/>
-<polygon fill="#191970" stroke="#191970" points="1047.3709,-16.8761 1036.7871,-17.3601 1045.3627,-23.5819 1047.3709,-16.8761"/>
+<path fill="none" stroke="#191970" d="M1091.6816,-56.3733C1057.8562,-46.2976 1004.9522,-30.539 970.3765,-20.2398"/>
+<polygon fill="#191970" stroke="#191970" points="971.2921,-16.8606 960.7091,-17.3601 969.2937,-23.5693 971.2921,-16.8606"/>
 </g>
 <!-- Node13 -->
 <g id="node10" class="node">
 <title>Node13</title>
 <g id="a_node10"><a xlink:title=" ">
-<polygon fill="#ffffff" stroke="#bfbfbf" points="1177.7095,-.5 1177.7095,-19.5 1220.7095,-19.5 1220.7095,-.5 1177.7095,-.5"/>
-<text text-anchor="middle" x="1199.2095" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">cstdio</text>
+<polygon fill="#ffffff" stroke="#bfbfbf" points="1102.5,-.5 1102.5,-19.5 1145.5,-19.5 1145.5,-.5 1102.5,-.5"/>
+<text text-anchor="middle" x="1124" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">cstdio</text>
 </a>
 </g>
 </g>
 <!-- Node12&#45;&gt;Node13 -->
 <g id="edge9" class="edge">
 <title>Node12&#45;&gt;Node13</title>
-<path fill="none" stroke="#191970" d="M1199.2095,-56.2455C1199.2095,-48.9382 1199.2095,-38.6944 1199.2095,-29.7046"/>
-<polygon fill="#191970" stroke="#191970" points="1202.7096,-29.6426 1199.2095,-19.6427 1195.7096,-29.6427 1202.7096,-29.6426"/>
+<path fill="none" stroke="#191970" d="M1124,-56.2455C1124,-48.9382 1124,-38.6944 1124,-29.7046"/>
+<polygon fill="#191970" stroke="#191970" points="1127.5001,-29.6426 1124,-19.6427 1120.5001,-29.6427 1127.5001,-29.6426"/>
 </g>
 <!-- Node14&#45;&gt;Node4 -->
 <g id="edge13" class="edge">
 <title>Node14&#45;&gt;Node4</title>
-<path fill="none" stroke="#191970" d="M469.3452,-115.9538C537.757,-105.8985 675.041,-85.7203 752.5579,-74.3267"/>
-<polygon fill="#191970" stroke="#191970" points="753.2411,-77.764 762.6258,-72.8469 752.2231,-70.8384 753.2411,-77.764"/>
+<path fill="none" stroke="#191970" d="M457.0633,-115.9004C524.7314,-105.8489 659.7926,-85.7868 736.4479,-74.4003"/>
+<polygon fill="#191970" stroke="#191970" points="737.0311,-77.8522 746.4083,-72.9208 736.0026,-70.9281 737.0311,-77.8522"/>
 </g>
 <!-- Node6 -->
 <g id="node12" class="node">
 <title>Node6</title>
 <g id="a_node12"><a xlink:title=" ">
-<polygon fill="#ffffff" stroke="#bfbfbf" points="121.2095,-56.5 121.2095,-75.5 167.2095,-75.5 167.2095,-56.5 121.2095,-56.5"/>
-<text text-anchor="middle" x="144.2095" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">cstdint</text>
+<polygon fill="#ffffff" stroke="#bfbfbf" points="116,-56.5 116,-75.5 162,-75.5 162,-56.5 116,-56.5"/>
+<text text-anchor="middle" x="139" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">cstdint</text>
 </a>
 </g>
 </g>
 <!-- Node14&#45;&gt;Node6 -->
 <g id="edge14" class="edge">
 <title>Node14&#45;&gt;Node6</title>
-<path fill="none" stroke="#191970" d="M386.9134,-113.8571C330.2067,-102.6755 229.3559,-82.7894 177.3137,-72.5276"/>
-<polygon fill="#191970" stroke="#191970" points="177.7712,-69.0505 167.283,-70.5497 176.417,-75.9183 177.7712,-69.0505"/>
+<path fill="none" stroke="#191970" d="M374.8294,-113.6767C319.6742,-102.5262 222.8783,-82.9574 172.1495,-72.7017"/>
+<polygon fill="#191970" stroke="#191970" points="172.5505,-69.212 162.0552,-70.661 171.1634,-76.0732 172.5505,-69.212"/>
 </g>
 <!-- Node16&#45;&gt;Node1 -->
 <g id="edge49" class="edge">
 <title>Node16&#45;&gt;Node1</title>
-<path fill="none" stroke="#191970" d="M761.373,-467.064C659.3113,-462.0134 384.9524,-447.1305 157.2095,-423 155.7395,-422.8442 154.2531,-422.6814 152.755,-422.5125"/>
-<polygon fill="#191970" stroke="#191970" points="153.0913,-419.0279 142.7474,-421.3201 152.2631,-425.9788 153.0913,-419.0279"/>
+<path fill="none" stroke="#191970" d="M911.5257,-468.7959C1058.0945,-467.7498 1574.3109,-461.3887 1998,-423 1999.4722,-422.8666 2000.9605,-422.7241 2002.4604,-422.5735"/>
+<polygon fill="#191970" stroke="#191970" points="2002.9181,-426.0444 2012.4773,-421.4758 2002.1555,-419.0861 2002.9181,-426.0444"/>
 </g>
 <!-- Node16&#45;&gt;Node2 -->
 <g id="edge24" class="edge">
 <title>Node16&#45;&gt;Node2</title>
-<path fill="none" stroke="#191970" d="M799.0662,-459.4276C793.8739,-445.0849 782.1545,-418.0943 763.2095,-403 721.985,-370.1546 695.6961,-393.6315 650.2095,-367 609.6753,-343.2681 559.6711,-315.688 590.2095,-280 593.8443,-275.7522 727.0508,-256.208 812.8957,-244.0018"/>
-<polygon fill="#191970" stroke="#191970" points="813.4498,-247.4583 822.8588,-242.5878 812.4662,-240.5277 813.4498,-247.4583"/>
+<path fill="none" stroke="#191970" d="M843.8627,-459.3441C774.4295,-434.032 593.5061,-364.0523 561,-311 535.9768,-270.1602 598.7457,-250.6617 653.7201,-241.5656"/>
+<polygon fill="#191970" stroke="#191970" points="654.5288,-244.9819 663.8714,-239.9854 653.4521,-238.0652 654.5288,-244.9819"/>
 </g>
 <!-- Node16&#45;&gt;Node3 -->
 <g id="edge22" class="edge">
 <title>Node16&#45;&gt;Node3</title>
-<path fill="none" stroke="#191970" d="M761.4161,-467.4078C652.2577,-462.8234 359.364,-448.2795 324.2095,-423 279.9514,-391.1742 285.57,-364.316 274.2095,-311 271.3382,-297.5247 265.6354,-290.7848 274.2095,-280 331.2427,-208.2619 621.8195,-185.9219 732.9286,-179.9385"/>
-<polygon fill="#191970" stroke="#191970" points="733.3022,-183.4239 743.107,-179.4094 732.9388,-176.4333 733.3022,-183.4239"/>
+<path fill="none" stroke="#191970" d="M830.1349,-467.7176C696.3005,-463.2961 276.5338,-447.5947 221,-423 182.1982,-405.8155 152,-399.4369 152,-357 152,-357 152,-357 152,-295.5 152,-241.4914 547.7018,-196.1032 681.4404,-182.3054"/>
+<polygon fill="#191970" stroke="#191970" points="682.1244,-185.7537 691.7164,-181.2543 681.4121,-178.7901 682.1244,-185.7537"/>
 </g>
 <!-- Node16&#45;&gt;Node12 -->
 <g id="edge23" class="edge">
 <title>Node16&#45;&gt;Node12</title>
-<path fill="none" stroke="#191970" d="M842.8103,-467.8327C995.0351,-463.2954 1526.8777,-445.9408 1599.2095,-423 1683.3437,-396.3159 1723.9066,-390.031 1763.2095,-311 1865.8038,-104.7011 1394.5624,-72.1131 1244.1107,-66.9656"/>
-<polygon fill="#191970" stroke="#191970" points="1243.9507,-63.4588 1233.8449,-66.6403 1243.729,-70.4553 1243.9507,-63.4588"/>
+<path fill="none" stroke="#191970" d="M911.7006,-468.4416C1031.2419,-465.8317 1376.9847,-451.0232 1442,-367 1539.9216,-240.4501 1261.8277,-118.5119 1159.8593,-79.1571"/>
+<polygon fill="#191970" stroke="#191970" points="1160.8698,-75.7966 1150.2791,-75.5032 1158.3753,-82.3371 1160.8698,-75.7966"/>
 </g>
 <!-- Node16&#45;&gt;Node14 -->
 <g id="edge25" class="edge">
 <title>Node16&#45;&gt;Node14</title>
-<path fill="none" stroke="#191970" d="M761.6831,-467.713C648.6714,-463.7904 335.899,-450.536 299.2095,-423 228.3206,-369.7969 228.2436,-291.0504 286.2095,-224 319.3115,-185.7102 369.538,-154.0254 400.5359,-136.5865"/>
-<polygon fill="#191970" stroke="#191970" points="402.4343,-139.5365 409.4983,-131.6403 399.052,-133.4079 402.4343,-139.5365"/>
+<path fill="none" stroke="#191970" d="M830.4376,-468.4339C680.2651,-466.088 161.1343,-455.6694 95,-423 60.2501,-405.8341 38,-395.7585 38,-357 38,-357 38,-357 38,-234 38,-166.6695 261.2601,-136.6786 364.6171,-126.402"/>
+<polygon fill="#191970" stroke="#191970" points="365.2122,-129.8608 374.8278,-125.4123 364.5367,-122.8935 365.2122,-129.8608"/>
 </g>
 <!-- Node16&#45;&gt;Node6 -->
 <g id="edge20" class="edge">
 <title>Node16&#45;&gt;Node6</title>
-<path fill="none" stroke="#191970" d="M761.6323,-467.9052C605.3185,-463.5226 49.3998,-446.3467 20.2095,-423 -3.6284,-403.9341 1.2095,-387.5246 1.2095,-357 1.2095,-357 1.2095,-357 1.2095,-178 1.2095,-122.385 69.0771,-90.2425 111.3028,-75.6264"/>
-<polygon fill="#191970" stroke="#191970" points="112.5213,-78.91 120.9158,-72.446 110.3225,-72.2642 112.5213,-78.91"/>
+<path fill="none" stroke="#191970" d="M830.2671,-468.5744C675.0187,-466.6983 125.6225,-457.649 56,-423 21.5598,-405.8601 0,-395.4695 0,-357 0,-357 0,-357 0,-178 0,-123.7456 65.0033,-91.3181 106.105,-76.2369"/>
+<polygon fill="#191970" stroke="#191970" points="107.4576,-79.4716 115.7345,-72.8577 105.1397,-72.8665 107.4576,-79.4716"/>
 </g>
 <!-- Node16&#45;&gt;Node15 -->
 <g id="edge29" class="edge">
 <title>Node16&#45;&gt;Node15</title>
-<path fill="none" stroke="#191970" d="M842.9746,-468.0379C929.1613,-465.3764 1126.6788,-455.7799 1184.2095,-423 1211.4741,-407.4651 1217.1178,-396.7128 1227.2095,-367 1230.0681,-358.5833 1228.4114,-355.8073 1227.2095,-347 1219.6217,-291.3971 1198.6051,-228.2768 1187.4238,-197.2714"/>
-<polygon fill="#191970" stroke="#191970" points="1190.646,-195.8924 1183.9171,-187.7087 1184.074,-198.3024 1190.646,-195.8924"/>
+<path fill="none" stroke="#191970" d="M892.4268,-459.4753C923.436,-444.5122 980.2477,-412.4432 1009,-367 1029.8387,-334.0643 1039.3755,-313.8172 1020,-280 991.717,-230.636 929.2471,-202.8456 887.3773,-189.1286"/>
+<polygon fill="#191970" stroke="#191970" points="888.3221,-185.7568 877.7327,-186.0971 886.223,-192.4347 888.3221,-185.7568"/>
 </g>
 <!-- Node17 -->
 <g id="node16" class="node">
 <title>Node17</title>
 <g id="a_node16"><a xlink:title=" ">
-<polygon fill="#ffffff" stroke="#bfbfbf" points="351.2095,-403.5 351.2095,-422.5 397.2095,-422.5 397.2095,-403.5 351.2095,-403.5"/>
-<text text-anchor="middle" x="374.2095" y="-410.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">stdio.h</text>
+<polygon fill="#ffffff" stroke="#bfbfbf" points="248,-403.5 248,-422.5 294,-422.5 294,-403.5 248,-403.5"/>
+<text text-anchor="middle" x="271" y="-410.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">stdio.h</text>
 </a>
 </g>
 </g>
 <!-- Node16&#45;&gt;Node17 -->
 <g id="edge19" class="edge">
 <title>Node16&#45;&gt;Node17</title>
-<path fill="none" stroke="#191970" d="M761.6139,-466.7986C691.2024,-462.4382 541.8602,-450.7978 407.548,-422.9513"/>
-<polygon fill="#191970" stroke="#191970" points="408.0013,-419.47 397.4942,-420.8302 406.5562,-426.3192 408.0013,-419.47"/>
+<path fill="none" stroke="#191970" d="M830.4536,-466.8895C721.2787,-461.0256 421.9761,-443.7085 304.1003,-422.7668"/>
+<polygon fill="#191970" stroke="#191970" points="304.7382,-419.3255 294.2651,-420.9267 303.4508,-426.2061 304.7382,-419.3255"/>
 </g>
 <!-- Node18 -->
 <g id="node17" class="node">
 <title>Node18</title>
 <g id="a_node17"><a xlink:href="dji__status_8hpp.html" target="_top" xlink:title="Status information for DJI Vehicle.">
-<polygon fill="#ffffff" stroke="#000000" points="415.7095,-403.5 415.7095,-422.5 492.7095,-422.5 492.7095,-403.5 415.7095,-403.5"/>
-<text text-anchor="middle" x="454.2095" y="-410.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_status.hpp</text>
+<polygon fill="#ffffff" stroke="#000000" points="312.5,-403.5 312.5,-422.5 389.5,-422.5 389.5,-403.5 312.5,-403.5"/>
+<text text-anchor="middle" x="351" y="-410.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_status.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node16&#45;&gt;Node18 -->
 <g id="edge21" class="edge">
 <title>Node16&#45;&gt;Node18</title>
-<path fill="none" stroke="#191970" d="M761.3348,-463.436C705.4114,-455.6691 601.6874,-440.7139 503.0862,-423.0811"/>
-<polygon fill="#191970" stroke="#191970" points="503.4096,-419.5831 492.9476,-421.2551 502.1688,-426.4722 503.4096,-419.5831"/>
+<path fill="none" stroke="#191970" d="M830.4085,-466.5304C750.1792,-461.3289 565.4946,-447.7658 400.0714,-423.009"/>
+<polygon fill="#191970" stroke="#191970" points="400.1188,-419.4763 389.7074,-421.4392 399.0705,-426.3974 400.1188,-419.4763"/>
 </g>
 <!-- Node19 -->
 <g id="node18" class="node">
 <title>Node19</title>
 <g id="a_node18"><a xlink:href="dji__legacy__linker_8hpp.html" target="_top" xlink:title="Legacy adapting in linker for OSDK 3.9.">
-<polygon fill="#ffffff" stroke="#000000" points="457.7095,-347.5 457.7095,-366.5 564.7095,-366.5 564.7095,-347.5 457.7095,-347.5"/>
-<text text-anchor="middle" x="511.2095" y="-354.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_legacy_linker.hpp</text>
+<polygon fill="#ffffff" stroke="#000000" points="316.5,-347.5 316.5,-366.5 423.5,-366.5 423.5,-347.5 316.5,-347.5"/>
+<text text-anchor="middle" x="370" y="-354.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_legacy_linker.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node16&#45;&gt;Node19 -->
 <g id="edge26" class="edge">
 <title>Node16&#45;&gt;Node19</title>
-<path fill="none" stroke="#191970" d="M772.7424,-459.4953C746.9216,-450.8719 708.5691,-437.3447 676.2095,-423 658.7617,-415.2655 655.6671,-410.7123 638.2095,-403 609.5204,-390.3259 576.1437,-378.3392 550.8081,-369.781"/>
-<polygon fill="#191970" stroke="#191970" points="551.7673,-366.4113 541.1736,-366.5605 549.5482,-373.0503 551.7673,-366.4113"/>
+<path fill="none" stroke="#191970" d="M830.4321,-467.4989C771.536,-464.2819 659.6029,-454.2327 570,-423 553.0822,-417.103 551.533,-409.9028 535,-403 499.6851,-388.2554 458.1805,-376.7108 425.6329,-368.8747"/>
+<polygon fill="#191970" stroke="#191970" points="426.3729,-365.4533 415.8363,-366.5625 424.7648,-372.2661 426.3729,-365.4533"/>
 </g>
 <!-- Node21 -->
 <g id="node20" class="node">
 <title>Node21</title>
 <g id="a_node20"><a xlink:href="dji__broadcast_8hpp.html" target="_top" xlink:title="Broadcast Telemetry API for DJI onboardSDK library.">
-<polygon fill="#ffffff" stroke="#000000" points="659.7095,-347.5 659.7095,-366.5 752.7095,-366.5 752.7095,-347.5 659.7095,-347.5"/>
-<text text-anchor="middle" x="706.2095" y="-354.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_broadcast.hpp</text>
+<polygon fill="#ffffff" stroke="#000000" points="907.5,-347.5 907.5,-366.5 1000.5,-366.5 1000.5,-347.5 907.5,-347.5"/>
+<text text-anchor="middle" x="954" y="-354.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_broadcast.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node16&#45;&gt;Node21 -->
 <g id="edge30" class="edge">
 <title>Node16&#45;&gt;Node21</title>
-<path fill="none" stroke="#191970" d="M804.2653,-459.0886C806.553,-445.2711 808.5756,-420.0055 797.2095,-403 787.0129,-387.7443 770.1542,-377.3012 753.7002,-370.2745"/>
-<polygon fill="#191970" stroke="#191970" points="754.7003,-366.9075 744.1125,-366.5216 752.1487,-373.4259 754.7003,-366.9075"/>
+<path fill="none" stroke="#191970" d="M878.0765,-459.4509C891.9812,-440.688 923.0567,-398.7548 940.8401,-374.758"/>
+<polygon fill="#191970" stroke="#191970" points="943.7994,-376.6431 946.9414,-366.5249 938.1753,-372.4753 943.7994,-376.6431"/>
 </g>
 <!-- Node23 -->
 <g id="node22" class="node">
 <title>Node23</title>
 <g id="a_node22"><a xlink:href="dji__gimbal_8hpp.html" target="_top" xlink:title="Gimbal API for OSDK library.">
-<polygon fill="#ffffff" stroke="#000000" points="769.7095,-112.5 769.7095,-131.5 848.7095,-131.5 848.7095,-112.5 769.7095,-112.5"/>
-<text text-anchor="middle" x="809.2095" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_gimbal.hpp</text>
+<polygon fill="#ffffff" stroke="#000000" points="753.5,-112.5 753.5,-131.5 832.5,-131.5 832.5,-112.5 753.5,-112.5"/>
+<text text-anchor="middle" x="793" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_gimbal.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node16&#45;&gt;Node23 -->
 <g id="edge34" class="edge">
 <title>Node16&#45;&gt;Node23</title>
-<path fill="none" stroke="#191970" d="M761.4161,-467.4078C652.2577,-462.8234 359.364,-448.2795 324.2095,-423 279.9514,-391.1742 285.57,-364.316 274.2095,-311 271.3382,-297.5247 265.9614,-291.0361 274.2095,-280 333.3624,-200.852 638.1219,-147.4953 759.3692,-129.1001"/>
-<polygon fill="#191970" stroke="#191970" points="760.1225,-132.5264 769.4924,-127.581 759.0837,-125.6039 760.1225,-132.5264"/>
+<path fill="none" stroke="#191970" d="M830.1431,-468.0572C689.9875,-464.5823 234.0817,-451.2032 175,-423 138.9533,-405.7927 114,-396.9432 114,-357 114,-357 114,-357 114,-234 114,-202.1379 585.5922,-145.5945 742.7359,-127.6376"/>
+<polygon fill="#191970" stroke="#191970" points="743.5207,-131.0709 753.0604,-126.4617 742.7285,-124.1159 743.5207,-131.0709"/>
 </g>
 <!-- Node24 -->
 <g id="node23" class="node">
 <title>Node24</title>
 <g id="a_node23"><a xlink:href="dji__camera_8hpp.html" target="_top" xlink:title="Camera/Gimbal API for DJI onboardSDK library.">
-<polygon fill="#ffffff" stroke="#000000" points="629.7095,-112.5 629.7095,-131.5 712.7095,-131.5 712.7095,-112.5 629.7095,-112.5"/>
-<text text-anchor="middle" x="671.2095" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_camera.hpp</text>
+<polygon fill="#ffffff" stroke="#000000" points="613.5,-112.5 613.5,-131.5 696.5,-131.5 696.5,-112.5 613.5,-112.5"/>
+<text text-anchor="middle" x="655" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_camera.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node16&#45;&gt;Node24 -->
 <g id="edge37" class="edge">
 <title>Node16&#45;&gt;Node24</title>
-<path fill="none" stroke="#191970" d="M761.6831,-467.713C648.6714,-463.7904 335.899,-450.536 299.2095,-423 277.8222,-406.9486 284.7059,-392.6684 277.2095,-367 266.2834,-329.5883 251.9636,-316.2776 266.2095,-280 278.6241,-248.3858 289.9845,-242.8926 318.2095,-224 412.6953,-160.7552 546.7247,-136.1332 619.4345,-127.0103"/>
-<polygon fill="#191970" stroke="#191970" points="620.1952,-130.4441 629.7052,-125.774 619.3586,-123.4943 620.1952,-130.4441"/>
+<path fill="none" stroke="#191970" d="M830.2532,-468.2749C684.8172,-465.4391 196.5837,-453.702 134,-423 98.941,-405.8009 76,-396.0505 76,-357 76,-357 76,-357 76,-234 76,-180.5617 461.0856,-139.7946 603.1599,-126.5723"/>
+<polygon fill="#191970" stroke="#191970" points="603.7235,-130.0353 613.3597,-125.6317 603.0806,-123.0649 603.7235,-130.0353"/>
 </g>
 <!-- Node25 -->
 <g id="node24" class="node">
 <title>Node25</title>
 <g id="a_node24"><a xlink:href="dji__control_8hpp.html" target="_top" xlink:title="Control API for DJI OSDK library.">
-<polygon fill="#ffffff" stroke="#000000" points="283.2095,-286 283.2095,-305 363.2095,-305 363.2095,-286 283.2095,-286"/>
-<text text-anchor="middle" x="323.2095" y="-293" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_control.hpp</text>
+<polygon fill="#ffffff" stroke="#000000" points="180,-286 180,-305 260,-305 260,-286 180,-286"/>
+<text text-anchor="middle" x="220" y="-293" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_control.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node16&#45;&gt;Node25 -->
 <g id="edge40" class="edge">
 <title>Node16&#45;&gt;Node25</title>
-<path fill="none" stroke="#191970" d="M761.4076,-467.7384C654.4793,-464.0442 372.2787,-451.652 342.2095,-423 313.0304,-395.1962 315.5027,-343.4121 319.5341,-315.1477"/>
-<polygon fill="#191970" stroke="#191970" points="322.9935,-315.6799 321.1516,-305.2464 316.0851,-314.5512 322.9935,-315.6799"/>
+<path fill="none" stroke="#191970" d="M830.1828,-467.4235C693.7241,-461.9727 260.7285,-443.1515 239,-423 209.4481,-395.5928 212.0721,-343.6473 216.2263,-315.2523"/>
+<polygon fill="#191970" stroke="#191970" points="219.6929,-315.7422 217.8898,-305.302 212.7887,-314.5879 219.6929,-315.7422"/>
 </g>
 <!-- Node26 -->
 <g id="node25" class="node">
 <title>Node26</title>
 <g id="a_node25"><a xlink:href="dji__subscription_8hpp.html" target="_top" xlink:title="Telemetry Subscription API for DJI OSDK library.">
-<polygon fill="#ffffff" stroke="#000000" points="905.7095,-347.5 905.7095,-366.5 1008.7095,-366.5 1008.7095,-347.5 905.7095,-347.5"/>
-<text text-anchor="middle" x="957.2095" y="-354.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_subscription.hpp</text>
+<polygon fill="#ffffff" stroke="#000000" points="441.5,-347.5 441.5,-366.5 544.5,-366.5 544.5,-347.5 441.5,-347.5"/>
+<text text-anchor="middle" x="493" y="-354.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_subscription.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node16&#45;&gt;Node26 -->
 <g id="edge44" class="edge">
 <title>Node16&#45;&gt;Node26</title>
-<path fill="none" stroke="#191970" d="M815.4247,-459.4509C842.192,-440.1094 903.0335,-396.1465 935.6335,-372.5904"/>
-<polygon fill="#191970" stroke="#191970" points="937.9722,-375.2186 944.0277,-366.5249 933.8724,-369.5448 937.9722,-375.2186"/>
+<path fill="none" stroke="#191970" d="M830.2859,-466.0291C778.1725,-461.2794 685.6959,-449.6365 611,-423 592.1472,-416.2771 546.0448,-389.2207 517.3661,-371.9062"/>
+<polygon fill="#191970" stroke="#191970" points="519.0892,-368.8578 508.7238,-366.665 515.4593,-374.8432 519.0892,-368.8578"/>
 </g>
 <!-- Node27 -->
 <g id="node26" class="node">
 <title>Node27</title>
 <g id="a_node26"><a xlink:href="dji__payload__device_8hpp.html" target="_top" xlink:title="Implementation of DJI Payload Device Abstraction.">
-<polygon fill="#ffffff" stroke="#000000" points="511.2095,-403.5 511.2095,-422.5 629.2095,-422.5 629.2095,-403.5 511.2095,-403.5"/>
-<text text-anchor="middle" x="570.2095" y="-410.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_payload_device.hpp</text>
+<polygon fill="#ffffff" stroke="#000000" points="408,-403.5 408,-422.5 526,-422.5 526,-403.5 408,-403.5"/>
+<text text-anchor="middle" x="467" y="-410.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_payload_device.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node16&#45;&gt;Node27 -->
 <g id="edge50" class="edge">
 <title>Node16&#45;&gt;Node27</title>
-<path fill="none" stroke="#191970" d="M762.5909,-459.4369C723.0527,-449.8932 662.2026,-435.2052 619.5513,-424.9101"/>
-<polygon fill="#191970" stroke="#191970" points="620.2068,-421.4679 609.6647,-422.5237 618.5642,-428.2724 620.2068,-421.4679"/>
+<path fill="none" stroke="#191970" d="M830.4132,-463.3741C761.4811,-453.8192 620.786,-434.3169 536.1054,-422.579"/>
+<polygon fill="#191970" stroke="#191970" points="536.4507,-419.0934 526.0648,-421.1872 535.4895,-426.0271 536.4507,-419.0934"/>
 </g>
 <!-- Node28 -->
 <g id="node27" class="node">
 <title>Node28</title>
 <g id="a_node27"><a xlink:href="dji__hardware__sync_8hpp.html" target="_top" xlink:title="Hardware Sync API for DJI OSDK.">
-<polygon fill="#ffffff" stroke="#000000" points="1638.2095,-286 1638.2095,-305 1754.2095,-305 1754.2095,-286 1638.2095,-286"/>
-<text text-anchor="middle" x="1696.2095" y="-293" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_hardware_sync.hpp</text>
+<polygon fill="#ffffff" stroke="#000000" points="1534,-286 1534,-305 1650,-305 1650,-286 1534,-286"/>
+<text text-anchor="middle" x="1592" y="-293" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_hardware_sync.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node16&#45;&gt;Node28 -->
 <g id="edge52" class="edge">
 <title>Node16&#45;&gt;Node28</title>
-<path fill="none" stroke="#191970" d="M843.1372,-468.4876C978.9622,-466.474 1413.8413,-457.4303 1549.2095,-423 1606.2483,-408.4924 1629.1944,-410.1589 1669.2095,-367 1682.5667,-352.5933 1689.5049,-330.9339 1692.9811,-315.2304"/>
-<polygon fill="#191970" stroke="#191970" points="1696.4898,-315.5186 1694.9427,-305.0374 1689.6159,-314.1957 1696.4898,-315.5186"/>
+<path fill="none" stroke="#191970" d="M911.6594,-468.3347C1045.7978,-465.8374 1468.6809,-455.4429 1520,-423 1559.0591,-398.3076 1578.9511,-344.3967 1587.2024,-315.2114"/>
+<polygon fill="#191970" stroke="#191970" points="1590.6376,-315.9114 1589.8106,-305.3489 1583.8702,-314.1218 1590.6376,-315.9114"/>
 </g>
 <!-- Node31 -->
 <g id="node30" class="node">
 <title>Node31</title>
 <g id="a_node30"><a xlink:href="dji__mfio_8hpp.html" target="_top" xlink:title="MFIO API for DJI OSDK library.">
-<polygon fill="#ffffff" stroke="#000000" points="685.7095,-403.5 685.7095,-422.5 754.7095,-422.5 754.7095,-403.5 685.7095,-403.5"/>
-<text text-anchor="middle" x="720.2095" y="-410.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_mfio.hpp</text>
+<polygon fill="#ffffff" stroke="#000000" points="620.5,-403.5 620.5,-422.5 689.5,-422.5 689.5,-403.5 620.5,-403.5"/>
+<text text-anchor="middle" x="655" y="-410.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_mfio.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node16&#45;&gt;Node31 -->
 <g id="edge57" class="edge">
 <title>Node16&#45;&gt;Node31</title>
-<path fill="none" stroke="#191970" d="M787.9262,-459.2455C775.4624,-450.7337 757.1644,-438.2375 742.7303,-428.3801"/>
-<polygon fill="#191970" stroke="#191970" points="744.561,-425.392 734.3291,-422.6427 740.6133,-431.1726 744.561,-425.392"/>
+<path fill="none" stroke="#191970" d="M833.8683,-459.3733C796.5061,-449.6868 738.8847,-434.7479 699.1915,-424.4571"/>
+<polygon fill="#191970" stroke="#191970" points="700.0679,-421.0686 689.5095,-421.9469 698.3111,-427.8446 700.0679,-421.0686"/>
 </g>
 <!-- Node32 -->
 <g id="node31" class="node">
 <title>Node32</title>
 <g id="a_node31"><a xlink:href="dji__mission__manager_8hpp.html" target="_top" xlink:title="Mission&#45;Manager API for DJI OSDK library.">
-<polygon fill="#ffffff" stroke="#000000" points="1048.7095,-403.5 1048.7095,-422.5 1175.7095,-422.5 1175.7095,-403.5 1048.7095,-403.5"/>
-<text text-anchor="middle" x="1112.2095" y="-410.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_mission_manager.hpp</text>
+<polygon fill="#ffffff" stroke="#000000" points="1131.5,-403.5 1131.5,-422.5 1258.5,-422.5 1258.5,-403.5 1131.5,-403.5"/>
+<text text-anchor="middle" x="1195" y="-410.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_mission_manager.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node16&#45;&gt;Node32 -->
 <g id="edge59" class="edge">
 <title>Node16&#45;&gt;Node32</title>
-<path fill="none" stroke="#191970" d="M842.7366,-461.679C895.3614,-452.1726 987.7622,-435.4808 1049.4781,-424.3321"/>
-<polygon fill="#191970" stroke="#191970" points="1050.2693,-427.7459 1059.4878,-422.5239 1049.0248,-420.8574 1050.2693,-427.7459"/>
+<path fill="none" stroke="#191970" d="M911.7068,-461.9643C966.4781,-452.4976 1064.5317,-435.5501 1129.6843,-424.2891"/>
+<polygon fill="#191970" stroke="#191970" points="1130.589,-427.6847 1139.8468,-422.5327 1129.3967,-420.787 1130.589,-427.6847"/>
 </g>
 <!-- Node36 -->
 <g id="node35" class="node">
 <title>Node36</title>
 <g id="a_node35"><a xlink:href="dji__camera__manager_8hpp.html" target="_top" xlink:title="Implementation of the manager for camera module.">
-<polygon fill="#ffffff" stroke="#000000" points="1534.7095,-347.5 1534.7095,-366.5 1659.7095,-366.5 1659.7095,-347.5 1534.7095,-347.5"/>
-<text text-anchor="middle" x="1597.2095" y="-354.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_camera_manager.hpp</text>
+<polygon fill="#ffffff" stroke="#000000" points="1307.5,-347.5 1307.5,-366.5 1432.5,-366.5 1432.5,-347.5 1307.5,-347.5"/>
+<text text-anchor="middle" x="1370" y="-354.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_camera_manager.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node16&#45;&gt;Node36 -->
 <g id="edge69" class="edge">
 <title>Node16&#45;&gt;Node36</title>
-<path fill="none" stroke="#191970" d="M842.7532,-467.9001C985.1863,-463.8309 1457.4403,-448.5307 1520.2095,-423 1545.5297,-412.7013 1568.458,-390.6206 1582.5833,-374.8358"/>
-<polygon fill="#191970" stroke="#191970" points="1585.6069,-376.6887 1589.4844,-366.8289 1580.3046,-372.1187 1585.6069,-376.6887"/>
+<path fill="none" stroke="#191970" d="M911.6169,-466.645C999.1738,-461.1885 1203.0262,-446.3373 1268,-423 1299.8166,-411.5721 1331.7765,-388.5822 1351.2282,-372.988"/>
+<polygon fill="#191970" stroke="#191970" points="1353.4889,-375.6604 1359.0009,-366.6123 1349.0495,-370.2482 1353.4889,-375.6604"/>
 </g>
 <!-- Node40 -->
 <g id="node38" class="node">
 <title>Node40</title>
 <g id="a_node38"><a xlink:href="dji__gimbal__manager_8hpp.html" target="_top" xlink:title="Implementation of the manager for gimbal module.">
-<polygon fill="#ffffff" stroke="#000000" points="2191.2095,-168.5 2191.2095,-187.5 2313.2095,-187.5 2313.2095,-168.5 2191.2095,-168.5"/>
-<text text-anchor="middle" x="2252.2095" y="-175.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_gimbal_manager.hpp</text>
+<polygon fill="#ffffff" stroke="#000000" points="2038,-168.5 2038,-187.5 2160,-187.5 2160,-168.5 2038,-168.5"/>
+<text text-anchor="middle" x="2099" y="-175.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_gimbal_manager.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node16&#45;&gt;Node40 -->
 <g id="edge76" class="edge">
 <title>Node16&#45;&gt;Node40</title>
-<path fill="none" stroke="#191970" d="M842.9961,-468.3458C1073.6236,-464.5669 2205.0262,-444.9327 2233.2095,-423 2257.2991,-404.2531 2252.2095,-387.5246 2252.2095,-357 2252.2095,-357 2252.2095,-357 2252.2095,-295.5 2252.2095,-261.1399 2252.2095,-221.128 2252.2095,-197.7764"/>
-<polygon fill="#191970" stroke="#191970" points="2255.7096,-197.7489 2252.2095,-187.7489 2248.7096,-197.749 2255.7096,-197.7489"/>
+<path fill="none" stroke="#191970" d="M911.6252,-468.1876C1098.9127,-464.3189 1871.867,-446.9527 1917,-423 2012.9459,-372.0802 2071.9345,-245.6097 2091.6311,-197.2364"/>
+<polygon fill="#191970" stroke="#191970" points="2094.9928,-198.2536 2095.4248,-187.6676 2088.4856,-195.6737 2094.9928,-198.2536"/>
 </g>
 <!-- Node43 -->
 <g id="node40" class="node">
 <title>Node43</title>
 <g id="a_node40"><a xlink:href="dji__flight__controller_8hpp.html" target="_top" xlink:title="Implementation of flight controller.">
-<polygon fill="#ffffff" stroke="#000000" points="771.2095,-347.5 771.2095,-366.5 887.2095,-366.5 887.2095,-347.5 771.2095,-347.5"/>
-<text text-anchor="middle" x="829.2095" y="-354.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_flight_controller.hpp</text>
+<polygon fill="#ffffff" stroke="#000000" points="773,-347.5 773,-366.5 889,-366.5 889,-347.5 773,-347.5"/>
+<text text-anchor="middle" x="831" y="-354.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_flight_controller.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node16&#45;&gt;Node43 -->
 <g id="edge80" class="edge">
 <title>Node16&#45;&gt;Node43</title>
-<path fill="none" stroke="#191970" d="M811.8587,-459.4346C819.8595,-450.7723 830.6357,-437.2221 835.2095,-423 840.0529,-407.9395 837.9625,-390.0171 834.9895,-376.652"/>
-<polygon fill="#191970" stroke="#191970" points="838.2998,-375.4717 832.4174,-366.6599 831.5208,-377.2168 838.2998,-375.4717"/>
+<path fill="none" stroke="#191970" d="M867.5896,-459.4509C861.0067,-441.0186 846.4376,-400.2254 837.8011,-376.043"/>
+<polygon fill="#191970" stroke="#191970" points="841.0613,-374.7651 834.4017,-366.5249 834.4691,-377.1195 841.0613,-374.7651"/>
 </g>
 <!-- Node47 -->
 <g id="node44" class="node">
 <title>Node47</title>
 <g id="a_node44"><a xlink:href="dji__psdk__manager_8hpp.html" target="_top" xlink:title="Implementation of the manager for psdk module.">
-<polygon fill="#ffffff" stroke="#000000" points="2052.2095,-168.5 2052.2095,-187.5 2166.2095,-187.5 2166.2095,-168.5 2052.2095,-168.5"/>
-<text text-anchor="middle" x="2109.2095" y="-175.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_psdk_manager.hpp</text>
+<polygon fill="#ffffff" stroke="#000000" points="1906,-168.5 1906,-187.5 2020,-187.5 2020,-168.5 1906,-168.5"/>
+<text text-anchor="middle" x="1963" y="-175.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_psdk_manager.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node16&#45;&gt;Node47 -->
 <g id="edge88" class="edge">
 <title>Node16&#45;&gt;Node47</title>
-<path fill="none" stroke="#191970" d="M842.8325,-468.3467C1049.5365,-464.9132 1976.928,-448.1534 2032.2095,-423 2068.8419,-406.332 2094.2095,-397.2462 2094.2095,-357 2094.2095,-357 2094.2095,-357 2094.2095,-295.5 2094.2095,-260.8611 2100.7031,-220.9372 2105.1453,-197.6785"/>
-<polygon fill="#191970" stroke="#191970" points="2108.6129,-198.1851 2107.1238,-187.6955 2101.7465,-196.8242 2108.6129,-198.1851"/>
+<path fill="none" stroke="#191970" d="M911.7514,-468.3704C1096.9486,-465.3569 1852.0175,-451.3663 1893,-423 1967.2514,-371.6065 1967.5959,-246.3925 1964.6877,-197.7656"/>
+<polygon fill="#191970" stroke="#191970" points="1968.167,-197.3494 1963.962,-187.6247 1961.1848,-197.8491 1968.167,-197.3494"/>
 </g>
 <!-- Node54 -->
 <g id="node46" class="node">
 <title>Node54</title>
 <g id="a_node46"><a xlink:href="dji__battery_8hpp_source.html" target="_top" xlink:title=" ">
-<polygon fill="#ffffff" stroke="#000000" points="1440.2095,-224.5 1440.2095,-243.5 1520.2095,-243.5 1520.2095,-224.5 1440.2095,-224.5"/>
-<text text-anchor="middle" x="1480.2095" y="-231.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_battery.hpp</text>
+<polygon fill="#ffffff" stroke="#000000" points="1608,-224.5 1608,-243.5 1688,-243.5 1688,-224.5 1608,-224.5"/>
+<text text-anchor="middle" x="1648" y="-231.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_battery.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node16&#45;&gt;Node54 -->
 <g id="edge92" class="edge">
 <title>Node16&#45;&gt;Node54</title>
-<path fill="none" stroke="#191970" d="M843.0388,-466.79C940.243,-461.2262 1183.0871,-445.4638 1261.2095,-423 1368.9462,-392.0207 1428.1049,-406.2552 1487.2095,-311 1497.8917,-293.7842 1493.544,-270.1019 1488.1763,-253.5631"/>
-<polygon fill="#191970" stroke="#191970" points="1491.3567,-252.0674 1484.6494,-243.8661 1484.7783,-254.4601 1491.3567,-252.0674"/>
+<path fill="none" stroke="#191970" d="M911.8772,-467.843C1048.8707,-463.7408 1486.3945,-448.7398 1544,-423 1609.1385,-393.8942 1631.2623,-376.7328 1659,-311 1666.8811,-292.3233 1661.7369,-269.0732 1656.1333,-253.0356"/>
+<polygon fill="#191970" stroke="#191970" points="1659.3809,-251.7294 1652.5169,-243.6587 1652.8498,-254.2483 1659.3809,-251.7294"/>
 </g>
 <!-- Node55 -->
 <g id="node47" class="node">
 <title>Node55</title>
 <g id="a_node47"><a xlink:href="dji__waypoint__v2_8hpp.html" target="_top" xlink:title="Implementation of GPS Waypoint Missions for DJI OSDK.">
-<polygon fill="#ffffff" stroke="#000000" points="1884.7095,-347.5 1884.7095,-366.5 1989.7095,-366.5 1989.7095,-347.5 1884.7095,-347.5"/>
-<text text-anchor="middle" x="1937.2095" y="-354.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_waypoint_v2.hpp</text>
+<polygon fill="#ffffff" stroke="#ff0000" points="1778.5,-347.5 1778.5,-366.5 1883.5,-366.5 1883.5,-347.5 1778.5,-347.5"/>
+<text text-anchor="middle" x="1831" y="-354.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_waypoint_v2.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node16&#45;&gt;Node55 -->
 <g id="edge94" class="edge">
 <title>Node16&#45;&gt;Node55</title>
-<path fill="none" stroke="#191970" d="M842.977,-468.0635C1032.7369,-463.6002 1822.3217,-443.8398 1870.2095,-423 1893.2375,-412.9786 1912.7805,-391.1738 1924.7132,-375.3628"/>
-<polygon fill="#191970" stroke="#191970" points="1927.8194,-377.0392 1930.8284,-366.8806 1922.1411,-372.9455 1927.8194,-377.0392"/>
-</g>
-<!-- Node57 -->
-<g id="node49" class="node">
-<title>Node57</title>
-<g id="a_node49"><a xlink:href="dji__hms_8hpp.html" target="_top" xlink:title="HMS(Health Management System) API for DJI OSDK @Details Provide API to subscribe Flight&#39;s Health Stat...">
-<polygon fill="#ffffff" stroke="#000000" points="1888.7095,-112.5 1888.7095,-131.5 1957.7095,-131.5 1957.7095,-112.5 1888.7095,-112.5"/>
-<text text-anchor="middle" x="1923.2095" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_hms.hpp</text>
-</a>
-</g>
-</g>
-<!-- Node16&#45;&gt;Node57 -->
-<g id="edge99" class="edge">
-<title>Node16&#45;&gt;Node57</title>
-<path fill="none" stroke="#191970" d="M842.9204,-468.3931C1029.1473,-465.4683 1795.2057,-451.7729 1898.2095,-423 1956.833,-406.6242 2018.2095,-417.8678 2018.2095,-357 2018.2095,-357 2018.2095,-357 2018.2095,-295.5 2018.2095,-231.1502 1967.3112,-168.0476 1940.0261,-138.8431"/>
-<polygon fill="#191970" stroke="#191970" points="1942.4648,-136.3294 1933.0183,-131.532 1937.4113,-141.1732 1942.4648,-136.3294"/>
+<path fill="none" stroke="#191970" d="M911.7319,-468.0617C1071.6769,-464.2081 1651.7978,-448.582 1730,-423 1762.0829,-412.5048 1793.7968,-389.0692 1812.8927,-373.1441"/>
+<polygon fill="#191970" stroke="#191970" points="1815.1787,-375.7945 1820.5017,-366.6339 1810.6279,-370.4756 1815.1787,-375.7945"/>
 </g>
 <!-- Node58 -->
-<g id="node50" class="node">
+<g id="node49" class="node">
 <title>Node58</title>
-<g id="a_node50"><a xlink:href="dji__mop__server_8hpp.html" target="_top" xlink:title="Implementation of the mop client.">
-<polygon fill="#ffffff" stroke="#ff0000" points="2122.7095,-403.5 2122.7095,-422.5 2223.7095,-422.5 2223.7095,-403.5 2122.7095,-403.5"/>
-<text text-anchor="middle" x="2173.2095" y="-410.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_mop_server.hpp</text>
+<g id="a_node49"><a xlink:href="dji__hms_8hpp.html" target="_top" xlink:title="HMS(Health Management System) API for DJI OSDK @Details Provide API to subscribe Flight&#39;s Health Stat...">
+<polygon fill="#ffffff" stroke="#000000" points="1656.5,-112.5 1656.5,-131.5 1725.5,-131.5 1725.5,-112.5 1656.5,-112.5"/>
+<text text-anchor="middle" x="1691" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_hms.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node16&#45;&gt;Node58 -->
-<g id="edge102" class="edge">
+<g id="edge98" class="edge">
 <title>Node16&#45;&gt;Node58</title>
-<path fill="none" stroke="#191970" d="M842.8805,-468.2121C1035.0905,-464.3895 1853.6748,-446.9786 2108.2095,-423 2109.5203,-422.8765 2110.8448,-422.7439 2112.1793,-422.6031"/>
-<polygon fill="#191970" stroke="#191970" points="2113.0167,-426.0288 2122.5389,-421.3836 2112.1983,-419.0768 2113.0167,-426.0288"/>
+<path fill="none" stroke="#191970" d="M911.5021,-468.3604C1041.9142,-465.9883 1449.7955,-456.048 1577,-423 1643.1908,-405.8035 1716,-425.3881 1716,-357 1716,-357 1716,-357 1716,-234 1716,-200.7847 1705.397,-163.3305 1698.0013,-141.2459"/>
+<polygon fill="#191970" stroke="#191970" points="1701.2805,-140.0195 1694.6888,-131.7249 1694.6692,-142.3197 1701.2805,-140.0195"/>
+</g>
+<!-- Node59 -->
+<g id="node50" class="node">
+<title>Node59</title>
+<g id="a_node50"><a xlink:href="dji__mop__server_8hpp.html" target="_top" xlink:title="Implementation of the mop client.">
+<polygon fill="#ffffff" stroke="#ff0000" points="1782.5,-403.5 1782.5,-422.5 1883.5,-422.5 1883.5,-403.5 1782.5,-403.5"/>
+<text text-anchor="middle" x="1833" y="-410.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_mop_server.hpp</text>
+</a>
+</g>
+</g>
+<!-- Node16&#45;&gt;Node59 -->
+<g id="edge101" class="edge">
+<title>Node16&#45;&gt;Node59</title>
+<path fill="none" stroke="#191970" d="M911.7911,-468.3799C1038.8567,-466.1331 1438.7488,-456.6817 1768,-423 1769.3097,-422.866 1770.6334,-422.7238 1771.967,-422.5744"/>
+<polygon fill="#191970" stroke="#191970" points="1772.8221,-425.9958 1782.3217,-421.3046 1771.97,-419.0479 1772.8221,-425.9958"/>
 </g>
 <!-- Node19&#45;&gt;Node2 -->
 <g id="edge27" class="edge">
 <title>Node19&#45;&gt;Node2</title>
-<path fill="none" stroke="#191970" d="M503.8842,-347.4321C492.6065,-331.4699 474.0043,-299.2628 491.2095,-280 538.5848,-226.9589 738.6256,-252.7 809.2095,-244 810.3177,-243.8634 811.4349,-243.7249 812.5595,-243.5846"/>
-<polygon fill="#191970" stroke="#191970" points="813.3459,-247.0131 822.8273,-242.285 812.4669,-240.0685 813.3459,-247.0131"/>
+<path fill="none" stroke="#191970" d="M361.5254,-347.2654C348.715,-331.3472 327.6609,-299.5646 345,-280 365.0748,-257.3485 549.0284,-243.6403 653.4439,-237.6182"/>
+<polygon fill="#191970" stroke="#191970" points="653.8156,-241.1029 663.6014,-237.0421 653.4192,-234.1141 653.8156,-241.1029"/>
 </g>
 <!-- Node20 -->
 <g id="node19" class="node">
 <title>Node20</title>
 <g id="a_node19"><a xlink:title=" ">
-<polygon fill="#ffffff" stroke="#bfbfbf" points="609.2095,-286 609.2095,-305 655.2095,-305 655.2095,-286 609.2095,-286"/>
-<text text-anchor="middle" x="632.2095" y="-293" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">cstring</text>
+<polygon fill="#ffffff" stroke="#bfbfbf" points="354,-286 354,-305 400,-305 400,-286 354,-286"/>
+<text text-anchor="middle" x="377" y="-293" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">cstring</text>
 </a>
 </g>
 </g>
 <!-- Node19&#45;&gt;Node20 -->
 <g id="edge28" class="edge">
 <title>Node19&#45;&gt;Node20</title>
-<path fill="none" stroke="#191970" d="M530.1157,-347.3906C550.0061,-337.2811 581.5218,-321.2628 604.2787,-309.6962"/>
-<polygon fill="#191970" stroke="#191970" points="606.1072,-312.693 613.436,-305.0419 602.9355,-306.4528 606.1072,-312.693"/>
+<path fill="none" stroke="#191970" d="M371.0938,-347.3906C372.0641,-338.8657 373.5126,-326.1392 374.7323,-315.4235"/>
+<polygon fill="#191970" stroke="#191970" points="378.2374,-315.5766 375.8908,-305.2449 371.2823,-314.7849 378.2374,-315.5766"/>
 </g>
 <!-- Node21&#45;&gt;Node2 -->
 <g id="edge33" class="edge">
 <title>Node21&#45;&gt;Node2</title>
-<path fill="none" stroke="#191970" d="M659.7023,-348.9676C637.7334,-342.5872 613.4708,-331.2111 600.2095,-311 592.6511,-299.4805 591.2799,-290.4923 600.2095,-280 603.6799,-275.9222 729.9983,-256.6577 812.9833,-244.3883"/>
-<polygon fill="#191970" stroke="#191970" points="813.4956,-247.8507 822.8774,-242.9282 812.4736,-240.9257 813.4956,-247.8507"/>
+<path fill="none" stroke="#191970" d="M967.9228,-347.4301C988.2943,-332.2856 1021.8582,-302.2351 1003,-280 989.7134,-264.3342 874.195,-249.4239 796.3106,-241.0211"/>
+<polygon fill="#191970" stroke="#191970" points="796.3748,-237.5082 786.0603,-239.9292 795.6333,-244.4688 796.3748,-237.5082"/>
 </g>
 <!-- Node22 -->
 <g id="node21" class="node">
 <title>Node22</title>
 <g id="a_node21"><a xlink:href="dji__telemetry_8hpp.html" target="_top" xlink:title="Enumeration of all telemetry data types, structures and maps.">
-<polygon fill="#ffffff" stroke="#000000" points="1006.7095,-286 1006.7095,-305 1097.7095,-305 1097.7095,-286 1006.7095,-286"/>
-<text text-anchor="middle" x="1052.2095" y="-293" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_telemetry.hpp</text>
+<polygon fill="#ffffff" stroke="#000000" points="903.5,-286 903.5,-305 994.5,-305 994.5,-286 903.5,-286"/>
+<text text-anchor="middle" x="949" y="-293" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_telemetry.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node21&#45;&gt;Node22 -->
 <g id="edge31" class="edge">
 <title>Node21&#45;&gt;Node22</title>
-<path fill="none" stroke="#191970" d="M752.9455,-348.5653C756.0792,-348.0272 759.1892,-347.5009 762.2095,-347 866.4484,-329.7114 893.9423,-333.3727 997.2095,-311 1001.6937,-310.0285 1006.3528,-308.9021 1010.9773,-307.7085"/>
-<polygon fill="#191970" stroke="#191970" points="1012.2167,-310.9996 1020.9643,-305.0222 1010.3984,-304.2399 1012.2167,-310.9996"/>
+<path fill="none" stroke="#191970" d="M953.2188,-347.3906C952.5257,-338.8657 951.491,-326.1392 950.6198,-315.4235"/>
+<polygon fill="#191970" stroke="#191970" points="954.0912,-314.9283 949.7923,-305.2449 947.1142,-315.4956 954.0912,-314.9283"/>
 </g>
 <!-- Node22&#45;&gt;Node12 -->
 <g id="edge32" class="edge">
 <title>Node22&#45;&gt;Node12</title>
-<path fill="none" stroke="#191970" d="M1058.3387,-285.9309C1080.6596,-251.083 1157.8421,-130.5837 1187.4866,-84.302"/>
-<polygon fill="#191970" stroke="#191970" points="1190.6076,-85.9185 1193.0541,-75.61 1184.7131,-82.1429 1190.6076,-85.9185"/>
+<path fill="none" stroke="#191970" d="M956.2967,-285.9309C982.9804,-250.9371 1075.5232,-129.5739 1110.4842,-83.7249"/>
+<polygon fill="#191970" stroke="#191970" points="1113.3917,-85.6842 1116.6721,-75.61 1107.8253,-81.4397 1113.3917,-85.6842"/>
 </g>
 <!-- Node23&#45;&gt;Node4 -->
 <g id="edge35" class="edge">
 <title>Node23&#45;&gt;Node4</title>
-<path fill="none" stroke="#191970" d="M809.2095,-112.2455C809.2095,-104.9382 809.2095,-94.6944 809.2095,-85.7046"/>
-<polygon fill="#191970" stroke="#191970" points="812.7096,-85.6426 809.2095,-75.6427 805.7096,-85.6427 812.7096,-85.6426"/>
+<path fill="none" stroke="#191970" d="M793,-112.2455C793,-104.9382 793,-94.6944 793,-85.7046"/>
+<polygon fill="#191970" stroke="#191970" points="796.5001,-85.6426 793,-75.6427 789.5001,-85.6427 796.5001,-85.6426"/>
 </g>
 <!-- Node23&#45;&gt;Node12 -->
 <g id="edge36" class="edge">
 <title>Node23&#45;&gt;Node12</title>
-<path fill="none" stroke="#191970" d="M848.7194,-113.5347C851.5882,-112.9919 854.4407,-112.474 857.2095,-112 963.428,-93.8163 1089.2273,-78.4753 1154.6497,-70.9597"/>
-<polygon fill="#191970" stroke="#191970" points="1155.0806,-74.4333 1164.619,-69.8214 1154.2865,-67.4785 1155.0806,-74.4333"/>
+<path fill="none" stroke="#191970" d="M832.5253,-113.621C835.3905,-113.058 838.238,-112.5119 841,-112 925.0877,-96.4148 1023.7732,-81.0302 1079.5896,-72.5965"/>
+<polygon fill="#191970" stroke="#191970" points="1080.1323,-76.0543 1089.4996,-71.1042 1079.0899,-69.1324 1080.1323,-76.0543"/>
 </g>
 <!-- Node24&#45;&gt;Node4 -->
 <g id="edge38" class="edge">
 <title>Node24&#45;&gt;Node4</title>
-<path fill="none" stroke="#191970" d="M694.9325,-112.3733C717.3831,-103.2629 751.2834,-89.5062 776.335,-79.3404"/>
-<polygon fill="#191970" stroke="#191970" points="777.8459,-82.5045 785.796,-75.5011 775.2138,-76.0182 777.8459,-82.5045"/>
+<path fill="none" stroke="#191970" d="M678.723,-112.3733C701.1737,-103.2629 735.0739,-89.5062 760.1255,-79.3404"/>
+<polygon fill="#191970" stroke="#191970" points="761.6365,-82.5045 769.5865,-75.5011 759.0043,-76.0182 761.6365,-82.5045"/>
 </g>
 <!-- Node24&#45;&gt;Node12 -->
 <g id="edge39" class="edge">
 <title>Node24&#45;&gt;Node12</title>
-<path fill="none" stroke="#191970" d="M712.858,-117.2551C727.79,-115.5712 744.7517,-113.6783 760.2095,-112 904.2093,-96.3659 1074.8846,-78.7419 1154.3447,-70.5891"/>
-<polygon fill="#191970" stroke="#191970" points="1154.8945,-74.0512 1164.4853,-69.5493 1154.1804,-67.0877 1154.8945,-74.0512"/>
+<path fill="none" stroke="#191970" d="M696.6206,-117.0304C784.5852,-106.5271 988.7294,-82.1517 1079.319,-71.335"/>
+<polygon fill="#191970" stroke="#191970" points="1079.7592,-74.8074 1089.2737,-70.1464 1078.9292,-67.8568 1079.7592,-74.8074"/>
 </g>
 <!-- Node25&#45;&gt;Node2 -->
 <g id="edge43" class="edge">
 <title>Node25&#45;&gt;Node2</title>
-<path fill="none" stroke="#191970" d="M352.3878,-285.9929C360.3622,-283.7062 369.0549,-281.4951 377.2095,-280 566.7161,-245.2548 617.6633,-264.738 809.2095,-244 810.3196,-243.8798 811.4386,-243.7566 812.5648,-243.6307"/>
-<polygon fill="#191970" stroke="#191970" points="813.3166,-247.0668 822.8444,-242.4331 812.5066,-240.1138 813.3166,-247.0668"/>
+<path fill="none" stroke="#191970" d="M249.7614,-285.9325C257.5802,-283.702 266.0511,-281.5335 274,-280 406.8254,-254.3747 564.5905,-242.4234 653.9337,-237.3359"/>
+<polygon fill="#191970" stroke="#191970" points="654.1633,-240.8286 663.9532,-236.7778 653.774,-233.8394 654.1633,-240.8286"/>
 </g>
 <!-- Node25&#45;&gt;Node3 -->
 <g id="edge41" class="edge">
 <title>Node25&#45;&gt;Node3</title>
-<path fill="none" stroke="#191970" d="M356.0064,-285.92C362.9941,-283.9255 370.3377,-281.8641 377.2095,-280 506.3827,-244.9584 659.99,-206.6245 733.2286,-188.5499"/>
-<polygon fill="#191970" stroke="#191970" points="734.147,-191.9283 743.0186,-186.1364 732.4715,-185.1318 734.147,-191.9283"/>
+<path fill="none" stroke="#191970" d="M252.8189,-285.9998C259.8051,-283.9999 267.1426,-281.9161 274,-280 365.3779,-254.4666 387.5241,-245.2153 480,-224 550.295,-207.8733 632.8906,-193.2497 681.9845,-185.0061"/>
+<polygon fill="#191970" stroke="#191970" points="682.6481,-188.4438 691.9357,-183.3456 681.496,-181.5393 682.6481,-188.4438"/>
 </g>
 <!-- Node25&#45;&gt;Node12 -->
 <g id="edge42" class="edge">
 <title>Node25&#45;&gt;Node12</title>
-<path fill="none" stroke="#191970" d="M348.7041,-285.9665C355.0214,-283.8133 361.8142,-281.6725 368.2095,-280 454.7422,-257.3705 478.5366,-261.7048 566.2095,-244 678.6714,-221.2893 707.2471,-217.1687 818.2095,-188 900.8822,-166.2678 920.786,-158.0245 1002.2095,-132 1058.1129,-114.1322 1122.536,-92.3153 1162.0651,-78.7874"/>
-<polygon fill="#191970" stroke="#191970" points="1163.233,-82.0871 1171.5582,-75.5342 1160.9636,-75.4651 1163.233,-82.0871"/>
+<path fill="none" stroke="#191970" d="M260.2018,-287.9155C307.2232,-278.7622 387.2608,-262.3026 455,-244 482.9515,-236.4478 488.7925,-230.5311 517,-224 626.364,-198.678 660.2228,-222.6454 767,-188 785.1536,-182.1098 787.2051,-174.8985 805,-168 864.1003,-145.0887 882.4906,-150.8783 943,-132 995.0964,-115.7464 1054.3097,-93.4014 1090.4062,-79.3319"/>
+<polygon fill="#191970" stroke="#191970" points="1091.9138,-82.5004 1099.9491,-75.595 1089.3613,-75.9823 1091.9138,-82.5004"/>
 </g>
 <!-- Node26&#45;&gt;Node2 -->
 <g id="edge47" class="edge">
 <title>Node26&#45;&gt;Node2</title>
-<path fill="none" stroke="#191970" d="M1008.8181,-347.7918C1047.0196,-339.8024 1094.3953,-327.0117 1106.2095,-311 1114.3897,-299.9134 1114.9075,-290.6851 1106.2095,-280 1087.3687,-256.855 1012.9505,-244.9894 955.4101,-239.1616"/>
-<polygon fill="#191970" stroke="#191970" points="955.535,-235.6574 945.2439,-238.176 954.8595,-242.6247 955.535,-235.6574"/>
+<path fill="none" stroke="#191970" d="M488.9983,-347.4433C483.0295,-331.4977 474.0998,-299.3144 490,-280 510.4926,-255.1072 592.4284,-243.4921 653.8249,-238.2034"/>
+<polygon fill="#191970" stroke="#191970" points="654.1938,-241.6849 663.8736,-237.3777 653.6205,-234.7084 654.1938,-241.6849"/>
 </g>
 <!-- Node26&#45;&gt;Node15 -->
 <g id="edge45" class="edge">
 <title>Node26&#45;&gt;Node15</title>
-<path fill="none" stroke="#191970" d="M1008.9968,-347.8591C1051.3809,-339.4689 1107.0347,-326.0796 1124.2095,-311 1158.2814,-281.0847 1172.1665,-226.9975 1177.3786,-197.8651"/>
-<polygon fill="#191970" stroke="#191970" points="1180.8814,-198.1282 1179.0227,-187.6977 1173.9712,-197.0108 1180.8814,-198.1282"/>
+<path fill="none" stroke="#191970" d="M486.8912,-347.4609C477.7322,-331.8238 463.031,-300.4362 478,-280 526.7561,-213.4362 575.5097,-246.1176 655,-224 706.1281,-209.774 765.6637,-195.8479 804.4992,-187.1124"/>
+<polygon fill="#191970" stroke="#191970" points="805.3994,-190.4976 814.3937,-184.8984 803.8708,-183.6666 805.3994,-190.4976"/>
 </g>
 <!-- Node26&#45;&gt;Node20 -->
 <g id="edge48" class="edge">
 <title>Node26&#45;&gt;Node20</title>
-<path fill="none" stroke="#191970" d="M905.6298,-348.5125C902.4426,-347.9979 899.2828,-347.4903 896.2095,-347 793.1677,-330.5596 763.8165,-342.0859 664.2095,-311 662.5485,-310.4816 660.8653,-309.8895 659.185,-309.2461"/>
-<polygon fill="#191970" stroke="#191970" points="660.3331,-305.929 649.7664,-305.1579 657.5459,-312.3502 660.3331,-305.929"/>
+<path fill="none" stroke="#191970" d="M474.875,-347.3906C455.8917,-337.3262 425.8627,-321.4057 404.0693,-309.8514"/>
+<polygon fill="#191970" stroke="#191970" points="405.4723,-306.6338 394.9977,-305.0419 402.1934,-312.8184 405.4723,-306.6338"/>
 </g>
 <!-- Node26&#45;&gt;Node22 -->
 <g id="edge46" class="edge">
 <title>Node26&#45;&gt;Node22</title>
-<path fill="none" stroke="#191970" d="M972.0532,-347.3906C987.2513,-337.5519 1011.0943,-322.1167 1028.8301,-310.6351"/>
-<polygon fill="#191970" stroke="#191970" points="1030.9775,-313.4144 1037.47,-305.0419 1027.1734,-307.5382 1030.9775,-313.4144"/>
+<path fill="none" stroke="#191970" d="M544.6803,-353.7344C621.4487,-348.2844 769.8991,-335.4407 894,-311 898.739,-310.0667 903.6649,-308.9277 908.535,-307.6951"/>
+<polygon fill="#191970" stroke="#191970" points="909.6162,-311.0292 918.3758,-305.0693 907.8115,-304.2658 909.6162,-311.0292"/>
 </g>
 <!-- Node27&#45;&gt;Node2 -->
 <g id="edge51" class="edge">
 <title>Node27&#45;&gt;Node2</title>
-<path fill="none" stroke="#191970" d="M531.3239,-403.4838C499.4418,-394.8019 458.028,-381.1953 448.2095,-367 428.2719,-338.1748 454.6841,-298.5876 481.2095,-280 541.2599,-237.9198 736.4184,-252.8462 809.2095,-244 810.3179,-243.8653 811.4354,-243.7285 812.5601,-243.5899"/>
-<polygon fill="#191970" stroke="#191970" points="813.3426,-247.0193 822.8294,-242.3021 812.4715,-240.0737 813.3426,-247.0193"/>
+<path fill="none" stroke="#191970" d="M407.8406,-403.5926C367.5602,-395.8404 319.3877,-383.4509 307,-367 287.5284,-341.1416 305.0639,-302.5774 335,-280 359.8576,-261.2527 547.8077,-245.8388 653.4469,-238.5463"/>
+<polygon fill="#191970" stroke="#191970" points="653.979,-242.0182 663.7173,-237.845 653.502,-235.0345 653.979,-242.0182"/>
 </g>
 <!-- Node28&#45;&gt;Node2 -->
 <g id="edge54" class="edge">
 <title>Node28&#45;&gt;Node2</title>
-<path fill="none" stroke="#191970" d="M1659.906,-285.9478C1650.012,-283.6611 1639.252,-281.4614 1629.2095,-280 1500.5916,-261.2836 1116.113,-243.655 955.7173,-236.9012"/>
-<polygon fill="#191970" stroke="#191970" points="955.6193,-233.3941 945.4815,-236.4722 955.3261,-240.388 955.6193,-233.3941"/>
+<path fill="none" stroke="#191970" d="M1533.8748,-286.4319C1517.1612,-284.0629 1498.8862,-281.7001 1482,-280 1230.7945,-254.7092 931.1914,-241.4972 796.6361,-236.4587"/>
+<polygon fill="#191970" stroke="#191970" points="796.5824,-232.9544 786.4596,-236.0815 796.323,-239.9496 796.5824,-232.9544"/>
 </g>
 <!-- Node28&#45;&gt;Node12 -->
 <g id="edge53" class="edge">
 <title>Node28&#45;&gt;Node12</title>
-<path fill="none" stroke="#191970" d="M1677.2682,-285.9337C1658.1767,-276.0792 1628.0616,-259.9494 1603.2095,-244 1520.0198,-190.6114 1514.5251,-152.174 1424.2095,-112 1365.1104,-85.7117 1290.5569,-74.2686 1243.8699,-69.4127"/>
-<polygon fill="#191970" stroke="#191970" points="1244.0684,-65.9155 1233.774,-68.4204 1243.3837,-72.8819 1244.0684,-65.9155"/>
+<path fill="none" stroke="#191970" d="M1549.9197,-285.9382C1525.3275,-278.352 1495.4071,-265.3672 1476,-244 1434.4226,-198.2232 1479.3516,-151.7746 1432,-112 1393.005,-79.2448 1244.6076,-69.7875 1168.9426,-67.0767"/>
+<polygon fill="#191970" stroke="#191970" points="1168.8788,-63.5728 1158.7677,-66.7373 1168.6454,-70.5689 1168.8788,-63.5728"/>
 </g>
 <!-- Node29 -->
 <g id="node28" class="node">
 <title>Node29</title>
 <g id="a_node28"><a xlink:title=" ">
-<polygon fill="#ffffff" stroke="#bfbfbf" points="1676.7095,-224.5 1676.7095,-243.5 1717.7095,-243.5 1717.7095,-224.5 1676.7095,-224.5"/>
-<text text-anchor="middle" x="1697.2095" y="-231.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">string</text>
+<polygon fill="#ffffff" stroke="#bfbfbf" points="1484.5,-224.5 1484.5,-243.5 1525.5,-243.5 1525.5,-224.5 1484.5,-224.5"/>
+<text text-anchor="middle" x="1505" y="-231.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">string</text>
 </a>
 </g>
 </g>
 <!-- Node28&#45;&gt;Node29 -->
 <g id="edge55" class="edge">
 <title>Node28&#45;&gt;Node29</title>
-<path fill="none" stroke="#191970" d="M1696.3657,-285.8906C1696.5043,-277.3657 1696.7113,-264.6392 1696.8855,-253.9235"/>
-<polygon fill="#191970" stroke="#191970" points="1700.3879,-253.8005 1697.051,-243.7449 1693.3888,-253.6866 1700.3879,-253.8005"/>
+<path fill="none" stroke="#191970" d="M1578.4063,-285.8906C1564.6157,-276.1421 1543.0528,-260.8994 1526.859,-249.4521"/>
+<polygon fill="#191970" stroke="#191970" points="1528.6844,-246.4563 1518.4983,-243.5419 1524.6437,-252.1723 1528.6844,-246.4563"/>
 </g>
 <!-- Node30 -->
 <g id="node29" class="node">
 <title>Node30</title>
 <g id="a_node29"><a xlink:title=" ">
-<polygon fill="#ffffff" stroke="#bfbfbf" points="1612.2095,-224.5 1612.2095,-243.5 1658.2095,-243.5 1658.2095,-224.5 1612.2095,-224.5"/>
-<text text-anchor="middle" x="1635.2095" y="-231.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">atomic</text>
+<polygon fill="#ffffff" stroke="#bfbfbf" points="1544,-224.5 1544,-243.5 1590,-243.5 1590,-224.5 1544,-224.5"/>
+<text text-anchor="middle" x="1567" y="-231.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">atomic</text>
 </a>
 </g>
 </g>
 <!-- Node28&#45;&gt;Node30 -->
 <g id="edge56" class="edge">
 <title>Node28&#45;&gt;Node30</title>
-<path fill="none" stroke="#191970" d="M1686.6782,-285.8906C1677.4216,-276.5581 1663.1705,-262.1902 1652.0092,-250.9374"/>
-<polygon fill="#191970" stroke="#191970" points="1654.4023,-248.38 1644.8751,-243.7449 1649.4323,-253.3095 1654.4023,-248.38"/>
+<path fill="none" stroke="#191970" d="M1588.0938,-285.8906C1584.5554,-277.1862 1579.2364,-264.1015 1574.825,-253.2494"/>
+<polygon fill="#191970" stroke="#191970" points="1577.9695,-251.6907 1570.9613,-243.7449 1571.4848,-254.3268 1577.9695,-251.6907"/>
 </g>
 <!-- Node31&#45;&gt;Node2 -->
 <g id="edge58" class="edge">
 <title>Node31&#45;&gt;Node2</title>
-<path fill="none" stroke="#191970" d="M696.005,-403.3732C674.823,-394.6716 643.4273,-381.0982 617.2095,-367 596.7945,-356.0222 540.3636,-331.3192 529.2095,-311 522.5795,-298.9223 520.1095,-290.3449 529.2095,-280 570.6445,-232.8965 747.0062,-252.1456 809.2095,-244 810.3166,-243.855 811.4329,-243.7086 812.5565,-243.5611"/>
-<polygon fill="#191970" stroke="#191970" points="813.3605,-246.9855 822.8177,-242.2094 812.4462,-240.0455 813.3605,-246.9855"/>
+<path fill="none" stroke="#191970" d="M633.6344,-403.3807C603.5544,-388.5038 549.9455,-356.7726 528,-311 522.0435,-298.5763 519.4366,-290.7933 528,-280 543.6996,-260.2122 603.9506,-248.1385 653.7318,-241.3574"/>
+<polygon fill="#191970" stroke="#191970" points="654.3934,-244.8007 663.8536,-240.0304 653.4834,-237.8601 654.3934,-244.8007"/>
 </g>
 <!-- Node32&#45;&gt;Node11 -->
 <g id="edge68" class="edge">
 <title>Node32&#45;&gt;Node11</title>
-<path fill="none" stroke="#191970" d="M1175.8801,-410.2705C1301.5367,-404.4684 1577.2105,-389.566 1669.2095,-367 1805.9768,-333.4529 1864.5884,-346.4456 1961.2095,-244 1983.4607,-220.4074 2008.95,-126.9543 2019.3801,-85.7226"/>
-<polygon fill="#191970" stroke="#191970" points="2022.8326,-86.3423 2021.855,-75.7927 2016.0404,-84.6493 2022.8326,-86.3423"/>
+<path fill="none" stroke="#191970" d="M1258.6066,-407.5327C1412.4344,-392.5629 1792,-344.4362 1792,-234 1792,-234 1792,-234 1792,-178 1792,-141.7347 1815.2559,-104.8332 1831.2443,-83.7487"/>
+<polygon fill="#191970" stroke="#191970" points="1834.1233,-85.75 1837.5625,-75.7289 1828.6247,-81.418 1834.1233,-85.75"/>
 </g>
 <!-- Node33 -->
 <g id="node32" class="node">
 <title>Node33</title>
 <g id="a_node32"><a xlink:href="dji__hotpoint_8hpp.html" target="_top" xlink:title="Implementation of HotPoint (Point of Interest) Missions for DJI OSDK.">
-<polygon fill="#ffffff" stroke="#000000" points="1026.7095,-347.5 1026.7095,-366.5 1111.7095,-366.5 1111.7095,-347.5 1026.7095,-347.5"/>
-<text text-anchor="middle" x="1069.2095" y="-354.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_hotpoint.hpp</text>
+<polygon fill="#ffffff" stroke="#000000" points="1089.5,-347.5 1089.5,-366.5 1174.5,-366.5 1174.5,-347.5 1089.5,-347.5"/>
+<text text-anchor="middle" x="1132" y="-354.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_hotpoint.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node32&#45;&gt;Node33 -->
 <g id="edge60" class="edge">
 <title>Node32&#45;&gt;Node33</title>
-<path fill="none" stroke="#191970" d="M1104.7195,-403.2455C1098.6769,-395.3761 1090.0192,-384.101 1082.7654,-374.6542"/>
-<polygon fill="#191970" stroke="#191970" points="1085.48,-372.4426 1076.6137,-366.6427 1079.9279,-376.7058 1085.48,-372.4426"/>
+<path fill="none" stroke="#191970" d="M1184.0262,-403.2455C1174.8118,-395.0549 1161.4468,-383.1749 1150.5703,-373.5069"/>
+<polygon fill="#191970" stroke="#191970" points="1152.6474,-370.6704 1142.848,-366.6427 1147.9968,-375.9023 1152.6474,-370.6704"/>
 </g>
 <!-- Node35 -->
 <g id="node34" class="node">
 <title>Node35</title>
 <g id="a_node34"><a xlink:href="dji__waypoint_8hpp.html" target="_top" xlink:title="Implementation of GPS Waypoint Missions for DJI OSDK.">
-<polygon fill="#ffffff" stroke="#000000" points="1129.7095,-347.5 1129.7095,-366.5 1218.7095,-366.5 1218.7095,-347.5 1129.7095,-347.5"/>
-<text text-anchor="middle" x="1174.2095" y="-354.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_waypoint.hpp</text>
+<polygon fill="#ffffff" stroke="#000000" points="1192.5,-347.5 1192.5,-366.5 1281.5,-366.5 1281.5,-347.5 1192.5,-347.5"/>
+<text text-anchor="middle" x="1237" y="-354.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_waypoint.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node32&#45;&gt;Node35 -->
 <g id="edge66" class="edge">
 <title>Node32&#45;&gt;Node35</title>
-<path fill="none" stroke="#191970" d="M1123.0091,-403.2455C1132.0772,-395.0549 1145.2301,-383.1749 1155.9339,-373.5069"/>
-<polygon fill="#191970" stroke="#191970" points="1158.4586,-375.9429 1163.5337,-366.6427 1153.7666,-370.7482 1158.4586,-375.9429"/>
+<path fill="none" stroke="#191970" d="M1202.3158,-403.2455C1208.2179,-395.3761 1216.6742,-384.101 1223.7594,-374.6542"/>
+<polygon fill="#191970" stroke="#191970" points="1226.568,-376.7427 1229.768,-366.6427 1220.9679,-372.5427 1226.568,-376.7427"/>
 </g>
 <!-- Node33&#45;&gt;Node22 -->
 <g id="edge65" class="edge">
 <title>Node33&#45;&gt;Node22</title>
-<path fill="none" stroke="#191970" d="M1066.5532,-347.3906C1064.1719,-338.776 1060.6047,-325.8708 1057.6234,-315.0858"/>
-<polygon fill="#191970" stroke="#191970" points="1060.9411,-313.9509 1054.9032,-305.2449 1054.1941,-315.8159 1060.9411,-313.9509"/>
+<path fill="none" stroke="#191970" d="M1103.4063,-347.3906C1072.1155,-336.8749 1021.8014,-319.966 987.16,-308.3243"/>
+<polygon fill="#191970" stroke="#191970" points="987.987,-304.9099 977.393,-305.0419 985.757,-311.5452 987.987,-304.9099"/>
 </g>
 <!-- Node34 -->
 <g id="node33" class="node">
 <title>Node34</title>
 <g id="a_node33"><a xlink:href="dji__mission__base_8hpp.html" target="_top" xlink:title="Mission&#45;Base abstract class for DJI OSDK library.">
-<polygon fill="#ffffff" stroke="#000000" points="1230.2095,-286 1230.2095,-305 1340.2095,-305 1340.2095,-286 1230.2095,-286"/>
-<text text-anchor="middle" x="1285.2095" y="-293" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_mission_base.hpp</text>
+<polygon fill="#ffffff" stroke="#000000" points="1089,-286 1089,-305 1199,-305 1199,-286 1089,-286"/>
+<text text-anchor="middle" x="1144" y="-293" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_mission_base.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node33&#45;&gt;Node34 -->
 <g id="edge61" class="edge">
 <title>Node33&#45;&gt;Node34</title>
-<path fill="none" stroke="#191970" d="M1102.9595,-347.3906C1140.4476,-336.7169 1201.0692,-319.4566 1241.9981,-307.8033"/>
-<polygon fill="#191970" stroke="#191970" points="1243.0372,-311.1466 1251.6965,-305.0419 1241.1203,-304.4141 1243.0372,-311.1466"/>
+<path fill="none" stroke="#191970" d="M1133.875,-347.3906C1135.5559,-338.776 1138.074,-325.8708 1140.1784,-315.0858"/>
+<polygon fill="#191970" stroke="#191970" points="1143.6186,-315.7301 1142.0986,-305.2449 1136.7482,-314.3895 1143.6186,-315.7301"/>
 </g>
 <!-- Node34&#45;&gt;Node2 -->
 <g id="edge64" class="edge">
 <title>Node34&#45;&gt;Node2</title>
-<path fill="none" stroke="#191970" d="M1229.8732,-287.0133C1158.5226,-276.0705 1034.3095,-257.0203 955.8257,-244.9835"/>
-<polygon fill="#191970" stroke="#191970" points="955.9549,-241.4625 945.5399,-243.406 954.8937,-248.3816 955.9549,-241.4625"/>
+<path fill="none" stroke="#191970" d="M1088.7922,-287.3967C1013.596,-276.3596 878.8903,-256.5877 796.1819,-244.4479"/>
+<polygon fill="#191970" stroke="#191970" points="796.5146,-240.9593 786.1123,-242.9699 795.498,-247.8851 796.5146,-240.9593"/>
 </g>
 <!-- Node34&#45;&gt;Node4 -->
 <g id="edge62" class="edge">
 <title>Node34&#45;&gt;Node4</title>
-<path fill="none" stroke="#191970" d="M1281.5658,-285.7277C1271.2481,-258.5822 1241.2201,-183.2539 1220.2095,-168 1137.1924,-107.7289 1091.5741,-157.5169 992.2095,-132 937.7891,-118.0248 876.8182,-94.3416 840.7918,-79.4693"/>
-<polygon fill="#191970" stroke="#191970" points="841.8951,-76.1374 831.3181,-75.5235 839.2037,-82.5994 841.8951,-76.1374"/>
+<path fill="none" stroke="#191970" d="M1132.6258,-285.8095C1098.2874,-256.8579 992.0004,-169.4567 894,-112 872.5737,-99.438 847.1166,-87.8635 827.1207,-79.4672"/>
+<polygon fill="#191970" stroke="#191970" points="828.3636,-76.1938 817.7849,-75.6102 825.6908,-82.6634 828.3636,-76.1938"/>
 </g>
 <!-- Node34&#45;&gt;Node12 -->
 <g id="edge63" class="edge">
 <title>Node34&#45;&gt;Node12</title>
-<path fill="none" stroke="#191970" d="M1283.7521,-285.972C1280.2736,-264.4287 1270.5369,-210.5345 1254.2095,-168 1242.4371,-137.3318 1223.3074,-104.2903 1210.9947,-84.3791"/>
-<polygon fill="#191970" stroke="#191970" points="1213.8431,-82.3335 1205.5601,-75.7273 1207.9155,-86.057 1213.8431,-82.3335"/>
+<path fill="none" stroke="#191970" d="M1143.1661,-285.9309C1140.161,-251.4475 1129.8471,-133.0953 1125.7236,-85.7785"/>
+<polygon fill="#191970" stroke="#191970" points="1129.1925,-85.2683 1124.8375,-75.61 1122.2189,-85.8761 1129.1925,-85.2683"/>
 </g>
 <!-- Node35&#45;&gt;Node34 -->
 <g id="edge67" class="edge">
 <title>Node35&#45;&gt;Node34</title>
-<path fill="none" stroke="#191970" d="M1191.5532,-347.3906C1209.6368,-337.3713 1238.1954,-321.5483 1259.0259,-310.0071"/>
-<polygon fill="#191970" stroke="#191970" points="1260.9366,-312.9498 1267.9875,-305.0419 1257.5441,-306.8268 1260.9366,-312.9498"/>
+<path fill="none" stroke="#191970" d="M1222.4688,-347.3906C1207.5906,-337.5519 1184.2496,-322.1167 1166.8872,-310.6351"/>
+<polygon fill="#191970" stroke="#191970" points="1168.701,-307.6385 1158.4292,-305.0419 1164.8398,-313.4773 1168.701,-307.6385"/>
 </g>
 <!-- Node36&#45;&gt;Node11 -->
 <g id="edge70" class="edge">
 <title>Node36&#45;&gt;Node11</title>
-<path fill="none" stroke="#191970" d="M1648.8826,-347.4802C1690.8209,-338.8975 1745.7532,-325.4379 1763.2095,-311 1796.446,-283.5104 1784.7237,-261.3993 1806.2095,-224 1835.9294,-172.2677 1832.644,-148.0143 1880.2095,-112 1913.4829,-86.8069 1960.9839,-75.1629 1992.1972,-69.9563"/>
-<polygon fill="#191970" stroke="#191970" points="1992.7644,-73.4103 2002.1141,-68.4271 1991.6975,-66.4921 1992.7644,-73.4103"/>
+<path fill="none" stroke="#191970" d="M1432.7297,-348.7722C1511.4683,-338.1728 1638.7289,-320.04 1659,-311 1708.6374,-288.8639 1754,-288.3496 1754,-234 1754,-234 1754,-234 1754,-178 1754,-146.7875 1758.8038,-136.6116 1778,-112 1788.1848,-98.942 1803.1318,-88.2615 1816.4203,-80.4903"/>
+<polygon fill="#191970" stroke="#191970" points="1818.2268,-83.4907 1825.2762,-75.5815 1814.8331,-77.3684 1818.2268,-83.4907"/>
 </g>
 <!-- Node37 -->
 <g id="node36" class="node">
 <title>Node37</title>
 <g id="a_node36"><a xlink:href="dji__camera__module_8hpp.html" target="_top" xlink:title="Implementation of camera module for payload node.">
-<polygon fill="#ffffff" stroke="#ff0000" points="1358.7095,-286 1358.7095,-305 1477.7095,-305 1477.7095,-286 1358.7095,-286"/>
-<text text-anchor="middle" x="1418.2095" y="-293" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_camera_module.hpp</text>
+<polygon fill="#ffffff" stroke="#ff0000" points="1217.5,-286 1217.5,-305 1336.5,-305 1336.5,-286 1217.5,-286"/>
+<text text-anchor="middle" x="1277" y="-293" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_camera_module.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node36&#45;&gt;Node37 -->
 <g id="edge71" class="edge">
 <title>Node36&#45;&gt;Node37</title>
-<path fill="none" stroke="#191970" d="M1569.2407,-347.3906C1538.6339,-336.8749 1489.4196,-319.966 1455.5354,-308.3243"/>
-<polygon fill="#191970" stroke="#191970" points="1456.5765,-304.9812 1445.9818,-305.0419 1454.3019,-311.6014 1456.5765,-304.9812"/>
+<path fill="none" stroke="#191970" d="M1355.4688,-347.3906C1340.5906,-337.5519 1317.2496,-322.1167 1299.8872,-310.6351"/>
+<polygon fill="#191970" stroke="#191970" points="1301.701,-307.6385 1291.4292,-305.0419 1297.8398,-313.4773 1301.701,-307.6385"/>
 </g>
 <!-- Node39 -->
 <g id="node37" class="node">
 <title>Node39</title>
 <g id="a_node37"><a xlink:title=" ">
-<polygon fill="#ffffff" stroke="#bfbfbf" points="1534.7095,-286 1534.7095,-305 1619.7095,-305 1619.7095,-286 1534.7095,-286"/>
-<text text-anchor="middle" x="1577.2095" y="-293" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_file_mgr.hpp</text>
+<polygon fill="#ffffff" stroke="#bfbfbf" points="1354.5,-286 1354.5,-305 1439.5,-305 1439.5,-286 1354.5,-286"/>
+<text text-anchor="middle" x="1397" y="-293" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_file_mgr.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node36&#45;&gt;Node39 -->
 <g id="edge75" class="edge">
 <title>Node36&#45;&gt;Node39</title>
-<path fill="none" stroke="#191970" d="M1594.0845,-347.3906C1591.283,-338.776 1587.0862,-325.8708 1583.5788,-315.0858"/>
-<polygon fill="#191970" stroke="#191970" points="1586.7996,-313.6722 1580.3785,-305.2449 1580.1428,-315.8371 1586.7996,-313.6722"/>
+<path fill="none" stroke="#191970" d="M1374.2188,-347.3906C1378.0796,-338.5965 1383.9034,-325.3312 1388.6961,-314.4145"/>
+<polygon fill="#191970" stroke="#191970" points="1391.9066,-315.8083 1392.7218,-305.2449 1385.4971,-312.9943 1391.9066,-315.8083"/>
 </g>
 <!-- Node37&#45;&gt;Node2 -->
 <g id="edge74" class="edge">
 <title>Node37&#45;&gt;Node2</title>
-<path fill="none" stroke="#191970" d="M1379.6878,-285.9722C1369.8003,-283.7678 1359.1489,-281.6018 1349.2095,-280 1210.6428,-257.6685 1046.9819,-244.5112 955.4369,-238.3275"/>
-<polygon fill="#191970" stroke="#191970" points="955.6616,-234.8348 945.4508,-237.6614 955.1956,-241.8193 955.6616,-234.8348"/>
+<path fill="none" stroke="#191970" d="M1238.4824,-285.947C1228.5948,-283.7431 1217.9424,-281.5837 1208,-280 1062.7286,-256.8601 890.8882,-243.8844 796.332,-237.9739"/>
+<polygon fill="#191970" stroke="#191970" points="796.5052,-234.478 786.3087,-237.3558 796.0743,-241.4647 796.5052,-234.478"/>
 </g>
 <!-- Node37&#45;&gt;Node4 -->
 <g id="edge72" class="edge">
 <title>Node37&#45;&gt;Node4</title>
-<path fill="none" stroke="#191970" d="M1408.0379,-285.8195C1382.4052,-261.9747 1312.201,-200.0269 1242.2095,-168 1114.8319,-109.7142 950.593,-82.8181 865.6663,-72.0904"/>
-<polygon fill="#191970" stroke="#191970" points="866.0639,-68.613 855.7103,-70.8613 865.2061,-75.5603 866.0639,-68.613"/>
+<path fill="none" stroke="#191970" d="M1260.5103,-285.8504C1210.8254,-257.0129 1057.7446,-169.8976 924,-112 894.3816,-99.1783 859.9098,-87.1852 833.7637,-78.6614"/>
+<polygon fill="#191970" stroke="#191970" points="834.7697,-75.3084 824.1781,-75.5699 832.6211,-81.9705 834.7697,-75.3084"/>
 </g>
 <!-- Node37&#45;&gt;Node12 -->
 <g id="edge73" class="edge">
 <title>Node37&#45;&gt;Node12</title>
-<path fill="none" stroke="#191970" d="M1412.9083,-285.8166C1400.4058,-263.4905 1367.3224,-207.3089 1330.2095,-168 1296.9643,-132.7876 1250.9332,-99.8618 1223.2173,-81.3874"/>
-<polygon fill="#191970" stroke="#191970" points="1224.8427,-78.2672 1214.5651,-75.6938 1220.9947,-84.1147 1224.8427,-78.2672"/>
+<path fill="none" stroke="#191970" d="M1270.6206,-285.9309C1247.34,-251.01 1166.7194,-130.0792 1136.0083,-84.0125"/>
+<polygon fill="#191970" stroke="#191970" points="1138.8659,-81.989 1130.4067,-75.61 1133.0415,-85.872 1138.8659,-81.989"/>
 </g>
 <!-- Node40&#45;&gt;Node11 -->
 <g id="edge77" class="edge">
 <title>Node40&#45;&gt;Node11</title>
-<path fill="none" stroke="#191970" d="M2245.0853,-168.3974C2233.9129,-154.0152 2210.8777,-126.9737 2185.2095,-112 2144.4258,-88.2087 2090.5844,-76.0898 2056.6716,-70.409"/>
-<polygon fill="#191970" stroke="#191970" points="2056.8272,-66.8901 2046.403,-68.7841 2055.7331,-73.8041 2056.8272,-66.8901"/>
+<path fill="none" stroke="#191970" d="M2088.1857,-168.3122C2071.7594,-154.0665 2039.0328,-127.4855 2007,-112 1964.727,-91.5641 1911.7062,-78.604 1878.328,-71.8213"/>
+<polygon fill="#191970" stroke="#191970" points="1878.707,-68.3289 1868.2197,-69.8346 1877.3569,-75.1975 1878.707,-68.3289"/>
 </g>
 <!-- Node41 -->
 <g id="node39" class="node">
 <title>Node41</title>
 <g id="a_node39"><a xlink:href="dji__gimbal__module_8hpp.html" target="_top" xlink:title="Implementation of gimbal module for payload node.">
-<polygon fill="#ffffff" stroke="#ff0000" points="2254.2095,-112.5 2254.2095,-131.5 2370.2095,-131.5 2370.2095,-112.5 2254.2095,-112.5"/>
-<text text-anchor="middle" x="2312.2095" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_gimbal_module.hpp</text>
+<polygon fill="#ffffff" stroke="#ff0000" points="2076,-112.5 2076,-131.5 2192,-131.5 2192,-112.5 2076,-112.5"/>
+<text text-anchor="middle" x="2134" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_gimbal_module.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node40&#45;&gt;Node41 -->
 <g id="edge78" class="edge">
 <title>Node40&#45;&gt;Node41</title>
-<path fill="none" stroke="#191970" d="M2262.6607,-168.2455C2271.4363,-160.0549 2284.1649,-148.1749 2294.5235,-138.5069"/>
-<polygon fill="#191970" stroke="#191970" points="2296.9556,-141.0246 2301.878,-131.6427 2292.1793,-135.9072 2296.9556,-141.0246"/>
+<path fill="none" stroke="#191970" d="M2105.0965,-168.2455C2109.9145,-160.5367 2116.7751,-149.5598 2122.6032,-140.2348"/>
+<polygon fill="#191970" stroke="#191970" points="2125.6413,-141.9777 2127.9733,-131.6427 2119.7053,-138.2677 2125.6413,-141.9777"/>
 </g>
 <!-- Node41&#45;&gt;Node11 -->
 <g id="edge79" class="edge">
 <title>Node41&#45;&gt;Node11</title>
-<path fill="none" stroke="#191970" d="M2263.0278,-112.4369C2203.9324,-100.9461 2106.4849,-81.998 2056.2933,-72.2385"/>
-<polygon fill="#191970" stroke="#191970" points="2056.8153,-68.7745 2046.3311,-70.3014 2055.4792,-75.6459 2056.8153,-68.7745"/>
+<path fill="none" stroke="#191970" d="M2084.8183,-112.4369C2025.723,-100.9461 1928.2754,-81.998 1878.0838,-72.2385"/>
+<polygon fill="#191970" stroke="#191970" points="1878.6058,-68.7745 1868.1216,-70.3014 1877.2697,-75.6459 1878.6058,-68.7745"/>
 </g>
 <!-- Node43&#45;&gt;Node22 -->
 <g id="edge87" class="edge">
 <title>Node43&#45;&gt;Node22</title>
-<path fill="none" stroke="#191970" d="M864.3031,-347.4726C898.3051,-338.2222 951.3191,-323.7488 997.2095,-311 1000.9732,-309.9544 1004.8802,-308.8638 1008.7975,-307.7667"/>
-<polygon fill="#191970" stroke="#191970" points="1009.7983,-311.1211 1018.48,-305.0483 1007.9062,-304.3817 1009.7983,-311.1211"/>
+<path fill="none" stroke="#191970" d="M849.4375,-347.3906C868.8347,-337.2811 899.569,-321.2628 921.7617,-309.6962"/>
+<polygon fill="#191970" stroke="#191970" points="923.4418,-312.7675 930.692,-305.0419 920.2064,-306.56 923.4418,-312.7675"/>
 </g>
 <!-- Node44 -->
 <g id="node41" class="node">
 <title>Node44</title>
 <g id="a_node41"><a xlink:href="dji__flight__actions__module_8hpp.html" target="_top" xlink:title="Implementation of flight actions module.">
-<polygon fill="#ffffff" stroke="#000000" points="783.7095,-280.5 783.7095,-310.5 872.7095,-310.5 872.7095,-280.5 783.7095,-280.5"/>
-<text text-anchor="start" x="791.7095" y="-298.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_flight_actions</text>
-<text text-anchor="middle" x="828.2095" y="-287.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_module.hpp</text>
+<polygon fill="#ffffff" stroke="#000000" points="680.5,-280.5 680.5,-310.5 769.5,-310.5 769.5,-280.5 680.5,-280.5"/>
+<text text-anchor="start" x="688.5" y="-298.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_flight_actions</text>
+<text text-anchor="middle" x="725" y="-287.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_module.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node43&#45;&gt;Node44 -->
 <g id="edge81" class="edge">
 <title>Node43&#45;&gt;Node44</title>
-<path fill="none" stroke="#191970" d="M829.0532,-347.3906C828.9367,-340.2234 828.7719,-330.0862 828.6188,-320.671"/>
-<polygon fill="#191970" stroke="#191970" points="832.1163,-320.4863 828.4541,-310.5446 825.1172,-320.6002 832.1163,-320.4863"/>
+<path fill="none" stroke="#191970" d="M814.4375,-347.3906C799.826,-338.9132 778.0533,-326.2809 759.6488,-315.6028"/>
+<polygon fill="#191970" stroke="#191970" points="761.3366,-312.5357 750.9305,-310.5446 757.8237,-318.5904 761.3366,-312.5357"/>
 </g>
 <!-- Node45 -->
 <g id="node42" class="node">
 <title>Node45</title>
 <g id="a_node42"><a xlink:href="dji__flight__assistant__module_8hpp.html" target="_top" xlink:title="Implementation of flight assistant module.">
-<polygon fill="#ffffff" stroke="#000000" points="890.2095,-280.5 890.2095,-310.5 988.2095,-310.5 988.2095,-280.5 890.2095,-280.5"/>
-<text text-anchor="start" x="898.2095" y="-298.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_flight_assistant</text>
-<text text-anchor="middle" x="939.2095" y="-287.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_module.hpp</text>
+<polygon fill="#ffffff" stroke="#000000" points="787,-280.5 787,-310.5 885,-310.5 885,-280.5 787,-280.5"/>
+<text text-anchor="start" x="795" y="-298.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_flight_assistant</text>
+<text text-anchor="middle" x="836" y="-287.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_module.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node43&#45;&gt;Node45 -->
 <g id="edge83" class="edge">
 <title>Node43&#45;&gt;Node45</title>
-<path fill="none" stroke="#191970" d="M846.397,-347.3906C861.6288,-338.8747 884.3597,-326.166 903.5134,-315.4573"/>
-<polygon fill="#191970" stroke="#191970" points="905.28,-318.4796 912.3005,-310.5446 901.864,-312.3697 905.28,-318.4796"/>
+<path fill="none" stroke="#191970" d="M831.7813,-347.3906C832.364,-340.2234 833.1881,-330.0862 833.9536,-320.671"/>
+<polygon fill="#191970" stroke="#191970" points="837.4549,-320.7954 834.7769,-310.5446 830.4779,-320.2281 837.4549,-320.7954"/>
 </g>
 <!-- Node46 -->
 <g id="node43" class="node">
 <title>Node46</title>
 <g id="a_node43"><a xlink:href="dji__flight__joystick__module_8hpp.html" target="_top" xlink:title="Implementation of flight actions module.">
-<polygon fill="#ffffff" stroke="#000000" points="673.2095,-280.5 673.2095,-310.5 765.2095,-310.5 765.2095,-280.5 673.2095,-280.5"/>
-<text text-anchor="start" x="681.2095" y="-298.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_flight_joystick</text>
-<text text-anchor="middle" x="719.2095" y="-287.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_module.hpp</text>
+<polygon fill="#ffffff" stroke="#000000" points="570,-280.5 570,-310.5 662,-310.5 662,-280.5 570,-280.5"/>
+<text text-anchor="start" x="578" y="-298.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_flight_joystick</text>
+<text text-anchor="middle" x="616" y="-287.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">_module.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node43&#45;&gt;Node46 -->
 <g id="edge85" class="edge">
 <title>Node43&#45;&gt;Node46</title>
-<path fill="none" stroke="#191970" d="M812.022,-347.3906C796.7902,-338.8747 774.0592,-326.166 754.9055,-315.4573"/>
-<polygon fill="#191970" stroke="#191970" points="756.555,-312.3697 746.1185,-310.5446 753.1389,-318.4796 756.555,-312.3697"/>
+<path fill="none" stroke="#191970" d="M797.4063,-347.3906C763.8724,-337.7984 711.7418,-322.8866 671.9537,-311.5054"/>
+<polygon fill="#191970" stroke="#191970" points="672.6999,-308.0785 662.1229,-308.6933 670.7747,-314.8086 672.6999,-308.0785"/>
 </g>
 <!-- Node44&#45;&gt;Node2 -->
 <g id="edge82" class="edge">
 <title>Node44&#45;&gt;Node2</title>
-<path fill="none" stroke="#191970" d="M842.0522,-280.2977C850.0685,-271.4941 860.1857,-260.3833 868.4995,-251.2529"/>
-<polygon fill="#191970" stroke="#191970" points="871.0983,-253.5974 875.2432,-243.8469 865.9225,-248.8845 871.0983,-253.5974"/>
+<path fill="none" stroke="#191970" d="M725,-280.2977C725,-272.3834 725,-262.6043 725,-254.0759"/>
+<polygon fill="#191970" stroke="#191970" points="728.5001,-253.8469 725,-243.8469 721.5001,-253.847 728.5001,-253.8469"/>
 </g>
 <!-- Node45&#45;&gt;Node2 -->
 <g id="edge84" class="edge">
 <title>Node45&#45;&gt;Node2</title>
-<path fill="none" stroke="#191970" d="M925.614,-280.2977C917.8204,-271.5831 908.0048,-260.6075 899.8869,-251.5302"/>
-<polygon fill="#191970" stroke="#191970" points="902.2908,-248.9678 893.0157,-243.8469 897.073,-253.6341 902.2908,-248.9678"/>
+<path fill="none" stroke="#191970" d="M808.8463,-280.4554C791.3005,-270.734 768.5878,-258.15 751.2279,-248.5317"/>
+<polygon fill="#191970" stroke="#191970" points="752.6445,-245.3153 742.2011,-243.5303 749.252,-251.4383 752.6445,-245.3153"/>
 </g>
 <!-- Node46&#45;&gt;Node2 -->
 <g id="edge86" class="edge">
 <title>Node46&#45;&gt;Node2</title>
-<path fill="none" stroke="#191970" d="M759.573,-280.4554C786.9829,-270.239 822.8754,-256.8609 849.1005,-247.0861"/>
-<polygon fill="#191970" stroke="#191970" points="850.4925,-250.3025 858.6403,-243.5303 848.0476,-243.7433 850.4925,-250.3025"/>
+<path fill="none" stroke="#191970" d="M642.6644,-280.4554C659.8941,-270.734 682.1975,-258.15 699.2446,-248.5317"/>
+<polygon fill="#191970" stroke="#191970" points="701.1194,-251.4926 708.1089,-243.5303 697.6796,-245.3961 701.1194,-251.4926"/>
 </g>
 <!-- Node47&#45;&gt;Node11 -->
 <g id="edge89" class="edge">
 <title>Node47&#45;&gt;Node11</title>
-<path fill="none" stroke="#191970" d="M2129.431,-168.2878C2152.4477,-155.8986 2184.9401,-133.4936 2169.2095,-112 2155.8077,-93.6883 2095.0617,-79.2332 2056.5713,-71.7082"/>
-<polygon fill="#191970" stroke="#191970" points="2056.8402,-68.1969 2046.3631,-69.7721 2055.5357,-75.0743 2056.8402,-68.1969"/>
+<path fill="none" stroke="#191970" d="M1972.8583,-168.3317C1985.4367,-154.8031 2004.0849,-129.8786 1991,-112 1977.5982,-93.6883 1916.8522,-79.2332 1878.3619,-71.7082"/>
+<polygon fill="#191970" stroke="#191970" points="1878.6307,-68.1969 1868.1536,-69.7721 1877.3263,-75.0743 1878.6307,-68.1969"/>
 </g>
 <!-- Node48 -->
 <g id="node45" class="node">
 <title>Node48</title>
 <g id="a_node45"><a xlink:href="dji__psdk__module_8hpp.html" target="_top" xlink:title="Implementation of psdk module for payload node.">
-<polygon fill="#ffffff" stroke="#ff0000" points="2052.2095,-112.5 2052.2095,-131.5 2160.2095,-131.5 2160.2095,-112.5 2052.2095,-112.5"/>
-<text text-anchor="middle" x="2106.2095" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_psdk_module.hpp</text>
+<polygon fill="#ffffff" stroke="#ff0000" points="1874,-112.5 1874,-131.5 1982,-131.5 1982,-112.5 1874,-112.5"/>
+<text text-anchor="middle" x="1928" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_psdk_module.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node47&#45;&gt;Node48 -->
 <g id="edge90" class="edge">
 <title>Node47&#45;&gt;Node48</title>
-<path fill="none" stroke="#191970" d="M2108.6869,-168.2455C2108.2955,-160.9382 2107.7467,-150.6944 2107.2651,-141.7046"/>
-<polygon fill="#191970" stroke="#191970" points="2110.7561,-141.4411 2106.7261,-131.6427 2103.7661,-141.8156 2110.7561,-141.4411"/>
+<path fill="none" stroke="#191970" d="M1956.9035,-168.2455C1952.0855,-160.5367 1945.2249,-149.5598 1939.3968,-140.2348"/>
+<polygon fill="#191970" stroke="#191970" points="1942.2947,-138.2677 1934.0267,-131.6427 1936.3587,-141.9777 1942.2947,-138.2677"/>
 </g>
 <!-- Node48&#45;&gt;Node11 -->
 <g id="edge91" class="edge">
 <title>Node48&#45;&gt;Node11</title>
-<path fill="none" stroke="#191970" d="M2091.9262,-112.2455C2079.4624,-103.7337 2061.1644,-91.2375 2046.7303,-81.3801"/>
-<polygon fill="#191970" stroke="#191970" points="2048.561,-78.392 2038.3291,-75.6427 2044.6133,-84.1726 2048.561,-78.392"/>
+<path fill="none" stroke="#191970" d="M1913.7167,-112.2455C1901.253,-103.7337 1882.9549,-91.2375 1868.5208,-81.3801"/>
+<polygon fill="#191970" stroke="#191970" points="1870.3515,-78.392 1860.1196,-75.6427 1866.4038,-84.1726 1870.3515,-78.392"/>
 </g>
 <!-- Node54&#45;&gt;Node12 -->
 <g id="edge93" class="edge">
 <title>Node54&#45;&gt;Node12</title>
-<path fill="none" stroke="#191970" d="M1476.7702,-224.2527C1467.9915,-200.8693 1442.4206,-141.3572 1400.2095,-112 1375.3266,-94.6943 1295.4182,-80.1563 1244.1658,-72.2963"/>
-<polygon fill="#191970" stroke="#191970" points="1244.4177,-68.7949 1234.0083,-70.7682 1243.3763,-75.717 1244.4177,-68.7949"/>
+<path fill="none" stroke="#191970" d="M1637.7827,-224.334C1612.0183,-200.5979 1541.3517,-139.3889 1470,-112 1415.9254,-91.243 1249.6709,-75.8355 1168.9299,-69.3627"/>
+<polygon fill="#191970" stroke="#191970" points="1168.8344,-65.8443 1158.5896,-68.5452 1168.2827,-72.8225 1168.8344,-65.8443"/>
 </g>
 <!-- Node55&#45;&gt;Node11 -->
 <g id="edge95" class="edge">
 <title>Node55&#45;&gt;Node11</title>
-<path fill="none" stroke="#191970" d="M1943.2814,-347.4534C1955.0379,-328.5118 1980.9189,-284.502 1994.2095,-244 2012.4771,-188.3309 2020.0632,-119.0378 2022.8264,-85.7104"/>
-<polygon fill="#191970" stroke="#191970" points="2026.3342,-85.7425 2023.6122,-75.5033 2019.3548,-85.2051 2026.3342,-85.7425"/>
+<path fill="none" stroke="#191970" d="M1871.2925,-347.4495C1890.4658,-340.6623 1911.6402,-329.3805 1923,-311 1948.9161,-269.0668 1915.53,-281.0282 1865,-132 1859.7953,-116.6496 1854.7606,-98.9917 1851.183,-85.8051"/>
+<polygon fill="#191970" stroke="#191970" points="1854.5078,-84.6891 1848.5488,-75.9289 1847.7442,-86.4932 1854.5078,-84.6891"/>
 </g>
 <!-- Node55&#45;&gt;Node34 -->
-<g id="edge96" class="edge">
+<g id="edge97" class="edge">
 <title>Node55&#45;&gt;Node34</title>
-<path fill="none" stroke="#191970" d="M1884.6684,-355.6266C1781.5915,-352.3279 1545.8553,-341.8003 1350.2095,-311 1343.8922,-310.0055 1337.2816,-308.7205 1330.7969,-307.3164"/>
-<polygon fill="#191970" stroke="#191970" points="1331.2979,-303.841 1320.7707,-305.0364 1329.7456,-310.6668 1331.2979,-303.841"/>
+<path fill="none" stroke="#191970" d="M1778.2515,-355.946C1670.62,-353.1704 1418.1856,-343.4621 1209,-311 1202.6805,-310.0193 1196.0687,-308.7423 1189.5835,-307.342"/>
+<polygon fill="#191970" stroke="#191970" points="1190.0836,-303.8665 1179.5568,-305.065 1188.5333,-310.6927 1190.0836,-303.8665"/>
 </g>
 <!-- Node56 -->
 <g id="node48" class="node">
 <title>Node56</title>
-<g id="a_node48"><a xlink:href="dji__waypoint__v2__action_8hpp.html" target="_top" xlink:title="Implementation of Waypoint V2 action.">
-<polygon fill="#ffffff" stroke="#000000" points="1814.7095,-224.5 1814.7095,-243.5 1951.7095,-243.5 1951.7095,-224.5 1814.7095,-224.5"/>
-<text text-anchor="middle" x="1883.2095" y="-231.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">dji_waypoint_v2_action.hpp</text>
+<g id="a_node48"><a xlink:title=" ">
+<polygon fill="#ffffff" stroke="#bfbfbf" points="1820,-286 1820,-305 1914,-305 1914,-286 1820,-286"/>
+<text text-anchor="middle" x="1867" y="-293" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">osdk_command.h</text>
 </a>
 </g>
 </g>
 <!-- Node55&#45;&gt;Node56 -->
-<g id="edge97" class="edge">
+<g id="edge96" class="edge">
 <title>Node55&#45;&gt;Node56</title>
-<path fill="none" stroke="#191970" d="M1932.9722,-347.3484C1924.0606,-327.0499 1903.2393,-279.6235 1891.5501,-252.9981"/>
-<polygon fill="#191970" stroke="#191970" points="1894.6518,-251.3562 1887.4271,-243.6068 1888.2423,-254.1702 1894.6518,-251.3562"/>
+<path fill="none" stroke="#191970" d="M1836.625,-347.3906C1841.8253,-338.5068 1849.6966,-325.0601 1856.1233,-314.0811"/>
+<polygon fill="#191970" stroke="#191970" points="1859.2644,-315.6432 1861.2957,-305.2449 1853.2233,-312.1069 1859.2644,-315.6432"/>
 </g>
-<!-- Node56&#45;&gt;Node10 -->
-<g id="edge98" class="edge">
-<title>Node56&#45;&gt;Node10</title>
-<path fill="none" stroke="#191970" d="M1871.6142,-224.4509C1848.2284,-205.1921 1795.2003,-161.5218 1766.5087,-137.8935"/>
-<polygon fill="#191970" stroke="#191970" points="1768.7197,-135.1802 1758.7754,-131.5249 1764.2698,-140.5838 1768.7197,-135.1802"/>
-</g>
-<!-- Node57&#45;&gt;Node11 -->
-<g id="edge101" class="edge">
-<title>Node57&#45;&gt;Node11</title>
-<path fill="none" stroke="#191970" d="M1940.8023,-112.2455C1956.5885,-103.4928 1979.9734,-90.527 1997.9682,-80.5496"/>
-<polygon fill="#191970" stroke="#191970" points="1999.7698,-83.5528 2006.8182,-75.6427 1996.3754,-77.4308 1999.7698,-83.5528"/>
-</g>
-<!-- Node57&#45;&gt;Node12 -->
+<!-- Node58&#45;&gt;Node11 -->
 <g id="edge100" class="edge">
-<title>Node57&#45;&gt;Node12</title>
-<path fill="none" stroke="#191970" d="M1888.6003,-118.8188C1866.2399,-116.7928 1836.5124,-114.1539 1810.2095,-112 1598.5018,-94.6638 1345.3188,-76.3852 1244.1703,-69.182"/>
-<polygon fill="#191970" stroke="#191970" points="1244.2345,-65.6779 1234.0114,-68.4595 1243.7378,-72.6602 1244.2345,-65.6779"/>
+<title>Node58&#45;&gt;Node11</title>
+<path fill="none" stroke="#191970" d="M1717.6454,-112.3733C1744.4353,-102.6944 1785.7403,-87.7712 1814.2217,-77.4812"/>
+<polygon fill="#191970" stroke="#191970" points="1815.5005,-80.7407 1823.7162,-74.0509 1813.1219,-74.1572 1815.5005,-80.7407"/>
+</g>
+<!-- Node58&#45;&gt;Node12 -->
+<g id="edge99" class="edge">
+<title>Node58&#45;&gt;Node12</title>
+<path fill="none" stroke="#191970" d="M1656.3971,-114.8413C1650.6048,-113.7881 1644.6444,-112.7927 1639,-112 1466.0608,-87.7109 1258.5472,-73.7727 1168.8852,-68.4806"/>
+<polygon fill="#191970" stroke="#191970" points="1168.9855,-64.9806 1158.7987,-67.8926 1168.578,-71.9687 1168.9855,-64.9806"/>
 </g>
 </g>
 </svg>

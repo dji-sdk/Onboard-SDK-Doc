@@ -14,5 +14,5 @@ var searchData=
   ['startpoint',['startPoint',['../structDJI_1_1OSDK_1_1HotPointSettings.html#accdf7a754165a6ebdb30783eeea4d65d',1,'DJI::OSDK::HotPointSettings']]],
   ['strongwindlevel1',['strongWindLevel1',['../structDJI_1_1OSDK_1_1Telemetry_1_1FlightAnomaly.html#a9ddb44207d85b461d9bf913e7cab4868',1,'DJI::OSDK::Telemetry::FlightAnomaly']]],
   ['strongwindlevel2',['strongWindLevel2',['../structDJI_1_1OSDK_1_1Telemetry_1_1FlightAnomaly.html#aea4b54f50d07c3caa2cdf435a6f57dbb',1,'DJI::OSDK::Telemetry::FlightAnomaly']]],
-  ['success',['SUCCESS',['../classDJI_1_1OSDK_1_1ACK.html#ad9d4dc1ed4d14c52d08e6b15f69e043c',1,'DJI::OSDK::ACK::SUCCESS()'],['../classDJI_1_1OSDK_1_1ErrorCode_1_1SysCommonErr.html#a595fa6d102439e6d98bf8b0d81c8d5fe',1,'DJI::OSDK::ErrorCode::SysCommonErr::Success()']]]
+  ['success',['Success',['../classDJI_1_1OSDK_1_1ErrorCode_1_1SysCommonErr.html#a595fa6d102439e6d98bf8b0d81c8d5fe',1,'DJI::OSDK::ErrorCode::SysCommonErr::Success()'],['../classDJI_1_1OSDK_1_1ACK.html#ad9d4dc1ed4d14c52d08e6b15f69e043c',1,'DJI::OSDK::ACK::SUCCESS()']]]
 ];

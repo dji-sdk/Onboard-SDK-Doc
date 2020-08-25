@@ -145,7 +145,8 @@ $(function() {
 <div class="dynheader">
 Inheritance diagram for DJI::OSDK::CameraModule:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classDJI_1_1OSDK_1_1CameraModule__inherit__graph.svg" width="208" height="463"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classDJI_1_1OSDK_1_1CameraModule__inherit__graph.svg" width="208" height="463"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -276,6 +277,8 @@ Public Types</h2></td></tr>
 &#160;&#160;<a class="el" href="classDJI_1_1OSDK_1_1CameraModule.html#a998b0c7f990299f3d640001a7b9e7afcab831e09d06eef60373fb3a35e873a2d2">RAW_BURST</a> = DJI_CAMERA_TAKE_PHOTO_TYPE_RAW_BURST, 
 <br />
 &#160;&#160;<a class="el" href="classDJI_1_1OSDK_1_1CameraModule.html#a998b0c7f990299f3d640001a7b9e7afca9f0115a5c96c377c99a6b41f44b93f43">EHDR</a> = DJI_CAMERA_TAKE_PHOTO_TYPE_EHDR, 
+<br />
+&#160;&#160;<a class="el" href="classDJI_1_1OSDK_1_1CameraModule.html#a998b0c7f990299f3d640001a7b9e7afcab7ce61466a271fd4b77c3ed06676e6d8">REGIONAL_SR</a> = 0x16, 
 <br />
 &#160;&#160;<a class="el" href="classDJI_1_1OSDK_1_1CameraModule.html#a998b0c7f990299f3d640001a7b9e7afca519ebfbb0a29dc556b1e86abd2cd90ae">SHOOT_PHOTO_MODE_UNKNOWN</a> = 0xFF
 <br />
@@ -749,6 +752,15 @@ Public Types</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:adebf045152ee2650c30dc640c2c4c511"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e10fccebdaa5cc28a522e54d09078ad"><td class="memItemLeft" align="right" valign="top"><a id="a3e10fccebdaa5cc28a522e54d09078ad"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>DJI_CAMERA_CONTI_CAP_TYPE</b> : uint8_t { <br />
+&#160;&#160;<b>DJI_CAMERA_CONTI_CAP_TYPE_SINGLE</b> = 0, 
+<br />
+&#160;&#160;<b>DJI_CAMERA_CONTI_CAP_TYPE_MULTIPLE</b> = 1, 
+<br />
+&#160;&#160;<b>DJI_CAMERA_CONTI_CAP_TYPE_TIMELAPSE</b> = 2
+<br />
+ }</td></tr>
+<tr class="separator:a3e10fccebdaa5cc28a522e54d09078ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d4739f4b770584f5e13e470211a4f89"><td class="memItemLeft" align="right" valign="top"><a id="a2d4739f4b770584f5e13e470211a4f89"></a>
 typedef struct <a class="el" href="structDJI_1_1OSDK_1_1CameraModule_1_1CommonAck.html">DJI::OSDK::CameraModule::CommonAck</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1CameraModule.html#a2d4739f4b770584f5e13e470211a4f89">CommonAck</a></td></tr>
 <tr class="memdesc:a2d4739f4b770584f5e13e470211a4f89"><td class="mdescLeft">&#160;</td><td class="mdescRight">It is the common ack of Open Protocol CMD <a class="el" href="classDJI_1_1OSDK_1_1CameraModule.html#a6b3ef8bbeb230562840d5f9d810396eb" title="the function ID of camera used in the CMD OpenProtocolCMD::CMDSet::Control::cameraExtraFunction">DJI::OSDK::CameraModule::FunctionID</a>. All the ack data from this CMD will include the ack struct. <br /></td></tr>
@@ -772,6 +784,9 @@ typedef struct <a class="el" href="structDJI_1_1OSDK_1_1CameraModule_1_1PhotoInt
 typedef struct <a class="el" href="structDJI_1_1OSDK_1_1CameraModule_1_1CaptureParamData.html">DJI::OSDK::CameraModule::CaptureParamData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1CameraModule.html#ae76c3d504ce8f29c49fc12a4c1cf182e">CaptureParamData</a></td></tr>
 <tr class="memdesc:ae76c3d504ce8f29c49fc12a4c1cf182e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Take photo mode parameters. <br /></td></tr>
 <tr class="separator:ae76c3d504ce8f29c49fc12a4c1cf182e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa89b48d6c4285d21a5908256f2b72c1a"><td class="memItemLeft" align="right" valign="top"><a id="aa89b48d6c4285d21a5908256f2b72c1a"></a>
+typedef struct DJI::OSDK::CameraModule::dji_camera_timelapse_capture_with_ms&#160;</td><td class="memItemRight" valign="bottom"><b>dji_camera_timelapse_capture_with_ms</b></td></tr>
+<tr class="separator:aa89b48d6c4285d21a5908256f2b72c1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4a05f26a4c21e0433d41e37eeee4d6d"><td class="memItemLeft" align="right" valign="top"><a id="ac4a05f26a4c21e0433d41e37eeee4d6d"></a>
 typedef struct <a class="el" href="structDJI_1_1OSDK_1_1CameraModule_1_1CaptureParamReq.html">DJI::OSDK::CameraModule::CaptureParamReq</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1CameraModule.html#ac4a05f26a4c21e0433d41e37eeee4d6d">CaptureParamReq</a></td></tr>
 <tr class="memdesc:ac4a05f26a4c21e0433d41e37eeee4d6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Request data to take photo mode. <br /></td></tr>
@@ -1693,6 +1708,10 @@ Linker *&#160;</td><td class="memItemRight" valign="bottom"><b>getLinker</b> ()<
 </td></tr>
 <tr><td class="fieldname"><a id="a998b0c7f990299f3d640001a7b9e7afca9f0115a5c96c377c99a6b41f44b93f43"></a>EHDR&#160;</td><td class="fielddoc"><ul>
 <li>Sets the camera to take an enhanced-HDR photo. It blends a sequence of photos for ghost-free high dynamic range photos. It is supported by Mavic 2 Zoom and Mavic 2 Pro. </li>
+</ul>
+</td></tr>
+<tr><td class="fieldname"><a id="a998b0c7f990299f3d640001a7b9e7afcab7ce61466a271fd4b77c3ed06676e6d8"></a>REGIONAL_SR&#160;</td><td class="fielddoc"><ul>
+<li>Sets the camera to take an regional photos. It is supported by H20/H20T. </li>
 </ul>
 </td></tr>
 <tr><td class="fieldname"><a id="a998b0c7f990299f3d640001a7b9e7afca519ebfbb0a29dc556b1e86abd2cd90ae"></a>SHOOT_PHOTO_MODE_UNKNOWN&#160;</td><td class="fielddoc"><ul>
