@@ -2,6 +2,8 @@ var searchData=
 [
   ['readidlevelocity',['readIdleVelocity',['../classDJI_1_1OSDK_1_1WaypointMission.html#a881cc37e0cba5752a17565915b39c4c8',1,'DJI::OSDK::WaypointMission::readIdleVelocity(VehicleCallBack callback=0, UserData userData=0)'],['../classDJI_1_1OSDK_1_1WaypointMission.html#a50bedf0aa7e02fca19b28354089d2520',1,'DJI::OSDK::WaypointMission::readIdleVelocity(int timeout)']]],
   ['recvdata',['recvData',['../classDJI_1_1OSDK_1_1MopPipeline.html#afedd4be11a0822c41901d86a808ef415',1,'DJI::OSDK::MopPipeline']]],
+  ['registermissioneventcallback',['RegisterMissionEventCallback',['../classDJI_1_1OSDK_1_1WaypointV2MissionOperator.html#abe4c833bcfe0388a4c9df0c55b124652',1,'DJI::OSDK::WaypointV2MissionOperator']]],
+  ['registermissionstatecallback',['RegisterMissionStateCallback',['../classDJI_1_1OSDK_1_1WaypointV2MissionOperator.html#a77e346040c7f8d33622fb4d2ee656be3',1,'DJI::OSDK::WaypointV2MissionOperator']]],
   ['registeruserpackageunpackcallback',['registerUserPackageUnpackCallback',['../classDJI_1_1OSDK_1_1DataSubscription.html#a69bfb721713e8fdd164d1cf065d7a180',1,'DJI::OSDK::DataSubscription']]],
   ['releasectrlauthority',['releaseCtrlAuthority',['../classDJI_1_1OSDK_1_1Control.html#a4c1fdfcf74e492543ca53ee6b06fb3bf',1,'DJI::OSDK::Control::releaseCtrlAuthority(VehicleCallBack callback=0, UserData userData=0)'],['../classDJI_1_1OSDK_1_1Control.html#a5cb726926217239960232f525d91d3da',1,'DJI::OSDK::Control::releaseCtrlAuthority(int timeout)']]],
   ['removeallexistingpackages',['removeAllExistingPackages',['../classDJI_1_1OSDK_1_1DataSubscription.html#a9afcdd6ce4c8dcc98d759db89632488c',1,'DJI::OSDK::DataSubscription']]],

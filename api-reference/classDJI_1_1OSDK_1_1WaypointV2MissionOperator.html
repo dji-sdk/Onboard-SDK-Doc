@@ -201,6 +201,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a46010377673c0548364ba7aa158dd8d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1WaypointV2MissionOperator.html#a46010377673c0548364ba7aa158dd8d0">setTakeoffAltitude</a> (float32_t altitude)</td></tr>
 <tr class="memdesc:a46010377673c0548364ba7aa158dd8d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the take-off altitude of waypoint V2 mission  <a href="#a46010377673c0548364ba7aa158dd8d0">More...</a><br /></td></tr>
 <tr class="separator:a46010377673c0548364ba7aa158dd8d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe4c833bcfe0388a4c9df0c55b124652"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1WaypointV2MissionOperator.html#abe4c833bcfe0388a4c9df0c55b124652">RegisterMissionEventCallback</a> (void *userData, PushCallback cb=nullptr)</td></tr>
+<tr class="memdesc:abe4c833bcfe0388a4c9df0c55b124652"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subscribe to waypointV2 event with a callback function.  <a href="#abe4c833bcfe0388a4c9df0c55b124652">More...</a><br /></td></tr>
+<tr class="separator:abe4c833bcfe0388a4c9df0c55b124652"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77e346040c7f8d33622fb4d2ee656be3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1WaypointV2MissionOperator.html#a77e346040c7f8d33622fb4d2ee656be3">RegisterMissionStateCallback</a> (void *userData, PushCallback cb=nullptr)</td></tr>
+<tr class="memdesc:a77e346040c7f8d33622fb4d2ee656be3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subscribe to waypointV2 mission state with a callback function.  <a href="#a77e346040c7f8d33622fb4d2ee656be3">More...</a><br /></td></tr>
+<tr class="separator:a77e346040c7f8d33622fb4d2ee656be3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -559,6 +565,80 @@ const uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_WAYPOIN
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933" title="Unified error type.">ErrorCode::ErrorCodeType</a> error code </dd></dl>
+
+</div>
+</div>
+<a id="abe4c833bcfe0388a4c9df0c55b124652"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe4c833bcfe0388a4c9df0c55b124652">&#9670;&nbsp;</a></span>RegisterMissionEventCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WaypointV2MissionOperator::RegisterMissionEventCallback </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>userData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">PushCallback&#160;</td>
+          <td class="paramname"><em>cb</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Subscribe to waypointV2 event with a callback function. </p>
+<dl class="section user"><dt>Supported Platforms : M300</dt><dd></dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cb</td><td>callback function.default:null </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a77e346040c7f8d33622fb4d2ee656be3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77e346040c7f8d33622fb4d2ee656be3">&#9670;&nbsp;</a></span>RegisterMissionStateCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WaypointV2MissionOperator::RegisterMissionStateCallback </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>userData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">PushCallback&#160;</td>
+          <td class="paramname"><em>cb</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Subscribe to waypointV2 mission state with a callback function. </p>
+<dl class="section user"><dt>Supported Platforms : M300</dt><dd></dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cb</td><td>callback function.default:null </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
