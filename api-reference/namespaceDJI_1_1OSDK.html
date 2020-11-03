@@ -551,6 +551,9 @@ typedef struct <a class="el" href="structDJI_1_1OSDK_1_1VirtualRCData.html">DJI:
 typedef struct <a class="el" href="structDJI_1_1OSDK_1_1CMD__SETSupportMatrix.html">DJI::OSDK::CMD_SETSupportMatrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#ad664c6de8e9f134f835b660814cae1b8">CMD_SETSupportMatrix</a></td></tr>
 <tr class="memdesc:ad664c6de8e9f134f835b660814cae1b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define CMD_SET support matrix. <br /></td></tr>
 <tr class="separator:ad664c6de8e9f134f835b660814cae1b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b69cd30e1e71141d6520d3b9c6948d0"><td class="memItemLeft" align="right" valign="top">typedef E_OsdkStat(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#a5b69cd30e1e71141d6520d3b9c6948d0">PushCallback</a>) (struct _CommandHandle *cmdHandle, const T_CmdInfo *cmdInfo, const uint8_t *cmdData, void *userData)</td></tr>
+<tr class="memdesc:a5b69cd30e1e71141d6520d3b9c6948d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">callback type to get the pushing data from waypoint 2.0  <a href="#a5b69cd30e1e71141d6520d3b9c6948d0">More...</a><br /></td></tr>
+<tr class="separator:a5b69cd30e1e71141d6520d3b9c6948d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3850723468877191dbe8db1a19959826"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structDJI_1_1OSDK_1_1CGPoint.html">DJI::OSDK::CGPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#a3850723468877191dbe8db1a19959826">CGPoint</a></td></tr>
 <tr class="separator:a3850723468877191dbe8db1a19959826"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af18b6f0caffb341762902883a8a0f03e"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structDJI_1_1OSDK_1_1DJIGimbalRotation.html">DJI::OSDK::DJIGimbalRotation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#af18b6f0caffb341762902883a8a0f03e">DJIGimbalRotation</a></td></tr>
@@ -859,21 +862,21 @@ Enumerations</h2></td></tr>
 <tr class="memitem:afe8b307ba1940bbc99b2b8d1862efe0f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#afe8b307ba1940bbc99b2b8d1862efe0f">DJIWaypointV2ActionActuatorType</a> : uint8_t { <br />
 &#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#afe8b307ba1940bbc99b2b8d1862efe0fab95d5d2691bee37df78364ba5ee32451">DJIWaypointV2ActionActuatorTypeCamera</a> = 1, 
 <br />
-&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#afe8b307ba1940bbc99b2b8d1862efe0fa9180996d470086504ec6d85cb7fd76f6">DJIWaypointV2ActionActuatorTypeGimbal</a>, 
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#afe8b307ba1940bbc99b2b8d1862efe0fa9180996d470086504ec6d85cb7fd76f6">DJIWaypointV2ActionActuatorTypeGimbal</a> = 2, 
 <br />
-&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#afe8b307ba1940bbc99b2b8d1862efe0fa3e55ac586f2f52eb6022ca78a6b57b70">DJIWaypointV2ActionActuatorTypeAircraftControl</a>, 
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#afe8b307ba1940bbc99b2b8d1862efe0fa3e55ac586f2f52eb6022ca78a6b57b70">DJIWaypointV2ActionActuatorTypeAircraftControl</a> = 4, 
 <br />
 &#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#afe8b307ba1940bbc99b2b8d1862efe0facbcb802246ee9c3db035cde26946703a">DJIWaypointV2ActionActuatorTypeUnknown</a> = 0xFF
 <br />
  }</td></tr>
 <tr class="separator:afe8b307ba1940bbc99b2b8d1862efe0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba5b6d6a0c6285ca7e7050ea85cd0deb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#aba5b6d6a0c6285ca7e7050ea85cd0deb">DJIWaypointV2ActionActuatorGimbalOperationType</a> : uint8_t { <br />
-&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#aba5b6d6a0c6285ca7e7050ea85cd0deba51ec4522f98416a4c276be369dfaa6bd">DJIWaypointV2ActionActuatorGimbalOperationTypeRotateGimbal</a> = 1, 
+<tr class="memitem:accf89ec69faeecd650e94cb19c76ed52"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#accf89ec69faeecd650e94cb19c76ed52">DJIWaypointV2ActionActuatorGimbalOperationType</a> : uint16_t { <br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#accf89ec69faeecd650e94cb19c76ed52a51ec4522f98416a4c276be369dfaa6bd">DJIWaypointV2ActionActuatorGimbalOperationTypeRotateGimbal</a> = 1, 
 <br />
-&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#aba5b6d6a0c6285ca7e7050ea85cd0deba1f5c1b46864c08b1bfe998358625458e">DJIWaypointV2ActionActuatorGimbalOperationTypeUnknown</a> = 0xFF
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#accf89ec69faeecd650e94cb19c76ed52a1f5c1b46864c08b1bfe998358625458e">DJIWaypointV2ActionActuatorGimbalOperationTypeUnknown</a> = 0xFF
 <br />
  }</td></tr>
-<tr class="separator:aba5b6d6a0c6285ca7e7050ea85cd0deb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:accf89ec69faeecd650e94cb19c76ed52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c7187c86c36341c4ccd6d2992c5119e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#a8c7187c86c36341c4ccd6d2992c5119e">DJIWaypointV2ActionActuatorCameraOperationType</a> : uint16_t { <br />
 &#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a8c7187c86c36341c4ccd6d2992c5119ea8d545d70d996855c6e35a49189e4f639">DJIWaypointV2ActionActuatorCameraOperationTypeTakePhoto</a> = 1, 
 <br />
@@ -887,15 +890,15 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a8c7187c86c36341c4ccd6d2992c5119e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a652ecf66bb2a5ed16b9d1f229fbae9f3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#a652ecf66bb2a5ed16b9d1f229fbae9f3">DJIWaypointV2ActionActuatorAircraftControlOperationType</a> : uint8_t { <br />
-&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a652ecf66bb2a5ed16b9d1f229fbae9f3ade5c3fc8c40daeacb563bc56e1a7767e">DJIWaypointV2ActionActuatorAircraftControlOperationTypeRotateYaw</a> = 1, 
+<tr class="memitem:abc5ecc362353e2504cdd195954ebdd24"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#abc5ecc362353e2504cdd195954ebdd24">DJIWaypointV2ActionActuatorAircraftControlOperationType</a> : uint16_t { <br />
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#abc5ecc362353e2504cdd195954ebdd24ade5c3fc8c40daeacb563bc56e1a7767e">DJIWaypointV2ActionActuatorAircraftControlOperationTypeRotateYaw</a> = 1, 
 <br />
-&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a652ecf66bb2a5ed16b9d1f229fbae9f3a7006f5c722430b636a0a724947b1abdb">DJIWaypointV2ActionActuatorAircraftControlOperationTypeFlyingControl</a>, 
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#abc5ecc362353e2504cdd195954ebdd24a7006f5c722430b636a0a724947b1abdb">DJIWaypointV2ActionActuatorAircraftControlOperationTypeFlyingControl</a> = 2, 
 <br />
-&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a652ecf66bb2a5ed16b9d1f229fbae9f3aed97162c9d54d24f64b2c4fa7331d754">DJIWaypointV2ActionActuatorAircraftControlOperationTypeUnknown</a> = 0xFF
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#abc5ecc362353e2504cdd195954ebdd24aed97162c9d54d24f64b2c4fa7331d754">DJIWaypointV2ActionActuatorAircraftControlOperationTypeUnknown</a> = 0xFF
 <br />
  }</td></tr>
-<tr class="separator:a652ecf66bb2a5ed16b9d1f229fbae9f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:abc5ecc362353e2504cdd195954ebdd24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad90906264bca35a8fd1e7b47023efa6d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#ad90906264bca35a8fd1e7b47023efa6d">DJIWaypointV2MissionExecutionState</a> : uint8_t { <br />
 &#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#ad90906264bca35a8fd1e7b47023efa6daeb0f2d0e3b315d37c80e80ea37580352">DJIWaypointV2MissionExecutionStateInitializing</a>, 
 <br />
@@ -1872,6 +1875,23 @@ const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_SEND_DAT
 
 </div>
 </div>
+<a id="a5b69cd30e1e71141d6520d3b9c6948d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b69cd30e1e71141d6520d3b9c6948d0">&#9670;&nbsp;</a></span>PushCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef E_OsdkStat(* DJI::OSDK::PushCallback) (struct _CommandHandle *cmdHandle, const T_CmdInfo *cmdInfo, const uint8_t *cmdData, void *userData)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>callback type to get the pushing data from waypoint 2.0 </p>
+<dl class="section user"><dt>Supported Platforms : M300</dt><dd></dd></dl>
+
+</div>
+</div>
 <a id="ae17b0abae0be9667ad05b120288aa233"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae17b0abae0be9667ad05b120288aa233">&#9670;&nbsp;</a></span>RecvContainer</h2>
 
@@ -2235,24 +2255,24 @@ const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_SEND_DAT
 
 </div>
 </div>
-<a id="a652ecf66bb2a5ed16b9d1f229fbae9f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a652ecf66bb2a5ed16b9d1f229fbae9f3">&#9670;&nbsp;</a></span>DJIWaypointV2ActionActuatorAircraftControlOperationType</h2>
+<a id="abc5ecc362353e2504cdd195954ebdd24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc5ecc362353e2504cdd195954ebdd24">&#9670;&nbsp;</a></span>DJIWaypointV2ActionActuatorAircraftControlOperationType</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="namespaceDJI_1_1OSDK.html#a652ecf66bb2a5ed16b9d1f229fbae9f3">DJI::OSDK::DJIWaypointV2ActionActuatorAircraftControlOperationType</a> : uint8_t</td>
+          <td class="memname">enum <a class="el" href="namespaceDJI_1_1OSDK.html#abc5ecc362353e2504cdd195954ebdd24">DJI::OSDK::DJIWaypointV2ActionActuatorAircraftControlOperationType</a> : uint16_t</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Possible types of aircraft control actuator operation. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a652ecf66bb2a5ed16b9d1f229fbae9f3ade5c3fc8c40daeacb563bc56e1a7767e"></a>DJIWaypointV2ActionActuatorAircraftControlOperationTypeRotateYaw&#160;</td><td class="fielddoc"><p>Rotates the aircraft's yaw. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="abc5ecc362353e2504cdd195954ebdd24ade5c3fc8c40daeacb563bc56e1a7767e"></a>DJIWaypointV2ActionActuatorAircraftControlOperationTypeRotateYaw&#160;</td><td class="fielddoc"><p>Rotates the aircraft's yaw. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a652ecf66bb2a5ed16b9d1f229fbae9f3a7006f5c722430b636a0a724947b1abdb"></a>DJIWaypointV2ActionActuatorAircraftControlOperationTypeFlyingControl&#160;</td><td class="fielddoc"><p>Keeps the aircraft stop flying or start flying. </p>
+<tr><td class="fieldname"><a id="abc5ecc362353e2504cdd195954ebdd24a7006f5c722430b636a0a724947b1abdb"></a>DJIWaypointV2ActionActuatorAircraftControlOperationTypeFlyingControl&#160;</td><td class="fielddoc"><p>Keeps the aircraft stop flying or start flying. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a652ecf66bb2a5ed16b9d1f229fbae9f3aed97162c9d54d24f64b2c4fa7331d754"></a>DJIWaypointV2ActionActuatorAircraftControlOperationTypeUnknown&#160;</td><td class="fielddoc"><p>Unknown </p>
+<tr><td class="fieldname"><a id="abc5ecc362353e2504cdd195954ebdd24aed97162c9d54d24f64b2c4fa7331d754"></a>DJIWaypointV2ActionActuatorAircraftControlOperationTypeUnknown&#160;</td><td class="fielddoc"><p>Unknown </p>
 </td></tr>
 </table>
 
@@ -2285,22 +2305,22 @@ const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_SEND_DAT
 
 </div>
 </div>
-<a id="aba5b6d6a0c6285ca7e7050ea85cd0deb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba5b6d6a0c6285ca7e7050ea85cd0deb">&#9670;&nbsp;</a></span>DJIWaypointV2ActionActuatorGimbalOperationType</h2>
+<a id="accf89ec69faeecd650e94cb19c76ed52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accf89ec69faeecd650e94cb19c76ed52">&#9670;&nbsp;</a></span>DJIWaypointV2ActionActuatorGimbalOperationType</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="namespaceDJI_1_1OSDK.html#aba5b6d6a0c6285ca7e7050ea85cd0deb">DJI::OSDK::DJIWaypointV2ActionActuatorGimbalOperationType</a> : uint8_t</td>
+          <td class="memname">enum <a class="el" href="namespaceDJI_1_1OSDK.html#accf89ec69faeecd650e94cb19c76ed52">DJI::OSDK::DJIWaypointV2ActionActuatorGimbalOperationType</a> : uint16_t</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>The type of gimbal actuator operation. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aba5b6d6a0c6285ca7e7050ea85cd0deba51ec4522f98416a4c276be369dfaa6bd"></a>DJIWaypointV2ActionActuatorGimbalOperationTypeRotateGimbal&#160;</td><td class="fielddoc"><p>Rotates the gimbal. Only valid when the trigger type is <code>DJIWaypointV2MissionV2_DJIWaypointV2TriggerAssociatedTimingType_ReachPoint</code>. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="accf89ec69faeecd650e94cb19c76ed52a51ec4522f98416a4c276be369dfaa6bd"></a>DJIWaypointV2ActionActuatorGimbalOperationTypeRotateGimbal&#160;</td><td class="fielddoc"><p>Rotates the gimbal. Only valid when the trigger type is <code>DJIWaypointV2MissionV2_DJIWaypointV2TriggerAssociatedTimingType_ReachPoint</code>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="aba5b6d6a0c6285ca7e7050ea85cd0deba1f5c1b46864c08b1bfe998358625458e"></a>DJIWaypointV2ActionActuatorGimbalOperationTypeUnknown&#160;</td><td class="fielddoc"><p>Rotates the gimbal. Only valid when the trigger type is <code>DJIWaypointV2MissionV2_DJIWaypointV2TriggerAssociatedTimingType_Trajectory</code>.Unknown </p>
+<tr><td class="fieldname"><a id="accf89ec69faeecd650e94cb19c76ed52a1f5c1b46864c08b1bfe998358625458e"></a>DJIWaypointV2ActionActuatorGimbalOperationTypeUnknown&#160;</td><td class="fielddoc"><p>Rotates the gimbal. Only valid when the trigger type is <code>DJIWaypointV2MissionV2_DJIWaypointV2TriggerAssociatedTimingType_Trajectory</code>.Unknown </p>
 </td></tr>
 </table>
 
