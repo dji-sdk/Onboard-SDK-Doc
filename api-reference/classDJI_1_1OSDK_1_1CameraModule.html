@@ -752,6 +752,35 @@ Public Types</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:adebf045152ee2650c30dc640c2c4c511"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c23be1b1208779dac73decc1ddc027a"><td class="memItemLeft" align="right" valign="top"><a id="a9c23be1b1208779dac73decc1ddc027a"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>DJI_CAMERA_FOCUS_MODE</b> { <br />
+&#160;&#160;<b>DJI_CAMERA_FOCUS_MODE_MANUAL</b> = 0, 
+<br />
+&#160;&#160;<b>DJI_CAMERA_FOCUS_MODE_SHOT_AF</b> = 1, 
+<br />
+&#160;&#160;<b>DJI_CAMERA_FOCUS_MODE_CONTIN_AF</b> = 2, 
+<br />
+&#160;&#160;<b>DJI_CAMERA_FOCUS_MODE_MANUAL_FINE</b> = 3
+<br />
+ }</td></tr>
+<tr class="separator:a9c23be1b1208779dac73decc1ddc027a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae91ea7866d1ad84576b3328af0407800"><td class="memItemLeft" align="right" valign="top"><a id="ae91ea7866d1ad84576b3328af0407800"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>DJI_CAMERA_DJPH1_CALIBRATE_RESULT</b> { <br />
+&#160;&#160;<b>DJI_CAMERA_DJPH1_CALIBRATE_RESULT_IDLE</b> = 0, 
+<br />
+&#160;&#160;<b>DJI_CAMERA_DJPH1_CALIBRATE_RESULT_SUCCESS</b> = 1, 
+<br />
+&#160;&#160;<b>DJI_CAMERA_DJPH1_CALIBRATE_RESULT_TOOCLOSE</b> = 2
+<br />
+ }</td></tr>
+<tr class="separator:ae91ea7866d1ad84576b3328af0407800"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a299d1656ce525e44d22656d5c97d2960"><td class="memItemLeft" align="right" valign="top"><a id="a299d1656ce525e44d22656d5c97d2960"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>DJI_X5_CAMERA_PROTOCOL_TYPE</b> { <br />
+&#160;&#160;<b>DJI_X5_CAMERA_PROTOCOL_TYPE_DEFAULT</b> = 0, 
+<br />
+&#160;&#160;<b>DJI_X5_CAMERA_PROTOCOL_TYPE_ASSISTANT_FOCUS</b> = 1, 
+<br />
+&#160;&#160;<b>DJI_X5_CAMERA_PROTOCOL_TYPE_CMODE</b> = 2
+<br />
+ }</td></tr>
+<tr class="separator:a299d1656ce525e44d22656d5c97d2960"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e10fccebdaa5cc28a522e54d09078ad"><td class="memItemLeft" align="right" valign="top"><a id="a3e10fccebdaa5cc28a522e54d09078ad"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>DJI_CAMERA_CONTI_CAP_TYPE</b> : uint8_t { <br />
 &#160;&#160;<b>DJI_CAMERA_CONTI_CAP_TYPE_SINGLE</b> = 0, 
 <br />
@@ -761,6 +790,27 @@ Public Types</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a3e10fccebdaa5cc28a522e54d09078ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e9d7d6b0dca1f3e6b80d6ce9628be64"><td class="memItemLeft" align="right" valign="top"><a id="a5e9d7d6b0dca1f3e6b80d6ce9628be64"></a>
+typedef struct DJI::OSDK::CameraModule::dji_camera_focus_area_struct&#160;</td><td class="memItemRight" valign="bottom"><b>dji_camera_focus_area_struct</b></td></tr>
+<tr class="separator:a5e9d7d6b0dca1f3e6b80d6ce9628be64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a157179076be467c115dc45428d752fa5"><td class="memItemLeft" align="right" valign="top"><a id="a157179076be467c115dc45428d752fa5"></a>
+typedef struct DJI::OSDK::CameraModule::dji_camera_aperture_range&#160;</td><td class="memItemRight" valign="bottom"><b>dji_camera_aperture_range</b></td></tr>
+<tr class="separator:a157179076be467c115dc45428d752fa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a1f2ab4c2f7ac1de7e969ed01feaaca"><td class="memItemLeft" align="right" valign="top"><a id="a5a1f2ab4c2f7ac1de7e969ed01feaaca"></a>
+typedef struct DJI::OSDK::CameraModule::dji_camera_assist_digital_zoom_para&#160;</td><td class="memItemRight" valign="bottom"><b>dji_camera_assist_digital_zoom_para</b></td></tr>
+<tr class="separator:a5a1f2ab4c2f7ac1de7e969ed01feaaca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19f48612c5fc4e3207620cb1f2c48289"><td class="memItemLeft" align="right" valign="top"><a id="a19f48612c5fc4e3207620cb1f2c48289"></a>
+typedef struct DJI::OSDK::CameraModule::dji_camera_real_focus_area_struct&#160;</td><td class="memItemRight" valign="bottom"><b>dji_camera_real_focus_area_struct</b></td></tr>
+<tr class="separator:a19f48612c5fc4e3207620cb1f2c48289"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5189f9078117ccf5cc738170a73b103c"><td class="memItemLeft" align="right" valign="top"><a id="a5189f9078117ccf5cc738170a73b103c"></a>
+typedef struct DJI::OSDK::CameraModule::dji_camera_focusing_state&#160;</td><td class="memItemRight" valign="bottom"><b>dji_camera_focusing_state</b></td></tr>
+<tr class="separator:a5189f9078117ccf5cc738170a73b103c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae450806905caad4615220aabc91b4071"><td class="memItemLeft" align="right" valign="top"><a id="ae450806905caad4615220aabc91b4071"></a>
+typedef struct DJI::OSDK::CameraModule::dji_camera_lens_state&#160;</td><td class="memItemRight" valign="bottom"><b>dji_camera_lens_state</b></td></tr>
+<tr class="separator:ae450806905caad4615220aabc91b4071"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a063a7145a4f8b793cc99d158fe3deffc"><td class="memItemLeft" align="right" valign="top"><a id="a063a7145a4f8b793cc99d158fe3deffc"></a>
+typedef struct DJI::OSDK::CameraModule::dji_camera_len_para_push&#160;</td><td class="memItemRight" valign="bottom"><b>dji_camera_len_para_push</b></td></tr>
+<tr class="separator:a063a7145a4f8b793cc99d158fe3deffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d4739f4b770584f5e13e470211a4f89"><td class="memItemLeft" align="right" valign="top"><a id="a2d4739f4b770584f5e13e470211a4f89"></a>
 typedef struct <a class="el" href="structDJI_1_1OSDK_1_1CameraModule_1_1CommonAck.html">DJI::OSDK::CameraModule::CommonAck</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1CameraModule.html#a2d4739f4b770584f5e13e470211a4f89">CommonAck</a></td></tr>
 <tr class="memdesc:a2d4739f4b770584f5e13e470211a4f89"><td class="mdescLeft">&#160;</td><td class="mdescRight">It is the common ack of Open Protocol CMD <a class="el" href="classDJI_1_1OSDK_1_1CameraModule.html#a6b3ef8bbeb230562840d5f9d810396eb" title="the function ID of camera used in the CMD OpenProtocolCMD::CMDSet::Control::cameraExtraFunction">DJI::OSDK::CameraModule::FunctionID</a>. All the ack data from this CMD will include the ack struct. <br /></td></tr>
@@ -964,6 +1014,9 @@ template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a8b63e8ba19a417d9b19e2b4d08526e8a"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1CameraModule.html#a8b63e8ba19a417d9b19e2b4d08526e8a">UCBRetParamHandler</a> = <a class="el" href="structDJI_1_1OSDK_1_1CameraModule_1_1UCBRetParamStruct.html">UCBRetParamStruct</a>&lt; T &gt;</td></tr>
 <tr class="memdesc:a8b63e8ba19a417d9b19e2b4d08526e8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">type of callback deal the param and retCode for user <br /></td></tr>
 <tr class="separator:a8b63e8ba19a417d9b19e2b4d08526e8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dad55ffccb0e79ec0b55585ca675373"><td class="memItemLeft" align="right" valign="top"><a id="a2dad55ffccb0e79ec0b55585ca675373"></a>
+typedef struct DJI::OSDK::CameraModule::LensInfoPacketType&#160;</td><td class="memItemRight" valign="bottom"><b>LensInfoPacketType</b></td></tr>
+<tr class="separator:a2dad55ffccb0e79ec0b55585ca675373"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -1187,6 +1240,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac758dd371b5a8b01e3fef6ef684640da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1CameraModule.html#ac758dd371b5a8b01e3fef6ef684640da">obtainDownloadRightSync</a> (bool enable, int timeout)</td></tr>
 <tr class="memdesc:ac758dd371b5a8b01e3fef6ef684640da"><td class="mdescLeft">&#160;</td><td class="mdescRight">obtaion the download right from camera, blocking calls  <a href="#ac758dd371b5a8b01e3fef6ef684640da">More...</a><br /></td></tr>
 <tr class="separator:ac758dd371b5a8b01e3fef6ef684640da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a843c42929cb4ae0ddf1bdc528b409922"><td class="memItemLeft" align="right" valign="top"><a id="a843c42929cb4ae0ddf1bdc528b409922"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getCameraVersion</b> ()</td></tr>
+<tr class="separator:a843c42929cb4ae0ddf1bdc528b409922"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cd539d34a1a663e69c1ff6910cb03c7"><td class="memItemLeft" align="right" valign="top"><a id="a3cd539d34a1a663e69c1ff6910cb03c7"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getFirmwareVersion</b> ()</td></tr>
+<tr class="separator:a3cd539d34a1a663e69c1ff6910cb03c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a063375c92482006a4a1bb1a5bfc033ea"><td class="memItemLeft" align="right" valign="top"><a id="a063375c92482006a4a1bb1a5bfc033ea"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>updateLensInfo</b> (dji_camera_len_para_push data)</td></tr>
+<tr class="separator:a063375c92482006a4a1bb1a5bfc033ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb29194264b5f5911e293f4b5f7657be"><td class="memItemLeft" align="right" valign="top"><a id="adb29194264b5f5911e293f4b5f7657be"></a>
+LensInfoPacketType&#160;</td><td class="memItemRight" valign="bottom"><b>getLensInfo</b> ()</td></tr>
+<tr class="separator:adb29194264b5f5911e293f4b5f7657be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classDJI_1_1OSDK_1_1PayloadBase"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classDJI_1_1OSDK_1_1PayloadBase')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classDJI_1_1OSDK_1_1PayloadBase.html">DJI::OSDK::PayloadBase</a></td></tr>
 <tr class="memitem:af10f0bf642bfb7a5df8d34c6c4bc1101 inherit pub_methods_classDJI_1_1OSDK_1_1PayloadBase"><td class="memItemLeft" align="right" valign="top"><a id="af10f0bf642bfb7a5df8d34c6c4bc1101"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>PayloadBase</b> (Linker *linker, <a class="el" href="namespaceDJI_1_1OSDK.html#a843d8f166c53c15ad89496361504a9a5">PayloadIndexType</a> index, std::string name, bool enable)</td></tr>

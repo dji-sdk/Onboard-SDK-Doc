@@ -9,7 +9,7 @@
     <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
     <meta name="generator" content="Doxygen 1.8.15" />
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <title>DJI Onboard SDK: Class Members</title>
+    <title>DJI Onboard SDK: DJI::OSDK::FlightLink::callbackWarpperHandler Struct Reference</title>
     <!-- <link href="tabs.css" rel="stylesheet" type="text/css"/> -->
     <script type="text/javascript" src="dynsections.js"></script>
     <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -108,7 +108,6 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -123,28 +122,35 @@ $(function() {
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceDJI.html">DJI</a></li><li class="navelem"><a class="el" href="namespaceDJI_1_1OSDK.html">OSDK</a></li><li class="navelem"><b>FlightLink</b></li><li class="navelem"><a class="el" href="structDJI_1_1OSDK_1_1FlightLink_1_1callbackWarpperHandler.html">callbackWarpperHandler</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="structDJI_1_1OSDK_1_1FlightLink_1_1callbackWarpperHandler-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">DJI::OSDK::FlightLink::callbackWarpperHandler Struct Reference</div>  </div>
+</div><!--header-->
 <div class="contents">
-<div class="textblock">Here is a list of all documented class members with links to the class documentation for each member:</div>
 
-<h3><a id="index_o"></a>- o -</h3><ul>
-<li>obtainCtrlAuthority()
-: <a class="el" href="classDJI_1_1OSDK_1_1Control.html#aa7078dd77045eef97040a44602d02a4d">DJI::OSDK::Control</a>
-</li>
-<li>obtainDownloadRightSync()
-: <a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#a8022cb2ba3c24d9d97c27907f86b702a">DJI::OSDK::CameraManager</a>
-, <a class="el" href="classDJI_1_1OSDK_1_1CameraModule.html#ac758dd371b5a8b01e3fef6ef684640da">DJI::OSDK::CameraModule</a>
-</li>
-<li>obtainJoystickCtrlAuthorityAsync()
-: <a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a3f1f4c374c43db6b0109b92d4acd800c">DJI::OSDK::FlightController</a>
-</li>
-<li>obtainJoystickCtrlAuthoritySync()
-: <a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#ad3a5d76c2ad305cb0b99ea62de311f24">DJI::OSDK::FlightController</a>
-</li>
-<li>operationType
-: <a class="el" href="structDJI_1_1OSDK_1_1DJIWaypointV2AircraftControlParam.html#aadf0e9a3983bc9a3d634a0859ffc5272">DJI::OSDK::DJIWaypointV2AircraftControlParam</a>
-, <a class="el" href="structDJI_1_1OSDK_1_1DJIWaypointV2CameraActuatorParam.html#a3f4ebb80539a1cfef2a4192b60cd884f">DJI::OSDK::DJIWaypointV2CameraActuatorParam</a>
-, <a class="el" href="structDJI_1_1OSDK_1_1DJIWaypointV2GimbalActuatorParam.html#aa04a2699282a059895000a5e87c80bf5">DJI::OSDK::DJIWaypointV2GimbalActuatorParam</a>
-</li>
+<p><code>#include &lt;<a class="el" href="dji__flight__link_8hpp_source.html">dji_flight_link.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a3e7a1dceb320b0037fcff1af3fec87bc"><td class="memItemLeft" align="right" valign="top"><a id="a3e7a1dceb320b0037fcff1af3fec87bc"></a>
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>cb</b> )(<a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> retCode, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)</td></tr>
+<tr class="separator:a3e7a1dceb320b0037fcff1af3fec87bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab945c88af483e6243093302607542d1c"><td class="memItemLeft" align="right" valign="top"><a id="ab945c88af483e6243093302607542d1c"></a>
+<a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a>&#160;</td><td class="memItemRight" valign="bottom"><b>udata</b></td></tr>
+<tr class="separator:ab945c88af483e6243093302607542d1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Used as the type of userData to be passed in the callbackWrapperFunc to wrapper the callback handling. </p>
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
+<li>osdk-core/modules/inc/flight/<a class="el" href="dji__flight__link_8hpp_source.html">dji_flight_link.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.8-->
