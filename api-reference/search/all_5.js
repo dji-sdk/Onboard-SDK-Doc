@@ -2,6 +2,7 @@ var searchData=
 [
   ['ehdr',['EHDR',['../classDJI_1_1OSDK_1_1CameraModule.html#a998b0c7f990299f3d640001a7b9e7afca9f0115a5c96c377c99a6b41f44b93f43',1,'DJI::OSDK::CameraModule']]],
   ['emergencybrake',['emergencyBrake',['../classDJI_1_1OSDK_1_1Control.html#afdf111f752a36ccf541198ca7212331a',1,'DJI::OSDK::Control']]],
+  ['emergencybrakeaction',['emergencyBrakeAction',['../classDJI_1_1OSDK_1_1FlightController.html#ab86e00ec02c172adaa5d2bf70c63e0f1',1,'DJI::OSDK::FlightController']]],
   ['empty',['empty',['../structDJI_1_1OSDK_1_1Telemetry_1_1ESCStatusIndividual.html#a879a16640a56f92c02e643877327c79b',1,'DJI::OSDK::Telemetry::ESCStatusIndividual']]],
   ['enable',['ENABLE',['../classDJI_1_1OSDK_1_1Control.html#a2d81493e9c6b0246811cbe71d8825db6ab19b561650e5df7ca2ae81cb3361c383',1,'DJI::OSDK::Control']]],
   ['endindex',['endIndex',['../structDJI_1_1OSDK_1_1UploadMissionRawAck.html#ae908517394346a0ecefc0e857c241d2e',1,'DJI::OSDK::UploadMissionRawAck::endIndex()'],['../structDJI_1_1OSDK_1_1DownloadMissionAck.html#a4f88d647669f8e50eb765bdc4ad4df98',1,'DJI::OSDK::DownloadMissionAck::endIndex()'],['../structDJI_1_1OSDK_1_1DJIWaypointV2TrajectoryTriggerParam.html#a38a3807185cb50344d7b48550c87c11e',1,'DJI::OSDK::DJIWaypointV2TrajectoryTriggerParam::endIndex()']]],

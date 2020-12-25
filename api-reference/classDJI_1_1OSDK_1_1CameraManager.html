@@ -164,6 +164,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a830abcc4ed1518967aa1999cc5daaea8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#a830abcc4ed1518967aa1999cc5daaea8">getCameraModuleEnable</a> (<a class="el" href="namespaceDJI_1_1OSDK.html#a843d8f166c53c15ad89496361504a9a5">PayloadIndexType</a> index, bool &amp;enable)</td></tr>
 <tr class="memdesc:a830abcc4ed1518967aa1999cc5daaea8"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the enable status of camera module, searched by index  <a href="#a830abcc4ed1518967aa1999cc5daaea8">More...</a><br /></td></tr>
 <tr class="separator:a830abcc4ed1518967aa1999cc5daaea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af81fa79004ebc8d9a3b61d1269dc9e45"><td class="memItemLeft" align="right" valign="top"><a id="af81fa79004ebc8d9a3b61d1269dc9e45"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getCameraVersion</b> (<a class="el" href="namespaceDJI_1_1OSDK.html#a843d8f166c53c15ad89496361504a9a5">PayloadIndexType</a> index)</td></tr>
+<tr class="separator:af81fa79004ebc8d9a3b61d1269dc9e45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0b8aba4e7ec020ee254c39daba6101d"><td class="memItemLeft" align="right" valign="top"><a id="af0b8aba4e7ec020ee254c39daba6101d"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getFirmwareVersion</b> (<a class="el" href="namespaceDJI_1_1OSDK.html#a843d8f166c53c15ad89496361504a9a5">PayloadIndexType</a> index)</td></tr>
+<tr class="separator:af0b8aba4e7ec020ee254c39daba6101d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83db2db860670e8cf0e088ec4d964553"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1CameraManager.html#a83db2db860670e8cf0e088ec4d964553">startShootPhotoAsync</a> (<a class="el" href="namespaceDJI_1_1OSDK.html#a843d8f166c53c15ad89496361504a9a5">PayloadIndexType</a> index, <a class="el" href="classDJI_1_1OSDK_1_1CameraModule.html#a998b0c7f990299f3d640001a7b9e7afc">CameraModule::ShootPhotoMode</a> mode, void(*UserCallBack)(<a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> retCode, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData), <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)</td></tr>
 <tr class="memdesc:a83db2db860670e8cf0e088ec4d964553"><td class="mdescLeft">&#160;</td><td class="mdescRight">start to shoot photo, non-blocking calls  <a href="#a83db2db860670e8cf0e088ec4d964553">More...</a><br /></td></tr>
 <tr class="separator:a83db2db860670e8cf0e088ec4d964553"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3504,7 +3510,7 @@ All the APIs whose name ending with sync or async in this class have a restricti
 
 <p>set camera tap zoom function parameters, non-blocking calls </p>
 <dl class="section user"><dt>Supported Platforms : M210V2, M300</dt><dd></dd></dl>
-<dl class="section note"><dt>Note</dt><dd>Enable/disable TapZoom. tapZoomAtTarget can only be called when TapZoom is enabled. It is only supported Z30 camera. </dd>
+<dl class="section note"><dt>Note</dt><dd>Enable/disable TapZoom. tapZoomAtTarget can only be called when TapZoom is enabled. It is only supported Z30 camera or H20/H20T zoom mode. </dd>
 <dd>
 All the APIs whose name ending with sync or async in this class have a restriction on calling. All these API should not be called until the previous request receives ack or timeout. </dd>
 <dd>
@@ -3560,7 +3566,7 @@ It should be paid attention that if timeout, the callback will not be called. Th
 
 <p>set camera tap zoom parameters, blocking calls </p>
 <dl class="section user"><dt>Supported Platforms : M210V2, M300</dt><dd></dd></dl>
-<dl class="section note"><dt>Note</dt><dd>Enable/disable TapZoom. tapZoomAtTarget can only be called when TapZoom is enabled. It is only supported Z30 camera. </dd>
+<dl class="section note"><dt>Note</dt><dd>Enable/disable TapZoom. tapZoomAtTarget can only be called when TapZoom is enabled. It is only supported Z30 camera or H20/H20T zoom mode. </dd>
 <dd>
 All the APIs whose name ending with sync or async in this class have a restriction on calling. All these API should not be called until the previous request receives ack or timeout. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -4450,7 +4456,7 @@ All the APIs whose name ending with sync or async in this class have a restricti
 
 <p>set camera tap zoom point, non-blocking calls </p>
 <dl class="section user"><dt>Supported Platforms : M210V2, M300</dt><dd></dd></dl>
-<dl class="section note"><dt>Note</dt><dd>TapZoom at the target. It can be called only when TapZoom is enabled. When a new target is set, the gimbal will rotate and locate the target in the center of the screen. At the same time, the camera will zoom by multiplying the TapZoom multiplier. It is only supported Z30 camera. </dd>
+<dl class="section note"><dt>Note</dt><dd>TapZoom at the target. It can be called only when TapZoom is enabled. When a new target is set, the gimbal will rotate and locate the target in the center of the screen. At the same time, the camera will zoom by multiplying the TapZoom multiplier. It is only supported Z30 camera or H20/H20T zoom mode. </dd>
 <dd>
 All the APIs whose name ending with sync or async in this class have a restriction on calling. All these API should not be called until the previous request receives ack or timeout. </dd>
 <dd>
@@ -4505,7 +4511,7 @@ It should be paid attention that if timeout, the callback will not be called. Th
 
 <p>set camera tap zoom point, blocking calls </p>
 <dl class="section user"><dt>Supported Platforms : M210V2, M300</dt><dd></dd></dl>
-<dl class="section note"><dt>Note</dt><dd>TapZoom at the target. It can be called only when TapZoom is enabled. When a new target is set, the gimbal will rotate and locate the target in the center of the screen. At the same time, the camera will zoom by multiplying the TapZoom multiplier. It is only supported Z30 camera. </dd>
+<dl class="section note"><dt>Note</dt><dd>TapZoom at the target. It can be called only when TapZoom is enabled. When a new target is set, the gimbal will rotate and locate the target in the center of the screen. At the same time, the camera will zoom by multiplying the TapZoom multiplier. It is only supported Z30 camera or H20/H20T zoom mode. </dd>
 <dd>
 All the APIs whose name ending with sync or async in this class have a restriction on calling. All these API should not be called until the previous request receives ack or timeout. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>

@@ -1,7 +1,7 @@
 var searchData=
 [
   ['task_5fupload_5ferror',['TASK_UPLOAD_ERROR',['../classDJI_1_1OSDK_1_1ErrorCode.html#a4d4bc0bf4a5ea4bbb295c41d41ebb528ac87d2f074c0b6a1ced4ad8c565bf981b',1,'DJI::OSDK::ErrorCode']]],
-  ['timeout',['Timeout',['../classDJI_1_1OSDK_1_1ErrorCode.html#a79a274922ec9ba6602775cf5f818ab3ea5ec7de5f98e66a11a9a5e88ace58bf3e',1,'DJI::OSDK::ErrorCode::Timeout()'],['../classDJI_1_1OSDK_1_1ErrorCode.html#a4d4bc0bf4a5ea4bbb295c41d41ebb528a7eb09529f9589dbf4d4bc1745abaa2d2',1,'DJI::OSDK::ErrorCode::TIMEOUT()']]],
+  ['timeout',['TIMEOUT',['../classDJI_1_1OSDK_1_1ErrorCode.html#a4d4bc0bf4a5ea4bbb295c41d41ebb528a7eb09529f9589dbf4d4bc1745abaa2d2',1,'DJI::OSDK::ErrorCode::TIMEOUT()'],['../classDJI_1_1OSDK_1_1ErrorCode.html#a79a274922ec9ba6602775cf5f818ab3ea5ec7de5f98e66a11a9a5e88ace58bf3e',1,'DJI::OSDK::ErrorCode::Timeout()']]],
   ['topic_5facceleration_5fbody',['TOPIC_ACCELERATION_BODY',['../namespaceDJI_1_1OSDK_1_1Telemetry.html#ga563d2333dc43253129a3915970f99cfaa21cfcdb2a0a6d3dabea02266cadeb45c',1,'DJI::OSDK::Telemetry']]],
   ['topic_5facceleration_5fground',['TOPIC_ACCELERATION_GROUND',['../namespaceDJI_1_1OSDK_1_1Telemetry.html#ga563d2333dc43253129a3915970f99cfaad94ad03091ef59e22cd59678badd1fcc',1,'DJI::OSDK::Telemetry']]],
   ['topic_5facceleration_5fraw',['TOPIC_ACCELERATION_RAW',['../namespaceDJI_1_1OSDK_1_1Telemetry.html#ga563d2333dc43253129a3915970f99cfaa4c449d354b345e53e5689fbfd4ee0c9f',1,'DJI::OSDK::Telemetry']]],

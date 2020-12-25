@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['callbackwarpperhandler',['callbackWarpperHandler',['../structDJI_1_1OSDK_1_1GimbalModule_1_1callbackWarpperHandler.html',1,'DJI::OSDK::GimbalModule']]],
+  ['callbackwarpperhandler',['callbackWarpperHandler',['../structDJI_1_1OSDK_1_1GimbalModule_1_1callbackWarpperHandler.html',1,'DJI::OSDK::GimbalModule::callbackWarpperHandler'],['../structDJI_1_1OSDK_1_1FlightLink_1_1callbackWarpperHandler.html',1,'DJI::OSDK::FlightLink::callbackWarpperHandler']]],
   ['camera',['Camera',['../classDJI_1_1OSDK_1_1Camera.html',1,'DJI::OSDK']]],
   ['cameracommonerr',['CameraCommonErr',['../classDJI_1_1OSDK_1_1ErrorCode_1_1CameraCommonErr.html',1,'DJI::OSDK::ErrorCode']]],
   ['cameramanager',['CameraManager',['../classDJI_1_1OSDK_1_1CameraManager.html',1,'DJI::OSDK']]],
