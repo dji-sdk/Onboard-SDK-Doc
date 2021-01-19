@@ -46,7 +46,7 @@ var searchData=
   ['djiwaypointv2actionintervaltypeunknown',['DJIWaypointV2ActionIntervalTypeUnknown',['../namespaceDJI_1_1OSDK.html#a9a0c4c8cd45949fee8fc294d43447135af7cb4daa755b2068bc34869677189b05',1,'DJI::OSDK']]],
   ['djiwaypointv2actiontriggertypeactionassociated',['DJIWaypointV2ActionTriggerTypeActionAssociated',['../namespaceDJI_1_1OSDK.html#a839ae5dc01deddf8d2d2e77c3682a947a97278350bbacd4d0393b48addd3368bd',1,'DJI::OSDK']]],
   ['djiwaypointv2actiontriggertypeinterval',['DJIWaypointV2ActionTriggerTypeInterval',['../namespaceDJI_1_1OSDK.html#a839ae5dc01deddf8d2d2e77c3682a947a81b96a6a2b287f6f4e0dddf4c62d2cfb',1,'DJI::OSDK']]],
-  ['djiwaypointv2actiontriggertypereachpoint',['DJIWaypointV2ActionTriggerTypeReachPoint',['../namespaceDJI_1_1OSDK.html#a839ae5dc01deddf8d2d2e77c3682a947a2058ed7fb233a9ab2619ac04c5b9db57',1,'DJI::OSDK']]],
+  ['djiwaypointv2actiontriggertypesamplereachpoint',['DJIWaypointV2ActionTriggerTypeSampleReachPoint',['../namespaceDJI_1_1OSDK.html#a839ae5dc01deddf8d2d2e77c3682a947a6ecb3f887f1de37e3ad255c5ad959391',1,'DJI::OSDK']]],
   ['djiwaypointv2actiontriggertypetrajectory',['DJIWaypointV2ActionTriggerTypeTrajectory',['../namespaceDJI_1_1OSDK.html#a839ae5dc01deddf8d2d2e77c3682a947a0be98ee3c4377e95e132c16c4756848d',1,'DJI::OSDK']]],
   ['djiwaypointv2actiontriggertypeunknown',['DJIWaypointV2ActionTriggerTypeUnknown',['../namespaceDJI_1_1OSDK.html#a839ae5dc01deddf8d2d2e77c3682a947a7517987a53012616c7097594e50c15e1',1,'DJI::OSDK']]],
   ['djiwaypointv2flightpathmodecoordinateturn',['DJIWaypointV2FlightPathModeCoordinateTurn',['../namespaceDJI_1_1OSDK.html#a83dd32c35fb51687561f992d9d303604a7fdd5b89df4ab24ad8c24d034e71d82f',1,'DJI::OSDK']]],

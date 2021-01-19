@@ -81,7 +81,7 @@
     <!--<div class="container">-->
     <!--<div class="navbar-header">-->
     <!--<a href="#" class="navbar-left"><img src="dji_logo_gray_small.png" alt="DJI OSDK API Documentation" width="32px"/></a>-->
-    <!--<a class="navbar-brand" href="index.html">ONBOARD SDK 4.0.1</a>-->
+    <!--<a class="navbar-brand" href="index.html">ONBOARD SDK 4.1.0</a>-->
     <!--</div>-->
     <!--</div>-->
     <!--</nav>-->
@@ -218,8 +218,6 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1DJIWaypointV2GimbalActuatorParam.html">DJIWaypointV2GimbalActuatorParam</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1DJIWaypointV2IntervalTriggerParam.html">DJIWaypointV2IntervalTriggerParam</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1DJIWaypointV2ReachPointTriggerParam.html">DJIWaypointV2ReachPointTriggerParam</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1DJIWaypointV2TrajectoryTriggerParam.html">DJIWaypointV2TrajectoryTriggerParam</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -558,8 +556,6 @@ typedef struct <a class="el" href="structDJI_1_1OSDK_1_1CMD__SETSupportMatrix.ht
 <tr class="separator:a3850723468877191dbe8db1a19959826"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af18b6f0caffb341762902883a8a0f03e"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structDJI_1_1OSDK_1_1DJIGimbalRotation.html">DJI::OSDK::DJIGimbalRotation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#af18b6f0caffb341762902883a8a0f03e">DJIGimbalRotation</a></td></tr>
 <tr class="separator:af18b6f0caffb341762902883a8a0f03e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a5e81e1568d775211f6e2c09d2a08dc"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structDJI_1_1OSDK_1_1DJIWaypointV2ReachPointTriggerParam.html">DJI::OSDK::DJIWaypointV2ReachPointTriggerParam</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#a1a5e81e1568d775211f6e2c09d2a08dc">DJIWaypointV2ReachPointTriggerParam</a></td></tr>
-<tr class="separator:a1a5e81e1568d775211f6e2c09d2a08dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89f75a52d1e76fa3cfa59cb5f001e448"><td class="memItemLeft" align="right" valign="top"><a id="a89f75a52d1e76fa3cfa59cb5f001e448"></a>
 typedef struct DJI::OSDK::DJIWaypointV2SampleReachPointTriggerParam&#160;</td><td class="memItemRight" valign="bottom"><b>DJIWaypointV2SampleReachPointTriggerParam</b></td></tr>
 <tr class="separator:a89f75a52d1e76fa3cfa59cb5f001e448"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -845,15 +841,13 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="separator:a9a0c4c8cd45949fee8fc294d43447135"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a839ae5dc01deddf8d2d2e77c3682a947"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#a839ae5dc01deddf8d2d2e77c3682a947">DJIWaypointV2ActionTriggerType</a> : uint8_t { <br />
-&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a839ae5dc01deddf8d2d2e77c3682a947a2058ed7fb233a9ab2619ac04c5b9db57">DJIWaypointV2ActionTriggerTypeReachPoint</a> = 1, 
-<br />
 &#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a839ae5dc01deddf8d2d2e77c3682a947a97278350bbacd4d0393b48addd3368bd">DJIWaypointV2ActionTriggerTypeActionAssociated</a> = 2, 
 <br />
 &#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a839ae5dc01deddf8d2d2e77c3682a947a0be98ee3c4377e95e132c16c4756848d">DJIWaypointV2ActionTriggerTypeTrajectory</a>, 
 <br />
 &#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a839ae5dc01deddf8d2d2e77c3682a947a81b96a6a2b287f6f4e0dddf4c62d2cfb">DJIWaypointV2ActionTriggerTypeInterval</a>, 
 <br />
-&#160;&#160;<b>DJIWaypointV2ActionTriggerTypeSampleReachPoint</b>, 
+&#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a839ae5dc01deddf8d2d2e77c3682a947a6ecb3f887f1de37e3ad255c5ad959391">DJIWaypointV2ActionTriggerTypeSampleReachPoint</a>, 
 <br />
 &#160;&#160;<a class="el" href="namespaceDJI_1_1OSDK.html#a839ae5dc01deddf8d2d2e77c3682a947a7517987a53012616c7097594e50c15e1">DJIWaypointV2ActionTriggerTypeUnknown</a> = 0xFF
 <br />
@@ -1167,7 +1161,7 @@ const std::pair&lt; const uint32_t, const char * &gt;&#160;</td><td class="memIt
 <tr class="memitem:a8fb144f0e714d4d066e6645f5542c208"><td class="memItemLeft" align="right" valign="top"><a id="a8fb144f0e714d4d066e6645f5542c208"></a>
 const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MaxSmartBatteryNum</b> = 2</td></tr>
 <tr class="separator:a8fb144f0e714d4d066e6645f5542c208"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d097bc6b2f3026179c6b0cd79295e84"><td class="memItemLeft" align="right" valign="top">const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#a8d097bc6b2f3026179c6b0cd79295e84">dbHMSErrNum</a> = 600</td></tr>
+<tr class="memitem:a8d097bc6b2f3026179c6b0cd79295e84"><td class="memItemLeft" align="right" valign="top">const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK.html#a8d097bc6b2f3026179c6b0cd79295e84">dbHMSErrNum</a> = 700</td></tr>
 <tr class="separator:a8d097bc6b2f3026179c6b0cd79295e84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a918c296233e0650cc3f222b82d4c1042"><td class="memItemLeft" align="right" valign="top"><a id="a918c296233e0650cc3f222b82d4c1042"></a>
 const float32_t&#160;</td><td class="memItemRight" valign="bottom"><b>EARTH_RADIUS</b> = 6378137.0</td></tr>
@@ -1570,21 +1564,6 @@ const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_SEND_DAT
       </table>
 </div><div class="memdoc">
 <p>This class defines <code>DJIWaypointV2MissionV2_DJIWaypointV2ActionTriggerType_Trajectory</code>. </p>
-
-</div>
-</div>
-<a id="a1a5e81e1568d775211f6e2c09d2a08dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a5e81e1568d775211f6e2c09d2a08dc">&#9670;&nbsp;</a></span>DJIWaypointV2ReachPointTriggerParam</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef struct <a class="el" href="structDJI_1_1OSDK_1_1DJIWaypointV2ReachPointTriggerParam.html">DJI::OSDK::DJIWaypointV2ReachPointTriggerParam</a>  <a class="el" href="structDJI_1_1OSDK_1_1DJIWaypointV2ReachPointTriggerParam.html">DJI::OSDK::DJIWaypointV2ReachPointTriggerParam</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This class defines <code>DJIWaypointV2MissionV2_DJIWaypointV2ActionTriggerType_ReachPoint</code>. It describes an action will be triggered when the aircraft reach the certain waypoint. </p>
 
 </div>
 </div>
@@ -2410,13 +2389,13 @@ const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_SEND_DAT
 </div><div class="memdoc">
 <p>Possible types of action trigger. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a839ae5dc01deddf8d2d2e77c3682a947a2058ed7fb233a9ab2619ac04c5b9db57"></a>DJIWaypointV2ActionTriggerTypeReachPoint&#160;</td><td class="fielddoc"><p>The action will be trigger when the aircraft reach the waypoint point. The parameters should be setting by <code>DJIWaypointV2Action_DJIWaypointV2ReachPointTriggerParam</code>. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a839ae5dc01deddf8d2d2e77c3682a947a97278350bbacd4d0393b48addd3368bd"></a>DJIWaypointV2ActionTriggerTypeActionAssociated&#160;</td><td class="fielddoc"><p>The action will be triggered when action associated executes. The parameters should be defined by <code>DJIWaypointV2Action_DJIWaypointV2AssociateTriggerParam</code>. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a839ae5dc01deddf8d2d2e77c3682a947a97278350bbacd4d0393b48addd3368bd"></a>DJIWaypointV2ActionTriggerTypeActionAssociated&#160;</td><td class="fielddoc"><p>The action will be triggered when action associated executes. The parameters should be defined by <code>DJIWaypointV2Action_DJIWaypointV2AssociateTriggerParam</code>. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a839ae5dc01deddf8d2d2e77c3682a947a0be98ee3c4377e95e132c16c4756848d"></a>DJIWaypointV2ActionTriggerTypeTrajectory&#160;</td><td class="fielddoc"><p>The action will be triggered when the aircraft flies from one waypoint to the next. The parameters should be defined by <code>DJIWaypointV2Action_DJIWaypointV2TrajectoryTriggerParam</code>. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a839ae5dc01deddf8d2d2e77c3682a947a81b96a6a2b287f6f4e0dddf4c62d2cfb"></a>DJIWaypointV2ActionTriggerTypeInterval&#160;</td><td class="fielddoc"><p>The action will be triggered when the aircraft flies between two waypoints The parameters should be defined by <code>DJIWaypointV2Action_DJIWaypointV2IntervalTriggerParam</code>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a839ae5dc01deddf8d2d2e77c3682a947a6ecb3f887f1de37e3ad255c5ad959391"></a>DJIWaypointV2ActionTriggerTypeSampleReachPoint&#160;</td><td class="fielddoc"><p>The action will be trigger when the aircraft reach the waypoint point. The parameters should be setting by <code>DJIWaypointV2SampleReachPointTriggerParam</code>. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a839ae5dc01deddf8d2d2e77c3682a947a7517987a53012616c7097594e50c15e1"></a>DJIWaypointV2ActionTriggerTypeUnknown&#160;</td><td class="fielddoc"><p>Unknown </p>
 </td></tr>
@@ -2759,7 +2738,7 @@ const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_SEND_DAT
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const uint32_t DJI::OSDK::dbHMSErrNum = 600</td>
+          <td class="memname">const uint32_t DJI::OSDK::dbHMSErrNum = 700</td>
         </tr>
       </table>
 </div><div class="memdoc">

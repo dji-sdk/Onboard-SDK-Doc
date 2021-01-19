@@ -81,7 +81,7 @@
     <!--<div class="container">-->
     <!--<div class="navbar-header">-->
     <!--<a href="#" class="navbar-left"><img src="dji_logo_gray_small.png" alt="DJI OSDK API Documentation" width="32px"/></a>-->
-    <!--<a class="navbar-brand" href="index.html">ONBOARD SDK 4.0.1</a>-->
+    <!--<a class="navbar-brand" href="index.html">ONBOARD SDK 4.1.0</a>-->
     <!--</div>-->
     <!--</div>-->
     <!--</nav>-->
@@ -142,12 +142,17 @@ $(function() {
 Public Attributes</h2></td></tr>
 <tr class="memitem:ab5fc4036456db9f4d9be220547100bcb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDJI_1_1OSDK_1_1CGPoint.html">CGPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1DJIWaypointV2CameraFocusParam.html#ab5fc4036456db9f4d9be220547100bcb">focusTarget</a></td></tr>
 <tr class="separator:ab5fc4036456db9f4d9be220547100bcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48ef80ccb5aa8b046172f7f56deab94f"><td class="memItemLeft" align="right" valign="top"><a id="a48ef80ccb5aa8b046172f7f56deab94f"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>retryTimes</b> = 1</td></tr>
+<tr class="memitem:afbed22857f885d8aecec54c9dccf4fd5"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1DJIWaypointV2CameraFocusParam.html#afbed22857f885d8aecec54c9dccf4fd5">regionType</a></td></tr>
+<tr class="separator:afbed22857f885d8aecec54c9dccf4fd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c78ccfb28c627bcad11a1f61cb500e0"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1DJIWaypointV2CameraFocusParam.html#a9c78ccfb28c627bcad11a1f61cb500e0">width</a></td></tr>
+<tr class="separator:a9c78ccfb28c627bcad11a1f61cb500e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aded2ac75018e0bdbb03e6d4c09c2ff2e"><td class="memItemLeft" align="right" valign="top">float32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1DJIWaypointV2CameraFocusParam.html#aded2ac75018e0bdbb03e6d4c09c2ff2e">height</a></td></tr>
+<tr class="separator:aded2ac75018e0bdbb03e6d4c09c2ff2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13387361945c94350c13016e484547ae"><td class="memItemLeft" align="right" valign="top"><a id="a13387361945c94350c13016e484547ae"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>reserve</b></td></tr>
+<tr class="separator:a13387361945c94350c13016e484547ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48ef80ccb5aa8b046172f7f56deab94f"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1DJIWaypointV2CameraFocusParam.html#a48ef80ccb5aa8b046172f7f56deab94f">retryTimes</a> = 1</td></tr>
 <tr class="separator:a48ef80ccb5aa8b046172f7f56deab94f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6669ce22f8fbb32b0984dde2cb5ed9d5"><td class="memItemLeft" align="right" valign="top"><a id="a6669ce22f8fbb32b0984dde2cb5ed9d5"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>focusDelayTime</b> = 0</td></tr>
-<tr class="separator:a6669ce22f8fbb32b0984dde2cb5ed9d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class defines a camera focus operation for <code>DJIWaypointV2Action_DJIWaypointV2CameraActuatorParam</code>. </p>
@@ -164,6 +169,66 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>focusDelayTime</b>
       </table>
 </div><div class="memdoc">
 <p>The lens focus target point. When the focus mode is auto, the target point is the focal point. When the focus mode is manual, the target point is the zoom out area if the focus assistant is enabled for the manual mode. The range for x and y is from 0.0 to 1.0. The point [0.0, 0.0] represents the top-left angle of the screen. </p>
+
+</div>
+</div>
+<a id="aded2ac75018e0bdbb03e6d4c09c2ff2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aded2ac75018e0bdbb03e6d4c09c2ff2e">&#9670;&nbsp;</a></span>height</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float32_t DJI::OSDK::DJIWaypointV2CameraFocusParam::height</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Normalized focus area height(0,1) </p>
+
+</div>
+</div>
+<a id="afbed22857f885d8aecec54c9dccf4fd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbed22857f885d8aecec54c9dccf4fd5">&#9670;&nbsp;</a></span>regionType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t DJI::OSDK::DJIWaypointV2CameraFocusParam::regionType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>focus type: 0:point focus 1:rectangle focus </p>
+
+</div>
+</div>
+<a id="a48ef80ccb5aa8b046172f7f56deab94f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48ef80ccb5aa8b046172f7f56deab94f">&#9670;&nbsp;</a></span>retryTimes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t DJI::OSDK::DJIWaypointV2CameraFocusParam::retryTimes = 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>[0,255] </p>
+
+</div>
+</div>
+<a id="a9c78ccfb28c627bcad11a1f61cb500e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c78ccfb28c627bcad11a1f61cb500e0">&#9670;&nbsp;</a></span>width</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float32_t DJI::OSDK::DJIWaypointV2CameraFocusParam::width</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Normalized focus area width(0,1) </p>
 
 </div>
 </div>

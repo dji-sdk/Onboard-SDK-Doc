@@ -12,10 +12,10 @@
 <!-- Node0 -->
 <g id="node1" class="node">
 <title>Node0</title>
-<g id="a_node1"><a xlink:href="classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html" target="_top" xlink:title="Common ACK Error Codes.">
+<g id="a_node1"><a xlink:href="classDJI_1_1OSDK_1_1ErrorCode_1_1ControlACK.html" target="_top" xlink:title="CMDSet: Control ACK Error Codes.">
 <polygon fill="#ffffff" stroke="#000000" points="0,-.5 0,-30.5 117,-30.5 117,-.5 0,-.5"/>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">DJI::OSDK::ErrorCode</text>
-<text text-anchor="middle" x="58.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::CommonACK</text>
+<text text-anchor="middle" x="58.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">::ControlACK</text>
 </a>
 </g>
 </g>
