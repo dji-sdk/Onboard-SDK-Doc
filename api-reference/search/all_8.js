@@ -17,6 +17,8 @@ var searchData=
   ['hmserrcodeinfotbl',['hmsErrCodeInfoTbl',['../namespaceDJI_1_1OSDK.html#aefae9ffa7ff0601045aa9fc1d2c5aec2',1,'DJI::OSDK']]],
   ['hmspushdata',['HMSPushData',['../structDJI_1_1OSDK_1_1HMSPushData.html',1,'DJI::OSDK::HMSPushData'],['../namespaceDJI_1_1OSDK.html#a899b08f18a327db960effbb1b49649fe',1,'DJI::OSDK::HMSPushData()']]],
   ['hmspushpacket',['HMSPushPacket',['../structDJI_1_1OSDK_1_1HMSPushPacket.html',1,'DJI::OSDK::HMSPushPacket'],['../namespaceDJI_1_1OSDK.html#a8217d8af5bdd8bbe21fa97ad1f9bf2e3',1,'DJI::OSDK::HMSPushPacket()']]],
+  ['homelocationdata',['HomeLocationData',['../structDJI_1_1OSDK_1_1Telemetry_1_1HomeLocationData.html',1,'DJI::OSDK::Telemetry::HomeLocationData'],['../namespaceDJI_1_1OSDK_1_1Telemetry.html#a8c8e20c264541021d78b9640096bc6a1',1,'DJI::OSDK::Telemetry::HomeLocationData()']]],
+  ['homelocationsetstatus',['HomeLocationSetStatus',['../structDJI_1_1OSDK_1_1Telemetry_1_1HomeLocationSetStatus.html',1,'DJI::OSDK::Telemetry::HomeLocationSetStatus'],['../namespaceDJI_1_1OSDK_1_1Telemetry.html#aa4c4f1b11c1ac455e5cded8e0915e304',1,'DJI::OSDK::Telemetry::HomeLocationSetStatus()']]],
   ['horizontal_5fangle',['HORIZONTAL_ANGLE',['../classDJI_1_1OSDK_1_1Control.html#a7a7cab0e2d2c9415556837880ddf9e86afa13fb0e7f44b2bf531191496c5c1258',1,'DJI::OSDK::Control']]],
   ['horizontal_5fangular_5frate',['HORIZONTAL_ANGULAR_RATE',['../classDJI_1_1OSDK_1_1Control.html#a7a7cab0e2d2c9415556837880ddf9e86a95f1aae2ad3952dd330c45a1ce217dd7',1,'DJI::OSDK::Control']]],
   ['horizontal_5fbody',['HORIZONTAL_BODY',['../classDJI_1_1OSDK_1_1Control.html#aa89e5fd518382c94fb6149a5b9a6183bab9c7a8be9631f7f67145aa60b4ac6de2',1,'DJI::OSDK::Control']]],

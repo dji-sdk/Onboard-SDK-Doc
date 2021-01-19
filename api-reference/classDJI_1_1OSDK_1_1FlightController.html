@@ -145,7 +145,7 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a8b074a098432d74bcfce845c3ead52fa"><td class="memItemLeft" align="right" valign="top"><a id="a8b074a098432d74bcfce845c3ead52fa"></a>
-typedef Telemetry::HomeLocationData&#160;</td><td class="memItemRight" valign="bottom"><b>HomeLocation</b></td></tr>
+typedef <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1HomeLocationData.html">Telemetry::HomeLocationData</a>&#160;</td><td class="memItemRight" valign="bottom"><b>HomeLocation</b></td></tr>
 <tr class="separator:a8b074a098432d74bcfce845c3ead52fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71abd079541c6a5ac062437a9a78ffdd"><td class="memItemLeft" align="right" valign="top">typedef FlightAssistant::RtkEnableData&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a71abd079541c6a5ac062437a9a78ffdd">RtkEnabled</a></td></tr>
 <tr class="separator:a71abd079541c6a5ac062437a9a78ffdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -247,10 +247,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a41bdc411bf82586bca83614e915991b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a41bdc411bf82586bca83614e915991b6">getUpwardsAvoidanceEnabledAsync</a> (void(*UserCallBack)(<a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> retCode, UpwardsAvoidEnable upwardsEnable, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData), <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)</td></tr>
 <tr class="memdesc:a41bdc411bf82586bca83614e915991b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get upwards avoidance enable or disable, non-blocking calls.  <a href="#a41bdc411bf82586bca83614e915991b6">More...</a><br /></td></tr>
 <tr class="separator:a41bdc411bf82586bca83614e915991b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd1dba0ec1a3d406b53d511b6dc7285f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#acd1dba0ec1a3d406b53d511b6dc7285f">setHomeLocationSync</a> (HomeLocation homeLocation, int timeout)</td></tr>
+<tr class="memitem:acd1dba0ec1a3d406b53d511b6dc7285f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#acd1dba0ec1a3d406b53d511b6dc7285f">setHomeLocationSync</a> (<a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1HomeLocationData.html">HomeLocation</a> homeLocation, int timeout)</td></tr>
 <tr class="memdesc:acd1dba0ec1a3d406b53d511b6dc7285f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set customized GPS(not RTK) home location, blocking calls.  <a href="#acd1dba0ec1a3d406b53d511b6dc7285f">More...</a><br /></td></tr>
 <tr class="separator:acd1dba0ec1a3d406b53d511b6dc7285f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab82fd02fcabfa7beb18cfc95af259ade"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#ab82fd02fcabfa7beb18cfc95af259ade">setHomeLocationAsync</a> (HomeLocation homeLocation, void(*UserCallBack)(<a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> retCode, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData), <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)</td></tr>
+<tr class="memitem:ab82fd02fcabfa7beb18cfc95af259ade"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#ab82fd02fcabfa7beb18cfc95af259ade">setHomeLocationAsync</a> (<a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1HomeLocationData.html">HomeLocation</a> homeLocation, void(*UserCallBack)(<a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> retCode, <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData), <a class="el" href="namespaceDJI_1_1OSDK.html#aded24c93a2d064658a1f59cbf0e6eb9d">UserData</a> userData)</td></tr>
 <tr class="memdesc:ab82fd02fcabfa7beb18cfc95af259ade"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set customized GPS(not RTK) home location, non-blocking calls.  <a href="#ab82fd02fcabfa7beb18cfc95af259ade">More...</a><br /></td></tr>
 <tr class="separator:ab82fd02fcabfa7beb18cfc95af259ade"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83520c78c7019b3ae1a2bec538c1ca7e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDJI_1_1OSDK_1_1FlightController.html#a83520c78c7019b3ae1a2bec538c1ca7e">setHomeLocationUsingCurrentAircraftLocationSync</a> (int timeout)</td></tr>
@@ -1320,7 +1320,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void FlightController::setHomeLocationAsync </td>
           <td>(</td>
-          <td class="paramtype">HomeLocation&#160;</td>
+          <td class="paramtype"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1HomeLocationData.html">HomeLocation</a>&#160;</td>
           <td class="paramname"><em>homeLocation</em>, </td>
         </tr>
         <tr>
@@ -1374,7 +1374,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html#aef071119e69a6f47b19657138c74c933">ErrorCode::ErrorCodeType</a> FlightController::setHomeLocationSync </td>
           <td>(</td>
-          <td class="paramtype">HomeLocation&#160;</td>
+          <td class="paramtype"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1HomeLocationData.html">HomeLocation</a>&#160;</td>
           <td class="paramname"><em>homeLocation</em>, </td>
         </tr>
         <tr>
