@@ -20,7 +20,6 @@ var searchData=
   ['djiwaypointv2gimbalactuatorparam',['DJIWaypointV2GimbalActuatorParam',['../namespaceDJI_1_1OSDK.html#a2ab47db49de9e3c8443afcc52e2d5b96',1,'DJI::OSDK']]],
   ['djiwaypointv2headingmode',['DJIWaypointV2HeadingMode',['../namespaceDJI_1_1OSDK.html#a258361aefa6168cd6f1f4c50dfb4238e',1,'DJI::OSDK']]],
   ['djiwaypointv2intervaltriggerparam',['DJIWaypointV2IntervalTriggerParam',['../namespaceDJI_1_1OSDK.html#a9693364ac1505ccca8bee61c75d65e44',1,'DJI::OSDK']]],
-  ['djiwaypointv2reachpointtriggerparam',['DJIWaypointV2ReachPointTriggerParam',['../namespaceDJI_1_1OSDK.html#a1a5e81e1568d775211f6e2c09d2a08dc',1,'DJI::OSDK']]],
   ['djiwaypointv2trajectorytriggerparam',['DJIWaypointV2TrajectoryTriggerParam',['../namespaceDJI_1_1OSDK.html#a1fceee22eebb005db435c9f375edf3ca',1,'DJI::OSDK']]],
   ['djiwaypointv2turnmode',['DJIWaypointV2TurnMode',['../namespaceDJI_1_1OSDK.html#ab7de352a66f79c853d54deec32307038',1,'DJI::OSDK']]],
   ['djiwholebatterystate',['DJIWholeBatteryState',['../namespaceDJI_1_1OSDK.html#a327304f12955b2e8da6477f2787a48dc',1,'DJI::OSDK']]],

@@ -16,7 +16,6 @@ var searchData=
   ['djiwaypointv2camerafocusparam',['DJIWaypointV2CameraFocusParam',['../structDJI_1_1OSDK_1_1DJIWaypointV2CameraFocusParam.html',1,'DJI::OSDK']]],
   ['djiwaypointv2gimbalactuatorparam',['DJIWaypointV2GimbalActuatorParam',['../structDJI_1_1OSDK_1_1DJIWaypointV2GimbalActuatorParam.html',1,'DJI::OSDK']]],
   ['djiwaypointv2intervaltriggerparam',['DJIWaypointV2IntervalTriggerParam',['../structDJI_1_1OSDK_1_1DJIWaypointV2IntervalTriggerParam.html',1,'DJI::OSDK']]],
-  ['djiwaypointv2reachpointtriggerparam',['DJIWaypointV2ReachPointTriggerParam',['../structDJI_1_1OSDK_1_1DJIWaypointV2ReachPointTriggerParam.html',1,'DJI::OSDK']]],
   ['djiwaypointv2trajectorytriggerparam',['DJIWaypointV2TrajectoryTriggerParam',['../structDJI_1_1OSDK_1_1DJIWaypointV2TrajectoryTriggerParam.html',1,'DJI::OSDK']]],
   ['djiwholebatterystate',['DJIWholeBatteryState',['../structDJI_1_1OSDK_1_1DJIWholeBatteryState.html',1,'DJI::OSDK']]],
   ['djiwholebatterystateimpl',['DJIWholeBatteryStateImpl',['../structDJI_1_1OSDK_1_1DJIWholeBatteryStateImpl.html',1,'DJI::OSDK']]],
