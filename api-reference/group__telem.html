@@ -272,25 +272,29 @@ Enumerations</h2></td></tr>
 <dl class="section user"><dt>Sensing Sources : IMU, Visual Odometry (M210 only)</dt><dd></dd></dl>
 <dl class="section user"><dt>Supported Platforms : M210V2,M300</dt><dd></dd></dl>
 <dl class="section user"><dt>Measurement Unit : rad (when converted to a rotation matrix or Euler angles)</dt><dd></dd></dl>
-<dl class="section user"><dt>Data Structure : \ref DJI::OSDK::Telemetry::Quaternion</dt><dd></dd></dl>
+<dl class="section user"><dt>Data Structure :</dt><dd></dd></dl>
+<p><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Quaternion.html">Quaternion</a> </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ga563d2333dc43253129a3915970f99cfaad94ad03091ef59e22cd59678badd1fcc"></a>TOPIC_ACCELERATION_GROUND&#160;</td><td class="fielddoc"><p>Provides aircraft's acceleration w.r.t a ground-fixed <b>NEU</b> frame @ up to 200Hz. </p>
 <dl class="section warning"><dt>Warning</dt><dd>Please note that this data is not in a conventional right-handed frame of reference.</dd></dl>
 <p>This is a fusion output from the flight control system. The output is in a right-handed NED frame, but the sign of the Z-axis acceleration is flipped before publishing to this topic. So if you are looking to get acceleration in an NED frame, simply flip the sign of the z-axis value. Beyond that, you can convert using rotations to any right-handed frame of reference. </p><dl class="section user"><dt>Supported Platforms : M210V2,M300</dt><dd></dd></dl>
 <dl class="section user"><dt>Measurement Unit : m/s2</dt><dd></dd></dl>
-<dl class="section user"><dt>Data Structure : \ref DJI::OSDK::Telemetry::Vector3f</dt><dd></dd></dl>
+<dl class="section user"><dt>Data Structure :</dt><dd></dd></dl>
+<p><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Vector3f.html">Vector3f</a> </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ga563d2333dc43253129a3915970f99cfaa21cfcdb2a0a6d3dabea02266cadeb45c"></a>TOPIC_ACCELERATION_BODY&#160;</td><td class="fielddoc"><p>Provides aircraft's acceleration w.r.t a body-fixed <b>FRU</b> frame @ up to 200Hz. </p>
 <dl class="section warning"><dt>Warning</dt><dd>Please note that this data is not in a conventional right-handed frame of reference.</dd></dl>
 <p>This is a fusion output from the flight control system. </p><dl class="section user"><dt>Supported Platforms : M210V2,M300</dt><dd></dd></dl>
 <dl class="section user"><dt>Measurement Unit : m/s2</dt><dd></dd></dl>
-<dl class="section user"><dt>Data Structure : \ref DJI::OSDK::Telemetry::Vector3f</dt><dd></dd></dl>
+<dl class="section user"><dt>Data Structure :</dt><dd></dd></dl>
+<p><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Vector3f.html">Vector3f</a> </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ga563d2333dc43253129a3915970f99cfaa4c449d354b345e53e5689fbfd4ee0c9f"></a>TOPIC_ACCELERATION_RAW&#160;</td><td class="fielddoc"><p>Provides aircraft's acceleration in an IMU-centered, body-fixed <b>FRD</b> frame @ up to 400Hz. </p>
 <p>This is a filtered output from the IMU on board the flight control system. </p><dl class="section user"><dt>Sensing Sources : IMU</dt><dd></dd></dl>
 <dl class="section user"><dt>Supported Platforms : M210V2,M300</dt><dd></dd></dl>
 <dl class="section user"><dt>Measurement Unit : m/s2</dt><dd></dd></dl>
-<dl class="section user"><dt>Data Structure : \ref DJI::OSDK::Telemetry::Vector3f</dt><dd></dd></dl>
+<dl class="section user"><dt>Data Structure :</dt><dd></dd></dl>
+<p><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Vector3f.html">Vector3f</a> </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ga563d2333dc43253129a3915970f99cfaa3cb53356fecea6e384b77d9d6ad20d91"></a>TOPIC_VELOCITY&#160;</td><td class="fielddoc"><p>Provides aircraft's velocity in a ground-fixed <b>NEU</b> frame @ up to 200Hz. </p>
 <dl class="section warning"><dt>Warning</dt><dd>Please note that this data is not in a conventional right-handed frame of reference.</dd></dl>
@@ -306,18 +310,21 @@ Enumerations</h2></td></tr>
 <dl class="section user"><dt>Sensing Sources : IMU, GPS, Baro, RTK (if available), Visual Odometry (M210 only), TOF (M210 Only)</dt><dd></dd></dl>
 <dl class="section user"><dt>Supported Platforms : M210V2,M300</dt><dd></dd></dl>
 <dl class="section user"><dt>Measurement Unit : m/s</dt><dd></dd></dl>
-<dl class="section user"><dt>Data Structure : \ref DJI::OSDK::Telemetry::Velocity</dt><dd></dd></dl>
+<dl class="section user"><dt>Data Structure :</dt><dd></dd></dl>
+<p><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Velocity.html">Velocity</a> </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ga563d2333dc43253129a3915970f99cfaa8d599bb20cd43b8a3b0c4a306f4de3dc"></a>TOPIC_ANGULAR_RATE_FUSIONED&#160;</td><td class="fielddoc"><p>Provides aircraft's angular velocity in a ground-fixed <b>NED</b> frame @ up to 200Hz. </p>
 <p>This is a fusion output from the flight control system. </p><dl class="section user"><dt>Supported Platforms : M210V2,M300</dt><dd></dd></dl>
 <dl class="section user"><dt>Measurement Unit : rad/s</dt><dd></dd></dl>
-<dl class="section user"><dt>Data Structure : \ref DJI::OSDK::Telemetry::Vector3f</dt><dd></dd></dl>
+<dl class="section user"><dt>Data Structure :</dt><dd></dd></dl>
+<p><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Vector3f.html">Vector3f</a> </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ga563d2333dc43253129a3915970f99cfaa1ca496839cc994374aed663a8fb1b4e1"></a>TOPIC_ANGULAR_RATE_RAW&#160;</td><td class="fielddoc"><p>Provides aircraft's angular velocity in an IMU-centered, body-fixed <b>FRD</b> frame @ up to 400Hz. </p>
 <p>This is a filtered output from the IMU on board the flight control system. </p><dl class="section user"><dt>Sensing Sources : IMU</dt><dd></dd></dl>
 <dl class="section user"><dt>Supported Platforms : M210V2,M300</dt><dd></dd></dl>
 <dl class="section user"><dt>Measurement Unit : rad/s</dt><dd></dd></dl>
-<dl class="section user"><dt>Data Structure : \ref DJI::OSDK::Telemetry::Vector3f</dt><dd></dd></dl>
+<dl class="section user"><dt>Data Structure :</dt><dd></dd></dl>
+<p><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Vector3f.html">Vector3f</a> </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ga563d2333dc43253129a3915970f99cfaa0bf0314551a2aff77c52682983c480c8"></a>TOPIC_ALTITUDE_FUSIONED&#160;</td><td class="fielddoc"><p>Provides aircraft's fused altitude from sea level using the ICAO model @ up to 200Hz. </p>
 <p>This is a fusion output from the flight control system, and is the <b>recommended</b> source of altitude data.</p>
@@ -367,7 +374,8 @@ Enumerations</h2></td></tr>
 <dl class="section user"><dt>Sensing Sources : GPS/IMU (x,y), Barometer(z)</dt><dd></dd></dl>
 <dl class="section user"><dt>Supported Platforms : M210V2,M300</dt><dd></dd></dl>
 <dl class="section user"><dt>Measurement Unit : rad (Lat,Lon), m (Alt)</dt><dd></dd></dl>
-<dl class="section user"><dt>Data Structure : \ref DJI::OSDK::Telemetry::GPSFused</dt><dd></dd></dl>
+<dl class="section user"><dt>Data Structure :</dt><dd></dd></dl>
+<p><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1GPSFused.html">GPSFused</a> </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ga563d2333dc43253129a3915970f99cfaa119f1c518dfa4145801ed2b47098e3f1"></a>TOPIC_GPS_DATE&#160;</td><td class="fielddoc"><p>Provides raw date information from GPS @ up to 5Hz. </p>
 <p>Format : yyyymmdd </p><dl class="section user"><dt>Sensing Sources : GPS</dt><dd></dd></dl>
@@ -392,19 +400,21 @@ Enumerations</h2></td></tr>
 <dl class="section user"><dt>Sensing Sources : GPS</dt><dd></dd></dl>
 <dl class="section user"><dt>Supported Platforms : M210V2,M300</dt><dd></dd></dl>
 <dl class="section user"><dt>Measurement Unit : rad*10-7 (Lat,Lon), mm (Alt)</dt><dd></dd></dl>
-<dl class="section user"><dt>Data Structure : \ref DJI::OSDK::Telemetry::Vector3d</dt><dd></dd></dl>
-<dl class="section note"><dt>Note</dt><dd>The data structure for this UID is too generic for the data itself - please note that in the vector3d struct, x = Latitude, y = Longitude, z = Altitude </dd></dl>
+<dl class="section user"><dt>Data Structure :</dt><dd></dd></dl>
+<p><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Vector3d.html">Vector3d</a> </p><dl class="section note"><dt>Note</dt><dd>The data structure for this UID is too generic for the data itself - please note that in the vector3d struct, x = Latitude, y = Longitude, z = Altitude </dd></dl>
 </td></tr>
 <tr><td class="fieldname"><a id="ga563d2333dc43253129a3915970f99cfaa4694849bd1c740dac89806a5ae5f6558"></a>TOPIC_GPS_VELOCITY&#160;</td><td class="fielddoc"><p>Provides aircraft's raw GPS velocity @ up to 5Hz. </p>
 <dl class="section user"><dt>Sensing Sources : GPS</dt><dd></dd></dl>
 <dl class="section user"><dt>Supported Platforms : M210V2,M300</dt><dd></dd></dl>
 <dl class="section user"><dt>Measurement Unit : cm/s</dt><dd></dd></dl>
-<dl class="section user"><dt>Data Structure : \ref DJI::OSDK::Telemetry::Vector3f</dt><dd></dd></dl>
+<dl class="section user"><dt>Data Structure :</dt><dd></dd></dl>
+<p><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Vector3f.html">Vector3f</a> </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ga563d2333dc43253129a3915970f99cfaaf506555ea9fbeade4a5075fff63aa0c0"></a>TOPIC_GPS_DETAILS&#160;</td><td class="fielddoc"><p>Provides aircraft's raw GPS status and other details @ up to 5Hz. </p>
 <dl class="section user"><dt>Sensing Sources : GPS</dt><dd></dd></dl>
 <dl class="section user"><dt>Supported Platforms : M210V2,M300</dt><dd></dd></dl>
-<dl class="section user"><dt>Data Structure : \ref DJI::OSDK::Telemetry::GPSDetail</dt><dd></dd></dl>
+<dl class="section user"><dt>Data Structure :</dt><dd></dd></dl>
+<p><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1GPSDetail.html">GPSDetail</a> </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ga563d2333dc43253129a3915970f99cfaa34b622259b6a60e6eb04984f73a755c4"></a>TOPIC_RTK_POSITION&#160;</td><td class="fielddoc"><p>Provides aircraft's raw Real-Time Kinematic (<a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1RTK.html" title="struct for data broadcast, return RTK info">RTK</a>) LLA @ up to 5Hz. </p>
 <dl class="section user"><dt>Performance Benchmarking Data :</dt><dd><table class="markdownTable">
@@ -419,13 +429,15 @@ Enumerations</h2></td></tr>
 <dl class="section user"><dt>Sensing Sources : RTK</dt><dd></dd></dl>
 <dl class="section user"><dt>Supported Platforms : M210V2,M300 (in each case, if RTK is installed)</dt><dd></dd></dl>
 <dl class="section user"><dt>Measurement Unit : deg (x, y), m(z)</dt><dd></dd></dl>
-<dl class="section user"><dt>Data Structure : \ref DJI::OSDK::Telemetry::PositionData</dt><dd></dd></dl>
+<dl class="section user"><dt>Data Structure :</dt><dd></dd></dl>
+<p><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1PositionData.html">PositionData</a> </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ga563d2333dc43253129a3915970f99cfaa17d23c6a9e70266829b125fb383fd58e"></a>TOPIC_RTK_VELOCITY&#160;</td><td class="fielddoc"><p>Provides aircraft's raw Real-Time Kinematic (<a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1RTK.html" title="struct for data broadcast, return RTK info">RTK</a>) velocity @ up to 5Hz. </p>
 <dl class="section user"><dt>Sensing Sources : RTK</dt><dd></dd></dl>
 <dl class="section user"><dt>Supported Platforms : M210V2,M300 (in each case, if RTK is installed)</dt><dd></dd></dl>
 <dl class="section user"><dt>Measurement Unit : cm/s</dt><dd></dd></dl>
-<dl class="section user"><dt>Data Structure : \ref DJI::OSDK::Telemetry::Vector3f</dt><dd></dd></dl>
+<dl class="section user"><dt>Data Structure :</dt><dd></dd></dl>
+<p><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Vector3f.html">Vector3f</a> </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ga563d2333dc43253129a3915970f99cfaa19430ce8d572cef4effbb12f95004e5f"></a>TOPIC_RTK_YAW&#160;</td><td class="fielddoc"><p>Provides aircraft's raw Real-Time Kinematic (<a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1RTK.html" title="struct for data broadcast, return RTK info">RTK</a>) yaw @ up to 5Hz. </p>
 <p>The <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1RTK.html" title="struct for data broadcast, return RTK info">RTK</a> yaw will provide the vector from ANT1 to ANT2 as configured in <a class="el" href="namespaceDJI.html">DJI</a> Assistant 2. In the M210, this means that the value of <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1RTK.html" title="struct for data broadcast, return RTK info">RTK</a> yaw will be 90&deg; offset from the yaw of the aircraft. For the M600 w/D-RTK, it will depend on how you mount your antennae. In preconfigured units, the mounting will be such that the <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1RTK.html" title="struct for data broadcast, return RTK info">RTK</a> yaw is 90&deg; offset from the aircraft yaw. </p><dl class="section user"><dt>Sensing Sources : RTK</dt><dd></dd></dl>
@@ -515,7 +527,8 @@ Enumerations</h2></td></tr>
 <p>This reading is the magnetic field recorded by the magnetometer in x,y,z axis, calibrated such that 1000 &lt; |m| &lt; 2000, and fused with IMU and GPS for robustness </p><dl class="section user"><dt>Sensing Sources : Magnetometer, IMU, GPS</dt><dd></dd></dl>
 <dl class="section user"><dt>Supported Platforms : M210V2,M300</dt><dd></dd></dl>
 <dl class="section user"><dt>Measurement Unit : N/A</dt><dd></dd></dl>
-<dl class="section user"><dt>Data Structure : \ref DJI::OSDK::Telemetry::Mag</dt><dd></dd></dl>
+<dl class="section user"><dt>Data Structure :</dt><dd></dd></dl>
+<p><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Mag.html">Mag</a> </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ga563d2333dc43253129a3915970f99cfaa7bdc213c690424e92117d42a883f132e"></a>TOPIC_RC&#160;</td><td class="fielddoc"><p>Provides remote controller stick inputs @ up to 100Hz. </p>
 <p>This topic will give you:</p><ul>
@@ -524,8 +537,8 @@ Enumerations</h2></td></tr>
 <li>Landing gear switch (Up/Down)</li>
 </ul>
 <dl class="section user"><dt>Supported Platforms : M210V2,M300</dt><dd></dd></dl>
-<dl class="section user"><dt>Data Structure : \ref DJI::OSDK::Telemetry::RC</dt><dd></dd></dl>
-<dl class="section user"><dt><em>See</em> <em>Also</em> : \ref DJI::OSDK::Telemetry::TOPIC_RC_WITH_FLAG_DATA</dt><dd></dd></dl>
+<dl class="section user"><dt>Data Structure :</dt><dd></dd></dl>
+<p><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1RC.html">RC</a> TOPIC_RC_WITH_FLAG_DATA </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ga563d2333dc43253129a3915970f99cfaad0d51b2f420c9c77e8d3eae767730d67"></a>TOPIC_GIMBAL_ANGLES&#160;</td><td class="fielddoc"><p>Provides gimbal pitch, roll, yaw @ up to 50Hz. </p>
 <p>The reference frame for gimbal angles is a NED frame attached to the gimbal. This topic uses a data structure, <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Vector3f.html" title="struct for multiple Topics">Vector3f</a>, that is too generic for the topic. The order of angles is : </p><table class="markdownTable">
@@ -542,14 +555,14 @@ Enumerations</h2></td></tr>
 <dl class="section user"><dt>Sensing Sources : Gimbal Encoder, IMU, Magnetometer</dt><dd></dd></dl>
 <dl class="section user"><dt>Supported Platforms : M210V2,M300</dt><dd></dd></dl>
 <dl class="section user"><dt>Measurement Unit : deg</dt><dd></dd></dl>
-<dl class="section user"><dt>Data Structure : \ref DJI::OSDK::Telemetry::Vector3f</dt><dd></dd></dl>
-<dl class="section user"><dt><em>See</em> <em>Also</em> : \ref DJI::OSDK::Telemetry::TOPIC_GIMBAL_STATUS, \ref DJI::OSDK::Telemetry::TOPIC_GIMBAL_CONTROL_MODE</dt><dd></dd></dl>
+<dl class="section user"><dt>Data Structure :</dt><dd></dd></dl>
+<p><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Vector3f.html">Vector3f</a> TOPIC_GIMBAL_STATUS, <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#ga563d2333dc43253129a3915970f99cfaa3feb402f5bc3047a9eb840ffb380e8bf">TOPIC_GIMBAL_CONTROL_MODE</a> </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ga563d2333dc43253129a3915970f99cfaae80372dc47cfbc21ebabae7b055f96e8"></a>TOPIC_GIMBAL_STATUS&#160;</td><td class="fielddoc"><p>Provides gimbal status and error codes @ up to 50Hz. </p>
 <p>Please see the <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1GimbalStatus.html">GimbalStatus</a> struct for the details on what data you can receive.</p>
 <dl class="section user"><dt>Supported Platforms : M210V2,M300</dt><dd></dd></dl>
-<dl class="section user"><dt>Data Structure : \ref DJI::OSDK::Telemetry::GimbalStatus</dt><dd></dd></dl>
-<dl class="section user"><dt><em>See</em> <em>Also</em> : \ref DJI::OSDK::Telemetry::TOPIC_GIMBAL_ANGLES, \ref DJI::OSDK::Telemetry::TOPIC_GIMBAL_CONTROL_MODE</dt><dd></dd></dl>
+<dl class="section user"><dt>Data Structure :</dt><dd></dd></dl>
+<p><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1GimbalStatus.html">GimbalStatus</a> TOPIC_GIMBAL_ANGLES, <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#ga563d2333dc43253129a3915970f99cfaa3feb402f5bc3047a9eb840ffb380e8bf">TOPIC_GIMBAL_CONTROL_MODE</a> </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ga563d2333dc43253129a3915970f99cfaa70a1edff66c86f4025412410fa45fcad"></a>TOPIC_STATUS_FLIGHT&#160;</td><td class="fielddoc"><p>Provides the aircraft's internal flight state @ up to 50Hz. </p>
 <p>The state machine for this topic has the following transition diagram:</p>
@@ -557,29 +570,31 @@ Enumerations</h2></td></tr>
 <img src="state_machine.png" alt="state_machine.png"/>
 </div>
 <dl class="section user"><dt>Supported Platforms : M210V2,M300</dt><dd></dd></dl>
-<dl class="section user"><dt>Data Structure : uint8_t (For detailed enumerations see \ref DJI::OSDK::VehicleStatus::FlightStatus "FlightStatus")</dt><dd></dd></dl>
-<dl class="section user"><dt><em>See</em> <em>Also</em> : \ref DJI::OSDK::Telemetry::TOPIC_STATUS_DISPLAYMODE</dt><dd></dd></dl>
+<dl class="section user"><dt>Data Structure :</dt><dd></dd></dl>
+<p>uint8_t (For detailed enumerations see <a class="el" href="namespaceDJI_1_1OSDK_1_1VehicleStatus_1_1FlightStatus.html">FlightStatus</a>) TOPIC_STATUS_DISPLAYMODE </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ga563d2333dc43253129a3915970f99cfaa52824a303fb74a40306f0ca4405b8cb9"></a>TOPIC_STATUS_DISPLAYMODE&#160;</td><td class="fielddoc"><p>Provides a granular state representation for various tasks/flight modes @ up to 50Hz. </p>
-<p>Typically, use this topic together with <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#ga563d2333dc43253129a3915970f99cfaa70a1edff66c86f4025412410fa45fcad">DJI::OSDK::Telemetry::TOPIC_STATUS_FLIGHT</a> to get a better understanding of the overall status of the aircraft.</p>
+<p>Typically, use this topic together with <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#ga563d2333dc43253129a3915970f99cfaa70a1edff66c86f4025412410fa45fcad">TOPIC_STATUS_FLIGHT</a> to get a better understanding of the overall status of the aircraft.</p>
 <dl class="section user"><dt>Supported Platforms : M210V2,M300</dt><dd></dd></dl>
-<dl class="section user"><dt>Data Structure : uint8_t (For detailed enumerations see \ref DJI::OSDK::VehicleStatus::DisplayMode "DisplayMode")</dt><dd></dd></dl>
-<dl class="section user"><dt><em>See</em> <em>Also</em> : \ref DJI::OSDK::Telemetry::TOPIC_STATUS_FLIGHT</dt><dd></dd></dl>
+<dl class="section user"><dt>Data Structure :</dt><dd></dd></dl>
+<p>uint8_t (For detailed enumerations see <a class="el" href="namespaceDJI_1_1OSDK_1_1VehicleStatus_1_1DisplayMode.html">DisplayMode</a>) TOPIC_STATUS_FLIGHT </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ga563d2333dc43253129a3915970f99cfaaa7fe18c3c51e01d55458d6ebbfa84d89"></a>TOPIC_STATUS_LANDINGGEAR&#160;</td><td class="fielddoc"><p>Provides status for the landing gear state @ up to 50Hz. </p>
 <dl class="section user"><dt>Supported Platforms : M300</dt><dd></dd></dl>
-<dl class="section user"><dt>Data Structure : uint8_t (For detailed enumerations see \ref DJI::OSDK::VehicleStatus::LandingGearMode "LandingGearMode")</dt><dd></dd></dl>
+<dl class="section user"><dt>Data Structure :</dt><dd></dd></dl>
+<p>uint8_t (For detailed enumerations see <a class="el" href="namespaceDJI_1_1OSDK_1_1VehicleStatus_1_1LandingGearMode.html">LandingGearMode</a>) </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ga563d2333dc43253129a3915970f99cfaa30dc2e431e8ca48ba46d00d2716b3309"></a>TOPIC_STATUS_MOTOR_START_ERROR&#160;</td><td class="fielddoc"><p>If motors failed to start, this topic provides reasons why. Available @ up to 50Hz. </p>
 <dl class="section user"><dt>Supported Platforms : M210V2,M300</dt><dd></dd></dl>
-<dl class="section user"><dt>Data Structure : uint8_t (For detailed enumerations see \ref DJI::OSDK::ErrorCode::CommonACK "CommonACK", starting from the 6th element)</dt><dd></dd></dl>
-<dl class="section note"><dt>Note</dt><dd>These enumerations show up in the <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html">ErrorCode</a> class because they can also be returned as acknowledgements for APIs that start the motors, such as <a class="el" href="classDJI_1_1OSDK_1_1Control.html#a7f79c6ed6e9c399fff2354d0403be6f5">Takeoff</a> or <a class="el" href="classDJI_1_1OSDK_1_1Control.html#ac4742f9e7155e0bf4651cde4ee39b116">Arm</a> </dd></dl>
+<dl class="section user"><dt>Data Structure :</dt><dd></dd></dl>
+<p>uint8_t (For detailed enumerations see <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode_1_1CommonACK.html">CommonACK</a>, starting from the 6th element) </p><dl class="section note"><dt>Note</dt><dd>These enumerations show up in the <a class="el" href="classDJI_1_1OSDK_1_1ErrorCode.html">ErrorCode</a> class because they can also be returned as acknowledgements for APIs that start the motors, such as <a class="el" href="classDJI_1_1OSDK_1_1Control.html#a7f79c6ed6e9c399fff2354d0403be6f5">Takeoff</a> or <a class="el" href="classDJI_1_1OSDK_1_1Control.html#ac4742f9e7155e0bf4651cde4ee39b116">Arm</a> </dd></dl>
 </td></tr>
 <tr><td class="fieldname"><a id="ga563d2333dc43253129a3915970f99cfaab3edf29c9537f3de8c58f8bb79071e8d"></a>TOPIC_BATTERY_INFO&#160;</td><td class="fielddoc"><p>Provides various data about the battery @ up to 50Hz. </p>
 <dl class="section note"><dt>Note</dt><dd>Most of these details need a <a class="el" href="namespaceDJI.html">DJI</a> Intelligent battery to work correctly (this is usually not the case with A3/N3 based setups)</dd></dl>
 <p>Please be aware that some of the data elements in this topic may not be able to update at high rates due to the limitations of the sensing for that data. e.g. current can only update @ 1 Hz. </p><dl class="section user"><dt>Supported Platforms : M210V2,M300</dt><dd></dd></dl>
 <dl class="section user"><dt>Measurement Unit :</dt><dd>|voltage | mV | |current | mA | </dd></dl>
-<dl class="section user"><dt>Data Structure : \ref DJI::OSDK::Telemetry::Battery</dt><dd></dd></dl>
+<dl class="section user"><dt>Data Structure :</dt><dd></dd></dl>
+<p><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Battery.html">Battery</a> </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ga563d2333dc43253129a3915970f99cfaae6e7473883431d64601a0eb5e65482be"></a>TOPIC_CONTROL_DEVICE&#160;</td><td class="fielddoc"><p>Provides states of the aircraft related to SDK/RC control. </p>
 <p>The following information is available in this topic: </p><table class="markdownTable">
@@ -595,7 +610,8 @@ Enumerations</h2></td></tr>
 <td class="markdownTableBodyNone">vrcStatus  </td><td class="markdownTableBodyNone">Deprecated   </td></tr>
 </table>
 <dl class="section user"><dt>Supported Platforms : M210V2,M300</dt><dd></dd></dl>
-<dl class="section user"><dt>Data Structure : \ref DJI::OSDK::Telemetry::SDKInfo</dt><dd></dd></dl>
+<dl class="section user"><dt>Data Structure :</dt><dd></dd></dl>
+<p><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1SDKInfo.html">SDKInfo</a> </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ga563d2333dc43253129a3915970f99cfaad905bb12f3b545fb2023cfd2b61500e7"></a>TOPIC_HARD_SYNC&#160;</td><td class="fielddoc"><p>Provides IMU and quaternion data time-synced with a hardware clock signal @ up to 400Hz. </p>
 <p>This is the only data which can be synchronized with external software or hardware systems. If you want to fuse an external sensor's data with the aircraft's IMU, this data along with a hardware trigger from the A3/N3's expansion ports is how you would do it. You can see detailed documentation on how this process works in the <a href="https://developer.dji.com/onboard-sdk/documentation/guides/component-guide-hardware-sync.html">Hardware Sync Guide</a>. </p><dl class="section user"><dt>Sensing Sources : IMU, sensor fusion output</dt><dd></dd></dl>
@@ -604,7 +620,7 @@ Enumerations</h2></td></tr>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Data Structure Element  </th><th class="markdownTableHeadNone">Units   </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">Timestamp  </td><td class="markdownTableBodyNone">2.5ms, 1ns (See <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1SyncTimestamp.html">DJI::OSDK::Telemetry::SyncTimestamp</a>)   </td></tr>
+<td class="markdownTableBodyNone">Timestamp  </td><td class="markdownTableBodyNone">2.5ms, 1ns (See <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1SyncTimestamp.html">SyncTimestamp</a>)   </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Quaternion.html" title="struct for TOPIC_QUATERNION">Quaternion</a>  </td><td class="markdownTableBodyNone">rad (after converting to rotation matrix)   </td></tr>
 <tr class="markdownTableRowOdd">
@@ -613,19 +629,18 @@ Enumerations</h2></td></tr>
 <td class="markdownTableBodyNone">Gyroscope  </td><td class="markdownTableBodyNone">rad/sec   </td></tr>
 </table>
 </dd></dl>
-<dl class="section user"><dt>Data Structure : \ref DJI::OSDK::Telemetry::HardSyncData</dt><dd></dd></dl>
+<dl class="section user"><dt>Data Structure :</dt><dd></dd></dl>
+<p><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1HardSyncData.html">HardSyncData</a> </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ga563d2333dc43253129a3915970f99cfaa1bdf7662ec12c06405bac1948caa5d94"></a>TOPIC_GPS_SIGNAL_LEVEL&#160;</td><td class="fielddoc"><p>Provides a measure of the quality of GPS signal @ up to 50Hz. </p>
 <p>The level varies from 0 to 5, with 0 being the worst and 5 the best GPS signal. Closely related to TOPIC_GPS_CONTROL_LEVEL </p><dl class="section user"><dt>Sensing Sources : GPS</dt><dd></dd></dl>
 <dl class="section user"><dt>Supported Platforms : M210V2,M300</dt><dd></dd></dl>
-<dl class="section user"><dt>Data Structure : uint8_t</dt><dd></dd></dl>
-<dl class="section user"><dt><em>See</em> <em>Also</em> : \ref DJI::OSDK::Telemetry::TOPIC_GPS_CONTROL_LEVEL</dt><dd></dd></dl>
+<dl class="section user"><dt>Data Structure : uint8_t</dt><dd>TOPIC_GPS_CONTROL_LEVEL </dd></dl>
 </td></tr>
 <tr><td class="fieldname"><a id="ga563d2333dc43253129a3915970f99cfaa1197ed2978b4671c7a5b4d6d1130d797"></a>TOPIC_GPS_CONTROL_LEVEL&#160;</td><td class="fielddoc"><p>Provides a measure of the quality of GPS signal, with a mechanism for guarding against unset homepoint @ up to 50Hz. </p>
 <p>The level varies from 0 to 5, with 0 being the worst and 5 the best GPS signal. The key difference between this and TOPIC_GPS_SIGNAL_LEVEL is that this topic always returns 0 if the homepoint is not set. Once the home point is set, the behavior is exactly the same as TOPIC_GPS_SIGNAL_LEVEL. </p><dl class="section user"><dt>Sensing Sources : GPS</dt><dd></dd></dl>
 <dl class="section user"><dt>Supported Platforms : M210V2,M300</dt><dd></dd></dl>
-<dl class="section user"><dt>Data Structure : uint8_t</dt><dd></dd></dl>
-<dl class="section user"><dt><em>See</em> <em>Also</em> : \ref DJI::OSDK::Telemetry::TOPIC_GPS_SIGNAL_LEVEL</dt><dd></dd></dl>
+<dl class="section user"><dt>Data Structure : uint8_t</dt><dd>TOPIC_GPS_SIGNAL_LEVEL </dd></dl>
 </td></tr>
 <tr><td class="fieldname"><a id="ga563d2333dc43253129a3915970f99cfaaf63a022ffc65950f36fc0c92edb901ff"></a>TOPIC_RC_FULL_RAW_DATA&#160;</td><td class="fielddoc"><p>Provides raw remote controller stick, buttons and switch data @ up to 50Hz. </p>
 <dl class="section note"><dt>Note</dt><dd>This topic was added in August 2018. Your aircraft may require a FW update to enable this feature.</dd></dl>
@@ -634,9 +649,8 @@ Enumerations</h2></td></tr>
 <li>Mode switch (P/A/F)</li>
 <li>Landing gear switch (Up/Down)</li>
 <li>All other buttons (<a class="el" href="classDJI_1_1OSDK_1_1Camera.html" title="Camera class for controlling camera-related functions available through open protocol.">Camera</a>, Video, C1, C2, etc.) <dl class="section user"><dt>Supported Platforms : Deprecated</dt><dd></dd></dl>
-<dl class="section user"><dt>Data Structure : \ref DJI::OSDK::Telemetry::RCFullRawData, \ref DJI::OSDK::Telemetry::LB2RcFullRawData, \ref DJI::OSDK::Telemetry::SBUSFullRawData</dt><dd></dd></dl>
-<dl class="section user"><dt><em>See</em> <em>Also</em> : \ref DJI::OSDK::Telemetry::TOPIC_RC_WITH_FLAG_DATA, DJI::OSDK::Telemetry::TOPIC_RC</dt><dd></dd></dl>
-</li>
+<dl class="section user"><dt>Data Structure :</dt><dd></dd></dl>
+<a class="el" href="unionDJI_1_1OSDK_1_1Telemetry_1_1RCFullRawData.html">RCFullRawData</a>, <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1LB2RcFullRawData.html">LB2RcFullRawData</a>, <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1SBUSFullRawData.html">SBUSFullRawData</a> TOPIC_RC_WITH_FLAG_DATA, TOPIC_RC </li>
 </ul>
 </td></tr>
 <tr><td class="fieldname"><a id="ga563d2333dc43253129a3915970f99cfaa8ae82fd35c5523e33302d8ed548063dc"></a>TOPIC_RC_WITH_FLAG_DATA&#160;</td><td class="fielddoc"><p>Provides normalized remote controller stick input data, along with connection status @ up to 50Hz. </p>
@@ -649,29 +663,33 @@ Enumerations</h2></td></tr>
 <li>Deadzones near the center of the stick positions are also handled in this topic.</li>
 </ul>
 <dl class="section user"><dt>Supported Platforms : M210V2,M300</dt><dd></dd></dl>
-<dl class="section user"><dt>Data Structure : \ref DJI::OSDK::Telemetry::RCWithFlagData</dt><dd></dd></dl>
-<dl class="section user"><dt><em>See</em> <em>Also</em> : \ref DJI::OSDK::Telemetry::TOPIC_RC_FULL_RAW_DATA, TOPIC_RC</dt><dd></dd></dl>
+<dl class="section user"><dt>Data Structure :</dt><dd></dd></dl>
+<p><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1RCWithFlagData.html">RCWithFlagData</a> TOPIC_RC_FULL_RAW_DATA, <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#ga563d2333dc43253129a3915970f99cfaa7bdc213c690424e92117d42a883f132e">TOPIC_RC</a> </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ga563d2333dc43253129a3915970f99cfaa1af1640315a760bf79fc05502473e6f9"></a>TOPIC_ESC_DATA&#160;</td><td class="fielddoc"><p>Provides raw data from the ESCs @ up to 50Hz. </p>
 <dl class="section note"><dt>Note</dt><dd>This topic was added in August 2018. Your aircraft may require a FW update to enable this feature.</dd></dl>
 <p>This topic supports reporting data for up to 8 ESCs; note that only <a class="el" href="namespaceDJI.html">DJI</a> Intelligent ESCs are supported for this reporting feature. Use this topic to get data on elements close to the hardware - e.g. motor speeds, ESC current and voltage, error flags at the ESC level etc. </p><dl class="section user"><dt>Supported Platforms : M210V2,M300</dt><dd></dd></dl>
-<dl class="section user"><dt>Data Structure : \ref DJI::OSDK::Telemetry::ESCStatusIndividual, \ref DJI::OSDK::Telemetry::EscData</dt><dd></dd></dl>
+<dl class="section user"><dt>Data Structure :</dt><dd></dd></dl>
+<p><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1ESCStatusIndividual.html">ESCStatusIndividual</a>, <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1EscData.html">EscData</a> </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ga563d2333dc43253129a3915970f99cfaa622484559b4778ae49d9557182cf15e0"></a>TOPIC_RTK_CONNECT_STATUS&#160;</td><td class="fielddoc"><p>Provides <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1RTK.html" title="struct for data broadcast, return RTK info">RTK</a> connection status @ up to 50Hz. </p>
 <dl class="section note"><dt>Note</dt><dd>This topic was added in August 2018. Your aircraft may require a FW update to enable this feature.</dd></dl>
 <p>This topic will update in real time whether the <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1RTK.html" title="struct for data broadcast, return RTK info">RTK</a> GPS system is connected or not; typical uses include app-level logic to switch between GPS and <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1RTK.html" title="struct for data broadcast, return RTK info">RTK</a> sources of positioning based on this flag. </p><dl class="section user"><dt>Supported Platforms : M210V2,M300</dt><dd></dd></dl>
-<dl class="section user"><dt>Data Structure : \ref DJI::OSDK::Telemetry:RTKConnectStatus</dt><dd></dd></dl>
+<dl class="section user"><dt>Data Structure :</dt><dd></dd></dl>
+<p><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1RTKConnectStatus.html">RTKConnectStatus</a> </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ga563d2333dc43253129a3915970f99cfaa3feb402f5bc3047a9eb840ffb380e8bf"></a>TOPIC_GIMBAL_CONTROL_MODE&#160;</td><td class="fielddoc"><p>Provides the mode in which the gimbal will interpret control commands @ up to 50Hz. </p>
 <dl class="section note"><dt>Note</dt><dd>This topic was added in August 2018. Your aircraft may require a FW update to enable this feature.</dd></dl>
 <p>This topic will report the current control mode which can be set in the <a class="el" href="namespaceDJI.html">DJI</a> Go app, MSDK apps, or through Onboard SDK gimbal control APIs (see <a class="el" href="structDJI_1_1OSDK_1_1Gimbal_1_1AngleData.html">AngleData</a> struct for more information) </p><dl class="section user"><dt>Supported Platforms : M210V2,M300</dt><dd></dd></dl>
-<dl class="section user"><dt>Data Structure : \ref DJI::OSDK::Telemetry:GimbalControlMode</dt><dd></dd></dl>
+<dl class="section user"><dt>Data Structure :</dt><dd></dd></dl>
+<p>GimbalControlMode </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ga563d2333dc43253129a3915970f99cfaabd52e64a579c6b651f2b51f6c3b79035"></a>TOPIC_FLIGHT_ANOMALY&#160;</td><td class="fielddoc"><p>Provides a number of flags which report different errors the aircraft may encounter in flight @ up to 50Hz. </p>
 <dl class="section note"><dt>Note</dt><dd>This topic was added in August 2018. Your aircraft may require a FW update to enable this feature. </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Most of the errors reported by this topic are cases where immediate action is required; you can use these as a baseline for implementing safety-related error-handling routines. </dd></dl>
 <dl class="section user"><dt>Supported Platforms : M210V2,M300</dt><dd></dd></dl>
-<dl class="section user"><dt>Data Structure : \ref DJI::OSDK::Telemetry:FlightAnomaly</dt><dd></dd></dl>
+<dl class="section user"><dt>Data Structure :</dt><dd></dd></dl>
+<p><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1FlightAnomaly.html">FlightAnomaly</a> </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ga563d2333dc43253129a3915970f99cfaa08d1fcd72f7db04f053a94813cb228aa"></a>TOPIC_POSITION_VO&#160;</td><td class="fielddoc"><p>Provides aircraft's position in a Cartesian frame @ up to 50Hz, without the need for GPS. </p>
 <dl class="section warning"><dt>Warning</dt><dd>This topic does not follow a standard co-ordinate convention. Please read the details below for usage.</dd></dl>
@@ -688,7 +706,8 @@ Enumerations</h2></td></tr>
 <dl class="section user"><dt>Sensing Sources : IMU, VO, GPS(if available), RTK (if available), ultrasonic, magnetometer, barometer</dt><dd></dd></dl>
 <dl class="section user"><dt>Supported Platforms : M210V2,M300</dt><dd></dd></dl>
 <dl class="section user"><dt>Measurement Unit : m</dt><dd></dd></dl>
-<dl class="section user"><dt>Data Structure : \ref DJI::OSDK::Telemetry:LocalPositionVO</dt><dd></dd></dl>
+<dl class="section user"><dt>Data Structure :</dt><dd></dd></dl>
+<p><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1LocalPositionVO.html">LocalPositionVO</a> /*! </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ga563d2333dc43253129a3915970f99cfaa42afcfd6ede70f66540f474a34fa5022"></a>TOPIC_AVOID_DATA&#160;</td><td class="fielddoc"><p>Provides obstacle info around the vehicle @ up to 100Hz. </p>
 <dl class="section user"><dt>Supported Platforms : M210V2,M300</dt><dd></dd></dl>
