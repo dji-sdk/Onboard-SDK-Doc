@@ -9,7 +9,7 @@
     <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
     <meta name="generator" content="Doxygen 1.8.15" />
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <title>DJI Onboard SDK: osdk-core/api/inc/dji_telemetry_doc.hpp Source File</title>
+    <title>DJI Onboard SDK: Data Struct Reference</title>
     <!-- <link href="tabs.css" rel="stylesheet" type="text/css"/> -->
     <script type="text/javascript" src="dynsections.js"></script>
     <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -122,19 +122,31 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_95d02babf7f2c2cbb8138434e234b0a4.html">osdk-core</a></li><li class="navelem"><a class="el" href="dir_ef926edda2a887b065db034fc3005c14.html">api</a></li><li class="navelem"><a class="el" href="dir_0fb058e33548cd6e720172c5f012eda8.html">inc</a></li>  </ul>
-</div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">dji_telemetry_doc.hpp</div>  </div>
+<div class="title">Data Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="dji__telemetry__doc_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#ifndef ONBOARDSDK_DJI_TELEMETRY_DOC_HPP</span></div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#define ONBOARDSDK_DJI_TELEMETRY_DOC_HPP</span></div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="dji__telemetry_8hpp.html">dji_telemetry.hpp</a>&quot;</span></div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">/*</span></div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment"> * This file is only for having all the subscription TOPIC_XX_XX documentation in a single place.</span></div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment"> */</span></div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespaceDJI_1_1OSDK_1_1Telemetry.html">DJI::OSDK::Telemetry</a>;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">// Detailed doxygen comments begin below</span></div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;<div class="ttc" id="dji__telemetry_8hpp_html"><div class="ttname"><a href="dji__telemetry_8hpp.html">dji_telemetry.hpp</a></div><div class="ttdoc">Enumeration of all telemetry data types, structures and maps.</div></div>
-<div class="ttc" id="namespaceDJI_1_1OSDK_1_1Telemetry_html"><div class="ttname"><a href="namespaceDJI_1_1OSDK_1_1Telemetry.html">DJI::OSDK::Telemetry</a></div><div class="ttdoc">This namespace encapsulates all available telemetry topics through either Broadcast or Subscribe.</div><div class="ttdef"><b>Definition:</b> dji_telemetry.hpp:48</div></div>
-</div><!-- fragment --></div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>to Quaternion </p><dl class="section user"><dt>Performance Benchmarking Data :</dt><dd><table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Angle  </th><th class="markdownTableHeadNone">Unit  </th><th class="markdownTableHeadNone">Accuracy  </th><th class="markdownTableHeadNone">Notes   </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">pitch, roll  </td><td class="markdownTableBodyNone">deg  </td><td class="markdownTableBodyNone">&lt;1  </td><td class="markdownTableBodyNone">in non-ahrs mode   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">yaw  </td><td class="markdownTableBodyNone">deg  </td><td class="markdownTableBodyNone">&lt;3  </td><td class="markdownTableBodyNone">in well-calibrated compass with fine aligned   </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">yaw with rtk  </td><td class="markdownTableBodyNone">deg  </td><td class="markdownTableBodyNone">around 1.2  </td><td class="markdownTableBodyNone">in RTK heading fixed mode with 1 meter baseline   </td></tr>
+</table>
+</dd></dl>
+<dl class="section user"><dt>Sensing Sources : IMU, Visual Odometry (M210 only)</dt><dd></dd></dl>
+<dl class="section user"><dt>Supported Platforms : M210V2,M300</dt><dd></dd></dl>
+<dl class="section user"><dt>Measurement Unit : rad (when converted to a rotation matrix or Euler angles)</dt><dd></dd></dl>
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
+<li>osdk-core/api/inc/<a class="el" href="dji__telemetry__doc_8hpp_source.html">dji_telemetry_doc.hpp</a></li>
+</ul>
+</div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
 </div>
