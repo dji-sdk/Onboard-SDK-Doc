@@ -193,6 +193,12 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1PositionData.html">DJI::OSDK::Telemetry::PositionData</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">struct for TOPIC_RTK_POSITION and sub struct for <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1RTK.html" title="struct for data broadcast, return RTK info">RTK</a> of data broadcast  <a href="structDJI_1_1OSDK_1_1Telemetry_1_1PositionData.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1HomeLocationData.html">DJI::OSDK::Telemetry::HomeLocationData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">struct for TOPIC_HOME_POINT_INFO  <a href="structDJI_1_1OSDK_1_1Telemetry_1_1HomeLocationData.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1HomeLocationSetStatus.html">DJI::OSDK::Telemetry::HomeLocationSetStatus</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">struct for TOPIC_HOME_POINT_SET_STATUS  <a href="structDJI_1_1OSDK_1_1Telemetry_1_1HomeLocationSetStatus.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1GPSDetail.html">DJI::OSDK::Telemetry::GPSDetail</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">struct for TOPIC_GPS_DETAILS and sub struct for <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1GPSInfo.html" title="struct for GPSInfo of data broadcast">GPSInfo</a> of data broadcast  <a href="structDJI_1_1OSDK_1_1Telemetry_1_1GPSDetail.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -255,6 +261,12 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionDJI_1_1OSDK_1_1Telemetry_1_1RCFullRawData.html">DJI::OSDK::Telemetry::RCFullRawData</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">union for TOPIC_RC_FULL_RAW_DATA Only support A3/N3/M600  <a href="unionDJI_1_1OSDK_1_1Telemetry_1_1RCFullRawData.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1GimbalDualData.html">DJI::OSDK::Telemetry::GimbalDualData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">struct for TOPIC_DUAL_GIMBAL_DATA  <a href="structDJI_1_1OSDK_1_1Telemetry_1_1GimbalDualData.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1GimbalThreeData.html">DJI::OSDK::Telemetry::GimbalThreeData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">struct for TOPIC_THREE_GIMBAL_DATA  <a href="structDJI_1_1OSDK_1_1Telemetry_1_1GimbalThreeData.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1FlightAnomaly.html">DJI::OSDK::Telemetry::FlightAnomaly</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">struct for TOPIC_FLIGHT_ANOMALY  <a href="structDJI_1_1OSDK_1_1Telemetry_1_1FlightAnomaly.html#details">More...</a><br /></td></tr>
@@ -346,10 +358,12 @@ typedef struct <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1PositionDat
 <tr class="memdesc:a46f49eee9621f8df6d283591aec4a324"><td class="mdescLeft">&#160;</td><td class="mdescRight">struct for TOPIC_RTK_POSITION and sub struct for <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1RTK.html" title="struct for data broadcast, return RTK info">RTK</a> of data broadcast <br /></td></tr>
 <tr class="separator:a46f49eee9621f8df6d283591aec4a324"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c8e20c264541021d78b9640096bc6a1"><td class="memItemLeft" align="right" valign="top"><a id="a8c8e20c264541021d78b9640096bc6a1"></a>
-typedef struct DJI::OSDK::Telemetry::HomeLocationData&#160;</td><td class="memItemRight" valign="bottom"><b>DJI::OSDK::Telemetry::HomeLocationData</b></td></tr>
+typedef struct <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1HomeLocationData.html">DJI::OSDK::Telemetry::HomeLocationData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a8c8e20c264541021d78b9640096bc6a1">DJI::OSDK::Telemetry::HomeLocationData</a></td></tr>
+<tr class="memdesc:a8c8e20c264541021d78b9640096bc6a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">struct for TOPIC_HOME_POINT_INFO <br /></td></tr>
 <tr class="separator:a8c8e20c264541021d78b9640096bc6a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4c4f1b11c1ac455e5cded8e0915e304"><td class="memItemLeft" align="right" valign="top"><a id="aa4c4f1b11c1ac455e5cded8e0915e304"></a>
-typedef struct DJI::OSDK::Telemetry::HomeLocationSetStatus&#160;</td><td class="memItemRight" valign="bottom"><b>DJI::OSDK::Telemetry::HomeLocationSetStatus</b></td></tr>
+typedef struct <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1HomeLocationSetStatus.html">DJI::OSDK::Telemetry::HomeLocationSetStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#aa4c4f1b11c1ac455e5cded8e0915e304">DJI::OSDK::Telemetry::HomeLocationSetStatus</a></td></tr>
+<tr class="memdesc:aa4c4f1b11c1ac455e5cded8e0915e304"><td class="mdescLeft">&#160;</td><td class="mdescRight">struct for TOPIC_HOME_POINT_SET_STATUS <br /></td></tr>
 <tr class="separator:aa4c4f1b11c1ac455e5cded8e0915e304"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a9bde380a5e5d1818055f05d1f1449b"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1GPSDetail.html">DJI::OSDK::Telemetry::GPSDetail</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a6a9bde380a5e5d1818055f05d1f1449b">DJI::OSDK::Telemetry::GPSDetail</a></td></tr>
 <tr class="memdesc:a6a9bde380a5e5d1818055f05d1f1449b"><td class="mdescLeft">&#160;</td><td class="mdescRight">struct for TOPIC_GPS_DETAILS and sub struct for <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1GPSInfo.html" title="struct for GPSInfo of data broadcast">GPSInfo</a> of data broadcast  <a href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a6a9bde380a5e5d1818055f05d1f1449b">More...</a><br /></td></tr>
@@ -433,10 +447,12 @@ typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>DJI::OSDK:
 typedef struct DJI::OSDK::Telemetry::GimbalSingleData&#160;</td><td class="memItemRight" valign="bottom"><b>DJI::OSDK::Telemetry::GimbalSingleData</b></td></tr>
 <tr class="separator:a7a877bed264d3c39aa1c5b292c7a97a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77f4021b86ec7f8278145fcd163018d5"><td class="memItemLeft" align="right" valign="top"><a id="a77f4021b86ec7f8278145fcd163018d5"></a>
-typedef struct DJI::OSDK::Telemetry::GimbalDualData&#160;</td><td class="memItemRight" valign="bottom"><b>DJI::OSDK::Telemetry::GimbalDualData</b></td></tr>
+typedef struct <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1GimbalDualData.html">DJI::OSDK::Telemetry::GimbalDualData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a77f4021b86ec7f8278145fcd163018d5">DJI::OSDK::Telemetry::GimbalDualData</a></td></tr>
+<tr class="memdesc:a77f4021b86ec7f8278145fcd163018d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">struct for TOPIC_DUAL_GIMBAL_DATA <br /></td></tr>
 <tr class="separator:a77f4021b86ec7f8278145fcd163018d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d1f4bc01838b17c84b1c775006fd4fa"><td class="memItemLeft" align="right" valign="top"><a id="a1d1f4bc01838b17c84b1c775006fd4fa"></a>
-typedef struct DJI::OSDK::Telemetry::GimbalThreeData&#160;</td><td class="memItemRight" valign="bottom"><b>DJI::OSDK::Telemetry::GimbalThreeData</b></td></tr>
+typedef struct <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1GimbalThreeData.html">DJI::OSDK::Telemetry::GimbalThreeData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#a1d1f4bc01838b17c84b1c775006fd4fa">DJI::OSDK::Telemetry::GimbalThreeData</a></td></tr>
+<tr class="memdesc:a1d1f4bc01838b17c84b1c775006fd4fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">struct for TOPIC_THREE_GIMBAL_DATA <br /></td></tr>
 <tr class="separator:a1d1f4bc01838b17c84b1c775006fd4fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace7c59d6b0bb654489238226795cb8e6"><td class="memItemLeft" align="right" valign="top"><a id="ace7c59d6b0bb654489238226795cb8e6"></a>
 typedef struct <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1FlightAnomaly.html">DJI::OSDK::Telemetry::FlightAnomaly</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#ace7c59d6b0bb654489238226795cb8e6">DJI::OSDK::Telemetry::FlightAnomaly</a></td></tr>

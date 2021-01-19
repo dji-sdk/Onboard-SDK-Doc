@@ -213,7 +213,7 @@ var searchData=
   ['startsync',['startSync',['../classDJI_1_1OSDK_1_1HardwareSync.html#aeb35dae3161b67dfa7a0a1d2e4618453',1,'DJI::OSDK::HardwareSync']]],
   ['starttakeoffasync',['startTakeoffAsync',['../classDJI_1_1OSDK_1_1FlightController.html#aa755b3bbceea1b9d8803ffdc1e15fa98',1,'DJI::OSDK::FlightController']]],
   ['starttakeoffsync',['startTakeoffSync',['../classDJI_1_1OSDK_1_1FlightController.html#aebea11fe5a77f9ab3f4751066ae3d892',1,'DJI::OSDK::FlightController']]],
-  ['status',['Status',['../structDJI_1_1OSDK_1_1Telemetry_1_1Status.html',1,'DJI::OSDK::Telemetry::Status'],['../namespaceDJI_1_1OSDK_1_1Telemetry.html#a9ddda77e4b4cf68092cb8ed81c7de03c',1,'DJI::OSDK::Telemetry::Status()']]],
+  ['status',['Status',['../structDJI_1_1OSDK_1_1Telemetry_1_1Status.html',1,'DJI::OSDK::Telemetry::Status'],['../structDJI_1_1OSDK_1_1Telemetry_1_1HomeLocationSetStatus.html#a94532ce598a29e014d4bde827360ad27',1,'DJI::OSDK::Telemetry::HomeLocationSetStatus::status()'],['../namespaceDJI_1_1OSDK_1_1Telemetry.html#a9ddda77e4b4cf68092cb8ed81c7de03c',1,'DJI::OSDK::Telemetry::Status()']]],
   ['stereocallback',['stereoCallback',['../classDJI_1_1OSDK_1_1AdvancedSensing.html#a4bc919398dbea3315911078f44457ec1',1,'DJI::OSDK::AdvancedSensing']]],
   ['stereoimgdata',['StereoImgData',['../structDJI_1_1OSDK_1_1ACK_1_1StereoImgData.html',1,'DJI::OSDK::ACK::StereoImgData'],['../classDJI_1_1OSDK_1_1ACK.html#a8645647f8ca9a498ecf3fa00bbb42f90',1,'DJI::OSDK::ACK::StereoImgData()']]],
   ['stereovgaimgdata',['StereoVGAImgData',['../structDJI_1_1OSDK_1_1ACK_1_1StereoVGAImgData.html',1,'DJI::OSDK::ACK::StereoVGAImgData'],['../classDJI_1_1OSDK_1_1ACK.html#ac53045c2c2530f7e1737a412838195a4',1,'DJI::OSDK::ACK::StereoVGAImgData()']]],
