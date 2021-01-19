@@ -556,13 +556,13 @@ Enumerations</h2></td></tr>
 <dl class="section user"><dt>Supported Platforms : M210V2,M300</dt><dd></dd></dl>
 <dl class="section user"><dt>Measurement Unit : deg</dt><dd></dd></dl>
 <dl class="section user"><dt>Data Structure :</dt><dd></dd></dl>
-<p><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Vector3f.html">Vector3f</a> TOPIC_GIMBAL_STATUS, <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#ga563d2333dc43253129a3915970f99cfaa3feb402f5bc3047a9eb840ffb380e8bf">TOPIC_GIMBAL_CONTROL_MODE</a> </p>
+<p><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1Vector3f.html">Vector3f</a> TOPIC_GIMBAL_STATUS "TOPIC_GIMBAL_STATUS", <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#ga563d2333dc43253129a3915970f99cfaa3feb402f5bc3047a9eb840ffb380e8bf">TOPIC_GIMBAL_CONTROL_MODE</a> </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ga563d2333dc43253129a3915970f99cfaae80372dc47cfbc21ebabae7b055f96e8"></a>TOPIC_GIMBAL_STATUS&#160;</td><td class="fielddoc"><p>Provides gimbal status and error codes @ up to 50Hz. </p>
 <p>Please see the <a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1GimbalStatus.html">GimbalStatus</a> struct for the details on what data you can receive.</p>
 <dl class="section user"><dt>Supported Platforms : M210V2,M300</dt><dd></dd></dl>
 <dl class="section user"><dt>Data Structure :</dt><dd></dd></dl>
-<p><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1GimbalStatus.html">GimbalStatus</a> TOPIC_GIMBAL_ANGLES, <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#ga563d2333dc43253129a3915970f99cfaa3feb402f5bc3047a9eb840ffb380e8bf">TOPIC_GIMBAL_CONTROL_MODE</a> </p>
+<p><a class="el" href="structDJI_1_1OSDK_1_1Telemetry_1_1GimbalStatus.html">GimbalStatus</a> TOPIC_GIMBAL_ANGLES "TOPIC_GIMBAL_ANGLES", <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#ga563d2333dc43253129a3915970f99cfaa3feb402f5bc3047a9eb840ffb380e8bf">TOPIC_GIMBAL_CONTROL_MODE</a> </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ga563d2333dc43253129a3915970f99cfaa70a1edff66c86f4025412410fa45fcad"></a>TOPIC_STATUS_FLIGHT&#160;</td><td class="fielddoc"><p>Provides the aircraft's internal flight state @ up to 50Hz. </p>
 <p>The state machine for this topic has the following transition diagram:</p>
@@ -571,13 +571,13 @@ Enumerations</h2></td></tr>
 </div>
 <dl class="section user"><dt>Supported Platforms : M210V2,M300</dt><dd></dd></dl>
 <dl class="section user"><dt>Data Structure :</dt><dd></dd></dl>
-<p>uint8_t (For detailed enumerations see <a class="el" href="namespaceDJI_1_1OSDK_1_1VehicleStatus_1_1FlightStatus.html">FlightStatus</a>) TOPIC_STATUS_DISPLAYMODE </p>
+<p>uint8_t (For detailed enumerations see <a class="el" href="namespaceDJI_1_1OSDK_1_1VehicleStatus_1_1FlightStatus.html">FlightStatus</a>) TOPIC_STATUS_DISPLAYMODE "TOPIC_STATUS_DISPLAYMODE" </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ga563d2333dc43253129a3915970f99cfaa52824a303fb74a40306f0ca4405b8cb9"></a>TOPIC_STATUS_DISPLAYMODE&#160;</td><td class="fielddoc"><p>Provides a granular state representation for various tasks/flight modes @ up to 50Hz. </p>
 <p>Typically, use this topic together with <a class="el" href="namespaceDJI_1_1OSDK_1_1Telemetry.html#ga563d2333dc43253129a3915970f99cfaa70a1edff66c86f4025412410fa45fcad">TOPIC_STATUS_FLIGHT</a> to get a better understanding of the overall status of the aircraft.</p>
 <dl class="section user"><dt>Supported Platforms : M210V2,M300</dt><dd></dd></dl>
 <dl class="section user"><dt>Data Structure :</dt><dd></dd></dl>
-<p>uint8_t (For detailed enumerations see <a class="el" href="namespaceDJI_1_1OSDK_1_1VehicleStatus_1_1DisplayMode.html">DisplayMode</a>) TOPIC_STATUS_FLIGHT </p>
+<p>uint8_t (For detailed enumerations see <a class="el" href="namespaceDJI_1_1OSDK_1_1VehicleStatus_1_1DisplayMode.html">DisplayMode</a>) TOPIC_STATUS_FLIGHT "TOPIC_STATUS_FLIGHT" </p>
 </td></tr>
 <tr><td class="fieldname"><a id="ga563d2333dc43253129a3915970f99cfaaa7fe18c3c51e01d55458d6ebbfa84d89"></a>TOPIC_STATUS_LANDINGGEAR&#160;</td><td class="fielddoc"><p>Provides status for the landing gear state @ up to 50Hz. </p>
 <dl class="section user"><dt>Supported Platforms : M300</dt><dd></dd></dl>
@@ -635,12 +635,12 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="ga563d2333dc43253129a3915970f99cfaa1bdf7662ec12c06405bac1948caa5d94"></a>TOPIC_GPS_SIGNAL_LEVEL&#160;</td><td class="fielddoc"><p>Provides a measure of the quality of GPS signal @ up to 50Hz. </p>
 <p>The level varies from 0 to 5, with 0 being the worst and 5 the best GPS signal. Closely related to TOPIC_GPS_CONTROL_LEVEL </p><dl class="section user"><dt>Sensing Sources : GPS</dt><dd></dd></dl>
 <dl class="section user"><dt>Supported Platforms : M210V2,M300</dt><dd></dd></dl>
-<dl class="section user"><dt>Data Structure : uint8_t</dt><dd>TOPIC_GPS_CONTROL_LEVEL </dd></dl>
+<dl class="section user"><dt>Data Structure : uint8_t</dt><dd>TOPIC_GPS_CONTROL_LEVEL "TOPIC_GPS_CONTROL_LEVEL" </dd></dl>
 </td></tr>
 <tr><td class="fieldname"><a id="ga563d2333dc43253129a3915970f99cfaa1197ed2978b4671c7a5b4d6d1130d797"></a>TOPIC_GPS_CONTROL_LEVEL&#160;</td><td class="fielddoc"><p>Provides a measure of the quality of GPS signal, with a mechanism for guarding against unset homepoint @ up to 50Hz. </p>
 <p>The level varies from 0 to 5, with 0 being the worst and 5 the best GPS signal. The key difference between this and TOPIC_GPS_SIGNAL_LEVEL is that this topic always returns 0 if the homepoint is not set. Once the home point is set, the behavior is exactly the same as TOPIC_GPS_SIGNAL_LEVEL. </p><dl class="section user"><dt>Sensing Sources : GPS</dt><dd></dd></dl>
 <dl class="section user"><dt>Supported Platforms : M210V2,M300</dt><dd></dd></dl>
-<dl class="section user"><dt>Data Structure : uint8_t</dt><dd>TOPIC_GPS_SIGNAL_LEVEL </dd></dl>
+<dl class="section user"><dt>Data Structure : uint8_t</dt><dd>TOPIC_GPS_SIGNAL_LEVEL "TOPIC_GPS_SIGNAL_LEVEL" </dd></dl>
 </td></tr>
 <tr><td class="fieldname"><a id="ga563d2333dc43253129a3915970f99cfaaf63a022ffc65950f36fc0c92edb901ff"></a>TOPIC_RC_FULL_RAW_DATA&#160;</td><td class="fielddoc"><p>Provides raw remote controller stick, buttons and switch data @ up to 50Hz. </p>
 <dl class="section note"><dt>Note</dt><dd>This topic was added in August 2018. Your aircraft may require a FW update to enable this feature.</dd></dl>
